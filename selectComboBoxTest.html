@@ -13,11 +13,13 @@
       <div ng-app="DemoApp" ng-controller="selectComboBoxTest" class="container jumbotron">
          
 		 <label for="repeatSelect"> Select Category: </label>
-		<select name="repeatSelect" id="repeatSelect" ng-model="selectedCategorySelect">
-		  <option ng-repeat="option in categoryList" value="{{option.catId}}">{{option.catgoryName}}</option>
+		<select name="repeatSelect" id="repeatSelect" ng-model="selectedCategorySelect" ng-options="option.catgoryName for option in categoryData">
+		  <option value="All">--Select Category--</option>
 		</select>
          <hr/>
          <hr/>
+		 
+		 <span>Category Name: {{selectedCategorySelect.catgoryName}}, Category Id: {{selectedCategorySelect.catID}}</span>
          
       </div>
       <script></script>
