@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta chrset="UTF 8">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/controllers/selectComboBoxTest.js"></script>
+      <div ng-app="DemoApp" ng-controller="selectComboBoxTest" class="container jumbotron">
+         
+		 <label for="repeatSelect"> Select Category: </label>
+		<select name="repeatSelect" id="repeatSelect" ng-model="selectedCategorySelect">
+		  <option ng-repeat="option in categoryList" value="{{option.catId}}">{{option.catgoryName}}</option>
+		</select>
+         <hr/>
+         <hr/>
+         
+      </div>
+      <script></script>
+   </body>
+</html>
