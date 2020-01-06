@@ -10,36 +10,36 @@
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
       <script src="js/app.js"></script>
       <script src="js/controllers/DemoController.js"></script>
-      <div ng-app="DemoApp" ng-controller="DemoController">
-         <div ng-repeat="x in linkData">
+      <div ng-app="DemoApp" ng-controller="DemoController" class="container jumbotron">
+         <div ng-repeat="x in linkData" ng-show="{{settings.showLinkData}}" class="col-lg-12">
             <span><a href="{{x.url}}" ng-style="stylesData.anchorLinkDataStyle">{{x.header}}</a></span>
             <span ng-style="descriptionStyle">{{x.description}}</span>
          </div>
          <hr/>
          <hr/>
-         <div>
-            <span ng-repeat="x in dbBakupLinkData">
+         <div class="col-lg-12">
+            <span ng-repeat="x in dbBakupLinkData" ng-show="{{settings.showDbBakupLinkData}}">
                <span ng-style="stylesData.anchorDBLinkDataStyle"><a href="{{x.url}}" >{{x.description}}</a> &nbsp &nbsp &nbsp &nbsp | </span>
                <!-- <span ng-style="descriptionStyle">{{x.description}}</span> -->
             </span>
          </div>
          <hr/>
          <hr/>
-         <pre ng-style="stylesData.preDescriptionStyle">
-		git status
-		git commit -a -m " commiting for change" -m "adding updated db files" -m "checking multi line  commit message"
-		git push
-		git log -1
+         <pre ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
+			git status
+			git commit -a -m " commiting for change" -m "adding updated db files" -m "checking multi line  commit message"
+			git push
+			git log -1
 
-		git pull
+			git pull
 
-		git add
+			git add
 
-		git remote add https://github.com/premendrakumar/my-pages.git
+			git remote add https://github.com/premendrakumar/my-pages.git
 
-		git push --set-upstream mypages master
+			git push --set-upstream mypages master
 
-		git clone https://github.com/premendrakumar/my-pages.git
+			git clone https://github.com/premendrakumar/my-pages.git
 		</pre>
       </div>
       <script></script>

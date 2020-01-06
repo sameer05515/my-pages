@@ -1,9 +1,13 @@
-app.controller('DemoController', function ($scope, $http, $log) {
+app.controller('DemoController', function ($scope, $http, $log,AppConfig) {
 	$scope.tutorialName = "Angular JS";
 
 	$scope.linkData = [];
 	$scope.dbBakupLinkData = [];
 	$scope.stylesData = {};
+	$scope.settings={
+		"showLinkData" : AppConfig.showLinkData,
+		"showDbBakupLinkData":AppConfig.showDbBakupLinkData
+	};
 
 	var onSuccess = function (response) {
 		$scope.data = response.data;
@@ -19,19 +23,19 @@ app.controller('DemoController', function ($scope, $http, $log) {
 		$http.get("data/json/linkData.json").then(
 			function (response) {
 				$scope.linkData = response.data;
-				$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
 
 		$http.get("data/json/dbBakupLinkData.json").then(
 			function (response) {
 				$scope.dbBakupLinkData = response.data;
-				$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
 
 		$http.get("data/json/stylesData.json").then(
 			function (response) {
 				$scope.stylesData = response.data;
-				$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
 	};
 
