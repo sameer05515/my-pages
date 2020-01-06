@@ -14,5 +14,9 @@
 		"url": "https://github.com/premendrakumar?tab=repositories",
 		"description": "GitHub Repo",
 		"header": "GitHub Repo"
+	}, {
+		"url": "https://www.dineshonjava.com/creational-design-patterns/",
+		"description": "Design patterns data",
+		"header": "Design patterns data"
 	}
 ]
