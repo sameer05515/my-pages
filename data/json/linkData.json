@@ -33,5 +33,10 @@
       "url": "selectComboBoxTest.html",
       "description": "selectComboBoxTest.html",
       "header": "selectComboBoxTest.html"
+   },
+   {
+	   "url": "https://rubygarage.org/blog/release-quality-code-with-github",
+	   "description": "How We Use GitHub to Release Quality Code",
+	   "header": "How We Use GitHub to Release Quality Code"	   
    }
 ]
