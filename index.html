@@ -44,6 +44,24 @@
 			<b>To modify the last commit</b>
 			git add file-i-forgot-to-add.html
 			git commit --amend -m "Add the remaining file"
+			
+			<b>see our current branches</b>
+			git branch
+			
+			<b>create a new branch</b>
+			git branch  &lt;feature-branch-name&gt; 
+			
+			<b>For switching branches in Git, you won't use a "switch" command, as you might think. Instead, you'll need to use "checkout":</b>
+			git checkout  &lt;feature-branch-name&gt; 
+			
+			<b>To merge a secondary branch into the main branch (which can be a master, development, or feature branch),
+			first switch back to the main branch. In our case, we should checkout the master branch</b>
+			git checkout &lt;main-branch-name&gt;
+			git merge &lt;feature-branch-name&gt;
+			
+			
+			
+			
 		</pre>
 		
 		<pre ng-style="stylesData.preDescriptionStyle">
