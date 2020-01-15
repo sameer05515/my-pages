@@ -48,5 +48,10 @@
 	   "url": "http://127.0.0.1:8080/nyambati-scotchio/Angular-1-components/",
 	   "description": "How to Use Angular 1.5's Component Method",
 	   "header": "Angular 1.5's Component"	   
+   },
+   {
+	   "url": "http://127.0.0.1:8080/interview-mgmt/",
+	   "description": "JSP and HTML Views developed for question answer dashboard. This need to be re-written using angularjs and bootstrap.",
+	   "header": "JSP and HTML Views developed for question answer dashboard"	   
    }
 ]
