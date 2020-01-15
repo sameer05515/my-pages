@@ -23,8 +23,8 @@
 		 <span>Category Name: {{selectedCategorySelect.catgoryName}}, Category Id: {{selectedCategorySelect.catID}}</span>
 		 
 		 <div class="col-lg-12">
-            <span ng-repeat="templateCategoryData in categoryData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/categoryData_item_renderer.html'">               
-            </span>
+            <div ng-style="stylesData.templateParentDescriptionStyle" ng-repeat="templateCategoryData in categoryData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/categoryData_item_renderer.html'">               
+            </div>
          </div>
 		 
 		 <hr/>

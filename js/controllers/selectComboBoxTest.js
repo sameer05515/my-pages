@@ -3,7 +3,7 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig) {
 
 	$scope.categoryData = [];
 	//$scope.dbBakupLinkData = [];
-	//$scope.stylesData = {};
+	$scope.stylesData = {};
 	$scope.settings={
 		"showLinkData" : AppConfig.showLinkData,
 		"showDbBakupLinkData":AppConfig.showDbBakupLinkData
@@ -24,7 +24,12 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig) {
 			function (response) {
 				$scope.categoryData = response.data;
 				$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
-			}, onError);		
+			}, onError);
+		$http.get("data/json/stylesData.json").then(
+			function (response) {
+				$scope.stylesData = response.data;
+				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+			}, onError);
 	};
 
 	$scope.init();
