@@ -4,8 +4,8 @@
 <div ng-style="stylesData.templateCategoryDataDescriptionStyle">
 Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" />
 
-<span ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
-            </span>
+<div ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
+            </div>
 
 </div> 
 
