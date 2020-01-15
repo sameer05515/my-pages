@@ -8,6 +8,7 @@ app.controller('DemoController', function ($scope, $http, $log,AppConfig) {
 		"showLinkData" : AppConfig.showLinkData,
 		"showDbBakupLinkData":AppConfig.showDbBakupLinkData
 	};
+	$scope.importResponse=[];
 
 	var onSuccess = function (response) {
 		$scope.data = response.data;
@@ -35,6 +36,12 @@ app.controller('DemoController', function ($scope, $http, $log,AppConfig) {
 		$http.get("data/json/stylesData.json").then(
 			function (response) {
 				$scope.stylesData = response.data;
+				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+			}, onError);
+		$http.get("data/json/importResponse.json").then(
+			function (response) {
+				$scope.importResponse = response.data;
+				
 				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
 	};
