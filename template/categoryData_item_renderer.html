@@ -1,0 +1,6 @@
+
+<span> Category Id: {{templateCategoryData.catID}} , </span>Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" /> 
+
+<!-- <span>Category Name: {{templateCategoryData.catgoryName}}, Category Id: {{templateCategoryData.catID}}</span><br/> -->
+<span ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
+            </span>

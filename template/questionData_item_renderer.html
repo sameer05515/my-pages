@@ -1,0 +1,4 @@
+
+<span> Question Id: {{templateQuestionData.questionID}} , </span>Question Name:  <span ng-bind-html="templateQuestionData.question" /> 
+<span ng-repeat="templateAnswerData in templateQuestionData.answers" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/answerData_item_renderer.html'">               
+            </span>

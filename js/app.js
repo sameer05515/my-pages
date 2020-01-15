@@ -1,4 +1,4 @@
-var app = angular.module('DemoApp', []);
+var app = angular.module('DemoApp', ['ngSanitize']);
 
 app.constant("AppConfig", {
 	"showLinkData" : true,
