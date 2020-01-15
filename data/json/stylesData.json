@@ -20,5 +20,12 @@
       "padding": "5px",
 	  "border-style": "solid",
 	  "border-color": "coral"
+   },
+   "planDataDescriptionStyle": {
+		"color": "black",
+		"font-size": "10px",
+		"border-style": "solid",
+		"border-color": "green"
    }
+   
 }

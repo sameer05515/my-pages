@@ -32,8 +32,8 @@
          <hr/>
          <hr/>
 		 
-		 <ul>
-			<li ng-repeat="data in importResponse.data.importPlan" ng-include="'plan_item_renderer.html'"></li>
+		 <ul ng-style="stylesData.planDataDescriptionStyle">
+			<li ng-repeat="data in importResponse.data.importPlan" ng-include="'template/plan_item_renderer.html'"></li>
 		</ul>
 		
 		<!-- importResponse : {{importResponse.data.importPlan|json}} -->
