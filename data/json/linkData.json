@@ -43,5 +43,10 @@
 	   "url": "first.jsp",
 	   "description": "JSP Test",
 	   "header": "JSP Test"	   
+   },
+   {
+	   "url": "http://127.0.0.1:8080/nyambati-scotchio/Angular-1-components/",
+	   "description": "How to Use Angular 1.5's Component Method",
+	   "header": "Angular 1.5's Component"	   
    }
 ]
