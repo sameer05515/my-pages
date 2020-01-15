@@ -20,7 +20,10 @@
          <hr/>
          <hr/>
 		 
-		 <span>Category Name: {{selectedCategorySelect.catgoryName}}, Category Id: {{selectedCategorySelect.catID}}</span>
+		 <div ng-style="stylesData.templateParentDescriptionStyle" >
+		 <span> Category Id: {{selectedCategorySelect.catID}}</span>
+		 <span ng-bind-html="selectedCategorySelect.catgoryName" />
+		 </div>
 		 
 		 <div class="col-lg-12">
             <div ng-style="stylesData.templateParentDescriptionStyle" ng-repeat="templateCategoryData in categoryData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/categoryData_item_renderer.html'">               
