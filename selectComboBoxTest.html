@@ -24,6 +24,13 @@
 		 <span> Category Id: {{selectedCategorySelect.catID}}</span>
 		 <span ng-bind-html="selectedCategorySelect.catgoryName" />
 		 </div>
+		 showData : {{showData}}<br/>
+		 <button ng-mouseup="showData = !showData" ng-init="showData = false">
+		 <span ng-show="!showData">Show my data</span> <span ng-show="showData">Hide my data</span> </button>
+		 <div ng-show="showData">
+		 <span ng-repeat="option in categoryData" ng-bind-html="option.catgoryName" />
+		 </div>
+		 
 		 
 		 <div class="col-lg-12">
             <div ng-style="stylesData.templateParentDescriptionStyle" ng-repeat="templateCategoryData in categoryData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/categoryData_item_renderer.html'">               
@@ -33,6 +40,11 @@
 		 <hr/>
 		 <hr/>
 		 <!-- {{categoryData|json}} -->
+		 
+		 <button ng-mouseup="count = count + 1" ng-init="count=0">
+			  Increment (on mouse up)
+			</button>
+			count: {{count}}
          
       </div>
       <script></script>

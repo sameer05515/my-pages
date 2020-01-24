@@ -63,13 +63,13 @@
 
 			git add
 
-			git remote add https://github.com/premendrakumar/my-pages.git
+			git remote add https://github.com/xxxxx/my-pages.git
 
 			git push --set-upstream mypages master
 
-			git clone https://github.com/premendrakumar/my-pages.git
+			git clone https://github.com/xxxxx/my-pages.git
 			
-			git clone https://github.com/premendrakumar/tutorials.git eugenp-tutorials
+			git clone https://github.com/xxxxx/tutorials.git eugenp-tutorials
 			
 			<b>To modify the last commit</b>
 			git add file-i-forgot-to-add.html
@@ -88,6 +88,20 @@
 			first switch back to the main branch. In our case, we should checkout the master branch</b>
 			git checkout &lt;main-branch-name&gt;
 			git merge &lt;feature-branch-name&gt;
+			
+			-----------------------
+			
+			<b>determine the URL that a local Git repository was originally cloned from?</b>			
+			
+			<b>If you want only the remote URL, or if your are not connected to a network that can reach the remote repo:</b>
+			
+			git config --get remote.origin.url	
+			
+			
+			<b>If you require full output and you are on a network that can reach the remote repo where the origin resides :</b>
+			
+			git remote show origin	
+			
 			
 			
 			

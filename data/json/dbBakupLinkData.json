@@ -42,5 +42,9 @@
    {
       "url": "http://localhost:8889/phpmyadmin/db_export.php?db=topic-mgmt",
       "description": "topic-mgmt"
+   },
+   {
+      "url": "http://localhost:8889/phpmyadmin/db_export.php?db=jtrac-mysql",
+      "description": "jtrac-mysql"
    }
 ]
