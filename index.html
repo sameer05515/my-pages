@@ -124,7 +124,7 @@
 			start notepad++ file-name		
 		</pre>
 		
-		<pre>
+		<pre ng-style="stylesData.preDescriptionStyle">
             <b> To open XAMPP in ubuntu</b>
             sudo /opt/lampp/lampp start
             
@@ -132,14 +132,20 @@
             sudo /opt/lampp/lampp stop
             
             <b>To start tomcat in ubuntu</b>
-            cd /home/premendra/Downloads/apache-tomcat-8.5.40/bin
-            sh ./startup.sh
+            sh /home/premendra/Downloads/apache-tomcat-8.5.40/bin/startup.sh
             
-            <b>Check tomcat catalina.out logs
-            cd /home/premendra/Downloads/apache-tomcat-8.5.40/logs
-            tail -f 100  catalina.out
+            <b>Check tomcat catalina.out logs</b>
+            tail -f -n -500 /home/premendra/Downloads/apache-tomcat-8.5.40/logs/catalina.out            
             
+		</pre>
+		
+		<pre>
+            <b>To change execute permission for a file</b>
+            chmod 755 xampp-linux-x64-7.3.4-0-installer.run
             
+            <b>To change execute permission for all files of a direcory</b>
+            sudo chmod -R 0775 /home/premendra/Desktop/DUMP/bin
+		
 		</pre>
 		
 		 <hello-world name="'John'" > </hello-world>
