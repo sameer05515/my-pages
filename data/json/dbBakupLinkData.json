@@ -46,5 +46,13 @@
    {
       "url": "http://localhost:8889/phpmyadmin/db_export.php?db=jtrac-mysql",
       "description": "jtrac-mysql"
+   },
+   {
+      "url": "http://localhost:8889/phpmyadmin/db_export.php?db=word-meaning",
+      "description": "word-meaning"
+   },
+   {
+      "url": "http://localhost:8889/phpmyadmin/db_export.php?db=word-meaning-test",
+      "description": "word-meaning-test"
    }
 ]
