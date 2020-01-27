@@ -104,8 +104,25 @@
 			
 			
 			<b>Config global email and username</b>
-			git config --global user.email premendra.bce05515@gmail.com
-			git config --global user.name Premendra.Kumar
+			git config --global user.email xx.12345@gmail.com
+			git config --global user.name XXXX.YYYY
+			
+			-------------------
+			<u><b>To check the differences between local and github before the pull</b></u>
+			<b>git pull is really equivalent to running git fetch and then git merge. 
+			The git fetch updates your so-called "remote-tracking branches" - typically these are ones 
+			that look like origin/master, github/experiment, etc. that you see with git branch -r. 
+			These are like a cache of the state of branches in the remote repository 
+			that are updated when you do git fetch (or a successful git push).
+			
+			So, suppose you've got a remote called origin that refers to your GitHub repository, you would do:</b>
+			git fetch origin
+			<b>... and then do:</b>
+			git diff master origin/master
+			<b>If you're happy with those differences, you can merge them in with</b>
+			git merge origin/master   <b>, assuming master is your current branch.</b>
+			
+			-------------------
 			
 			
 			
