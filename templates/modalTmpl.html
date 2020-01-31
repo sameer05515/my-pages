@@ -1,0 +1,12 @@
+<div class="modal-header">
+  <h3 ng-bind-html="title"></h3>
+</div>
+<div class="modal-body" ng-bind-html="text"></div>
+<div class="modal-footer">
+  <button ng-repeat="option in options"
+    class="btn"
+    ng-class="optionClasses[$index]"
+    ng-bind-html="option"
+    ng-click="doOption($index)">
+  </button>
+</div>

@@ -63,5 +63,10 @@
       "url": "tableEdit.html",
       "description": "tableEdit.html",
       "header": "tableEdit.html"
+   },
+   {
+      "url": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html",
+      "description": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html",
+      "header": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html"
    }
 ]
