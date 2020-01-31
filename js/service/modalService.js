@@ -27,7 +27,7 @@ app.factory('myModalService', ['$q', '$modal', function ($q, $modal) {
       
       $modal.open({
         controller: ctrl,
-        templateUrl: 'templates/modalTmpl.html',
+        templateUrl: 'template/modalTmpl.html',
         windowClass: 'my-modal-window'
       }).result.then(function (index) { defered.resolve(optionValues[index]) },
         function (message) {

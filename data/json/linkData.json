@@ -68,5 +68,10 @@
       "url": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html",
       "description": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html",
       "header": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html"
+   },
+   {
+      "url": "Pass-data-to-a-Bootstrap-modal-dialog-using-angular.html",
+      "description": "Pass-data-to-a-Bootstrap-modal-dialog-using-angular.html",
+      "header": "Pass-data-to-a-Bootstrap-modal-dialog-using-angular.html"
    }
 ]
