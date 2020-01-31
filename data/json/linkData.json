@@ -58,5 +58,10 @@
       "url": "modalWindowShow.html",
       "description": "modalWindowShow.html",
       "header": "modalWindowShow.html"
+   },
+   {
+      "url": "tableEdit.html",
+      "description": "tableEdit.html",
+      "header": "tableEdit.html"
    }
 ]
