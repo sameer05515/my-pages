@@ -1,13 +1,32 @@
 <div ng-style="stylesData.templateCategoryDataDescriptionStyle">
 	Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" />
-	<a class="btn btn-xs btn-primary">
+	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=true">
 		Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="templateCategoryData.showEditCategory" ng-click="templateCategoryData.showEditCategory=false" class="btn btn-xs btn-primary">
+		Cancel Edit
 		<i class="fa fa-angle-right"></i>
 	</a>
 	<a class="btn btn-xs btn-primary">
 		Add Questions
 		<i class="fa fa-angle-right"></i>
 	</a>
+	
+	{{templateCategoryData.catgoryName}}
+	
+	<div ng-show="templateCategoryData.showEditCategory">
+		<trix-editor angular-trix ng-model="templateCategoryData.catgoryName"
+			ng-show="templateCategoryData.showEditCategory"></trix-editor>
+		<div star-rating rating-value="templateCategoryData.rating"
+			edit-star-rating="true" max="maxRatingValue"
+			on-rating-selected="getSelectedRating(rating)"></div>
+		<a class="btn btn-xs btn-primary" ng-click="editCategory()"
+			ng-if="templateCategoryData.showEditCategory">Save</a> 
+		<a class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=false"
+			ng-if="templateCategoryData.showEditCategory">Cancel</a>
+	</div>
+	
 
 	<div ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
 	</div>
