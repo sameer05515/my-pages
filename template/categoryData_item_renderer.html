@@ -1,7 +1,15 @@
 <div ng-style="stylesData.templateCategoryDataDescriptionStyle">
-Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" />
+	Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" />
+	<a class="btn btn-xs btn-primary">
+		Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a class="btn btn-xs btn-primary">
+		Add Questions
+		<i class="fa fa-angle-right"></i>
+	</a>
 
-<div ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
-            </div>
+	<div ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
+	</div>
 
 </div> 
