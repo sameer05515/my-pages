@@ -9,6 +9,10 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig) {
 		"showDbBakupLinkData":AppConfig.showDbBakupLinkData,
 		"maxRatingValue":AppConfig.maxStarRatingValue
 	};
+	
+	$scope.dummy={
+		"categoryName":"<div><!--block--><strong>Artificial Intelligence (old set) </strong></div>"
+	}
 
 	var onSuccess = function (response) {
 		$scope.data = response.data;

@@ -1,4 +1,4 @@
-var app = angular.module('DemoApp', ['ngSanitize']);
+var app = angular.module('DemoApp', ['ngSanitize','angularTrix']);
 
 app.constant("AppConfig", {
 	"maxStarRatingValue":"10",
