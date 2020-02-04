@@ -1,5 +1,5 @@
 <div ng-style="stylesData.templateCategoryDataDescriptionStyle">
-	Category Name:  <span ng-bind-html="templateCategoryData.catgoryName" />
+	Category :  <span ng-bind-html="templateCategoryData.catgoryName" />
 	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=true">
 		Edit
 		<i class="fa fa-angle-right"></i>
@@ -13,7 +13,7 @@
 		<i class="fa fa-angle-right"></i>
 	</a>
 	
-	{{templateCategoryData.catgoryName}} {{templateCategoryData.rating}}
+	<!-- {{templateCategoryData.catgoryName}} {{templateCategoryData.rating}} -->
 	
 	<div ng-show="templateCategoryData.showEditCategory">
 		<trix-editor angular-trix ng-model="templateCategoryData.catgoryName"
@@ -21,7 +21,7 @@
 		<div star-rating rating-value="templateCategoryData.rating"
 			edit-star-rating="true" max="settings.maxRatingValue"
 			on-rating-selected="getSelectedRating(rating)"></div>
-		<a class="btn btn-xs btn-primary" ng-click="editCategory()"
+		<a class="btn btn-xs btn-primary" ng-click="editCategory(templateCategoryData);templateCategoryData.showEditCategory=false;"
 			ng-if="templateCategoryData.showEditCategory">Save</a> 
 		<a class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=false"
 			ng-if="templateCategoryData.showEditCategory">Cancel</a>

@@ -46,6 +46,9 @@
 	  
 	  <script src="js/directives/star-rating.js"></script>
 	  
+	  <script type="text/javascript"
+		src="js/services/InterviewManagementServices.js"></script>
+	  
       <script src="js/controllers/selectComboBoxTest.js"></script>
 	  
 	  
@@ -76,8 +79,8 @@
 			 </div>
 		 </div>
 		 
-		 <trix-editor angular-trix ng-model="dummy.categoryName"
-			ng-show="templateCategoryData.showEditCategory"></trix-editor>
+		 <!-- <trix-editor angular-trix ng-model="dummy.categoryName" -->
+			<!-- ng-show="templateCategoryData.showEditCategory"></trix-editor> -->
 		 
 		 
 		 <div class="col-lg-12">
@@ -87,7 +90,7 @@
 		 
 		 <hr/>
 		 <hr/>
-		 {{dummy.categoryName|json}}
+		 <!-- {{dummy.categoryName|json}} -->
 		 
 		 <button ng-mouseup="count = count + 1" ng-init="count=0">
 			  Increment (on mouse up)

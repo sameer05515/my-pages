@@ -1,4 +1,5 @@
-var app = angular.module('DemoApp', ['ngSanitize','angularTrix']);
+var app = angular.module('DemoApp', ['ngRoute', 'ngAnimate',
+		'angularTrix', 'ngSanitize','ngTouch','ui.bootstrap']);
 
 app.constant("AppConfig", {
 	"maxStarRatingValue":"10",
