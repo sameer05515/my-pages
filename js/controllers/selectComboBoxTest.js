@@ -6,7 +6,8 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig) {
 	$scope.stylesData = {};
 	$scope.settings={
 		"showLinkData" : AppConfig.showLinkData,
-		"showDbBakupLinkData":AppConfig.showDbBakupLinkData
+		"showDbBakupLinkData":AppConfig.showDbBakupLinkData,
+		"maxRatingValue":AppConfig.maxStarRatingValue
 	};
 
 	var onSuccess = function (response) {
@@ -52,6 +53,10 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig) {
 				$scope.stylesData = response.data;
 				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
+	};
+	
+	$scope.getSelectedRating = function(rating) {
+		console.log(rating);
 	};
 	
 	

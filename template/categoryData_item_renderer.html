@@ -13,13 +13,13 @@
 		<i class="fa fa-angle-right"></i>
 	</a>
 	
-	{{templateCategoryData.catgoryName}}
+	{{templateCategoryData.catgoryName}} {{templateCategoryData.rating}}
 	
 	<div ng-show="templateCategoryData.showEditCategory">
 		<trix-editor angular-trix ng-model="templateCategoryData.catgoryName"
 			ng-show="templateCategoryData.showEditCategory"></trix-editor>
 		<div star-rating rating-value="templateCategoryData.rating"
-			edit-star-rating="true" max="maxRatingValue"
+			edit-star-rating="true" max="settings.maxRatingValue"
 			on-rating-selected="getSelectedRating(rating)"></div>
 		<a class="btn btn-xs btn-primary" ng-click="editCategory()"
 			ng-if="templateCategoryData.showEditCategory">Save</a> 
