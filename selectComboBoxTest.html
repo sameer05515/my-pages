@@ -26,9 +26,16 @@
 		 </div>
 		 showData : {{showData}}<br/>
 		 <button ng-mouseup="showData = !showData" ng-init="showData = false">
+		 <!-- {{categoryData|json}} -->
 		 <span ng-show="!showData">Show my data</span> <span ng-show="showData">Hide my data</span> </button>
 		 <div ng-show="showData">
-		 <span ng-repeat="option in categoryData" ng-bind-html="option.catgoryName" />
+			 <div ng-repeat="option in categoryData"  >
+				<input type="checkbox" ng-model="option.showQuestionsOfCategory">&nbsp;	
+				</input>
+				<span ng-bind-html="option.catgoryName"/>
+				
+				
+			 </div>
 		 </div>
 		 
 		 
