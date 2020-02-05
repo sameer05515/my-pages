@@ -13,6 +13,13 @@
 		<i class="fa fa-angle-right"></i>
 	</a>
 	
+	<a ng-show="!templateCategoryData.collapseCategoryQuestions" class="btn btn-xs btn-primary" ng-click="templateCategoryData.collapseCategoryQuestions=true">
+		-		
+	</a>
+	<a ng-show="templateCategoryData.collapseCategoryQuestions" ng-click="templateCategoryData.collapseCategoryQuestions=false" class="btn btn-xs btn-primary">
+		+		
+	</a>
+	
 	<!-- {{templateCategoryData.catgoryName}} {{templateCategoryData.rating}} -->
 	
 	<div ng-show="templateCategoryData.showEditCategory">
@@ -28,7 +35,7 @@
 	</div>
 	
 
-	<div ng-repeat="templateQuestionData in templateCategoryData.questions" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/questionData_item_renderer.html'">               
+	<div ng-show="(settings.showDbBakupLinkData)&&(!templateCategoryData.collapseCategoryQuestions)"  ng-repeat="templateQuestionData in templateCategoryData.questions" ng-include="'template/questionData_item_renderer.html'">               
 	</div>
 
 </div> 

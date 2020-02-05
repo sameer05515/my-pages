@@ -45,10 +45,18 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig,Int
 	$scope.init = function () {
 		$http.get(AppConfig.interviewMgmtServices+"/categories").then(
 			function (response) {
-				$scope.categoryData = response.data;
-				angular.forEach($scope.categoryData, function (val, key) { 
+				// $scope.categoryData = response.data;
+				// angular.forEach($scope.categoryData, function (val, key) { 
+					// val.showQuestionsOfCategory=true;
+					// val.collapseCategoryQuestions=true;
+				// });
+				
+				$scope.categoryData = [];
+				angular.forEach(response.data, function (val, key) { 
 					val.showQuestionsOfCategory=true;
-				});
+					val.collapseCategoryQuestions=true;
+					this.push(val);
+				},$scope.categoryData);
 				
 				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
@@ -64,9 +72,37 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig,Int
 	};
 	
 	$scope.editCategory = function(editedCategoryObject){
-		//$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
+		$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
 		
-		InterviewManagementServices.updateCategory(editedCategoryObject)
+		/* let c={
+			"catID":editedCategoryObject.catID,
+			"catgoryName":editedCategoryObject.catgoryName,
+			"dateCreated":editedCategoryObject.dateCreated,
+			"dateLastModified":editedCategoryObject.dateLastModified,
+			"rating":editedCategoryObject.rating,
+			"dateLastRead":editedCategoryObject.dateLastRead,
+			"totalRead":editedCategoryObject.totalRead,
+			"personal":editedCategoryObject.personal
+		}; */
+		
+		
+		let c={
+			"catgoryName": editedCategoryObject.catgoryName,
+			"catID": editedCategoryObject.catID,
+			"dateCreated": editedCategoryObject.dateCreated,
+			"dateLastModified": editedCategoryObject.dateLastModified,
+			"dateLastRead": editedCategoryObject.dateLastRead,
+			"personal": editedCategoryObject.personal,
+			"rating": editedCategoryObject.rating,
+			"totalRead": editedCategoryObject.totalRead,
+			"showQuestionsOfCategory": true,
+			"collapseCategoryQuestions": true,
+			"showEditCategory": true
+		};
+		
+		$log.log("category : " + angular.toJson(c));
+		
+		InterviewManagementServices.updateCategory(c)
 		.success(function(data) {
 			$log.log("Successfully updated category : " + angular.toJson(data));
 			//$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
@@ -78,7 +114,21 @@ app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig,Int
 	$scope.editQuestion = function(editedQuestionObject){
 		$log.log("editedQuestionObject : " + angular.toJson(editedQuestionObject));
 		
-		InterviewManagementServices.updateQuestion(editedQuestionObject,editedQuestionObject.linkedCatID)
+		let q={
+			"questionID":editedQuestionObject.questionID,
+			"linkedCatID":editedQuestionObject.linkedCatID,
+			"question":editedQuestionObject.question,			
+			"dateCreated":editedQuestionObject.dateCreated,
+			"dateLastModified":editedQuestionObject.dateLastModified,
+			"rating":editedQuestionObject.rating,
+			"dateLastRead":editedQuestionObject.dateLastRead,
+			"totalRead":editedQuestionObject.totalRead,
+			"personal":editedQuestionObject.personal
+		};
+		
+		$log.log("question : " + angular.toJson(q));
+		
+		InterviewManagementServices.updateQuestion(q,editedQuestionObject.linkedCatID)
 		.success(function(data) {
 			$log.log("Successfully updated question : " + angular.toJson(data));
 		}).error(function(data) {
