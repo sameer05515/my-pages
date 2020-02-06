@@ -1,5 +1,11 @@
 <div ng-style="stylesData.templateCategoryDataDescriptionStyle">
 	Category :  <span ng-bind-html="templateCategoryData.catgoryName" />
+	
+	<a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateCategoryData.catID}}">
+		Details
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
 	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=true">
 		Edit
 		<i class="fa fa-angle-right"></i>

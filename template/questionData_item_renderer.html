@@ -1,6 +1,11 @@
 <div ng-style="stylesData.templateQuestionDataDescriptionStyle">
 Question :  <span ng-bind-html="templateQuestionData.question" /> 
 
+	<a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateQuestionData.linkedCatID}}/questions/{{templateQuestionData.questionID}}">
+		Details
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
 	<a ng-show="!templateQuestionData.showEditQuestion" class="btn btn-xs btn-primary" ng-click="templateQuestionData.showEditQuestion=true">
 		Edit
 		<i class="fa fa-angle-right"></i>
