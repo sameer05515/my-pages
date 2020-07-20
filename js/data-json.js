@@ -93,26 +93,29 @@ app.controller("testCtrl", [
     $scope.loadIrregularVerb = function (response) {
       $log.log("response recieved : " + angular.toJson(response));
 
-      for (let i = 0; i < response.length; i++) {
-        //{"V1Infinitive":"creep","V2SimplePast":"crept","V3PastParticiple":"crept"}
-        let obj = response[i];
-        document.writeln(
-          "INSERT INTO t_irregular_verb" +
-            "(id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example)" +
-            "VALUES ( \"" +
-            (i+1) +
-            "\",\"" +
-            obj.V1Infinitive +
-            (i+1) +
-            "\",\"" +
-            obj.V1Infinitive +
-            "\",\"" +
-            obj.V2SimplePast +
-            "\",\"" +
-            obj.V3PastParticiple +
-            '\",\"\");' +'<br>'
-        );
-      }
+      $scope.IrregularVerbData=response;
+      $scope.showSectionLINK_DATA=true;
+
+      // for (let i = 0; i < response.length; i++) {
+      //   //{"V1Infinitive":"creep","V2SimplePast":"crept","V3PastParticiple":"crept"}
+      //   let obj = response[i];
+      //   document.writeln(
+      //     "INSERT INTO t_irregular_verb" +
+      //       "(id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example)" +
+      //       "VALUES ( \"" +
+      //       (i+1) +
+      //       "\",\"" +
+      //       obj.V1Infinitive +
+      //       (i+1) +
+      //       "\",\"" +
+      //       obj.V1Infinitive +
+      //       "\",\"" +
+      //       obj.V2SimplePast +
+      //       "\",\"" +
+      //       obj.V3PastParticiple +
+      //       '\",\"\");' +'<br>'
+      //   );
+      // }
     };
 
     $scope.loadWordRoots = function (response) {
@@ -122,5 +125,11 @@ app.controller("testCtrl", [
     $scope.loadWordSuffixes = function (response) {
       $log.log("response recieved : " + angular.toJson(response));
     };
+
+    $scope.init= function(){
+      $scope.showSectionLINK_DATA=false;
+    };
+
+    $scope.init();
   },
 ]);

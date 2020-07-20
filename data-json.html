@@ -34,6 +34,13 @@
         ng-click="clicklinkData('data/json/word-root-synthesized-data/word-roots.json','wordRoots')">word-roots.json</button><br />
     <button
         ng-click="clicklinkData('data/json/word-root-synthesized-data/word-suffixes.json','wordSuffixes')">word-suffixes.json</button><br />
+
+
+     <div ng-show="showSectionLINK_DATA" ng-repeat="irregVerb in IrregularVerbData">
+        INSERT INTO t_irregular_verb (id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example) 
+        VALUES ('{{$index+1}}','{{irregVerb.V1Infinitive+($index+1)}}','{{irregVerb.V1Infinitive}}',
+        '{{irregVerb.V2SimplePast}}','{{irregVerb.V3PastParticiple}}','""');
+     </div>   
 </body>
 
 </html>
