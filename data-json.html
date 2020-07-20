@@ -1,14 +1,37 @@
-<html>
-  <head> </head>
+<!DOCTYPE html>
+<html ng-app="testApp">
 
-  <body>
-      <a href="data/json/linkData.json">linkData.json</a><br>
-      <a href="data/json/dbBakupLinkData.json">dbBakupLinkData.json</a><br>
-      <a href="data/json/importResponse.json">importResponse.json</a><br>
-      <a href="data/json/stylesData.json">stylesData.json</a><br>
-      <a href="data/json/word-root-synthesized-data/IrregularVerb.json">IrregularVerb.json</a><br>
-      <a href="data/json/word-root-synthesized-data/word-roots.json">word-roots.json</a><br>
-      <a href="data/json/word-root-synthesized-data/word-suffixes.json">word-suffixes.json</a><br>
-      
-  </body>
+<head>
+    <link data-require="bootstrap-css@3.0.3" data-semver="3.0.3" rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.2.14" data-semver="1.2.14"
+        src="http://code.angularjs.org/1.2.14/angular.js"></script>
+    <script data-require="angular-ui-bootstrap@0.10.0" data-semver="0.10.0"
+        src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.3/angular-sanitize.js"></script>
+    <script src="js/data-json.js"></script>
+</head>
+
+<body ng-controller="testCtrl">
+    <!-- <a href="data/json/linkData.json">linkData.json</a><br>
+    <a href="data/json/dbBakupLinkData.json">dbBakupLinkData.json</a><br>
+    <a href="data/json/importResponse.json">importResponse.json</a><br>
+    <a href="data/json/stylesData.json">stylesData.json</a><br>
+    <a href="data/json/word-root-synthesized-data/IrregularVerb.json">IrregularVerb.json</a><br>
+    <a href="data/json/word-root-synthesized-data/word-roots.json">word-roots.json</a><br>
+    <a href="data/json/word-root-synthesized-data/word-suffixes.json">word-suffixes.json</a><br> -->
+
+    <button ng-click="clicklinkData('data/json/linkData.json','LINK_DATA')">
+        linkData.json</button><br />
+    <button href="clicklinkData('data/json/dbBakupLinkData.json','dbBakupLinkData')">dbBakupLinkData.json</button><br />
+    <button href="clicklinkData('data/json/importResponse.json','importResponse')">importResponse.json</button><br />
+    <button href="clicklinkData('data/json/stylesData.json','stylesData')">stylesData.json</button><br />
+    <button
+        href="clicklinkData('data/json/word-root-synthesized-data/IrregularVerb.json','IrregularVerb')">IrregularVerb.json</button><br />
+    <button
+        href="clicklinkData('data/json/word-root-synthesized-data/word-roots.json','wordRoots')">word-roots.json</button><br />
+    <button
+        href="clicklinkData('data/json/word-root-synthesized-data/word-suffixes.json','wordSuffixes')">word-suffixes.json</button><br />
+</body>
+
 </html>
