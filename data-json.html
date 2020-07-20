@@ -40,7 +40,15 @@
         INSERT INTO t_irregular_verb (id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example) 
         VALUES ('{{$index+1}}','{{irregVerb.V1Infinitive+($index+1)}}','{{irregVerb.V1Infinitive}}',
         '{{irregVerb.V2SimplePast}}','{{irregVerb.V3PastParticiple}}','""');
-     </div>   
+     </div>
+     
+     <div ng-show="showSectionwordRoots" ng-repeat="wrData in WordRootsData">
+        INSERT INTO t_word_root(id, unique_name, RootWord, Meanings, Origin,
+         ExamplesAndDefinitions, remarks)
+         VALUES ('{{$index+1}}','{{HtmlEncode(wrData.RootWord+($index+1))}}',
+         '{{HtmlEncode(wrData.RootWord)}}','{{HtmlEncode(wrData.Meanings)}}',
+         '{{HtmlEncode(wrData.Origin)}}','{{HtmlEncode(wrData.ExamplesAndDefinitions)}}','""');
+     </div> 
 </body>
 
 </html>

@@ -63,10 +63,10 @@ app.controller("testCtrl", [
             $scope.loadIrregularVerb(response.data);
             break;
           case "wordRoots":
-            $scope.loadWordRoots(response);
+            $scope.loadWordRoots(response.data);
             break;
           case "wordSuffixes":
-            $scope.loadWordSuffixes(response);
+            $scope.loadWordSuffixes(response.data);
             break;
           default:
             break;
@@ -119,7 +119,16 @@ app.controller("testCtrl", [
     };
 
     $scope.loadWordRoots = function (response) {
+
+      //{"RootWord":"acro",
+      //"Meanings":"top, height, tip, beginning",
+      //"Origin":"Greek",
+      //"ExamplesAndDefinitions":"acrobat - a \"high walker\"; acronym - a word formed from the first\n\t\t\t\t\t\t\t\t\t\t\t\t(capital) letters of a word; acrophobia - fear of height"}
       $log.log("response recieved : " + angular.toJson(response));
+
+      $scope.WordRootsData=response;
+      $scope.showSectionwordRoots=true;
+
     };
 
     $scope.loadWordSuffixes = function (response) {
@@ -128,7 +137,29 @@ app.controller("testCtrl", [
 
     $scope.init= function(){
       $scope.showSectionLINK_DATA=false;
+      $scope.showSectionwordRoots=false;
     };
+
+    $scope.HtmlEncode= function (str)
+    {
+      // var el = document.createElement("div");
+      // el.innerText = el.textContent = str;
+      // str = el.innerHTML;
+      // return str;
+
+      var i = str.length,
+        aRet = [];
+
+    while (i--) {
+        var iC = str[i].charCodeAt();
+        if (iC < 65 || iC > 127 || (iC>90 && iC<97)) {
+            aRet[i] = '&#'+iC+';';
+        } else {
+            aRet[i] = str[i];
+        }
+    }
+    return aRet.join('');
+    }
 
     $scope.init();
   },
