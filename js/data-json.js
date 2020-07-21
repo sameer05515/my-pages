@@ -133,11 +133,15 @@ app.controller("testCtrl", [
 
     $scope.loadWordSuffixes = function (response) {
       $log.log("response recieved : " + angular.toJson(response));
+
+      $scope.wordSuffixesData=response;
+      $scope.showSectionwordSuffixes=true;
     };
 
     $scope.init= function(){
       $scope.showSectionLINK_DATA=false;
       $scope.showSectionwordRoots=false;
+      $scope.showSectionwordSuffixes=false;
     };
 
     $scope.HtmlEncode= function (str)
