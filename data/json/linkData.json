@@ -93,6 +93,12 @@
       "url":"data-json.html",
       "description":"data-json.html",
       "header":"data-json.html"
+   },
+   
+   {
+		"url":"http://127.0.0.1:8080/angular-authentication-example/index.html#/login",
+		"description":"AngularJS Authentication Example, Basic authentication",
+		"header":"AngularJS Authentication Example, Basic authentication"
    }
    
 ]
