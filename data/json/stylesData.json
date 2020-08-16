@@ -23,7 +23,8 @@
    },
    "planDataDescriptionStyle": {
 		"color": "black",
-		"font-size": "10px",
+      "font-size": "10px",
+      "padding": "5px 5px",
 		"border-style": "solid",
 		"border-color": "green"
    },
