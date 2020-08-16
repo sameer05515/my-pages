@@ -99,6 +99,12 @@
 		"url":"http://127.0.0.1:8080/angular-authentication-example/index.html#/login",
 		"description":"AngularJS Authentication Example, Basic authentication",
 		"header":"AngularJS Authentication Example, Basic authentication"
+   },
+   
+   {
+		"url":"http://127.0.0.1:8080/GroceryListApp/index.html",
+		"description":"AngularJS GroceryListApp Example, Basic GroceryListApp",
+		"header":"AngularJS GroceryListApp Example, Basic GroceryListApp"
    }
    
 ]
