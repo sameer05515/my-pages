@@ -1,154 +1,187 @@
-app.controller('selectComboBoxTest', function ($scope, $http, $log,AppConfig,InterviewManagementServices) {
+app.controller("selectComboBoxTest", function (
+	$scope,
+	$http,
+	$log,
+	AppConfig,
+	InterviewManagementServices
+) {
 	$scope.tutorialName = "Angular JS";
 
 	$scope.categoryData = [];
 	//$scope.dbBakupLinkData = [];
 	$scope.stylesData = {};
-	$scope.settings={
-		"showLinkData" : AppConfig.showLinkData,
-		"showDbBakupLinkData":AppConfig.showDbBakupLinkData,
-		"maxRatingValue":AppConfig.maxStarRatingValue
+	$scope.settings = {
+		showLinkData: AppConfig.showLinkData,
+		showDbBakupLinkData: AppConfig.showDbBakupLinkData,
+		maxRatingValue: AppConfig.maxStarRatingValue,
 	};
-	
-	$scope.dummy={
-		"categoryName":"<div><!--block--><strong>Artificial Intelligence (old set) </strong></div>"
-	}
+
+	$scope.dummy = {
+		categoryName:
+			"<div><!--block--><strong>Artificial Intelligence (old set) </strong></div>",
+	};
 
 	var onSuccess = function (response) {
 		$scope.data = response.data;
-
 	};
 
 	var onError = function (response) {
 		$scope.error = response.status;
-		$log.log("Error : status " + response.status + " data " + response.data + " headers " + response.headers + " config " + response.config);
-	}
-	
-	$scope.showOnlySelectedCategoriesQuestions=function(value){
-		var returnVal=false;
-		
-		angular.forEach($scope.categoryData, function (val, key) { 
-		
-		
+		$log.log(
+			"Error : status " +
+			response.status +
+			" data " +
+			response.data +
+			" headers " +
+			response.headers +
+			" config " +
+			response.config
+		);
+	};
+
+	$scope.showOnlySelectedCategoriesQuestions = function (value) {
+		var returnVal = false;
+
+		angular.forEach($scope.categoryData, function (val, key) {
 			//$log.log(">>>>>>>>>>>>>>>>>val "+angular.toJson(val));
-			$log.log(">>>>>>>>>>>>>>>>>val "+angular.toJson(value));
-			$log.log(">>>>>>>>>>>>>>>>>(val.catID==value.catID)&&(val.showQuestionsOfCategory) "+((val.catID==value.catID)&&(val.showQuestionsOfCategory)));
-                if((val.catID==value.catID)&&(val.showQuestionsOfCategory)){
-					return true;
-					return;
-				} 
-            });
-		
+			$log.log(">>>>>>>>>>>>>>>>>val " + angular.toJson(value));
+			$log.log(
+				">>>>>>>>>>>>>>>>>(val.catID==value.catID)&&(val.showQuestionsOfCategory) " +
+				(val.catID == value.catID && val.showQuestionsOfCategory)
+			);
+			if (val.catID == value.catID && val.showQuestionsOfCategory) {
+				return true;
+				return;
+			}
+		});
+
 		//return false;
 	};
 
 	$scope.init = function () {
-		$http.get(AppConfig.interviewMgmtServices+"/categories").then(
-			function (response) {
+		$http
+			.get(AppConfig.interviewMgmtServices + "/categories")
+			.then(function (response) {
 				// $scope.categoryData = response.data;
-				// angular.forEach($scope.categoryData, function (val, key) { 
-					// val.showQuestionsOfCategory=true;
-					// val.collapseCategoryQuestions=true;
+				// angular.forEach($scope.categoryData, function (val, key) {
+				// val.showQuestionsOfCategory=true;
+				// val.collapseCategoryQuestions=true;
 				// });
-				
+
 				$scope.categoryData = [];
-				angular.forEach(response.data, function (val, key) { 
-					val.showQuestionsOfCategory=true;
-					val.collapseCategoryQuestions=true;
-					this.push(val);
-				},$scope.categoryData);
-				
+				angular.forEach(
+					response.data,
+					function (val, key) {
+						val.showQuestionsOfCategory = true;
+						val.collapseCategoryQuestions = true;
+						this.push(val);
+					},
+					$scope.categoryData
+				);
+
 				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
-		$http.get("data/json/stylesData.json").then(
-			function (response) {
-				$scope.stylesData = response.data;
-				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
-			}, onError);
+		$http.get("data/json/stylesData.json").then(function (response) {
+			$scope.stylesData = response.data;
+			//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+		}, onError);
 	};
-	
-	$scope.getSelectedRating = function(rating) {
+
+	$scope.getSelectedRating = function (rating) {
 		console.log(rating);
 	};
-	
-	$scope.editCategory = function(editedCategoryObject){
-		$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
-		
+
+	$scope.editCategory = function (editedCategoryObject) {
+		$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject));
+
 		/* let c={
-			"catID":editedCategoryObject.catID,
-			"catgoryName":editedCategoryObject.catgoryName,
-			"dateCreated":editedCategoryObject.dateCreated,
-			"dateLastModified":editedCategoryObject.dateLastModified,
-			"rating":editedCategoryObject.rating,
-			"dateLastRead":editedCategoryObject.dateLastRead,
-			"totalRead":editedCategoryObject.totalRead,
-			"personal":editedCategoryObject.personal
-		}; */
-		
-		
-		let c={
-			"catgoryName": editedCategoryObject.catgoryName,
-			"catID": editedCategoryObject.catID,
-			"dateCreated": editedCategoryObject.dateCreated,
-			"dateLastModified": editedCategoryObject.dateLastModified,
-			"dateLastRead": editedCategoryObject.dateLastRead,
-			"personal": editedCategoryObject.personal,
-			"rating": editedCategoryObject.rating,
-			"totalRead": editedCategoryObject.totalRead,
-			"showQuestionsOfCategory": true,
-			"collapseCategoryQuestions": true,
-			"showEditCategory": true
+				"catID":editedCategoryObject.catID,
+				"catgoryName":editedCategoryObject.catgoryName,
+				"dateCreated":editedCategoryObject.dateCreated,
+				"dateLastModified":editedCategoryObject.dateLastModified,
+				"rating":editedCategoryObject.rating,
+				"dateLastRead":editedCategoryObject.dateLastRead,
+				"totalRead":editedCategoryObject.totalRead,
+				"personal":editedCategoryObject.personal
+			}; */
+
+		let c = {
+			catgoryName: editedCategoryObject.catgoryName,
+			catID: editedCategoryObject.catID,
+			dateCreated: editedCategoryObject.dateCreated,
+			dateLastModified: editedCategoryObject.dateLastModified,
+			dateLastRead: editedCategoryObject.dateLastRead,
+			personal: editedCategoryObject.personal,
+			rating: editedCategoryObject.rating,
+			totalRead: editedCategoryObject.totalRead,
+			showQuestionsOfCategory: true,
+			collapseCategoryQuestions: true,
+			showEditCategory: true,
 		};
-		
+
 		$log.log("category : " + angular.toJson(c));
-		
+
 		InterviewManagementServices.updateCategory(c)
-		.success(function(data) {
-			$log.log("Successfully updated category : " + angular.toJson(data));
-			//$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
-		}).error(function(data) {
-			$log.log("Error : " + angular.toJson(data));
-		});
-	}
-	
-	$scope.editQuestion = function(editedQuestionObject){
+			.success(function (data) {
+				$log.log("Successfully updated category : " + angular.toJson(data));
+				//$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject) );
+			})
+			.error(function (data) {
+				$log.log("Error : " + angular.toJson(data));
+			});
+	};
+
+	$scope.editQuestion = function (editedQuestionObject) {
 		$log.log("editedQuestionObject : " + angular.toJson(editedQuestionObject));
-		
-		let q={
-			"questionID":editedQuestionObject.questionID,
-			"linkedCatID":editedQuestionObject.linkedCatID,
-			"question":editedQuestionObject.question,			
-			"dateCreated":editedQuestionObject.dateCreated,
-			"dateLastModified":editedQuestionObject.dateLastModified,
-			"rating":editedQuestionObject.rating,
-			"dateLastRead":editedQuestionObject.dateLastRead,
-			"totalRead":editedQuestionObject.totalRead,
-			"personal":editedQuestionObject.personal
+
+		let q = {
+			questionID: editedQuestionObject.questionID,
+			linkedCatID: editedQuestionObject.linkedCatID,
+			question: editedQuestionObject.question,
+			dateCreated: editedQuestionObject.dateCreated,
+			dateLastModified: editedQuestionObject.dateLastModified,
+			rating: editedQuestionObject.rating,
+			dateLastRead: editedQuestionObject.dateLastRead,
+			totalRead: editedQuestionObject.totalRead,
+			personal: editedQuestionObject.personal,
 		};
-		
+
 		$log.log("question : " + angular.toJson(q));
-		
-		InterviewManagementServices.updateQuestion(q,editedQuestionObject.linkedCatID)
-		.success(function(data) {
-			$log.log("Successfully updated question : " + angular.toJson(data));
-		}).error(function(data) {
-			$log.log("Error : " + angular.toJson(data));
-		});
-	}
-	
-	$scope.editAnswer = function(editedAnswerObject){
-		$log.log("editedAnswerObject : " +angular.toJson(editedAnswerObject,editedAnswerObject,editedAnswerObject) );
-		
-		InterviewManagementServices.updateAnswer(editedAnswerObject,editedAnswerObject.linkedCatID,editedAnswerObject.linkedQuesID)
-		.success(function(data) {
-			$log.log("Successfully updated answer : " + angular.toJson(data));
-		}).error(function(data) {
-			$log.log("Error : " + angular.toJson(data));
-		});		
-	}
-	
-	
+
+		InterviewManagementServices.updateQuestion(
+			q,
+			editedQuestionObject.linkedCatID
+		)
+			.success(function (data) {
+				$log.log("Successfully updated question : " + angular.toJson(data));
+			})
+			.error(function (data) {
+				$log.log("Error : " + angular.toJson(data));
+			});
+	};
+
+	$scope.editAnswer = function (editedAnswerObject) {
+		$log.log(
+			"editedAnswerObject : " +
+			angular.toJson(
+				editedAnswerObject,
+				editedAnswerObject,
+				editedAnswerObject
+			)
+		);
+
+		InterviewManagementServices.updateAnswer(
+			editedAnswerObject,
+			editedAnswerObject.linkedCatID,
+			editedAnswerObject.linkedQuesID
+		)
+			.success(function (data) {
+				$log.log("Successfully updated answer : " + angular.toJson(data));
+			})
+			.error(function (data) {
+				$log.log("Error : " + angular.toJson(data));
+			});
+	};
 
 	$scope.init();
-
 });
