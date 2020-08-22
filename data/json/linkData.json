@@ -1,5 +1,10 @@
 [
    {
+      "url": "http://127.0.0.1:8080/bce-gui/#/",
+      "description": "BCE Web Application suite",
+      "header": "BCE Web Application suite"
+   },
+   {
       "url": "http://127.0.0.1:8080/bce-gui/#/questions-single-view",
       "description": "All questions in one page. Question to be shown as organised with categories, is yet to be implemented.",
       "header": "All questions in one page"
@@ -35,24 +40,24 @@
       "header": "selectComboBoxTest.html"
    },
    {
-	   "url": "https://rubygarage.org/blog/release-quality-code-with-github",
-	   "description": "How We Use GitHub to Release Quality Code",
-	   "header": "How We Use GitHub to Release Quality Code"	   
+      "url": "https://rubygarage.org/blog/release-quality-code-with-github",
+      "description": "How We Use GitHub to Release Quality Code",
+      "header": "How We Use GitHub to Release Quality Code"
    },
    {
-	   "url": "first.jsp",
-	   "description": "JSP Test",
-	   "header": "JSP Test"	   
+      "url": "first.jsp",
+      "description": "JSP Test",
+      "header": "JSP Test"
    },
    {
-	   "url": "http://127.0.0.1:8080/nyambati-scotchio/Angular-1-components/",
-	   "description": "How to Use Angular 1.5's Component Method",
-	   "header": "Angular 1.5's Component"	   
+      "url": "http://127.0.0.1:8080/nyambati-scotchio/Angular-1-components/",
+      "description": "How to Use Angular 1.5's Component Method",
+      "header": "Angular 1.5's Component"
    },
    {
-	   "url": "http://127.0.0.1:8080/interview-mgmt/",
-	   "description": "JSP and HTML Views developed for question answer dashboard. This need to be re-written using angularjs and bootstrap.",
-	   "header": "JSP and HTML Views developed for question answer dashboard"	   
+      "url": "http://127.0.0.1:8080/interview-mgmt/",
+      "description": "JSP and HTML Views developed for question answer dashboard. This need to be re-written using angularjs and bootstrap.",
+      "header": "JSP and HTML Views developed for question answer dashboard"
    },
    {
       "url": "modalWindowShow.html",
@@ -90,21 +95,29 @@
       "header": "word-roots_updated.html"
    },
    {
-      "url":"data-json.html",
-      "description":"data-json.html",
-      "header":"data-json.html"
+      "url": "data-json.html",
+      "description": "data-json.html",
+      "header": "data-json.html"
    },
-   
    {
-		"url":"http://127.0.0.1:8080/angular-authentication-example/index.html#/login",
-		"description":"AngularJS Authentication Example, Basic authentication",
-		"header":"AngularJS Authentication Example, Basic authentication"
+      "url": "http://127.0.0.1:8080/angular-authentication-example/index.html#/login",
+      "description": "AngularJS Authentication Example, Basic authentication",
+      "header": "AngularJS Authentication Example, Basic authentication"
    },
-   
    {
-		"url":"http://127.0.0.1:8080/GroceryListApp/index.html",
-		"description":"AngularJS GroceryListApp Example, Basic GroceryListApp",
-		"header":"AngularJS GroceryListApp Example, Basic GroceryListApp"
+      "url": "http://127.0.0.1:8080/GroceryListApp/index.html",
+      "description": "AngularJS GroceryListApp Example, Basic GroceryListApp",
+      "header": "AngularJS GroceryListApp Example, Basic GroceryListApp"
+   },
+   {
+      "url": "http://127.0.0.1:8080/my-pages/other-sample-application/scroll-to-div/index.html",
+      "description": "Scroll Automatically to div",
+      "header": "Scroll Automatically to div"
+   },
+
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/w3.js-examples/index.html",
+      "description":"w3.js-examples ",
+      "header":" w3.js-examples "
    }
-   
 ]
