@@ -1,7 +1,7 @@
 
 var premLib = {
     styleLibrary: {},
-    domManipulationLibrary:{}
+    domManipulationLibrary: {}
 };
 
 premLib.styleLibrary.addStyleArrayToElementById = function (elementId, styleArray) {
@@ -22,12 +22,23 @@ premLib.styleLibrary.addBackgroundColor = function (elementId, colorStr) {
     rootDiv.style.backgroundColor = colorStr;
 }
 
-premLib.domManipulationLibrary.appendChildToElementById = function(elementId,childType,childId){
-    console.log('elementId : ' + elementId + ' childType : \'' + childType+'\' childId : \''+childId+'\'');
+premLib.domManipulationLibrary.appendChildToElementById = function (elementId, childType, childId) {
+    console.log('elementId : ' + elementId + ' childType : \'' + childType + '\' childId : \'' + childId + '\'');
     let rootDiv = document.getElementById(elementId);
-    let childElement=document.createElement(childType);
+    let childElement = document.createElement(childType);
     childElement.setAttribute("id", childId);
-    rootDiv.appendChild(childElement);    
+    rootDiv.appendChild(childElement);
+}
+
+premLib.domManipulationLibrary.setAttributeToElementById = function (elementId, attributeName, attributeValue) {
+    let rootDiv = document.getElementById(elementId);
+    rootDiv.setAttribute(attributeName, attributeValue);
+}
+
+premLib.domManipulationLibrary.createTextNodeElementById = function (elementId, textNodeContent) {
+    let rootDiv = document.getElementById(elementId);
+    let textNode = document.createTextNode(textNodeContent);
+    rootDiv.appendChild(textNode);
 }
 
 
