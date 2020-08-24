@@ -176,7 +176,9 @@ premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divUlLiForParentC
 	"border": "thick solid #CC22FF",
 	"width": "600" + "px",
 	"height": "600" + "px",
-	"margin": "5px 5px 5px 5px "
+	"margin": "5px 5px 5px 5px",
+	"overflow":"scroll",
+    "-webkit-overflow-scrolling": "touch"
 });
 // premLib.data.parentChildJson={
 // 	name:"ROOT",

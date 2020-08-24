@@ -42,7 +42,7 @@ premLib.domManipulationLibrary.createTextNodeElementById = function (elementId, 
 }
 
 premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elementId,parentChildJson,isRoot){
-    let ulId=elementId+'_div';
+    let ulId=elementId+'_ul';
     premLib.domManipulationLibrary.appendChildToElementById(elementId,'ul',ulId);
     if(isRoot){
         premLib.domManipulationLibrary.createTextNodeElementById(ulId,parentChildJson['data']);
