@@ -41,4 +41,23 @@ premLib.domManipulationLibrary.createTextNodeElementById = function (elementId, 
     rootDiv.appendChild(textNode);
 }
 
+premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elementId,parentChildJson,isRoot){
+    let ulId=elementId+'_div';
+    premLib.domManipulationLibrary.appendChildToElementById(elementId,'ul',ulId);
+    if(isRoot){
+        premLib.domManipulationLibrary.createTextNodeElementById(ulId,parentChildJson['data']);
+    }
+    if(parentChildJson['children'].length>=0){
+        let mm=0;
+        for(mm=0;mm<parentChildJson['children'].length;mm++){
+            let LIid=ulId+'_li_'+mm;
+            premLib.domManipulationLibrary.appendChildToElementById(ulId,'li',LIid);
+            premLib.domManipulationLibrary.createTextNodeElementById(
+                LIid,parentChildJson['children'][mm]['data']);
+            premLib.domManipulationLibrary.appendUlLiFromJsonToElementById(
+                LIid,parentChildJson['children'][mm],false );
+        }
+    }
+}
+
 
