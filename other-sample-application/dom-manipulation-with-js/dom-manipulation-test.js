@@ -143,7 +143,7 @@ premLib.domManipulationLibrary.createTextNodeElementById(
 );
 let liIdPrefix = "ul-li-for-tree-view_"
 let liCounter = 1;
-for (liCounter = 1; liCounter <= 10; liCounter++) {
+for (liCounter = 1; liCounter <= 5; liCounter++) {
 	let liId = liIdPrefix + (liCounter)
 	premLib.domManipulationLibrary.appendChildToElementById(
 		testObject.ids.ulForTreeView,
@@ -165,22 +165,22 @@ for (liCounter = 1; liCounter <= 10; liCounter++) {
 
 //===========================================
 
-// premLib.domManipulationLibrary.appendChildToElementById(
-// 	testObject.ids.myBody,
-// 	"div",
-// 	testObject.ids.divUlLiForParentChildRelation2
-// );
-// premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divUlLiForParentChildRelation2, {
-// 	"border": "thick solid #CC22FF",
-// 	"width": "600" + "px",
-// 	"height": "600" + "px",
-// 	"margin": "5px 5px 5px 5px "
-// });
+premLib.domManipulationLibrary.appendChildToElementById(
+	testObject.ids.myBody,
+	"div",
+	testObject.ids.divUlLiForParentChildRelation2
+);
+premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divUlLiForParentChildRelation2, {
+	"border": "thick solid #CC22FF",
+	"width": "600" + "px",
+	"height": "600" + "px",
+	"margin": "5px 5px 5px 5px "
+});
 // premLib.data.parentChildJson={
 // 	name:"ROOT",
 // 	chilrdenCount:10
 // }
-// premLib.data.parentChildJsonArr=[10,[3]]
+premLib.data.parentChildJsonArr=[[10],[3],3]
 
 
 

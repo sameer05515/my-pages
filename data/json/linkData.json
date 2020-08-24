@@ -119,5 +119,10 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/w3.js-examples/index.html",
       "description":"w3.js-examples ",
       "header":" w3.js-examples "
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/tree-view/index.html",
+      "description":"Tree View Example",
+      "header":"Tree View Example"
    }
 ]
