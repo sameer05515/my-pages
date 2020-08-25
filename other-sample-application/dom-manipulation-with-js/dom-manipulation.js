@@ -44,19 +44,37 @@ premLib.domManipulationLibrary.createTextNodeElementById = function (elementId, 
 premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elementId,parentChildJson,isRoot){
     let ulId=elementId+'_ul';
     premLib.domManipulationLibrary.appendChildToElementById(elementId,'ul',ulId);
-    if(isRoot){
-        premLib.domManipulationLibrary.createTextNodeElementById(ulId,parentChildJson['data']);
-    }
-    if(parentChildJson['children'].length>=0){
+    // if(isRoot){
+        let spanId=ulId+'_span';
+        premLib.domManipulationLibrary.appendChildToElementById(ulId,'span',spanId);
+        premLib.domManipulationLibrary.createTextNodeElementById(spanId,parentChildJson['data']);
+    // }
+    if(parentChildJson['children'].length>0){
         let mm=0;
         for(mm=0;mm<parentChildJson['children'].length;mm++){
             let LIid=ulId+'_li_'+mm;
+            let spanId=LIid+'_span';                    
             premLib.domManipulationLibrary.appendChildToElementById(ulId,'li',LIid);
+            premLib.domManipulationLibrary.appendChildToElementById(LIid,'span',spanId);
+            if(parentChildJson['children'][mm]['children'].length>0){
+                premLib.styleLibrary.addStyleArrayToElementById(
+                    spanId,{
+                        "cursor": "pointer",
+                        "-webkit-user-select": "none", /* Safari 3.1+ */
+                        "-moz-user-select": "none", /* Firefox 2+ */
+                        "-ms-user-select": "none", /* IE 10+ */
+                        "user-select": "none"
+                      }
+                );
+            }
+            
             premLib.domManipulationLibrary.createTextNodeElementById(
-                LIid,parentChildJson['children'][mm]['data']);
+                spanId,parentChildJson['children'][mm]['data']);
             premLib.domManipulationLibrary.appendUlLiFromJsonToElementById(
                 LIid,parentChildJson['children'][mm],false );
         }
+    }else{
+
     }
 }
 
