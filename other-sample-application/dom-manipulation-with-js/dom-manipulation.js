@@ -98,7 +98,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         // '  |  \'null\'!==parentChildJson[\'parent\']  - '+('null'!==parentChildJson['parent']) );
 
     if('null'!==parentChildJson['parent']){
-        premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        premLib.styleLibrary.addClassToElementById(ulId,'active');
     }else{
         // premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }
@@ -116,9 +116,10 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
             spanDiv.classList.toggle("caret-down");
             let mmm=0;
             for(mmm=0;mmm<parentChildJson['children'].length;mmm++){
-                let cUlDiv=document.getElementById(LIid+'_'+(mmm+1)+'_U');
+                let cUlDivId=LIid+'_'+(mmm+1)+'_U';
+                let cUlDiv=document.getElementById(cUlDivId);
                 cUlDiv.classList.toggle("active");
-                console.log(cUlDiv+' active!!');
+                console.log(cUlDivId+' active!!');
             }
             // console.log(spanDiv+' clicked!!');
                 // this.parentElement.querySelector(".nested").classList.toggle("active");

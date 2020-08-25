@@ -202,7 +202,7 @@ ul, #myUL { list-style-type: none; } \
 -ms-user-select: none; /* IE 10+ */ \
 user-select: none; /* Prevent text selection */ } \
 /* Create the caret/arrow with a unicode, and style it */ \
-.caret::before { content: "\\25B6"; color: black; display: inline-block; margin-right: 6px; }\
+.caret::before { content: "\\25B6"; color: red; display: inline-block; margin-right: 6px; }\
 /* Rotate the caret/arrow icon when clicked on (using JavaScript) */ \
 .caret-down::before { transform: rotate(90deg); } \
 /* Hide the nested list */ \
