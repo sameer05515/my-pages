@@ -31,6 +31,11 @@ premLib.styleLibrary.addClassToElementById= function (elementId, className){
     rootDiv.classList.add(className);
 };
 
+premLib.styleLibrary.toggleClassToElementById = function (elementId,className){
+    let rootDiv = document.getElementById(elementId);
+    rootDiv.classList.toggle(className)
+}
+
 premLib.styleLibrary.addStyleArrayToElementById = function (elementId, styleArray) {
     //console.log('elementId : ' + elementId + ' styleArray : ' + styleArray);
     let rootDiv = document.getElementById(elementId);
@@ -86,14 +91,16 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
     premLib.domManipulationLibrary.appendChildToElementById(LIid,'span',spanId);
     premLib.domManipulationLibrary.createTextNodeElementById(spanId,parentChildJson['data']);
 
-    premLib.styleLibrary.addStyleArrayToElementById(
-        ulId, { "list-style-type": "none" } );
+    // premLib.styleLibrary.addStyleArrayToElementById(
+    //     ulId, { "list-style-type": "none" } );
 
         // console.log('  |  parentChildJson[\'parent\'] - '+'\''+parentChildJson['parent']+
         // '  |  \'null\'!==parentChildJson[\'parent\']  - '+('null'!==parentChildJson['parent']) );
 
     if('null'!==parentChildJson['parent']){
-        premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        //premLib.styleLibrary.addClassToElementById(ulId,'nested');
+    }else{
+        //premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }
     // }
     if(parentChildJson['children'].length>0){
@@ -101,8 +108,14 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         premLib.styleLibrary.addClassToElementById(spanId,'caret');
         premLib.eventLibrary.addEventListenerToElementById(spanId, "click", 
         function() {
-                this.parentElement.querySelector(".nested").classList.toggle("active");
-                this.classList.toggle("caret-down");
+            
+            let ulDiv = document.getElementById(ulId);
+            ulDiv.classList.toggle("active");
+            let spanDiv = document.getElementById(spanId);
+            spanDiv.classList.toggle("caret-down");
+            console.log(spanDiv+' clicked!!');
+                // this.parentElement.querySelector(".nested").classList.toggle("active");
+                // this.classList.toggle("caret-down");
               }
         );
 
