@@ -185,12 +185,32 @@ premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divUlLiForParentC
 // 	name:"ROOT",
 // 	chilrdenCount:10
 // }
-testObject.data.parentChildJson={"parent":"null","data":"ROOT","children":[{"parent":"ROOT","data":"Node 1","children":[{"parent":"Node 1","data":"Node 11","children":[{"parent":"Node 11","data":"Node 111","children":[{"parent":"Node 111","data":"Node 1111","children":[]}]},{"parent":"Node 11","data":"Node 112","children":[{"parent":"Node 112","data":"Node 1121","children":[]}]}]},{"parent":"Node 1","data":"Node 12","children":[{"parent":"Node 12","data":"Node 121","children":[{"parent":"Node 121","data":"Node 1211","children":[]}]},{"parent":"Node 12","data":"Node 122","children":[{"parent":"Node 122","data":"Node 1221","children":[]}]}]},{"parent":"Node 1","data":"Node 13","children":[{"parent":"Node 13","data":"Node 131","children":[{"parent":"Node 131","data":"Node 1311","children":[]}]},{"parent":"Node 13","data":"Node 132","children":[{"parent":"Node 132","data":"Node 1321","children":[]}]}]}]},{"parent":"ROOT","data":"Node 2","children":[{"parent":"Node 2","data":"Node 21","children":[{"parent":"Node 21","data":"Node 211","children":[{"parent":"Node 211","data":"Node 2111","children":[]}]},{"parent":"Node 21","data":"Node 212","children":[{"parent":"Node 212","data":"Node 2121","children":[]}]}]},{"parent":"Node 2","data":"Node 22","children":[{"parent":"Node 22","data":"Node 221","children":[{"parent":"Node 221","data":"Node 2211","children":[]}]},{"parent":"Node 22","data":"Node 222","children":[{"parent":"Node 222","data":"Node 2221","children":[]}]}]},{"parent":"Node 2","data":"Node 23","children":[{"parent":"Node 23","data":"Node 231","children":[{"parent":"Node 231","data":"Node 2311","children":[]}]},{"parent":"Node 23","data":"Node 232","children":[{"parent":"Node 232","data":"Node 2321","children":[]}]}]}]},{"parent":"ROOT","data":"Node 3","children":[{"parent":"Node 3","data":"Node 31","children":[{"parent":"Node 31","data":"Node 311","children":[{"parent":"Node 311","data":"Node 3111","children":[]}]},{"parent":"Node 31","data":"Node 312","children":[{"parent":"Node 312","data":"Node 3121","children":[]}]}]},{"parent":"Node 3","data":"Node 32","children":[{"parent":"Node 32","data":"Node 321","children":[{"parent":"Node 321","data":"Node 3211","children":[]}]},{"parent":"Node 32","data":"Node 322","children":[{"parent":"Node 322","data":"Node 3221","children":[]}]}]},{"parent":"Node 3","data":"Node 33","children":[{"parent":"Node 33","data":"Node 331","children":[{"parent":"Node 331","data":"Node 3311","children":[]}]},{"parent":"Node 33","data":"Node 332","children":[{"parent":"Node 332","data":"Node 3321","children":[]}]}]}]},{"parent":"ROOT","data":"Node 4","children":[{"parent":"Node 4","data":"Node 41","children":[{"parent":"Node 41","data":"Node 411","children":[{"parent":"Node 411","data":"Node 4111","children":[]}]},{"parent":"Node 41","data":"Node 412","children":[{"parent":"Node 412","data":"Node 4121","children":[]}]}]},{"parent":"Node 4","data":"Node 42","children":[{"parent":"Node 42","data":"Node 421","children":[{"parent":"Node 421","data":"Node 4211","children":[]}]},{"parent":"Node 42","data":"Node 422","children":[{"parent":"Node 422","data":"Node 4221","children":[]}]}]},{"parent":"Node 4","data":"Node 43","children":[{"parent":"Node 43","data":"Node 431","children":[{"parent":"Node 431","data":"Node 4311","children":[]}]},{"parent":"Node 43","data":"Node 432","children":[{"parent":"Node 432","data":"Node 4321","children":[]}]}]}]}]};
+testObject.data.parentChildJson={"parent":"null","data":"ROOT","children":[{"parent":"ROOT","data":"Node 1","children":[{"parent":"Node 1","data":"Node 11","children":[{"parent":"Node 11","data":"Node 111","children":[]}]},{"parent":"Node 1","data":"Node 12","children":[{"parent":"Node 12","data":"Node 121","children":[]}]}]},{"parent":"ROOT","data":"Node 2","children":[{"parent":"Node 2","data":"Node 21","children":[{"parent":"Node 21","data":"Node 211","children":[]}]},{"parent":"Node 2","data":"Node 22","children":[{"parent":"Node 22","data":"Node 221","children":[]}]}]},{"parent":"ROOT","data":"Node 3","children":[{"parent":"Node 3","data":"Node 31","children":[{"parent":"Node 31","data":"Node 311","children":[]}]},{"parent":"Node 3","data":"Node 32","children":[{"parent":"Node 32","data":"Node 321","children":[]}]}]}]};
 
 
 
 
 
+let UlLiFromJsonStyles='/* Remove default bullets */ \
+ul, #myUL { list-style-type: none; } \
+/* Remove margins and padding from the parent ul */ \
+#myUL { margin: 0; padding: 0; } \
+/* Style the caret/arrow */ \
+.caret { cursor: pointer; \
+-webkit-user-select: none; /* Safari 3.1+ */ \
+-moz-user-select: "none"; /* Firefox 2+ */ \
+-ms-user-select: none; /* IE 10+ */ \
+user-select: none; /* Prevent text selection */ } \
+/* Create the caret/arrow with a unicode, and style it */ \
+.caret::before { content: "\\25B6"; color: black; display: inline-block; margin-right: 6px; }\
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */ \
+.caret-down::before { transform: rotate(90deg); } \
+/* Hide the nested list */ \
+.nested { display: none; } \
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */ \
+.active { display: block; }';
+
+premLib.styleLibrary.addStyle(UlLiFromJsonStyles);
 
 premLib.domManipulationLibrary.appendUlLiFromJsonToElementById(
 	testObject.ids.divUlLiForParentChildRelation2, testObject.data.parentChildJson);
@@ -201,12 +221,13 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById(
 /* Set the style */ 
 let styles = '\n h1 { color: green; font-weight: bold; }'; 
 styles += '\n body { text-align: center }';
-styles += '\n .'+testObject.ids.styleAddCheckingDiv+'_style'+' {border: thick solid #CC22FF;\
-width: 600px;\
-height: 600px;\
-margin: 5px 5px 5px 5px;\
-overflow:scroll;\
--webkit-overflow-scrolling: touch}'
+//premLib.styleLibrary.addStyle(styles);
+styles = '\n .'+testObject.ids.styleAddCheckingDiv+'_style'+' {border: thick solid #CC22FF;\
+	width: 600px;\
+	height: 600px;\
+	margin: 5px 5px 5px 5px;\
+	overflow:scroll;\
+	-webkit-overflow-scrolling: touch}';
 
 premLib.styleLibrary.addStyle(styles);
 

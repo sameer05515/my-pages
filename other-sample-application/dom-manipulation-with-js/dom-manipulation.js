@@ -1,9 +1,19 @@
 
 var premLib = {
     styleLibrary: {},
-    domManipulationLibrary: {}
+    domManipulationLibrary: {},
+    eventLibrary:{},
 };
 
+/** EVENT LIBRAY */
+
+premLib.eventLibrary.addEventListenerToElementById = function(elementId,eventName,eventFunc){
+    console.log( 'elementId - '+elementId+' | '+' eventName - '+eventName)
+    let rootDiv = document.getElementById(elementId);
+    rootDiv.addEventListener(eventName,eventFunc);
+};
+
+/** STYLE LIBRAY */
 premLib.styleLibrary.addStyle = function (styles){
     /* Create style document */ 
     let css = document.createElement('style'); 
@@ -22,10 +32,10 @@ premLib.styleLibrary.addClassToElementById= function (elementId, className){
 };
 
 premLib.styleLibrary.addStyleArrayToElementById = function (elementId, styleArray) {
-    console.log('elementId : ' + elementId + ' styleArray : ' + styleArray);
+    //console.log('elementId : ' + elementId + ' styleArray : ' + styleArray);
     let rootDiv = document.getElementById(elementId);
     Object.assign(rootDiv.style, styleArray);
-    console.log('rootDiv : ' + rootDiv);
+    // console.log('rootDiv : ' + rootDiv);
 }
 
 premLib.styleLibrary.addStyleToElement = function (elementId, styleName, styleValue) {
@@ -34,13 +44,14 @@ premLib.styleLibrary.addStyleToElement = function (elementId, styleName, styleVa
 }
 
 premLib.styleLibrary.addBackgroundColor = function (elementId, colorStr) {
-    console.log('elementId : ' + elementId + ' colorStr : ' + colorStr);
+    // console.log('elementId : ' + elementId + ' colorStr : ' + colorStr);
     let rootDiv = document.getElementById(elementId);
     rootDiv.style.backgroundColor = colorStr;
 }
 
+/** dom Manipulation Library */
 premLib.domManipulationLibrary.appendChildToElementById = function (elementId, childType, childId) {
-    console.log('elementId : ' + elementId + ' childType : \'' + childType + '\' childId : \'' + childId + '\'');
+    // console.log('elementId : ' + elementId + ' childType : \'' + childType + '\' childId : \'' + childId + '\'');
     let rootDiv = document.getElementById(elementId);
     let childElement = document.createElement(childType);
     childElement.setAttribute("id", childId);
@@ -65,30 +76,36 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
     let LIid=ulId+'_L';
     let spanId=LIid+'_S';
 
-    console.log('  |  parentChildJson[\'data\'] - '+'\''+parentChildJson['data']+'\''
-    +'  |  ulId - '+'\''+ulId+'\''
-    +'  |  LIid - '+'\''+LIid+'\''
-    +'  |  spanId - '+'\''+spanId+'\'');
+    // console.log('  |  parentChildJson[\'data\'] - '+'\''+parentChildJson['data']+'\''
+    // +'  |  ulId - '+'\''+ulId+'\''
+    // +'  |  LIid - '+'\''+LIid+'\''
+    // +'  |  spanId - '+'\''+spanId+'\'');
+
     premLib.domManipulationLibrary.appendChildToElementById(elementId,'ul',ulId);
     premLib.domManipulationLibrary.appendChildToElementById(ulId,'li',LIid);
     premLib.domManipulationLibrary.appendChildToElementById(LIid,'span',spanId);
     premLib.domManipulationLibrary.createTextNodeElementById(spanId,parentChildJson['data']);
 
     premLib.styleLibrary.addStyleArrayToElementById(
-        ulId,
-        {
-            "list-style-type": "none"
-        }
-    );
+        ulId, { "list-style-type": "none" } );
+
+        // console.log('  |  parentChildJson[\'parent\'] - '+'\''+parentChildJson['parent']+
+        // '  |  \'null\'!==parentChildJson[\'parent\']  - '+('null'!==parentChildJson['parent']) );
+
+    if('null'!==parentChildJson['parent']){
+        premLib.styleLibrary.addClassToElementById(ulId,'nested');
+    }
     // }
     if(parentChildJson['children'].length>0){
-        premLib.styleLibrary.addStyleArrayToElementById(
-            spanId,{ "cursor": "pointer", 
-            "-webkit-user-select": "none", /* Safari 3.1+ */
-            "-moz-user-select": "none", /* Firefox 2+ */
-            "-ms-user-select": "none", /* IE 10+ */
-            "user-select": "none"
-        });
+        
+        premLib.styleLibrary.addClassToElementById(spanId,'caret');
+        premLib.eventLibrary.addEventListenerToElementById(spanId, "click", 
+        function() {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down");
+              }
+        );
+
 
         let mm=0;
         for(mm=0;mm<parentChildJson['children'].length;mm++){            
