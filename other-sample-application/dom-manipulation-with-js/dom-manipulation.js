@@ -98,9 +98,9 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         // '  |  \'null\'!==parentChildJson[\'parent\']  - '+('null'!==parentChildJson['parent']) );
 
     if('null'!==parentChildJson['parent']){
-        //premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }else{
-        //premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        // premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }
     // }
     if(parentChildJson['children'].length>0){
@@ -110,10 +110,17 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         function() {
             
             let ulDiv = document.getElementById(ulId);
-            ulDiv.classList.toggle("active");
+            ulDiv.classList.toggle("active");            
+            // ulDiv.classList.toggle("nested");
             let spanDiv = document.getElementById(spanId);
             spanDiv.classList.toggle("caret-down");
-            console.log(spanDiv+' clicked!!');
+            let mmm=0;
+            for(mmm=0;mmm<parentChildJson['children'].length;mmm++){
+                let cUlDiv=document.getElementById(LIid+'_'+(mmm+1)+'_U');
+                cUlDiv.classList.toggle("active");
+                console.log(cUlDiv+' active!!');
+            }
+            // console.log(spanDiv+' clicked!!');
                 // this.parentElement.querySelector(".nested").classList.toggle("active");
                 // this.classList.toggle("caret-down");
               }
