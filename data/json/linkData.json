@@ -124,5 +124,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/tree-view/index.html",
       "description":"Tree View Example",
       "header":"Tree View Example"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html",
+      "description":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html",
+      "header":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html"
    }
+
 ]
