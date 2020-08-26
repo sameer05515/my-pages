@@ -11,6 +11,8 @@ var testObject = {
 		divUlLiForParentChildRelation2:"div-ul-li-for-parent-child-relation2",
 		ulForTreeView2: "ul-for-tree-view2",
 		styleAddCheckingDiv: "style-add-checking-div",
+		divLoadExternalWebPage: "div-load-external-web-page",
+		divLoadExternalWebPage_object:"div-load-external-web-page-object",
 
 	},
 	stylesCss: {
@@ -240,3 +242,42 @@ premLib.styleLibrary.addClassToElementById(testObject.ids.styleAddCheckingDiv,
 	testObject.ids.styleAddCheckingDiv+'_style');
 premLib.domManipulationLibrary.createTextNodeElementById(testObject.ids.styleAddCheckingDiv,
 	'Div having style from CSS');
+
+//================================================================================
+
+premLib.domManipulationLibrary.appendChildToElementById(
+	testObject.ids.myBody,
+	"div",
+	testObject.ids.divLoadExternalWebPage
+);
+premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divLoadExternalWebPage, {
+	"border": "thick solid #CC22FF",
+	"width": "600" + "px",
+	"height": "600" + "px",
+	"margin": "5px 5px 5px 5px",
+	"overflow":"scroll",
+    "-webkit-overflow-scrolling": "touch"
+});
+
+//let divLoadExternalWebPage_object=testObject.ids.divLoadExternalWebPage+'_object';
+premLib.domManipulationLibrary.appendChildToElementById(testObject.ids.divLoadExternalWebPage,
+	 'object',testObject.ids.divLoadExternalWebPage_object );
+premLib.domManipulationLibrary.setAttributeToElementById(testObject.ids.divLoadExternalWebPage_object,
+	'type', 'text/html');
+premLib.domManipulationLibrary.setAttributeToElementById(testObject.ids.divLoadExternalWebPage_object,
+		'data', 'http://127.0.0.1:8080/my-pages/other-sample-application/google-chart/pie-chart.html');
+premLib.domManipulationLibrary.setAttributeToElementById(testObject.ids.divLoadExternalWebPage_object,
+			'type', 'text/html');
+premLib.styleLibrary.addStyleArrayToElementById(testObject.ids.divLoadExternalWebPage_object, {
+	"border": "5px ridge blue",
+	"width": "800" + "px",
+	"height": "600" + "px",
+	"margin": "5px 5px 5px 5px",
+	"overflow":"auto"	
+});
+// {/* <object type="text/html" data="http://validator.w3.org/" 
+// width="800px" height="600px" style="overflow:auto;border:5px ridge blue">
+//     </object> */}
+
+//=======================================================================
+
