@@ -127,13 +127,24 @@
    },
    {
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html",
-      "description":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html",
-      "header":"http://127.0.0.1:8080/my-pages/other-sample-application/add-Style-tag-to-html/index.html"
+      "description":"add-Style-tag-to-html/index.html",
+      "header":"add-Style-tag-to-html/index.html"
    },
    {
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/javascript-add-event-listener/index.html",
-      "description":"http://127.0.0.1:8080/my-pages/other-sample-application/javascript-add-event-listener/index.html",
-      "header":"http://127.0.0.1:8080/my-pages/other-sample-application/javascript-add-event-listener/index.html"
+      "description":"javascript-add-event-listener/index.html",
+      "header":"javascript-add-event-listener/index.html"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/get-all-siblings/index.html",
+      "description":"get-all-siblings/index.html",
+      "header":"get-all-siblings/index.html"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/collapsibles/index.html",
+      "description":"collapsibles/index.html",
+      "header":"collapsibles/index.html"
+
    }
 
 ]
