@@ -110,6 +110,11 @@
       "header": "AngularJS GroceryListApp Example, Basic GroceryListApp"
    },
    {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/dom-manipulation-with-js/index.html",
+      "description":"DOM-MANIPULATION-WITH-JS/INDEX.HTML",
+      "header":"DOM-MANIPULATION-WITH-JS/INDEX.HTML"
+   },
+   {
       "url": "http://127.0.0.1:8080/my-pages/other-sample-application/scroll-to-div/index.html",
       "description": "Scroll Automatically to div",
       "header": "Scroll Automatically to div"
@@ -159,6 +164,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/google-chart/pie-chart.html",
       "description":"Google Chart : Pie chart",
       "header":"Google Chart : Pie chart"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Grid-Examples/index.html",
+      "description":"Grid-Example",
+      "header":"Grid-Example"
    }
 
 ]
