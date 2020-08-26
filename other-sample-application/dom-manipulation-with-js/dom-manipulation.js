@@ -98,7 +98,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         // '  |  \'null\'!==parentChildJson[\'parent\']  - '+('null'!==parentChildJson['parent']) );
 
     if('null'!==parentChildJson['parent']){
-        premLib.styleLibrary.addClassToElementById(ulId,'active');
+        premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }else{
         // premLib.styleLibrary.addClassToElementById(ulId,'nested');
     }
@@ -110,7 +110,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
         function() {
             
             let ulDiv = document.getElementById(ulId);
-            ulDiv.classList.toggle("active");            
+            //ulDiv.classList.toggle("active");            
             // ulDiv.classList.toggle("nested");
             let spanDiv = document.getElementById(spanId);
             spanDiv.classList.toggle("caret-down");
