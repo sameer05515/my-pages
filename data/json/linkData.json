@@ -154,6 +154,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/HTML-Table-Hiding-a-column-by-changing-style-properties/index.html",
       "description":"HTML Table : Hiding a column by changing style properties",
       "header":"HTML Table : Hiding a column by changing style properties"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/google-chart/pie-chart.html",
+      "description":"Google Chart : Pie chart",
+      "header":"Google Chart : Pie chart"
    }
 
 ]
