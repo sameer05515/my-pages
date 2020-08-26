@@ -13,6 +13,11 @@ premLib.eventLibrary.addEventListenerToElementById = function(elementId,eventNam
     rootDiv.addEventListener(eventName,eventFunc);
 };
 
+
+
+
+
+
 /** STYLE LIBRAY */
 premLib.styleLibrary.addStyle = function (styles){
     /* Create style document */ 
@@ -54,7 +59,20 @@ premLib.styleLibrary.addBackgroundColor = function (elementId, colorStr) {
     rootDiv.style.backgroundColor = colorStr;
 }
 
-/** dom Manipulation Library */
+
+
+
+
+
+
+
+
+
+
+
+
+/** DOM MANIPULATION LIBRARY */
+
 premLib.domManipulationLibrary.appendChildToElementById = function (elementId, childType, childId) {
     // console.log('elementId : ' + elementId + ' childType : \'' + childType + '\' childId : \'' + childId + '\'');
     let rootDiv = document.getElementById(elementId);
@@ -77,7 +95,7 @@ premLib.domManipulationLibrary.createTextNodeElementById = function (elementId, 
 premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elementId,parentChildJson,appender=''){
     let ulId=elementId+appender+'_U';
     
-    // if(isRoot){
+    
     let LIid=ulId+'_L';
     let spanId=LIid+'_S';
 
@@ -99,10 +117,11 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
 
     if('null'!==parentChildJson['parent']){
         premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        
     }else{
-        // premLib.styleLibrary.addClassToElementById(ulId,'nested');
+        premLib.styleLibrary.addStyleArrayToElementById(ulId,{ margin: 0, padding: 0 });
     }
-    // }
+    
     if(parentChildJson['children'].length>0){
         
         premLib.styleLibrary.addClassToElementById(spanId,'caret');
@@ -111,7 +130,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
             
             let ulDiv = document.getElementById(ulId);
             //ulDiv.classList.toggle("active");            
-            // ulDiv.classList.toggle("nested");
+            
             let spanDiv = document.getElementById(spanId);
             spanDiv.classList.toggle("caret-down");
             let mmm=0;
@@ -126,7 +145,6 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
                 // this.classList.toggle("caret-down");
               }
         );
-
 
         let mm=0;
         for(mm=0;mm<parentChildJson['children'].length;mm++){            
