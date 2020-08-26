@@ -149,6 +149,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Traversing-an-HTML-Table-with-JavaScript-and-DOM-Interfaces/index.html",
       "description":"Traversing an HTML Table with JavaScript and DOM Interfaces",
       "header":"Traversing an HTML Table with JavaScript and DOM Interfaces"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/HTML-Table-Hiding-a-column-by-changing-style-properties/index.html",
+      "description":"HTML Table : Hiding a column by changing style properties",
+      "header":"HTML Table : Hiding a column by changing style properties"
    }
 
 ]
