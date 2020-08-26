@@ -8,7 +8,7 @@ var premLib = {
 /** EVENT LIBRAY */
 
 premLib.eventLibrary.addEventListenerToElementById = function(elementId,eventName,eventFunc){
-    console.log( 'elementId - '+elementId+' | '+' eventName - '+eventName)
+    //console.log( 'elementId - '+elementId+' | '+' eventName - '+eventName)
     let rootDiv = document.getElementById(elementId);
     rootDiv.addEventListener(eventName,eventFunc);
 };
@@ -89,7 +89,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
     premLib.domManipulationLibrary.appendChildToElementById(elementId,'ul',ulId);
     premLib.domManipulationLibrary.appendChildToElementById(ulId,'li',LIid);
     premLib.domManipulationLibrary.appendChildToElementById(LIid,'span',spanId);
-    premLib.domManipulationLibrary.createTextNodeElementById(spanId,parentChildJson['data']);
+    premLib.domManipulationLibrary.createTextNodeElementById(LIid,parentChildJson['data']);
 
     // premLib.styleLibrary.addStyleArrayToElementById(
     //     ulId, { "list-style-type": "none" } );
@@ -119,7 +119,7 @@ premLib.domManipulationLibrary.appendUlLiFromJsonToElementById = function(elemen
                 let cUlDivId=LIid+'_'+(mmm+1)+'_U';
                 let cUlDiv=document.getElementById(cUlDivId);
                 cUlDiv.classList.toggle("active");
-                console.log(cUlDivId+' active!!');
+                //console.log(cUlDivId+' active!!');
             }
             // console.log(spanDiv+' clicked!!');
                 // this.parentElement.querySelector(".nested").classList.toggle("active");
