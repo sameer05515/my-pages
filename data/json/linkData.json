@@ -169,6 +169,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Grid-Examples/index.html",
       "description":"Grid-Example",
       "header":"Grid-Example"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Menu-Examples/index.html",
+      "description":"Menu-Example",
+      "header":"Menu-Example"
    }
 
 ]
