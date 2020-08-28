@@ -69,7 +69,9 @@
                         }
                 }
 
-                ul { list-style-type: none; }
+                ul {
+                        list-style-type: none;
+                }
         </style>
 </head>
 
@@ -231,18 +233,27 @@
                         var liList = document.getElementsByTagName('a');
                         currIndex = ((currIndex + increment + liList.length) % (liList.length));
                         console.log('increment : ' + increment + '  |  currIndex : ' + currIndex);
-                        liList[currIndex].scrollIntoView();
+                        
+                        // liList[currIndex].scrollTo({
+                        //         top: 100,
+                        //         left: 100,
+                        //         behavior: 'smooth'
+                        // });
                         liList[currIndex].click();
+                        liList[currIndex].scrollIntoView();
                 }
 
                 function bodyKeyDownEventListener(event) {
                         var x = event.key;
+                        console.log(' key : ' + x);
                         switch (x) {
                                 case 'p':
                                 case 'P':
+                                case 'ArrowUp':
                                         iterateAnchor(-1); break;
                                 case 'n':
                                 case 'N':
+                                case 'ArrowDown':
                                         iterateAnchor(1); break;
                                 default:
                                         //console.log(' key : '+x); 
