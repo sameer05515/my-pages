@@ -13,6 +13,9 @@ function codingdudeGravatar(element) {
     if (element.attributes.email) {
         //get the email address from the element's email attribute
         let email = element.attributes.email.value;
+        let functionImgMouseOverEventListerner=element.attributes.onMouseOverEvent.fn;
+
+        console.log('----------\nfunctionImgMouseOverEventListerner : \n'+functionImgMouseOverEventListerner);
         let gravatar = "http://www.gravatar.com/avatar/" + md5(email) + ".png";
         
         //element.innerHTML = "<img src='" + gravatar + "'>";
@@ -22,6 +25,7 @@ function codingdudeGravatar(element) {
         imgElem.addEventListener('mouseover', function(){
             console.log(' Email - '+email+' mouse-hovered! - ');
         });
+        //imgElem.addEventListener('mouseover',functionImgMouseOverEventListerner);
         element.appendChild(imgElem);
         
 
@@ -29,6 +33,11 @@ function codingdudeGravatar(element) {
         spanElem.innerHTML='<b>'+email+'</b>';
         element.appendChild(spanElem);
     }
+}
+
+function funcImgMouseOverEventListerner(element,email){
+    console.log('External function : Email - '+email+' mouse-hovered! - ');
+    
 }
 
 //customTag("codingdude-gravatar",codingdudeGravatar);
