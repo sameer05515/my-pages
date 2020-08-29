@@ -3,6 +3,20 @@ app.controller('DemoController', function ($scope, $http, $log,AppConfig) {
 
 	$scope.linkData = [];
 	$scope.dbBakupLinkData = [];
+	$scope.emailData=[
+		"aaa.kumar@gmail.com","bbb.kumar@gmail.com","ccc.kumar@gmail.com"
+	];
+
+	$scope.addFruit = function (aa) {
+		//if ($scope.checked_fruits.indexOf(fruit) != -1) return;
+		
+		var max=$scope.emailData.length;
+		var newEmailId='ddd'+max+'@gmail.com';
+		console.log(' new value :  '+newEmailId+' - Date '+new Date());
+		$scope.emailData.push(newEmailId);
+		//customTag("make-bold-prem", makeBoldPrem);
+	};
+
 	$scope.stylesData = {};
 	$scope.settings={
 		"showLinkData" : AppConfig.showLinkData,
