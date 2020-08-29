@@ -179,6 +179,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Create-Custom-Elements/index.html",
       "description":"Create-Custom-Elements",
       "header":"Create-Custom-Elements"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Chart-Examples/index.html",
+      "description":"Chart-Examples",
+      "header":"Chart-Examples"
    }
 
 ]

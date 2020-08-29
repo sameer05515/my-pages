@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<script type="text/javascript">
+	window.onload = function () {
+		var chart = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "Understanding Labels"
+			},
+			axisY: {
+				labelFontSize: 20,
+				labelFontColor: "dimGrey"
+			},
+			axisX: {
+				labelAngle: -30
+			},
+			data: [
+			{
+				type: "column",
+				dataPoints: [
+				{ y: 10, label: "Apples" },
+				{ y: 15, label: "Mangos" },
+				{ y: 25, label: "Oranges" },
+				{ y: 30, label: "Grapes" },
+				{ y: 28, label: "Bananas" }
+				]
+			}
+			]
+		});
+
+	chart.render();
+	}
+	</script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+	<div id="chartContainer" style="height: 300px; width: 100%;">
+	</div>
+</body>
+</html>

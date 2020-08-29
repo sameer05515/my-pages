@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title: {
+        text: "Axis Y labels with Formatted Numbers"
+      },
+      axisY:{    
+        valueFormatString:  "#,##0.##", // move comma to change formatting
+        prefix: "$"
+     },
+      data: [
+      {        
+        type: "column",
+        dataPoints: [
+        { x: 1, y: 7100 },
+        { x: 2, y: 5500},
+        { x: 3, y: 5000 },
+        { x: 4, y: 6500 },
+        { x: 5, y: 9500 },
+        { x: 6, y: 6800 },
+        { x: 7, y: 2800 },
+        { x: 8, y: 3400 },
+        { x: 9, y: 1400}
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
