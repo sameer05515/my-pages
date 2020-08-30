@@ -22,7 +22,7 @@
     public static List<String> getAllHtmlFiles(String exampleDirPath, String appender) {
 		StringBuffer sb = new StringBuffer();
 
-		List<String> allHtmlFiles = new ArrayList<>();
+		List<String> allHtmlFiles = new ArrayList<String>();
 
 		File[] htmlFilesArr = new File(exampleDirPath).listFiles(new FileFilter() {
 
@@ -137,7 +137,7 @@
         .activeLink {
             background-color: rgb(133, 218, 126);
             font-weight: bold;
-            font-size: 150%;
+            font-size: 120%;
         }
 
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
