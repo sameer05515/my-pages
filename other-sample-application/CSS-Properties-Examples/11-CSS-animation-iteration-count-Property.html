@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDivId {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+		Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-iteration-count Property</h1>
+<h2>Play the animation two times:</h2>
+</div>
+
+<h1>The animation-iteration-count Property</h1>
+
+<p>Play the animation two times:</p>
+
+<div id="myMoveDivId"></div>
+
+<p><strong>Note:</strong> The animation-iteration-count property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
