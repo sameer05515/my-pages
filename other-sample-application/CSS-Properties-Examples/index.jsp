@@ -11,7 +11,7 @@
 
         ServletContext context = request.getServletContext();
         String realpath = context.getRealPath(folderRelativePath);
-        out.println("realpath == "+realpath);
+        //out.println("realpath == "+realpath);
         List<String> htmlFiles= getAllHtmlFiles(realpath,appenderForFolderPathWrtIndexJSP);
         String ulLiText=generateLinksHtmlTextFromList(htmlFiles);
         
@@ -99,7 +99,7 @@
             float: left;
             width: 25%;
             /* padding: 10px; */
-            height: 540px;
+            height: 500px;
             /* Should be removed. Only for demonstration */
         }
 
@@ -107,7 +107,7 @@
             float: left;
             width: 75%;
             /* padding: 10px; */
-            height: 540px;
+            height: 500px;
             /* Should be removed. Only for demonstration */
         }
 

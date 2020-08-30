@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 10px dashed black;
+  padding: 25px;
+  background-image: url("images/img_tree.gif"), url("images/paper.gif");
+  background-repeat: no-repeat;
+  background-origin: content-box, padding-box;
+}
+
+#example2 {
+  border: 10px dashed black;
+  padding: 25px;
+  background-image: url("images/img_tree.gif"), url("images/paper.gif");
+  background-repeat: no-repeat;
+  background-origin: content-box, border-box;
+}
+
+#example3 {
+  border: 10px dashed black;
+  padding: 25px;
+  background-image: url("images/img_tree.gif"), url("images/paper.gif");
+  background-repeat: no-repeat;
+  background-origin: content-box, content-box;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_background-origin.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;">CSS background-origin Property</h1>
+<h2 style="background-color: darkgrey;">Set two background images for a &lt;div&gt; element. Let the "paper.gif" background image starts from the upper left corner of the padding edge, and let the "img_tree.gif" background image starts from the upper left corner of the content:</h2>
+</div>
+
+<h2>background-origin: content-box, padding-box:</h2>
+<div id="example1">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the padding edge.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, border-box:</h2>
+<div id="example2">
+  <h2>Hello World</h2>
+  <p>The "paper.gif" background image starts from the upper left corner of the border.</p>
+  <p>The "img_tree.gif" background image starts from the upper left corner of the content.</p>
+</div>
+
+<h2>background-origin: content-box, content-box:</h2>
+<div id="example3">
+  <h2>Hello World</h2>
+  <p>Both background images starts from the upper left corner of the content.</p>
+</div>
+
+</body>
+</html>
