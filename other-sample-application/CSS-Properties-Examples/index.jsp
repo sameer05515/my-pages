@@ -99,7 +99,7 @@
             float: left;
             width: 25%;
             /* padding: 10px; */
-            height: 570px;
+            height: 540px;
             /* Should be removed. Only for demonstration */
         }
 
@@ -107,7 +107,7 @@
             float: left;
             width: 75%;
             /* padding: 10px; */
-            height: 570px;
+            height: 540px;
             /* Should be removed. Only for demonstration */
         }
 
@@ -115,7 +115,7 @@
             float: left;
             width: 25%;
             /* padding: 10px; */
-            height: 30px;
+            height: 40px;
             /* Should be removed. Only for demonstration */
         }
 
@@ -123,7 +123,7 @@
             float: left;
             width: 75%;
             /* padding: 10px; */
-            height: 30px;
+            height: 40px;
             /* Should be removed. Only for demonstration */
         }
 

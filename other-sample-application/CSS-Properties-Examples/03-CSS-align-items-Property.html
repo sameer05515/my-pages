@@ -3,57 +3,48 @@
 <head>
 <style> 
 #main {
-  width: 70px;
+  width: 220px;
   height: 300px;
-  border: 1px solid #c3c3c3;
+  border: 1px solid black; 
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
 }
 
 #main div {
-  width: 70px;
-  height: 70px;
+   flex: 1;
 }
 </style>
 </head>
 <body>
-    Reference : <a href="https://www.w3schools.com/cssref/css3_pr_align-content.asp"  
-    target="_blank">Click here</a>
-<h1>CSS align-content Property</h1>
-<h2>Pack lines toward the center of the flex container:</h2>
 
+    Reference : <a href="https://www.w3schools.com/cssref/css3_pr_align-items.asp"  
+    target="_blank">Click here</a>
+<h1>CSS align-items Property</h1>
+<h2>Center the alignments for all the items of the flexible &lt;div&gt; element:</h2>
 
 <div id="main">
-  <div style="background-color:coral;"></div>
-  <div style="background-color:lightblue;"></div>
-  <div style="background-color:pink;"></div>
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
 </div>
 
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-content property.</p>
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-items property.</p>
 
 <hr>
 <hr>
 <div id="definitionAndUsageSection">
-
     <h2>Example</h2>
-    Pack lines toward the center of the flex container:
+    Center the alignments for all the items of the flexible &lt;div&gt; element: <br>
     <pre style="padding:5px; border: solid #b91de0; background-color: rgb(247, 159, 128);">
     div {
-        width: 70px;
-        height: 300px;
-        border: 1px solid #c3c3c3;
         display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-    }          
+        align-items: center;
+    }
     </pre>
-
+    <br>
     <h2>Definition and Usage</h2>
-    <p>The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.</p>
-    <p><b>Note:</b> There must be multiple lines of items for this property to have any effect!</p>
-    <p><b>Tip:</b> Use the justify-content property to align the items on the main-axis (horizontally).</p>
-
+    <p>The align-items property specifies the default alignment for items inside the flexible container.</p>
+    <p><b>Tip:</b> Use the align-self property of each item to override the align-items property.</p>
     <p style="padding: 5px 5px 5px 5px; margin: 5px 5px 5px 5px; border: solid #08000a;">
         <b>Default value:</b>	stretch <br>
         <b>Inherited:</b>	no <br>
@@ -61,11 +52,12 @@
         <b>Version:</b>	CSS3 <br>
         <b>JavaScript syntax:</b>	object.style.alignContent="center" <br>
     </p>
+
     <br>
     <h2>CSS Syntax</h2>
     <pre style="padding:5px; border: solid #a60ecc;  background-color: rgb(247, 159, 128);">
         
-        align-content: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit;
+        align-items: stretch|center|flex-start|flex-end|baseline|initial|inherit;
 
     </pre>
     <br>
@@ -97,13 +89,8 @@
             </tr>
             
             <tr>
-                <td style="border: 1px solid black;">space-between</td> 
-                <td style="border: 1px solid black;">Lines are evenly distributed in the flex container</td>
-            </tr>
-            
-            <tr style="border: 1px solid black;">
-                <td style="border: 1px solid black;">space-around</td> 
-                <td style="border: 1px solid black;">Lines are evenly distributed in the flex container, with half-size spaces on either end</td>
+                <td style="border: 1px solid black;">baseline</td> 
+                <td style="border: 1px solid black;">Items are positioned at the baseline of the container</td>
             </tr>
             
             <tr style="border: 1px solid black;">
@@ -116,9 +103,7 @@
             </tr>
         </table>        
     </div>
-
 </div>
-
 
 
 </body>

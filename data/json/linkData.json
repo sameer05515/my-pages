@@ -184,6 +184,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Chart-Examples/index.html",
       "description":"Chart-Examples",
       "header":"Chart-Examples"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/CSS-Properties-Examples/index.jsp",
+      "description":"CSS-Properties-Examples",
+      "header":"CSS-Properties-Examples"
    }
 
 ]
