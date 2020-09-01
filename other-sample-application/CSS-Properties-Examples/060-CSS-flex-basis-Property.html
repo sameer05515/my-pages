@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#main {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50px;
+}
+
+#main div:nth-of-type(2) {
+  flex-basis: 100px;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_flex-basis.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS flex-basis Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Set the initial length of the second flex-item to 100 pixels:</h2>
+</div>
+
+
+<h1>The flex-basis Property</h1>
+
+<p>Set the initial length of the flex items to 50 pixels, with an exception; set the initial length of the second flex item to 100 pixels:</p>
+<div id="main">
+  <div style="background-color:coral;">50px</div>
+  <div style="background-color:lightblue;">100px</div>
+  <div style="background-color:khaki;">50px</div>
+  <div style="background-color:pink;">50px</div>
+  <div style="background-color:lightgrey;">50px</div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the flex-basis property.</p>
+
+</body>
+</html>
