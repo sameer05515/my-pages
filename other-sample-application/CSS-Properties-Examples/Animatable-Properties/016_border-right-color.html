@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  border: 15px solid coral;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {border-right-color: lightblue;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of border-right-color</h1>
+
+<p>Gradually change the border-right-color property from coral to lightblue, then back:<p>
+<div id="myDIV"></div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>
