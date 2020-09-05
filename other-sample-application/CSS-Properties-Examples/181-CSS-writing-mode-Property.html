@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.test1 {
+  writing-mode: horizontal-tb; 
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="opacity: 1.0;background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_writing-mode.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS writing-mode Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Specify whether lines of text are laid out horizontally or vertically:</h2>
+</div>
+
+
+<h1>The writing-mode Property</h1>
+
+<p class="test1">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+<p class="test2">Some text with writing-mode: vertical-rl.</p>
+
+</body>
+</html>
