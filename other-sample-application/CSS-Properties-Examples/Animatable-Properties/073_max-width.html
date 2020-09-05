@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  background-color: lightblue;
+  overflow: auto;
+  border: 1px solid black;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {max-width: 600px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of max-width</h1>
+
+<p>Change the max-width from "none" to "600px", and back to "none":<p>
+
+<div id="myDIV">
+  <p>This DIV element does not have a pre-defined width.</p>
+  <p>Try resizing the browser window to see that width of this DIV element will grow/shrink along width the resizing, but it will never exceed 600 pixels in width.</p>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

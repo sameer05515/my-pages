@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+  position: relative;
+  margin: auto;
+  height: 150px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+  perspective: 125px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {perspective-origin: 10px 50%;}
+}
+
+#div2 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: coral;
+  transform: rotateX(45deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of perspective-origin</h1>
+
+<div id="div1">DIV1
+  <div id="div2">DIV2</div>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

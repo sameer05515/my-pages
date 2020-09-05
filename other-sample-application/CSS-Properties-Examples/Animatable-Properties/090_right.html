@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {right: 500px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of right</h1>
+
+<p>Gradually change the right position of the DIV element from 0 to 500px, and back to 0:<p>
+<div id="myDIV">
+  <h1>My DIV</h1>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 250px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 50px;
+}
+
+#myBlueDiv {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {flex-basis: 200px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of flex-basis</h1>
+
+<p>Gradually change the flex-basis property of the BLUE div from 50px to 200px, and back:<p>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 270px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+}
+
+#main div {
+  -ms-flex: 1;  /* IE 10 */  
+  flex: 1;
+}
+
+#myBlueDiv {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {flex: 3;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of flex</h1>
+
+<p>Gradually change the flex property of the BLUE div element from 1 to 3, and back:<p>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>  
+  <div style="background-color:lightgreen;">GREEN</div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 10 supports an alternate, the -ms-flex property. IE11 and newer versions fully support the flex property (do not need the -ms- prefix).</p>
+
+</body>
+</html>
