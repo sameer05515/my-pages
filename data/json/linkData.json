@@ -189,6 +189,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/CSS-Properties-Examples/index.jsp",
       "description":"CSS-Properties-Examples",
       "header":"CSS-Properties-Examples"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/wikipedia-template/index.html",
+      "description":"WIKIPEDIA-TEMPLATE-EXAMPLES",
+      "header":"WIKIPEDIA-TEMPLATE-EXAMPLES"
    }
 
 ]
