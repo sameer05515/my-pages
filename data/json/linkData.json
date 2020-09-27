@@ -194,6 +194,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/wikipedia-template/index.html",
       "description":"WIKIPEDIA-TEMPLATE-EXAMPLES",
       "header":"WIKIPEDIA-TEMPLATE-EXAMPLES"
+   },
+   {
+      "url":"http://127.0.0.1:8080/ShoppingCart/",
+      "description":"Rewriting ShoppingCart Application",
+      "header":"Rewriting ShoppingCart Application"
    }
 
 ]
