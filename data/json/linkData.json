@@ -199,6 +199,11 @@
       "url":"http://127.0.0.1:8080/ShoppingCart/",
       "description":"Rewriting ShoppingCart Application",
       "header":"Rewriting ShoppingCart Application"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/WORD-POWER-MADE-EASY/index.jsp",
+      "description":"WORD-POWER-MADE-EASY",
+      "header":"WORD-POWER-MADE-EASY"
    }
 
 ]
