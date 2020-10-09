@@ -204,6 +204,16 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/WORD-POWER-MADE-EASY/index.jsp",
       "description":"WORD-POWER-MADE-EASY",
       "header":"WORD-POWER-MADE-EASY"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/graph-data-representation/index.jsp",
+      "description":"graph-data-representation",
+      "header":"graph-data-representation"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/CSS-How-to/index.jsp",
+      "description":"CSS-How-to",
+      "header":"CSS-How-to"
    }
 
 ]
