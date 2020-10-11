@@ -49,7 +49,7 @@
     //     update(graph.links, graph.nodes);
     // })
 
-    d3.json("familyTree.json", function (error, graph) {
+    d3.json("familyTreeFromDB.json", function (error, graph) {
         if (error) throw error;
         update(graph.links, graph.nodes);
     })
