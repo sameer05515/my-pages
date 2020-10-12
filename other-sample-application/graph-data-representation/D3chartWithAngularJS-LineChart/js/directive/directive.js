@@ -13,8 +13,10 @@
 										0, 0, 0, 0, 0 ];
 								var width = 800, height = 500, margin = 45;
 							// creating a div to contain line charts.
-								var div = d3.select('body').append('div');
+								var div = d3.select('body').append('div')
+								.style('border','solid black');
 								var svg = div.append('svg:svg')
+											.attr('class','lines-respresentation')
 											.attr('width', width)
 											.attr('height',	height)
 											.style('background-color', '#eee');
@@ -31,7 +33,7 @@
 							// define render function
 								scope.render = function(d) {
 							// remove all previous items before render
-								svg.selectAll("*").remove();
+								//svg.selectAll(".lines-respresentation").remove();
 							// setup variables
 								var y = d3.scale.linear().domain(
 										[ 0, d3.max(data) ]).range(
