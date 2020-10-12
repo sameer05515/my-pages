@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../D3chartWithAngularJS-LineChart/css/angular.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script type="text/javascript" src='d3.v3.min.js'></script>
+    
+    <script type="text/javascript" src="../D3chartWithAngularJS-LineChart/js/Angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <!-- <script type="text/javascript" src="graphDataDisplay.directive.js"></script> -->
+	<!-- <script type="text/javascript" src="../js/d3.js" ></script> -->
+</head>
+
+<body>
+    <div ng-app="chartApp" ng-controller="SalesController">
+        <h1>Today's Sales Chart</h1>
+        <div linear-chart chart-data="salesData"></div>
+        <hr><hr>
+        
+        <!-- <div graph-data-display="salesData"></div> -->
+    </div>
+</body>
+
+</html>
