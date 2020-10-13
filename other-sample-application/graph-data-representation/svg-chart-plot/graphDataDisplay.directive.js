@@ -1,9 +1,11 @@
-app.directive('graphDataDisplay', function ($parse, $window) {
+app.directive('graphDataDisplay', function ($parse, $window,$log) {
     return {
         restrict: 'EA',
         template: "<svg width='850' height='400' style='border: solid green;'></svg>",
         link: function (scope, elem, attrs) {
-            var exp = $parse(attrs.chartData);
+            //var exp = $parse(attrs.chartData);
+
+            $log.log('------------>\n'+angular.toJson(attrs));
 
             var graph = $parse(attrs.chartData);
 
@@ -32,10 +34,10 @@ app.directive('graphDataDisplay', function ($parse, $window) {
 
             
 
-            scope.$watchCollection(exp, function (newVal, oldVal) {
-                salesDataToPlot = newVal;
-                redrawLineChart();
-            });
+            // scope.$watchCollection(exp, function (newVal, oldVal) {
+            //     salesDataToPlot = newVal;
+            //     redrawLineChart();
+            // });
 
             scope.$watchCollection(graph, function (newVal, oldVal) {
                 graphDataToPlot = newVal;
