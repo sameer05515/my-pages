@@ -9,9 +9,7 @@ app.directive('graphDataDisplay', function ($parse, $window) {
 
             console.log('From directive: recieved graph : attrs.chartData : ' + attrs.chartData);
 
-
-
-            var salesDataToPlot = exp(scope);
+            // var salesDataToPlot = exp(scope);
             var graphDataToPlot = graph(scope);
             var padding = 20;
             var pathClass = "path";
@@ -20,11 +18,19 @@ app.directive('graphDataDisplay', function ($parse, $window) {
             var d3 = $window.d3;
             var rawSvg = elem.find('svg');
             var svg = d3.select(rawSvg[0]);
+            var colors = d3.scaleOrdinal(d3.schemeCategory10);
 
             var width = +svg.attr("width"),
                 height = +svg.attr("height"),
                 node,
                 link;
+
+            var simulation = d3.forceSimulation()
+                    .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(100).strength(1))
+                    .force("charge", d3.forceManyBody())
+                    .force("center", d3.forceCenter(width / 2, height / 2));
+
+            
 
             scope.$watchCollection(exp, function (newVal, oldVal) {
                 salesDataToPlot = newVal;
@@ -34,8 +40,7 @@ app.directive('graphDataDisplay', function ($parse, $window) {
             scope.$watchCollection(graph, function (newVal, oldVal) {
                 graphDataToPlot = newVal;
                 console.log('From directive: recieved graph : graphDataToPlot : ' + angular.toJson(graphDataToPlot));
-                // redrawLineChart();
-                // update(graphDataToPlot.links, graphDataToPlot.nodes);
+                update(graphDataToPlot.links, graphDataToPlot.nodes);
             });
 
 
@@ -216,10 +221,7 @@ app.directive('graphDataDisplay', function ($parse, $window) {
                     .attr('fill', '#999')
                     .style('stroke', 'none');
 
-                var simulation = d3.forceSimulation()
-                    .force("link", d3.forceLink().id(function (d) { return d.id; }).distance(100).strength(1))
-                    .force("charge", d3.forceManyBody())
-                    .force("center", d3.forceCenter(width / 2, height / 2));
+                
 
                     update(graphDataToPlot.links, graphDataToPlot.nodes);
                 // setChartParameters();
