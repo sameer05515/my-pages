@@ -1,7 +1,7 @@
 app.directive('graphDataDisplay', function ($parse, $window) {
     return {
         restrict: 'EA',
-        template: "<svg width='1250' height='400' style='border: solid green;'></svg>",
+        template: "<svg width='850' height='400' style='border: solid green;'></svg>",
         link: function (scope, elem, attrs) {
             var exp = $parse(attrs.chartData);
 
