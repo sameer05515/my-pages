@@ -69,7 +69,7 @@
 		int index = 0;
 		sb.append("<ul>\n");
 		for (String link : linksArr) {
-			sb.append("<li><a onclick=\"load(this," + (index++) + ",'" +  link + "')\">" + "" + link
+			sb.append("<li><a class=\"htmlFileLinkClass\" onclick=\"load(this," + (index++) + ",'" +  link + "')\">" + "" + link
 					+ "</a>\r\n" + "                                </li>\n");
 		}
 		sb.append("</ul>\n");
@@ -168,7 +168,9 @@
             <input type="button" value="prev" onclick="iterateAnchor(-1)">
             <span id="clickedItemDisplayId">none</span>
         </div>
-        <div class="column-sm-20"></div>
+        <div class="column-sm-20">
+            Open in new tab <a id="anchorToOpenInNewTab" href="" target="_blank">click here</a>
+        </div>
     </div>
     <div class="row">
 
@@ -202,7 +204,8 @@
             console.log('src ' + srcc);
             var ifrm = document.getElementById('myiframe');
             var clickedItemDisplay = document.getElementById('clickedItemDisplayId');
-            var liList = document.getElementsByTagName('a');
+            var anchor = document.getElementById('anchorToOpenInNewTab');
+            var liList = document.getElementsByClassName('htmlFileLinkClass');
             for (var i = 0; i < liList.length; i++) {
                 liList[i].classList.remove('activeLink');
             }
@@ -211,12 +214,13 @@
             clickedItemDisplay.textContent = '';
             clickedItemDisplay.textContent = srcc;
             ifrm.src = srcc;
+            anchor.href=srcc;
         }
 
 
         function iterateAnchor(increment) {
 
-            var liList = document.getElementsByTagName('a');
+            var liList = document.getElementsByClassName('htmlFileLinkClass');
             currIndex = ((currIndex + increment + liList.length) % (liList.length));
             console.log('increment : ' + increment + '  |  currIndex : ' + currIndex);
 
