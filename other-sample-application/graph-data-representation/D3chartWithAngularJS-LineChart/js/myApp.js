@@ -53,10 +53,10 @@ myApp.directive('directedWeightedGraph', function () {
 
 
 myApp.controller('MyController', function ($scope, $window) {
-    $scope.keyA = 'MyFoot';
-    $scope.valueA = 'MyLund';
-    $scope.src = 'abcd';
-    $scope.parent = 'merabaap';
+    $scope.keyA = 'keyAValue';
+    $scope.valueA = 'valueAValue';
+    $scope.src = 'srcValue';
+    $scope.parent = 'parentValue';
     $scope.blabla = function (msg) {
         console.log('from controller', $scope.keyA, $scope.valueA);
         $window.alert('hello ' + msg + '\n' + 'from controller' + $scope.keyA + $scope.valueA);
