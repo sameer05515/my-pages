@@ -214,6 +214,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/CSS-How-to/index.jsp",
       "description":"CSS-How-to",
       "header":"CSS-How-to"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/college-data",
+      "description":"college-data",
+      "header":"college-data"
    }
 
 ]
