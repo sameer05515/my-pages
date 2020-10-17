@@ -224,6 +224,11 @@
 		"url":"http://127.0.0.1:8080/my-pages/other-sample-application/phone-cat",
       "description":"phone-cat",
       "header":"phone-cat"
+   },
+   {
+		"url":"http://127.0.0.1:8080/my-pages/other-sample-application/directive-test",
+      "description":"directive-test",
+      "header":"directive-test"
    }
 
 ]

@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-12">
+    <!-- <div class="table-responsive">
+      <table id="studentsTable" class="table table-bordered table-condensed table-hover" data-current-stud-id="">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat-start="student in Students" class="rowDirctive">
+            <td>{{student.FirstName}}</td>
+            <td>{{student.LastName}}</td>
+          </tr>
+          Empty row
+          <tr class="empty-row" style="display:none" id="{{student.Id}}" ng-repeat-end>
+            <td colspan="2"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+
+    <div ng-repeat="student in Students">
+      <pre>{{student | json}}</pre>
+      <my-student-directive id="{{student.Id}}" firstName="{{student.FirstName}}" lastName="{{student.LastName}}" />
+    </div>
+
+    <my-student-list-directive myyTitle="{{premendra}}" myyAge="{{30}}" myStudentsList="{{Students}}"></my-student-list-directive>
+
+  </div>
+</div>
