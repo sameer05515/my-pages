@@ -43,8 +43,8 @@ appRoot.directive('myStudentListDirective', function () {
     link: function(scope, element, attrs){
 
         console.log('==>> myStudentListDirective '+JSON.stringify(attrs));
-        //var idd = scope.$eval(attrs.myStudentsList);
-        // console.log('---------->>>>>>>>  scope.myStudentsList '+scope.StudentsList);
+        var idd = scope.$eval(attrs.myStudentsList);
+        console.log('---------->>>>>>>>  scope.myStudentsList '+idd);
         // console.log('---------->>>>>>>>  attrs.StudentsList '+attrs.StudentsList);
         console.log('---------->>>>>>>>  attrs.myyTitle '+attrs.myyTitle);
         console.log('---------->>>>>>>>  attrs.myyAge '+attrs.myyAge);
