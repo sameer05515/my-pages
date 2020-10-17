@@ -219,6 +219,11 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/college-data",
       "description":"college-data",
       "header":"college-data"
+   },
+   {
+		"url":"http://127.0.0.1:8080/my-pages/other-sample-application/phone-cat",
+      "description":"phone-cat",
+      "header":"phone-cat"
    }
 
 ]
