@@ -229,6 +229,11 @@
 		"url":"http://127.0.0.1:8080/my-pages/other-sample-application/directive-test",
       "description":"directive-test",
       "header":"directive-test"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Spring-Rest-API-For-Beginners/index.jsp",
+      "description":"Spring-Rest-API-For-Beginners",
+      "header":"Spring-Rest-API-For-Beginners"
    }
 
 ]
