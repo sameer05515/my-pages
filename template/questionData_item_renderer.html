@@ -19,6 +19,11 @@ Question :  <span style="font: 175% sans-serif;color: #ff000d; font-weight: bold
 		<i class="fa fa-angle-right"></i>
 	</a>
 
+	<a ng-show="!templateQuestionData.showEditQuestion" class="btn btn-xs btn-primary">
+		Refresh Answers List
+		<i class="fa fa-angle-right"></i>
+	</a>
+
 	<div ng-show="templateQuestionData.showEditQuestion">
 		<trix-editor angular-trix ng-model="templateQuestionData.question"
 			ng-show="templateQuestionData.showEditQuestion"></trix-editor>
