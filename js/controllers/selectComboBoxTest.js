@@ -65,7 +65,7 @@ app.controller("selectComboBoxTest", function (
 
 	$scope.refreshAllCategories=function (){
 		$http
-			.get(AppConfig.interviewMgmtServices + "/categories")
+			.get(AppConfig.interviewMgmtServices + "/categories/optimized/opti")
 			.then(function (response) {
 				$scope.categoryData = [];
 				angular.forEach(
