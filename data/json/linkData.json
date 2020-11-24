@@ -239,6 +239,31 @@
       "url":"http://127.0.0.1:8080/ShrimadBhagwatGeeta",
       "description":"ShrimadBhagwatGeeta",
       "header":"ShrimadBhagwatGeeta"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-Loading-Spinner-Example/index.html",
+      "description":"AngularJS-Loading-Spinner-Example",
+      "header":"AngularJS-Loading-Spinner-Example"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Spinner-Example/index.jsp",
+      "description":"Spinner-Example",
+      "header":"Spinner-Example"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/SpinKit/examples.html",
+      "description":"SpinKit",
+      "header":"SpinKit"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/hand-written-svg-text-animation/index.html",
+      "description":"hand-written-svg-text-animation",
+      "header":"hand-written-svg-text-animation"
+   },
+   {
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/404-error-page/index.html",
+      "description":"404-error-page",
+      "header":"404-error-page"
    }
 
 ]

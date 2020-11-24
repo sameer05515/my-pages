@@ -59,15 +59,14 @@ app.controller("selectComboBoxTest", function (
 	};
 
 	$scope.init = function () {
+		$scope.refreshAllCategories();
+		$scope.getStyleData();
+	};
+
+	$scope.refreshAllCategories=function (){
 		$http
 			.get(AppConfig.interviewMgmtServices + "/categories")
 			.then(function (response) {
-				// $scope.categoryData = response.data;
-				// angular.forEach($scope.categoryData, function (val, key) {
-				// val.showQuestionsOfCategory=true;
-				// val.collapseCategoryQuestions=true;
-				// });
-
 				$scope.categoryData = [];
 				angular.forEach(
 					response.data,
@@ -78,12 +77,12 @@ app.controller("selectComboBoxTest", function (
 					},
 					$scope.categoryData
 				);
-
-				//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
 			}, onError);
+	};
+
+	$scope.getStyleData=function (){
 		$http.get("data/json/stylesData.json").then(function (response) {
-			$scope.stylesData = response.data;
-			//$log.log("Succsss : status " + response.status + " data " + angular.toJson(response.data));
+			$scope.stylesData = response.data;			
 		}, onError);
 	};
 
