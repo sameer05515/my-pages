@@ -70,6 +70,8 @@
 
 		<button ng-mouseup="refreshAllCategories();" ng-show="!showData">Refresh All Categories</button>
 
+		<button ng-mouseup="" ng-show="!showData">Add Category</button>
+
 		<div ng-show="showData">
 			<div ng-repeat="option in categoryData">
 				<input type="checkbox" ng-model="option.showQuestionsOfCategory">&nbsp;
