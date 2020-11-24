@@ -256,14 +256,10 @@
       "header":"SpinKit"
    },
    {
-      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/hand-written-svg-text-animation/index.html",
-      "description":"hand-written-svg-text-animation",
-      "header":"hand-written-svg-text-animation"
-   },
-   {
-      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/404-error-page/index.html",
-      "description":"404-error-page",
-      "header":"404-error-page"
+      "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Sample-Applications-From-codepen-plunker/index.jsp",
+      "description":"Sample-Applications-From-codepen-plunker",
+      "header":"Sample-Applications-From-codepen-plunker"
    }
+   
 
 ]
