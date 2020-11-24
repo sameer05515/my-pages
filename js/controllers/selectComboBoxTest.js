@@ -90,6 +90,40 @@ app.controller("selectComboBoxTest", function (
 		console.log(rating);
 	};
 
+	$scope.showCategoryQuestions=function(givenCategoryObject){
+
+		$log.log("recievedCategoryData : " + angular.toJson(givenCategoryObject) );
+
+		$http
+			.get(AppConfig.interviewMgmtServices + "/categories" + "/"
+			+ givenCategoryObject.catID)
+			.then(function (response) {
+				//$scope.categoryData = [];
+
+				$log.log("fetchedCategoryData : " + angular.toJson(response.data) );
+
+				
+				for (var index=0;index< $scope.categoryData.length;index++) {
+					var categ=$scope.categoryData[index];
+					if (categ.catID===response.data.catID) {
+						$scope.categoryData[index]=response.data;
+						$scope.categoryData[index].collapseCategoryQuestions=false;						
+					}
+				}
+				// angular.forEach(
+				// 	response.data,
+				// 	function (val, key) {
+				// 		val.showQuestionsOfCategory = true;
+				// 		val.collapseCategoryQuestions = true;
+				// 		this.push(val);
+				// 	},
+				// 	$scope.categoryData
+				// );
+			}, onError);
+
+		//givenCategoryObject.collapseCategoryQuestions=false;
+	};
+
 	$scope.editCategory = function (editedCategoryObject) {
 		$log.log("editedCategoryObject : " + angular.toJson(editedCategoryObject));
 
