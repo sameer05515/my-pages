@@ -98,7 +98,6 @@ app.controller("selectComboBoxTest", function (
 			.get(AppConfig.interviewMgmtServices + "/categories" + "/"
 			+ givenCategoryObject.catID)
 			.then(function (response) {
-				//$scope.categoryData = [];
 
 				$log.log("fetchedCategoryData : " + angular.toJson(response.data) );
 
@@ -110,18 +109,10 @@ app.controller("selectComboBoxTest", function (
 						$scope.categoryData[index].collapseCategoryQuestions=false;						
 					}
 				}
-				// angular.forEach(
-				// 	response.data,
-				// 	function (val, key) {
-				// 		val.showQuestionsOfCategory = true;
-				// 		val.collapseCategoryQuestions = true;
-				// 		this.push(val);
-				// 	},
-				// 	$scope.categoryData
-				// );
+
 			}, onError);
 
-		//givenCategoryObject.collapseCategoryQuestions=false;
+		
 	};
 
 	$scope.editCategory = function (editedCategoryObject) {
