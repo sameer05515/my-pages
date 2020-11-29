@@ -1,5 +1,5 @@
 // Code goes here
-var appRoot = angular.module('smapp', ['ngRoute', 'ui.bootstrap']);
+var appRoot = angular.module('smapp', ['ngRoute', 'ui.bootstrap', 'tree.module']);
 
 appRoot.config([
     '$routeProvider', function ($routeProvider) {
@@ -10,7 +10,30 @@ appRoot.config([
 ]);
 
 appRoot.controller('IndexCtrl', function ($scope) {
-    $scope.nodes = [];
+    $scope.nodes = [
+        {
+            "name": "test1",
+            "children": [
+                {
+                    "name": "test11",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "test2",
+            "children": [
+                {
+                    "name": "test21",
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "test3",
+            "children": []
+        }
+    ];
 
 
 });

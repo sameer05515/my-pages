@@ -264,6 +264,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-Tree/tree.html",
    "description":"AngularJS-Tree",
    "header":"AngularJS-Tree"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/parent-child-relation/index.html",
+   "description":"parent-child-relation",
+   "header":"parent-child-relation"
 }
    
 
