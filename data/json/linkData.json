@@ -267,8 +267,13 @@
 },
 {
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/parent-child-relation/index.html",
-   "description":"parent-child-relation",
+   "description":"parent-child-relation - It has working example for tree using directive",
    "header":"parent-child-relation"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-tree-view-example/index.html",
+   "description":"Angular-tree-view-example",
+   "header":"Angular-tree-view-example"
 }
    
 
