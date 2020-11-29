@@ -38,6 +38,10 @@ appRoot.directive('node', function ($compile) {
                     node.childrenVisibility = !node.childrenVisibility;
                 }
             };
+
+            $scope.addChild = function(node){
+
+            };
             // Here We are marking check/un-check all the nodes.
             $scope.checkNode = function (node) {
                 node.checked = !node.checked;
