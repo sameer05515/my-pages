@@ -259,7 +259,12 @@
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Sample-Applications-From-codepen-plunker/index.jsp",
       "description":"Sample-Applications-From-codepen-plunker",
       "header":"Sample-Applications-From-codepen-plunker"
-   }
+   },
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-Tree/tree.html",
+   "description":"AngularJS-Tree",
+   "header":"AngularJS-Tree"
+}
    
 
 ]
