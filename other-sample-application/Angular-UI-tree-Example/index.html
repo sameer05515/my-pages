@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+  <meta charset="utf-8" />
+  <title>AngularJS Plunker</title>
+  <script>document.write('<base href="' + document.location + '" />');</script>
+  <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <link href='angular-ui.tree.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.28/angular.js" data-semver="1.2.28"></script> -->
+
+  <script src="../../lib/js/jquery.js"></script>
+  <script src="../../lib/js/angular-1.5.5/angular.min.js"></script>
+  <script src='angular-ui.tree.min.js'></script>
+  <script src="app.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+  <script type="text/ng-template" id="nodes_renderer.html">
+      <div ui-tree-handle>
+        <div class='form-group'>
+        <input class='form-control' ng-model='node.value' focus>
+        </div>
+        <button class='btn btn-primary' ng-click='$parentNodesScope.$modelValue.splice($index+1,0,{value:"New", nodes:[]}); '>Insert below</button>
+        <button class='btn btn-primary' ng-click='node.nodes.push({value: "New", nodes:[]})'>Insert child</button>
+      </div>
+      <ol ui-tree-nodes="" ng-model="node.nodes">
+        <li ng-repeat="node in node.nodes" ui-tree-node ng-include="'nodes_renderer.html'">
+        </li>
+      </ol>
+    </script>
+
+  <div ui-tree>
+    <ol ui-tree-nodes ng-model="nodes" id="tree-root">
+      <li ng-repeat="node in nodes" ui-tree-node ng-include="'nodes_renderer.html'"></li>
+    </ol>
+  </div>
+
+  {{nodes}}
+</body>
+
+</html>
