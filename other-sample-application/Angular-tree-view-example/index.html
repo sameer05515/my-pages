@@ -34,6 +34,15 @@
                 data-node-label="roleName" data-node-children="children">
             </div>
 
+
+            <div
+                style="margin:10px 0 30px 0; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
+                <span><b>Selected Topic</b> : <b>title</b> :: {{topicTree.currentNode.title}} 
+                    - <b>parentId</b> :: {{topicTree.currentNode.parentId}}
+                    - <b>id</b> :: {{topicTree.currentNode.id}}</span>
+                    <br>
+                    <pre>{{topicTree.currentNode|json}}</pre>
+            </div>
             <div style ="border:5px solid green;" data-angular-treeview="true" 
             data-tree-id="topicTree" 
             data-tree-model="nodes" 
