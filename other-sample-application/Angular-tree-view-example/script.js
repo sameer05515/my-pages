@@ -4,7 +4,17 @@
     var myApp = angular.module('myApp', ['angularTreeview']);
 
     //test controller
-    myApp.controller('myController', function ($scope) {
+    myApp.controller('myController', function ($scope,$http) {
+
+        $scope.nodes =[];
+        $http.get("http://127.0.0.1:8080/ParentChildRelationsTopics/topics/tree/data").
+    then(function (result) {
+        console.log('>>>>>>>>>>>>  '+result);
+        $scope.nodes = result.data.data;
+        //$scope.building($scope.nodes);
+    }, function (result) {
+        alert("Tree no available, Error: " + result);
+    });
 
         //test tree model 1
         $scope.roleList1 = [

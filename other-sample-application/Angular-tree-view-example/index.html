@@ -11,8 +11,9 @@
         <div ng-controller="myController">
 
             <div>
-                <input type="button" value="TREE MODEL 1" data-ng-click="roleList = roleList1" /> <input type="button"
-                    value="TREE MODEL 2" data-ng-click="roleList = roleList2" />
+                <input type="button" value="TREE MODEL 1" data-ng-click="roleList = roleList1" />
+
+                <input type="button" value="TREE MODEL 2" data-ng-click="roleList = roleList2" />
             </div>
 
             <div
@@ -31,6 +32,15 @@
           -->
             <div data-angular-treeview="true" data-tree-id="mytree" data-tree-model="roleList" data-node-id="roleId"
                 data-node-label="roleName" data-node-children="children">
+            </div>
+
+            <div style ="border:5px solid green;" data-angular-treeview="true" 
+            data-tree-id="topicTree" 
+            data-tree-model="nodes" 
+            data-node-id="id"
+            data-node-label="title" 
+            data-node-children="children">
+
             </div>
 
         </div>
