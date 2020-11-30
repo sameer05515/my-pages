@@ -7,8 +7,11 @@
         var tc = this;
         buildTree();
         function buildTree() {
-            TreeService.getTree().then(function (result) {
-                tc.tree = result.data;
+            TreeService.getTopicsTreeData().
+            //getTree().
+            then(function (result) {
+                console.log('>>>>>>>>>>>>  '+result);
+                tc.tree = result.data.data;
             }, function (result) {
                 alert("Tree no available, Error: " + result);
             });

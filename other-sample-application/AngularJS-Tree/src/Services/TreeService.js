@@ -7,5 +7,8 @@
         this.getTree = function () {
             return $http.get(URLConfig.tree);
         };
+        this.getTopicsTreeData = function(){
+            return $http.get(URLConfig.topicsTreeData);
+        };
     }]);
 })(angular);
