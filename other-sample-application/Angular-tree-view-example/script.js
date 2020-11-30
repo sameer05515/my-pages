@@ -4,17 +4,22 @@
     var myApp = angular.module('myApp', ['angularTreeview']);
 
     //test controller
-    myApp.controller('myController', function ($scope,$http) {
+    myApp.controller('myController', function ($scope, $http) {
 
-        $scope.nodes =[];
-        $http.get("http://127.0.0.1:8080/ParentChildRelationsTopics/topics/tree/data").
-    then(function (result) {
-        console.log('>>>>>>>>>>>>  '+result);
-        $scope.nodes = result.data.data;
-        //$scope.building($scope.nodes);
-    }, function (result) {
-        alert("Tree no available, Error: " + result);
-    });
+        $scope.nodes = [];
+        
+        $scope.reloadData=function(){
+            $http.get("http://127.0.0.1:8080/ParentChildRelationsTopics/topics/tree/data").
+            then(function (result) {
+                console.log('>>>>>>>>>>>>  ' + result);
+                $scope.nodes = result.data.data;
+                //$scope.building($scope.nodes);
+            }, function (result) {
+                alert("Tree no available, Error: " + result);
+            });
+        };
+
+        $scope.reloadData();
 
         //test tree model 1
         $scope.roleList1 = [
@@ -113,7 +118,7 @@
                 var a = c.treeId, g = c.treeModel, e = c.nodeLabel || "label", d = c.nodeChildren || "children", e = '<ul><li data-ng-repeat="node in ' + g + '"><i class="collapsed" data-ng-show="node.' + d + '.length && node.collapsed" data-ng-click="' + a + '.selectNodeHead(node)"></i><i class="expanded" data-ng-show="node.' + d + '.length && !node.collapsed" data-ng-click="' + a + '.selectNodeHead(node)"></i><i class="normal" data-ng-hide="node.' +
                     d + '.length"></i> <span data-ng-class="node.selected" data-ng-click="' + a + '.selectNodeLabel(node)">{{node.' + e + '}}</span><div data-ng-hide="node.collapsed" data-tree-id="' + a + '" data-tree-model="node.' + d + '" data-node-id=' + (c.nodeId || "id") + " data-node-label=" + e + " data-node-children=" + d + "></div></li></ul>"; a && g && (c.angularTreeview && (b[a] = b[a] || {}, b[a].selectNodeHead = b[a].selectNodeHead || function (a) { a.collapsed = !a.collapsed }, b[a].selectNodeLabel = b[a].selectNodeLabel || function (c) {
                         b[a].currentNode && b[a].currentNode.selected &&
-                        (b[a].currentNode.selected = void 0); c.selected = "selected"; b[a].currentNode = c
+                            (b[a].currentNode.selected = void 0); c.selected = "selected"; b[a].currentNode = c
                     }), h.html('').append($compile(e)(b)))
             }
         }
