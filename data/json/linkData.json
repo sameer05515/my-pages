@@ -279,6 +279,12 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-UI-tree-Example/index.html",
    "description":"Angular-UI-tree-Example  -- more working example, if we need to add sibling and child",
    "header":"Angular-UI-tree-Example"
+},
+
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/modal-window/index.html",
+   "description":"modal-window",
+   "header":"modal-window"
 }
    
 
