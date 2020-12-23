@@ -241,6 +241,11 @@
       "header":"ShrimadBhagwatGeeta"
    },
    {
+      "url":"http://127.0.0.1:8080/ShriRamCharitManas",
+      "description":"ShriRamCharitManas",
+      "header":"ShriRamCharitManas"
+   },
+   {
       "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-Loading-Spinner-Example/index.html",
       "description":"AngularJS-Loading-Spinner-Example",
       "header":"AngularJS-Loading-Spinner-Example"
