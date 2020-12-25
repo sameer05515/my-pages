@@ -77,7 +77,8 @@
 
     <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
       Using Template :- <br /><br />
-      <div ng-repeat="data in linkData" ng-show="{{settings.showLinkData}}"
+      <input type="text" ng-model="linkSearch">
+      <div ng-repeat="data in linkData | filter:linkSearch" ng-show="{{settings.showLinkData}}"
         ng-include="'template/linkData_item_renderer.html'">
 
       </div>
