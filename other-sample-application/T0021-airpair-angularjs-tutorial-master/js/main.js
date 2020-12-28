@@ -66,7 +66,7 @@ app.controller('repeatController', function($scope,$http) {
 	
 	$scope.linksfromxml=[];
 	//////////
-	$http.get("http://127.0.0.1:8888/T0021-airpair-angularjs-tutorial-master/json/links.json")
+	$http.get("json/links.json")
     .success(function(response) {
 			$scope.friends = response;
 		});
@@ -76,7 +76,7 @@ app.controller('repeatController', function($scope,$http) {
 	
 	$scope.groups = [];
 	$scope.groups1 = [];
-	$http.get("http://127.0.0.1:8888/T0021-airpair-angularjs-tutorial-master/xml/links1.1.xml",
+	$http.get("xml/links1.1.xml",
 	//$http.get("http://127.0.0.1:8888/T0021-airpair-angularjs-tutorial-master/xml/links.xml",
 				{
 		transformResponse: function (cnv) {
