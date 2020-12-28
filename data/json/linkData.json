@@ -290,6 +290,12 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/modal-window/index.html",
    "description":"modal-window",
    "header":"modal-window"
+},
+
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-fusioncharts-master/demos/index.html",
+   "description":"angular-fusioncharts-master/demos",
+   "header":"angular-fusioncharts-master/demos"
 }
    
 
