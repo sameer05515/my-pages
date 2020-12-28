@@ -301,6 +301,11 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
    "description":"BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
    "header":"BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm"
+},
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/template/form.html",
+   "description":"template/form.html",
+   "header":"template/form.html"
 }
    
 
