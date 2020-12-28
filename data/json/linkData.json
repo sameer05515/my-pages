@@ -303,7 +303,7 @@
    "header":"BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm"
 },
 {
-	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/T0021-airpair-angularjs-tutorial-master/index.html#/",
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/template/form.html",
    "description":"template/form.html",
    "header":"template/form.html"
 },
@@ -311,6 +311,11 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/T0021-airpair-angularjs-tutorial-master/index.html#/",
    "description":"T0021-airpair-angularjs-tutorial-master/index.html",
    "header":"T0021-airpair-angularjs-tutorial-master/index.html"
+},
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html#/",
+   "description":"responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html",
+   "header":"responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html"
 }
    
 
