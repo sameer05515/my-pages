@@ -328,7 +328,7 @@
    "header":"EaseGame/index.html"
 },
 {
-    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/json-tree/example.html"
+    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/json-tree/example.html",
 	"description":"json-tree/example.html",
    "header":"json-tree/example.html"
 }
