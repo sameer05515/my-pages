@@ -356,6 +356,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm",
    "description":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm",
    "header":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
+   "description":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
+   "header":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html"
 }
    
 
