@@ -341,6 +341,11 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/audiometa/index.html",
 	"description":"audiometa/index.html",
    "header":"audiometa/index.html"
+},
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-pdf/example/index.html",
+	"description":"angularjs-pdf/example/index.html",
+   "header":"angularjs-pdf/example/index.html"
 }
    
 
