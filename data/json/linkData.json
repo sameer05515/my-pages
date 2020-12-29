@@ -336,6 +336,11 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/login/index.html#/login",
 	"description":"login/index.html#/login",
    "header":"login/index.html#/login"
+},
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/audiometa/index.html",
+	"description":"audiometa/index.html",
+   "header":"audiometa/index.html"
 }
    
 
