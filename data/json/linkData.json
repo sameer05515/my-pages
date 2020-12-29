@@ -346,6 +346,16 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-pdf/example/index.html",
 	"description":"angularjs-pdf/example/index.html",
    "header":"angularjs-pdf/example/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/ajaxtabscontent/demo.htm",
+   "description":"http://127.0.0.1:8080/my-pages/other-sample-application/ajaxtabscontent/demo.htm",
+   "header":"http://127.0.0.1:8080/my-pages/other-sample-application/ajaxtabscontent/demo.htm"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm",
+   "description":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm",
+   "header":"http://127.0.0.1:8080/my-pages/other-sample-application/ajax/chap1/default.htm"
 }
    
 
