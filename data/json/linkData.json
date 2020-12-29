@@ -321,6 +321,11 @@
 	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/ui-calendar/demo/index.html",
 	"description":"ui-calendar/demo/index.html",
    "header":"ui-calendar/demo/index.html"
+},
+{
+	"url":"http://127.0.0.1:8080/my-pages/other-sample-application/EaseGame/index.html",
+	"description":"EaseGame/index.html",
+   "header":"EaseGame/index.html"
 }
    
 
