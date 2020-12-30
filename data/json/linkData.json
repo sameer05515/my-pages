@@ -431,6 +431,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/Angular-Ticket-master/index.html",
    "description":"Angular-Ticket-master/index.html",
    "header":"Angular-Ticket-master/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-dynamic-table-html-form/index.html",
+   "description":"angularjs-dynamic-table-html-form/index.html",
+   "header":"angularjs-dynamic-table-html-form/index.html"
 }
    
 
