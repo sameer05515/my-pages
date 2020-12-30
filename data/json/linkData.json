@@ -386,6 +386,11 @@
    "url":"http://127.0.0.1:8080/web-test",
    "description":"web-test",
    "header":"web-test"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-js-tree/index.html",
+   "description":"angular-js-tree/index.html",
+   "header":"angular-js-tree/index.html"
 }
    
 
