@@ -26,7 +26,7 @@ angular
 					
 					$scope.loadResult = function(myfolder) {
 						console.log("Starting search for : " + myfolder);
-						var urrrlll = "http://127.0.0.1:8888/FileService/fileService.jsp";
+						var urrrlll = "http://127.0.0.1:8080/FileService/fileService.jsp";
 						$scope.slides=[];
 						$http({
 							method : 'POST',
@@ -42,7 +42,7 @@ angular
 										var objeee = angular.fromJson(data[i]);
 										var objjj={};
 										
-										objjj.image="http://127.0.0.1:8888/FileService/my.jsp?documentId="+objeee.filePath;
+										objjj.image="http://127.0.0.1:8080/FileService/my.jsp?documentId="+objeee.filePath;
 										objjj.description=objeee.name;
 										$scope.slides.push(objjj);
 									}
@@ -54,7 +54,7 @@ angular
 
 					};
 					
-					$scope.loadResult("C:/Users/Lenovo/Desktop/New folder");
+					$scope.loadResult("D:/Prem/CUST-INST/apache-tomcat-8.5.59/webapps/my-pages/other-sample-application/angular-photo-slider/images");
 					
 					// ///////////////////////////////////////////////
 

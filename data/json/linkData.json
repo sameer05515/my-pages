@@ -406,6 +406,16 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-input-dropdown-master/demo/index.html",
    "description":"angular-input-dropdown-master/demo/index.html",
    "header":"angular-input-dropdown-master/demo/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-photo-slider/index.html",
+   "description":"angular-photo-slider/index.html",
+   "header":"angular-photo-slider/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-slider/index.html",
+   "description":"angular-slider/index.html",
+   "header":"angular-slider/index.html"
 }
    
 
