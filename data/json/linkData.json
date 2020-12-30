@@ -391,6 +391,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-js-tree/index.html",
    "description":"angular-js-tree/index.html",
    "header":"angular-js-tree/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-lazytube-master/example/index.html",
+   "description":"angular-lazytube-master/example/index.html",
+   "header":"angular-lazytube-master/example/index.html"
 }
    
 
