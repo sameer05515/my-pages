@@ -401,6 +401,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-animations-book-master/index.jsp",
    "description":"AngularJS-animations-book-master/index.jsp",
    "header":"AngularJS-animations-book-master/index.jsp"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-input-dropdown-master/demo/index.html",
+   "description":"angular-input-dropdown-master/demo/index.html",
+   "header":"angular-input-dropdown-master/demo/index.html"
 }
    
 
