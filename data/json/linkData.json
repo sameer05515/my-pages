@@ -436,6 +436,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-dynamic-table-html-form/index.html",
    "description":"angularjs-dynamic-table-html-form/index.html",
    "header":"angularjs-dynamic-table-html-form/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-dynamic-table-html-form/Textarea-character-limit.html",
+   "description":"angularjs-dynamic-table-html-form/Textarea-character-limit.html",
+   "header":"angularjs-dynamic-table-html-form/Textarea-character-limit.html"
 }
    
 
