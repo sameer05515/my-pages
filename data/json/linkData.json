@@ -396,6 +396,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-lazytube-master/example/index.html",
    "description":"angular-lazytube-master/example/index.html",
    "header":"angular-lazytube-master/example/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-animations-book-master/index.jsp",
+   "description":"AngularJS-animations-book-master/index.jsp",
+   "header":"AngularJS-animations-book-master/index.jsp"
 }
    
 
