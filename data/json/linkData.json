@@ -376,6 +376,11 @@
    "url":"http://127.0.0.1:8080/jspTut",
    "description":"jspTut",
    "header":"jspTut"
+},
+{
+   "url":"http://127.0.0.1:8080/JSTL",
+   "description":"JSTL",
+   "header":"JSTL"
 }
    
 
