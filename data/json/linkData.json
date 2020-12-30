@@ -416,6 +416,16 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-slider/index.html",
    "description":"angular-slider/index.html",
    "header":"angular-slider/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/example-soundcloud/index.html",
+   "description":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/example-soundcloud/index.html",
+   "header":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/example-soundcloud/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/examples/index.html",
+   "description":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/examples/index.html",
+   "header":"http://127.0.0.1:8080/my-pages/other-sample-application/angular-soundmanager2-master/examples/index.html"
 }
    
 
