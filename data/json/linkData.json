@@ -446,6 +446,11 @@
    "url":"http://127.0.0.1:8080/my-pages/other-sample-application/AngularJS-Loading-Spinner-Example/index.html#/list",
    "description":"AngularJS-Loading-Spinner-Example/index.html",
    "header":"AngularJS-Loading-Spinner-Example/index.html"
+},
+{
+   "url":"http://127.0.0.1:8080/my-pages/other-sample-application/angularjs-media-master/app/index.html#!/twitch",
+   "description":"angularjs-media-master/app/index.html",
+   "header":"angularjs-media-master/app/index.html"
 }
    
 
