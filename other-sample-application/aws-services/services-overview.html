@@ -11,9 +11,26 @@
       <div ng-app="awsServicesApp">
         <div ng-controller="MainController">
             {{myText}}
+            <div class="container">
+              <ul>
+                <li ng-repeat="sectionObj in servicesOverviewData">
+                  <div>
+                    <span><b>{{sectionObj.sectionName}}</b></span>
+                  </div>
+
+                  <ul>
+                    <li ng-repeat="serviceObj in sectionObj.services">
+                      <div>
+                        <b>{{serviceObj.serviceName}}</b> : {{serviceObj.shortDescription}}
+                      </div>
+                    </li>
+                  </ul>                  
+                </li>
+              </ul>
+            </div>
         </div>
       </div>
-    <ul>
+    <!-- <ul>
       <li>
         <span><b>Featured Services</b></span>
         <div>
@@ -1254,7 +1271,7 @@
 
         </div>
       </li>
-    </ul>
+    </ul> -->
 
     <script src="../../lib/js/angular-1.5.5/angular.min.js"></script>
     <script src="../../lib/js/angular-1.5.5/angular-animate.min.js"></script>
