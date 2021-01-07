@@ -1,6 +1,4 @@
-
 ===start===
-
 Featured Services
 Amazon EC2
 Virtual servers in the cloud
@@ -20,11 +18,8 @@ Amazon Lightsail
 Launch and manage virtual private servers
 Amazon SageMaker
 Build, train, and deploy machine learning models at scale
-
-
 ===end===
 ===start===
-
 Analytics
 Amazon Athena
 Query data in S3 using SQL
@@ -50,10 +45,8 @@ AWS Glue
 Simple, scalable, and serverless data integration
 AWS Lake Formation
 Build a secure data lake in days
-
 ===end===
 ===start===
-
 Application Integration
 AWS Step Functions
 Coordination for distributed applications
@@ -71,10 +64,8 @@ Amazon Simple Queue Service (SQS)
 Managed message queues
 AWS AppSync
 Power your apps with the right data from many sources, at scale
-
 ===end===
 ===start===
-
 AWS Cost Management
 AWS Cost Explorer
 Analyze your AWS cost and usage
@@ -86,19 +77,15 @@ Reserved Instance Reporting
 Dive deeper into your reserved instances (RIs)
 Savings Plans
 Save up to 72% on compute usage with flexible pricing
-
 ===end===
 ===start===
-
 Blockchain
 Amazon Managed Blockchain
 Create and manage scalable blockchain networks
 Amazon Quantum Ledger Database (QLDB)
 Fully managed ledger database
-
 ===end===
 ===start===
-
 Business Applications
 Alexa for Business
 Empower your organization with Alexa
@@ -110,10 +97,8 @@ Amazon WorkDocs
 Secure enterprise document storage and sharing
 Amazon WorkMail
 Secure email and calendaring
-
 ===end===
 ===start===
-
 Compute
 Amazon EC2
 Virtual servers in the cloud
@@ -137,10 +122,8 @@ AWS Wavelength
 Deliver ultra-low latency applications for 5G devices
 VMware Cloud on AWS
 Build a hybrid cloud without custom hardware
-
 ===end===
 ===start===
-
 Containers
 Amazon Elastic Container Registry
 Easily store, manage, and deploy container images
@@ -160,10 +143,8 @@ AWS Fargate
 Serverless compute for containers
 Red Hat OpenShift Service on AWS
 Managed Red Hat OpenShift clusters
-
 ===end===
 ===start===
-
 Customer Engagement
 Amazon Connect
 Cloud-based contact center service
@@ -171,10 +152,8 @@ Amazon Pinpoint
 Personalized user engagement across channels
 Amazon Simple Email Service (SES)
 Email sending and receiving
-
 ===end===
 ===start===
-
 Database
 Amazon Aurora
 High performance managed relational database
@@ -204,10 +183,8 @@ AWS Database Migration Service
 Migrate databases with minimal downtime
 AWS Glue
 Simple, scalable, and serverless data integration
-
 ===end===
 ===start===
-
 Developer Tools
 Amazon CodeGuru
 Find your most expensive lines of code
@@ -241,10 +218,8 @@ AWS Tools and SDKs
 Tools and SDKs for AWS
 AWS X-Ray
 Analyze and debug your applications
-
 ===end===
 ===start===
-
 End User Computing
 Amazon WorkSpaces
 Virtual desktops in the cloud
@@ -252,10 +227,8 @@ Amazon AppStream 2.0
 Stream desktop applications securely to a browser
 Amazon WorkLink
 Enable mobile access to internal websites
-
 ===end===
 ===start===
-
 Front-End Web & Mobile
 AWS Amplify
 Build and deploy mobile and web applications
@@ -269,19 +242,15 @@ AWS AppSync
 Power your apps with the right data from many sources, at scale
 AWS Device Farm
 Test Android, iOS, and web apps on real devices in the AWS cloud
-
 ===end===
 ===start===
-
 Game Tech
 Amazon GameLift
 Simple, fast, cost-effective dedicated game server hosting
 Amazon Lumberyard
 A free cross-platform 3D game engine, with Full Source, integrated with AWS and Twitch
-
 ===end===
 ===start===
-
 Internet of Things
 AWS IoT 1-Click
 One click creation of an AWS Lambda trigger
@@ -307,10 +276,8 @@ AWS Partner Device Catalog
 Curated catalog of AWS-compatible IoT hardware
 FreeRTOS
 Real-time operating system for microcontrollers
-
 ===end===
 ===start===
-
 Machine Learning
 Amazon SageMaker
 Build, train, and deploy machine learning models at scale
@@ -372,10 +339,8 @@ PyTorch on AWS
 Flexible open-source machine learning framework
 TensorFlow on AWS
 Open-source machine intelligence library
-
 ===end===
 ===start===
-
 Management & Governance
 Amazon CloudWatch
 Monitor resources and applications
@@ -425,10 +390,8 @@ AWS Trusted Advisor
 Optimize performance and security
 AWS Well-Architected Tool
 Review and improve your workloads
-
 ===end===
 ===start===
-
 Media Services
 Amazon Elastic Transcoder
 Easy-to-use scalable media transcoding
@@ -450,10 +413,8 @@ AWS Elemental MediaTailor
 Video personalization and monetization
 AWS Elemental Appliances & Software
 On-premises media solutions
-
 ===end===
 ===start===
-
 Migration & Transfer
 AWS Migration Hub
 Track migrations from a single place
@@ -473,10 +434,8 @@ CloudEndure Migration
 Automate your mass migration to the AWS cloud
 Migration Evaluator (Formerly TSO Logic)
 Create a business case for cloud migration
-
 ===end===
 ===start===
-
 Networking & Content Delivery
 Amazon VPC
 Isolated cloud resources
@@ -502,33 +461,25 @@ AWS VPN
 Securely access your network resources
 Elastic Load Balancing (ELB)
 Distribute incoming traffic across multiple targets
-
 ===end===
 ===start===
-
 Quantum Technologies
 Amazon Braket
 Explore and experiment with quantum computing
 Amazon Quantum Solutions Lab
 Collaborate with quantum computing experts
-
 ===end===
 ===start===
-
 Robotics
 AWS RoboMaker
 Develop, test, and deploy robotics applications
-
 ===end===
 ===start===
-
 Satellite
 AWS Ground Station
 Fully managed ground station as a service
-
 ===end===
 ===start===
-
 Security, Identity, & Compliance
 AWS Identity and Access Management (IAM)
 Securely manage access to services and resources
@@ -570,10 +521,8 @@ AWS Single Sign-On
 Cloud single sign-on (SSO) service
 AWS WAF
 Filter malicious web traffic
-
 ===end===
 ===start===
-
 Serverless
 AWS Lambda
 Run code without thinking about servers
@@ -595,10 +544,8 @@ AWS Fargate
 Serverless compute for containers
 AWS Step Functions
 Coordination for distributed applications
-
 ===end===
 ===start===
-
 Storage
 Amazon Simple Storage Service (S3)
 Scalable storage in the cloud
@@ -620,12 +567,9 @@ AWS Storage Gateway
 Hybrid storage integration
 CloudEndure Disaster Recovery
 Highly automated disaster recovery
-
 ===end===
 ===start===
-
 AR & VR
 Amazon Sumerian
 Build and run AR and VR applications
-
 ===end===
