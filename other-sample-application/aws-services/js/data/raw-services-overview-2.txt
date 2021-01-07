@@ -19,6 +19,7 @@ Launch and manage virtual private servers
 Amazon SageMaker
 Build, train, and deploy machine learning models at scale
 ===end===
+*************************
 ===start===
 Analytics
 Amazon Athena
@@ -46,14 +47,15 @@ Simple, scalable, and serverless data integration
 AWS Lake Formation
 Build a secure data lake in days
 ===end===
+*************************
 ===start===
 Application Integration
 AWS Step Functions
 Coordination for distributed applications
 Amazon AppFlow
-No-code integration for SaaS apps & AWS services
+No-code integration for SaaS apps and AWS services
 Amazon EventBridge
-Serverless event bus for SaaS apps & AWS services
+Serverless event bus for SaaS apps and AWS services
 Amazon Managed Workflows for Apache Airflow
 Highly available, secure, and managed workflow orchestration
 Amazon MQ
@@ -65,6 +67,7 @@ Managed message queues
 AWS AppSync
 Power your apps with the right data from many sources, at scale
 ===end===
+*************************
 ===start===
 AWS Cost Management
 AWS Cost Explorer
@@ -78,6 +81,7 @@ Dive deeper into your reserved instances (RIs)
 Savings Plans
 Save up to 72% on compute usage with flexible pricing
 ===end===
+*************************
 ===start===
 Blockchain
 Amazon Managed Blockchain
@@ -85,6 +89,7 @@ Create and manage scalable blockchain networks
 Amazon Quantum Ledger Database (QLDB)
 Fully managed ledger database
 ===end===
+*************************
 ===start===
 Business Applications
 Alexa for Business
@@ -92,12 +97,13 @@ Empower your organization with Alexa
 Amazon Chime
 Frustration-free meetings, video calls, and chat
 Amazon Honeycode (Beta)
-Build mobile & web apps without programming
+Build mobile and web apps without programming
 Amazon WorkDocs
 Secure enterprise document storage and sharing
 Amazon WorkMail
 Secure email and calendaring
 ===end===
+*************************
 ===start===
 Compute
 Amazon EC2
@@ -123,6 +129,7 @@ Deliver ultra-low latency applications for 5G devices
 VMware Cloud on AWS
 Build a hybrid cloud without custom hardware
 ===end===
+*************************
 ===start===
 Containers
 Amazon Elastic Container Registry
@@ -144,6 +151,7 @@ Serverless compute for containers
 Red Hat OpenShift Service on AWS
 Managed Red Hat OpenShift clusters
 ===end===
+*************************
 ===start===
 Customer Engagement
 Amazon Connect
@@ -153,6 +161,7 @@ Personalized user engagement across channels
 Amazon Simple Email Service (SES)
 Email sending and receiving
 ===end===
+*************************
 ===start===
 Database
 Amazon Aurora
@@ -184,6 +193,7 @@ Migrate databases with minimal downtime
 AWS Glue
 Simple, scalable, and serverless data integration
 ===end===
+*************************
 ===start===
 Developer Tools
 Amazon CodeGuru
@@ -219,6 +229,7 @@ Tools and SDKs for AWS
 AWS X-Ray
 Analyze and debug your applications
 ===end===
+*************************
 ===start===
 End User Computing
 Amazon WorkSpaces
@@ -228,8 +239,9 @@ Stream desktop applications securely to a browser
 Amazon WorkLink
 Enable mobile access to internal websites
 ===end===
+*************************
 ===start===
-Front-End Web & Mobile
+Front-End Web and Mobile
 AWS Amplify
 Build and deploy mobile and web applications
 Amazon API Gateway
@@ -243,6 +255,7 @@ Power your apps with the right data from many sources, at scale
 AWS Device Farm
 Test Android, iOS, and web apps on real devices in the AWS cloud
 ===end===
+*************************
 ===start===
 Game Tech
 Amazon GameLift
@@ -250,6 +263,7 @@ Simple, fast, cost-effective dedicated game server hosting
 Amazon Lumberyard
 A free cross-platform 3D game engine, with Full Source, integrated with AWS and Twitch
 ===end===
+*************************
 ===start===
 Internet of Things
 AWS IoT 1-Click
@@ -277,6 +291,7 @@ Curated catalog of AWS-compatible IoT hardware
 FreeRTOS
 Real-time operating system for microcontrollers
 ===end===
+*************************
 ===start===
 Machine Learning
 Amazon SageMaker
@@ -340,8 +355,9 @@ Flexible open-source machine learning framework
 TensorFlow on AWS
 Open-source machine intelligence library
 ===end===
+*************************
 ===start===
-Management & Governance
+Management and Governance
 Amazon CloudWatch
 Monitor resources and applications
 Amazon Managed Service for Grafana (Preview) - NEW
@@ -391,6 +407,7 @@ Optimize performance and security
 AWS Well-Architected Tool
 Review and improve your workloads
 ===end===
+*************************
 ===start===
 Media Services
 Amazon Elastic Transcoder
@@ -411,11 +428,12 @@ AWS Elemental MediaStore
 Media storage and simple http origin
 AWS Elemental MediaTailor
 Video personalization and monetization
-AWS Elemental Appliances & Software
+AWS Elemental Appliances and Software
 On-premises media solutions
 ===end===
+*************************
 ===start===
-Migration & Transfer
+Migration and Transfer
 AWS Migration Hub
 Track migrations from a single place
 AWS Application Discovery Service
@@ -435,8 +453,9 @@ Automate your mass migration to the AWS cloud
 Migration Evaluator (Formerly TSO Logic)
 Create a business case for cloud migration
 ===end===
+*************************
 ===start===
-Networking & Content Delivery
+Networking and Content Delivery
 Amazon VPC
 Isolated cloud resources
 Amazon API Gateway
@@ -462,6 +481,7 @@ Securely access your network resources
 Elastic Load Balancing (ELB)
 Distribute incoming traffic across multiple targets
 ===end===
+*************************
 ===start===
 Quantum Technologies
 Amazon Braket
@@ -469,18 +489,21 @@ Explore and experiment with quantum computing
 Amazon Quantum Solutions Lab
 Collaborate with quantum computing experts
 ===end===
+*************************
 ===start===
 Robotics
 AWS RoboMaker
 Develop, test, and deploy robotics applications
 ===end===
+*************************
 ===start===
 Satellite
 AWS Ground Station
 Fully managed ground station as a service
 ===end===
+*************************
 ===start===
-Security, Identity, & Compliance
+Security, Identity, and Compliance
 AWS Identity and Access Management (IAM)
 Securely manage access to services and resources
 Amazon Cognito
@@ -522,6 +545,7 @@ Cloud single sign-on (SSO) service
 AWS WAF
 Filter malicious web traffic
 ===end===
+*************************
 ===start===
 Serverless
 AWS Lambda
@@ -531,7 +555,7 @@ Build, deploy, and manage API's
 Amazon DynamoDB
 Managed NoSQL database
 Amazon EventBridge
-Serverless event bus for SaaS apps & AWS services
+Serverless event bus for SaaS apps and AWS services
 Amazon Simple Notification Service (SNS)
 Pub/sub, SMS, email, and mobile push notifications
 Amazon Simple Queue Service (SQS)
@@ -545,6 +569,7 @@ Serverless compute for containers
 AWS Step Functions
 Coordination for distributed applications
 ===end===
+*************************
 ===start===
 Storage
 Amazon Simple Storage Service (S3)
@@ -568,8 +593,11 @@ Hybrid storage integration
 CloudEndure Disaster Recovery
 Highly automated disaster recovery
 ===end===
+*************************
 ===start===
-AR & VR
+AR and VR
 Amazon Sumerian
 Build and run AR and VR applications
 ===end===
+*************************
+xxxxxxxxxxx
