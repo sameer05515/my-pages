@@ -1,0 +1,42 @@
+<div ng-style="stylesData.templateQuestionDataDescriptionStyle">
+Question :  <span style="font: 175% sans-serif;color: #ff000d; font-weight: bold;" ng-bind-html="templateQuestionData.question" /> 
+
+	<a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateQuestionData.linkedCatID}}/questions/{{templateQuestionData.questionID}}">
+		Details
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
+	<a ng-show="!templateQuestionData.showEditQuestion" class="btn btn-xs btn-primary" ng-click="templateQuestionData.showEditQuestion=true">
+		Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="templateQuestionData.showEditQuestion" ng-click="templateQuestionData.showEditQuestion=false" class="btn btn-xs btn-primary">
+		Cancel Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="!templateQuestionData.showEditQuestion" class="btn btn-xs btn-primary">
+		Add Answers
+		<i class="fa fa-angle-right"></i>
+	</a>
+
+	<a ng-show="!templateQuestionData.showEditQuestion" class="btn btn-xs btn-primary">
+		Refresh Answers List
+		<i class="fa fa-angle-right"></i>
+	</a>
+
+	<div ng-show="templateQuestionData.showEditQuestion">
+		<trix-editor angular-trix ng-model="templateQuestionData.question"
+			ng-show="templateQuestionData.showEditQuestion"></trix-editor>
+		<div star-rating rating-value="templateQuestionData.rating"
+			edit-star-rating="true" max="settings.maxRatingValue"
+			on-rating-selected="getSelectedRating(rating)"></div>
+		<a class="btn btn-xs btn-primary" ng-click="editQuestion(templateQuestionData);templateQuestionData.showEditQuestion=false;"
+			ng-if="templateQuestionData.showEditQuestion">Save</a> 
+		<a class="btn btn-xs btn-primary" ng-click="templateQuestionData.showEditQuestion=false"
+			ng-if="templateQuestionData.showEditQuestion">Cancel</a>
+	</div>
+
+
+<div ng-repeat="templateAnswerData in templateQuestionData.answers" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/answerData_item_renderer.html'">               
+            </div>
+</div>
