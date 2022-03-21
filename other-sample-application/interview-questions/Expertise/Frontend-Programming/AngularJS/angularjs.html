@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AngularJS</title>
+
+    <link rel="stylesheet" href="../../../lib/style.css">
+    <script src="../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>AngularJS Interview Questions</h1>
+
+            <p><img alt="AngularJS Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/angularjs-interview-questions.png" /></p>
+
+            <p>A list of top frequently asked&nbsp;<strong>AngularJS interview questions</strong>&nbsp;and answers are
+                given below.</p>
+
+            <h3>1) What is AngularJS?</h3>
+
+            <p>AngularJS is an open-source JavaScript framework used to build rich and extensible web applications. It
+                is developed by&nbsp;<strong>Google</strong>&nbsp;and follows the&nbsp;<strong>MVC (Model View
+                    Controller)</strong>&nbsp;pattern. It supports HTML as the template language and enables the
+                developers to create extended HTML tags which will help to represent the application&#39;s content more
+                clearly. It is easy to update and receive information from an HTML document. It also helps in writing a
+                proper maintainable architecture which can be tested at a client-side.</p>
+
+            <hr />
+            <h3>2) What are the main advantages of AngularJS?</h3>
+
+            <p>Some of the main advantages of AngularJS are given below:</p>
+
+            <ul>
+                <li>Allows us to create a single page application.</li>
+                <li>Follows MVC design pattern.</li>
+                <li>Predefined form validations.</li>
+                <li>Supports animations.</li>
+                <li>Open-source.</li>
+                <li>Cross-browser compliant.</li>
+                <li>Supports two-way data binding.</li>
+                <li>Its code is unit testable.</li>
+            </ul>
+
+            <hr />
+            <h3>3) What are the disadvantages of AngularJS?</h3>
+
+            <p>There are some drawbacks of AngularJS which are given below:</p>
+
+            <ul>
+                <li><strong>JavaScript Dependent</strong><br />
+                    If end-user disables JavaScript, AngularJS will not work.</li>
+                <li><strong>Not Secured</strong><br />
+                    It is a JavaScript-based framework, so it is not safe to authenticate the user through AngularJS
+                    only.</li>
+                <li><strong>Time Consumption in Old Devices</strong><br />
+                    The browsers on old computers and mobiles are not capable or take a little more time to render pages
+                    of application and websites designed using the framework. It happens because the browser performs
+                    some supplementary tasks like&nbsp;<strong>DOM (Document Object Model)</strong>&nbsp;manipulation.
+                </li>
+                <li><strong>Difficult to Learn</strong><br />
+                    If you are new in AngularJS, then it will not be easy for you to deal with complex entities such as
+                    Quite layered, hierarchically and scopes. Debugging the scope is believed a tough task for many
+                    programmers.</li>
+            </ul>
+
+            <hr />
+            <h3>4) Describe MVC in reference to angular.</h3>
+
+            <p>AngularJS is based on MVC framework, where MVC stands for&nbsp;<strong>Model-View-Controller</strong>.
+                MVCperforms the following operations:</p>
+
+            <ul>
+                <li>A model is the lowest level of the pattern responsible for maintaining data.</li>
+                <li>A controller is responsible for a view that contains the logic to manipulate that data. It is
+                    basically a software code which is used for taking control of the interactions between the Model and
+                    View.</li>
+                <li>A view is the HTML which is responsible for displaying the data.</li>
+            </ul>
+
+            <p><strong>For example,</strong>&nbsp;a $scope can be defined as a model, whereas the functions written in
+                angular controller modifies the $scope and HTML displays the value of scope variable.</p>
+
+            <hr />
+            <h3>5) What is $scope?</h3>
+
+            <p>A $scope is an object that represents the application model for an Angular application.</p>
+
+            <p>Each AngularJS application can have only one root scope but can have multiple child
+                scopes.&nbsp;<strong>For example:</strong></p>
+
+            <ol start="1">
+                <li>var&nbsp;app&nbsp;=&nbsp;angular.module(&#39;myApp&#39;,&nbsp;[]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>app.controller(&#39;myCtrl&#39;,&nbsp;function($scope)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;$scope.carname&nbsp;=&nbsp;&quot;Volvo&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>});&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Some of the key characteristics of the $scope object are given below:</p>
+
+            <ul>
+                <li>It provides observers to check for all the model changes.</li>
+                <li>It provides the ability to propagate model changes through the application as well as outside the
+                    system to other associated components.</li>
+                <li>Scopes can be nested in a way that they can isolate functionality and model properties.</li>
+                <li>It provides an execution environment in which expressions are evaluated.</li>
+            </ul>
+
+            <hr />
+            <h3>6) Is AngularJS dependent on JQuery?</h3>
+
+            <p>AngularJS is a JavaScript framework with key features like models, two-way binding, directives, routing,
+                dependency injections, unit tests, etc. On the other hand, JQuery is a JavaScript library used for DOM
+                manipulation with no two-way binding features.</p>
+
+            <hr />
+            <h3>7) What IDE&#39;s are currently used for the development of AngularJS?</h3>
+
+            <p>A term IDE stands for&nbsp;<strong>Integrated Development Environment</strong>. There are some IDE&#39;s
+                given below which are used for the development of AngularJS:</p>
+
+            <ul>
+                <li><strong>Eclipse</strong><br />
+                    It is one of the most popular IDE. It supports AngularJS plugins.</li>
+                <li><strong>Visual Studio</strong><br />
+                    It is an IDE from Microsoft that provides a platform to develop web apps easily and instantly.</li>
+                <li><strong>WebStorm</strong><br />
+                    It is one of the most powerful IDE for modern JavaScript development. It provides an easier way to
+                    add dependencies with angular CLI.</li>
+                <li><strong>Aptana</strong><br />
+                    It is a customized version of Eclipse. It is free to use.</li>
+                <li><strong>Sublime Text</strong><br />
+                    It is one of the most recommendable editors for HTML, CSS, and JavaScript. It is very much
+                    compatible with AngularJS code.</li>
+            </ul>
+
+            <hr />
+            <h3>8) What are the features of AngularJS?</h3>
+
+            <p>Some important features of AngularJS are given below:</p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li><strong>MVC-</strong>&nbsp;In AngularJS, you just have to split your application code into MVC
+                    components, i.e., Model, View, and the Controller.</li>
+                <li><strong>Validation-</strong>&nbsp;It performs client-side form validation.</li>
+                <li><strong>Module-</strong>&nbsp;It defines an application.</li>
+                <li><strong>Directive-</strong>&nbsp;It specifies behavior on the DOM element.</li>
+                <li><strong>Template-</strong>&nbsp;It renders the dynamic view.</li>
+                <li><strong>Scope-</strong>&nbsp;It joins the controller with the views.</li>
+                <li><strong>Expression-</strong>&nbsp;It binds application data to HTML.</li>
+                <li><strong>Data Binding-</strong>&nbsp;It creates a two-way data-binding between the selected element
+                    and the $ctrl.orderProp model.</li>
+                <li><strong>Filter-</strong>&nbsp;It provides the filter to format data.</li>
+                <li><strong>Service-</strong>&nbsp;It stores and shares data across the application.</li>
+                <li><strong>Routing-</strong>&nbsp;It is used to build a single page application.</li>
+                <li><strong>Dependency Injection-</strong>&nbsp;It specifies a design pattern in which components are
+                    given their dependencies instead of hard-coding them within the component.</li>
+                <li><strong>Testing-</strong>&nbsp;It is easy to test any of the AngularJS components through unit
+                    testing and end-to-end testing.</li>
+            </ul>
+
+            <hr />
+            <h3>9) What are the directives in AngularJS?</h3>
+
+            <p>Directives are the markers on DOM element which are used to specify behavior on that DOM element. All
+                AngularJS directives start with the word &quot;<em>ng</em>&quot;. There are many in-built directives in
+                AngularJS such as &quot;<strong>ng-app</strong>&quot;, &quot;<strong>ng-init</strong>&quot;,
+                &quot;<strong>ng-model</strong>&quot;, &quot;<strong>ng-bind</strong>&quot;,
+                &quot;<strong>ng-repeat</strong>&quot; etc.</p>
+
+            <ul>
+                <li><strong>ng-app</strong><br />
+                    The ng-app directive is the most important directive for Angular applications. It is used to locate
+                    the beginning of an Angular application for AngularJS HTML compiler. It marks the HTML elements that
+                    Angular intends to make the root element of the application. The custom attributes use spinal-cases,
+                    whereas the corresponding directives follow the camelCase. If we do not use this directive and try
+                    to process other directives, it gives an error.</li>
+                <li><strong>ng-init</strong><br />
+                    The ng-init directive is useful for initializing the data variable&#39;s inline statement of an
+                    AngularJS application. Therefore, those statements can be used in the specified blocks where we can
+                    declare them. A directive ng-init is like a local member of the ng-app directive, and it may be a
+                    single value or a group of the values. It directly supports JSON data.</li>
+                <li><strong>ng-model</strong><br />
+                    The ng-model directive binds the values of HTML elements such as input, select, textarea to the
+                    application data. It provides two-way binding behavior with the model value. Sometimes, it is also
+                    used for databinding.</li>
+                <li><strong>ng-bind</strong><br />
+                    The ng-bind directive is used to bind the model/variable&#39;s value to HTML controls of an
+                    AngularJS application. It can also be used with HTML tags attributes like: &lt;p/&gt;, &lt;span/&gt;
+                    and more but it does not support two-way binding. We can only check the output of the model values.
+                </li>
+                <li><strong>ng-repeat</strong><br />
+                    The ng-repeat directive is used to repeat HTML statements. It works the same as for each loop in C#,
+                    Java or PHP on a specific collection item like an array.</li>
+            </ul>
+
+            <p>Let&#39;s see a simple example of AngularJS directive:</p>
+
+            <ol start="1">
+                <li>&lt;div&nbsp;ng-app&nbsp;=&nbsp;&quot;&quot;&nbsp;ng-init&nbsp;=&nbsp;&quot;countries&nbsp;=&nbsp;[{locale:&#39;en-IND&#39;,name:&#39;India&#39;},&nbsp;{locale:&#39;en-PAK&#39;,name:&#39;Pakistan&#39;},&nbsp;{locale:&#39;en-AUS&#39;,name:&#39;Australia&#39;}]&quot;&gt;&nbsp;&nbsp;
+                </li>
+                <li>&lt;p&gt;Enter&nbsp;your&nbsp;Name:&nbsp;&lt;input&nbsp;type&nbsp;=&nbsp;&quot;text&quot;&nbsp;ng-model&nbsp;=&nbsp;&quot;name&quot;&gt;&lt;/p&gt;&nbsp;&nbsp;
+                </li>
+                <li>&lt;p&gt;Hello&nbsp;&lt;span&nbsp;ng-bind&nbsp;=&nbsp;&quot;name&quot;&gt;&lt;/span&gt;!&lt;/p&gt;&nbsp;&nbsp;
+                </li>
+                <li>&lt;p&gt;List&nbsp;of&nbsp;Countries&nbsp;with&nbsp;locale:&lt;/p&gt;&nbsp;&nbsp;</li>
+                <li>&lt;ol&gt;&nbsp;&nbsp;</li>
+                <li>&lt;li&nbsp;ng-repeat&nbsp;=&nbsp;&quot;country&nbsp;in&nbsp;countries&quot;&gt;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;&#39;Country:&nbsp;&#39;&nbsp;+&nbsp;country.name&nbsp;+&nbsp;&#39;,&nbsp;Locale:&nbsp;&#39;&nbsp;+&nbsp;country.locale&nbsp;}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&lt;/li&gt;&nbsp;&nbsp;</li>
+                <li>&lt;/ol&gt;&nbsp;&nbsp;</li>
+                <li>&lt;/div&gt;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>10) What are the controllers in AngularJS?</h3>
+
+            <p>Controllers are JavaScript functions which are used to provide data and logic to HTML UI. It acts as an
+                interface between Server and HTML UI. Each controller accepts $scope as a parameter which refers to the
+                application/module that controller is going to control.&nbsp;<strong>For example:</strong></p>
+
+            <ol start="1">
+                <li>&lt;script&gt;&nbsp;&nbsp;</li>
+                <li>var&nbsp;app&nbsp;=&nbsp;angular.module(&#39;myApp&#39;,&nbsp;[]);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>app.controller(&#39;myCtrl&#39;,&nbsp;function($scope)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;$scope.firstName&nbsp;=&nbsp;&quot;Aryan&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;$scope.lastName&nbsp;=&nbsp;&quot;Khanna&quot;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>});&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&lt;/script&gt;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>11) What are the uses of controllers in AngularJS?</h3>
+
+            <p>AngularJS controllers are used for:</p>
+
+            <ul>
+                <li>Setting the initial state of the $scope object</li>
+                <li>Adding behavior to the $scope object</li>
+            </ul>
+
+            <hr />
+            <h3>12) What is data binding in AngularJS?</h3>
+
+            <p>Data Binding is the automatic synchronization of data between model and view. In AngularJS, it performs
+                the automatic synchronization process between the model and view.</p>
+
+            <p>&nbsp;</p>
+
+            <p>If the model is changed, the view reflects it automatically and vice-versa. There are two ways of data
+                binding that AngularJS supports:</p>
+
+            <ul>
+                <li><strong>One Way Data Binding</strong><br />
+                    In one-way data binding, view (UI part) does not get updated automatically when the data model is
+                    changed. We need to write custom codes to make it updated every time. A directive ng-bind has
+                    one-way data binding. Here, value is taken from the data model and inserted into an HTML element.
+                </li>
+            </ul>
+
+            <p><img alt="One Way Data Binding"
+                    src="https://static.javatpoint.com/js/angularjs/images/one-way-data-binding.png" /></p>
+
+            <ul>
+                <li><strong>Two Way Data Binding</strong><br />
+                    In two-way data binding, scope variable changes its value whenever the data model is allotted to a
+                    different value. It treats the model as the single-source-of-truth in the application. The view is a
+                    projection of the model at all time s. If the model is changed, the view reflects the change and
+                    vice versa.</li>
+            </ul>
+
+            <p><img alt="Two Way Data Binding"
+                    src="https://static.javatpoint.com/js/angularjs/images/two-way-data-binding.png" /></p>
+
+            <hr />
+            <h3>13) What are the services in AngularJS?</h3>
+
+            <p>Services are objects that can be used to store and share data across the application. AngularJS offers
+                many built-in services, and each of them is responsible for a specific task. They are always used with
+                the prefix $ symbol.</p>
+
+            <p>Some of the important services used in any AngularJS application are as follows:</p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li><strong>$http-</strong>&nbsp;It is used to make an Ajax call to get the server data.</li>
+                <li><strong>$window-</strong>&nbsp;It provides a reference to a DOM object.</li>
+                <li><strong>$Location-</strong>&nbsp;It provides a reference to the browser location.</li>
+                <li><strong>$timeout-</strong>&nbsp;It provides a reference to the window.set timeout function.</li>
+                <li><strong>$Log-</strong>&nbsp;It is used for logging.</li>
+                <li><strong>$sanitize-</strong>&nbsp;It is used to avoid script injections and display raw HTML in the
+                    page.</li>
+                <li><strong>$Rootscope-</strong>&nbsp;It is used for scope hierarchy manipulation.</li>
+                <li><strong>$Route-</strong>&nbsp;It is used to display browser-based path in browser&#39;s URL.</li>
+                <li><strong>$Filter-</strong>&nbsp;It is used for providing filter access.</li>
+                <li><strong>$resource-</strong>&nbsp;It is used to work with Restful API.</li>
+                <li><strong>$document-</strong>&nbsp;It is used to access the window.Document object.</li>
+                <li><strong>$exceptionHandler-</strong>&nbsp;It is used for handling exceptions.</li>
+                <li><strong>$q-</strong>&nbsp;It provides a promise object.</li>
+                <li><strong>$cookies-</strong>&nbsp;It is used for reading, writing, and deleting the browser&#39;s
+                    cookies.</li>
+                <li><strong>$parse-</strong>&nbsp;It is used to convert an AngularJS expression into a function.</li>
+                <li><strong>$cacheFactory-</strong>&nbsp;It is used to evaluate the specified expression when the user
+                    changes the input.</li>
+            </ul>
+
+            <hr />
+            <h3>14) What is the module in AngularJS?</h3>
+
+            <p>A module is a container for the different parts of the application like a controller, services, filters,
+                directives, etc. It is treated as a main() method. All the dependencies of applications are generally
+                defined in modules only. A module is created using an angular object&#39;s module()
+                method.&nbsp;<strong>For example:</strong></p>
+
+            <ol start="1">
+                <li>var&nbsp;app&nbsp;=&nbsp;angular.module(&#39;myApp&#39;,&nbsp;[]);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>15) What is routing in AngularJS?</h3>
+
+            <p>Routing is one of the main features of the AngularJS framework, which is useful for creating a single
+                page application (also referred to as SPA) with multiple views. It routes the application to different
+                pages without reloading the application. In Angular, the&nbsp;<strong>ngRoute</strong>&nbsp;module is
+                used to implement Routing. The ngView, $routeProvider, $route, and $routeParams are the different
+                components of the ngRoute module, which help for configuring and mapping URL to views.</p>
+
+            <hr />
+            <h3>16) What is a template in AngularJS?</h3>
+
+            <p>A template consists of HTML, CSS, and AngularJS directives, which are used to render the dynamic view. It
+                is more like a static version of a web page with some additional properties to inject and render that
+                data at runtime. The templates are combined with information coming from model and controller.</p>
+
+            <hr />
+            <h3>17) What are the expressions in AngularJS?</h3>
+
+            <p>Expressions in AngularJS are the code snippets that resolve to a value. AngularJS expressions are placed
+                inside {{expression}}. Expressions are included in the HTML elements.</p>
+
+            <p>AngularJS expressions can also contain various valid expressions similar to JavaScript expressions. We
+                can also use the operators between numbers, including strings, literals, objects, and arrays inside the
+                expression {{ }}.</p>
+
+            <p><strong>For example:</strong></p>
+
+            <ol start="1">
+                <li>{{1+1}}&nbsp;&nbsp;</li>
+                <li>{{Name&nbsp;+&nbsp;&quot;&nbsp;&quot;&nbsp;+&nbsp;email}}&nbsp;(string)&nbsp;&nbsp;</li>
+                <li>{{&nbsp;Country.Name&nbsp;}}&nbsp;(object)&nbsp;&nbsp;</li>
+                <li>{{&nbsp;fact[4]&nbsp;}}&nbsp;(array)&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>AngularJS supports one-time binding expressions.</p>
+
+            <p><img alt="AngularJS Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/angularjs-interview-questions-q17.png" /></p>
+
+            <hr />
+            <h3>18) What are the key differences between Angular expressions and JavaScript expressions?</h3>
+
+            <p>The key differences between the Angular expressions and JavaScript expressions are given below:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Angular Expressions</th>
+                        <th>JavaScript Expressions</th>
+                    </tr>
+                    <tr>
+                        <td>Angular expressions do not support conditional statements, loops, and exceptions.</td>
+                        <td>JavaScript expressions support conditional statements, loops, and exceptions.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular expressions support filters.</td>
+                        <td>JavaScript expressions do not support filters.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular expressions can be written inside HTML.</td>
+                        <td>JavaScript expressions cannot be written inside HTML.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>19) What is the use of filter in AngularJS?</h3>
+
+            <p>A filter is used to format the value of the expression to display the formatted output. AngularJS allows
+                us to write our own filter. Filters can be added to expressions by using the pipe character |, followed
+                by a filter.&nbsp;<strong>For example:</strong></p>
+
+            <p>&nbsp;</p>
+
+            <ol start="1">
+                <li>&lt;div&nbsp;ng-app=&quot;myApp&quot;&nbsp;ng-controller=&quot;personCtrl&quot;&gt;&nbsp;&nbsp;</li>
+                <li>&lt;p&gt;The&nbsp;name&nbsp;is&nbsp;{{&nbsp;firstName&nbsp;|&nbsp;uppercase&nbsp;}}&lt;/p&gt;&nbsp;&nbsp;
+                </li>
+                <li>&lt;/div&gt;&nbsp;&nbsp;</li>
+                <li>&lt;script&gt;&nbsp;&nbsp;</li>
+                <li>angular.module(&#39;myApp&#39;,&nbsp;[]).controller(&#39;personCtrl&#39;,&nbsp;function($scope)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;$scope.firstName&nbsp;=&nbsp;&quot;Sonoo&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;$scope.lastName&nbsp;=&nbsp;&quot;Jaiswal&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>});&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&lt;/script&gt;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Filters can be applied in view templates, controllers, services and directives. It is important to know
+                that filters are case-sensitive. There are some built-in filters provided by AngularJS such
+                as&nbsp;<strong>Currency, Date, Filter, JSON, Limit, Lowercase, Number, Orderby, and Uppercase</strong>.
+            </p>
+
+            <hr />
+            <h3>20) What do you know about uppercase filter and lowercase filter in AngularJS?</h3>
+
+            <p>Uppercase filters are used to convert a text to upper case text.&nbsp;<strong>For example:</strong></p>
+
+            <ol start="1">
+                <li>Type&nbsp;first&nbsp;name:&lt;input&nbsp;type&nbsp;=&nbsp;&quot;text&quot;&nbsp;ng-model&nbsp;=&nbsp;&quot;student.firstName&quot;&gt;&nbsp;&nbsp;
+                </li>
+                <li>Type&nbsp;last&nbsp;name:&nbsp;&lt;input&nbsp;type&nbsp;=&nbsp;&quot;text&quot;&nbsp;ng-model&nbsp;=&nbsp;&quot;student.lastName&quot;&gt;&nbsp;&nbsp;
+                </li>
+                <li>Name&nbsp;in&nbsp;Upper&nbsp;Case:&nbsp;{{student.fullName()&nbsp;|&nbsp;uppercase}}&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>In above example, uppercase filter is added to an expression using pipe character. It will print student
+                name in capital letters.</p>
+
+            <p>On the other side, lowercase filters are used to convert a text to lower case text.&nbsp;<strong>For
+                    example:</strong></p>
+
+            <ol start="1">
+                <li>Type&nbsp;first&nbsp;name:&lt;input&nbsp;type&nbsp;=&nbsp;&quot;text&quot;&nbsp;ng-model&nbsp;=&nbsp;&quot;student.firstName&quot;&gt;&nbsp;&nbsp;
+                </li>
+                <li>Type&nbsp;last&nbsp;name:&nbsp;&lt;input&nbsp;type&nbsp;=&nbsp;&quot;text&quot;&nbsp;ng-model&nbsp;=&nbsp;&quot;student.lastName&quot;&gt;&nbsp;&nbsp;
+                </li>
+                <li>Name&nbsp;in&nbsp;Upper&nbsp;Case:&nbsp;{{student.fullName()&nbsp;|&nbsp;lowercase}}&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>It will print student name in lowercase letters.</p>
+
+            <hr />
+            <h3>21) Explain custom filters with an example.</h3>
+
+            <p>We can create our own filters in AngularJS. It can be performed by associating the filter to our module.
+                These types of filters are known as custom filters.</p>
+
+            <p>An example given below can be used to count the number of elements in the string by using the filter:</p>
+
+            <ol start="1">
+                <li>angular.module(&#39;myCountFilterApp&#39;,&nbsp;[])&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;.filter(&#39;count&#39;,function()&nbsp;&nbsp;</li>
+                <li>{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;return(function(input)&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var&nbsp;out=[];&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;out=input.split(&#39;,&#39;);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;out.length;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;})&nbsp;&nbsp;</li>
+                <li>});&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>As per above example, if the string is &quot;<strong>21, 34, 45</strong>&quot; then output after applying
+                filter will be&nbsp;<strong>3</strong>.</p>
+
+            <hr />
+            <h3>22) Explain Currency filter in AngularJS. How can we use it?</h3>
+
+            <p>The currency filter contains the &quot;$&quot; Dollar symbol as default. We can apply the following code
+                as the html template format of Currency Filter.</p>
+
+            <ol start="1">
+                <li>{{&nbsp;currency_expression&nbsp;|&nbsp;currency&nbsp;:&nbsp;symbol&nbsp;:&nbsp;fractionSize}}&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>We can use Currency Filter by using the following methods:</p>
+
+            <ul>
+                <li><strong>Default</strong><br />
+                    If we do not provide any currency symbol, then Dollar sign will be used by default as shown
+                    below:<br />
+                    &lt;!-- by default --&gt;<br />
+                    <strong>Default Currency</strong>{{amount | currency}}
+                </li>
+                <li><strong>User-Defined</strong><br />
+                    To use different types of currency symbols, we have to define our own symbol by applying the
+                    Hexa-Decimal code or Unicode of that Currency.<br />
+                    E.g., To define Indian Currency Symbol, then we have to use Unicode-value or Hexa-Decimal
+                    value.<br />
+                    <strong>Indian Currency</strong>{{amount | currency:&quot;&amp;# 8377&quot;}}
+                </li>
+            </ul>
+
+            <hr />
+            <h3>23) What do you understand by Dependency Injection in AngularJS?</h3>
+
+            <p>Dependency Injection (also called DI) is one of the best features of AngularJS. It is a software design
+                pattern where objects are passed as dependencies rather than hard coding them within the component. It
+                is useful for removing hard-coded dependencies and making dependencies configurable. To retrieve the
+                required elements of the application that need to be configured when the module is loaded, the
+                &quot;config&quot; operation uses Dependency Injection. It allows separating the concerns of different
+                components in an application and provides a way to inject the dependent component into the client
+                component. By using Dependency Injection, we can make components maintainable, reusable, and testable.
+            </p>
+
+            <p>A simple case of dependency injection in AngularJS is shown below:</p>
+
+            <ol start="1">
+                <li>myApp.controller(&#39;myController&#39;,&nbsp;function&nbsp;($scope,&nbsp;$http,&nbsp;$location)&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//logic&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Here, a controller is declared with its dependencies.</p>
+
+            <p>AngularJS provides the following core components which can be injected into each other as dependencies:
+            </p>
+
+            <ul>
+                <li>Value</li>
+                <li>Factory</li>
+                <li>Service</li>
+                <li>Provider</li>
+                <li>Constant</li>
+            </ul>
+
+            <hr />
+            <h3>24) What do you understand by validation of data in AngularJS?</h3>
+
+            <p>AngularJS enriches form filling and validation. AngularJS provides client-side form validation. It checks
+                the state of the form and input fields (input, text-area, select), and notify the user about the current
+                state. It also holds the information about whether the input fields have been touched, or modified, or
+                not.</p>
+
+            <p>There are following directives that can be used to track error:</p>
+
+            <ul>
+                <li><strong>$dirty</strong><br />
+                    It states that the value has been changed.</li>
+                <li><strong>$invalid</strong><br />
+                    It states that the value which is entered is invalid.</li>
+                <li><strong>$error</strong><br />
+                    It states the exact error.</li>
+            </ul>
+
+            <p>Moreover, we can use&nbsp;<strong>novalidate</strong>&nbsp;with a form declaration to disable the
+                browser&#39;s native form validation.</p>
+
+            <hr />
+            <h3>25) What do you understand by linking function? Explain its type.</h3>
+
+            <p>Link is used for combining the directives with a scope and producing a live view. The link function is
+                used for registering DOM listeners as well as updating the DOM. The linking function is executed as soon
+                as the template is cloned.</p>
+
+            <p>There are two types of linking function:</p>
+
+            <ul>
+                <li><strong>Pre linking function</strong><br />
+                    Pre-linking functions are executed before the child elements are linked. This method is not
+                    considered as a safe way for DOM transformation.</li>
+                <li><strong>Post linking function</strong><br />
+                    Post-linking functions are executed after the child elements are linked. This method is a safe way
+                    for DOM transformation.</li>
+            </ul>
+
+            <hr />
+            <h3>26) What do you know about injector?</h3>
+
+            <p>An injector is referred to as a service locator. It is used to receive object instances as defined by the
+                providers, invoke methods, instantiate types, and load modules. Each Angular application consists of a
+                single injector which helps to look upon an instance by its name.</p>
+
+            <hr />
+            <h3>27) What is the factory method in AngularJS?</h3>
+
+            <p>Factory method is used for creating a directive. Whenever the compiler matches the directive for the
+                first time, the factory method is invoked. Factory method is invoked using $injector.invoke.</p>
+
+            <p><strong>Syntax</strong></p>
+
+            <ol start="1">
+                <li>module.factory(&#39;factoryName&#39;,&nbsp;function);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>28) How will you explain the concept of hierarchy? How many scopes can an application have?</h3>
+
+            <p>Each Angular application contains one root scope, but there can be several child scopes. The application
+                may have multiple scopes because child controllers and some directives create new child scopes. When the
+                new scope is formed or created, it is added as a child of the parent scope. As similar to DOM, scopes
+                also create a hierarchical structure.</p>
+
+            <hr />
+            <h3>29) Explain how logs are maintained in AngularJS?</h3>
+
+            <p>Logs can be maintained using&nbsp;<strong>$log</strong>&nbsp;service. The main purpose of $log service is
+                to help in debugging and troubleshooting. It is done with the help of the following methods.</p>
+
+            <ul>
+                <li><strong>log()-</strong>&nbsp;It writes a log message in the console.</li>
+                <li><strong>info()-</strong>&nbsp;It writes an information message.</li>
+                <li><strong>warn()-</strong>&nbsp;It writes a warning message.</li>
+                <li><strong>error()-</strong>&nbsp;It writes an error message.</li>
+                <li><strong>debug()-</strong>&nbsp;It writes a debug message.</li>
+            </ul>
+
+            <ol start="1">
+                <li>$log.error(&#39;this&nbsp;will&nbsp;displayed&nbsp;as&nbsp;an&nbsp;error&nbsp;in&nbsp;console&#39;)&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <h3>30) What is the main purpose of find index in AngularJS, and what does it return if no value is found?
+            </h3>
+
+            <p>Find index is used to return the position of an element. It returns the value (-1) if the requested
+                element is not found.</p>
+
+            <ol start="1">
+                <li>var&nbsp;index&nbsp;=&nbsp;$scope.items.findIndex(record&nbsp;=&gt;&nbsp;record.date&nbsp;==&#39;2018-12-12&#39;);&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>In the given code, index of the object is returned where item.date=2018-12-12.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>31) Can we set an Angular variable from PHP session variable without sending an HTTP request?</h3>
+
+            <p>Yes, we can perform it by injecting PHP in the required place. i.e.,</p>
+
+            <ol start="1">
+                <li>$scope.name=&#39;&lt;?=&nbsp;$session[&#39;name&#39;]&nbsp;?&gt;&#39;;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>It will work only if we use PHP to render the HTML and the above JavaScript in &lt;script&gt; tag inside
+                the PHP file.</p>
+
+            <hr />
+            <h3>32) What do you understand by strict conceptual escaping?</h3>
+
+            <p>AngularJS treats all the values as untrusted/ unsecured in HTML or sensitive URL bindings. AngularJS
+                automatically runs security checks while binding untrusted values. It throws an error if it cannot
+                guarantee the security of the result. This type of behavior depends on contexts: HTML can be sanitized,
+                but template URLs cannot.</p>
+
+            <p>To illustrate this, consider the following directive</p>
+
+            <ol start="1">
+                <li>Ng-bind-html&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>It renders its value directly as HTML. When there is an untrusted input, AngularJS will try to sanitize
+                it before rendering if a sanitizer is available. We will need to mark it as trusted to bypass
+                sanitization and render the input.</p>
+
+            <hr />
+            <h3>33) How can someone make an ajax call using AngularJS?</h3>
+
+            <p>AngularJS contains $https: control, which works as a service to make ajax call to read data from the
+                server. The server creates a database call to retrieve the desired records. AngularJS requires data in
+                JSON format. Once the data gets ready, $https: can be used to retrieve the data from the server in the
+                following manner.</p>
+
+            <ol start="1">
+                <li>function&nbsp;studentController($scope,$https:)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;var&nbsp;url&nbsp;=&nbsp;&quot;data.txt&quot;;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;$https:.get(url).success(&nbsp;function(response)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$scope.students&nbsp;=&nbsp;response;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</li>
+                <li>}&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>34) What do you know about internationalization? How will you implement internationalization in
+                AngularJS?</h3>
+
+            <p>Internationalization is the method for showing locale-specific information on a website. Consider a
+                website displaying content in the English language in the United States and Danish in France.</p>
+
+            <p>AngularJS has inbuilt internationalization support for three types of filters:</p>
+
+            <ul>
+                <li>Currency</li>
+                <li>Date</li>
+                <li>Numbers</li>
+            </ul>
+
+            <p>We need to incorporate the corresponding JS according to the locale of the country. By default, it is
+                configured to handle the locale of the browser.</p>
+
+            <hr />
+            <h3>35) How will you explain deep linking in AngularJS?</h3>
+
+            <p>Deep linking is the method which allows us to encode the state of the application in the URL in such a
+                way that it can be bookmarked. Then the application can further be restored from the URL to the same
+                state.</p>
+
+            <hr />
+            <h3>36) Describe the AngularJS boot process.</h3>
+
+            <p>When a page is loaded into the browser, several things happen:</p>
+
+            <ul>
+                <li>HTML document file gets loaded, and evaluated by the browser. AngularJS JavaScript file gets loaded,
+                    and the angular global object is created. Next, JavaScript file which is responsible for registering
+                    the controller functions is executed.</li>
+                <li>&nbsp;</li>
+                <li>AngularJS scans through the HTML to find AngularJS apps and views. Once the view is found, it
+                    connects that particular view to the corresponding controller function.</li>
+                <li>&nbsp;</li>
+                <li>AngularJS executes the controller functions. It further renders the views with data from the model
+                    populated by the controller, and the page gets ready.</li>
+                <li>&nbsp;</li>
+            </ul>
+
+            <hr />
+            <h3>37) Is it possible to have two ng-app directives for a single Angular application?</h3>
+
+            <p>No, there can&#39;t be more than one ng-app directive for a single AngularJS application.</p>
+
+            <p>The ng-app directive helps AngularJS application to make sure that it is the root element. In our HTML
+                document, we can have only one ng-app directive. If there is more than one ng-app directive, then
+                whichever appears first will be used.</p>
+
+            <hr />
+            <h3>38) What is the syntax for creating a new date object?</h3>
+
+            <p>The syntax for creating new date object is given below:</p>
+
+            <ol start="1">
+                <li>$scope.newDate=new&nbsp;Date();&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>39) Do you think that parent controller can access the methods of child controller or vice versa?</h3>
+
+            <p>No, the parent controller cannot access the methods of child controller, but the child controller can
+                access the methods of the parent controller.</p>
+
+            <hr />
+            <h3>40) Explain $rootScope in AngularJS.</h3>
+
+            <p>Every AngularJS application contains a $rootScope, which is the top-most scope created on the DOM
+                element. An application can contain only one $rootScope, which will be shared among all its components.
+                Every other scope is considered as its child scope. It can watch expressions and propagate events. By
+                using the root scope, one can set the value in one controller and read it from the other controller.</p>
+
+            <hr />
+            <h3>41) What is the main purpose of $routeProvider in AngularJS?</h3>
+
+            <p>$routeProvider is one of the important services which set the configuration of URLs. It further maps them
+                with the corresponding HTML pages or ng-templates and attaches a controller with the same.</p>
+
+            <hr />
+            <h3>42) How will you explain Auto Bootstrap Process in AngularJS?</h3>
+
+            <p>AngularJS initializes automatically upon the &quot;<strong>DOMContentLoaded</strong>&quot; event. It also
+                initializes when the browser downloads the Angular.js script and document.readyState is set to
+                &#39;complete&#39; at the same time. AngularJS looks for an ng-app directive which is the root of
+                Angular application compilation process.</p>
+
+            <p>If the directive &#39;ng-app&#39; is found, then AngularJS will perform the following steps:</p>
+
+            <ul>
+                <li>It will load the module which is associated with the directive.</li>
+                <li>It will create the application injector.</li>
+                <li>It will compile the DOM starting from the ng-app root element.</li>
+            </ul>
+
+            <p>This process is known as Auto-bootstrapping.</p>
+
+            <hr />
+            <h3>43) How will you explain Manual Bootstrap Process in AngularJS?</h3>
+
+            <p>Sometimes, we may need to manually initialize the Angular application to have more control over the
+                initialization process. We can perform such task
+                using&nbsp;<strong>angular.bootstrap()</strong>&nbsp;function
+                within&nbsp;<strong>angular.element(document).ready()</strong>&nbsp;function. AngularJS uses this
+                function when the DOM is ready for manipulation.</p>
+
+            <p>The angular.bootstrap() function uses two parameters, the document, and the module name injector.</p>
+
+            <hr />
+            <h3>44) What do you understand by $watch?</h3>
+
+            <p>In angularJS, $watch() function is used to watch the changes of variable in $scope object. Generally, the
+                $watch() function is created internally to handle variable changes in the application.</p>
+
+            <p>If there is a need to create custom watch for some specific action then it&#39;s better to use
+                $scope.watch function. The&nbsp;<strong>$scope.watch()</strong>&nbsp;function is used to create a watch
+                of some variable. When we register a watch, we pass two functions as parameters to the $watch()
+                function:</p>
+
+            <ul>
+                <li>A value function</li>
+                <li>A listener function</li>
+            </ul>
+
+            <p>An example is given below:</p>
+
+            <ol start="1">
+                <li>$scope.$watch(function()&nbsp;{},&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;function()&nbsp;{}&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Here, the first function is the value function and the second function is the listener function.</p>
+
+            <hr />
+            <h3>45) What are the different types of directives available in AngularJS?</h3>
+
+            <p>AngularJS provides support for creating custom directives for the following type of elements:</p>
+
+            <ul>
+                <li><strong>Element Directive</strong><br />
+                    Element directives are activated when a matching element is encountered.</li>
+                <li><strong>Attribute</strong><br />
+                    Attribute directives are activated when a matching attribute is encountered.</li>
+                <li><strong>CSS</strong><br />
+                    CSS directives are activated when a matching CSS style is encountered.</li>
+                <li><strong>Comment</strong><br />
+                    Comment directives are activated when a matching comment is encountered.</li>
+            </ul>
+
+            <hr />
+            <h3>46) Explain the compilation process of AngularJS?</h3>
+
+            <p>Angular&#39;s HTML compiler allows us to teach the browser, new HTML syntax. It also allows the developer
+                to attach new behavior or attributes to any HTML element known as directives. AngularJS compilation
+                process automatically takes place in the web browser. It does not contain any server-side or
+                pre-compilation procedure.</p>
+
+            <p>AngularJS uses &lt;$compiler&gt; service for the compilation process of an Angular HTML page. Its
+                compilation process starts after the HTML page (static DOM) is completely loaded.</p>
+
+            <p>It occurs in two phases:</p>
+
+            <ul>
+                <li><strong>Compile</strong><br />
+                    It checks into the entire DOM and collects all of the directives.</li>
+                <li><strong>Link</strong><br />
+                    It connects the directives with a scope and produces a live view.</li>
+            </ul>
+
+            <p>The concept of compile and link has been added from C language. The code is compiled and then linked.</p>
+
+            <hr />
+            <h3>47) What is the Global API in AngularJS?</h3>
+
+            <p>Global API is the combination of global JavaScript function, which is used to perform tasks such as
+                comparing objects, iterating objects, and converting the data.</p>
+
+            <p>There are a few common API functions like:</p>
+
+            <ul>
+                <li><strong>angular.lowercase</strong><br />
+                    It is used to convert a string to lowercase string.</li>
+                <li><strong>angular.uppercase</strong><br />
+                    It is used to convert a string to uppercase string.</li>
+                <li><strong>angular.IsString</strong><br />
+                    It returns true if the current reference is a string.</li>
+                <li><strong>angular.IsNumber</strong><br />
+                    It returns true if the current reference is a number.</li>
+            </ul>
+
+            <hr />
+            <h3>48) Is AngularJS well-suited with all browsers?</h3>
+
+            <p>Yes, AngularJS is supported with all the browsers like Safari, Chrome, Mozilla, Opera, and Internet
+                Explorer, etc. It is also companionable with mobile browsers.</p>
+
+            <hr />
+            <h3>49) &#39;&#39;How are AngularJS prefixes $ and $$ used?</h3>
+
+            <p>$$ prefix in AngularJS is used as a private variable, as it is responsible for preventing accidental code
+                collision with the user code.</p>
+
+            <p>&nbsp;</p>
+
+            <p>Whereas, $ prefix is used to define angular core functionalities such as variable, parameter, property or
+                method, etc.</p>
+
+            <hr />
+            <h3>50) How can someone set, get, and clear cookies in AngularJS?</h3>
+
+            <p>AngularJS has a module known as ngCookies. Before we inject ngCookies, we should include
+                angular-cookies.js into the application.</p>
+
+            <ul>
+                <li><strong>Set Cookies</strong><br />
+                    We can use the put method to set cookies in a key-value format.</li>
+            </ul>
+
+            <ol start="1">
+                <li>$cookies.put(&quot;username&quot;,&nbsp;$scope.username);&nbsp;&nbsp;</li>
+            </ol>
+
+            <ul>
+                <li><strong>Get Cookies</strong><br />
+                    We can use the get method to get cookies.</li>
+            </ul>
+
+            <ol start="1">
+                <li>$cookies.get(&#39;username&#39;);&nbsp;&nbsp;</li>
+            </ol>
+
+            <ul>
+                <li><strong>Clear Cookies</strong><br />
+                    We can use the remove method to remove or clear cookies.</li>
+            </ul>
+
+            <ol start="1">
+                <li>$cookies.remove(&#39;username&#39;);&nbsp;&nbsp;</li>
+            </ol>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

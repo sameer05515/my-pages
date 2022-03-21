@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		#myDIV {
+			height: 250px;
+			width: 250px;
+			overflow: auto;
+			background: yellow;
+		}
+
+		#content {
+			margin: 500px;
+			height: 800px;
+			width: 2000px;
+			background-color: coral;
+		}
+	</style>
+</head>
+
+<body>
+
+	<p>Click the button to scroll to the top of the element with id="content".</p>
+
+	<!-- <button onclick="myFunction()">Scroll</button> -->
+
+	<button onclick="gfg_Run('GFG_DOWN1')">
+		Click Here GFG_DOWN1
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN2')">
+		Click Here GFG_DOWN2
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN3')">
+		Click Here GFG_DOWN3
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN4')">
+		Click Here GFG_DOWN4
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN5')">
+		Click Here GFG_DOWN5
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN6')">
+		Click Here GFG_DOWN6
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN7')">
+		Click Here GFG_DOWN7
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN8')">
+		Click Here GFG_DOWN8
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN9')">
+		Click Here GFG_DOWN9
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN10')">
+		Click Here GFG_DOWN10
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN11')">
+		Click Here GFG_DOWN11
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN12')">
+		Click Here GFG_DOWN12
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN13')">
+		Click Here GFG_DOWN13
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN14')">
+		Click Here GFG_DOWN14
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN15')">
+		Click Here GFG_DOWN15
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN16')">
+		Click Here GFG_DOWN16
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN17')">
+		Click Here GFG_DOWN17
+	</button>
+	<button onclick="gfg_Run('GFG_DOWN18')">
+		Click Here GFG_DOWN18
+	</button>
+
+	<div id="myDIV">
+		<!-- <div id="content">
+  Some text inside an element.
+  </div> -->
+		<p id="GFG_DOWN1" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 1.
+		</p>
+
+		<p id="GFG_DOWN2" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 2.
+		</p>
+
+		<p id="GFG_DOWN3" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 3.
+		</p>
+
+		<p id="GFG_DOWN4" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 4.
+		</p>
+
+		<p id="GFG_DOWN5" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 5.
+		</p>
+
+		<p id="GFG_DOWN6" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 6.
+		</p>
+
+		<p id="GFG_DOWN7" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 7.
+		</p>
+
+		<p id="GFG_DOWN8" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 8.
+		</p>
+		<p id="GFG_DOWN9" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 9.
+		</p>
+
+		<p id="GFG_DOWN10" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 10.
+		</p>
+
+		<p id="GFG_DOWN11" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 11.
+		</p>
+
+		<p id="GFG_DOWN12" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 12.
+		</p>
+
+		<p id="GFG_DOWN13" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 13.
+		</p>
+
+		<p id="GFG_DOWN14" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 14.
+		</p>
+
+		<p id="GFG_DOWN15" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 15.
+		</p>
+
+		<p id="GFG_DOWN16" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 16.
+		</p>
+
+		<p id="GFG_DOWN17" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 17.
+		</p>
+
+		<p id="GFG_DOWN18" style="color:green; 
+			font-size: 30px; 
+			font-weight: bold;">
+			This is element 18.
+		</p>
+
+	</div>
+
+	<script>
+		function myFunction() {
+			var elmnt = document.getElementById("content");
+			elmnt.scrollIntoView();
+		}
+
+		function gfg_Run(idToScroll) {
+			//$('html, body').animate({ 
+			//scrollTop: $("#"+idToScroll).offset().top 
+			//}, 500); 
+
+			const elmnt1 = document.getElementById(idToScroll);
+			elmnt1.scrollIntoView();
+		}
+	</script>
+
+</body>
+
+</html>

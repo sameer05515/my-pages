@@ -1,0 +1,32 @@
+<html>
+
+<head>
+	<title>D3 With AngularJS</title>
+    <link rel="stylesheet" href="../css/angular.css">
+    
+    <script type="text/javascript" src=../js/Angular.min.js></script>
+	<script type="text/javascript" src="../js/myApp.js"></script>
+	<script type="text/javascript" src="../js/d3.js" ></script>
+	<!-- <script src="http://d3js.org/d3.v4.min.js" type="text/javascript"></script>
+	<script src="http://d3js.org/d3-selection-multi.v1.js"></script> -->
+	<!-- <script type="text/javascript" src="../js/controllers/controller.js"></script>
+	<script type="text/javascript" src="../js/directive/directive.js"></script>
+	<script type="text/javascript" src="../js/directive/directive.graph.js"></script> -->
+</head>
+
+<body>
+	<div ng-app="MyApp">
+        <div ng-controller="MyController">
+            <div id="xxx">
+                <editkeyvalue accept="blabla('from directive')" key='keyA' value='valueA' />
+            </div>
+
+            <div id="myDiv">
+                <directed-weighted-graph src="src" parent="parent"></directed-weighted-graph>
+            </div>
+        </div>
+    </div>
+	
+</body>
+
+</html>

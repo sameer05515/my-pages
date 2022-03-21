@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+  <title>Responsive Image Carousel with Angular.js</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <style>
+    .carousel-inner img {
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="css-script-menu">
+    <div class="css-script-center">
+      <ul>
+        <li><a href="http://www.cssscript.com/responsive-image-carousel-with-angular-js-and-bootstrap-3/">Download</a>
+        </li>
+        <li><a href="http://www.cssscript.com/">Back To CSS Script</a></li>
+      </ul>
+      
+      <div class="css-script-clear"></div>
+    </div>
+  </div>
+  <h1 style="margin-top:150px; margin-bottom:50px" align="center">Responsive Image Carousel with Angular.js</h1>
+  <div ng-app="carousel">
+    <div class="container" ng-controller="folderCtrl">
+      <!-- Carousel
+        ================================================== -->
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" ng-repeat="img in images" class="{active : (img === 0)}"
+            data-slide-to="{{img}}"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div ng-class="{item: true, active : (img === 0)}" ng-repeat="img in images"> <img
+              ng-src="{{uri}}/{{w}}/{{h}}/{{currentFolder}}/{{img}}" alt="Slide numder {{img}}">
+            <div class="container">
+              <div class="carousel-caption"> </div>
+            </div>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span
+            class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myCarousel"
+          role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+      </div>
+      <!-- /.carousel -->
+
+      <!-- Fixed navbar -->
+      <div class="navbar navbar-default navbar-fixed-botom" role="navigation">
+        <div class="container">
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li ng-repeat="folder in folders" class="{{activeFolder(folder)}}" ng-click="selectFolder(folder)"> <a
+                  ng-href="#{{folder}}">{{folder}}</a> </li>
+            </ul>
+          </div>
+          <!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js'></script>
+  <script>
+    var app = angular.module('carousel', []);
+    app.controller('folderCtrl', function ($scope, $http) {
+      $scope.w = window.innerWidth;
+      $scope.h = window.innerHeight - 20;
+      $scope.uri = "http://lorempixel.com";
+      $scope.folders = [
+        'abstract',
+        'animals',
+        'business',
+        'cats',
+        'city',
+        'food',
+        'night',
+        'life',
+        'fashion',
+        'people',
+        'nature',
+        'sports',
+        'technics',
+        'transport'
+      ];
+      $scope.images = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+      $scope.currentFolder = $scope.folders[0];
+      $scope.selectFolder = function (folder) {
+        $scope.currentFolder = folder;
+      };
+      $scope.activeFolder = function (folder) {
+        return (folder === $scope.currentFolder) ? 'active' : '';
+      };
+    });
+  </script>
+  
+</body>
+
+</html>

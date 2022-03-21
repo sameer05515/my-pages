@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.parent {
+  position: relative;
+  height: 200px;
+  border: 3px solid red;
+}
+
+div.absolute {
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+  border: 3px solid #8AC007;
+} 
+
+div.relative {
+  position: relative;
+  width: 50%;
+  bottom: 5px;
+  border: 3px solid #8AC007;
+} 
+
+div.fixed {
+  position: fixed;
+  width: 50%;
+  bottom: 10px;
+  border: 3px solid #8AC007;
+} 
+
+div.sticky {
+  position: sticky;
+  width: 50%;
+  bottom: 10px;
+  border: 3px solid #8AC007;
+} 
+</style>
+</head>
+<body>
+
+Reference : <a style="background-color: white;"
+ href="https://www.w3schools.com/cssref/pr_pos_bottom.asp"  
+	target="_blank">Click here</a>
+
+<h1>The bottom Property</h1>
+
+<div class="parent">This div element has position: relative;
+  <div class="absolute"><strong>position: absolute and bottom 10px</strong><br>This div's bottom edge is placed 10 pixels above the bottom edge of the containing element.</div>
+</div>
+<br>
+
+<div class="parent">This div element has position: relative;
+  <div class="relative"><strong>position: relative and bottom 5px</strong><br>This div's bottom edge is placed 5 pixels above its normal position.</div>
+</div>
+<br>
+
+<div class="fixed"><strong>position: fixed and bottom 10px</strong><br>This div's bottom edge is placed 10 pixels from the bottom of the viewport.</div>
+
+<div class="parent">This div element has position: relative;
+  <div class="sticky"><strong>position: sticky and bottom 10px</strong><br>This div is sticky.</div>
+</div>
+
+</body>
+</html>

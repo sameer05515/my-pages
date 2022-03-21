@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="stylesheet" href="../../../lib/style.css">
+</head>
+
+<body>
+
+    <div class="borderSt">
+        <h1>
+            Work project is at
+            <a href="https://github.com/sameer05515/python-practice/tree/main/python-basic-practice"
+                target="_blank">python-basic-practice</a>
+        </h1>
+        <div class="box-prem">
+            <h2>Introduction to python</h2>
+
+            <div class="box-prem">
+                <h3>What is Python?</h3>
+                Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. <br>
+
+                It is used for:
+                <ul>
+                    <li>web development (server-side),</li>
+                    <li>software development,</li>
+                    <li>mathematics,</li>
+                    <li>system scripting.</li>
+                </ul>
+            </div>
+
+            <div class="box-prem">
+                <h3>Why Python?</h3>
+                <ul>
+                    <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                    <li>Python has a simple syntax similar to the English language.</li>
+                    <li>Python has syntax that allows developers to write programs with fewer lines than some other
+                        programming languages.</li>
+                    <li>Python runs on an interpreter system, meaning that code can be executed as soon as it is
+                        written. This means that prototyping can be very quick.</li>
+                    <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                </ul>
+            </div>
+
+            <div class="box-prem">
+                <h3>Good to know</h3>
+                <ul>
+                    <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial.
+                        However, Python 2, although not being updated with anything other than security updates, is
+                        still quite popular.</li>
+                    <li>In this tutorial Python will be written in a text editor. It is possible to write Python in an
+                        Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are
+                        particularly useful when managing larger collections of Python files.</li>
+                </ul>
+            </div>
+
+            <div class="box-prem">
+                <h3>Python Syntax compared to other programming languages</h3>
+                <ul>
+                    <li>Python was designed for readability, and has some similarities to the English language with
+                        influence from mathematics.</li>
+                    <li>Python uses new lines to complete a command, as opposed to other programming languages which
+                        often use semicolons or parentheses.</li>
+                    <li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops,
+                        functions and classes. Other programming languages often use curly-brackets for this purpose.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ./ Introduction to python -->
+
+        <div class="box-prem">
+            <h2>Python Quickstart</h2>
+            <p>Python is an interpreted programming language, this means that as a developer you write Python (.py)
+                files in a text editor and then put those files into the python interpreter to be executed.</p>
+            <p>The way to run a python file is like this on the command line:</p>
+            <div class="code-box-black-bg">$> python helloworld.py</div>
+        </div>
+
+        <div class="box-prem">
+            <h2>Python Indentation</h2>
+            <p>Indentation refers to the spaces at the beginning of a code line.</p>
+            <p>Where in other programming languages the indentation in code is for readability only, the indentation in
+                Python is very important.</p>
+            <p class="important-line">Python uses indentation to indicate a block of code.</p>
+            <p class="important-line">You have to use the same number of spaces in the same block of code, otherwise
+                Python will give you an error:</p>
+            <pre class="code-box-black-bg">
+                if 5 > 2:
+                    print("Five is greater than two!")
+            </pre>
+        </div>
+
+        <div class="box-prem">
+            <h2>Many Values to Multiple Variables</h2>
+            <p>Python allows you to assign values to multiple variables in one line:</p>
+            <pre class="code-box-black-bg">
+                x, y, z = "Orange", "Banana", "Cherry"
+                print(x)
+                print(y)
+                print(z)
+            </pre>
+        </div>
+
+
+        <div class="box-prem">
+            <h2>Built-in Data Types</h2>
+            <p>In programming, data type is an important concept.</p>
+            <p>Variables can store data of different types, and different types can do different things.</p>
+            <p>Python has the following data types built-in by default, in these categories:</p>
+            <table class="w3-table">
+                <tbody>
+                    <tr>
+                        <td>Text Type:</td>
+                        <td><code class="w3-codespan">str</code></td>
+                    </tr>
+                    <tr>
+                        <td>Numeric Types:</td>
+                        <td><code class="w3-codespan">int</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">float</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">complex</code></td>
+                    </tr>
+                    <tr>
+                        <td>Sequence Types:</td>
+                        <td><code class="w3-codespan">list</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">tuple</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">range</code></td>
+                    </tr>
+                    <tr>
+                        <td>Mapping Type:</td>
+                        <td><code class="w3-codespan">dict</code></td>
+                    </tr>
+                    <tr>
+                        <td>Set Types:</td>
+                        <td><code class="w3-codespan">set</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">frozenset</code></td>
+                    </tr>
+                    <tr>
+                        <td>Boolean Type:</td>
+                        <td><code class="w3-codespan">bool</code></td>
+                    </tr>
+                    <tr>
+                        <td>Binary Types:</td>
+                        <td><code class="w3-codespan">bytes</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">bytearray</code>,<span>&nbsp;</span><code
+                                class="w3-codespan">memoryview</code></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- ./ Built-in Data Types -->
+
+        <div class="box-prem">
+            <div class="box-prem">
+                <h2>Getting the Data Type</h2>
+                <p>You can get the data type of any object by using the type() function:</p>
+                <pre class="code-box-black-bg">
+                x = 5
+                print(type(x))
+                </pre>
+            </div>
+
+            <div class="box-prem">
+                <h2>Setting the Data Type</h2>
+                <p>In Python, the data type is set when you assign a value to a variable:</p>
+                <table id="dtref" class="ws-table-all notranslate" style="width: 410px;">
+                    <tbody>
+                        <tr>
+                            <th style="width: 317.74px;">Example</th>
+                            <th style="width: 91.2604px;">Data Type</th>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = "Hello World"</td>
+                            <td style="width: 91.2604px;">str</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = 20</td>
+                            <td style="width: 91.2604px;">int</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = 20.5</td>
+                            <td style="width: 91.2604px;">float</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = 1j</td>
+                            <td style="width: 91.2604px;">complex</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = ["apple", "banana", "cherry"]</td>
+                            <td style="width: 91.2604px;">list</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = ("apple", "banana", "cherry")</td>
+                            <td style="width: 91.2604px;">tuple</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = range(6)</td>
+                            <td style="width: 91.2604px;">range</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = {"name" : "John", "age" : 36}</td>
+                            <td style="width: 91.2604px;">dict</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = {"apple", "banana", "cherry"}</td>
+                            <td style="width: 91.2604px;">set</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = frozenset({"apple", "banana", "cherry"})</td>
+                            <td style="width: 91.2604px;">frozenset</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = True</td>
+                            <td style="width: 91.2604px;">bool</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = b"Hello"</td>
+                            <td style="width: 91.2604px;">bytes</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = bytearray(5)</td>
+                            <td style="width: 91.2604px;">bytearray</td>
+                        </tr>
+                        <tr>
+                            <td style="width: 317.74px;">x = memoryview(bytes(5))</td>
+                            <td style="width: 91.2604px;">memoryview</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- ./ Setting the Data Type -->
+
+            <div class="box-prem">
+                <h2>Random Number</h2>
+                <p>Python does not have a random() function to make a random number, but Python has a built-in module
+                    called random that can be used to make random numbers:</p>
+                <p>Import the random module, and display a random number between 1 and 9</p>
+                <pre class="code-box-black-bg">
+                    import random
+
+                    print(random.randrange(1, 10))
+                </pre>
+            </div>
+        </div>
+        <!-- ./ data types -->
+
+        <div class="box-prem">
+            <p>The Python print() function has an argument called end, which prevents jump into the newline. Let's
+                understand the following example.</p>
+            <pre class="code-box-black-bg">
+                list1 = [10,11,12,13,14,15]  
+                for i in list1:  
+                    print(i, end = " ")  
+            </pre>
+            <b>Output</b>
+            <pre class="code-box-black-bg">
+                10 11 12 13 14 15                
+            </pre>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

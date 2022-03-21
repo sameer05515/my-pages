@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a {
+  background-color: lightgreen;
+}
+#b {
+  width: 250px;
+  height: 250px;
+}
+.c {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  padding: 2px;
+  mix-blend-mode: difference;
+}
+#d {
+  isolation: auto;
+}
+#e {
+  isolation: isolate;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_isolation.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS isolation Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Create a new stacking context for the element with id="e":</h2>
+</div>
+
+
+<h1>The isolation Property</h1>
+
+<div id="b" class="a">
+  <div id="d">
+  <div class="a c">div d: isolation: auto;</div>
+  </div>
+  <div id="e">
+  <div class="a c">div e: isolation: isolate;</div>
+  </div>
+</div>
+
+<p><b>Note:</b> Edge/Internet Explorer do not support the isolation property.</p>
+
+</body>
+</html>

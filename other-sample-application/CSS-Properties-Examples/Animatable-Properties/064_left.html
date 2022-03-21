@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {left: 500px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of left</h1>
+
+<p>Gradually change the left position of the DIV element from 0 to 500px, and back to 0:<p>
+
+<div id="myDIV">
+  <h1>My DIV</h1>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

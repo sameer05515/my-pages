@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  top: 0;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {top: 300px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of top</h1>
+
+<p>Gradually change the top property from 0 to 300px, then back to 0:<p>
+
+<div id="myDIV">
+  <h1>myDIV</h1>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

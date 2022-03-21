@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servlet</title>
+    <link rel="stylesheet" href="../../../../lib/style.css">
+    <script src="../../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>Servlet interview questions</h1>
+
+            <p>There is a list of 30 servlet interview questions for beginners and professionals. If you know any
+                servlet interview question that has not been included here, kindly post your question in the Ask
+                Question section.</p>
+
+            <hr />
+            <h3>1) How many objects of a servlet is created?</h3>
+
+            <p>Only one object at the time of first request by servlet or web container.</p>
+
+            <hr />
+            <h3>2) What is the life-cycle of a servlet?</h3>
+
+            <ol>
+                <li>Servlet is loaded</li>
+                <li>servlet is instantiated</li>
+                <li>servlet is initialized</li>
+                <li>service the request</li>
+                <li>servlet is destroyed</li>
+            </ol>
+
+            <p><a href="https://www.javatpoint.com/life-cycle-of-a-servlet">more details...</a></p>
+
+            <hr />
+            <h3>3) What are the life-cycle methods for a servlet?</h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>public void init(ServletConfig config)</td>
+                        <td>It is invoked only once when first request comes for the servlet. It is used to initialize
+                            the servlet.</td>
+                    </tr>
+                    <tr>
+                        <td>public void service(ServletRequest request,ServletResponse)throws
+                            ServletException,IOException</td>
+                        <td>It is invoked at each request.The service() method is used to service the request.</td>
+                    </tr>
+                    <tr>
+                        <td>public void destroy()</td>
+                        <td>It is invoked only once when servlet is unloaded.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="https://www.javatpoint.com/life-cycle-of-a-servlet">more details...</a></p>
+
+            <hr />
+            <h3>4) Who is responsible to create the object of servlet?</h3>
+
+            <p>The web container or servlet container.</p>
+
+            <hr />
+            <h3>5) When servlet object is created?</h3>
+
+            <p>At the time of first request.</p>
+
+            <hr />
+            <h3>6) What is difference between Get and Post method?</h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Get</th>
+                        <th>Post</th>
+                    </tr>
+                    <tr>
+                        <td>1) Limited amount of data can be sent because data is sent in header.</td>
+                        <td>Large amount of data can be sent because data is sent in body.</td>
+                    </tr>
+                    <tr>
+                        <td>2) Not Secured because data is exposed in URL bar.</td>
+                        <td>Secured because data is not exposed in URL bar.</td>
+                    </tr>
+                    <tr>
+                        <td>3) Can be bookmarked</td>
+                        <td>Cannot be bookmarked</td>
+                    </tr>
+                    <tr>
+                        <td>4) Idempotent</td>
+                        <td>Non-Idempotent</td>
+                    </tr>
+                    <tr>
+                        <td>5) It is more efficient and used than Post</td>
+                        <td>It is less efficient and used</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><a href="https://www.javatpoint.com/http-request">more details...</a></p>
+
+            <hr />
+            <h3>7) What is difference between PrintWriter and ServletOutputStream?</h3>
+
+            <p>PrintWriter is a character-stream class where as ServletOutputStream is a byte-stream class. The
+                PrintWriter class can be used to write only character-based information whereas ServletOutputStream
+                class can be used to write primitive values as well as character-based information.</p>
+
+            <hr />
+            <h3>8) What is difference between GenericServlet and HttpServlet?</h3>
+
+            <p>The GenericServlet is protocol independent whereas HttpServlet is HTTP protocol specific. HttpServlet
+                provides additional functionalities such as state management etc.</p>
+
+            <hr />
+            <h3>9) What is servlet collaboration?</h3>
+
+            <p>When one servlet communicates to another servlet, it is known as servlet collaboration. There are many
+                ways of servlet collaboration:</p>
+
+            <ul>
+                <li>RequestDispacher interface</li>
+                <li>sendRedirect() method etc.</li>
+            </ul>
+
+            <p><a href="https://www.javatpoint.com/requestdispatcher">more details...</a></p>
+
+            <hr />
+            <h3>10) What is the purpose of RequestDispatcher Interface?</h3>
+
+            <p>The RequestDispacher interface provides the facility of dispatching the request to another resource it
+                may be html, servlet or jsp. This interceptor can also be used to include the content of antoher
+                resource.</p>
+
+            <p><a href="https://www.javatpoint.com/requestdispatcher">more details...</a></p>
+
+            <hr />
+            <h3>11) Can you call a jsp from the servlet?</h3>
+
+            <p>Yes, one of the way is RequestDispatcher interface for example:</p>
+
+            <ol start="1">
+                <li>RequestDispatcher&nbsp;rd=request.getRequestDispatcher(&quot;/login.jsp&quot;);&nbsp;&nbsp;</li>
+                <li>rd.forward(request,response);&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><a href="https://www.javatpoint.com/requestdispatcher">more details...</a></p>
+
+            <hr />
+            <h3>12) Difference between forward() method and sendRedirect() method ?</h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>forward() method</th>
+                        <th>sendRedirect() method</th>
+                    </tr>
+                    <tr>
+                        <td>1) forward() sends the same request to another resource.</td>
+                        <td>1) sendRedirect() method sends new request always because it uses the URL bar of the
+                            browser.</td>
+                    </tr>
+                    <tr>
+                        <td>2) forward() method works at server side.</td>
+                        <td>2) sendRedirect() method works at client side.</td>
+                    </tr>
+                    <tr>
+                        <td>3) forward() method works within the server only.</td>
+                        <td>3) sendRedirect() method works within and outside the server.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>13) What is difference between ServletConfig and ServletContext?</h3>
+
+            <p>The container creates object of ServletConfig for each servlet whereas object of ServletContext is
+                created for each web application.</p>
+
+            <hr />
+            <h3>14) What is Session Tracking?</h3>
+
+            <p><strong>Session</strong>&nbsp;simply means a particular interval of time.</p>
+
+            <p>Session Tracking is a way to maintain state of an user.Http protocol is a stateless protocol.Each time
+                user requests to the server, server treats the request as the new request.So we need to maintain the
+                state of an user to recognize to particular user.</p>
+
+            <p>&nbsp;</p>
+
+            <p><a href="https://www.javatpoint.com/session-tracking-in-servlets">more details...</a></p>
+
+            <hr />
+            <h3>15) What are Cookies?</h3>
+
+            <p>A cookie is a small piece of information that is persisted between the multiple client requests. A cookie
+                has a name, a single value, and optional attributes such as a comment, path and domain qualifiers, a
+                maximum age, and a version number.</p>
+
+            <p><a href="https://www.javatpoint.com/cookies-in-servlet">more details...</a></p>
+
+            <hr />
+            <h3>16) What is difference between Cookies and HttpSession?</h3>
+
+            <p>Cookie works at client side whereas HttpSession works at server side.</p>
+
+            <hr />
+            <h3>17) What is filter?</h3>
+
+            <p>A filter is an object that is invoked either at the preprocessing or postprocessing of a request. It is
+                pluggable.</p>
+
+            <p><a href="https://www.javatpoint.com/servlet-filter">more details...</a></p>
+
+            <hr />
+            <h3>18) How can we perform any action at the time of deploying the project?</h3>
+
+            <p>By the help of ServletContextListener interface.</p>
+
+            <hr />
+            <h3>19) What is the disadvantage of cookies?</h3>
+
+            <p>It will not work if cookie is disabled from the browser.</p>
+
+            <p>&nbsp;</p>
+
+            <p><a href="https://www.javatpoint.com/cookies-in-servlet">more details...</a></p>
+
+            <hr />
+            <h3>20) How can we upload the file to the server using servlet?</h3>
+
+            <p>One of the way is by MultipartRequest class provided by third party.</p>
+
+            <p><a href="https://www.javatpoint.com/example-of-uploading-file-to-the-server-in-servlet">more
+                    details...</a></p>
+
+            <hr />
+            <h3>21) What is load-on-startup in servlet?</h3>
+
+            <p>The load-on-startup element of servlet in web.xml is used to load the servlet at the time of deploying
+                the project or server start. So it saves time for the response of first request.</p>
+
+            <p><a href="https://www.javatpoint.com/load-on-startup">more details...</a></p>
+
+            <hr />
+            <h3>22) What if we pass negative value in load-on-startup?</h3>
+
+            <p>It will not affect the container, now servlet will be loaded at first request.</p>
+
+            <p>&nbsp;</p>
+
+            <p><a href="https://www.javatpoint.com/load-on-startup">more details...</a></p>
+
+            <hr />
+            <h3>23) What is war file?</h3>
+
+            <p>A war (web archive) file specifies the web elements. A servlet or jsp project can be converted into a war
+                file. Moving one servlet project from one place to another will be fast as it is combined into a single
+                file.</p>
+
+            <p><a href="https://www.javatpoint.com/war-file">more details...</a></p>
+
+            <hr />
+            <h3>24) How to create war file?</h3>
+
+            <p>The war file can be created using jar tool found in jdk/bin directory. If you are using Eclipse or
+                Netbeans IDE, you can export your project as a war file.</p>
+
+            <p>To create war file from console, you can write following code.</p>
+
+            <ol start="1">
+                <li>jar&nbsp;-cvf&nbsp;abc.war&nbsp;*&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Now all the files of current directory will be converted into abc.war file.</p>
+
+            <p><a href="https://www.javatpoint.com/war-file">more details...</a></p>
+
+            <hr />
+            <h3>25) What are the annotations used in Servlet 3?</h3>
+
+            <p>There are mainly 3 annotations used for the servlet.</p>
+
+            <ol>
+                <li>@WebServlet : for servlet class.</li>
+                <li>@WebListener : for listener class.</li>
+                <li>@WebFilter : for filter class.</li>
+            </ol>
+
+            <hr />
+            <h3>26) Which event is fired at the time of project deployment and undeployment?</h3>
+
+            <p>ServletContextEvent.</p>
+
+            <p><a href="https://www.javatpoint.com/ServletContextEvent">more details...</a></p>
+
+            <hr />
+            <h3>27) Which event is fired at the time of session creation and destroy?</h3>
+
+            <p>HttpSessionEvent.</p>
+
+            <p><a href="https://www.javatpoint.com/HttpSessionEvent">more details...</a></p>
+
+            <hr />
+            <h3>28) Which event is fired at the time of setting, getting or removing attribute from application scope?
+            </h3>
+
+            <p>ServletContextAttributeEvent.</p>
+
+            <hr />
+            <h3>29) What is the use of welcome-file-list?</h3>
+
+            <p>It is used to specify the welcome file for the project.</p>
+
+            <p>&nbsp;</p>
+
+            <p><a href="https://www.javatpoint.com/welcome-file-list">more details...</a></p>
+
+            <hr />
+            <h3>30) What is the use of attribute in servlets?</h3>
+
+            <p>Attribute is a map object that can be used to set, get or remove in request, session or application
+                scope. It is mainly used to share information between one servlet to another.</p>
+
+            <p><a href="https://www.javatpoint.com/attribute">more details...</a></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

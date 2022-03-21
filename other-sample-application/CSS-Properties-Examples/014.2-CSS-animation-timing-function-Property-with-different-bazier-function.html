@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.myMoveDivClass {
+  width: 200px;
+  height: 50px;
+  background: red;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+#div1 {animation-timing-function: cubic-bezier(0,0,1,1);}
+#div2 {animation-timing-function: cubic-bezier(0.25,0.1,0.25,1);}
+#div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+#div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+#div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-timing-function Property</h1>
+<h2>To better understand the different timing function values : speed curves are defined with the cubic-bezier function:</h2>
+</div>
+
+
+<div id="div1" class="myMoveDivClass">linear <br> cubic-bezier(0,0,1,1);</div>
+<div id="div2" class="myMoveDivClass">ease <br> cubic-bezier(0.25,0.1,0.25,1);</div>
+<div id="div3" class="myMoveDivClass">ease-in <br> cubic-bezier(0.42,0,1,1);</div>
+<div id="div4" class="myMoveDivClass">ease-out <br> cubic-bezier(0,0,0.58,1);</div>
+<div id="div5" class="myMoveDivClass">ease-in-out <br> cubic-bezier(0.42,0,0.58,1);</div>
+
+
+<p><strong>Note:</strong> The animation-timing-function property is not supported in Internet Explorer 9 and earlier versions.</p>
+</body>
+</html>

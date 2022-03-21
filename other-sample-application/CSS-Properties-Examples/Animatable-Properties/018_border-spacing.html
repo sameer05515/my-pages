@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+table, th, td {
+  border: 1px solid black;
+}
+
+#myTABLE {
+  border-spacing: 2px;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {border-spacing: 20px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of border-spacing</h1>
+
+<p>Gradually change the border-spacing property from 2px to 20px then back:<p>
+<table id="myTABLE">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Emil</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Tobias</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Linus</td>
+    <td>2</td>
+  </tr>
+</table>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

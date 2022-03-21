@@ -1,0 +1,144 @@
+code[class*='language-'] {
+	background: none; text-align: left; color: black; line-height: 1.5; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; word-spacing: normal; white-space: pre; -ms-word-break: normal; -ms-word-wrap: normal; text-shadow: 0px 1px white; -ms-hyphens: none; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;
+}
+pre[class*='language-'] {
+	background: none; text-align: left; color: black; line-height: 1.5; font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace; word-spacing: normal; white-space: pre; -ms-word-break: normal; -ms-word-wrap: normal; text-shadow: 0px 1px white; -ms-hyphens: none; -moz-tab-size: 4; -o-tab-size: 4; tab-size: 4; -webkit-hyphens: none; -moz-hyphens: none; hyphens: none;
+}
+pre[class*='language-']::selection {
+	background: rgb(179, 212, 252); text-shadow: none;
+}
+pre[class*='language-'] ::selection {
+	background: rgb(179, 212, 252); text-shadow: none;
+}
+code[class*='language-']::selection {
+	background: rgb(179, 212, 252); text-shadow: none;
+}
+code[class*='language-'] ::selection {
+	background: rgb(179, 212, 252); text-shadow: none;
+}
+@media print
+{
+code[class*='language-'] {
+	text-shadow: none;
+}
+pre[class*='language-'] {
+	text-shadow: none;
+}
+}
+pre[class*='language-'] {
+	margin: 0.5em 0px; padding: 1em; overflow: auto;
+}
+:not(pre) > code[class*='language-'] {
+	background: rgb(245, 242, 240);
+}
+pre[class*='language-'] {
+	background: rgb(245, 242, 240);
+}
+:not(pre) > code[class*='language-'] {
+	padding: 0.1em; border-radius: 0.3em; white-space: normal;
+}
+.comment.token {
+	color: slategray;
+}
+.prolog.token {
+	color: slategray;
+}
+.doctype.token {
+	color: slategray;
+}
+.cdata.token {
+	color: slategray;
+}
+.punctuation.token {
+	color: rgb(153, 153, 153);
+}
+.namespace {
+	opacity: 0.7;
+}
+.property.token {
+	color: rgb(153, 0, 85);
+}
+.tag.token {
+	color: rgb(153, 0, 85);
+}
+.boolean.token {
+	color: rgb(153, 0, 85);
+}
+.number.token {
+	color: rgb(153, 0, 85);
+}
+.constant.token {
+	color: rgb(153, 0, 85);
+}
+.symbol.token {
+	color: rgb(153, 0, 85);
+}
+.deleted.token {
+	color: rgb(153, 0, 85);
+}
+.selector.token {
+	color: rgb(102, 153, 0);
+}
+.attr-name.token {
+	color: rgb(102, 153, 0);
+}
+.string.token {
+	color: rgb(102, 153, 0);
+}
+.char.token {
+	color: rgb(102, 153, 0);
+}
+.builtin.token {
+	color: rgb(102, 153, 0);
+}
+.inserted.token {
+	color: rgb(102, 153, 0);
+}
+.operator.token {
+	background: hsla(0, 0%, 100%, 0.5); color: rgb(166, 127, 89);
+}
+.entity.token {
+	background: hsla(0, 0%, 100%, 0.5); color: rgb(166, 127, 89);
+}
+.url.token {
+	background: hsla(0, 0%, 100%, 0.5); color: rgb(166, 127, 89);
+}
+.language-css .string.token {
+	background: hsla(0, 0%, 100%, 0.5); color: rgb(166, 127, 89);
+}
+.style .string.token {
+	background: hsla(0, 0%, 100%, 0.5); color: rgb(166, 127, 89);
+}
+.atrule.token {
+	color: rgb(0, 119, 170);
+}
+.attr-value.token {
+	color: rgb(0, 119, 170);
+}
+.keyword.token {
+	color: rgb(0, 119, 170);
+}
+.function.token {
+	color: rgb(221, 74, 104);
+}
+.regex.token {
+	color: rgb(238, 153, 0);
+}
+.important.token {
+	color: rgb(238, 153, 0);
+}
+.variable.token {
+	color: rgb(238, 153, 0);
+}
+.important.token {
+	font-weight: bold;
+}
+.bold.token {
+	font-weight: bold;
+}
+.italic.token {
+	font-style: italic;
+}
+.entity.token {
+	cursor: help;
+}

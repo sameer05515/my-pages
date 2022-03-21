@@ -1,0 +1,71 @@
+thead {
+    color: green;
+}
+
+tbody {
+    /* color: blue; */
+    color: black;
+}
+
+tfoot {
+    color: red;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th:hover {
+    cursor: pointer;
+    background: #AAA;
+}
+
+/***/
+
+.borderSt {
+    border: 5px solid rgb(37, 50, 240);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.box-prem {
+    border: 2px solid rgb(12, 12, 12);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.box-red {
+    border: 2px solid rgb(156, 5, 51);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.box-green {
+    border: 2px solid rgb(5, 185, 20);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.box-yellow {
+    border: 2px solid rgba(159, 201, 7, 0.952);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.code-box-black-bg{
+    border-left: 4px solid #04AA6D;
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+.important-line{
+    color: rgb(173, 15, 15)!important;
+    font-weight: bold;
+}

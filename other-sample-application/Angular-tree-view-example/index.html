@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div ng-app="myApp">
+        <div ng-controller="myController">
+
+            <div>
+                <input type="button" value="TREE MODEL 1" data-ng-click="roleList = roleList1" />
+
+                <input type="button" value="TREE MODEL 2" data-ng-click="roleList = roleList2" />
+            </div>
+
+            <div
+                style="margin:10px 0 30px 0; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
+                <span><b>Selected Node</b> : {{mytree.currentNode.roleName}}</span>
+            </div>
+
+            <!--
+            [TREE attribute]
+            angular-treeview: the treeview directive
+            tree-id : each tree's unique id.
+            tree-model : the tree model on $scope.
+            node-id : each node's id
+            node-label : each node's label
+            node-children: each node's children
+          -->
+            <div data-angular-treeview="true" data-tree-id="mytree" data-tree-model="roleList" data-node-id="roleId"
+                data-node-label="roleName" data-node-children="children">
+            </div>
+
+
+            <div
+                style="margin:10px 0 30px 0; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
+                <span><b>Selected Topic</b> : <b>title</b> :: {{topicTree.currentNode.title}} 
+                    - <b>parentId</b> :: {{topicTree.currentNode.parentId}}
+                    - <b>id</b> :: {{topicTree.currentNode.id}}</span>
+                    <br>
+                    <!-- <pre>{{topicTree.currentNode|json}}</pre> -->
+            </div>
+            <div style ="border:5px solid green;" data-angular-treeview="true" 
+            data-tree-id="topicTree" 
+            data-tree-model="nodes" 
+            data-node-id="id"
+            data-node-label="title" 
+            data-node-children="children">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="../../lib/js/jquery.js"></script>
+    <script src="../../lib/js/angular-1.5.5/angular.min.js"></script>
+    <script src="../../lib/js/angular-1.5.5/angular-route.min.js"></script>
+    <script src="../../lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
