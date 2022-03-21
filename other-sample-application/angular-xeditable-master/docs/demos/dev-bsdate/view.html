@@ -1,0 +1,56 @@
+<div ng-controller="DevBsdateCtrl">
+  <a href="#" data-editable-bsdate="user.dob"
+              data-e-is-open="opened.$data"
+              data-e-ng-click="open($event,'$data')"
+              data-e-datepicker-popup="dd-MMMM-yyyy"
+              data-e-min-date="getMinDate()"
+              data-e-max-date="getMaxDate()"
+              data-e-on-open-focus="true"
+              data-e-style="color: white; background-color: green"
+              id="minMax"
+              class="minMax">
+    {{ (user.dob | date:"dd/MM/yyyy") || 'empty' }}
+  </a>
+  &nbsp;
+  <a href="#" data-editable-bsdate="user.startDate"
+              data-e-is-open="opened.$data"
+              data-e-ng-click="open($event,'$data')"
+              data-e-datepicker-popup="dd-MMMM-yyyy"
+              data-e-init-date="getInitDate()"
+              id="initDate"
+              class="initDate">
+    {{ (user.startDate | date:"dd/MM/yyyy") || 'empty' }}
+  </a>
+  &nbsp;
+  <a href="#" data-editable-bsdate="user.hireDate"
+              data-e-is-open="opened.$data"
+              data-e-ng-click="open($event,'$data')"
+              data-e-datepicker-popup="dd-MMMM-yyyy"
+              data-e-init-date="getInitDate()"
+              data-e-on-open-focus="true"
+              data-e-readonly="true"
+              id="readOnly"
+              class="readOnly">
+    {{ (user.hireDate | date:"dd/MM/yyyy") || 'empty' }}
+  </a>
+  &nbsp;
+  <a href="#" data-editable-bsdate="user.dob"
+              data-e-is-open="opened.$data"
+              data-e-ng-click="open($event,'$data')"
+              data-e-datepicker-popup="dd-MMMM-yyyy"
+              data-e-ng-change="changed($parent.$data)"
+              id="onChangeDate"
+              class="onChangeDate">
+    {{ (user.dob | date:"dd/MM/yyyy") || 'empty' }}
+  </a>
+  &nbsp;
+  <a href="#" data-editable-bsdate="user.dob"
+             data-e-is-open="opened.$data"
+             data-e-ng-click="open($event,'$data')"
+             data-e-datepicker-popup="dd-MMMM-yyyy"
+             data-e-show-calendar-button="false"
+             id="hideCalendarButton"
+             class="hideCalendarButton">
+    {{ (user.dob | date:"dd/MM/yyyy") || 'empty' }}
+  </a>
+</div>

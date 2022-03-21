@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Patterns</title>
+    <link rel="stylesheet" href="../../../lib/style.css">
+    <script src="../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-green">
+            <a href="https://refactoring.guru/design-patterns" target="_blank">
+                Design Pattern tutorial
+            </a>
+        </div>
+        <div class="box-green">
+            <b>Design patterns</b> are typical solutions to commonly occurring problems in software design. They are
+            like
+            pre-made blueprints that you can customize to solve a recurring design problem in your code.
+            <br> <br>
+
+            You can’t just find a pattern and copy it into your program, the way you can with off-the-shelf functions or
+            libraries. The pattern is not a specific piece of code, but a general concept for solving a particular
+            problem. You can follow the pattern details and implement a solution that suits the realities of your own
+            program.
+            <br><br>
+
+            Patterns are often confused with algorithms, because both concepts describe typical solutions to some known
+            problems. While an algorithm always defines a clear set of actions that can achieve some goal, a pattern is
+            a more high-level description of a solution. The code of the same pattern applied to two different programs
+            may be different.
+            <br><br>
+
+            An analogy to an algorithm is a cooking recipe: both have clear steps to achieve a goal. On the other hand,
+            a pattern is more like a blueprint: you can see what the result and its features are, but the exact order of
+            implementation is up to you.
+        </div>
+
+        <div class="box-green">
+            <h2>What does the pattern consist of?</h2>
+            Most patterns are described very formally so people can reproduce them in many contexts. Here are the
+            sections that are usually present in a pattern description:
+
+            <ul>
+                <li><b>Intent</b> of the pattern briefly describes both the problem and the solution.</li>
+                <li><b>Motivation</b> further explains the problem and the solution the pattern makes possible.</li>
+                <li><b>Structure</b> of classes shows each part of the pattern and how they are related.</li>
+                <li><b>Code example</b> in one of the popular programming languages makes it easier to grasp the idea
+                    behind the
+                    pattern.</li>
+            </ul>
+
+            Some pattern catalogs list other useful details, such as applicability of the pattern, implementation steps
+            and relations with other patterns.
+        </div>
+
+        <div class="box-green">
+            <h2>Why should I learn patterns?</h2>
+            <ul>
+                <li>Design patterns are a toolkit of <b>tried and tested solutions</b> to common problems in software
+                    design.
+                    Even if you never encounter these problems, knowing patterns is still useful because it teaches you
+                    how to solve all sorts of problems using principles of object-oriented design.</li>
+
+                <li>
+                    Design patterns define a common language that you and your teammates can use to communicate more
+                    efficiently. You can say, “Oh, just use a Singleton for that,” and everyone will understand the idea
+                    behind your suggestion. No need to explain what a singleton is if you know the pattern and its name.
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-green">
+            <h2>Classification of patterns</h2>
+
+            Design patterns <b>differ</b> by their <u>complexity, level of detail and scale of applicability</u> to the
+            entire system
+            being designed. I like the analogy to road construction: you can make an intersection safer by either
+            installing some traffic lights or building an entire multi-level interchange with underground passages for
+            pedestrians. <br><br>
+
+            The <b>most basic and low-level patterns</b> are often called <i>idioms</i>. They usually apply only to a
+            single
+            programming language. <br><br>
+
+            The <b>most universal and high-level patterns</b> are <i>architectural patterns</i>. Developers can
+            implement these
+            patterns in virtually any language. Unlike other patterns, they can be used to design the architecture of an
+            entire application. <br><br>
+
+            In addition, all patterns can be categorized by their <u>intent, or purpose</u>. This book covers three main
+            groups
+            of patterns:
+
+            <ul>
+                <li class="box-yellow"><h2>Creational patterns</h2>
+                    - These patterns provide various object creation mechanisms, which increase
+                    flexibility and reuse of existing code.
+                    <ul>
+                        <li class="box-yellow"><b>Factory Method</b> <br>
+                            - Factory Method is a creational design pattern that provides an interface for creating
+                            objects in a superclass, but allows subclasses to alter the type of objects that will be
+                            created.
+                        </li>
+                        <li class="box-yellow"><b>Abstract Factory</b><br>
+                            - Abstract Factory is a creational design pattern that lets you produce families of related
+                            objects without specifying their concrete classes.
+                        </li>
+                        <li class="box-yellow"><b>Builder</b><br>
+                            - Builder is a creational design pattern that lets you construct complex objects step by
+                            step. The pattern allows you to produce different types and representations of an object
+                            using the same construction code.
+                        </li>
+                        <li class="box-yellow"><b>Prototype</b><br>
+                            - Prototype is a creational design pattern that lets you copy existing objects without
+                            making your code dependent on their classes.
+                        </li>
+                        <li class="box-yellow"><b>Singleton</b><br>
+                            - Singleton is a creational design pattern that lets you ensure that a class has only one
+                            instance, while providing a global access point to this instance.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-yellow"><h2>Structural patterns</h2>
+                    - These patterns explain how to assemble objects and classes into larger
+                    structures while keeping these structures flexible and efficient.
+                    <ul>
+                        <li class="box-yellow"><b>Adapter</b> <br>
+                            - Adapter is a structural design pattern that allows objects with incompatible interfaces to
+                            collaborate.
+                        </li>
+                        <li class="box-yellow"><b>Bridge</b> <br>
+                            - Bridge is a structural design pattern that lets you split a large class or a set of
+                            closely related classes into two separate hierarchies—abstraction and implementation—which
+                            can be developed independently of each other.
+                        </li>
+                        <li class="box-yellow"><b>Composite</b> <br>
+                            - Composite is a structural design pattern that lets you compose objects into tree
+                            structures and then work with these structures as if they were individual objects.
+                        </li>
+                        <li class="box-yellow"><b>Decorator</b> <br>
+                            - Decorator is a structural design pattern that lets you attach new behaviors to objects by
+                            placing these objects inside special wrapper objects that contain the behaviors.
+                        </li>
+                        <li class="box-yellow"><b>Facade</b> <br>
+                            - Facade is a structural design pattern that provides a simplified interface to a library, a
+                            framework, or any other complex set of classes.
+                        </li>
+                        <li class="box-yellow"><b>Flyweight</b> <br>
+                            - Flyweight is a structural design pattern that lets you fit more objects into the available
+                            amount of RAM by sharing common parts of state between multiple objects instead of keeping
+                            all of the data in each object.
+                        </li>
+                        <li class="box-yellow"><b>Proxy</b> <br>
+                            - Proxy is a structural design pattern that lets you provide a substitute or placeholder for
+                            another object. A proxy controls access to the original object, allowing you to perform
+                            something either before or after the request gets through to the original object.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-yellow"><h2>Behavioral patterns</h2>
+                    - These patterns are concerned with algorithms and the assignment of
+                    responsibilities between objects.
+                    <ul>
+                        <li class="box-yellow"><b>Chain of Responsibility</b> <br>
+                            - Chain of Responsibility is a behavioral design pattern that lets you pass requests along a
+                            chain of handlers. Upon receiving a request, each handler decides either to process the
+                            request or to pass it to the next handler in the chain.
+                        </li>
+
+                        <li class="box-yellow"><b>Command</b> <br>
+                            - Command is a behavioral design pattern that turns a request into a stand-alone object that
+                            contains all information about the request. This transformation lets you pass requests as a
+                            method arguments, delay or queue a request’s execution, and support undoable operations.
+                        </li>
+
+                        <li class="box-yellow"><b>Iterator</b> <br>
+                            - Iterator is a behavioral design pattern that lets you traverse elements of a collection
+                            without exposing its underlying representation (list, stack, tree, etc.).
+                        </li>
+
+                        <li class="box-yellow"><b>Mediator</b> <br>
+                            - Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between
+                            objects. The pattern restricts direct communications between the objects and forces them to
+                            collaborate only via a mediator object.
+                        </li>
+
+                        <li class="box-yellow"><b>Momento</b> <br>
+                            - Memento is a behavioral design pattern that lets you save and restore the previous state
+                            of an object without revealing the details of its implementation.
+                        </li>
+
+                        <li class="box-yellow"><b>Observer</b> <br>
+                            - Observer is a behavioral design pattern that lets you define a subscription mechanism to
+                            notify multiple objects about any events that happen to the object they’re observing.
+                        </li>
+
+                        <li class="box-yellow"><b>State</b> <br>
+                            - State is a behavioral design pattern that lets an object alter its behavior when its
+                            internal state changes. It appears as if the object changed its class.
+                        </li>
+
+                        <li class="box-yellow"><b>Strategy</b> <br>
+                            - Strategy is a behavioral design pattern that lets you define a family of algorithms, put
+                            each of them into a separate class, and make their objects interchangeable.
+                        </li>
+
+                        <li class="box-yellow"><b>Template Method</b> <br>
+                            - Template Method is a behavioral design pattern that defines the skeleton of an algorithm
+                            in the superclass but lets subclasses override specific steps of the algorithm without
+                            changing its structure.
+                        </li>
+
+                        <li class="box-yellow"><b>Visitor</b> <br>
+                            - Visitor is a behavioral design pattern that lets you separate algorithms from the objects
+                            on which they operate.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /. Classification of patterns - brief END -->
+
+        <div class="box-green">
+            <ul>
+                <li class="box-yellow"><h2>Creational patterns</h2>
+                    - These patterns provide various object creation mechanisms, which increase
+                    flexibility and reuse of existing code.
+                    <ul>
+                        <li class="box-yellow"><b>Factory Method</b> <br>
+                            - Factory Method is a creational design pattern that provides an interface for creating
+                            objects in a superclass, but allows subclasses to alter the type of objects that will be
+                            created.
+                        </li>
+                        <li class="box-yellow"><b>Abstract Factory</b><br>
+                            - Abstract Factory is a creational design pattern that lets you produce families of related
+                            objects without specifying their concrete classes.
+                        </li>
+                        <li class="box-yellow"><b>Builder</b><br>
+                            - Builder is a creational design pattern that lets you construct complex objects step by
+                            step. The pattern allows you to produce different types and representations of an object
+                            using the same construction code.
+                        </li>
+                        <li class="box-yellow"><b>Prototype</b><br>
+                            - Prototype is a creational design pattern that lets you copy existing objects without
+                            making your code dependent on their classes.
+                        </li>
+                        <li class="box-yellow"><b>Singleton</b><br>
+                            - Singleton is a creational design pattern that lets you ensure that a class has only one
+                            instance, while providing a global access point to this instance.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-yellow"><h2>Structural patterns</h2>
+                    - These patterns explain how to assemble objects and classes into larger
+                    structures while keeping these structures flexible and efficient.
+                    <ul>
+                        <li class="box-yellow"><b>Adapter</b> <br>
+                            - Adapter is a structural design pattern that allows objects with incompatible interfaces to
+                            collaborate.
+                        </li>
+                        <li class="box-yellow"><b>Bridge</b> <br>
+                            - Bridge is a structural design pattern that lets you split a large class or a set of
+                            closely related classes into two separate hierarchies—abstraction and implementation—which
+                            can be developed independently of each other.
+                        </li>
+                        <li class="box-yellow"><b>Composite</b> <br>
+                            - Composite is a structural design pattern that lets you compose objects into tree
+                            structures and then work with these structures as if they were individual objects.
+                        </li>
+                        <li class="box-yellow"><b>Decorator</b> <br>
+                            - Decorator is a structural design pattern that lets you attach new behaviors to objects by
+                            placing these objects inside special wrapper objects that contain the behaviors.
+                        </li>
+                        <li class="box-yellow"><b>Facade</b> <br>
+                            - Facade is a structural design pattern that provides a simplified interface to a library, a
+                            framework, or any other complex set of classes.
+                        </li>
+                        <li class="box-yellow"><b>Flyweight</b> <br>
+                            - Flyweight is a structural design pattern that lets you fit more objects into the available
+                            amount of RAM by sharing common parts of state between multiple objects instead of keeping
+                            all of the data in each object.
+                        </li>
+                        <li class="box-yellow"><b>Proxy</b> <br>
+                            - Proxy is a structural design pattern that lets you provide a substitute or placeholder for
+                            another object. A proxy controls access to the original object, allowing you to perform
+                            something either before or after the request gets through to the original object.
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-yellow"><h2>Behavioral patterns</h2>
+                    - These patterns are concerned with algorithms and the assignment of
+                    responsibilities between objects.
+                    <ul>
+                        <li class="box-yellow"><b>Chain of Responsibility</b> <br>
+                            - Chain of Responsibility is a behavioral design pattern that lets you pass requests along a
+                            chain of handlers. Upon receiving a request, each handler decides either to process the
+                            request or to pass it to the next handler in the chain.
+                        </li>
+
+                        <li class="box-yellow"><b>Command</b> <br>
+                            - Command is a behavioral design pattern that turns a request into a stand-alone object that
+                            contains all information about the request. This transformation lets you pass requests as a
+                            method arguments, delay or queue a request’s execution, and support undoable operations.
+                        </li>
+
+                        <li class="box-yellow"><b>Iterator</b> <br>
+                            - Iterator is a behavioral design pattern that lets you traverse elements of a collection
+                            without exposing its underlying representation (list, stack, tree, etc.).
+                        </li>
+
+                        <li class="box-yellow"><b>Mediator</b> <br>
+                            - Mediator is a behavioral design pattern that lets you reduce chaotic dependencies between
+                            objects. The pattern restricts direct communications between the objects and forces them to
+                            collaborate only via a mediator object.
+                        </li>
+
+                        <li class="box-yellow"><b>Momento</b> <br>
+                            - Memento is a behavioral design pattern that lets you save and restore the previous state
+                            of an object without revealing the details of its implementation.
+                        </li>
+
+                        <li class="box-yellow"><b>Observer</b> <br>
+                            - Observer is a behavioral design pattern that lets you define a subscription mechanism to
+                            notify multiple objects about any events that happen to the object they’re observing.
+                        </li>
+
+                        <li class="box-yellow"><b>State</b> <br>
+                            - State is a behavioral design pattern that lets an object alter its behavior when its
+                            internal state changes. It appears as if the object changed its class.
+                        </li>
+
+                        <li class="box-yellow"><b>Strategy</b> <br>
+                            - Strategy is a behavioral design pattern that lets you define a family of algorithms, put
+                            each of them into a separate class, and make their objects interchangeable.
+                        </li>
+
+                        <li class="box-yellow"><b>Template Method</b> <br>
+                            - Template Method is a behavioral design pattern that defines the skeleton of an algorithm
+                            in the superclass but lets subclasses override specific steps of the algorithm without
+                            changing its structure.
+                        </li>
+
+                        <li class="box-yellow"><b>Visitor</b> <br>
+                            - Visitor is a behavioral design pattern that lets you separate algorithms from the objects
+                            on which they operate.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>

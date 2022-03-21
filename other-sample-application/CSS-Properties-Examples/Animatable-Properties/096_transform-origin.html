@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#DIV1 {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+#DIV2 {
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  background-color: coral;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  transform: rotate(45deg);
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform-origin: 0 0 0;}
+}
+
+#DIV2original {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 1px dashed grey;
+  background-color: lightgrey;
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of transform-origin</h1>
+
+<p>Gradually change the transform-origin from "50% 50% 0" to "0 0 0", and back:<p>
+<p><b>Note: </b>The grey DIV element indicates where the DIV2 element would be without the transformation.</p>
+
+<div id="DIV1">DIV1
+  <div id="DIV2original">DIV2</div> <div id="DIV2">DIV2</div>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

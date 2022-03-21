@@ -1,0 +1,9 @@
+
+	  <!-- <script type="text/ng-template"  id="plan_item_renderer.html"> -->
+		{{data.description}}
+		<!-- <button ng-click="add(data)">Add node</button> -->
+		<!-- <button ng-click="delete(data)" ng-show="data.children.length > 0">Delete nodes</button> -->
+		<ul>
+			<li ng-repeat="data in data.children" ng-include="'template/plan_item_renderer.html'"></li>
+		</ul>
+	<!-- </script> -->

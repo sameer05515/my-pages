@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWT(Google Web Toolkit)</title>
+    
+    <link rel="stylesheet" href="../../../../../lib/style.css">
+    <script src="../../../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>GWT Interview Question</h1>
+
+            <hr />
+            <h3>1) What is GWT?</h3>
+
+            <p>Google Web Toolkit (GWT) is a development toolkit for building ajax application using Java. GWT insist on
+                reusable approaches to common web-app tasks such as bookmarking, UI abstraction, cross-browser
+                portability, etc.</p>
+
+            <p><strong>GWT provides two modes:</strong></p>
+
+            <ol>
+                <li><strong>Development Mode:</strong>&nbsp;It allows debugging the Java code of the application
+                    directly via the standard Java debugger.</li>
+                <li><strong>Web mode:</strong>&nbsp;In this, the application is translated into HTML and JavaScript
+                    code. It can be deployed to a web server.</li>
+            </ol>
+
+            <hr />
+            <h3>2) What are the components of GWT?</h3>
+
+            <ul>
+                <li><strong>GWT Java-to-JavaScript Compiler:</strong>&nbsp;It translates all the Java written code into
+                    JavaScript.</li>
+                <li><strong>GWT Development Mode:</strong>&nbsp;It allows the developers to run the application in
+                    development mode, i.e., app run in Java without compiling JavaScript. Development mode allows native
+                    mode plug-in called Google Web Toolkit Developer Plug-in.</li>
+                <li><strong>JRE emulation library:</strong>&nbsp;GWT includes a library that follows the Java runtime
+                    library i.e. java.lang, java.lang.annotation, java.math, java.io, java.sql, java.util etc.</li>
+                <li><strong>GWT Web UI class library:</strong>&nbsp;For creating a widget GWT consist of the set of
+                    interface and classes.</li>
+            </ul>
+
+            <hr />
+            <h3>3) What is a module descriptor in GWT?</h3>
+
+            <p>A module descriptor is a configuration file used to set-up a GWT application. Its file extension is
+                *.gwt.xml, where * is the name of the application and this file should reside in the project&#39;s root.
+            </p>
+
+            <hr />
+            <h3>4) What is a GWT module?</h3>
+
+            <p>A GWT module is simply an encapsulation of functionality. It shares some similarities with a Java package
+                but is not similar.</p>
+
+            <hr />
+            <h3>5) How do I enable assertions?</h3>
+
+            <p>The GWT compiler recognizes the -ea flag to generate code for assertions in the compiled JavaScript. Only
+                use assertions for debugging purposes, not production logic because assertions will only work under
+                GWT&#39;s development mode.</p>
+
+            <hr />
+            <h3>6) What is the default style name of any GWT widget?</h3>
+
+            <p>By default, the class name for each component is&nbsp;<strong>gwt-</strong>. For example, the Button
+                widget has a default style of gwt-Button, and similar way TextBox widget has a default style of
+                gwt-TextBox.</p>
+
+            <hr />
+            <h3>7) What is internationalization?</h3>
+
+            <p>Internationalization is changing the language of the text based on the locale. For example, the browser
+                should display the website content in Hindi for a user sitting in India and French for the user
+                accessing the website from France.</p>
+
+            <hr />
+            <h3>8) What is the purpose of Host Page?</h3>
+
+            <p>The most important public resource is host page which is used to invoke actual GWT application. A typical
+                HTML host page for an application might not include any visible HTML body content at all, but it is
+                always expected to include GWT application via a &lt;script.../&gt; tag.</p>
+
+            <hr />
+            <h3>9) What is RPC?</h3>
+
+            <p>RPC (Remote Procedure Call) helps in client communication with the server. RPC is&nbsp;<strong>a process
+                    of calling</strong>&nbsp;a method from a class; however,&nbsp;<strong>in this
+                    process,</strong>&nbsp;the only difference is that the class is located on a server but not the part
+                of the client program.</p>
+
+            <hr />
+            <h3>10) What is GWT ClientBundle?</h3>
+
+            <p>The ClientBundle interface moves entries from the everything-else category into the cache-forever
+                category.</p>
+
+            <hr />
+            <h3>11) What are the types of panels in GWT?</h3>
+
+            <ul>
+                <li>Root Panel: It is the topmost panel where all other widgets are attached to it.</li>
+                <li>Flow Panel: It is the simplest panel which provides a basic HTML layout.</li>
+                <li>HTML Panel: It is enclosed with specified HTML contents.</li>
+                <li>Form Panel: It specifies that any widget declared in this would be wrapped in HTML form element.
+                </li>
+                <li>Scroll Panel: It puts all the content in the scrollable area.</li>
+                <li>Grid: It helps to create an HTML table.</li>
+                <li>Flex Table: It extends HTML table like a GRID, but here we can create a table on demand.</li>
+            </ul>
+
+            <hr />
+            <h3>12) What are the Layout Panels?</h3>
+
+            <p>Layout Panels can contain other widgets. These panels control the way widget is displayed on User
+                Interface. Every Panel widget inherits properties from Panel class which in turn inherits properties
+                from Widget class and which in turn inherits properties from UIObject class.</p>
+
+            <hr />
+            <h3>13) Define GWT JSON?</h3>
+
+            <p>JSON(JavaScript Object Notation) is a language-independent format for data. It is similar to XML as XML
+                uses tags JSON uses Object-Literal notation of JavaScript.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>14) Define Parsing in GWT XML?</h3>
+
+            <p>To parse the XML, we have to first parse the raw XML text into XML DOM structure. DOM structure helps in
+                the navigation of the data. XML parser is located under&nbsp;<strong>XMLParser class</strong>. XMLParser
+                class consists of parse(String) static method which is called to parse the XML and return a Document
+                object.</p>
+
+            <hr />
+            <h3>15) Give the nodes created by XML parsing.</h3>
+
+            <ul>
+                <li><strong>Element -</strong>&nbsp;represents DOM elements, which are specified by tags
+                    in&nbsp;<strong>XML:</strong>&nbsp;&lt;someElement&gt;&lt;/someElement&gt;.</li>
+                <li><strong>Text -</strong>&nbsp;represents the text between the opening and closing tag of
+                    an&nbsp;<strong>element:</strong>&nbsp;&lt;someElement&gt;Here is some text.&lt;/someElement&gt;.
+                </li>
+                <li><strong>Comment -</strong>&nbsp;represents an XML comment: &lt;!-- notes about this data --&gt;.
+                </li>
+                <li><strong>Attr -</strong>&nbsp;represents an attribute of an element: &lt;someElement
+                    myAttribute=&quot;123&quot; /&gt;.</li>
+            </ul>
+
+            <hr />
+            <h3>16) Enlist the dependencies required for database in GWT</h3>
+
+            <p><strong>Common:</strong>&nbsp;hsqldb, Common-lang , log4j .</p>
+
+            <p><strong>JDO:</strong>&nbsp;datanucleus, showfiles, jdo.</p>
+
+            <p><strong>Hibernate:</strong>&nbsp;hibernate.</p>
+
+            <p><strong>MyBatis:</strong>&nbsp;mybatis.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>17) Define GWT History Mechanism.</h3>
+
+            <p>History mechanism is similar to the Ajax history implementations such as RSH (Really Simple History). The
+                Basic idea is to track the internal application state in the URL fragment identifier. Main advantages of
+                this mechanism are:</p>
+
+            <ul>
+                <li>It provides browser history reliable.</li>
+                <li>It provides useful feedback to the user.</li>
+                <li>It is bookmarkable, i.e., the user can create a bookmark to the current state and save it or can
+                    email it, etc.</li>
+            </ul>
+
+            <hr />
+            <h3>18) Define GWT History Tokens.</h3>
+
+            <p>A token is simply a string that the application can parse to return to a particular state. This token
+                will be saved in browser history as a URL fragment (in the location bar, after the &quot;#&quot;), and
+                this fragment is passed back to the application when the user goes back or forward in history or follows
+                a link.</p>
+
+            <hr />
+            <h3>19) How to create the custom widget?</h3>
+
+            <p>Google Web Toolkit offers a variety of ways for creating the custom widgets. The easiest way is to
+                develop composite widgets by grouping existing basic widgets and adding some interaction logic to them.
+            </p>
+
+            <p>&nbsp;</p>
+
+            <p>To create a Custom Widget, it has three general concepts which are as follows:</p>
+
+            <ol>
+                <li>Building Composite Widgets.</li>
+                <li>Create the Java Code for the new widget.</li>
+                <li>Wrap JavaScript using JSNI methods.</li>
+            </ol>
+
+            <hr />
+            <h3>20) What is JSNI?</h3>
+
+            <p>JSNI (JavaScript Native Interface) is used to solve problems such as when we need to integrate GWT with
+                existing handwritten JavaScript or with a third-party JavaScript library. Occasionally we need to access
+                low-level browser functionality which is not exposed by the GWT class API&#39;s.</p>
+
+            <hr />
+            <h3>21) What are the different uses of JSNI?</h3>
+
+            <p>JSNI is a web equivalent of inline assembly code and can use in many ways such as:</p>
+
+            <ul>
+                <li>Implement a Java method directly in JavaScript.</li>
+                <li>Wrap type-safe Java method signatures around existing JavaScript.</li>
+                <li>Call from JavaScript code into Java code and vice-versa.</li>
+                <li>Throw exceptions across Java/JavaScript boundaries.</li>
+                <li>Read and write Java fields from JavaScript.</li>
+                <li>Use development mode to debug both Java source (with a Java debugger) and JavaScript (with a script
+                    debugger).</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>

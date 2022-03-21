@@ -1,0 +1,2076 @@
+{
+    "parent":"null",
+    "data":"ROOT",
+    "children":[
+       {
+          "parent":"ROOT",
+          "data":"Node 6",
+          "children":[
+             {
+                "parent":"Node 6",
+                "data":"Node 65",
+                "children":[
+                   {
+                      "parent":"Node 65",
+                      "data":"Node 654",
+                      "children":[
+                         {
+                            "parent":"Node 654",
+                            "data":"Node 6543",
+                            "children":[
+                               {
+                                  "parent":"Node 6543",
+                                  "data":"Node 65432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 654",
+                            "data":"Node 6542",
+                            "children":[
+                               {
+                                  "parent":"Node 6542",
+                                  "data":"Node 65422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 65",
+                      "data":"Node 653",
+                      "children":[
+                         {
+                            "parent":"Node 653",
+                            "data":"Node 6533",
+                            "children":[
+                               {
+                                  "parent":"Node 6533",
+                                  "data":"Node 65332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 653",
+                            "data":"Node 6532",
+                            "children":[
+                               {
+                                  "parent":"Node 6532",
+                                  "data":"Node 65322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 65",
+                      "data":"Node 652",
+                      "children":[
+                         {
+                            "parent":"Node 652",
+                            "data":"Node 6523",
+                            "children":[
+                               {
+                                  "parent":"Node 6523",
+                                  "data":"Node 65232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 652",
+                            "data":"Node 6522",
+                            "children":[
+                               {
+                                  "parent":"Node 6522",
+                                  "data":"Node 65222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 6",
+                "data":"Node 64",
+                "children":[
+                   {
+                      "parent":"Node 64",
+                      "data":"Node 644",
+                      "children":[
+                         {
+                            "parent":"Node 644",
+                            "data":"Node 6443",
+                            "children":[
+                               {
+                                  "parent":"Node 6443",
+                                  "data":"Node 64432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 644",
+                            "data":"Node 6442",
+                            "children":[
+                               {
+                                  "parent":"Node 6442",
+                                  "data":"Node 64422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 64",
+                      "data":"Node 643",
+                      "children":[
+                         {
+                            "parent":"Node 643",
+                            "data":"Node 6433",
+                            "children":[
+                               {
+                                  "parent":"Node 6433",
+                                  "data":"Node 64332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 643",
+                            "data":"Node 6432",
+                            "children":[
+                               {
+                                  "parent":"Node 6432",
+                                  "data":"Node 64322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 64",
+                      "data":"Node 642",
+                      "children":[
+                         {
+                            "parent":"Node 642",
+                            "data":"Node 6423",
+                            "children":[
+                               {
+                                  "parent":"Node 6423",
+                                  "data":"Node 64232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 642",
+                            "data":"Node 6422",
+                            "children":[
+                               {
+                                  "parent":"Node 6422",
+                                  "data":"Node 64222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 6",
+                "data":"Node 63",
+                "children":[
+                   {
+                      "parent":"Node 63",
+                      "data":"Node 634",
+                      "children":[
+                         {
+                            "parent":"Node 634",
+                            "data":"Node 6343",
+                            "children":[
+                               {
+                                  "parent":"Node 6343",
+                                  "data":"Node 63432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 634",
+                            "data":"Node 6342",
+                            "children":[
+                               {
+                                  "parent":"Node 6342",
+                                  "data":"Node 63422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 63",
+                      "data":"Node 633",
+                      "children":[
+                         {
+                            "parent":"Node 633",
+                            "data":"Node 6333",
+                            "children":[
+                               {
+                                  "parent":"Node 6333",
+                                  "data":"Node 63332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 633",
+                            "data":"Node 6332",
+                            "children":[
+                               {
+                                  "parent":"Node 6332",
+                                  "data":"Node 63322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 63",
+                      "data":"Node 632",
+                      "children":[
+                         {
+                            "parent":"Node 632",
+                            "data":"Node 6323",
+                            "children":[
+                               {
+                                  "parent":"Node 6323",
+                                  "data":"Node 63232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 632",
+                            "data":"Node 6322",
+                            "children":[
+                               {
+                                  "parent":"Node 6322",
+                                  "data":"Node 63222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 6",
+                "data":"Node 62",
+                "children":[
+                   {
+                      "parent":"Node 62",
+                      "data":"Node 624",
+                      "children":[
+                         {
+                            "parent":"Node 624",
+                            "data":"Node 6243",
+                            "children":[
+                               {
+                                  "parent":"Node 6243",
+                                  "data":"Node 62432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 624",
+                            "data":"Node 6242",
+                            "children":[
+                               {
+                                  "parent":"Node 6242",
+                                  "data":"Node 62422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 62",
+                      "data":"Node 623",
+                      "children":[
+                         {
+                            "parent":"Node 623",
+                            "data":"Node 6233",
+                            "children":[
+                               {
+                                  "parent":"Node 6233",
+                                  "data":"Node 62332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 623",
+                            "data":"Node 6232",
+                            "children":[
+                               {
+                                  "parent":"Node 6232",
+                                  "data":"Node 62322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 62",
+                      "data":"Node 622",
+                      "children":[
+                         {
+                            "parent":"Node 622",
+                            "data":"Node 6223",
+                            "children":[
+                               {
+                                  "parent":"Node 6223",
+                                  "data":"Node 62232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 622",
+                            "data":"Node 6222",
+                            "children":[
+                               {
+                                  "parent":"Node 6222",
+                                  "data":"Node 62222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       },
+       {
+          "parent":"ROOT",
+          "data":"Node 5",
+          "children":[
+             {
+                "parent":"Node 5",
+                "data":"Node 55",
+                "children":[
+                   {
+                      "parent":"Node 55",
+                      "data":"Node 554",
+                      "children":[
+                         {
+                            "parent":"Node 554",
+                            "data":"Node 5543",
+                            "children":[
+                               {
+                                  "parent":"Node 5543",
+                                  "data":"Node 55432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 554",
+                            "data":"Node 5542",
+                            "children":[
+                               {
+                                  "parent":"Node 5542",
+                                  "data":"Node 55422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 55",
+                      "data":"Node 553",
+                      "children":[
+                         {
+                            "parent":"Node 553",
+                            "data":"Node 5533",
+                            "children":[
+                               {
+                                  "parent":"Node 5533",
+                                  "data":"Node 55332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 553",
+                            "data":"Node 5532",
+                            "children":[
+                               {
+                                  "parent":"Node 5532",
+                                  "data":"Node 55322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 55",
+                      "data":"Node 552",
+                      "children":[
+                         {
+                            "parent":"Node 552",
+                            "data":"Node 5523",
+                            "children":[
+                               {
+                                  "parent":"Node 5523",
+                                  "data":"Node 55232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 552",
+                            "data":"Node 5522",
+                            "children":[
+                               {
+                                  "parent":"Node 5522",
+                                  "data":"Node 55222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 5",
+                "data":"Node 54",
+                "children":[
+                   {
+                      "parent":"Node 54",
+                      "data":"Node 544",
+                      "children":[
+                         {
+                            "parent":"Node 544",
+                            "data":"Node 5443",
+                            "children":[
+                               {
+                                  "parent":"Node 5443",
+                                  "data":"Node 54432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 544",
+                            "data":"Node 5442",
+                            "children":[
+                               {
+                                  "parent":"Node 5442",
+                                  "data":"Node 54422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 54",
+                      "data":"Node 543",
+                      "children":[
+                         {
+                            "parent":"Node 543",
+                            "data":"Node 5433",
+                            "children":[
+                               {
+                                  "parent":"Node 5433",
+                                  "data":"Node 54332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 543",
+                            "data":"Node 5432",
+                            "children":[
+                               {
+                                  "parent":"Node 5432",
+                                  "data":"Node 54322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 54",
+                      "data":"Node 542",
+                      "children":[
+                         {
+                            "parent":"Node 542",
+                            "data":"Node 5423",
+                            "children":[
+                               {
+                                  "parent":"Node 5423",
+                                  "data":"Node 54232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 542",
+                            "data":"Node 5422",
+                            "children":[
+                               {
+                                  "parent":"Node 5422",
+                                  "data":"Node 54222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 5",
+                "data":"Node 53",
+                "children":[
+                   {
+                      "parent":"Node 53",
+                      "data":"Node 534",
+                      "children":[
+                         {
+                            "parent":"Node 534",
+                            "data":"Node 5343",
+                            "children":[
+                               {
+                                  "parent":"Node 5343",
+                                  "data":"Node 53432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 534",
+                            "data":"Node 5342",
+                            "children":[
+                               {
+                                  "parent":"Node 5342",
+                                  "data":"Node 53422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 53",
+                      "data":"Node 533",
+                      "children":[
+                         {
+                            "parent":"Node 533",
+                            "data":"Node 5333",
+                            "children":[
+                               {
+                                  "parent":"Node 5333",
+                                  "data":"Node 53332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 533",
+                            "data":"Node 5332",
+                            "children":[
+                               {
+                                  "parent":"Node 5332",
+                                  "data":"Node 53322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 53",
+                      "data":"Node 532",
+                      "children":[
+                         {
+                            "parent":"Node 532",
+                            "data":"Node 5323",
+                            "children":[
+                               {
+                                  "parent":"Node 5323",
+                                  "data":"Node 53232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 532",
+                            "data":"Node 5322",
+                            "children":[
+                               {
+                                  "parent":"Node 5322",
+                                  "data":"Node 53222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 5",
+                "data":"Node 52",
+                "children":[
+                   {
+                      "parent":"Node 52",
+                      "data":"Node 524",
+                      "children":[
+                         {
+                            "parent":"Node 524",
+                            "data":"Node 5243",
+                            "children":[
+                               {
+                                  "parent":"Node 5243",
+                                  "data":"Node 52432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 524",
+                            "data":"Node 5242",
+                            "children":[
+                               {
+                                  "parent":"Node 5242",
+                                  "data":"Node 52422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 52",
+                      "data":"Node 523",
+                      "children":[
+                         {
+                            "parent":"Node 523",
+                            "data":"Node 5233",
+                            "children":[
+                               {
+                                  "parent":"Node 5233",
+                                  "data":"Node 52332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 523",
+                            "data":"Node 5232",
+                            "children":[
+                               {
+                                  "parent":"Node 5232",
+                                  "data":"Node 52322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 52",
+                      "data":"Node 522",
+                      "children":[
+                         {
+                            "parent":"Node 522",
+                            "data":"Node 5223",
+                            "children":[
+                               {
+                                  "parent":"Node 5223",
+                                  "data":"Node 52232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 522",
+                            "data":"Node 5222",
+                            "children":[
+                               {
+                                  "parent":"Node 5222",
+                                  "data":"Node 52222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       },
+       {
+          "parent":"ROOT",
+          "data":"Node 4",
+          "children":[
+             {
+                "parent":"Node 4",
+                "data":"Node 45",
+                "children":[
+                   {
+                      "parent":"Node 45",
+                      "data":"Node 454",
+                      "children":[
+                         {
+                            "parent":"Node 454",
+                            "data":"Node 4543",
+                            "children":[
+                               {
+                                  "parent":"Node 4543",
+                                  "data":"Node 45432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 454",
+                            "data":"Node 4542",
+                            "children":[
+                               {
+                                  "parent":"Node 4542",
+                                  "data":"Node 45422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 45",
+                      "data":"Node 453",
+                      "children":[
+                         {
+                            "parent":"Node 453",
+                            "data":"Node 4533",
+                            "children":[
+                               {
+                                  "parent":"Node 4533",
+                                  "data":"Node 45332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 453",
+                            "data":"Node 4532",
+                            "children":[
+                               {
+                                  "parent":"Node 4532",
+                                  "data":"Node 45322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 45",
+                      "data":"Node 452",
+                      "children":[
+                         {
+                            "parent":"Node 452",
+                            "data":"Node 4523",
+                            "children":[
+                               {
+                                  "parent":"Node 4523",
+                                  "data":"Node 45232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 452",
+                            "data":"Node 4522",
+                            "children":[
+                               {
+                                  "parent":"Node 4522",
+                                  "data":"Node 45222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 4",
+                "data":"Node 44",
+                "children":[
+                   {
+                      "parent":"Node 44",
+                      "data":"Node 444",
+                      "children":[
+                         {
+                            "parent":"Node 444",
+                            "data":"Node 4443",
+                            "children":[
+                               {
+                                  "parent":"Node 4443",
+                                  "data":"Node 44432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 444",
+                            "data":"Node 4442",
+                            "children":[
+                               {
+                                  "parent":"Node 4442",
+                                  "data":"Node 44422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 44",
+                      "data":"Node 443",
+                      "children":[
+                         {
+                            "parent":"Node 443",
+                            "data":"Node 4433",
+                            "children":[
+                               {
+                                  "parent":"Node 4433",
+                                  "data":"Node 44332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 443",
+                            "data":"Node 4432",
+                            "children":[
+                               {
+                                  "parent":"Node 4432",
+                                  "data":"Node 44322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 44",
+                      "data":"Node 442",
+                      "children":[
+                         {
+                            "parent":"Node 442",
+                            "data":"Node 4423",
+                            "children":[
+                               {
+                                  "parent":"Node 4423",
+                                  "data":"Node 44232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 442",
+                            "data":"Node 4422",
+                            "children":[
+                               {
+                                  "parent":"Node 4422",
+                                  "data":"Node 44222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 4",
+                "data":"Node 43",
+                "children":[
+                   {
+                      "parent":"Node 43",
+                      "data":"Node 434",
+                      "children":[
+                         {
+                            "parent":"Node 434",
+                            "data":"Node 4343",
+                            "children":[
+                               {
+                                  "parent":"Node 4343",
+                                  "data":"Node 43432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 434",
+                            "data":"Node 4342",
+                            "children":[
+                               {
+                                  "parent":"Node 4342",
+                                  "data":"Node 43422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 43",
+                      "data":"Node 433",
+                      "children":[
+                         {
+                            "parent":"Node 433",
+                            "data":"Node 4333",
+                            "children":[
+                               {
+                                  "parent":"Node 4333",
+                                  "data":"Node 43332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 433",
+                            "data":"Node 4332",
+                            "children":[
+                               {
+                                  "parent":"Node 4332",
+                                  "data":"Node 43322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 43",
+                      "data":"Node 432",
+                      "children":[
+                         {
+                            "parent":"Node 432",
+                            "data":"Node 4323",
+                            "children":[
+                               {
+                                  "parent":"Node 4323",
+                                  "data":"Node 43232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 432",
+                            "data":"Node 4322",
+                            "children":[
+                               {
+                                  "parent":"Node 4322",
+                                  "data":"Node 43222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 4",
+                "data":"Node 42",
+                "children":[
+                   {
+                      "parent":"Node 42",
+                      "data":"Node 424",
+                      "children":[
+                         {
+                            "parent":"Node 424",
+                            "data":"Node 4243",
+                            "children":[
+                               {
+                                  "parent":"Node 4243",
+                                  "data":"Node 42432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 424",
+                            "data":"Node 4242",
+                            "children":[
+                               {
+                                  "parent":"Node 4242",
+                                  "data":"Node 42422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 42",
+                      "data":"Node 423",
+                      "children":[
+                         {
+                            "parent":"Node 423",
+                            "data":"Node 4233",
+                            "children":[
+                               {
+                                  "parent":"Node 4233",
+                                  "data":"Node 42332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 423",
+                            "data":"Node 4232",
+                            "children":[
+                               {
+                                  "parent":"Node 4232",
+                                  "data":"Node 42322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 42",
+                      "data":"Node 422",
+                      "children":[
+                         {
+                            "parent":"Node 422",
+                            "data":"Node 4223",
+                            "children":[
+                               {
+                                  "parent":"Node 4223",
+                                  "data":"Node 42232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 422",
+                            "data":"Node 4222",
+                            "children":[
+                               {
+                                  "parent":"Node 4222",
+                                  "data":"Node 42222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       },
+       {
+          "parent":"ROOT",
+          "data":"Node 3",
+          "children":[
+             {
+                "parent":"Node 3",
+                "data":"Node 35",
+                "children":[
+                   {
+                      "parent":"Node 35",
+                      "data":"Node 354",
+                      "children":[
+                         {
+                            "parent":"Node 354",
+                            "data":"Node 3543",
+                            "children":[
+                               {
+                                  "parent":"Node 3543",
+                                  "data":"Node 35432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 354",
+                            "data":"Node 3542",
+                            "children":[
+                               {
+                                  "parent":"Node 3542",
+                                  "data":"Node 35422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 35",
+                      "data":"Node 353",
+                      "children":[
+                         {
+                            "parent":"Node 353",
+                            "data":"Node 3533",
+                            "children":[
+                               {
+                                  "parent":"Node 3533",
+                                  "data":"Node 35332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 353",
+                            "data":"Node 3532",
+                            "children":[
+                               {
+                                  "parent":"Node 3532",
+                                  "data":"Node 35322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 35",
+                      "data":"Node 352",
+                      "children":[
+                         {
+                            "parent":"Node 352",
+                            "data":"Node 3523",
+                            "children":[
+                               {
+                                  "parent":"Node 3523",
+                                  "data":"Node 35232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 352",
+                            "data":"Node 3522",
+                            "children":[
+                               {
+                                  "parent":"Node 3522",
+                                  "data":"Node 35222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 3",
+                "data":"Node 34",
+                "children":[
+                   {
+                      "parent":"Node 34",
+                      "data":"Node 344",
+                      "children":[
+                         {
+                            "parent":"Node 344",
+                            "data":"Node 3443",
+                            "children":[
+                               {
+                                  "parent":"Node 3443",
+                                  "data":"Node 34432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 344",
+                            "data":"Node 3442",
+                            "children":[
+                               {
+                                  "parent":"Node 3442",
+                                  "data":"Node 34422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 34",
+                      "data":"Node 343",
+                      "children":[
+                         {
+                            "parent":"Node 343",
+                            "data":"Node 3433",
+                            "children":[
+                               {
+                                  "parent":"Node 3433",
+                                  "data":"Node 34332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 343",
+                            "data":"Node 3432",
+                            "children":[
+                               {
+                                  "parent":"Node 3432",
+                                  "data":"Node 34322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 34",
+                      "data":"Node 342",
+                      "children":[
+                         {
+                            "parent":"Node 342",
+                            "data":"Node 3423",
+                            "children":[
+                               {
+                                  "parent":"Node 3423",
+                                  "data":"Node 34232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 342",
+                            "data":"Node 3422",
+                            "children":[
+                               {
+                                  "parent":"Node 3422",
+                                  "data":"Node 34222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 3",
+                "data":"Node 33",
+                "children":[
+                   {
+                      "parent":"Node 33",
+                      "data":"Node 334",
+                      "children":[
+                         {
+                            "parent":"Node 334",
+                            "data":"Node 3343",
+                            "children":[
+                               {
+                                  "parent":"Node 3343",
+                                  "data":"Node 33432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 334",
+                            "data":"Node 3342",
+                            "children":[
+                               {
+                                  "parent":"Node 3342",
+                                  "data":"Node 33422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 33",
+                      "data":"Node 333",
+                      "children":[
+                         {
+                            "parent":"Node 333",
+                            "data":"Node 3333",
+                            "children":[
+                               {
+                                  "parent":"Node 3333",
+                                  "data":"Node 33332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 333",
+                            "data":"Node 3332",
+                            "children":[
+                               {
+                                  "parent":"Node 3332",
+                                  "data":"Node 33322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 33",
+                      "data":"Node 332",
+                      "children":[
+                         {
+                            "parent":"Node 332",
+                            "data":"Node 3323",
+                            "children":[
+                               {
+                                  "parent":"Node 3323",
+                                  "data":"Node 33232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 332",
+                            "data":"Node 3322",
+                            "children":[
+                               {
+                                  "parent":"Node 3322",
+                                  "data":"Node 33222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 3",
+                "data":"Node 32",
+                "children":[
+                   {
+                      "parent":"Node 32",
+                      "data":"Node 324",
+                      "children":[
+                         {
+                            "parent":"Node 324",
+                            "data":"Node 3243",
+                            "children":[
+                               {
+                                  "parent":"Node 3243",
+                                  "data":"Node 32432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 324",
+                            "data":"Node 3242",
+                            "children":[
+                               {
+                                  "parent":"Node 3242",
+                                  "data":"Node 32422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 32",
+                      "data":"Node 323",
+                      "children":[
+                         {
+                            "parent":"Node 323",
+                            "data":"Node 3233",
+                            "children":[
+                               {
+                                  "parent":"Node 3233",
+                                  "data":"Node 32332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 323",
+                            "data":"Node 3232",
+                            "children":[
+                               {
+                                  "parent":"Node 3232",
+                                  "data":"Node 32322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 32",
+                      "data":"Node 322",
+                      "children":[
+                         {
+                            "parent":"Node 322",
+                            "data":"Node 3223",
+                            "children":[
+                               {
+                                  "parent":"Node 3223",
+                                  "data":"Node 32232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 322",
+                            "data":"Node 3222",
+                            "children":[
+                               {
+                                  "parent":"Node 3222",
+                                  "data":"Node 32222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       },
+       {
+          "parent":"ROOT",
+          "data":"Node 2",
+          "children":[
+             {
+                "parent":"Node 2",
+                "data":"Node 25",
+                "children":[
+                   {
+                      "parent":"Node 25",
+                      "data":"Node 254",
+                      "children":[
+                         {
+                            "parent":"Node 254",
+                            "data":"Node 2543",
+                            "children":[
+                               {
+                                  "parent":"Node 2543",
+                                  "data":"Node 25432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 254",
+                            "data":"Node 2542",
+                            "children":[
+                               {
+                                  "parent":"Node 2542",
+                                  "data":"Node 25422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 25",
+                      "data":"Node 253",
+                      "children":[
+                         {
+                            "parent":"Node 253",
+                            "data":"Node 2533",
+                            "children":[
+                               {
+                                  "parent":"Node 2533",
+                                  "data":"Node 25332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 253",
+                            "data":"Node 2532",
+                            "children":[
+                               {
+                                  "parent":"Node 2532",
+                                  "data":"Node 25322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 25",
+                      "data":"Node 252",
+                      "children":[
+                         {
+                            "parent":"Node 252",
+                            "data":"Node 2523",
+                            "children":[
+                               {
+                                  "parent":"Node 2523",
+                                  "data":"Node 25232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 252",
+                            "data":"Node 2522",
+                            "children":[
+                               {
+                                  "parent":"Node 2522",
+                                  "data":"Node 25222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 2",
+                "data":"Node 24",
+                "children":[
+                   {
+                      "parent":"Node 24",
+                      "data":"Node 244",
+                      "children":[
+                         {
+                            "parent":"Node 244",
+                            "data":"Node 2443",
+                            "children":[
+                               {
+                                  "parent":"Node 2443",
+                                  "data":"Node 24432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 244",
+                            "data":"Node 2442",
+                            "children":[
+                               {
+                                  "parent":"Node 2442",
+                                  "data":"Node 24422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 24",
+                      "data":"Node 243",
+                      "children":[
+                         {
+                            "parent":"Node 243",
+                            "data":"Node 2433",
+                            "children":[
+                               {
+                                  "parent":"Node 2433",
+                                  "data":"Node 24332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 243",
+                            "data":"Node 2432",
+                            "children":[
+                               {
+                                  "parent":"Node 2432",
+                                  "data":"Node 24322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 24",
+                      "data":"Node 242",
+                      "children":[
+                         {
+                            "parent":"Node 242",
+                            "data":"Node 2423",
+                            "children":[
+                               {
+                                  "parent":"Node 2423",
+                                  "data":"Node 24232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 242",
+                            "data":"Node 2422",
+                            "children":[
+                               {
+                                  "parent":"Node 2422",
+                                  "data":"Node 24222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 2",
+                "data":"Node 23",
+                "children":[
+                   {
+                      "parent":"Node 23",
+                      "data":"Node 234",
+                      "children":[
+                         {
+                            "parent":"Node 234",
+                            "data":"Node 2343",
+                            "children":[
+                               {
+                                  "parent":"Node 2343",
+                                  "data":"Node 23432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 234",
+                            "data":"Node 2342",
+                            "children":[
+                               {
+                                  "parent":"Node 2342",
+                                  "data":"Node 23422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 23",
+                      "data":"Node 233",
+                      "children":[
+                         {
+                            "parent":"Node 233",
+                            "data":"Node 2333",
+                            "children":[
+                               {
+                                  "parent":"Node 2333",
+                                  "data":"Node 23332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 233",
+                            "data":"Node 2332",
+                            "children":[
+                               {
+                                  "parent":"Node 2332",
+                                  "data":"Node 23322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 23",
+                      "data":"Node 232",
+                      "children":[
+                         {
+                            "parent":"Node 232",
+                            "data":"Node 2323",
+                            "children":[
+                               {
+                                  "parent":"Node 2323",
+                                  "data":"Node 23232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 232",
+                            "data":"Node 2322",
+                            "children":[
+                               {
+                                  "parent":"Node 2322",
+                                  "data":"Node 23222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             },
+             {
+                "parent":"Node 2",
+                "data":"Node 22",
+                "children":[
+                   {
+                      "parent":"Node 22",
+                      "data":"Node 224",
+                      "children":[
+                         {
+                            "parent":"Node 224",
+                            "data":"Node 2243",
+                            "children":[
+                               {
+                                  "parent":"Node 2243",
+                                  "data":"Node 22432",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 224",
+                            "data":"Node 2242",
+                            "children":[
+                               {
+                                  "parent":"Node 2242",
+                                  "data":"Node 22422",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 22",
+                      "data":"Node 223",
+                      "children":[
+                         {
+                            "parent":"Node 223",
+                            "data":"Node 2233",
+                            "children":[
+                               {
+                                  "parent":"Node 2233",
+                                  "data":"Node 22332",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 223",
+                            "data":"Node 2232",
+                            "children":[
+                               {
+                                  "parent":"Node 2232",
+                                  "data":"Node 22322",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   },
+                   {
+                      "parent":"Node 22",
+                      "data":"Node 222",
+                      "children":[
+                         {
+                            "parent":"Node 222",
+                            "data":"Node 2223",
+                            "children":[
+                               {
+                                  "parent":"Node 2223",
+                                  "data":"Node 22232",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         },
+                         {
+                            "parent":"Node 222",
+                            "data":"Node 2222",
+                            "children":[
+                               {
+                                  "parent":"Node 2222",
+                                  "data":"Node 22222",
+                                  "children":[
+                                     
+                                  ]
+                               }
+                            ]
+                         }
+                      ]
+                   }
+                ]
+             }
+          ]
+       }
+    ]
+ }

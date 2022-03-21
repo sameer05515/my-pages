@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'myArea myArea . . .';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  animation: mymove 5s infinite;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+@keyframes mymove {
+  50% {grid-template-areas: '. . . myArea myArea';}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of the grid-template-areas Property</h1>
+
+<p>The animation will change the position of "item1".</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+  <div class="item9">9</div>
+</div>
+
+</body>
+</html>

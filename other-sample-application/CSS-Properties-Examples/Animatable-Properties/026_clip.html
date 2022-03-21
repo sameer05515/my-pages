@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: green;
+  position: absolute;
+  animation: mymove 5s infinite;
+  clip: rect(0,100px,100px,0);
+}
+
+@keyframes mymove {
+  50% {clip: rect(0,50px,50px,0);}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of clip</h1>
+
+<div id="myDIV">
+  <h1>myDIV</h1>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

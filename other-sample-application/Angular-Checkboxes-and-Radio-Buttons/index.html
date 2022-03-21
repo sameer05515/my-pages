@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- CSS -->
+    <!-- load up bootstrap and add some spacing -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <style>
+        body         { padding-top:50px; }
+        form, pre    { margin-bottom:50px; }
+    </style>
+
+    <!-- JS -->
+    <!-- load up angular and our custom script -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<!-- apply our angular app and controller -->
+<body ng-app="formApp" ng-controller="formController">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+
+    <h2>Angular Checkboxes and Radio Buttons</h2>
+
+    <form>
+    
+        <!-- NAME INPUT -->
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" ng-model="formData.name">
+        </div>
+        
+        <!-- MULTIPLE CHECKBOXES -->
+        <label>Favorite Colors</label>
+        <div class="form-group">
+            <label class="checkbox-inline">
+                <input type="checkbox" name="favoriteColors" ng-model="formData.colors.red"> Red
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="favoriteColors" ng-model="formData.colors.blue"> Blue
+            </label>
+            <label class="checkbox-inline">
+                <input type="checkbox" name="favoriteColors" ng-model="formData.colors.green"> Green
+            </label>
+        </div>
+        
+        <!-- CUSTOM VALUE CHECKBOXES -->
+        <label>Personal Question</label>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="awesome" ng-model="formData.awesome" ng-true-value="ofCourse" ng-false-value="iWish">
+                Are you awesome?
+            </label>
+        </div>
+        
+        <!-- RADIO BUTTONS -->
+        <label>Chicken or the Egg?</label>
+        <div class="form-group">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="chickenEgg" value="chicken" ng-model="formData.chickenEgg">
+                    Chicken
+                </label>
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="chickenEgg" value="egg" ng-model="formData.chickenEgg">
+                    Egg
+                </label>
+            </div>
+        </div>
+        
+        <button type="submit" class="btn btn-danger btn-lg">Send Away!</button>
+        
+    </form>
+    
+    <!-- SHOW OFF OUR FORMDATA OBJECT -->
+    <h2>Sample Form Object</h2>
+    <pre>
+        {{ formData }}
+    </pre>
+    
+    <footer class="text-center">
+        <p>View the <a href="http://scotch.io/tutorials/javascript/handling-checkboxes-and-radio-buttons-in-angular-forms">tutorial</a> by <a href="http://scotch.io">scotch.io</a></p>
+        
+        <h4>Other Angular Form Tutorials</h4>
+        <p><a href="http://scotch.io/tutorials/javascript/submitting-ajax-forms-the-angularjs-way">Submitting AJAX Forms: The AngularJS Way</a></p>
+        <p><a href="http://scotch.io/tutorials/javascript/angularjs-form-validation">AngularJS Form Validation</a></p>
+    </footer>
+    
+</div>
+</body>
+</html>

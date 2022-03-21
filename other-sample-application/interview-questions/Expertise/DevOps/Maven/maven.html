@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maven</title>
+    <link rel="stylesheet" href="../../../lib/style.css">
+    <script src="../../../lib/jquery-3.6.0.js"></script>
+</head>
+<body>
+
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>Maven Interview Question</h1>
+
+<p>A list of top frequently asked&nbsp;<strong>maven interview questions</strong>&nbsp;and answers are given below.</p>
+
+<hr />
+<h3>1) What is Maven?</h3>
+
+<p>Maven is a project management tool. It is based on POM (Project Object Model).&nbsp;<a href="https://www.javatpoint.com/maven-tutorial">More details.</a></p>
+
+<hr />
+<h3>2) What aspects are managed by Maven?</h3>
+
+<ul>
+	<li>Builds</li>
+	<li>Documentation</li>
+	<li>Reporting</li>
+	<li>SCMs</li>
+	<li>Releases</li>
+	<li>Distribution</li>
+</ul>
+
+<p><a href="https://www.javatpoint.com/maven-tutorial">More details.</a></p>
+
+<hr />
+<h3>3) What are the advantages of Maven?</h3>
+
+<ul>
+	<li>No need to add jar file in each project</li>
+	<li>Creates right directory structure</li>
+	<li>Builds and deploys the project</li>
+</ul>
+
+<p><a href="https://www.javatpoint.com/maven-tutorial">More details.</a></p>
+
+<hr />
+<h3>4) What is the command to check the maven version?</h3>
+
+<p>Type the following command on console to know the maven version.</p>
+
+<ol start="1">
+	<li>mvn&nbsp;-version&nbsp;&nbsp;</li>
+</ol>
+
+<p><a href="https://www.javatpoint.com/how-to-install-maven">More details.</a></p>
+
+<hr />
+<h3>5) What does the build tool?</h3>
+
+<ul>
+	<li>Generates source code (if the auto-generated code is used)</li>
+	<li>Generates documentation from source code</li>
+	<li>Compiles source code</li>
+	<li>Packages compiled code into a JAR or ZIP file</li>
+	<li>Installs the packaged code in the local repository, server repository, or central repository</li>
+</ul>
+
+<p><a href="https://www.javatpoint.com/maven-tutorial">More details.</a></p>
+
+<hr />
+<h3>6) What is the difference between Ant and Maven?</h3>
+
+<table>
+	<tbody>
+		<tr>
+			<th>Ant</th>
+			<th>Maven</th>
+		</tr>
+		<tr>
+			<td>It is&nbsp;<strong>a toolbox</strong>.</td>
+			<td>It is&nbsp;<strong>a framework</strong>.</td>
+		</tr>
+		<tr>
+			<td>It is&nbsp;<strong>mainly a build tool</strong>.</td>
+			<td>It is&nbsp;<strong>mainly a project management tool</strong>.</td>
+		</tr>
+		<tr>
+			<td>There is&nbsp;<strong>no life cycle</strong>.</td>
+			<td>There is a<strong>life cycle</strong>.</td>
+		</tr>
+		<tr>
+			<td>Ant&nbsp;<strong>doesn&#39;t have formal conventions</strong>.</td>
+			<td>Maven&nbsp;<strong>has a convention</strong>&nbsp;to place source code, compiled code etc.</td>
+		</tr>
+		<tr>
+			<td>Ant is&nbsp;<strong>procedural</strong>.</td>
+			<td>Maven is&nbsp;<strong>declarative</strong>.</td>
+		</tr>
+		<tr>
+			<td>The ant scripts are&nbsp;<strong>not reusable</strong>.</td>
+			<td>The Maven plugins are&nbsp;<strong>reusable</strong>.</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><a href="https://www.javatpoint.com/difference-between-ant-and-maven">More details.</a></p>
+
+<hr />
+<h3>7) Why is the use of the profile required in Maven?</h3>
+
+<p>For providing probability to projects, we use profiles.</p>
+
+<hr />
+<h3>8) What is the syntax for offline project creation?</h3>
+
+<p>The syntax for project creation is:</p>
+
+<p>&nbsp;</p>
+
+<p>mvn o packg.</p>
+
+<hr />
+<h3>9) How is the propagation of plugins to child POMs stopped?</h3>
+
+<p>It can be done using the following syntax:</p>
+
+<ol start="1">
+	<li>set&lt;inherited&gt;&nbsp;to&nbsp;false.&nbsp;&nbsp;</li>
+</ol>
+
+<hr />
+<h3>10) What is the use of the exclusion element?</h3>
+
+<p>The element is used to exclude dependencies.</p>
+
+<hr />
+<h3>11) Define SNAPSHOT in terms of maven.</h3>
+
+<p>The snapshot indicates the current development copy.</p>
+
+<hr />
+<h3>12) Define Archetype.</h3>
+
+<p>It is a Maven plugin which is designed for the creation of project structure.</p>
+
+<hr />
+<h3>7. What does central repository consist of?</h3>
+
+<p>It consists of a large number of libraries that are frequently used.</p>
+
+<p>&nbsp;</p>
+
+<hr />
+<h3>13) Give the command for installation of the JAR file in a local repository.</h3>
+
+<p>mvn install</p>
+
+<hr />
+<h3>14) Mention the phases of cleaning lifecycle.</h3>
+
+<p>The lifecycle of cleaning consist of:</p>
+
+<ul>
+	<li>pre-clean</li>
+	<li>clean</li>
+	<li>post-clean</li>
+</ul>
+
+<hr />
+<h3>15) What is the purpose of mvn clean command?</h3>
+
+<p>The command removes the target directory before the starting of a build process.</p>
+
+<hr />
+<h3>16) What is a MOJO?</h3>
+
+<p>A MOJO stands for Maven plain Old Java Object. Each MOJO is an executable goal in Maven, and a plugin is a distribution of one or more related MOJOs.</p>
+
+<hr />
+<h3>17) What is a repository?</h3>
+
+<p>A repository is a directory or place where all the jars and pom.xml file are stored. There are 3 types of a repository in Maven:</p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li>Local Repository</li>
+	<li>Central Repository</li>
+	<li>Remote Repository</li>
+</ol>
+
+<p><a href="https://www.javatpoint.com/maven-repository">More details.</a></p>
+
+<hr />
+<h3>18) What is a local repository?</h3>
+
+<p>Maven local repository is created by maven in your local system when you run any maven command.&nbsp;<a href="https://www.javatpoint.com/maven-repository#local">More details.</a></p>
+
+<hr />
+<h3>19) What is a central repository?</h3>
+
+<p>Maven community creates maven central repository on the web.&nbsp;<a href="https://www.javatpoint.com/maven-repository#central">More details.</a></p>
+
+<hr />
+<h3>20) What is a remote repository?</h3>
+
+<p>Maven remote repository is located on the web by different vendors. So you need to define the dependency in pom.xml file manually. It is important because most of the libraries are missing from the central repository.&nbsp;<a href="https://www.javatpoint.com/maven-repository#remote">More details.</a></p>
+
+<p>&nbsp;</p>
+
+<hr />
+<h3>21) What is POM?</h3>
+
+<p>POM stands for Project Object Model. The pom.xml file contains information of project and project configuration.&nbsp;<a href="https://www.javatpoint.com/maven-pom-xml">More details.</a></p>
+
+<hr />
+<h3>22) What are the build phases in Maven?</h3>
+
+<ol>
+	<li>validate</li>
+	<li>compile</li>
+	<li>test</li>
+	<li>package</li>
+	<li>integration-test</li>
+	<li>verify</li>
+	<li>install</li>
+	<li>deploy</li>
+</ol>
+
+<hr />
+<h3>23) What is the command to package maven project?</h3>
+
+<ol start="1">
+	<li>mvn&nbsp;-package&nbsp;&nbsp;</li>
+</ol>
+
+<hr />
+<h3>24) What is the fully qualified artifact name of maven project?</h3>
+
+<ol start="1">
+	<li>&lt;groupId&gt;:&lt;artifactId&gt;:&lt;version&gt;&nbsp;&nbsp;</li>
+</ol>
+
+<hr />
+<h3>25) What is an archetype?</h3>
+
+<p>Archetype is the maven plugin. It creates the project structure.</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

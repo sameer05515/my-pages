@@ -1,0 +1,25 @@
+<div ng-style="stylesData.templateAnswerDataDescriptionStyle">
+	Answer :  <span style="font: 150% sans-serif;color: #000000;" ng-bind-html="templateAnswerData.answer" /> 
+
+	<a ng-show="!templateAnswerData.showEditAnswer" class="btn btn-xs btn-primary" ng-click="templateAnswerData.showEditAnswer=true">
+		Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="templateAnswerData.showEditAnswer" ng-click="templateAnswerData.showEditAnswer=false" class="btn btn-xs btn-primary">
+		Cancel Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
+	<div ng-show="templateAnswerData.showEditAnswer">
+		<trix-editor angular-trix ng-model="templateAnswerData.answer"
+			ng-show="templateAnswerData.showEditAnswer"></trix-editor>
+		<div star-rating rating-value="templateAnswerData.rating"
+			edit-star-rating="true" max="settings.maxRatingValue"
+			on-rating-selected="getSelectedRating(rating)"></div>
+		<a class="btn btn-xs btn-primary" ng-click="editAnswer(templateAnswerData);templateAnswerData.showEditAnswer=false;"
+			ng-if="templateAnswerData.showEditAnswer">Save</a> 
+		<a class="btn btn-xs btn-primary" ng-click="templateAnswerData.showEditAnswer=false"
+			ng-if="templateAnswerData.showEditAnswer">Cancel</a>
+	</div>
+
+</div>

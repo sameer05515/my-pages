@@ -1,0 +1,53 @@
+<div ng-style="stylesData.templateCategoryDataDescriptionStyle">
+	Category :  <span style="font: 200% sans-serif;color: #045504;font-weight: bold;" ng-bind-html="templateCategoryData.catgoryName" />
+	<!-- <h4>TotalQuestions : {{templateCategoryData.questions.length}}</h4> -->
+	<h4>TotalQuestions : {{templateCategoryData.totalQuestionsCount}}</h4>
+	<a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateCategoryData.catID}}">
+		Details
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
+	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=true">
+		Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="templateCategoryData.showEditCategory" ng-click="templateCategoryData.showEditCategory=false" class="btn btn-xs btn-primary">
+		Cancel Edit
+		<i class="fa fa-angle-right"></i>
+	</a>
+	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary">
+		Add Questions
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
+	<a ng-show="!templateCategoryData.collapseCategoryQuestions" class="btn btn-xs btn-primary" ng-click="templateCategoryData.collapseCategoryQuestions=true">
+		- Hide Questions		
+	</a>
+	<a ng-show="templateCategoryData.collapseCategoryQuestions" ng-click="showCategoryQuestions(templateCategoryData);" class="btn btn-xs btn-primary">
+		+ Show Questions		
+	</a>
+
+	<a ng-show="!templateCategoryData.showEditCategory" class="btn btn-xs btn-primary">
+		Refresh Questions List
+		<i class="fa fa-angle-right"></i>
+	</a>
+	
+	<!-- {{templateCategoryData.catgoryName}} {{templateCategoryData.rating}} -->
+	
+	<div ng-show="templateCategoryData.showEditCategory">
+		<trix-editor angular-trix ng-model="templateCategoryData.catgoryName"
+			ng-show="templateCategoryData.showEditCategory"></trix-editor>
+		<div star-rating rating-value="templateCategoryData.rating"
+			edit-star-rating="true" max="settings.maxRatingValue"
+			on-rating-selected="getSelectedRating(rating)"></div>
+		<a class="btn btn-xs btn-primary" ng-click="editCategory(templateCategoryData);templateCategoryData.showEditCategory=false;"
+			ng-if="templateCategoryData.showEditCategory">Save</a> 
+		<a class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=false"
+			ng-if="templateCategoryData.showEditCategory">Cancel</a>
+	</div>
+	
+
+	<div ng-show="(settings.showDbBakupLinkData)&&(!templateCategoryData.collapseCategoryQuestions)"  ng-repeat="templateQuestionData in templateCategoryData.questions" ng-include="'template/questionData_item_renderer.html'">               
+	</div>
+
+</div>

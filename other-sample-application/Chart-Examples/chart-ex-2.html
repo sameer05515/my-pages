@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+       text: "Index Labels Customizations"   
+      },
+      data: [
+      {      
+        indexLabelFontSize: 25,
+        indexLabelFontFamily:"Lucida Console" ,
+        type: "column",
+        dataPoints: [
+        
+          { x: 10, y: 71, indexLabel: "Higher", indexLabelFontColor: "orange", indexLabelOrientation: "vertical", indexLabelPlacement: "inside"},
+        { x: 20, y: 55},
+        { x: 30, y: 50 },
+        { x: 40, y: 65 },
+        { x: 50, y: 85, indexLabel: "highest", indexLabelFontColor: "orangered" },
+        { x: 60, y: 68 },
+        { x: 70, y: 28 },
+        { x: 80, y: 34 },
+        { x: 90, y: 14, indexLabel: "low", indexLabelFontColor: "indigo" }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>

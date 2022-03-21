@@ -1,0 +1,1 @@
+angular.module("audiometa", []).constant "Strategies", ["MP3", "WAV", "AIFF"]

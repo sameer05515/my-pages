@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<link href='font-awesome.css' rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<style type="text/css">
+.panel
+{
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	background-color: #39393d!important;
+	border-color: #e2e2e2;
+	border: 1px solid transparent;
+	height: 380px;
+	color:white;
+}
+.action-checkbox
+{
+	padding-left: 25%;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	line-height: 10px;
+	display: inline;
+	
+}
+.check-box-panel
+{
+	width: 150px;
+	float: left;
+	display: inline;
+	margin-top: 30px;
+	margin-left: 30px;
+	border-style: dotted;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+}
+.selected-items-panel
+{
+	margin-left: 210px;
+	margin-top: 17%;
+	margin-right:10px;
+}
+.selected-item
+{
+	display:inline;
+	margin-right:10px;
+	font-size:16px;
+	color:turquoise;
+	font-family:Trebuchet MS;
+}
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046";color:turquoise; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+</style>
+</head>
+<body>
+<div class="panel" ng-controller="checkBoxController">
+	<h3 style="text-align:center;">AngularJS - Retrieve Multiple Checkbox Selected Options</h3>
+	<p style="text-align:center;font-family:Tahoma">Demo by Priya Darshini - Tutorial @ <a href="javascript:parent.window.location.href='http://www.programming-free.com/2014/05/angularjs-retrieve-multiple-checkbox-selected-options.html'" style="color:turquoise">Programmingfree</a></p> 
+
+	<div class="check-box-panel">
+		<div ng-repeat="employee in employees">
+			<div class="action-checkbox">
+				<input id="{{employee.name}}" type="checkbox" value="{{employee.name}}" ng-checked="selection.indexOf(employee.name) > -1" ng-click="toggleSelection(employee.name)" />
+				<label for="{{employee.name}}"></label>
+				{{employee.name}}
+			</div>
+		</div>
+	</div>
+	<div class="selected-items-panel">
+	<span style="color:white;" class="selected-item">Selected Items:<span>
+		<div ng-repeat="name in selection" class="selected-item">
+		{{name}}
+		</div>
+	</div>
+</div>
+</body>
+</html>

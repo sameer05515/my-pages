@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUnit</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <script src="../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>JUnit Interview Question</h1>
+
+            <p>A list of top frequently asked&nbsp;<strong>JUnit interview questions</strong>&nbsp;and answers are given
+                below.</p>
+
+            <hr />
+            <h3>1) What is Testing?</h3>
+
+            <p>Testing is the process of checking the functionality of the application whether it fulfills the
+                requirement or not.</p>
+
+            <hr />
+            <h3>2) What is JUnit?</h3>
+
+            <p>JUnit is the testing framework, it is used for unit testing of Java code.</p>
+
+            <ol start="1">
+                <li>JUnit&nbsp;=&nbsp;Java&nbsp;+&nbsp;Unit&nbsp;Testing&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><a href="https://www.javatpoint.com/junit-tutorial">More details...</a></p>
+
+            <hr />
+            <h3>3) What is unit testing?</h3>
+
+            <p>The process of testing individual functionality (known as a unit) of the application is called unit
+                testing.</p>
+
+            <hr />
+            <h3>4) What is the difference between manual testing and automated testing?</h3>
+
+            <p>Manual testing is performed by Human, so it is time-consuming and costly. Automated testing is performed
+                by testing tools or programs, so it is fast and less costly.</p>
+
+            <p><a href="https://www.javatpoint.com/maven-tutorial">More details...</a></p>
+
+            <hr />
+            <h3>5) Give some disadvantages of manual testing.</h3>
+
+            <p>Following are some disadvantages of manual testing:</p>
+
+            <ul>
+                <li>The testing is very time consuming and is very tiring.</li>
+                <li>The testing demands a very big investment in the human resources.</li>
+                <li>The testing is less reliable</li>
+                <li>The testing cannot be programmed.</li>
+            </ul>
+
+            <hr />
+            <h3>6) List out some advantages of automated testing.</h3>
+
+            <p>Some of the advantages of automated testing are:</p>
+
+            <ul>
+                <li>It is very fast.</li>
+                <li>Investment is very less.</li>
+                <li>Testing is more reliable.</li>
+                <li>The testing can be programmed.</li>
+            </ul>
+
+            <hr />
+            <h3>7) Is it necessary to write the test case for every logic?</h3>
+
+            <p>No, we should write the test case only for that logic that can be reasonably broken.</p>
+
+            <hr />
+            <h3>8) What are the useful JUnit extensions?</h3>
+
+            <ul>
+                <li>JWebUnit</li>
+                <li>XMLUnit</li>
+                <li>Cactus</li>
+                <li>MockObject</li>
+            </ul>
+
+            <hr />
+            <h3>9) What are the features of JUnit?</h3>
+
+            <ul>
+                <li>Opensource</li>
+                <li>Annotation support for test cases</li>
+                <li>Assertion support for checking the expected result</li>
+                <li>Test runner support to execute the test case</li>
+            </ul>
+
+            <h3>10) How is the testing of the &#39;protected&#39; method done?</h3>
+
+            <p>To test the protected method, the test class is declared in the same package as the target class.</p>
+
+            <hr />
+            <h3>11) How is the testing of &#39;private&#39; method done?</h3>
+
+            <p>There is no direct way for testing of the private method; hence manual testing is to be performed, or the
+                method is changed to &quot;protected&quot; method.</p>
+
+            <hr />
+            <h3>12) If the JUnit method&#39;s return type is &#39;string&#39;, what will happen?</h3>
+
+            <p>JUnit test methods are designed to return &#39;void&#39;. So the execution will fail.</p>
+
+            <hr />
+            <h3>13) Is the use of &#39;main&#39; method possible for unit testing?</h3>
+
+            <p>Yes</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>14) Is it necessary to write the test class to test every class?</h3>
+
+            <p>No</p>
+
+            <hr />
+            <h3>15) What does XMLUnit provide?</h3>
+
+            <p>Junit extension class, XMLTestCase and set of supporting classes is provided by the XMLUnit.</p>
+
+            <hr />
+            <h3>16) List the core components of Cactus.</h3>
+
+            <ul>
+                <li>Cactus Framework</li>
+                <li>Cactus Integration Module</li>
+            </ul>
+
+            <hr />
+            <h3>17) What are the methods in fixtures?</h3>
+
+            <ul>
+                <li>setup</li>
+                <li>tearDown</li>
+            </ul>
+
+            <hr />
+            <hr />
+            <h3>18) What is the Unit Test Case?</h3>
+
+            <p>A Unit Test Case is the combination of input data and expected output result. It is defined to test the
+                functionality of a unit.</p>
+
+            <hr />
+            <h3>19) What is the use of @Test annotation?</h3>
+
+            <p>The @Test annotation is used to mark the method as the test method.</p>
+
+            <hr />
+            <h3>20) What is the test suit?</h3>
+
+            <p>The test suit allows us to group multiple test cases so that it can be run together. TestSuit is the
+                container class under junit.framework.TestSuite package.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>21) What does test runner?</h3>
+
+            <p>The test runner is used to execute the test cases.</p>
+
+            <hr />
+            <h3>22) What are the important JUnit annotations?</h3>
+
+            <p>The test runner is used to execute the test cases.</p>
+
+            <ul>
+                <li>@Test</li>
+                <li>@BeforeClass</li>
+                <li>@Before</li>
+                <li>@After</li>
+                <li>@AfterClass</li>
+            </ul>
+
+            <hr />
+            <h3>23) What does Assert class?</h3>
+
+            <p>Assert class provides methods to test the test cases.</p>
+
+        </div>
+
+        <div class="box-prem">
+            <h2>JUnit question set 2</h2>
+            <p><strong>What is Testing?</strong></p>
+
+            <p>Testing is the process of checking the functionality of the application whether it is working as per
+                requirements.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>What is Unit Testing?</strong></p>
+
+            <p>Unit testing is the testing of single entity (class or method). Unit testing is very essential to every
+                software company to give a quality product to their customers.</p>
+
+            <hr />
+            <p><strong>What is Manual testing?</strong></p>
+
+            <p>Executing the test cases manually without any tool support is known as manual testing.</p>
+
+            <hr />
+            <p><strong>What is Automated testing?</strong></p>
+
+            <p>Taking tool support and executing the test cases by using automation tool is known as automation testing.
+            </p>
+
+            <hr />
+            <p><strong>What are the disadvantages of manual testing?</strong></p>
+
+            <p>Following are the disadvantages of manual testing &minus;</p>
+
+            <ul>
+                <li>
+                    <p>Time consuming and tedious &minus; Since test cases are executed by human resources so it is very
+                        slow and tedious.</p>
+                </li>
+                <li>
+                    <p>Huge investment in human resources &minus; As test cases need to be executed manually so more
+                        testers are required in manual testing.</p>
+                </li>
+                <li>
+                    <p>Less reliable &minus; Manual testing is less reliable as tests may not be performed with
+                        precision each time because of human errors.</p>
+                </li>
+                <li>
+                    <p>Non-programmable &minus; No programming can be done to write sophisticated tests which fetch
+                        hidden information.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>What are the advantages of automated testing?</strong></p>
+
+            <p>Following are the advantages of automated testing &minus;</p>
+
+            <ul>
+                <li>
+                    <p><strong>Fast</strong>&nbsp;&minus; Automation runs test cases significantly faster than human
+                        resources.</p>
+                </li>
+                <li>
+                    <p><strong>Less investment in human resources</strong>&nbsp;&minus; Test cases are executed by using
+                        automation tool so less tester are required in automation testing.</p>
+                </li>
+                <li>
+                    <p><strong>More reliable</strong>&nbsp;&minus; Automation tests perform precisely same operation
+                        each time they are run.</p>
+                </li>
+                <li>
+                    <p><strong>Programmable</strong>&nbsp;&minus; Testers can program sophisticated tests to bring out
+                        hidden information.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is JUnit?</strong></p>
+
+            <p>JUnit is a Regression Testing Framework used by developers to implement unit testing in Java and
+                accelerate programming speed and increase the quality of code.</p>
+
+            <p><strong>What are important features of JUnit?</strong></p>
+
+            <p>Following are the important features of JUnit &minus;</p>
+
+            <ul>
+                <li>
+                    <p>It is an open source framework.</p>
+                </li>
+                <li>
+                    <p>Provides Annotation to identify the test methods.</p>
+                </li>
+                <li>
+                    <p>Provides Assertions for testing expected results.</p>
+                </li>
+                <li>
+                    <p>Provides Test runners for running tests.</p>
+                </li>
+                <li>
+                    <p>JUnit tests can be run automatically and they check their own results and provide immediate
+                        feedback.</p>
+                </li>
+                <li>
+                    <p>JUnit tests can be organized into test suites containing test cases and even other test suites.
+                    </p>
+                </li>
+                <li>
+                    <p>JUnit shows test progress in a bar that is green if test is going fine and it turns red when a
+                        test fails.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is a Unit Test Case?</strong></p>
+
+            <p>A Unit Test Case is a part of code which ensures that the another part of code (method) works as
+                expected. To achieve those desired results quickly, test framework is required .JUnit is perfect unit
+                test framework for java programming language.</p>
+
+            <hr />
+            <p><strong>What are the best practices to write a Unit Test Case?</strong></p>
+
+            <p>A formal written unit test case is characterized by a known input and by an expected output, which is
+                worked out before the test is executed. The known input should test a precondition and the expected
+                output should test a postcondition.</p>
+
+            <p>There must be at least two unit test cases for each requirement: one positive test and one negative test.
+                If a requirement has sub-requirements, each sub-requirement must have at least two test cases as
+                positive and negative.</p>
+
+            <hr />
+            <p><strong>When are Unit Tests written in Development Cycle?</strong></p>
+
+            <p>Tests are written before the code during development in order to help coders write the best code.</p>
+
+            <hr />
+            <p><strong>Why not just use System.out.println() for testing?</strong></p>
+
+            <p>Debugging the code using system.out.println() will lead to manual scanning of the whole output every time
+                the program is run to ensure the code is doing the expected operations. Moreover, in the long run, it
+                takes lesser time to code JUnit methods and test them on class files.</p>
+
+            <hr />
+            <p><strong>How to install JUnit?</strong></p>
+
+            <p>Follow the steps below &minus;</p>
+
+            <ul>
+                <li>
+                    <p>Download the latest version of JUnit, referred to below as junit.zip.</p>
+                </li>
+                <li>
+                    <p>Unzip the junit.zip distribution file to a directory referred to as %JUNIT_HOME%.</p>
+                </li>
+                <li>
+                    <p>Add JUnit to the classpath &minus;</p>
+                </li>
+            </ul>
+
+            <pre>
+set CLASSPATH=%CLASSPATH%;%JUNIT_HOME%\junit.jar
+</pre>
+
+            <ul>
+                <li>
+                    <p>Test the installation by running the sample tests distributed with JUnit (sample tests are
+                        located in the installation directory directly, not the junit.jar file). Then simply type
+                        &minus;</p>
+                </li>
+            </ul>
+
+            <pre>
+java org.junit.runner.JUnitCore org.junit.tests.AllTests
+</pre>
+
+            <ul>
+                <li>
+                    <p>All the tests should pass with an &quot;OK&quot; message. If the tests don&#39;t pass, verify
+                        that junit.jar is in the CLASSPATH.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>Why does JUnit only report the first failure in a single test?</strong></p>
+
+            <p>Reporting multiple failures in a single test is generally a sign that the test does too much and it is
+                too big a unit test. JUnit is designed to work best with a number of small tests. It executes each test
+                within a separate instance of the test class. It reports failure on each test.</p>
+
+            <hr />
+            <p><strong>In Java, assert is a keyword. Won&#39;t this conflict with JUnit&#39;s assert() method?</strong>
+            </p>
+
+            <p>JUnit 3.7 deprecated assert() and replaced it with assertTrue(), which works exactly the same way. JUnit
+                4 is compatible with the assert keyword. If you run with the -ea JVM switch, assertions that fail will
+                be reported by JUnit.</p>
+
+            <hr />
+            <p><strong>How do I test things that must be run in a J2EE container (e.g. servlets, EJBs)?</strong></p>
+
+            <p>Refactoring J2EE components to delegate functionality to other objects that don&#39;t have to be run in a
+                J2EE container will improve the design and testability of the software. Cactus is an open source JUnit
+                extension that can be used for unit testing server-side java code.</p>
+
+            <hr />
+            <p><strong>Name the tools with which JUnit can be easily integrated.</strong></p>
+
+            <p>JUnit Framework can be easily integrated with either of the followings &minus;</p>
+
+            <ul>
+                <li>Eclipse</li>
+                <li>Ant</li>
+                <li>Maven</li>
+            </ul>
+
+            <hr />
+            <p><strong>What are the core features of JUnit?</strong></p>
+
+            <p>JUnit test framework provides following important features &minus;</p>
+
+            <ul>
+                <li>Fixtures</li>
+                <li>Test suites</li>
+                <li>Test runners</li>
+                <li>JUnit classes</li>
+            </ul>
+
+            <hr />
+            <p><strong>What is a fixture?</strong></p>
+
+            <p>Fixture is a fixed state of a set of objects used as a baseline for running tests. The purpose of a test
+                fixture is to ensure that there is a well known and fixed environment in which tests are run so that
+                results are repeatable. It includes following methods &minus;</p>
+
+            <ul>
+                <li>
+                    <p>setUp() method which runs before every test invocation.</p>
+                </li>
+                <li>
+                    <p>tearDown() method which runs after every test method.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is a test suite?</strong></p>
+
+            <p>Test suite means bundle a few unit test cases and run it together. In JUnit, both @RunWith and @Suite
+                annotation are used to run the suite test.</p>
+
+            <hr />
+            <p><strong>What is a test runner?</strong></p>
+
+            <p>Test runner is used for executing the test cases.</p>
+
+            <hr />
+            <p><strong>What are JUnit classes? List some of them.</strong></p>
+
+            <p>JUnit classes are important classes which are used in writing and testing JUnits. Some of the important
+                classes are &minus;</p>
+
+            <ul>
+                <li>
+                    <p><strong>Assert</strong>&nbsp;&minus; It contains a set of assert methods.</p>
+                </li>
+                <li>
+                    <p><strong>TestCase</strong>&nbsp;&minus; It contains a test case defines the fixture to run
+                        multiple tests.</p>
+                </li>
+                <li>
+                    <p><strong>TestResult</strong>&nbsp;&minus; It contains methods to collect the results of executing
+                        a test case.</p>
+                </li>
+                <li>
+                    <p><strong>TestSuite</strong>&nbsp;&minus; It is a Composite of Tests.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What are annotations and how are they useful in JUnit?</strong></p>
+
+            <p>Annotations are like meta-tags that you can add to you code and apply them to methods or in class. The
+                annotation in JUnit gives us information about test methods, which methods are going to run before &amp;
+                after test methods, which methods run before &amp; after all the methods, which methods or class will be
+                ignore during execution.</p>
+
+            <hr />
+            <p><strong>How will you run JUnit from command window?</strong></p>
+
+            <p>Follow the steps below &minus;</p>
+
+            <ul>
+                <li>
+                    <p>Set the CLASSPATH</p>
+                </li>
+                <li>
+                    <p>Invoke the runner &minus;</p>
+                </li>
+            </ul>
+
+            <pre>
+java org.junit.runner.JUnitCore 
+</pre>
+
+            <hr />
+            <p><strong>What is the purpose of org.junit.Assert class?</strong></p>
+
+            <p>This class provides a set of assertion methods useful for writing tests. Only failed assertions are
+                recorded.</p>
+
+            <hr />
+            <p><strong>What is the purpose of org.junit.TestResult class?</strong></p>
+
+            <p>A TestResult collects the results of executing a test case. It is an instance of the Collecting Parameter
+                pattern. The test framework distinguishes between failures and errors. A failure is anticipated and
+                checked for with assertions. Errors are unanticipated problems like an ArrayIndexOutOfBoundsException.
+            </p>
+
+            <hr />
+            <p><strong>What is the purpose of org.junit.TestSuite class?</strong></p>
+
+            <p>A TestSuite is a Composite of Tests. It runs a collection of test cases.</p>
+
+            <hr />
+            <p><strong>What is the purpose of @Test annotation in JUnit?</strong></p>
+
+            <p>The Test annotation tells JUnit that the public void method to which it is attached can be run as a test
+                case.</p>
+
+            <hr />
+            <p><strong>What is the purpose of @Before annotation in JUnit?</strong></p>
+
+            <p>Several tests need similar objects created before they can run. Annotating a public void method with
+                @Before causes that method to be run before each Test method.</p>
+
+            <hr />
+            <p><strong>What is the purpose of @After annotation in JUnit?</strong></p>
+
+            <p>If you allocate external resources in a Before method you need to release them after the test runs.
+                Annotating a public void method with @After causes that method to be run after the Test method.</p>
+
+            <hr />
+            <p><strong>What is the purpose of @BeforeClass annotation in JUnit?</strong></p>
+
+            <p>Annotating a public static void method with @BeforeClass causes it to be run once before any of the test
+                methods in the class.</p>
+
+            <hr />
+            <p><strong>What is the purpose of @AfterClass annotation in JUnit?</strong></p>
+
+            <p>This will perform the method after all tests have finished. This can be used to perform clean-up
+                activities.</p>
+
+            <hr />
+            <p><strong>What is @Ignore annotation and how is this useful?</strong></p>
+
+            <p>Following are some of the usefulness of @Ignore annotation &minus;</p>
+
+            <p>You can easily identify all @Ignore annotations in the source code, while unannotated or commented out
+                tests are not so simple to find.</p>
+
+            <p>There are cases when you can&#39;t fix a code that is failing, but you still want to method to be around,
+                precisely so that it does not get forgotten. In such cases @Ignore makes sense.</p>
+
+            <hr />
+            <p><strong>Explain the execution procedure of the JUnit test API methods?</strong></p>
+
+            <p>Following is how the JUnit execution procedure works &minus;</p>
+
+            <ul>
+                <li>
+                    <p>First of all method annotated as @BeforeClass execute only once.</p>
+                </li>
+                <li>
+                    <p>Lastly, the method annotated as @AfterClass executes only once.</p>
+                </li>
+                <li>
+                    <p>Method annotated as @Before executes for each test case but before executing the test case.</p>
+                </li>
+                <li>
+                    <p>Method annotated as @After executes for each test case but after the execution of test case.</p>
+                </li>
+                <li>
+                    <p>In between method annotated as @Before and method annotated as @After each test case executes.
+                    </p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is the purpose of org.junit.JUnitCore class?</strong></p>
+
+            <p>The test cases are executed using JUnitCore class. JUnitCore is a facade for running tests. It supports
+                running JUnit 4 tests, JUnit 3.8.x tests, and mixtures.</p>
+
+            <hr />
+            <p><strong>How to simulate timeout situation in JUnit?</strong></p>
+
+            <p>Junit provides a handy option of Timeout. If a test case takes more time than specified number of
+                milliseconds then Junit will automatically mark it as failed. The timeout parameter is used along with
+                @Test annotation.</p>
+
+            <hr />
+            <p><strong>How can you use JUnit to test that the code throws desired exception?</strong></p>
+
+            <p>JUnit provides a option of tracing the Exception handling of code. You can test if a code throws desired
+                exception or not. The expected parameter is used along with @Test annotation as follows &minus;
+                @Test(expected)</p>
+
+            <hr />
+            <p><strong>What are Parameterized tests?</strong></p>
+
+            <p>Junit 4 has introduced a new feature Parameterized tests. Parameterized tests allow developer to run the
+                same test over and over again using different values.</p>
+
+            <hr />
+            <p><strong>How to create Parameterized tests?</strong></p>
+
+            <p>There are five steps, that you need to follow to create Parameterized tests&minus;</p>
+
+            <ul>
+                <li>
+                    <p>Annotate test class with @RunWith(Parameterized.class).</p>
+                </li>
+                <li>
+                    <p>Create a public static method annotated with @Parameters that returns a Collection of Objects (as
+                        Array) as test data set.</p>
+                </li>
+                <li>
+                    <p>Create a public constructor that takes in what is equivalent to one &quot;row&quot; of test data.
+                    </p>
+                </li>
+                <li>
+                    <p>Create an instance variable for each &quot;column&quot; of test data.</p>
+                </li>
+                <li>
+                    <p>Create your tests case(s) using the instance variables as the source of the test data.</p>
+                </li>
+                <li>
+                    <p>The test case will be invoked once per each row of data. Let&#39;s see Parameterized tests in
+                        action.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>How do you use test fixtures?</strong></p>
+
+            <p>Fixtures is a fixed state of a set of objects used as a baseline for running tests. The purpose of a test
+                fixture is to ensure that there is a well known and fixed environment in which tests are run so that
+                results are repeatable. It includes &minus;</p>
+
+            <ul>
+                <li>
+                    <p>setUp() method which runs before every test invocation.</p>
+                </li>
+                <li>
+                    <p>tearDown() method which runs after every test method.</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>How to compile a JUnit Test Class?</strong></p>
+
+            <p>Compiling a JUnit test class is like compiling any other Java classes. The only thing you need watch out
+                is that the JUnit JAR file must be included in the classpath.</p>
+
+            <hr />
+            <p><strong>What happens if a JUnit Test Method is Declared as &quot;private&quot;?</strong></p>
+
+            <p>If a JUnit test method is declared as &quot;private&quot;, it compiles successfully. But the execution
+                will fail. This is because JUnit requires that all test methods must be declared as &quot;public&quot;.
+            </p>
+
+            <hr />
+            <p><strong>How do you test a &quot;protected&quot; method?</strong></p>
+
+            <p>When a method is declared as &quot;protected&quot;, it can only be accessed within the same package where
+                the class is defined. Hence to test a &quot;protected&quot; method of a target class, define your test
+                class in the same package as the target class.</p>
+
+            <hr />
+            <p><strong>How do you test a &quot;private&quot; method?</strong></p>
+
+            <p>When a method is declared as &quot;private&quot;, it can only be accessed within the same class. So there
+                is no way to test a &quot;private&quot; method of a target class from any test class. Hence you need to
+                perform unit testing manually. Or you have to change your method from &quot;private&quot; to
+                &quot;protected&quot;.</p>
+
+            <hr />
+            <p><strong>What happens if a JUnit test method is declared to return &quot;String&quot;?</strong></p>
+
+            <p>If a JUnit test method is declared to return &quot;String&quot;, the compilation will pass ok. But the
+                execution will fail. This is because JUnit requires that all test methods must be declared to return
+                &quot;void&quot;.</p>
+
+            <hr />
+            <p><strong>Can you use a main() Method for Unit Testing?</strong></p>
+
+            <p>Yes you can test using main() method. One obvious advantage seems to be that you can whitebox test the
+                class. That is, you can test the internals of it (private methods for example). You can&#39;t do that
+                with unit-tests. But primarily the test framework tests the interface and the behavior from the
+                user&#39;s perspective.</p>
+
+            <hr />
+            <p><strong>Do you need to write a test class for every class that needs to be tested?</strong></p>
+
+            <p>No. We need not write an independent test class for every class that needs to be tested. If there is a
+                small group of tests sharing a common test fixture, you may move those tests to a new test class.</p>
+
+            <hr />
+            <p><strong>When are tests garbage collected?</strong></p>
+
+            <p>The test runner holds strong references to all Test instances for the duration of the test execution.
+                This means that for a very long test run with many Test instances, none of the tests may be garbage
+                collected until the end of the entire test run. Explicitly setting an object to null in the tearDown()
+                method, for example, allows it to be garbage collected before the end of the entire test run.</p>
+
+            <hr />
+            <p><strong>What is a Mock Object?</strong></p>
+
+            <p>In a unit test, mock objects can simulate the behavior of complex, real (non-mock) objects and are
+                therefore useful when a real object is impractical or impossible to incorporate into a unit test.</p>
+
+            <hr />
+            <p><strong>Explain unit testing using Mock Objects.</strong></p>
+
+            <p>The common coding style for testing with mock objects is to &minus;</p>
+
+            <ul>
+                <li>Create instances of mock objects.</li>
+                <li>Set state and expectations in the mock objects.</li>
+                <li>Invoke domain code with mock objects as parameters.</li>
+                <li>Verify consistency in the mock objects.</li>
+            </ul>
+
+            <hr />
+            <p><strong>Name some of the JUnit Extensions.</strong></p>
+
+            <p>Following are the JUnit extensions &minus;</p>
+
+            <ul>
+                <li>
+                    <p>Cactus</p>
+                </li>
+                <li>
+                    <p>JWebUnit</p>
+                </li>
+                <li>
+                    <p>XMLUnit</p>
+                </li>
+                <li>
+                    <p>MockObject</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is Cactus?</strong></p>
+
+            <p>Cactus is a simple test framework for unit testing server-side java code (Servlets, EJBs, Tag Libs,
+                Filters). The intent of Cactus is to lower the cost of writing tests for server-side code. It uses JUnit
+                and extends it. Cactus implements an in-container strategy, meaning that tests are executed inside the
+                container.</p>
+
+            <hr />
+            <p><strong>What are the core components of Cactus?</strong></p>
+
+            <p>Cactus Ecosystem is made of several components &minus;</p>
+
+            <ul>
+                <li>
+                    <p>Cactus Framework is the heart of Cactus. It is the engine that provides the API to write Cactus
+                        tests.</p>
+                </li>
+                <li>
+                    <p>Cactus Integration Modules are front ends and frameworks that provide easy ways of using the
+                        Cactus Framework (Ant scripts, Eclipse plugin, Maven plugin).</p>
+                </li>
+            </ul>
+
+            <hr />
+            <p><strong>What is JWebUnit?</strong></p>
+
+            <p>WebUnit is a Java-based testing framework for web applications. It wraps existing testing frameworks such
+                as HtmlUnit and Selenium with a unified, simple testing interface to allow you to quickly test the
+                correctness of your web applications.</p>
+
+            <hr />
+            <p><strong>What are the advantages of using JWebUnit?</strong></p>
+
+            <p>JWebUnit provides a high-level Java API for navigating a web application combined with a set of
+                assertions to verify the application&#39;s correctness. This includes navigation via links, form entry
+                and submission, validation of table contents, and other typical business web application features.</p>
+
+            <p>The simple navigation methods and ready-to-use assertions allow for more rapid test creation than using
+                only JUnit or HtmlUnit. And if you want to switch from HtmlUnit to other plugins such as Selenium
+                (available soon), there is no need to rewrite your tests.</p>
+
+            <hr />
+            <p><strong>What is XMLUnit?</strong></p>
+
+            <p>XMLUnit provides a single JUnit extension class, XMLTestCase, and a set of supporting classes.</p>
+
+            <hr />
+            <p><strong>What is the use of supporting classes in XMLUnit?</strong></p>
+
+            <p>Supporting classes allow assertions to be made about&minus;</p>
+
+            <ul>
+                <li>
+                    <p>The differences between two pieces of XML (via Diff and DetailedDiff classes).</p>
+                </li>
+                <li>
+                    <p>The validity of a piece of XML (via Validator class).</p>
+                </li>
+                <li>
+                    <p>The outcome of transforming a piece of XML using XSLT (via Transform class).</p>
+                </li>
+                <li>
+                    <p>The evaluation of an XPath expression on a piece of XML (via classes implementing the XpathEngine
+                        interface).</p>
+                </li>
+                <li>
+                    <p>Individual nodes in a piece of XML that are exposed by DOM Traversal (via NodeTest class).</p>
+                </li>
+            </ul>
+
+            <hr />
+        </div>
+    </div>
+</body>
+
+</html>

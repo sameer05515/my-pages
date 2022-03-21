@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDiv {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 1000;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 200px; top: 0px;}
+  50%  {background: blue; left: 200px; top: 200px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+</style>
+</head>
+<body>
+    <div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+            Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-direction.asp"  
+        target="_blank">Click here</a>
+    <h1>CSS animation-direction Property</h1>
+    <h2>Play the animation forwards first, then backwards:</h2>
+    </div>
+
+<h1>The animation-direction Property</h1>
+
+<p>Play the animation forwards first, then backwards:</p>
+<div id="myMoveDiv"></div>
+<p><strong>Note:</strong> The animation-direction property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

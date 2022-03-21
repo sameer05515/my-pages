@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pwer Mockito</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <script src="../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h3>Most Popular Mockito Interview Questions with Detailed Answers</h3>
+
+            <p>Enlisted below are the most commonly asked questions on Mocking Frameworks.</p>
+
+            <p><strong>Q #1) Why do we need mocking?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>There are a lot of use cases of mocking that aid in unit testing of the
+                code under isolation and make the test highly repeatable and predictable.</p>
+
+            <p><strong>Mocking is generally required when :</strong></p>
+
+            <p><strong>a)</strong>&nbsp;The component under test has dependencies that are not yet implemented or the
+                implementation is in progress.</p>
+
+            <p>A good example can be a REST API endpoint which will be available later at some point in time, but you
+                have consumed it in the code via a dependency.</p>
+
+            <p>Now as the real implementation is still not available,&nbsp; you really know most of the time what is the
+                expected response of that API. Mocks allow you to test those kinds of integration.</p>
+
+            <p><strong>b)</strong>&nbsp;Component updates the state in the system.</p>
+
+            <p><strong>Example:</strong>&nbsp;DB calls &ndash; you would not want to update your DB with data that is
+                just for testing purposes. This might result in corrupting the data, moreover, the availability of DB is
+                another challenge when the test is executed.</p>
+
+            <p>Thus to avoid such behavior, DB calls could be mocked in the component under test. Hence there is no
+                direct coupling of DB and the component under test.</p>
+
+            <hr />
+            <p><strong>Q #2) Difference between doReturn and thenReturn.</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong><strong>Mockito provides two different syntaxes for creating stubs
+                    like:</strong></p>
+
+            <ul>
+                <li>doReturn and thenReturn</li>
+                <li>doNothing (no thenNothing)</li>
+                <li>doThrow and thenThrow</li>
+            </ul>
+
+            <p>Both these methods setup stubs and can be used to create/setup stubs and could be used interchangeably at
+                times.</p>
+
+            <p><strong>So how do both of these differ?</strong></p>
+
+            <p><strong>a)</strong>&nbsp;The thenReturn way of stubbing is a type-safe way of setting up stubs. What this
+                essentially means is that it does a compile-time check against the return types that you want to stub
+                too.</p>
+
+            <p><strong>Let&rsquo;s understand this with an example:</strong></p>
+
+            <p>Assume a
+                method&nbsp;<strong>getItemDetails</strong>&nbsp;on&nbsp;<strong>mockedItemService&nbsp;</strong>which
+                returns an object of type<strong>&nbsp;ItemSku.&nbsp;</strong>So
+                with&nbsp;<strong>thenReturn,&nbsp;</strong>you will not be able to return anything other than of type
+                ItemSku but with doReturn, you can set up the stub to return anything and the test will fail (or throw
+                an exception) during execution.</p>
+
+            <p><strong>// works</strong></p>
+
+            <pre>
+            <em>when</em>(mockedItemService.getItemDetails(123)).thenReturn(new ItemSku());</pre>
+
+            <p><strong>// throws compile time exception</strong></p>
+
+            <pre>
+            <em>when</em>(mockedItemService.getItemDetails(123)).thenReturn(expectedPrice);</pre>
+
+            <p>// with doReturn,&nbsp; both the stub setup works as it&rsquo;s not compile safe.</p>
+
+            <p>// here we are trying to return an object of type double which still works and does not throw any compile
+                time warning.</p>
+
+            <pre>
+            <em>doReturn</em>(expectedPrice).when(mockedItemService.getItemDetails(123));
+            <em>doReturn</em>(new ItemSku()).when(mockedItemService.getItemDetails(123));</pre>
+
+            <p><strong>b)</strong>&nbsp;Another important difference between these 2 ways to the stub is for Mocked
+                objects, apart from compile safety there is not much difference.</p>
+
+            <p>However for Spied objects, &ldquo;thenReturn&rdquo; kind of stub setup will not work, as it will result
+                in calling the real method before the stubbed response is return as the call and not on a Mock, but on
+                Spy which is wrapping a real object instance.</p>
+
+            <p>So suppose, there is a spy named&nbsp;<strong>spiedObject and it has a method testMethod which returns an
+                    integer, then to setup a stub on this you will need to use doReturn instead of thenReturn.</strong>
+            </p>
+
+            <pre>
+            <em>doReturn</em>(10).when(spiedObject.testMethod());</pre>
+
+            <hr />
+            <p><strong>Q #3) When and why should a spy be used?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Spy is a type of partial mock supported by Mockito.</p>
+
+            <p><strong>This essentially means is a type of instance where:</strong></p>
+
+            <p><strong>a)</strong>&nbsp;When no mock is setup, any interaction on spy results in calling the real
+                methods. But it still allows you to verify the interactions with the spied object like &ndash; was a
+                method actually called, how many times the method was called, what were the arguments using which the
+                method was called etc.</p>
+
+            <p><strong>b)</strong>&nbsp;It gives you the flexibility to set up partial mocks.</p>
+
+            <p><strong>For Example,</strong>&nbsp;if you have an object with 2 methods &ndash; method1 and method2 and
+                you want method1 to be called and method2 to be mocked. Spies provide this kind of setup.</p>
+
+            <p>So, the difference between a mock and a stub in simple terms is &ndash; a mock is created from a type and
+                not from an instance whereas a stub wraps an actual instance of the class object.</p>
+
+            <hr />
+            <p><strong>Q #4) Why can&rsquo;t static methods be mocked using Mockito?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Static methods are associated with the class itself and not any particular
+                instance of the class. This means that all instances/objects of the class use the same instance of the
+                static method.</p>
+
+            <p>Static methods are more like procedural code and are mostly used in legacy systems in general.</p>
+
+            <p>Mock libraries typically create mocks by dynamical instance creation at runtime, either through
+                interfaces or through inheritance and as the static method is not associated with any particular
+                instance it&rsquo;s not possible for mocking frameworks (like mockito, easy mock, etc) to mock Static
+                methods.</p>
+
+            <p>Frameworks like PowerMock which do have support for static methods perform bytecode manipulation at
+                runtime in order to mock static methods.</p>
+
+            <hr />
+            <p><strong>Q #5) What&rsquo;s the need to verify that the mock was called?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Setting up a stub on a mocked object (or a spied instance) does not
+                guarantee whether the stubbed setup was even invoked.</p>
+
+            <p>&ldquo;verification&rdquo; matchers, give a facility to validate whether the stub that was set up was
+                actually invoked or not, how many times was the call made, what arguments were the stubbed method called
+                with, etc.</p>
+
+            <p>In essence, it allows us to verify the test setup and expected outcome in a more robust manner.</p>
+
+            <hr />
+            <p><strong>Q #6) What is a good testable code?</strong></p>
+
+            <p><strong>Answer:</strong></p>
+
+            <p><strong>Few points about testable code (meaning which could be easily unit tested) include:</strong></p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li><strong>Reduced no of dependencies or tight coupling
+                        &ndash;</strong>&nbsp;<strong>Example:</strong>&nbsp;Dependencies should be injected rather than
+                    instantiated directly.</li>
+                <li><strong>Code that adheres to SRP (Single Responsibility Principle)</strong>&nbsp;&ndash; This
+                    essentially means that the class should not have multiple reasons to change. Adherence to SRP avoids
+                    classes creating dependency on itself and keeps the code cohesive and clean.</li>
+                <li><strong>Less / Minimal usage of static methods and final classes &ndash;</strong>&nbsp;These
+                    generally indicate code smells and were mostly associated with the legacy code.</li>
+            </ul>
+
+            <hr />
+            <p><strong>Q #7) What are the limitations of Mockito?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Mockito is a framework of choice for most of the java based projects. It is
+                easy to implement, read and understand.</p>
+
+            <p><strong>Some of the drawbacks or limitations in terms of functionality are:</strong></p>
+
+            <ul>
+                <li>Its inability to mock static methods.</li>
+                <li>Constructors, private methods and final classes cannot be mocked.</li>
+            </ul>
+
+            <hr />
+            <p><strong>Q #8) Which frameworks can support mocking Private and Static methods?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Frameworks like PowerMockito (extensions of Mockito framework), JMockit,
+                etc. do provide means to mock private and static methods.</p>
+
+            <hr />
+            <p><strong>Q #9) Mocking/Stubbing default methods in Interface in Java 8.</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>With Java 8&rsquo;s implementation of default methods in Interface, Mockito
+                provides out of box support to mock such default methods. (Please note that this support was introduced
+                from Mockito 2 onwards).</p>
+
+            <p>These methods can be mocked/stubbed like any other methods of a class or interface.</p>
+
+            <hr />
+            <p><strong>Q #10) How can order of stub invocations be verified in Mockito?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>When you want to verify the order in which mocks were called,
+                Mockito&rsquo;s &ldquo;<strong>InOrder</strong>&rdquo; interface can be used.</p>
+
+            <p>During the test, you simply have to setup / create an Inorder object, listing down a list of mock objects
+                on which the order of mocks needs to be ascertained (if there are multiple methods on the same mock and
+                there is no other mock that needs to be verified then it&rsquo;s sufficient to mention the mocked class
+                only once).</p>
+
+            <p><strong>Consider the test given below which defines an object of InOrder and mentions 2 occurrences of
+                    mockDatabaseImpl</strong></p>
+
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><code>@Test</code></p>
+
+                            <p><code>public</code> <code>void</code>
+                                <code>calculateSumAndStore_withValidInput_verifyMockOrder()</code>
+                            </p>
+
+                            <p><code>{</code></p>
+
+                            <p><code>// Arrange</code></p>
+
+                            <p><code>studentScores = </code><code>new</code>
+                                <code>StudentScoreUpdates(mockDatabaseImpl);</code>
+                            </p>
+
+                            <p><code>int</code><code>[] scores = {</code><code>60</code><code>,</code><code>70</code><code>,</code><code>90</code><code>};</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>Mockito.doNothing().when(mockDatabaseImpl).updateScores(anyString(), anyInt());</code>
+                            </p>
+
+                            <p><code>Mockito.doReturn(</code><code>&quot;A&quot;</code><code>).when(mockDatabaseImpl).getGrade(anyInt());</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>InOrder inorder = inOrder(mockDatabaseImpl);</code></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>// Act</code></p>
+
+                            <p><code>studentScores.calculateSumAndStore(</code><code>&quot;Student1&quot;</code><code>, scores);</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>// Assert</code></p>
+
+                            <p><code>inorder.verify(mockDatabaseImpl).updateScores(anyString(),anyInt());</code></p>
+
+                            <p><code>inorder.verify(mockDatabaseImpl).getGrade(anyInt());</code></p>
+
+                            <p><code>}</code></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><strong>Also, for reference, listing down the code of method under test will be helpful to understand the
+                    order of test execution:</strong></p>
+
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><code>public</code> <code>void</code>
+                                <code>calculateSumAndStore(String studentId, </code><code>int</code><code>[] scores)</code>
+                            </p>
+
+                            <p><code>{</code></p>
+
+                            <p><code>int</code> <code>total = </code><code>0</code><code>;</code></p>
+
+                            <p><code>for</code><code>(</code><code>int</code> <code>score : scores)</code></p>
+
+                            <p><code>{</code></p>
+
+                            <p><code>total = total + score;</code></p>
+
+                            <p><code>}</code></p>
+
+                            <p><code>// write total to DB</code></p>
+
+                            <p><code>databaseImpl.updateScores(studentId, total);</code></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>databaseImpl.getGrade(total);</code></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>}</code></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>As seen above, databaseImpl first calls updateScores and then calls getGrade.</p>
+
+            <p>So, if you are writing a unit test using Mockito, for this and you need to ensure the order of the calls
+                on databaseImpl, refer to the test code and ensure that the asserts are made as per the expected order.
+            </p>
+
+            <p>In the above example if I change the order of asserts, then it will cause the test to fail with an
+                exception of &ldquo;VerificationInOrderFailure&rdquo;.</p>
+
+            <p><strong>After changing the assert order, the code looks as shown below:</strong></p>
+
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>
+                            <p><code>@Test</code></p>
+
+                            <p><code>public</code> <code>void</code>
+                                <code>calculateSumAndStore_withValidInput_verifyMockOrder()</code>
+                            </p>
+
+                            <p><code>{</code></p>
+
+                            <p><code>// Arrange</code></p>
+
+                            <p><code>studentScores = </code><code>new</code>
+                                <code>StudentScoreUpdates(mockDatabaseImpl);</code>
+                            </p>
+
+                            <p><code>int</code><code>[] scores = {</code><code>60</code><code>,</code><code>70</code><code>,</code><code>90</code><code>};</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>Mockito.doNothing().when(mockDatabaseImpl).updateScores(anyString(), anyInt());</code>
+                            </p>
+
+                            <p><code>Mockito.doReturn(</code><code>&quot;A&quot;</code><code>).when(mockDatabaseImpl).getGrade(anyInt());</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>InOrder inorder = inOrder(mockDatabaseImpl);</code></p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>// Act</code></p>
+
+                            <p><code>studentScores.calculateSumAndStore(</code><code>&quot;Student1&quot;</code><code>, scores);</code>
+                            </p>
+
+                            <p>&nbsp;</p>
+
+                            <p><code>// Assert</code></p>
+
+                            <p><code>inorder.verify(mockDatabaseImpl).updateScores(anyString(),anyInt());</code></p>
+
+                            <p><code>inorder.verify(mockDatabaseImpl).getGrade(anyInt());</code></p>
+
+                            <p><code>}</code></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>The above test execution throws an exception with type:</p>
+
+            <p><strong>&ldquo;VerificationInOrderFailure&rdquo;
+                    org.mockito.exceptions.verification.VerificationInOrderFailure:</strong><br />
+                <strong>Verification in order failure</strong><br />
+                <strong>Wanted but not invoked:</strong><br />
+                <strong>mockDatabaseImpl.updateScores(</strong><br />
+                <strong>&nbsp;&nbsp; isA(java.lang.String),</strong><br />
+                <strong>&nbsp;&nbsp; isA(java.lang.Integer)</strong>
+            </p>
+
+            <hr />
+            <p><strong>Q #11) Returning multiple values against consecutive method calls</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>To return different values for multiple invocations of the same stubbed
+                method, Mockito provides 3 approaches as given below:</p>
+
+            <p><strong>a)</strong>&nbsp;<strong>Using comma separated:</strong>&nbsp;This works with thenReturn.</p>
+
+            <p><strong>For Example</strong>, taking the above code sample, let us try to setup consecutive stub for
+                method &ndash; getGrade which will return different values depending on the sequence of iterations:</p>
+
+            <pre>
+            <em>when</em>(mockDatabaseImpl.getGrade(<em>anyInt</em>())).thenReturn(&quot;A&quot;,&quot;B&quot;, &quot;C&quot;);</pre>
+
+            <p>This means that when getGrade methods get called in the method under test, the first invocation will
+                return &ldquo;A&rdquo;, the second invocation will return &ldquo;B&rdquo; and so on.</p>
+
+            <p><strong>b)</strong>&nbsp;<strong>Consecutive thenReturn:</strong>&nbsp;This is an approach that is
+                chained with thenReturn statements. Applying chained calls to the same example will look as shown below.
+            </p>
+
+            <pre>
+            <em>when</em>(mockDatabaseImpl.getGrade(<em>anyInt</em>())).thenReturn(&quot;A&quot;).thenReturn(&quot;B&quot;).thenReturn(&quot;C&quot;);</pre>
+
+            <p><strong>c) Consecutive doReturn:</strong>&nbsp;The last approach is using doReturn in the chained format
+                as above.</p>
+
+            <pre>
+            <em>doReturn</em>(&quot;A&quot;).doReturn(&quot;B&quot;).doReturn(&quot;C&quot;).when(mockDatabaseImpl).getGrade(<em>anyInt</em>())</pre>
+
+            <hr />
+            <p><strong>Q #12) What are the different types of mocking frameworks and how do they work?</strong></p>
+
+            <p><strong>Answer:&nbsp;</strong>Types of the Mocking framework and how do they work are explained below.
+            </p>
+
+            <p><strong>There are broadly 2 categories of mocking frameworks:</strong></p>
+
+            <ol>
+                <li><strong>Proxy-based</strong>&nbsp;&ndash;&nbsp;<strong>Example,</strong>&nbsp;Mockito, EasyMock,
+                    etc.</li>
+                <li><strong>Bytecode
+                        based</strong>&nbsp;&ndash;&nbsp;<strong>Example,</strong><strong>&nbsp;</strong>PowerMock,
+                    JMockit, etc.</li>
+            </ol>
+
+            <p><strong>Let&rsquo;s compare both these frameworks on different parameters.</strong></p>
+
+            <table id="tablepress-491">
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Proxy based</th>
+                        <th>Bytecode based</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Simplicitly</td>
+                        <td>More simple and easy to use</td>
+                        <td>Might involve complex mock setup logic</td>
+                    </tr>
+                    <tr>
+                        <td>Mode of creation</td>
+                        <td>A proxy or fake object which does not actually require instance of class / interface is
+                            created</td>
+                        <td>It essentially involves creating objects and at runtime manipulates the instances for the
+                            mocked/stubbed behavior</td>
+                    </tr>
+                    <tr>
+                        <td>Functionality</td>
+                        <td>Mocking classes and interfaces</td>
+                        <td>In addition to classes and interfaces, allows mocking static methods, final classes etc</td>
+                    </tr>
+                    <tr>
+                        <td>Java dependency</td>
+                        <td>Not very tightly coupled to java versions</td>
+                        <td>Since these frameworks involve bytecode manipulation they are tightly coupled and might not
+                            be backward/forward compatible across java versions.</td>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>Mockito, EasyMock etc.</td>
+                        <td>PowerMock, JMockit etc.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="box-prem">
+            <h2>Power mockito interview questions set 2</h2>
+            <p><strong>Question 1. What Is Mockito?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito allows creation of mock object for the purpose of Test Driven Development and Behavior Driven
+                development. Unlike creating actual object, Mockito allows creation of fake object (external
+                dependencies) which allows it to give consistent results to a given invocation.</p>
+
+            <hr />
+            <p><strong>Question 2. Why Do We Need Mockito? What Are The Advantages?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito differentiates itself from the other testing framework by removing the expectation beforehand.
+                So, by doing this, it reduces the coupling. Most of the testing framework works on the
+                &quot;expect-run-verify&quot;. Mockito allows it to make it &quot;run-verify&quot; framework. Mockito
+                also provides annotation which allows to reduce the boilerplate code.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p><strong>Question 3. Can You Explain A Mockito Framework?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>In Mockito, you always check a particular class. The dependency in that class is injected using mock
+                object. So, for example, if you have service class, then the Dao class are injected as a mockDao. This
+                enables us to check only the method of that given service class and whether they are performing as
+                expected or not.&nbsp;</p>
+
+            <p>For example, suppose, service class has an updateObject Method. That update method is depend on Dao1,
+                Dao2. Here the objective is to test only the updateObject method and not the Dao1 and Dao2. So, we can
+                create a mockDao and return a mock object. This object is not the one which is in the database but is
+                custom made. It only tests whether the updates are happening as expected or not. The syntax to create a
+                Mock object is as follows:</p>
+
+            <p>private static LedgerBook mockLedgerBook;<br />
+                In the setup(), you create the mock object<br />
+                setup(){<br />
+                mockLedgerBook = Mockito.mock(LedgeBookDao.class);<br />
+                }<br />
+                In the test method, you call this mockLedgerBook as follows:<br />
+                LedgerBook ledgerBook = new LedgerBook();<br />
+                ledgerBook.setName(&quot;default&quot;);<br />
+                Mockito.when(mockLedgerBook.findBookById(Mockito.anyLong()).thenReturn(ledgerBook);</p>
+
+            <hr />
+            <p><strong>Question 4. What Is The Version You Used For Mockito Framework?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>1.9.5 version of Mockito.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 5. How Do You Create A Mockdb Object In Mockito?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>We need to create the mock object and need to pass the invocation. We must override the method in the
+                actual DB with the method over here and pass the response object.</p>
+
+            <p>&nbsp;Mockito.when(mockObjectDao.find((Guid) Mockito.anyObject())).thenAnswer(new
+                Answer&lt;responseObject&gt;() {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @Override<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; public responseObject answer(InvocationOnMock invocation)
+                throws Throwable {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Guid responseObjectID = (Guid)
+                invocation.getArguments()[0];<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; responseObject responseDbObject = new
+                responseObject();<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseDbObject.setresponseObjectId(responseObjectID);<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; responseObjectLink responseObjectLink = new
+                responseObjectLink();<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setLedgerBookId(Guid.createGuid());<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setresponseObjectId(responseObjectID);<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setLedgerObjectId(Guid.createGuid());<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseDbObject.getresponseObjectLinks().add(responseObjectLink);<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (Contact sourceContact :
+                responseObjectDTO.getSourceContacts()) {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if
+                (!sourceContact.getObjectId().equals(responseObjectID)) {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; responseObjectLink =
+                new responseObjectLink();<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setLedgerBookId(sourceContact.getAddressBookId());<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setresponseObjectId(responseObjectID);<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseObjectLink.setLedgerObjectId(sourceContact.getObjectId());<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                responseDbObject.getresponseObjectLinks().add(responseObjectLink);<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return responseDbObject;<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; });</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 6. Which Of The Following Are Usually Automated And Which Are Executed Manually ?<br />
+                    1. Unit Test<br />
+                    2. Integration Test</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Unit Test are usually automated and Integration Tests are usually executed manually.&nbsp;</p>
+
+            <hr />
+            <p><strong>Question 7. What Are Junits ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Junt is the unit testing framework for Java.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 8. Are Junits Tested Manually?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>No , they are executed automatically.</p>
+
+            <hr />
+            <p><strong>Question 9. How To Test Whether The Returns Value Of The Method Is Expected ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Using Assert.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 10. What Happens If The Assert Doesn&#39;t Evaluate To Be True ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Junit fails.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 11. How To Create A Junit To Make Sure That The Tested Method Throws An Exception
+                    ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Using annotation Test with the argument as expected exception.</p>
+
+            <p>@Test (expected = Exception.class)</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 12. What Should I Do If I Want To Make Sure That A Particular Method Of A Class Is
+                    Getting Called?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>If its a static method of the class , we can use verify to make sure it&#39;s getting called.</p>
+
+            <p>If its an instance method , We can mock the object and then use verify with the mocked object to make
+                sure that the method is getting called.&quot;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 13. Name Few Java Mocking Frameworks?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito, PowerMock, EasyMock, JMock, JMockit</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 14. What Is The Use Of Mockito.any?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>In case we need to verify that a method is being called with any argument and not a specific argument we
+                can use Mockito.any(Class), Mockito.anyString, Mockito.anyLong etc.&nbsp;</p>
+
+            <hr />
+            <p><strong>Question 15. How Should We Ignore Or Avoid Executing Set Of Tests ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>We can remove @Test from the respective test so as to avoid its execution. Alternatively we can put
+                @Ignore annotation on the Junit file if we want to ignore all tests in a particular file.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 16. How Can We Test Methods Individually Which Are Not Visible Or Declared Private
+                    ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>We can either increase their visibility and mark them with annotation @VisibleForTesting or can use
+                reflection to individually test those methods.</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 17. Is It Really A Mocking Framework?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>There is a bit of confusion around the vocabulary. Technically speaking, Mockito is a Test Spy framework.
+                Usually developers use Mockito instead of a mocking framework. Test Spy framework allows to verify
+                behaviour (like mocks) and stub methods (like good old hand-crafted stubs).</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 18. Why Is Mockito So Simple?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>To promote simple test code that hopefully pushes the developer to write simple and clean application
+                code. I wrote this paragraph long before version 1.5. Mockito is still quite lean but the number of
+                features increased because many users found valid cases for them.&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 19. What Are The Limitations Of Mockito?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito 2.x specific limitations</p>
+
+            <p>Mockito 1.x Specific limitations</p>
+
+            <p>&nbsp;</p>
+
+            <p>Requires Java 6+</p>
+
+            <p>Cannot mock static methods</p>
+
+            <p>Cannot mock constructors</p>
+
+            <p>Cannot mock equals(), hashCode(). Firstly, you should not mock those methods. Secondly, Mockito defines
+                and depends upon a specific implementation of these methods. Redefining them might break Mockito.</p>
+
+            <p>Mocking is only possible on VMs that are supported by Objenesis. Don&#39;t worry, most VMs should work
+                just fine.</p>
+
+            <p>Spying on real methods where real implementation references outer Class via OuterClass.this is
+                impossible. Don&#39;t worry, this is extremely rare case.</p>
+
+            <p>Needs Java 5+</p>
+
+            <p>Cannot mock final classes</p>
+
+            <p>Cannot mock final methods - their real behavior is executed without any exception. Mockito cannot warn
+                you about mocking final methods so be vigilant.</p>
+
+            <p>Cannot mock static methods</p>
+
+            <p>Cannot mock constructors</p>
+
+            <p>Cannot mock equals(), hashCode(). Firstly, you should not mock those methods. Secondly, Mockito defines
+                and depends upon a specific implementation of these methods. Redefining them might break Mockito.</p>
+
+            <p>Mocking is only possible on VMs that are supported by Objenesis (Note Objenesis is in version 2.1).
+                Don&#39;t worry, most VMs should work just fine.</p>
+
+            <p>Spying on real methods where real implementation references outer Class via OuterClass.this is
+                impossible. Don&#39;t worry, this is extremely rare case.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 20. Do You Mock Classes &amp; Interfaces?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Yes, the api is the same for mocking classes or interfaces.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 21. What Values Do Mocks Return By Default?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>In order to be transparent and unobtrusive all Mockito mocks by default return &#39;nice&#39; values. For
+                example: zeros, falseys, empty collections or nulls. Refer to javadocs about stubbing to see exactly
+                what values are returned by default.</p>
+
+            <hr />
+            <p><strong>Question 22. Can I Mock Static Methods?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>No. Mockito prefers object orientation and dependency injection over static, procedural code that is hard
+                to understand &amp; change. If you deal with scary legacy code you can use JMockit or Powermock to mock
+                static methods.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 23. Can I Mock Private Methods?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>No. From the standpoint of testing... private methods don&#39;t exist.&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 24. Is Mockito Thread-safe?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>For healthy scenarios Mockito plays nicely with threads. For instance, you can run tests in parallel to
+                speed up the build. Also, you can let multiple threads call methods on a shared mock to test in
+                concurrent conditions. Check out a timeout() feature for testing concurrency.</p>
+
+            <p>However Mockito is only thread-safe in healthy tests, that is tests without multiple threads
+                stubbing/verifying a shared mock. Stubbing or verification of a shared mock from different threads is
+                NOT the proper way of testing because it will always lead to intermittent behavior. In general, mutable
+                state + assertions in multi-threaded environment lead to random results. If you do stub/verify a shared
+                mock across threads you will face occasional exceptions like: WrongTypeOfReturnValue, etc.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 25. Can I Verify Tostring()?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>No. You can stub it, though. Verification of toString() is not implemented mainly because:</p>
+
+            <p>&nbsp;</p>
+
+            <p>When debugging, IDE calls toString() on objects to print local variables and their content, etc. After
+                debugging, the verification of toString() will most likely fail.</p>
+
+            <p>toString() is used for logging or during string concatenation. Those invocations are usually irrelevant
+                but they will change the outcome of verification.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 26. Can I &quot;reset&quot; A Mock?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Recently we decided to go on with this feature for tricky scenarios where mocks are created by the
+                container. Before that, the lack of a reset method was deliberate to promote good testing habits and to
+                make the API simpler.</p>
+
+            <p>Instead of reset() please consider writing simple, small and focused test methods over lengthy,
+                over-specified tests.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 27. What Are Unfinished Verification/stubbing Errors?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p><strong>Mockito validates if you use it correctly all the time. Examples of incorrect use:</strong></p>
+
+            <p><strong>&nbsp;&nbsp;</strong>//Oups, someone forgot thenReturn() part:<br />
+                &nbsp; when(mock.get());<br />
+                &nbsp; //Oups, someone put the verified method call inside verify() where it should be outside:<br />
+                &nbsp; verify(mock.execute());<br />
+                &nbsp; //Oups, someone has used EasyMock for too long and forgot to specify the method to verify:<br />
+                &nbsp; verify(mock);</p>
+
+            <p>Mockito throws exceptions if you misuse it so that you will know if your tests are written correctly. The
+                only problem is that Mockito does the validation next time you use the framework. Therefore sometimes
+                the exception is thrown in the next test and you have to manually find the previous test that was not
+                written correctly.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 28. Why Does Mockito Keep Threadlocal State?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito uses ThreadLocal state to implement a gorgeous mocking syntax in a language full of constraints
+                (yes, it&#39;s java). Fortunately, every time you interact with Mockito framework it validates the
+                ThreadLocal state in case you misused the api.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 29. Can I Thenreturn() An Inlined Mock() ?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Unfortunately you cannot do this:</p>
+
+            <p>&nbsp; when(m.foo()).thenReturn(mock(Foo.class));<br />
+                &nbsp; // &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ^</p>
+
+            <p>The reason is that detecting unfinished stubbing wouldn&#39;t work if we allow above construct. We
+                consider this as a &#39;trade off&#39; of framework validation (see also previous FAQ entry). However
+                you can slightly change the code to make it working:</p>
+
+            <p>&nbsp; //extract local variable and start smiling:</p>
+
+            <p>&nbsp; Foo foo = mock(Foo.class);<br />
+                &nbsp; when(m.foo()).thenReturn(foo);</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 30. Can I Stub Chained Getters?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>sort of stubbing, e.g. mock to return mock, to return mock, etc. should be used very sporadically,
+                ideally never. It clearly points out violation of the Law of Demeter. You don&#39;t want to mess with
+                Demeter. Since you have been warned check out Mockito deep stubs.</p>
+
+            <hr />
+            <p><strong>Question 31. Will This Library Help Mocking Closed (non-open) Classes?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito-Kotlin does not really add any extra functionality to Mockito. As such, you will still get
+                exceptions when trying to mock closed classes. If possible, try to use interfaces instead.&nbsp;</p>
+
+            <p>Mockito provides an incubating, opt-in feature to enable mocking closed classes.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 32. Will This Library Help Overcoming Nullpointerexceptions With Mockito.any()?</strong>
+            </p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Passing Mockito.any() to a non-nullable parameter in Kotlin fails with a NullPointerException.
+                Mockito-Kotlin tries to overcome this.&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 33. I Get An Error &lsquo;resolved Versions For App (1.1.x) And Test App (1.0.x)
+                    Differ&rsquo;. What Should I Do?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito-Kotlin depends on version 1.0.x of Kotlin&rsquo;s standard and reflect library. If you depend on
+                1.1.x, you may get this error. To solve this, add the following snippet to your root&rsquo;s
+                build.gradle, replacing $kotlinVersion with the version your project uses:</p>
+
+            <p>subprojects {<br />
+                &nbsp; &nbsp; configurations.all {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; resolutionStrategy {<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; forcedModules = [<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &quot;org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion&quot;,<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &quot;org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion&quot;<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;]<br />
+                &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                &nbsp; &nbsp; }<br />
+                }</p>
+
+            <p>If you don&rsquo;t want to force dependencies like this, you can alternatively depend on the newer
+                version of kotlin-reflect explicitly, which will make Mockito-Kotlin use that version as well:</p>
+
+            <p>testCompile &#39;com.nhaarman:mockito-kotlin:x.x.x`<br />
+                testCompile &#39;org.jetbrains.kotlin:kotlin-reflect:1.1.1&#39;</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <p>&nbsp;</p>
+
+            <p><strong>Question 34. Will This Library Support Mockito 1.x?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>No. Mockito 2.x is officially released and this library will focus on these versions.</p>
+
+            <hr />
+            <p><strong>Question 35. When Will This Library Reach 1.0.0?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Mockito-Kotlin reached 1.0.0 December 6th.&nbsp;</p>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+<div class="treeStyle">
+    <span ng-click="toggleVisibility(node)"> {{ ( node.childrenVisibility && node.children.length>0 ) ? '+' : '-' }}</span>
+    <input ng-click="checkNode(node)" type="checkbox" ng-checked="node.checked">
+    <button ng-click="addChild(node)">Add Child</button>
+    <button ng-click="addSibling(node)">Add Sibling</button>
+    <span>{{node.title}}</span>
+</div>

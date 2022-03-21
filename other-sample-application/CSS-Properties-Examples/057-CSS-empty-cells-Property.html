@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table.ex1 {
+  empty-cells: hide;
+}
+
+table.ex2 {
+  empty-cells: show;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_tab_empty-cells.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS empty-cells Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Display no borders on empty cells in a table:</h2>
+</div>
+
+
+<h1>The empty-cells Property</h1>
+
+<h2>empty-cells: hide:</h2>
+<table class="ex1" border="1">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>empty-cells: show (default):</h2>
+<table class="ex2" border="1">
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td></td>
+  </tr>
+</table>
+
+</body>
+</html>

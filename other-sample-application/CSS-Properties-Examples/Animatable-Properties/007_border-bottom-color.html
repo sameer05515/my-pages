@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 300px;
+  height: 200px;
+  border: 15px solid black;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {border-bottom-color: lightblue;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of border-bottom-color</h1>
+
+<p>Gradually change the border-bottom-color property from black to blue:<p>
+<div id="myDIV"></div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

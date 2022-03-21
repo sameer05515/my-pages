@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  border: 1px solid black;
+  width: 300px;
+  color: red;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color: blue;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of color</h1>
+
+<p>Gradually change the color of the text from red to blue, then back:<p>
+
+<div id="myDIV">
+  <h1>This is a header</h1>
+  <p>This is a paragraph</p>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

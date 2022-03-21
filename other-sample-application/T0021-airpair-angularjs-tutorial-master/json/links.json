@@ -1,0 +1,21 @@
+[
+    {"link":"http://www.bogotobogo.com/AngularJS/AngularJS_HttpRequest_json.php", "shortDescription":"how to get json as an http response", "longDescription":"how to get json as an http response"},
+	
+    {"link":"http://stackoverflow.com/questions/8704817/how-to-style-a-div-to-have-a-background-color-for-the-entire-width-of-the-conten", "shortDescription":"how to set color in div", "longDescription":"girl"},
+	
+    {"link":"https://dzone.com/articles/convert-xml-to-json-in-angular-js", "shortDescription":"angularjs example to convert xml to json", "longDescription":"angularjs example to convert xml to json"},
+	
+    {"link":"Joy", "shortDescription":15, "longDescription":"girl"},
+	
+    {"link":"Mary", "shortDescription":28, "longDescription":"girl"},
+	
+    {"link":"Peter", "shortDescription":95, "longDescription":"boy"},
+	
+    {"link":"Sebastian", "shortDescription":50, "longDescription":"boy"},
+	
+    {"link":"Erika", "shortDescription":27, "longDescription":"girl"},
+	
+    {"link":"Patrick", "shortDescription":40, "longDescription":"boy"},
+	
+    {"link":"Samantha", "shortDescription":60, "longDescription":"girl"}
+  ]

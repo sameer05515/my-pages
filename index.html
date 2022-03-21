@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta chrset="UTF 8" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="lib/css/trix.css" />
+    <link rel="stylesheet" href="lib/css/star-rating.css" />
+
+    <link rel="stylesheet" href="lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="lib/css/font-awesome-4.6.3/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-sanitize.min.js'></script> -->
+
+    <script src="lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
+    <script src="lib/css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <script src="lib/js/x2js-master/xml2json.min.js"></script>
+    <script src="lib/js/angular-1.5.5/angular.min.js"></script>
+    <script src="lib/js/angular-1.5.5/angular-sanitize.min.js"></script>
+    <script src="lib/js/angular-1.5.5/angular-animate.min.js"></script>
+    <script src="lib/js/angular-1.5.5/angular-route.min.js"></script>
+    <script src="lib/js/angular-1.5.5/angular-touch.js"></script>
+
+    <script src="lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+
+    <script src="lib/js/axis-master/dist/axis.min.js"></script>
+
+    <script src="lib/js/trix.js"></script>
+    <script src="lib/js/angular-trix.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/directives/star-rating.js"></script>
+
+    <script src="js/controllers/DemoController.js"></script>
+
+    <script src="other-sample-application/Create-Custom-Elements/02-make-bold-prem-custom-element.js"></script>
+
+    <div ng-app="DemoApp" ng-controller="DemoController" class="container jumbotron">
+        <!-- <div ng-repeat="x in linkData" ng-show="{{settings.showLinkData}}" class="col-lg-12">
+            <span><a href="{{x.url}}" ng-style="stylesData.anchorLinkDataStyle">{{x.header}}</a></span>
+            <span ng-style="stylesData.descriptionStyle">{{x.description}}</span>
+         </div>
+         <hr/>
+         <hr/> -->
+
+
+        <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
+            <h3>Example : Custom elements created using DOM Manipulation : - </h3>
+            <a class="btn btn-sm btn-primary" id="$index" ng-click="addFruit('ddd@gmail.com');">Add</a>
+            <div class="row" ng-repeat="email in emailData">
+                <make-bold-prem class="col-lg-12" email="{{email}}" ng-click="addFruit(email)">
+                </make-bold-prem>
+            </div>
+            <pre ng-style='{
+        "border": "5px ridge blue",
+        "width": "800" + "px",
+        "height": "60" + "px",
+        "margin": "5px 5px 5px 5px",
+        "overflow":"auto"
+      }'>{{emailData|json}}</pre>
+            <!-- <make-bold-prem email="admin@coding-dude.com"></make-bold-prem><br>
+    <make-bold-prem email="sameer.geeee@gmail.com"></make-bold-prem><br>
+    <make-bold-prem email="premendra.bce05515@gmail.com"></make-bold-prem><br>
+    <make-bold-prem email="premendra.bce05515@outlook.com"></make-bold-prem><br> -->
+        </div>
+
+
+
+
+        <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
+            Using Template :- <br /><br />
+            <input type="text" ng-model="linkSearch">
+            <div ng-repeat="data in linkData | filter:linkSearch" ng-show="{{settings.showLinkData}}" ng-include="'template/linkData_item_renderer.html'">
+
+            </div>
+        </div>
+        <hr />
+        <hr />
+        <!-- <div class="col-lg-12">
+            <span ng-repeat="x in dbBakupLinkData" ng-show="{{settings.showDbBakupLinkData}}">
+               <span ng-style="stylesData.anchorDBLinkDataStyle"><a href="{{x.url}}" >{{x.description}}</a> &nbsp &nbsp &nbsp &nbsp | </span>               
+            </span>
+         </div>
+         <hr/>
+         <hr/> -->
+
+        <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
+            <span ng-repeat="x in dbBakupLinkData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/dbBakupLinkData_item_renderer.html'">
+      </span>
+        </div>
+        <hr />
+        <hr />
+
+        <div class="col-lg-12" ng-style="stylesData.preDescriptionStyle">
+            <ul>
+                <li ng-repeat="data in importResponse.data.importPlan" ng-include="'template/plan_item_renderer.html'"></li>
+            </ul>
+        </div>
+
+
+        <!-- importResponse : {{importResponse.data.importPlan|json}} -->
+
+        <pre ng-style="stylesData.preDescriptionStyle">
+			git status
+			git commit -a -m " commiting for change" -m "adding updated xxx files" -m "checking multi line  commit message"
+			git push
+			git log -1
+
+			git pull
+
+			git add
+
+			git remote add https://github.com/xxxxx/my-pages.git
+
+			git push --set-upstream mypages master
+
+			git clone https://github.com/xxxxx/my-pages.git
+			
+			git clone https://github.com/xxxxx/tutorials.git eugenp-tutorials
+			
+			<b>To modify the last commit</b>
+			git add file-i-forgot-to-add.html
+			git commit --amend -m "Add the remaining file"
+			
+			<b>see our current branches</b>
+			git branch
+			
+			<b>create a new branch</b>
+			git branch  &lt;feature-branch-name&gt; 
+			
+			<b>For switching branches in Git, you won't use a "switch" command, as you might think. Instead, you'll need to use "checkout":</b>
+			git checkout  &lt;feature-branch-name&gt; 
+			
+			<b>To merge a secondary branch into the main branch (which can be a master, development, or feature branch),
+			first switch back to the main branch. In our case, we should checkout the master branch</b>
+			git checkout &lt;main-branch-name&gt;
+			git merge &lt;feature-branch-name&gt;
+			
+			-----------------------
+			
+			<b>determine the URL that a local Git repository was originally cloned from?</b>			
+			
+			<b>If you want only the remote URL, or if your are not connected to a network that can reach the remote repo:</b>
+			
+			git config --get remote.origin.url	
+			
+			
+			<b>If you require full output and you are on a network that can reach the remote repo where the origin resides :</b>
+			
+			git remote show origin	
+			
+			
+			<b>Config global email and username</b>
+			git config --global user.email xx.12345@gmail.com
+			git config --global user.name XXXX.YYYY
+			
+			-------------------
+			<u><b>To check the differences between local and github before the pull</b></u>
+			<b>git pull is really equivalent to running git fetch and then git merge. 
+			The git fetch updates your so-called "remote-tracking branches" - typically these are ones 
+			that look like origin/master, github/experiment, etc. that you see with git branch -r. 
+			These are like a cache of the state of branches in the remote repository 
+			that are updated when you do git fetch (or a successful git push).
+			
+			So, suppose you've got a remote called origin that refers to your GitHub repository, you would do:</b>
+			git fetch origin
+			<b>... and then do:</b>
+			git diff master origin/master
+			<b>If you're happy with those differences, you can merge them in with</b>
+			git merge origin/master   <b>, assuming master is your current branch.</b>
+			
+			-------------------
+			
+			<b>To get all commit history , just the first line</b>
+			git log --all --oneline
+			
+			<b>To get all commit history , all detailed commit message, date, commiter</b>
+			git log --all
+			
+			<b>Get a list of all git commits, including the 'lost' ones</b>
+			
+			Try:
+
+			git log --reflog
+			
+			which lists all git commits by pretending that all objects mentioned by reflogs (git reflog) are listed on the command line as &lt;commit&gt;.
+			
+			
+			
+			
+		</pre>
+
+        <pre ng-style="stylesData.preDescriptionStyle">
+			<b>To open a file in notepad++</b>
+			set PATH=%PATH%;D:\Notepad++
+
+
+			start notepad++
+
+
+			start notepad++ file-name		
+		</pre>
+
+        <pre ng-style="stylesData.preDescriptionStyle">
+            <b> To open XAMPP in ubuntu</b>
+            sudo /opt/lampp/lampp start
+            
+            <b> To stop XAMPP in ubuntu</b>
+            sudo /opt/lampp/lampp stop
+            
+            <b>To start tomcat in ubuntu</b>
+            sh /home/premendra/Downloads/apache-tomcat-8.5.40/bin/startup.sh
+            
+            <b>Check tomcat catalina.out logs</b>
+            tail -f -n -500 /home/premendra/Downloads/apache-tomcat-8.5.40/logs/catalina.out            
+            
+		</pre>
+
+        <pre ng-style="stylesData.preDescriptionStyle">
+            <b>To change execute permission for a file</b>
+            chmod 755 xampp-linux-x64-7.3.4-0-installer.run
+            
+            <b>To change execute permission for all files of a direcory</b>
+            sudo chmod -R 0775 /home/premendra/Desktop/DUMP/bin
+		
+		</pre>
+
+
+
+
+        <hello-world name="'John'"> </hello-world>
+    </div>
+
+    <pre ng-style="stylesData.preDescriptionStyle">
+      To open folder from linux shell
+    <b>nautilus .</b>
+    </pre>
+    <script></script>
+</body>
+
+</html>
