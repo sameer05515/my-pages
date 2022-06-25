@@ -1,4 +1,5 @@
-[{
+[
+    {
         "url": "/bce-gui/#/",
         "description": "BCE Web Application suite",
         "header": "BCE Web Application suite"
@@ -480,7 +481,25 @@
         "url": "/my-pages/other-sample-application/Resume/index.html",
         "description": "Resume/index.html",
         "header": "Resume/index.html"
+    },
+    {
+        "url": "/my-pages/other-sample-application/interview-questions/index.jsp",
+        "description": "interview-questions/index.jsp",
+        "header": "interview-questions/index.jsp"
+    },
+    {
+        "url": "/my-pages/other-sample-application/github-projects/index.html",
+        "description": "github-projects/index.html",
+        "header": "github-projects/index.html"
+    },
+    {
+        "url": "/my-pages/other-sample-application/MyResume/index.html",
+        "description": "MyResume/index.html",
+        "header": "MyResume/index.html"
+    },
+    {
+        "url":"/mypages/other-sample-application/interview-coding-questions/index.html",
+        "description": "interview-coding-questions/index.html",
+        "header": "interview-coding-questions/index.html"
     }
-
-
 ]
