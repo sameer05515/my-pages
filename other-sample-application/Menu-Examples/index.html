@@ -1,273 +1,500 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-                * {
-                        box-sizing: border-box;
-                }
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+      }
 
-                /* Create two equal columns that floats next to each other */
-                .column {
-                        float: left;
-                        width: 50%;
-                        padding: 10px;
-                        height: 300px;
-                        /* Should be removed. Only for demonstration */
-                }
+      .column-25 {
+        float: left;
+        width: 25%;
+        /* padding: 10px; */
+        height: 570px;
+        /* Should be removed. Only for demonstration */
+      }
 
-                .column-25 {
-                        float: left;
-                        width: 25%;
-                        /* padding: 10px; */
-                        height: 570px;
-                        /* Should be removed. Only for demonstration */
-                }
+      .column-75 {
+        float: left;
+        width: 75%;
+        /* padding: 10px; */
+        height: 570px;
+        /* Should be removed. Only for demonstration */
+      }
 
-                .column-75 {
-                        float: left;
-                        width: 75%;
-                        /* padding: 10px; */
-                        height: 570px;
-                        /* Should be removed. Only for demonstration */
-                }
+      .column-sm-20 {
+        float: left;
+        width: 25%;
+        /* padding: 10px; */
+        height: 30px;
+        /* Should be removed. Only for demonstration */
+      }
 
-                .column-sm-20 {
-                        float: left;
-                        width: 25%;
-                        /* padding: 10px; */
-                        height: 30px;
-                        /* Should be removed. Only for demonstration */
-                }
+      .column-sm-80 {
+        float: left;
+        width: 75%;
+        /* padding: 10px; */
+        height: 30px;
+        /* Should be removed. Only for demonstration */
+      }
 
-                .column-sm-80 {
-                        float: left;
-                        width: 75%;
-                        /* padding: 10px; */
-                        height: 30px;
-                        /* Should be removed. Only for demonstration */
-                }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-                /* Clear floats after the columns */
-                .row:after {
-                        content: "";
-                        display: table;
-                        clear: both;
-                }
+      .activeLink {
+        background-color: rgb(133, 218, 126);
+        font-weight: bold;
+        font-size: 150%;
+      }
 
-                .activeLink {
-                        background-color: rgb(133, 218, 126);
-                        font-weight: bold;
-                        font-size: 150%;
-                }
+      #clickedItemDisplayId {
+        cursor: pointer;
+        color: black; /* initial color */
+      }
+      #clickedItemDisplayId:hover {
+        color: blue; /* color on hover */
+      }
 
-                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-                @media screen and (max-width: 600px) {
-                        .column {
-                                width: 100%;
-                        }
-                }
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
 
-                ul {
-                        list-style-type: none;
-                }
-        </style>
-</head>
+      ul {
+        list-style-type: none;
+      }
+    </style>
+  </head>
 
-<body onkeydown="bodyKeyDownEventListener(event)">
+  <body onkeydown="bodyKeyDownEventListener(event)">
+    <div class="row">
+      <div class="column-sm-80">
+        <input type="button" value="prev" onclick="iterateAnchor(-1)" />
+        <input type="button" value="next" onclick="iterateAnchor(1)" />
+        <span id="clickedItemDisplayId" onclick="openInNewTab()">none</span>
+      </div>
+      <div class="column-sm-20"></div>
+    </div>
+    <div class="row">
+      <div
+        class="column-25"
+        style="
+          border: thick solid #cc22ff;
+          overflow: scroll;
+          -webkit-overflow-scrolling: touch;
+        "
+      >
+        <ul>
+          <li>
+            <a onclick="load(this,0,'001_Icon-Bar.html')">001_Icon-Bar.html</a>
+          </li>
+          <li>
+            <a onclick="load(this,1,'002_Menu-Icon.html')"
+              >002_Menu-Icon.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,2,'003_Accordion.html')"
+              >003_Accordion.html</a
+            >
+          </li>
+          <li><a onclick="load(this,3,'004_Tabs.html')">004_Tabs.html</a></li>
+          <li>
+            <a onclick="load(this,4,'005_Vertical-Tabs.html')"
+              >005_Vertical-Tabs.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,5,'006_Tab-Headers.html')"
+              >006_Tab-Headers.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,6,'007_Full-Page-Tabs.html')"
+              >007_Full-Page-Tabs.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,7,'008_Hover-Tabs.html')"
+              >008_Hover-Tabs.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,8,'009_Top-Navigation.html')"
+              >009_Top-Navigation.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,9,'010_Responsive-Topnav.html')"
+              >010_Responsive-Topnav.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,10,'011_Navbar-with-Icons.html')"
+              >011_Navbar-with-Icons.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,11,'012_Search-Menu.html')"
+              >012_Search-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,12,'013_Search-Bar.html')"
+              >013_Search-Bar.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,13,'014_Fixed-Sidebar-Full-Height.html')"
+              >014_Fixed-Sidebar-Full-Height.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,14,'015_Fixed-Sidebar-Auto-Height.html')"
+              >015_Fixed-Sidebar-Auto-Height.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,15,'016_Responsive-Sidebar-Always-show-sidenav.html')"
+              >016_Responsive-Sidebar-Always-show-sidenav.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,16,'016_Responsive-Sidebar-Sidenav-Full-width.html')"
+              >016_Responsive-Sidebar-Sidenav-Full-width.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,17,'016_Responsive-Sidebar-Sidenav-Overlay-Example.html')"
+              >016_Responsive-Sidebar-Sidenav-Overlay-Example.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,18,'016_Responsive-Sidebar-Sidenav-Push-Content-with-opacity.html')"
+              >016_Responsive-Sidebar-Sidenav-Push-Content-with-opacity.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,19,'016_Responsive-Sidebar-Sidenav-Push-Content.html')"
+              >016_Responsive-Sidebar-Sidenav-Push-Content.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,20,'016_Responsive-Sidebar-Sidenav-Right-sided-navigation.html')"
+              >016_Responsive-Sidebar-Sidenav-Right-sided-navigation.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,21,'016_Responsive-Sidebar-Sidenav-without-Animation.html')"
+              >016_Responsive-Sidebar-Sidenav-without-Animation.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,22,'017_Fullscreen-Navigation-from-the-side.html')"
+              >017_Fullscreen-Navigation-from-the-side.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,23,'017_Fullscreen-Navigation-from-the-top.html')"
+              >017_Fullscreen-Navigation-from-the-top.html</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="load(this,24,'017_Fullscreen-Navigation-without-animation.html')"
+              >017_Fullscreen-Navigation-without-animation.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,25,'018_Off-Canvas-Menu-with-opacity.html')"
+              >018_Off-Canvas-Menu-with-opacity.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,26,'018_Off-Canvas-Menu.html')"
+              >018_Off-Canvas-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,27,'019_Hover-Sidenav-Buttons.html')"
+              >019_Hover-Sidenav-Buttons.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,28,'020_Sidebar-with-Icons.html')"
+              >020_Sidebar-with-Icons.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,29,'021_Horizontal-Scroll-Menu.html')"
+              >021_Horizontal-Scroll-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,30,'022_Vertical-Menu.html')"
+              >022_Vertical-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,31,'023_Bottom-Navigation.html')"
+              >023_Bottom-Navigation.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,32,'024_Responsive-Bottom-Nav.html')"
+              >024_Responsive-Bottom-Nav.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,33,'025_Bottom-Border-Nav-Links.html')"
+              >025_Bottom-Border-Nav-Links.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,34,'026_Right-Aligned-Menu-Links.html')"
+              >026_Right-Aligned-Menu-Links.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,35,'027_Centered-Menu-Link.html')"
+              >027_Centered-Menu-Link.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,36,'028_Equal-Width-Menu-Links.html')"
+              >028_Equal-Width-Menu-Links.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,37,'029_Fixed-Menu.html')"
+              >029_Fixed-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,38,'030_Slide-Down-Bar-on-Scroll.html')"
+              >030_Slide-Down-Bar-on-Scroll.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,39,'031_Hide-Navbar-on-Scroll.html')"
+              >031_Hide-Navbar-on-Scroll.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,40,'032_Shrink-Navbar-on-Scroll.html')"
+              >032_Shrink-Navbar-on-Scroll.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,41,'033_Sticky-Navbar.html')"
+              >033_Sticky-Navbar.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,42,'034_Navbar-on-Image.html')"
+              >034_Navbar-on-Image.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,43,'035_Hover-Dropdowns.html')"
+              >035_Hover-Dropdowns.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,44,'036_Click-Dropdowns.html')"
+              >036_Click-Dropdowns.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,45,'037_Dropdown-in-Topnav.html')"
+              >037_Dropdown-in-Topnav.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,46,'038_Dropdown-in-Sidenav.html')"
+              >038_Dropdown-in-Sidenav.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,47,'039_Resp-Navbar-Dropdown.html')"
+              >039_Resp-Navbar-Dropdown.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,48,'040_Subnavigation-Menu.html')"
+              >040_Subnavigation-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,49,'041_Dropup.html')">041_Dropup.html</a>
+          </li>
+          <li>
+            <a onclick="load(this,50,'042_Mega-Menu.html')"
+              >042_Mega-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,51,'043_Mobile-Menu.html')"
+              >043_Mobile-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,52,'044_Curtain-Menu.html')"
+              >044_Curtain-Menu.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,53,'045_Collapsed-Sidebar.html')"
+              >045_Collapsed-Sidebar.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,54,'046_Collapsed-Sidepanel.html')"
+              >046_Collapsed-Sidepanel.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,55,'047_Pagination.html')"
+              >047_Pagination.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,56,'048_Breadcrumbs.html')"
+              >048_Breadcrumbs.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,57,'049_Button-Group.html')"
+              >049_Button-Group.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,58,'050_Vertical-Button-Group.html')"
+              >050_Vertical-Button-Group.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,59,'051_Sticky-Social-Bar.html')"
+              >051_Sticky-Social-Bar.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,60,'052_Pill-Navigation.html')"
+              >052_Pill-Navigation.html</a
+            >
+          </li>
+          <li>
+            <a onclick="load(this,61,'053_Responsive-Header.html')"
+              >053_Responsive-Header.html</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div
+        class="column-75"
+        style="
+          border: thick solid #cc22ff;
+          overflow: scroll;
+          -webkit-overflow-scrolling: touch;
+        "
+      >
+        <iframe id="myiframe" width="100%" height="100%" src=""> </iframe>
+      </div>
+    </div>
 
-        <div class="row">
-                <div class="column-sm-80">                        
-                        <input type="button" value="prev" onclick="iterateAnchor(-1)">
-                        <input type="button" value="next" onclick="iterateAnchor(1)">
-                        <span id="clickedItemDisplayId">none</span>
-                </div>
-                <div class="column-sm-20"></div>
-        </div>
-        <div class="row">
+    <script>
+      var currIndex = 0;
+      // Store the URL in a variable
+      let myurl = "";
 
-                <div class="column-25" style="border: thick solid #CC22FF;                                
-                                overflow:scroll;
-                                -webkit-overflow-scrolling: touch;">
+      function load(elem, idx, srcc) {
+        console.log("src " + srcc);
+        var ifrm = document.getElementById("myiframe");
+        var clickedItemDisplay = document.getElementById(
+          "clickedItemDisplayId"
+        );
+        var liList = document.getElementsByTagName("a");
+        for (var i = 0; i < liList.length; i++) {
+          liList[i].classList.remove("activeLink");
+        }
+        currIndex = idx;
+        elem.classList.add("activeLink");
+        clickedItemDisplay.textContent = "";
+        clickedItemDisplay.textContent = srcc;
+        myurl = srcc;
+        ifrm.src = srcc;
+      }
 
+      function openInNewTab() {
+        window.open(myurl, "_blank");
+      }
 
-                        <ul>
-                                <li><a onclick="load(this,0,'001_Icon-Bar.html')">001_Icon-Bar.html</a></li>
-                                <li><a onclick="load(this,1,'002_Menu-Icon.html')">002_Menu-Icon.html</a></li>
-                                <li><a onclick="load(this,2,'003_Accordion.html')">003_Accordion.html</a></li>
-                                <li><a onclick="load(this,3,'004_Tabs.html')">004_Tabs.html</a></li>
-                                <li><a onclick="load(this,4,'005_Vertical-Tabs.html')">005_Vertical-Tabs.html</a></li>
-                                <li><a onclick="load(this,5,'006_Tab-Headers.html')">006_Tab-Headers.html</a></li>
-                                <li><a onclick="load(this,6,'007_Full-Page-Tabs.html')">007_Full-Page-Tabs.html</a></li>
-                                <li><a onclick="load(this,7,'008_Hover-Tabs.html')">008_Hover-Tabs.html</a></li>
-                                <li><a onclick="load(this,8,'009_Top-Navigation.html')">009_Top-Navigation.html</a></li>
-                                <li><a onclick="load(this,9,'010_Responsive-Topnav.html')">010_Responsive-Topnav.html</a>
-                                </li>
-                                <li><a onclick="load(this,10,'011_Navbar-with-Icons.html')">011_Navbar-with-Icons.html</a>
-                                </li>
-                                <li><a onclick="load(this,11,'012_Search-Menu.html')">012_Search-Menu.html</a></li>
-                                <li><a onclick="load(this,12,'013_Search-Bar.html')">013_Search-Bar.html</a></li>
-                                <li><a onclick="load(this,13,'014_Fixed-Sidebar-Full-Height.html')">014_Fixed-Sidebar-Full-Height.html</a>
-                                </li>
-                                <li><a onclick="load(this,14,'015_Fixed-Sidebar-Auto-Height.html')">015_Fixed-Sidebar-Auto-Height.html</a>
-                                </li>
-                                <li><a onclick="load(this,15,'016_Responsive-Sidebar-Always-show-sidenav.html')">016_Responsive-Sidebar-Always-show-sidenav.html</a>
-                                </li>
-                                <li><a onclick="load(this,16,'016_Responsive-Sidebar-Sidenav-Full-width.html')">016_Responsive-Sidebar-Sidenav-Full-width.html</a>
-                                </li>
-                                <li><a onclick="load(this,17,'016_Responsive-Sidebar-Sidenav-Overlay-Example.html')">016_Responsive-Sidebar-Sidenav-Overlay-Example.html</a>
-                                </li>
-                                <li><a onclick="load(this,18,'016_Responsive-Sidebar-Sidenav-Push-Content-with-opacity.html')">016_Responsive-Sidebar-Sidenav-Push-Content-with-opacity.html</a>
-                                </li>
-                                <li><a onclick="load(this,19,'016_Responsive-Sidebar-Sidenav-Push-Content.html')">016_Responsive-Sidebar-Sidenav-Push-Content.html</a>
-                                </li>
-                                <li><a onclick="load(this,20,'016_Responsive-Sidebar-Sidenav-Right-sided-navigation.html')">016_Responsive-Sidebar-Sidenav-Right-sided-navigation.html</a>
-                                </li>
-                                <li><a onclick="load(this,21,'016_Responsive-Sidebar-Sidenav-without-Animation.html')">016_Responsive-Sidebar-Sidenav-without-Animation.html</a>
-                                </li>
-                                <li><a onclick="load(this,22,'017_Fullscreen-Navigation-from-the-side.html')">017_Fullscreen-Navigation-from-the-side.html</a>
-                                </li>
-                                <li><a onclick="load(this,23,'017_Fullscreen-Navigation-from-the-top.html')">017_Fullscreen-Navigation-from-the-top.html</a>
-                                </li>
-                                <li><a onclick="load(this,24,'017_Fullscreen-Navigation-without-animation.html')">017_Fullscreen-Navigation-without-animation.html</a>
-                                </li>
-                                <li><a onclick="load(this,25,'018_Off-Canvas-Menu-with-opacity.html')">018_Off-Canvas-Menu-with-opacity.html</a>
-                                </li>
-                                <li><a onclick="load(this,26,'018_Off-Canvas-Menu.html')">018_Off-Canvas-Menu.html</a>
-                                </li>
-                                <li><a onclick="load(this,27,'019_Hover-Sidenav-Buttons.html')">019_Hover-Sidenav-Buttons.html</a>
-                                </li>
-                                <li><a onclick="load(this,28,'020_Sidebar-with-Icons.html')">020_Sidebar-with-Icons.html</a>
-                                </li>
-                                <li><a onclick="load(this,29,'021_Horizontal-Scroll-Menu.html')">021_Horizontal-Scroll-Menu.html</a>
-                                </li>
-                                <li><a onclick="load(this,30,'022_Vertical-Menu.html')">022_Vertical-Menu.html</a></li>
-                                <li><a onclick="load(this,31,'023_Bottom-Navigation.html')">023_Bottom-Navigation.html</a>
-                                </li>
-                                <li><a onclick="load(this,32,'024_Responsive-Bottom-Nav.html')">024_Responsive-Bottom-Nav.html</a>
-                                </li>
-                                <li><a onclick="load(this,33,'025_Bottom-Border-Nav-Links.html')">025_Bottom-Border-Nav-Links.html</a>
-                                </li>
-                                <li><a onclick="load(this,34,'026_Right-Aligned-Menu-Links.html')">026_Right-Aligned-Menu-Links.html</a>
-                                </li>
-                                <li><a onclick="load(this,35,'027_Centered-Menu-Link.html')">027_Centered-Menu-Link.html</a>
-                                </li>
-                                <li><a onclick="load(this,36,'028_Equal-Width-Menu-Links.html')">028_Equal-Width-Menu-Links.html</a>
-                                </li>
-                                <li><a onclick="load(this,37,'029_Fixed-Menu.html')">029_Fixed-Menu.html</a></li>
-                                <li><a onclick="load(this,38,'030_Slide-Down-Bar-on-Scroll.html')">030_Slide-Down-Bar-on-Scroll.html</a>
-                                </li>
-                                <li><a onclick="load(this,39,'031_Hide-Navbar-on-Scroll.html')">031_Hide-Navbar-on-Scroll.html</a>
-                                </li>
-                                <li><a onclick="load(this,40,'032_Shrink-Navbar-on-Scroll.html')">032_Shrink-Navbar-on-Scroll.html</a>
-                                </li>
-                                <li><a onclick="load(this,41,'033_Sticky-Navbar.html')">033_Sticky-Navbar.html</a></li>
-                                <li><a onclick="load(this,42,'034_Navbar-on-Image.html')">034_Navbar-on-Image.html</a>
-                                </li>
-                                <li><a onclick="load(this,43,'035_Hover-Dropdowns.html')">035_Hover-Dropdowns.html</a>
-                                </li>
-                                <li><a onclick="load(this,44,'036_Click-Dropdowns.html')">036_Click-Dropdowns.html</a>
-                                </li>
-                                <li><a onclick="load(this,45,'037_Dropdown-in-Topnav.html')">037_Dropdown-in-Topnav.html</a>
-                                </li>
-                                <li><a onclick="load(this,46,'038_Dropdown-in-Sidenav.html')">038_Dropdown-in-Sidenav.html</a>
-                                </li>
-                                <li><a onclick="load(this,47,'039_Resp-Navbar-Dropdown.html')">039_Resp-Navbar-Dropdown.html</a>
-                                </li>
-                                <li><a onclick="load(this,48,'040_Subnavigation-Menu.html')">040_Subnavigation-Menu.html</a>
-                                </li>
-                                <li><a onclick="load(this,49,'041_Dropup.html')">041_Dropup.html</a></li>
-                                <li><a onclick="load(this,50,'042_Mega-Menu.html')">042_Mega-Menu.html</a></li>
-                                <li><a onclick="load(this,51,'043_Mobile-Menu.html')">043_Mobile-Menu.html</a></li>
-                                <li><a onclick="load(this,52,'044_Curtain-Menu.html')">044_Curtain-Menu.html</a></li>
-                                <li><a onclick="load(this,53,'045_Collapsed-Sidebar.html')">045_Collapsed-Sidebar.html</a>
-                                </li>
-                                <li><a onclick="load(this,54,'046_Collapsed-Sidepanel.html')">046_Collapsed-Sidepanel.html</a>
-                                </li>
-                                <li><a onclick="load(this,55,'047_Pagination.html')">047_Pagination.html</a></li>
-                                <li><a onclick="load(this,56,'048_Breadcrumbs.html')">048_Breadcrumbs.html</a></li>
-                                <li><a onclick="load(this,57,'049_Button-Group.html')">049_Button-Group.html</a></li>
-                                <li><a onclick="load(this,58,'050_Vertical-Button-Group.html')">050_Vertical-Button-Group.html</a>
-                                </li>
-                                <li><a onclick="load(this,59,'051_Sticky-Social-Bar.html')">051_Sticky-Social-Bar.html</a>
-                                </li>
-                                <li><a onclick="load(this,60,'052_Pill-Navigation.html')">052_Pill-Navigation.html</a>
-                                </li>
-                                <li><a onclick="load(this,61,'053_Responsive-Header.html')">053_Responsive-Header.html</a>
-                                </li>
-                        </ul>
+      function iterateAnchor(increment) {
+        var liList = document.getElementsByTagName("a");
+        currIndex = (currIndex + increment + liList.length) % liList.length;
+        console.log(
+          "increment : " + increment + "  |  currIndex : " + currIndex
+        );
 
+        // liList[currIndex].scrollTo({
+        //         top: 100,
+        //         left: 100,
+        //         behavior: 'smooth'
+        // });
+        liList[currIndex].click();
+        liList[currIndex].scrollIntoView();
+      }
 
-                </div>
-                <div class="column-75" style="border: thick solid #CC22FF;
-                overflow:scroll;
-                -webkit-overflow-scrolling: touch;">
-                        <iframe id="myiframe" width="100%" height="100%" src="">
-                        </iframe>
-                </div>
-        </div>
+      function bodyKeyDownEventListener(event) {
+        var x = event.key;
+        console.log(" key : " + x);
+        switch (x) {
+          case "p":
+          case "P":
+          case "ArrowUp":
+            iterateAnchor(-1);
+            break;
+          case "n":
+          case "N":
+          case "ArrowDown":
+            iterateAnchor(1);
+            break;
+          default:
+            //console.log(' key : '+x);
+            break;
+        }
+      }
 
-        <script>
-                var currIndex = 0;
+      var myInitFunc = function onInit() {
+        iterateAnchor(0);
+      };
 
-                function load(elem, idx, srcc) {
-                        console.log('src ' + srcc);
-                        var ifrm = document.getElementById('myiframe');
-                        var clickedItemDisplay = document.getElementById('clickedItemDisplayId');
-                        var liList = document.getElementsByTagName('a');
-                        for (var i = 0; i < liList.length; i++) {
-                                liList[i].classList.remove('activeLink');
-                        }
-                        currIndex = idx;
-                        elem.classList.add('activeLink');
-                        clickedItemDisplay.textContent = '';
-                        clickedItemDisplay.textContent = srcc;
-                        ifrm.src = srcc;
-                }
-
-
-                function iterateAnchor(increment) {
-
-                        var liList = document.getElementsByTagName('a');
-                        currIndex = ((currIndex + increment + liList.length) % (liList.length));
-                        console.log('increment : ' + increment + '  |  currIndex : ' + currIndex);
-                        
-                        // liList[currIndex].scrollTo({
-                        //         top: 100,
-                        //         left: 100,
-                        //         behavior: 'smooth'
-                        // });
-                        liList[currIndex].click();
-                        liList[currIndex].scrollIntoView();
-                }
-
-                function bodyKeyDownEventListener(event) {
-                        var x = event.key;
-                        console.log(' key : ' + x);
-                        switch (x) {
-                                case 'p':
-                                case 'P':
-                                case 'ArrowUp':
-                                        iterateAnchor(-1); break;
-                                case 'n':
-                                case 'N':
-                                case 'ArrowDown':
-                                        iterateAnchor(1); break;
-                                default:
-                                        //console.log(' key : '+x); 
-                                        break;
-                        }
-                }
-
-                var myInitFunc = function onInit() {
-                        iterateAnchor(0);
-                }
-
-                myInitFunc();
-
-        </script>
-
-</body>
-
+      myInitFunc();
+    </script>
+  </body>
 </html>
