@@ -1,0 +1,144 @@
+[
+  {
+    "sectionName": "Featured Services",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Analytics",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Application Integration",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "AWS Cost Management",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Blockchain",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Business Applications",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Compute",
+    "description": ["Compute is all about services which allow you to run your code."],
+    "services": [
+        {
+            "serviceName":"Amazon EC2",
+            "expansionOfAcronym":"",
+            "shortDescription":"",
+            "description":[""]
+        }
+    ]
+  },
+  {
+    "sectionName": "Containers",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Customer Engagement",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Database",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Developer Tools",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "End User Computing",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Front-End Web & Mobile",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Game Tech",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Internet of Things",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Machine Learning",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Management & Governance",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Media Services",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Migration & Transfer",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Networking & Content Delivery",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Quantum Technologies",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Robotics",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Satellite",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Security, Identity, & Compliance",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Serverless",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "Storage",
+    "description": [],
+    "services": []
+  },
+  {
+    "sectionName": "VR & AR",
+    "description": [],
+    "services": []
+  }
+]

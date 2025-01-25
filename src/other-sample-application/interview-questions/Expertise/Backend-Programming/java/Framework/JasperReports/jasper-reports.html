@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JasperReports</title>
+
+    <link rel="stylesheet" href="../../../../../lib/style.css">
+    <script src="../../../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h2>JasperReports Interview Questions</h2>
+
+            <p><strong>Question 1. What Is The Difference Between Ireport And Jasperreport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Basically iReport is the report designer and JasperReport is the reporting engine.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 2. How Are Jasperreports And Ireports Created?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Jasper Reports are created manually using jrxml file and compliling it. On the other hand iReport gives
+                one the more user-friendly environment for developing reports.</p>
+
+            <p>&nbsp;</p>
+
+
+            <p><strong>Question 3. How To Determine The Version Of Java Used By Ireport Designers In An
+                    Environment?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>In order to determine the specific version of Java used by the installation of iReport designer, the
+                setting in thecon/ireporpro.con or in the ireport/etc/ireportpro. con should be used.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 4. What Are The Steps For Identifying The Default Java Version Used For Generating
+                    Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>When iReprot designer is using the default Java installation for the environment, opening a command line
+                and executing the following command would help &ndash; java-version</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 5. What Is The Command Line For Setting Jdkhome Specifically For Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>When the jdkhome is set specifically for the iReport, opening a command line and going to the bin
+                directory within the listed directories in the setting for executing the command java-version would help
+                identifying the java version.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 6. How To Change The Version Of Java Used By The Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>To change the version of Java used by iReport, the following setting has to be added or updated.<br />
+                &lt;irepor-install-directory&gt;/fonf/ireportpro.conf<br />
+                or &lt;ireport-install-directory&gt;/ireport/etc/ireportpro.conf.<br />
+                The use of the command line would depend on the installation made.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 7. What Are The Restrictions For Using Command Line For Changing The Version Of Java
+                    Used By Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>User must ensure that the command line does not have any hash at the beginning of the line after it is
+                updated. Because in such case it would no more be command line but would become comment only.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 8. Can Jre Be Selected To Generate Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>JRE was created using the JSmooth and one can modify the file ireport/etc/ireport.jsmooth using the
+                jsmooth to force use of particular JVM.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 9. How To Solve The Problem Of Running Ireport When It Generates Java Error?</strong>
+            </p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The config file is available in the etc folder where the jdkhome has been set. The path that is to be
+                given there is the jdk path and not jre path. Installation of jdk is essential for the purpose.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 10. How To Resolve The Windows Installer Problem In Java?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>User has to first check whether he or she is running the program in a container or as standalone.
+                Checking this would enable the person to get the right JAVA_HOME version for running the iReport.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 11. How To Add User Defined Functions In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>User can use Java code in iReport using the scriptlets.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 12. What Is Achieved By Scriptlets?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Scriptlets are the bridges that get the Java Code in iReport. iReport.scriptlet is a Java class that
+                extends JRDefaultScriptlet where one can write user defined functions that can later be accessed easily
+                in the report.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 13. How To Run User Defined Functions In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>A few simple steps help to run the user defined functions. The first step is to go to Tools-options-
+                claspath tab &ndash;ADD Jar- choose Jar file. In iReport the Scriptlet node in Report Inspector chooses
+                the property named &lsquo;Scriplet Class&rsquo;. Keying in the location of the user defined function
+                would help.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 14. What Is Jar?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>In iReport JAR is made on building the project containing the Scriptlet.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 15. What Is The Specific Necessity Of The Class Containing User Defined
+                    Function?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The class containing the user defined functions needs to be extended by the JRDefaultScriptlet.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 16. What Is The Parameter For Using User Defined Function In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The parameter in iReport for using the user defined function is $P{REPORT SCRIPTLET} which is a
+                predefined parameter for the user.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 17. What Is The Process Of Using User Defined Function In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The user defined function is used with the $ P{REPORT SCRIPTLET}.userDefinedFun(). This function returns
+                values from the scriptlet.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 18. What Are Other User Defined Functions Used In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Other user defined functions in iReport are $P{REPORT SCRIPTLET}.userDefinedfun($F{field}). These
+                functions give fluidity to Java from the Jasper to Java code.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 19. Is There Any Way To Know How The Report Looks?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>There is a PDF export that would show exactly how the report looks.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 20. Is It Possible Using Multiple Parameters For The Query In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Yes it is possible using a set of controls in Java. The user has full control on what he or she passes
+                and what he or she received in Java.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 21. Is It Necessary Installing Additional Files After Installing The Standard Version Of
+                    Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Setting up the JAVA_HOME environmental variable with path as C:\Program
+                Files\jasperserver-pro-3.7\java\jre can address the problem.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 22. What Is The Process Of Documentation Of Ireport In Java?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The documentation of iReport should be carried out by the user and not with some readymade packages that
+                are mostly not fruitful for the purpose.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 23. Is It Good Using Packages For Ireport Documentation?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>If at all; only quality documentation package should be used and the iReport should not have any circular
+                references that would create unnecessary problems.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 24. What If The User Cannot Find Java.exe Or (null)jrebinjava.exe Nor (null) Binjava.exe
+                    While Trying To Generate Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>It is not necessary installing JasperReport in the system. Instead searching the system and setting the
+                java.exe and set it to JAVA_HOMW would take care of the problem.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 25. What Is Basically Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Basically is a visual designer for the JasperReports.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 26. What Are The Main Features Of Jasperreport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>JasperReports is the best IMHO or open source reporting engine that is available for Java community.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 27. What Are Two Main Features Of Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Two main features of iReport are it supports 98% of JasperReport tags and it has an built in editor with
+                syntax highlighting for write expression.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 28. What Languages And Codes Are Supported By Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>iReport supports Unicode and much non Latin language (Russian, Chinese, Korean). It also supports
+                different fonts.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 29. Has The Ireport Any Integrated Features?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Integrated compiler and exporter are the integrated features in iReport. The other one is the document
+                structure browser.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 30. What Are The Databases And Data Source That Is Supported By Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>iReport supports all JDBC compliant databases and also all kinds of JRData Source. It also supports sub
+                reports as well as templates.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 31. Are There Any Facilities For Having Backup In Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Yes. The user can backup data and information with iReport.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 32. What Is The Link Where Information About Ireport Would Be Available?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>It is the iReport home page where user can get all information about the application and its uses.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 33. What Are The System Requirements For Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Some of the system requirements for the iReport are Sun JDK 1.4 or greater, Ant, JasperReports 0.4.6, Sax
+                2.0 XML Parser, a host of Jakarta commons components and Acrobat Reader.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 34. What Files Are Required By Ireport For Configuration?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>XML files are required for configuration of iReport.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 35. What Is Jaspersoft?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Jaspersoft is a commercial open source software vendor focused on business intelligence, including data
+                visualization, reporting, and analytics. Jaspersoft provides commercial and open source software,
+                support, services, and licensing around the JasperReports, JasperReports Server, Jaspersoft Studio,
+                iReport, and Jaspersoft ETL products. Jaspersoft&rsquo;s main related product is JasperReports Server, a
+                Java web application that provides advanced report server capabilities such as report scheduling,
+                permissions, ad hoc reporting, dashboards, and multi-tenancy. It is offered in a community open source
+                edition as well as under several commercial editions with broad support for various databases and data
+                sources, including NoSQL and other big data datasources.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 36. What Are The Main Features Of Jaspersoft?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Pixel Perfect Reporting :&nbsp;</strong>Highly formatted reports containing interactive charts,
+                images, sub-reports, expressions, and more. Reports from any data source including JDBC, XML, CSV,
+                Hibernate, POJO. Reports published in PDF, XML, HTML, CSV, DOC, ODT.</p>
+
+            <p><strong>Ad Hoc Reporting :&nbsp;</strong>Web-based, drag-and-drop report designer. Crosstabs, tables, and
+                chart-based reports. Semantic layer against relational or non-relational data sources.</p>
+
+            <p><strong>Advanced analytic functions :&nbsp;</strong>Ability to analyze data across multiple attributes
+                and time periods. Multidimensional Expression Language (MDX) support lets users run complex analytic
+                queries. Addition of calculations at runtime or within the relational OLAP model.</p>
+
+            <p><strong>Interactive user interface :&nbsp;</strong>Intuitive web-based interface lets users drill down,
+                drill across, drill up, filter, pivot, sort, and chart. Ability to use MS Excel as a front-end client to
+                your OLAP environment. Granular security access down to the cell and column level.</p>
+
+            <p><strong>Performance and scalability :&nbsp;</strong>Sophisticated caching of data and dimensions reduces
+                query latency. Relational database storage architecture. Aggregate-aware architecture simplifies setup
+                and improves user response times.</p>
+
+            <p><strong>Graphical design environment :&nbsp;</strong>Business-oriented models for early design
+                collaboration. Drag-and-drop process designer. Activity monitoring console tracks job execution and
+                performance.</p>
+
+            <p><strong>Connectors :&nbsp;</strong>Native connectivity to ERP and CRM applications such as
+                Salesforce.com, SAP, and SugarCRM. Support for mainframe, transactional, and analytic databases.
+                Connectivity to Hive for Hadoop environments.</p>
+
+            <p><strong>ELT support :&nbsp;</strong>ELT connector support for Oracle, DB2, Postgres, IBM/Netezza,
+                EMC/Greenplum, Teradata, and SAP/Sybase IQ. Merge, filter and rollback functions. ELT template jobs for
+                re-use.</p>
+
+
+
+            <p><strong>Question 37. What Is The Use Of Jaspersoft?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Jaspersoft empowers people every day to make better decisions faster by bringing them timely, actionable
+                data inside their apps and business processes. Its embeddable, cost-effective reporting and analytics
+                platform allows anyone to quickly self-serve to get the answers they need, while scaling architecturally
+                and economically to reach everyone. Thanks to a community that is hundreds-of-thousands strong
+                jaspersoft&rsquo;s commercial and open source software has been downloaded millions of times and is used
+                to create the Intelligence Inside apps and business processes.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 38. What Is Jasperreport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>JasperReports is an open source Javareporting tool that can write to a variety of targets, such as:
+                screen, a printer, intoPDF, HTML, Microsoft Excel, RTF, ODT, Comma-separated values or XML files.It can
+                be used in Java-enabled applications, including Java EE or web applications, to generate dynamic
+                content. It reads its instructions from an XML or .jasper file.</p>
+
+            <p>Features of Jaspersoft Report: JasperReports is an open source reporting library that can be embedded
+                into any Java application.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 39. What Is Ireport?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>iReport is the free, open source report designer for JasperReports and JasperReports Server. Create very
+                sophisticated layouts containing charts, images, subreports, crosstabs and much more. Access your data
+                through JDBC, TableModels, JavaBeans, XML, Hibernate, CSV, and custom sources. Then publish your reports
+                as PDF, RTF, XML, XLS, CSV, HTML, XHTML, text, DOCX, or OpenOffice.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 40. What Is The Difference Between Jasperreports Server Community Edition And
+                    Jasperreports Server Professional?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>JasperReports Server Community Edition is Jaspersoft&rsquo;s free, open source reporting and analysis
+                server, based onJasperReports Library,Mondrian, JPivot and Spring. It is licensed under the GPLv2.
+                JasperReports Server Professional Edition is a commercially licensed reporting and analysis server based
+                on JasperReports Server Community Edition. It is &ldquo;visible&rdquo; source &ndash; code comes with
+                Professional Edition, but it is not free.</p>
+
+            <p><strong>The Professional Edition extensions beyond the Community Edition include:</strong></p>
+
+            <p>&nbsp;</p>
+
+            <p>Interactive web based &ldquo;ad hoc&rdquo; report development and data exploration (AJAX) against any
+                data source.</p>
+
+            <p>End user query through the browser, based on &ldquo;data domains&rdquo; which include data level
+                security. A web based domain designer is provided. JDBC only at this stage.</p>
+
+            <p>In-memory data access and calculation engine to support ad hoc. Includes server management like query
+                governing.</p>
+
+            <p>Dashboards made up of multiple reports, images and external web content can be designed through the
+                browser (AJAX).</p>
+
+            <p>User profile based data level security for OLAP analysis, beyond simple roles.</p>
+
+            <p>Performance tuning and management tools.</p>
+
+            <p>Multi-tenant enabled to support &ldquo;business intelligence as a service&rdquo; for SaaS vendors and
+                organizations that share JasperReports Server across customers or departments.</p>
+
+            <p>Complete translations of the JasperReports Server user interface and documentation for English, French,
+                German, Spanish and Japanese (Chinese coming soon)</p>
+
+            <p>Out of the box support to allow JasperReports Server to run in a large variety of application servers and
+                databases for the repository. JasperReports Server Community Edition and Professional Edition can
+                connect to a wide variety of databases for reporting and analysis through JDBC.</p>
+
+
+
+            <p><strong>Question 41. What Is The Use Of Jasper Report?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Jasper Reports is used to generate the reports from the Database. A powerful report-generating tool that
+                has the ability to deliver rich content onto the screen, to the printer or into PDF, HTML, XLS, CSV and
+                XML files. Its main use is to help creating page oriented, ready to print documents in a simple flexible
+                manner.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 42. What Is Ireport Designer?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>There are several ways to add reporting capabilities to an application. For many web developers, to
+                create a report just means to create a web page, which produces good results on screen but poor results
+                when printed to paper. And to create a report in PDF means write more code tons of code, making the
+                reports hard to maintain and long to write.</p>
+
+            <p>When working with other technologies the problem does not change very much. For example, Java provides an
+                extensive API for printing, but there is still a lot of work to write specific code for each document
+                format.The answer to this problem is to use a reporting library.JasperReports Library is the
+                world&rsquo;s most popular open source Java reporting library, and iReport Designer is a visual report
+                designer for JasperReports.</p>
+
+            <p>The library is a report engine that can be integrated in your open or commercial application to generate
+                the reports designed with iReport Designer, display them on screen or export them in a final format like
+                PDF, OpenOffice, DOCX and many others. Alternatively, you can stream the result through a web
+                application or send the final document directly to a printer.</p>
+
+            <p>JasperReports is in some way the core of iReport Designer. JasperReports is extremely easy to integrate
+                in an Java application, but if you need an environment to use the reports without having to write a
+                custom application, you may consider using JasperReports Server.</p>
+
+            <p>JasperServer provides a web based interface to manage, schedule, and run the reports; a repository to
+                store all the report resources like images, fonts, data sources and much more; a security service to
+                decide who can execute which report; and a web services API to execute the reports from external
+                applications (so you can generate reports from any kind of environment, like PHP or .NET).</p>
+
+            <p>In the big picture, iReport Designer allows you to design reports, JasperReports allows to execute them
+                and generate output in a Java application, and JasperServer allows both end users and external
+                applications to access, view, and publish your reports securely. JasperServer also makes reports
+                interactive by adding drill down and drill up capabilities to your documents.</p>
+
+            <p>&nbsp;</p>
+
+
+
+            <p><strong>Question 43. What Is Jaspersoft Etl?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>Jaspersoft ETL is a complete and ready-to-run ETL job designer with an extensive set of data integration
+                capabilities. It consistently and accurately extracts and transforms data from multiple systems and
+                loads it into data stores optimized for reporting and analysis such as star or snowflake schema data
+                marts and warehouses. And it easily keeps pace with the performance of other leading ETL tools.</p>
+
+            <p>With JasperETL, database architects and operational data store administrators can: Use the business
+                modeler to access a non-technical view of the information workflow. Display and edit the ETL process
+                with Job Designer, a graphical editing tool. Define complex mappings and transformations with
+                Transformation Mapper and other transformation components.</p>
+
+            <p>Generate portable Perl or Java code that can be executed on any machine. Track ETL statistics from start
+                to finish with real-time debugging. Allow simultaneous output from and input to multiple sources
+                including flat files, XML files, databases, web services, POP and FTP servers with hundreds of available
+                connectors. Configure heterogeneous data sources and complex file formats including positional,
+                delimited, CSV, RegExp, XML, and LDIF with metadata wizards. Use the Activity Monitoring Console (AMC)
+                to monitor job events (successes, failures, warnings, etc.), execution times, and data volumes.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Question 44. Who Are The Customers Of Jaspersoft?</strong></p>
+
+            <p><strong>Answer :</strong></p>
+
+            <p>The Jaspersoft&rsquo;s customers come mainly from the ISV sector. But basically the companies that
+                creates their own application. So a very wide range of organizations is there, even from the public
+                sector. Creating Dashboards and Reports is basically what customers do with Jaspersoft software. Those
+                are static reports or interactive HTML5 charts. The reports and dashboards can be accessed from any
+                mobile device, which provides a neat overview. You also have the option to get a deep analytical view.
+            </p>
+
+        </div>
+    </div>
+</body>
+
+</html>

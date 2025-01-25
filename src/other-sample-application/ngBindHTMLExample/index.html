@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Introspector</title>
+
+	<script src='http://127.0.0.1:8888/angular-1.5.5/angular.min.js'></script>
+	<script src='http://127.0.0.1:8888/angular-1.5.5/angular-sanitize.min.js'></script>
+	<!-- <link rel="stylesheet" href="../css/style-for-multiple-search.css"> -->
+	<link rel="stylesheet" href="http://127.0.0.1:8888/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://127.0.0.1:8888/font-awesome-4.6.3/css/font-awesome.min.css">
+	<!-- <script src="../controller/fileSearchWithBootstrapWithMultipleSearchBox.js"></script> -->
+	<script src="app.js"></script>
+</head>
+
+
+<body data-ng-app="bindHtmlExample">
+	<div ng-controller="ExampleController">
+	 <p ng-bind-html="myHTML"></p>
+	 
+	 <!-- <ng-bind-html ng-bind-html="myHTML">
+
+	</ng-bind-html> -->
+	
+	<!-- <div ng-bind-html="myHTML"/> -->
+	 
+	 <input type="textarea" ng-model="myHTML"/>
+	</div>
+		
+	
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>HTML Table : Hiding a column by changing style properties</title>
+</head>
+
+<body onload="start()">
+    <p>
+        Once you have the object in your JavaScript variable, you can set style properties directly. The following code
+        is a modified version of sample1.html in which each cell of the second column is hidden and each cell of the
+        first column is changed to have a red background. Note that the style property was set directly.
+    </p>
+</body>
+<script>
+    function start() {
+        var mybody = document.getElementsByTagName("body")[0];
+        mytable = document.createElement("table");
+        mytablebody = document.createElement("tbody");
+
+        for (var row = 0; row < 5; row++) {
+            mycurrent_row = document.createElement("tr");
+            for (var col = 0; col < 6; col++) {
+                mycurrent_cell = document.createElement("td");
+                currenttext = document.createTextNode("cell is: " + row + col);
+                mycurrent_cell.appendChild(currenttext);
+                mycurrent_row.appendChild(mycurrent_cell);
+                // set the cell background color
+                // if the column is 0. If the column is 1 hide the cell
+                if (col === 0) {
+                    mycurrent_cell.style.background = "rgb(255,0,0)";
+                } else if (col === 1) {
+                    mycurrent_cell.style.display = "none";
+                }else{
+                    mycurrent_cell.style.background = "rgb(255,255,0)";
+                }
+            }
+            mytablebody.appendChild(mycurrent_row);
+        }
+        mytable.appendChild(mytablebody);
+        mybody.appendChild(mytable);
+    }
+</script>
+
+</html>

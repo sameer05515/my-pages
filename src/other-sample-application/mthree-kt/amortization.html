@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amortization - Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    
+    <div onclick='toggleDivAndUpdateArrow("amortTheoryDiv","amortTheoryUpArrow","amortTheoryDownArrow");'>
+        <b>Theory for Amortization</b> 
+        <span id="amortTheoryUpArrow" style="display: block;">&darr;</span> 
+        <span id="amortTheoryDownArrow" style="display: none;">&larr;</span>
+    </div>
+    <div id="amortTheoryDiv" class="borderSt">
+        <div class="box-prem">
+            <h3>Definition for <i>Amortization</i> :- </h3>
+            <p>Amortization is just a way to pay back a loan.</p>
+            <p>Paying off DEBT with fixed Repayment Schedule in Regular Installments over a fixed period of Time.</p>
+
+            <div class="box-prem">
+                <h4>One chart is prepared for the procedure</h4>
+                <table class="table-prem" style="width: 10%;">
+                    <tr>
+                        <th>Principle</th><th>Interest</th><th>Installment</th>
+                    </tr>
+                    <tr>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                    <tr>
+                        <td>-</td><td>-</td><td>-</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /. class="box-prem" -->
+
+
+        </div>
+
+        <div class="box-prem">
+            <pre>
+                EMI Calculation USING MATHEMATICAL FORMULA
+    EMI = [P x R x (1+R)^N]/[(1+R)^N-1], where P stands for the loan amount or principal, R is the interest rate per month [if the interest rate per annum is 11%, then the rate of interest will be 11/(12 x 100)], and N is the number of monthly instalments.
+            </pre>
+
+            <ul class="box-prem">
+                <li><b>Video for Loan Amortization calculation :</b>
+                    <ul>
+                        <li>Loan Amortization calculation
+                            <a href="https://www.youtube.com/watch?v=b6lTNUi_A2I">Click here</a>
+                        </li>
+                        <li>Amortizing Loan Payments Using a PIP Sandwich
+                            <a href="https://www.youtube.com/watch?v=Oryur1u9IG0">Click here</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+           <ul class="box-prem">
+               <li><b>Formulas</b>
+                   <ul>
+                       <li>Amortization calculation formula 
+                           <a href="pdf/amortization/chapter05R.pdf" target="_blank">Click here</a>
+                        </li>
+                        <li> Amortization calculation formula 2nd pdf 
+                            <a href="pdf/amortization/5mfz_sample.pdf" target="_blank">Click here</a>
+                        </li>
+                   </ul>
+               </li>
+           </ul>
+
+           <ul class="box-prem">
+               <li>
+                <b>Amortization Schedule</b>
+                <a href="https://corporatefinanceinstitute.com/resources/knowledge/credit/amortization-schedule/">
+                    click here
+                </a><br>
+               </li>
+           </ul>
+           
+
+           
+          
+            <table class="table-prem">
+                <tr>
+                    <th>
+                        <div>Year<br></div>
+                    </th>
+                    <th>
+                        <div>Begining Amount($)<br>(1)</div>
+                    </th>
+                    <th>
+                        <div>Annual Installment($)<br>(2)</div>
+                    </th>
+                    <th>
+                        <div>Interest($)<br>(3)=0.15 x (1)</div>
+                    </th>
+                    <th>
+                        <div>Principal Payment($)<br>(4)=(2)-(3)</div>
+                    </th>
+                    <th>
+                        <div>Remaining Balance($)<br>(5)=(1)-(4)</div>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div>1</div>
+                    </td>
+                    <td>
+                        <div>1000000.0</div>
+                    </td>
+                    <td>
+                        <div>298315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>150000.0</div>
+                    </td>
+                    <td>
+                        <div>148315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>851684.4475384715</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>2</div>
+                    </td>
+                    <td>
+                        <div>851684.4475384715</div>
+                    </td>
+                    <td>
+                        <div>298315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>127752.66713077073</div>
+                    </td>
+                    <td>
+                        <div>170562.88533075765</div>
+                    </td>
+                    <td>
+                        <div>681121.562207714</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>3</div>
+                    </td>
+                    <td>
+                        <div>681121.562207714</div>
+                    </td>
+                    <td>
+                        <div>298315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>102168.23433115709</div>
+                    </td>
+                    <td>
+                        <div>196147.3181303713</div>
+                    </td>
+                    <td>
+                        <div>484974.2440773427</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>4</div>
+                    </td>
+                    <td>
+                        <div>484974.2440773427</div>
+                    </td>
+                    <td>
+                        <div>298315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>72746.1366116014</div>
+                    </td>
+                    <td>
+                        <div>225569.415849927</div>
+                    </td>
+                    <td>
+                        <div>259404.82822741568</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>5</div>
+                    </td>
+                    <td>
+                        <div>259404.82822741568</div>
+                    </td>
+                    <td>
+                        <div>298315.5524615284</div>
+                    </td>
+                    <td>
+                        <div>38910.72423411235</div>
+                    </td>
+                    <td>
+                        <div>259404.82822741603</div>
+                    </td>
+                    <td>
+                        <div>-3.4924596548080444E-10</div>
+                    </td>
+                </tr>
+            </table>
+    
+        </div>
+    </div>
+    <!-- /. Theory -->
+
+    <div onclick='toggleDivAndUpdateArrow("amortReqAndQueriesDiv","amortReqAndQueriesUpArrow","amortReqAndQueriesDownArrow");'>
+        <b>Requirement and queries for Amortization</b> 
+        <span id="amortReqAndQueriesUpArrow" style="display: block;">&darr;</span> 
+        <span id="amortReqAndQueriesDownArrow" style="display: none;">&larr;</span>
+    </div>
+    <div id="amortReqAndQueriesDiv" class="borderSt">
+        
+    </div>
+    <!-- /. Requirement and queries -->
+
+    <div onclick='toggleDivAndUpdateArrow("amortThumbRulesDiv","amortThumbRulesUpArrow","amortThumbRulesDownArrow");'>
+        <b>Thumb Rules for Amortization</b> 
+        <span id="amortThumbRulesUpArrow" style="display: block;">&darr;</span> 
+        <span id="amortThumbRulesDownArrow" style="display: none;">&larr;</span>
+    </div>
+    <div id="amortThumbRulesDiv" class="borderSt"></div>
+    <!-- /. ThumbRules -->
+
+    <div onclick='toggleDivAndUpdateArrow("amortDiscussionsDiv","amortDiscussionsUpArrow","amortDiscussionsDownArrow");'>
+        <b>Discussions for Amortization</b> 
+        <span id="amortDiscussionsUpArrow" style="display: block;">&darr;</span> 
+        <span id="amortDiscussionsDownArrow" style="display: none;">&larr;</span>
+    </div>
+    <div id="amortDiscussionsDiv" class="borderSt"></div>
+    <!-- /. Discussions -->
+</body>
+
+</html>

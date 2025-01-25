@@ -1,0 +1,1920 @@
+[
+  {
+    "sectionName": "Featured Services",
+    "id": "SECTION-1-Featured-Services",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon EC2",
+        "id": "SERVICE-1-Amazon-EC2",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Virtual servers in the cloud"
+      },
+      {
+        "serviceName": "Amazon Simple Storage Service (S3)",
+        "id": "SERVICE-2-Amazon-Simple-Storage-Service-(S3)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scalable storage in the cloud"
+      },
+      {
+        "serviceName": "Amazon Aurora",
+        "id": "SERVICE-3-Amazon-Aurora",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "High performance managed relational database"
+      },
+      {
+        "serviceName": "Amazon DynamoDB",
+        "id": "SERVICE-4-Amazon-DynamoDB",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed NoSQL database"
+      },
+      {
+        "serviceName": "Amazon RDS",
+        "id": "SERVICE-5-Amazon-RDS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed relational database service for MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB"
+      },
+      {
+        "serviceName": "AWS Lambda",
+        "id": "SERVICE-6-AWS-Lambda",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run code without thinking about servers"
+      },
+      {
+        "serviceName": "Amazon VPC",
+        "id": "SERVICE-7-Amazon-VPC",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Isolated cloud resources"
+      },
+      {
+        "serviceName": "Amazon Lightsail",
+        "id": "SERVICE-8-Amazon-Lightsail",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Launch and manage virtual private servers"
+      },
+      {
+        "serviceName": "Amazon SageMaker",
+        "id": "SERVICE-9-Amazon-SageMaker",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build, train, and deploy machine learning models at scale"
+      }
+    ]
+  },
+  {
+    "sectionName": "Analytics",
+    "id": "SECTION-2-Analytics",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Athena",
+        "id": "SERVICE-10-Amazon-Athena",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Query data in S3 using SQL"
+      },
+      {
+        "serviceName": "Amazon CloudSearch",
+        "id": "SERVICE-11-Amazon-CloudSearch",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed search service"
+      },
+      {
+        "serviceName": "Amazon Elasticsearch Service",
+        "id": "SERVICE-12-Amazon-Elasticsearch-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run and scale Elasticsearch clusters"
+      },
+      {
+        "serviceName": "Amazon EMR",
+        "id": "SERVICE-13-Amazon-EMR",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Hosted Hadoop framework"
+      },
+      {
+        "serviceName": "Amazon Kinesis",
+        "id": "SERVICE-14-Amazon-Kinesis",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analyze real-time video and data streams"
+      },
+      {
+        "serviceName": "Amazon Managed Streaming for Apache Kafka",
+        "id": "SERVICE-15-Amazon-Managed-Streaming-for-Apache-Kafka",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed Apache Kafka service"
+      },
+      {
+        "serviceName": "Amazon Redshift",
+        "id": "SERVICE-16-Amazon-Redshift",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fast, simple, cost-effective data warehousing"
+      },
+      {
+        "serviceName": "Amazon QuickSight",
+        "id": "SERVICE-17-Amazon-QuickSight",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fast business analytics service"
+      },
+      {
+        "serviceName": "AWS Data Exchange",
+        "id": "SERVICE-18-AWS-Data-Exchange",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Find, subscribe to, and use third-party data in the cloud"
+      },
+      {
+        "serviceName": "AWS Data Pipeline",
+        "id": "SERVICE-19-AWS-Data-Pipeline",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Orchestration service for periodic, data-driven workflows"
+      },
+      {
+        "serviceName": "AWS Glue",
+        "id": "SERVICE-20-AWS-Glue",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Simple, scalable, and serverless data integration"
+      },
+      {
+        "serviceName": "AWS Lake Formation",
+        "id": "SERVICE-21-AWS-Lake-Formation",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build a secure data lake in days"
+      }
+    ]
+  },
+  {
+    "sectionName": "Application Integration",
+    "id": "SECTION-3-Application-Integration",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Step Functions",
+        "id": "SERVICE-22-AWS-Step-Functions",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Coordination for distributed applications"
+      },
+      {
+        "serviceName": "Amazon AppFlow",
+        "id": "SERVICE-23-Amazon-AppFlow",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "No-code integration for SaaS apps and AWS services"
+      },
+      {
+        "serviceName": "Amazon EventBridge",
+        "id": "SERVICE-24-Amazon-EventBridge",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Serverless event bus for SaaS apps and AWS services"
+      },
+      {
+        "serviceName": "Amazon Managed Workflows for Apache Airflow",
+        "id": "SERVICE-25-Amazon-Managed-Workflows-for-Apache-Airflow",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Highly available, secure, and managed workflow orchestration"
+      },
+      {
+        "serviceName": "Amazon MQ",
+        "id": "SERVICE-26-Amazon-MQ",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed message broker service"
+      },
+      {
+        "serviceName": "Amazon Simple Notification Service (SNS)",
+        "id": "SERVICE-27-Amazon-Simple-Notification-Service-(SNS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Pub/sub, SMS, email, and mobile push notifications"
+      },
+      {
+        "serviceName": "Amazon Simple Queue Service (SQS)",
+        "id": "SERVICE-28-Amazon-Simple-Queue-Service-(SQS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed message queues"
+      },
+      {
+        "serviceName": "AWS AppSync",
+        "id": "SERVICE-29-AWS-AppSync",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Power your apps with the right data from many sources, at scale"
+      }
+    ]
+  },
+  {
+    "sectionName": "AWS Cost Management",
+    "id": "SECTION-4-AWS-Cost-Management",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Cost Explorer",
+        "id": "SERVICE-30-AWS-Cost-Explorer",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analyze your AWS cost and usage"
+      },
+      {
+        "serviceName": "AWS Budgets",
+        "id": "SERVICE-31-AWS-Budgets",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Set custom cost and usage budgets"
+      },
+      {
+        "serviceName": "AWS Cost and Usage Report",
+        "id": "SERVICE-32-AWS-Cost-and-Usage-Report",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Access comprehensive cost and usage information"
+      },
+      {
+        "serviceName": "Reserved Instance Reporting",
+        "id": "SERVICE-33-Reserved-Instance-Reporting",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Dive deeper into your reserved instances (RIs)"
+      },
+      {
+        "serviceName": "Savings Plans",
+        "id": "SERVICE-34-Savings-Plans",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Save up to 72% on compute usage with flexible pricing"
+      }
+    ]
+  },
+  {
+    "sectionName": "Blockchain",
+    "id": "SECTION-5-Blockchain",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Managed Blockchain",
+        "id": "SERVICE-35-Amazon-Managed-Blockchain",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Create and manage scalable blockchain networks"
+      },
+      {
+        "serviceName": "Amazon Quantum Ledger Database (QLDB)",
+        "id": "SERVICE-36-Amazon-Quantum-Ledger-Database-(QLDB)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed ledger database"
+      }
+    ]
+  },
+  {
+    "sectionName": "Business Applications",
+    "id": "SECTION-6-Business-Applications",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Alexa for Business",
+        "id": "SERVICE-37-Alexa-for-Business",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Empower your organization with Alexa"
+      },
+      {
+        "serviceName": "Amazon Chime",
+        "id": "SERVICE-38-Amazon-Chime",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Frustration-free meetings, video calls, and chat"
+      },
+      {
+        "serviceName": "Amazon Honeycode (Beta)",
+        "id": "SERVICE-39-Amazon-Honeycode-(Beta)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build mobile and web apps without programming"
+      },
+      {
+        "serviceName": "Amazon WorkDocs",
+        "id": "SERVICE-40-Amazon-WorkDocs",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Secure enterprise document storage and sharing"
+      },
+      {
+        "serviceName": "Amazon WorkMail",
+        "id": "SERVICE-41-Amazon-WorkMail",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Secure email and calendaring"
+      }
+    ]
+  },
+  {
+    "sectionName": "Compute",
+    "id": "SECTION-7-Compute",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon EC2",
+        "id": "SERVICE-1-Amazon-EC2",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Virtual servers in the cloud"
+      },
+      {
+        "serviceName": "Amazon EC2 Auto Scaling",
+        "id": "SERVICE-42-Amazon-EC2-Auto-Scaling",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scale compute capacity to meet demand"
+      },
+      {
+        "serviceName": "Amazon Lightsail",
+        "id": "SERVICE-8-Amazon-Lightsail",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Launch and manage virtual private servers"
+      },
+      {
+        "serviceName": "AWS Batch",
+        "id": "SERVICE-43-AWS-Batch",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run batch jobs at any scale"
+      },
+      {
+        "serviceName": "AWS Elastic Beanstalk",
+        "id": "SERVICE-44-AWS-Elastic-Beanstalk",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run and manage web apps"
+      },
+      {
+        "serviceName": "AWS Lambda",
+        "id": "SERVICE-6-AWS-Lambda",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run code without thinking about servers"
+      },
+      {
+        "serviceName": "AWS Outposts",
+        "id": "SERVICE-45-AWS-Outposts",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run AWS infrastructure on-premises"
+      },
+      {
+        "serviceName": "AWS Serverless Application Repository",
+        "id": "SERVICE-46-AWS-Serverless-Application-Repository",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Discover, deploy, and publish serverless applications"
+      },
+      {
+        "serviceName": "AWS Snow Family",
+        "id": "SERVICE-47-AWS-Snow-Family",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Physical devices to aggregate and process data in edge locations, then transfer to AWS"
+      },
+      {
+        "serviceName": "AWS Wavelength",
+        "id": "SERVICE-48-AWS-Wavelength",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Deliver ultra-low latency applications for 5G devices"
+      },
+      {
+        "serviceName": "VMware Cloud on AWS",
+        "id": "SERVICE-49-VMware-Cloud-on-AWS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build a hybrid cloud without custom hardware"
+      }
+    ]
+  },
+  {
+    "sectionName": "Containers",
+    "id": "SECTION-8-Containers",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Elastic Container Registry",
+        "id": "SERVICE-50-Amazon-Elastic-Container-Registry",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Easily store, manage, and deploy container images"
+      },
+      {
+        "serviceName": "Amazon Elastic Container Service (ECS)",
+        "id": "SERVICE-51-Amazon-Elastic-Container-Service-(ECS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Highly secure, reliable, and scalable way to run containers"
+      },
+      {
+        "serviceName": "Amazon ECS Anywhere (Coming Soon)",
+        "id": "SERVICE-52-Amazon-ECS-Anywhere-(Coming-Soon)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "ECS on your infrastructure"
+      },
+      {
+        "serviceName": "Amazon Elastic Kubernetes Service (EKS)",
+        "id": "SERVICE-53-Amazon-Elastic-Kubernetes-Service-(EKS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "The most trusted way to run Kubernetes"
+      },
+      {
+        "serviceName": "Amazon EKS Anywhere (Coming Soon)",
+        "id": "SERVICE-54-Amazon-EKS-Anywhere-(Coming-Soon)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Kubernetes on your infrastructure"
+      },
+      {
+        "serviceName": "Amazon EKS Distro - NEW",
+        "id": "SERVICE-55-Amazon-EKS-Distro---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run consistent Kubernetes clusters"
+      },
+      {
+        "serviceName": "AWS App2Container",
+        "id": "SERVICE-56-AWS-App2Container",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Containerize and migrate existing applications"
+      },
+      {
+        "serviceName": "AWS Fargate",
+        "id": "SERVICE-57-AWS-Fargate",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Serverless compute for containers"
+      },
+      {
+        "serviceName": "Red Hat OpenShift Service on AWS",
+        "id": "SERVICE-58-Red-Hat-OpenShift-Service-on-AWS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed Red Hat OpenShift clusters"
+      }
+    ]
+  },
+  {
+    "sectionName": "Customer Engagement",
+    "id": "SECTION-9-Customer-Engagement",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Connect",
+        "id": "SERVICE-59-Amazon-Connect",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Cloud-based contact center service"
+      },
+      {
+        "serviceName": "Amazon Pinpoint",
+        "id": "SERVICE-60-Amazon-Pinpoint",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Personalized user engagement across channels"
+      },
+      {
+        "serviceName": "Amazon Simple Email Service (SES)",
+        "id": "SERVICE-61-Amazon-Simple-Email-Service-(SES)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Email sending and receiving"
+      }
+    ]
+  },
+  {
+    "sectionName": "Database",
+    "id": "SECTION-10-Database",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Aurora",
+        "id": "SERVICE-3-Amazon-Aurora",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "High performance managed relational database"
+      },
+      {
+        "serviceName": "Amazon Aurora Serverless V2 (Preview) - NEW",
+        "id": "SERVICE-62-Amazon-Aurora-Serverless-V2-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Instantly scale to \u003e100,000 transactions per second"
+      },
+      {
+        "serviceName": "Amazon DocumentDB (with MongoDB compatibility)",
+        "id": "SERVICE-63-Amazon-DocumentDB-(with-MongoDB-compatibility)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed document database"
+      },
+      {
+        "serviceName": "Amazon DynamoDB",
+        "id": "SERVICE-4-Amazon-DynamoDB",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed NoSQL database"
+      },
+      {
+        "serviceName": "Amazon ElastiCache",
+        "id": "SERVICE-64-Amazon-ElastiCache",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "In-memory caching service"
+      },
+      {
+        "serviceName": "Amazon Keyspaces (for Apache Cassandra)",
+        "id": "SERVICE-65-Amazon-Keyspaces-(for-Apache-Cassandra)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed Cassandra-compatible database"
+      },
+      {
+        "serviceName": "Amazon Neptune",
+        "id": "SERVICE-66-Amazon-Neptune",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed graph database service"
+      },
+      {
+        "serviceName": "Amazon Quantum Ledger Database (QLDB)",
+        "id": "SERVICE-36-Amazon-Quantum-Ledger-Database-(QLDB)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed ledger database"
+      },
+      {
+        "serviceName": "Amazon RDS",
+        "id": "SERVICE-5-Amazon-RDS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed relational database service for MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB"
+      },
+      {
+        "serviceName": "Amazon RDS on VMware",
+        "id": "SERVICE-67-Amazon-RDS-on-VMware",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automate on-premises database management"
+      },
+      {
+        "serviceName": "Amazon Redshift",
+        "id": "SERVICE-16-Amazon-Redshift",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fast, simple, cost-effective data warehousing"
+      },
+      {
+        "serviceName": "Amazon Timestream",
+        "id": "SERVICE-68-Amazon-Timestream",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed time series database"
+      },
+      {
+        "serviceName": "AWS Database Migration Service",
+        "id": "SERVICE-69-AWS-Database-Migration-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Migrate databases with minimal downtime"
+      },
+      {
+        "serviceName": "AWS Glue",
+        "id": "SERVICE-20-AWS-Glue",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Simple, scalable, and serverless data integration"
+      }
+    ]
+  },
+  {
+    "sectionName": "Developer Tools",
+    "id": "SECTION-11-Developer-Tools",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon CodeGuru",
+        "id": "SERVICE-70-Amazon-CodeGuru",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Find your most expensive lines of code"
+      },
+      {
+        "serviceName": "Amazon Corretto",
+        "id": "SERVICE-71-Amazon-Corretto",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Production-ready distribution of OpenJDK"
+      },
+      {
+        "serviceName": "AWS Cloud Development Kit (CDK)",
+        "id": "SERVICE-72-AWS-Cloud-Development-Kit-(CDK)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Model cloud infrastructure using code"
+      },
+      {
+        "serviceName": "AWS Cloud9",
+        "id": "SERVICE-73-AWS-Cloud9",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Write, run, and debug code on a cloud IDE"
+      },
+      {
+        "serviceName": "AWS CloudShell - NEW",
+        "id": "SERVICE-74-AWS-CloudShell---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Browser-based shell environment"
+      },
+      {
+        "serviceName": "AWS CodeArtifact",
+        "id": "SERVICE-75-AWS-CodeArtifact",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Secure, scalable, and cost-effective artifact management for software development"
+      },
+      {
+        "serviceName": "AWS CodeBuild",
+        "id": "SERVICE-76-AWS-CodeBuild",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build and test code"
+      },
+      {
+        "serviceName": "AWS CodeCommit",
+        "id": "SERVICE-77-AWS-CodeCommit",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Store code in private Git repositories"
+      },
+      {
+        "serviceName": "AWS CodeDeploy",
+        "id": "SERVICE-78-AWS-CodeDeploy",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automate code deployments"
+      },
+      {
+        "serviceName": "AWS CodePipeline",
+        "id": "SERVICE-79-AWS-CodePipeline",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Release software using continuous delivery"
+      },
+      {
+        "serviceName": "AWS CodeStar",
+        "id": "SERVICE-80-AWS-CodeStar",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Develop and deploy AWS applications"
+      },
+      {
+        "serviceName": "AWS Command Line Interface",
+        "id": "SERVICE-81-AWS-Command-Line-Interface",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Unified tool to manage AWS services"
+      },
+      {
+        "serviceName": "AWS Device Farm",
+        "id": "SERVICE-82-AWS-Device-Farm",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Test Android, iOS, and web apps on real devices in the AWS cloud"
+      },
+      {
+        "serviceName": "AWS Fault Injection Simulator (Coming Soon)",
+        "id": "SERVICE-83-AWS-Fault-Injection-Simulator-(Coming-Soon)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed chaos engineering service"
+      },
+      {
+        "serviceName": "AWS Tools and SDKs",
+        "id": "SERVICE-84-AWS-Tools-and-SDKs",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Tools and SDKs for AWS"
+      },
+      {
+        "serviceName": "AWS X-Ray",
+        "id": "SERVICE-85-AWS-X-Ray",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analyze and debug your applications"
+      }
+    ]
+  },
+  {
+    "sectionName": "End User Computing",
+    "id": "SECTION-12-End-User-Computing",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon WorkSpaces",
+        "id": "SERVICE-86-Amazon-WorkSpaces",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Virtual desktops in the cloud"
+      },
+      {
+        "serviceName": "Amazon AppStream 2.0",
+        "id": "SERVICE-87-Amazon-AppStream-2.0",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Stream desktop applications securely to a browser"
+      },
+      {
+        "serviceName": "Amazon WorkLink",
+        "id": "SERVICE-88-Amazon-WorkLink",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Enable mobile access to internal websites"
+      }
+    ]
+  },
+  {
+    "sectionName": "Front-End Web and Mobile",
+    "id": "SECTION-13-Front-End-Web-and-Mobile",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Amplify",
+        "id": "SERVICE-89-AWS-Amplify",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build and deploy mobile and web applications"
+      },
+      {
+        "serviceName": "Amazon API Gateway",
+        "id": "SERVICE-90-Amazon-API-Gateway",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build, deploy, and manage API\u0027s"
+      },
+      {
+        "serviceName": "Amazon Location Service (Preview)",
+        "id": "SERVICE-91-Amazon-Location-Service-(Preview)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Securely and easily add location data to applications"
+      },
+      {
+        "serviceName": "Amazon Pinpoint",
+        "id": "SERVICE-60-Amazon-Pinpoint",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Personalized user engagement across channels"
+      },
+      {
+        "serviceName": "AWS AppSync",
+        "id": "SERVICE-29-AWS-AppSync",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Power your apps with the right data from many sources, at scale"
+      },
+      {
+        "serviceName": "AWS Device Farm",
+        "id": "SERVICE-82-AWS-Device-Farm",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Test Android, iOS, and web apps on real devices in the AWS cloud"
+      }
+    ]
+  },
+  {
+    "sectionName": "Game Tech",
+    "id": "SECTION-14-Game-Tech",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon GameLift",
+        "id": "SERVICE-92-Amazon-GameLift",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Simple, fast, cost-effective dedicated game server hosting"
+      },
+      {
+        "serviceName": "Amazon Lumberyard",
+        "id": "SERVICE-93-Amazon-Lumberyard",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "A free cross-platform 3D game engine, with Full Source, integrated with AWS and Twitch"
+      }
+    ]
+  },
+  {
+    "sectionName": "Internet of Things",
+    "id": "SECTION-15-Internet-of-Things",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS IoT 1-Click",
+        "id": "SERVICE-94-AWS-IoT-1-Click",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "One click creation of an AWS Lambda trigger"
+      },
+      {
+        "serviceName": "AWS IoT Analytics",
+        "id": "SERVICE-95-AWS-IoT-Analytics",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analytics for IoT devices"
+      },
+      {
+        "serviceName": "AWS IoT Button",
+        "id": "SERVICE-96-AWS-IoT-Button",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Cloud programmable dash button"
+      },
+      {
+        "serviceName": "AWS IoT Core",
+        "id": "SERVICE-97-AWS-IoT-Core",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Connect devices to the cloud"
+      },
+      {
+        "serviceName": "AWS IoT Device Defender",
+        "id": "SERVICE-98-AWS-IoT-Device-Defender",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Security management for IoT devices"
+      },
+      {
+        "serviceName": "AWS IoT Device Management",
+        "id": "SERVICE-99-AWS-IoT-Device-Management",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Onboard, organize, and remotely manage IoT devices"
+      },
+      {
+        "serviceName": "AWS IoT Events",
+        "id": "SERVICE-100-AWS-IoT-Events",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "IoT event detection and response"
+      },
+      {
+        "serviceName": "AWS IoT Greengrass",
+        "id": "SERVICE-101-AWS-IoT-Greengrass",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Local compute, messaging, and sync for devices"
+      },
+      {
+        "serviceName": "AWS IoT SiteWise",
+        "id": "SERVICE-102-AWS-IoT-SiteWise",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "IoT data collector and interpreter"
+      },
+      {
+        "serviceName": "AWS IoT Things Graph",
+        "id": "SERVICE-103-AWS-IoT-Things-Graph",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Easily connect devices and web services"
+      },
+      {
+        "serviceName": "AWS Partner Device Catalog",
+        "id": "SERVICE-104-AWS-Partner-Device-Catalog",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Curated catalog of AWS-compatible IoT hardware"
+      },
+      {
+        "serviceName": "FreeRTOS",
+        "id": "SERVICE-105-FreeRTOS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Real-time operating system for microcontrollers"
+      }
+    ]
+  },
+  {
+    "sectionName": "Machine Learning",
+    "id": "SECTION-16-Machine-Learning",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon SageMaker",
+        "id": "SERVICE-9-Amazon-SageMaker",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build, train, and deploy machine learning models at scale"
+      },
+      {
+        "serviceName": "Amazon Augmented AI",
+        "id": "SERVICE-106-Amazon-Augmented-AI",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Easily implement human review of ML predictions"
+      },
+      {
+        "serviceName": "Amazon CodeGuru",
+        "id": "SERVICE-70-Amazon-CodeGuru",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Find your most expensive lines of code"
+      },
+      {
+        "serviceName": "Amazon Comprehend",
+        "id": "SERVICE-107-Amazon-Comprehend",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Discover insights and relationships in text"
+      },
+      {
+        "serviceName": "Amazon DevOps Guru - NEW",
+        "id": "SERVICE-108-Amazon-DevOps-Guru---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "ML-powered cloud operations service"
+      },
+      {
+        "serviceName": "Amazon Elastic Inference",
+        "id": "SERVICE-109-Amazon-Elastic-Inference",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Deep learning inference acceleration"
+      },
+      {
+        "serviceName": "Amazon Forecast",
+        "id": "SERVICE-110-Amazon-Forecast",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Increase forecast accuracy using machine learning"
+      },
+      {
+        "serviceName": "Amazon Fraud Detector",
+        "id": "SERVICE-111-Amazon-Fraud-Detector",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Detect more online fraud faster"
+      },
+      {
+        "serviceName": "Amazon Kendra",
+        "id": "SERVICE-112-Amazon-Kendra",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Reinvent enterprise search with ML"
+      },
+      {
+        "serviceName": "Amazon Lex",
+        "id": "SERVICE-113-Amazon-Lex",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build voice and text chatbots"
+      },
+      {
+        "serviceName": "Amazon Lookout for Equipment (Preview) - NEW",
+        "id": "SERVICE-114-Amazon-Lookout-for-Equipment-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Detect abnormal behavior by analyzing sensor data"
+      },
+      {
+        "serviceName": "Amazon Lookout for Metrics (Preview) - NEW",
+        "id": "SERVICE-115-Amazon-Lookout-for-Metrics-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Detect anomalies in metrics"
+      },
+      {
+        "serviceName": "Amazon Lookout for Vision (Preview) - NEW",
+        "id": "SERVICE-116-Amazon-Lookout-for-Vision-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Spot product defects using computer vision"
+      },
+      {
+        "serviceName": "Amazon Monitron - NEW",
+        "id": "SERVICE-117-Amazon-Monitron---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "End-to-end system for equipment monitoring"
+      },
+      {
+        "serviceName": "Amazon Personalize",
+        "id": "SERVICE-118-Amazon-Personalize",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build real-time recommendations into your applications"
+      },
+      {
+        "serviceName": "Amazon Polly",
+        "id": "SERVICE-119-Amazon-Polly",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Turn text into life-like speech"
+      },
+      {
+        "serviceName": "Amazon Rekognition",
+        "id": "SERVICE-120-Amazon-Rekognition",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analyze image and video"
+      },
+      {
+        "serviceName": "Amazon Textract",
+        "id": "SERVICE-121-Amazon-Textract",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Extract text and data from documents"
+      },
+      {
+        "serviceName": "Amazon Translate",
+        "id": "SERVICE-122-Amazon-Translate",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Natural and fluent language translation"
+      },
+      {
+        "serviceName": "Amazon Transcribe",
+        "id": "SERVICE-123-Amazon-Transcribe",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automatic speech recognition"
+      },
+      {
+        "serviceName": "AWS Deep Learning AMIs",
+        "id": "SERVICE-124-AWS-Deep-Learning-AMIs",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Deep learning on Amazon EC2"
+      },
+      {
+        "serviceName": "AWS Deep Learning Containers",
+        "id": "SERVICE-125-AWS-Deep-Learning-Containers",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Docker images for deep learning"
+      },
+      {
+        "serviceName": "AWS DeepComposer",
+        "id": "SERVICE-126-AWS-DeepComposer",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "ML enabled musical keyboard"
+      },
+      {
+        "serviceName": "AWS DeepLens",
+        "id": "SERVICE-127-AWS-DeepLens",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Deep learning enabled video camera"
+      },
+      {
+        "serviceName": "AWS DeepRacer",
+        "id": "SERVICE-128-AWS-DeepRacer",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Autonomous 1/18th scale race car, driven by ML"
+      },
+      {
+        "serviceName": "AWS Inferentia",
+        "id": "SERVICE-129-AWS-Inferentia",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Machine learning inference chip"
+      },
+      {
+        "serviceName": "AWS Panorama (Preview) - NEW",
+        "id": "SERVICE-130-AWS-Panorama-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Improve operations with computer vision at the edge"
+      },
+      {
+        "serviceName": "Apache MXNet on AWS",
+        "id": "SERVICE-131-Apache-MXNet-on-AWS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scalable, open-source deep learning framework"
+      },
+      {
+        "serviceName": "PyTorch on AWS",
+        "id": "SERVICE-132-PyTorch-on-AWS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Flexible open-source machine learning framework"
+      },
+      {
+        "serviceName": "TensorFlow on AWS",
+        "id": "SERVICE-133-TensorFlow-on-AWS",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Open-source machine intelligence library"
+      }
+    ]
+  },
+  {
+    "sectionName": "Management and Governance",
+    "id": "SECTION-17-Management-and-Governance",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon CloudWatch",
+        "id": "SERVICE-134-Amazon-CloudWatch",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Monitor resources and applications"
+      },
+      {
+        "serviceName": "Amazon Managed Service for Grafana (Preview) - NEW",
+        "id": "SERVICE-135-Amazon-Managed-Service-for-Grafana-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Powerful interactive data visualizations"
+      },
+      {
+        "serviceName": "Amazon Managed Service for Prometheus (Preview) - NEW",
+        "id": "SERVICE-136-Amazon-Managed-Service-for-Prometheus-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Highly available, secure monitoring for containers"
+      },
+      {
+        "serviceName": "AWS Auto Scaling",
+        "id": "SERVICE-137-AWS-Auto-Scaling",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scale multiple resources to meet demand"
+      },
+      {
+        "serviceName": "AWS Chatbot",
+        "id": "SERVICE-138-AWS-Chatbot",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "ChatOps for AWS"
+      },
+      {
+        "serviceName": "AWS CloudFormation",
+        "id": "SERVICE-139-AWS-CloudFormation",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Create and manage resources with templates"
+      },
+      {
+        "serviceName": "AWS CloudTrail",
+        "id": "SERVICE-140-AWS-CloudTrail",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Track user activity and API usage"
+      },
+      {
+        "serviceName": "AWS Command Line Interface",
+        "id": "SERVICE-81-AWS-Command-Line-Interface",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Unified tool to manage AWS services"
+      },
+      {
+        "serviceName": "AWS Compute Optimizer",
+        "id": "SERVICE-141-AWS-Compute-Optimizer",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Identify optimal AWS Compute resources"
+      },
+      {
+        "serviceName": "AWS Config",
+        "id": "SERVICE-142-AWS-Config",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Track resources inventory and changes"
+      },
+      {
+        "serviceName": "AWS Control Tower",
+        "id": "SERVICE-143-AWS-Control-Tower",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Set up and govern a secure, compliant multi-account environment"
+      },
+      {
+        "serviceName": "AWS Console Mobile Application",
+        "id": "SERVICE-144-AWS-Console-Mobile-Application",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Access resources on the go"
+      },
+      {
+        "serviceName": "AWS Distro for OpenTelemetry (Preview)",
+        "id": "SERVICE-145-AWS-Distro-for-OpenTelemetry-(Preview)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Collect correlated metrics and traces"
+      },
+      {
+        "serviceName": "AWS License Manager",
+        "id": "SERVICE-146-AWS-License-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Track, manage, and control licenses"
+      },
+      {
+        "serviceName": "AWS Management Console",
+        "id": "SERVICE-147-AWS-Management-Console",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Web-based user interface"
+      },
+      {
+        "serviceName": "AWS Managed Services",
+        "id": "SERVICE-148-AWS-Managed-Services",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Infrastructure operations management for AWS"
+      },
+      {
+        "serviceName": "AWS OpsWorks",
+        "id": "SERVICE-149-AWS-OpsWorks",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automate operations with Chef and Puppet"
+      },
+      {
+        "serviceName": "AWS Organizations",
+        "id": "SERVICE-150-AWS-Organizations",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Central governance and management across AWS accounts"
+      },
+      {
+        "serviceName": "AWS Personal Health Dashboard",
+        "id": "SERVICE-151-AWS-Personal-Health-Dashboard",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Personalized view of AWS service health"
+      },
+      {
+        "serviceName": "AWS Proton (Preview) - NEW",
+        "id": "SERVICE-152-AWS-Proton-(Preview)---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automated management for container and serverless deployment"
+      },
+      {
+        "serviceName": "AWS Service Catalog",
+        "id": "SERVICE-153-AWS-Service-Catalog",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Create and use standardized products"
+      },
+      {
+        "serviceName": "AWS Systems Manager",
+        "id": "SERVICE-154-AWS-Systems-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Gain operational insights and take action"
+      },
+      {
+        "serviceName": "AWS Trusted Advisor",
+        "id": "SERVICE-155-AWS-Trusted-Advisor",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Optimize performance and security"
+      },
+      {
+        "serviceName": "AWS Well-Architected Tool",
+        "id": "SERVICE-156-AWS-Well-Architected-Tool",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Review and improve your workloads"
+      }
+    ]
+  },
+  {
+    "sectionName": "Media Services",
+    "id": "SECTION-18-Media-Services",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Elastic Transcoder",
+        "id": "SERVICE-157-Amazon-Elastic-Transcoder",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Easy-to-use scalable media transcoding"
+      },
+      {
+        "serviceName": "Amazon Interactive Video Service",
+        "id": "SERVICE-158-Amazon-Interactive-Video-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed live video solution"
+      },
+      {
+        "serviceName": "Amazon Kinesis Video Streams",
+        "id": "SERVICE-159-Amazon-Kinesis-Video-Streams",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Process and analyze video streams"
+      },
+      {
+        "serviceName": "AWS Elemental MediaConnect",
+        "id": "SERVICE-160-AWS-Elemental-MediaConnect",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Reliable and secure live video transport"
+      },
+      {
+        "serviceName": "AWS Elemental MediaConvert",
+        "id": "SERVICE-161-AWS-Elemental-MediaConvert",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Convert file-based video content"
+      },
+      {
+        "serviceName": "AWS Elemental MediaLive",
+        "id": "SERVICE-162-AWS-Elemental-MediaLive",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Convert live video content"
+      },
+      {
+        "serviceName": "AWS Elemental MediaPackage",
+        "id": "SERVICE-163-AWS-Elemental-MediaPackage",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Video origination and packaging"
+      },
+      {
+        "serviceName": "AWS Elemental MediaStore",
+        "id": "SERVICE-164-AWS-Elemental-MediaStore",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Media storage and simple http origin"
+      },
+      {
+        "serviceName": "AWS Elemental MediaTailor",
+        "id": "SERVICE-165-AWS-Elemental-MediaTailor",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Video personalization and monetization"
+      },
+      {
+        "serviceName": "AWS Elemental Appliances and Software",
+        "id": "SERVICE-166-AWS-Elemental-Appliances-and-Software",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "On-premises media solutions"
+      }
+    ]
+  },
+  {
+    "sectionName": "Migration and Transfer",
+    "id": "SECTION-19-Migration-and-Transfer",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Migration Hub",
+        "id": "SERVICE-167-AWS-Migration-Hub",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Track migrations from a single place"
+      },
+      {
+        "serviceName": "AWS Application Discovery Service",
+        "id": "SERVICE-168-AWS-Application-Discovery-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Discover on-premises applications to streamline migration"
+      },
+      {
+        "serviceName": "AWS Database Migration Service",
+        "id": "SERVICE-69-AWS-Database-Migration-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Migrate databases with minimal downtime"
+      },
+      {
+        "serviceName": "AWS DataSync",
+        "id": "SERVICE-169-AWS-DataSync",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Simple, fast, online data transfer"
+      },
+      {
+        "serviceName": "AWS Server Migration Service",
+        "id": "SERVICE-170-AWS-Server-Migration-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Migrate on-premises servers to AWS"
+      },
+      {
+        "serviceName": "AWS Snow Family",
+        "id": "SERVICE-47-AWS-Snow-Family",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Physical devices to migrate data into and out of AWS"
+      },
+      {
+        "serviceName": "AWS Transfer Family",
+        "id": "SERVICE-171-AWS-Transfer-Family",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed SFTP, FTPS, and FTP service"
+      },
+      {
+        "serviceName": "CloudEndure Migration",
+        "id": "SERVICE-172-CloudEndure-Migration",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Automate your mass migration to the AWS cloud"
+      },
+      {
+        "serviceName": "Migration Evaluator (Formerly TSO Logic)",
+        "id": "SERVICE-173-Migration-Evaluator-(Formerly-TSO-Logic)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Create a business case for cloud migration"
+      }
+    ]
+  },
+  {
+    "sectionName": "Networking and Content Delivery",
+    "id": "SECTION-20-Networking-and-Content-Delivery",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon VPC",
+        "id": "SERVICE-7-Amazon-VPC",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Isolated cloud resources"
+      },
+      {
+        "serviceName": "Amazon API Gateway",
+        "id": "SERVICE-90-Amazon-API-Gateway",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build, deploy, and manage APIs"
+      },
+      {
+        "serviceName": "Amazon CloudFront",
+        "id": "SERVICE-174-Amazon-CloudFront",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Global content delivery network"
+      },
+      {
+        "serviceName": "Amazon Route 53",
+        "id": "SERVICE-175-Amazon-Route-53",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scalable domain name system (DNS)"
+      },
+      {
+        "serviceName": "AWS App Mesh",
+        "id": "SERVICE-176-AWS-App-Mesh",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Monitor and control microservices"
+      },
+      {
+        "serviceName": "AWS Cloud Map",
+        "id": "SERVICE-177-AWS-Cloud-Map",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Service discovery for cloud resources"
+      },
+      {
+        "serviceName": "AWS Direct Connect",
+        "id": "SERVICE-178-AWS-Direct-Connect",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Dedicated network connection to AWS"
+      },
+      {
+        "serviceName": "AWS Global Accelerator",
+        "id": "SERVICE-179-AWS-Global-Accelerator",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Improve application availability and performance"
+      },
+      {
+        "serviceName": "AWS PrivateLink",
+        "id": "SERVICE-180-AWS-PrivateLink",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Securely access services hosted on AWS"
+      },
+      {
+        "serviceName": "AWS Transit Gateway",
+        "id": "SERVICE-181-AWS-Transit-Gateway",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Easily scale VPC and account connections"
+      },
+      {
+        "serviceName": "AWS VPN",
+        "id": "SERVICE-182-AWS-VPN",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Securely access your network resources"
+      },
+      {
+        "serviceName": "Elastic Load Balancing (ELB)",
+        "id": "SERVICE-183-Elastic-Load-Balancing-(ELB)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Distribute incoming traffic across multiple targets"
+      }
+    ]
+  },
+  {
+    "sectionName": "Quantum Technologies",
+    "id": "SECTION-21-Quantum-Technologies",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Braket",
+        "id": "SERVICE-184-Amazon-Braket",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Explore and experiment with quantum computing"
+      },
+      {
+        "serviceName": "Amazon Quantum Solutions Lab",
+        "id": "SERVICE-185-Amazon-Quantum-Solutions-Lab",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Collaborate with quantum computing experts"
+      }
+    ]
+  },
+  {
+    "sectionName": "Robotics",
+    "id": "SECTION-22-Robotics",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS RoboMaker",
+        "id": "SERVICE-186-AWS-RoboMaker",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Develop, test, and deploy robotics applications"
+      }
+    ]
+  },
+  {
+    "sectionName": "Satellite",
+    "id": "SECTION-23-Satellite",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Ground Station",
+        "id": "SERVICE-187-AWS-Ground-Station",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed ground station as a service"
+      }
+    ]
+  },
+  {
+    "sectionName": "Security, Identity, and Compliance",
+    "id": "SECTION-24-Security,-Identity,-and-Compliance",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Identity and Access Management (IAM)",
+        "id": "SERVICE-188-AWS-Identity-and-Access-Management-(IAM)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Securely manage access to services and resources"
+      },
+      {
+        "serviceName": "Amazon Cognito",
+        "id": "SERVICE-189-Amazon-Cognito",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Identity management for your apps"
+      },
+      {
+        "serviceName": "Amazon Detective",
+        "id": "SERVICE-190-Amazon-Detective",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Investigate potential security issues"
+      },
+      {
+        "serviceName": "Amazon GuardDuty",
+        "id": "SERVICE-191-Amazon-GuardDuty",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed threat detection service"
+      },
+      {
+        "serviceName": "Amazon Inspector",
+        "id": "SERVICE-192-Amazon-Inspector",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Analyze application security"
+      },
+      {
+        "serviceName": "Amazon Macie",
+        "id": "SERVICE-193-Amazon-Macie",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Discover and protect your sensitive data at scale"
+      },
+      {
+        "serviceName": "AWS Artifact",
+        "id": "SERVICE-194-AWS-Artifact",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "On-demand access to AWS’ compliance reports"
+      },
+      {
+        "serviceName": "AWS Audit Manager - NEW",
+        "id": "SERVICE-195-AWS-Audit-Manager---NEW",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Continuously audit your AWS usage"
+      },
+      {
+        "serviceName": "AWS Certificate Manager",
+        "id": "SERVICE-196-AWS-Certificate-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Provision, manage, and deploy SSL/TLS certificates"
+      },
+      {
+        "serviceName": "AWS CloudHSM",
+        "id": "SERVICE-197-AWS-CloudHSM",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Hardware-based key storage for regulatory compliance"
+      },
+      {
+        "serviceName": "AWS Directory Service",
+        "id": "SERVICE-198-AWS-Directory-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Host and manage active directory"
+      },
+      {
+        "serviceName": "AWS Firewall Manager",
+        "id": "SERVICE-199-AWS-Firewall-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Central management of firewall rules"
+      },
+      {
+        "serviceName": "AWS Key Management Service",
+        "id": "SERVICE-200-AWS-Key-Management-Service",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed creation and control of encryption keys"
+      },
+      {
+        "serviceName": "AWS Network Firewall",
+        "id": "SERVICE-201-AWS-Network-Firewall",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Network security to protect your VPCs"
+      },
+      {
+        "serviceName": "AWS Resource Access Manager",
+        "id": "SERVICE-202-AWS-Resource-Access-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Simple, secure service to share AWS resources"
+      },
+      {
+        "serviceName": "AWS Secrets Manager",
+        "id": "SERVICE-203-AWS-Secrets-Manager",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Rotate, manage, and retrieve secrets"
+      },
+      {
+        "serviceName": "AWS Security Hub",
+        "id": "SERVICE-204-AWS-Security-Hub",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Unified security and compliance center"
+      },
+      {
+        "serviceName": "AWS Shield",
+        "id": "SERVICE-205-AWS-Shield",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "DDoS protection"
+      },
+      {
+        "serviceName": "AWS Single Sign-On",
+        "id": "SERVICE-206-AWS-Single-Sign-On",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Cloud single sign-on (SSO) service"
+      },
+      {
+        "serviceName": "AWS WAF",
+        "id": "SERVICE-207-AWS-WAF",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Filter malicious web traffic"
+      }
+    ]
+  },
+  {
+    "sectionName": "Serverless",
+    "id": "SECTION-25-Serverless",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "AWS Lambda",
+        "id": "SERVICE-6-AWS-Lambda",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Run code without thinking about servers"
+      },
+      {
+        "serviceName": "Amazon API Gateway",
+        "id": "SERVICE-90-Amazon-API-Gateway",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build, deploy, and manage API\u0027s"
+      },
+      {
+        "serviceName": "Amazon DynamoDB",
+        "id": "SERVICE-4-Amazon-DynamoDB",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed NoSQL database"
+      },
+      {
+        "serviceName": "Amazon EventBridge",
+        "id": "SERVICE-24-Amazon-EventBridge",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Serverless event bus for SaaS apps and AWS services"
+      },
+      {
+        "serviceName": "Amazon Simple Notification Service (SNS)",
+        "id": "SERVICE-27-Amazon-Simple-Notification-Service-(SNS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Pub/sub, SMS, email, and mobile push notifications"
+      },
+      {
+        "serviceName": "Amazon Simple Queue Service (SQS)",
+        "id": "SERVICE-28-Amazon-Simple-Queue-Service-(SQS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Managed message queues"
+      },
+      {
+        "serviceName": "Amazon Simple Storage Service (S3)",
+        "id": "SERVICE-2-Amazon-Simple-Storage-Service-(S3)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scalable storage in the cloud"
+      },
+      {
+        "serviceName": "AWS AppSync",
+        "id": "SERVICE-29-AWS-AppSync",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Power your apps with the right data from many sources, at scale"
+      },
+      {
+        "serviceName": "AWS Fargate",
+        "id": "SERVICE-57-AWS-Fargate",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Serverless compute for containers"
+      },
+      {
+        "serviceName": "AWS Step Functions",
+        "id": "SERVICE-22-AWS-Step-Functions",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Coordination for distributed applications"
+      }
+    ]
+  },
+  {
+    "sectionName": "Storage",
+    "id": "SECTION-26-Storage",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Simple Storage Service (S3)",
+        "id": "SERVICE-2-Amazon-Simple-Storage-Service-(S3)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Scalable storage in the cloud"
+      },
+      {
+        "serviceName": "Amazon Elastic Block Store (EBS)",
+        "id": "SERVICE-208-Amazon-Elastic-Block-Store-(EBS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "EC2 block storage volumes"
+      },
+      {
+        "serviceName": "Amazon Elastic File System (EFS)",
+        "id": "SERVICE-209-Amazon-Elastic-File-System-(EFS)",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed file system for EC2"
+      },
+      {
+        "serviceName": "Amazon FSx for Lustre",
+        "id": "SERVICE-210-Amazon-FSx-for-Lustre",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "High-performance file system integrated with S3"
+      },
+      {
+        "serviceName": "Amazon FSx for Windows File Server",
+        "id": "SERVICE-211-Amazon-FSx-for-Windows-File-Server",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Fully managed Windows native file system"
+      },
+      {
+        "serviceName": "Amazon S3 Glacier",
+        "id": "SERVICE-212-Amazon-S3-Glacier",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Low-cost archive storage in the cloud"
+      },
+      {
+        "serviceName": "AWS Backup",
+        "id": "SERVICE-213-AWS-Backup",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Centralized backup across AWS services"
+      },
+      {
+        "serviceName": "AWS Snow Family",
+        "id": "SERVICE-47-AWS-Snow-Family",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Physical edge computing and storage devices for rugged or disconnected environments"
+      },
+      {
+        "serviceName": "AWS Storage Gateway",
+        "id": "SERVICE-214-AWS-Storage-Gateway",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Hybrid storage integration"
+      },
+      {
+        "serviceName": "CloudEndure Disaster Recovery",
+        "id": "SERVICE-215-CloudEndure-Disaster-Recovery",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Highly automated disaster recovery"
+      }
+    ]
+  },
+  {
+    "sectionName": "AR and VR",
+    "id": "SECTION-27-AR-and-VR",
+    "description": [],
+    "services": [
+      {
+        "serviceName": "Amazon Sumerian",
+        "id": "SERVICE-216-Amazon-Sumerian",
+        "expansionOfAcronym": "",
+        "description": [],
+        "shortDescription": "Build and run AR and VR applications"
+      }
+    ]
+  }
+]

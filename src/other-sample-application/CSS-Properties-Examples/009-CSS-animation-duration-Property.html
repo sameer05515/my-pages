@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDivId {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove infinite;
+  animation-duration: 3s;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+		Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-duration.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-duration Property</h1>
+<h2>Specify that the animation should complete one cycle in 3 seconds:</h2>
+</div>
+
+<h1>The animation-duration Property</h1>
+
+<p>Specify that the animation should complete one cycle in 3 seconds:</p>
+
+<div id="myMoveDivId"></div>
+
+<p><strong>Note:</strong> Always specify the animation-duration property. Otherwise the duration is 0, and the animation will not be played.</p>
+<p><strong>Note:</strong> The animation-duration property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #example1 {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 5px;
+            border-bottom-right-radius: 25px;
+        }
+
+        #example2 {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 5px;
+            border-bottom-right-radius: 50px 20px;
+        }
+
+        #example3 {
+            border: 2px solid red;
+            background: url(paper.gif);
+            padding: 10px;
+            margin: 5px;
+            border-bottom-right-radius: 40%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="referenceDivId"
+        style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+        Reference : <a style="background-color: darkgrey;"
+            href="https://www.w3schools.com/cssref/css3_pr_border-bottom-right-radius.asp" target="_blank">Click
+            here</a>
+        <h1 style="background-color: darkgrey;border: medium none black;">CSS border-bottom-right-radius Property</h1>
+        <h2 style="background-color: darkgrey;border: medium none black;">Few Examples</h2>
+    </div>
+
+    <hr style="margin:5px;padding:5px;">
+    <p style="border: medium none black;"><b>Add rounded borders to the bottom-right corner of two &lt;div&gt;
+            elements:</b></p>
+    <div style="border: 1px solid black">
+        <h2>border-bottom-right-radius: 25px:</h2>
+        <div id="example1">
+            <p>The border-bottom-right-radius property defines the radius of the bottom-right corner.</p>
+        </div>
+        <h2>border-bottom-right-radius: 50px 20px:</h2>
+        <div id="example2">
+            <p>If two values are set; the first one is for the bottom border, the second one for the right border.</p>
+        </div>
+    </div>
+
+    <hr style="margin:5px;padding:5px;">
+    <p style="border: medium none black;"><b>Add rounded borders to the bottom-right corner in percent:</b></p>
+    <div style="border: 1px solid black">
+        <h2>border-bottom-right-radius: 40%:</h2>
+        <div id="example3">
+            <p>Here, the border-bottom-right-radius property is set to 40%. Also notice that the background is clipped
+                at the border.</p>
+        </div>
+    </div>
+
+    <hr style="margin:5px; padding:5px;">
+    <p style="border: medium none black;"></p>
+    <div style="border: 1px solid black">
+        <h2>CSS Syntax</h2>
+        <pre style="padding:5px;margin:5px; border: solid #b91de0; background-color: rgb(247, 159, 128);">
+border-bottom-right-radius: length|% [length|%]|initial|inherit;
+</pre>
+        <p><b>Note:</b> If you set two values, the first one is for the bottom border, and the second one for the right
+            border. If the second value is omitted, it is copied from the first. If either length is zero, the corner is
+            square, not rounded.</p>
+    </div>
+
+</body>
+
+</html>

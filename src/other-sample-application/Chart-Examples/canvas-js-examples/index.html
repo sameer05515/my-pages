@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 300px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .column-25 {
+            float: left;
+            width: 25%;
+            /* padding: 10px; */
+            height: 570px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .column-75 {
+            float: left;
+            width: 75%;
+            /* padding: 10px; */
+            height: 570px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .column-sm-20 {
+            float: left;
+            width: 25%;
+            /* padding: 10px; */
+            height: 30px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        .column-sm-80 {
+            float: left;
+            width: 75%;
+            /* padding: 10px; */
+            height: 30px;
+            /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .activeLink {
+            background-color: rgb(133, 218, 126);
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li{
+            padding: 5px 5px 5px 5px;
+            margin: 5px 5px 5px 5px;
+            border:  solid #08000a;
+        }
+    </style>
+</head>
+
+<body onkeydown="bodyKeyDownEventListener(event)">
+
+    <div class="row">
+        <div class="column-sm-80">
+
+            <input type="button" value="next" onclick="iterateAnchor(1)">
+            <input type="button" value="prev" onclick="iterateAnchor(-1)">
+            <span id="clickedItemDisplayId">none</span>
+        </div>
+        <div class="column-sm-20"></div>
+    </div>
+    <div class="row">
+
+        <div class="column-25" style="border: thick solid #CC22FF;                                
+                                overflow:scroll;
+                                -webkit-overflow-scrolling: touch;">
+
+<ul>
+        <li><a onclick="load(this,0,'examples/01-overview/animated-chart.html')">01-overview/animated-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,1,'examples/01-overview/chart-from-json-data.html')">01-overview/chart-from-json-data.html</a>
+                                        </li>
+        <li><a onclick="load(this,2,'examples/01-overview/chart-with-axis-scale-breaks.html')">01-overview/chart-with-axis-scale-breaks.html</a>
+                                        </li>
+        <li><a onclick="load(this,3,'examples/01-overview/chart-with-crosshair.html')">01-overview/chart-with-crosshair.html</a>
+                                        </li>
+        <li><a onclick="load(this,4,'examples/01-overview/chart-with-custom-legend-chart.html')">01-overview/chart-with-custom-legend-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,5,'examples/01-overview/chart-with-image-overlay.html')">01-overview/chart-with-image-overlay.html</a>
+                                        </li>
+        <li><a onclick="load(this,6,'examples/01-overview/chart-with-index-data-label.html')">01-overview/chart-with-index-data-label.html</a>
+                                        </li>
+        <li><a onclick="load(this,7,'examples/01-overview/chart-with-inverted-reversed-axis.html')">01-overview/chart-with-inverted-reversed-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,8,'examples/01-overview/chart-with-logarithmic-axis.html')">01-overview/chart-with-logarithmic-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,9,'examples/01-overview/chart-with-secondary-axis.html')">01-overview/chart-with-secondary-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,10,'examples/01-overview/chart-with-zoom-pan.html')">01-overview/chart-with-zoom-pan.html</a>
+                                        </li>
+        <li><a onclick="load(this,11,'examples/01-overview/dynamic-chart.html')">01-overview/dynamic-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,12,'examples/01-overview/interactive-draggable-chart.html')">01-overview/interactive-draggable-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,13,'examples/01-overview/multi-series-chart.html')">01-overview/multi-series-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,14,'examples/01-overview/null-data-chart.html')">01-overview/null-data-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,15,'examples/01-overview/performance-demo.html')">01-overview/performance-demo.html</a>
+                                        </li>
+        <li><a onclick="load(this,16,'examples/02-line-spline-step-line-charts/dashed-line-chart.html')">02-line-spline-step-line-charts/dashed-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,17,'examples/02-line-spline-step-line-charts/dynamic-spline-chart.html')">02-line-spline-step-line-charts/dynamic-spline-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,18,'examples/02-line-spline-step-line-charts/line-chart-with-axis-scale-breaks.html')">02-line-spline-step-line-charts/line-chart-with-axis-scale-breaks.html</a>
+                                        </li>
+        <li><a onclick="load(this,19,'examples/02-line-spline-step-line-charts/line-chart-with-data-markers.html')">02-line-spline-step-line-charts/line-chart-with-data-markers.html</a>
+                                        </li>
+        <li><a onclick="load(this,20,'examples/02-line-spline-step-line-charts/line-chart-with-logarithmic-axis.html')">02-line-spline-step-line-charts/line-chart-with-logarithmic-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,21,'examples/02-line-spline-step-line-charts/line-chart-with-multiple-axis.html')">02-line-spline-step-line-charts/line-chart-with-multiple-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,22,'examples/02-line-spline-step-line-charts/line-chart-with-zoom-pan.html')">02-line-spline-step-line-charts/line-chart-with-zoom-pan.html</a>
+                                        </li>
+        <li><a onclick="load(this,23,'examples/02-line-spline-step-line-charts/line-chart.html')">02-line-spline-step-line-charts/line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,24,'examples/02-line-spline-step-line-charts/multi-series-line-chart.html')">02-line-spline-step-line-charts/multi-series-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,25,'examples/02-line-spline-step-line-charts/multi-series-spline-chart.html')">02-line-spline-step-line-charts/multi-series-spline-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,26,'examples/02-line-spline-step-line-charts/multi-series-step-line-chart.html')">02-line-spline-step-line-charts/multi-series-step-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,27,'examples/02-line-spline-step-line-charts/spline-chart-with-legends.html')">02-line-spline-step-line-charts/spline-chart-with-legends.html</a>
+                                        </li>
+        <li><a onclick="load(this,28,'examples/02-line-spline-step-line-charts/spline-chart-with-secondary-axis.html')">02-line-spline-step-line-charts/spline-chart-with-secondary-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,29,'examples/02-line-spline-step-line-charts/spline-chart.html')">02-line-spline-step-line-charts/spline-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,30,'examples/02-line-spline-step-line-charts/step-line-chart.html')">02-line-spline-step-line-charts/step-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,31,'examples/03-stacked-spline-range-area-charts/area-chart.html')">03-stacked-spline-range-area-charts/area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,32,'examples/03-stacked-spline-range-area-charts/multi-series-area-chart.html')">03-stacked-spline-range-area-charts/multi-series-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,33,'examples/03-stacked-spline-range-area-charts/multi-series-range-area-chart.html')">03-stacked-spline-range-area-charts/multi-series-range-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,34,'examples/03-stacked-spline-range-area-charts/multi-series-spline-area-chart.html')">03-stacked-spline-range-area-charts/multi-series-spline-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,35,'examples/03-stacked-spline-range-area-charts/range-area-chart.html')">03-stacked-spline-range-area-charts/range-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,36,'examples/03-stacked-spline-range-area-charts/range-spline-area-chart.html')">03-stacked-spline-range-area-charts/range-spline-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,37,'examples/03-stacked-spline-range-area-charts/spline-area-chart.html')">03-stacked-spline-range-area-charts/spline-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,38,'examples/03-stacked-spline-range-area-charts/stacked-area-100-chart-with-date-time-axis.html')">03-stacked-spline-range-area-charts/stacked-area-100-chart-with-date-time-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,39,'examples/03-stacked-spline-range-area-charts/stacked-area-100-chart.html')">03-stacked-spline-range-area-charts/stacked-area-100-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,40,'examples/03-stacked-spline-range-area-charts/stacked-area-chart.html')">03-stacked-spline-range-area-charts/stacked-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,41,'examples/03-stacked-spline-range-area-charts/step-area-chart.html')">03-stacked-spline-range-area-charts/step-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,42,'examples/04-column-stacked-range-waterfall-charts/bar-chart-with-axis-scale-break.html')">04-column-stacked-range-waterfall-charts/bar-chart-with-axis-scale-break.html</a>
+                                        </li>
+        <li><a onclick="load(this,43,'examples/04-column-stacked-range-waterfall-charts/bar-chart.html')">04-column-stacked-range-waterfall-charts/bar-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,44,'examples/04-column-stacked-range-waterfall-charts/column-chart-with-multiple-axis.html')">04-column-stacked-range-waterfall-charts/column-chart-with-multiple-axis.html</a>
+                                        </li>
+        <li><a onclick="load(this,45,'examples/04-column-stacked-range-waterfall-charts/column-chart.html')">04-column-stacked-range-waterfall-charts/column-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,46,'examples/04-column-stacked-range-waterfall-charts/multi-series-bar-chart.html')">04-column-stacked-range-waterfall-charts/multi-series-bar-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,47,'examples/04-column-stacked-range-waterfall-charts/multi-series-range-column-chart.html')">04-column-stacked-range-waterfall-charts/multi-series-range-column-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,48,'examples/04-column-stacked-range-waterfall-charts/multi-series-waterfall-chart.html')">04-column-stacked-range-waterfall-charts/multi-series-waterfall-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,49,'examples/04-column-stacked-range-waterfall-charts/range-bar-chart.html')">04-column-stacked-range-waterfall-charts/range-bar-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,50,'examples/04-column-stacked-range-waterfall-charts/range-column-chart.html')">04-column-stacked-range-waterfall-charts/range-column-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,51,'examples/04-column-stacked-range-waterfall-charts/stacked-bar-100-chart.html')">04-column-stacked-range-waterfall-charts/stacked-bar-100-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,52,'examples/04-column-stacked-range-waterfall-charts/stacked-bar-chart.html')">04-column-stacked-range-waterfall-charts/stacked-bar-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,53,'examples/04-column-stacked-range-waterfall-charts/stacked-column-100-chart.html')">04-column-stacked-range-waterfall-charts/stacked-column-100-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,54,'examples/04-column-stacked-range-waterfall-charts/stacked-column-chart.html')">04-column-stacked-range-waterfall-charts/stacked-column-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,55,'examples/04-column-stacked-range-waterfall-charts/waterfall-chart-with-custom-color.html')">04-column-stacked-range-waterfall-charts/waterfall-chart-with-custom-color.html</a>
+                                        </li>
+        <li><a onclick="load(this,56,'examples/04-column-stacked-range-waterfall-charts/waterfall-chart.html')">04-column-stacked-range-waterfall-charts/waterfall-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,57,'examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-chart-with-custom-inner-radius.html')">05-pie-doughnut-funnel-pyramid-charts/doughnut-chart-with-custom-inner-radius.html</a>
+                                        </li>
+        <li><a onclick="load(this,58,'examples/05-pie-doughnut-funnel-pyramid-charts/doughnut-Chart.html')">05-pie-doughnut-funnel-pyramid-charts/doughnut-Chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,59,'examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart-with-custom-neck.html')">05-pie-doughnut-funnel-pyramid-charts/funnel-chart-with-custom-neck.html</a>
+                                        </li>
+        <li><a onclick="load(this,60,'examples/05-pie-doughnut-funnel-pyramid-charts/funnel-chart.html')">05-pie-doughnut-funnel-pyramid-charts/funnel-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,61,'examples/05-pie-doughnut-funnel-pyramid-charts/inverted-reversed-funnel-chart.html')">05-pie-doughnut-funnel-pyramid-charts/inverted-reversed-funnel-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,62,'examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-custom-radius.html')">05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-custom-radius.html</a>
+                                        </li>
+        <li><a onclick="load(this,63,'examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-legends.html')">05-pie-doughnut-funnel-pyramid-charts/pie-chart-with-legends.html</a>
+                                        </li>
+        <li><a onclick="load(this,64,'examples/05-pie-doughnut-funnel-pyramid-charts/pie-chart.html')">05-pie-doughnut-funnel-pyramid-charts/pie-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,65,'examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-where-area-represents-value.html')">05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-where-area-represents-value.html</a>
+                                        </li>
+        <li><a onclick="load(this,66,'examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-with-index-label-placed-Inside.html')">05-pie-doughnut-funnel-pyramid-charts/pyramid-chart-with-index-label-placed-Inside.html</a>
+                                        </li>
+        <li><a onclick="load(this,67,'examples/05-pie-doughnut-funnel-pyramid-charts/pyramid-chart.html')">05-pie-doughnut-funnel-pyramid-charts/pyramid-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,68,'examples/06-candlestick-ohlc-charts/candlestick-line-chart.html')">06-candlestick-ohlc-charts/candlestick-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,69,'examples/06-candlestick-ohlc-charts/multi-series-candlestick-chart.html')">06-candlestick-ohlc-charts/multi-series-candlestick-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,70,'examples/06-candlestick-ohlc-charts/ohlc-chart-from-json-data.html')">06-candlestick-ohlc-charts/ohlc-chart-from-json-data.html</a>
+                                        </li>
+        <li><a onclick="load(this,71,'examples/06-candlestick-ohlc-charts/ohlc-stock-chart.html')">06-candlestick-ohlc-charts/ohlc-stock-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,72,'examples/07-scatter-bubble-charts/bubble-chart-with-data-marker.html')">07-scatter-bubble-charts/bubble-chart-with-data-marker.html</a>
+                                        </li>
+        <li><a onclick="load(this,73,'examples/07-scatter-bubble-charts/bubble-chart-with-zoom-pan.html')">07-scatter-bubble-charts/bubble-chart-with-zoom-pan.html</a>
+                                        </li>
+        <li><a onclick="load(this,74,'examples/07-scatter-bubble-charts/bubble-chart.html')">07-scatter-bubble-charts/bubble-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,75,'examples/07-scatter-bubble-charts/multi-series-scatter-point-chart.html')">07-scatter-bubble-charts/multi-series-scatter-point-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,76,'examples/07-scatter-bubble-charts/scatter-point-chart-with-custom-marker.html')">07-scatter-bubble-charts/scatter-point-chart-with-custom-marker.html</a>
+                                        </li>
+        <li><a onclick="load(this,77,'examples/07-scatter-bubble-charts/scatter-point-chart.html')">07-scatter-bubble-charts/scatter-point-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,78,'examples/08-box-and-whisker-charts/box-and-whisker-chart-with-custom-color.html')">08-box-and-whisker-charts/box-and-whisker-chart-with-custom-color.html</a>
+                                        </li>
+        <li><a onclick="load(this,79,'examples/08-box-and-whisker-charts/box-and-whisker-chart-with-outliers.html')">08-box-and-whisker-charts/box-and-whisker-chart-with-outliers.html</a>
+                                        </li>
+        <li><a onclick="load(this,80,'examples/08-box-and-whisker-charts/box-and-whisker-chart.html')">08-box-and-whisker-charts/box-and-whisker-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,81,'examples/09-combination-charts/column-line-area-chart.html')">09-combination-charts/column-line-area-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,82,'examples/09-combination-charts/error-bar-chart.html')">09-combination-charts/error-bar-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,83,'examples/09-combination-charts/error-chart.html')">09-combination-charts/error-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,84,'examples/09-combination-charts/error-line-chart.html')">09-combination-charts/error-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,85,'examples/09-combination-charts/ohlc-line-chart.html')">09-combination-charts/ohlc-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,86,'examples/09-combination-charts/pareto-chart-with-index-data-label.html')">09-combination-charts/pareto-chart-with-index-data-label.html</a>
+                                        </li>
+        <li><a onclick="load(this,87,'examples/09-combination-charts/pareto-chart.html')">09-combination-charts/pareto-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,88,'examples/09-combination-charts/range-area-line-chart.html')">09-combination-charts/range-area-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,89,'examples/10-dynamic-charts/dynamic-column-chart.html')">10-dynamic-charts/dynamic-column-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,90,'examples/10-dynamic-charts/dynamic-line-chart.html')">10-dynamic-charts/dynamic-line-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,91,'examples/10-dynamic-charts/dynamic-multi-series-chart.html')">10-dynamic-charts/dynamic-multi-series-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,92,'examples/11-integration/jquery-charts.html')">11-integration/jquery-charts.html</a>
+                                        </li>
+        <li><a onclick="load(this,93,'examples/11-integration/jquery-line-chart-with-zoom-pan.html')">11-integration/jquery-line-chart-with-zoom-pan.html</a>
+                                        </li>
+        <li><a onclick="load(this,94,'examples/11-integration/jquery-resizable-chart.html')">11-integration/jquery-resizable-chart.html</a>
+                                        </li>
+        <li><a onclick="load(this,95,'examples/11-integration/jquery-spline-area-chart-in-tab.html')">11-integration/jquery-spline-area-chart-in-tab.html</a>
+                                        </li>
+        <li><a onclick="load(this,96,'examples/11-integration/jquery-spline-chart-with-image-export.html')">11-integration/jquery-spline-chart-with-image-export.html</a>
+                                        </li>
+        </ul>
+        
+        
+
+        </div>
+        <div class="column-75" style="border: thick solid #CC22FF;
+                overflow:scroll;
+                -webkit-overflow-scrolling: touch;">
+            <iframe id="myiframe" width="100%" height="100%" src="">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        var currIndex = 0;
+
+        function load(elem, idx, srcc) {
+            console.log('src ' + srcc);
+            var ifrm = document.getElementById('myiframe');
+            var clickedItemDisplay = document.getElementById('clickedItemDisplayId');
+            var liList = document.getElementsByTagName('a');
+            for (var i = 0; i < liList.length; i++) {
+                liList[i].classList.remove('activeLink');
+            }
+            currIndex = idx;
+            elem.classList.add('activeLink');
+            clickedItemDisplay.textContent = '';
+            clickedItemDisplay.textContent = srcc;
+            ifrm.src = srcc;
+        }
+
+
+        function iterateAnchor(increment) {
+
+            var liList = document.getElementsByTagName('a');
+            currIndex = ((currIndex + increment + liList.length) % (liList.length));
+            console.log('increment : ' + increment + '  |  currIndex : ' + currIndex);
+
+            // liList[currIndex].scrollTo({
+            //         top: 100,
+            //         left: 100,
+            //         behavior: 'smooth'
+            // });
+            liList[currIndex].click();
+            liList[currIndex].scrollIntoView();
+        }
+
+        function bodyKeyDownEventListener(event) {
+            var x = event.key;
+            console.log(' key : ' + x);
+            switch (x) {
+                case 'p':
+                case 'P':
+                case 'ArrowUp':
+                    iterateAnchor(-1); break;
+                case 'n':
+                case 'N':
+                case 'ArrowDown':
+                    iterateAnchor(1); break;
+                default:
+                    //console.log(' key : '+x); 
+                    break;
+            }
+        }
+
+        var myInitFunc = function onInit() {
+            iterateAnchor(0);
+        }
+
+        myInitFunc();
+
+    </script>
+
+</body>
+
+</html>

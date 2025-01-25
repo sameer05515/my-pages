@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#grad1 {
+  height: 200px;
+  background-color: #cccccc;
+  background-image: linear-gradient(red, yellow);
+}
+</style>
+<script>
+    function toggle(){
+        var grad1Div=document.getElementById('grad1');
+        if (document.getElementById("set3ColorGradient").checked == true) {
+            grad1Div.style.backgroundImage = "linear-gradient(red, yellow, green, white , black)";
+            
+        } else {
+            grad1Div.style.backgroundImage = "linear-gradient(red, yellow)";
+            
+        }
+
+    }
+    
+
+</script>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_background-image.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;">CSS background-image Property</h1>
+<h2 style="background-color: darkgrey;">Sets a linear-gradient (two colors) as a background image for a <div> element:</h2>
+</div>
+
+<h2>Linear Gradient as Background Image</h2>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+Set 5 color as linear-gradient: <input type="checkbox" id="set3ColorGradient" onchange="toggle()">
+<div id="grad1"></div>
+
+<p><strong>Note:</strong> Internet Explorer 9 and earlier versions do not support gradients.</p>
+
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>MyResume</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .myCell {
+            border-style: ridge;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center">
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+            <h1>Premendra Kumar</h1>
+            <p>I'm <span class="typed" data-typed-items="Backend Developer, Fullstack Developer, Freelancer"></span></p>
+            <div class="social-links">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+
+                <div class="card">
+                    <div class="row">
+                        <div class="myCell col-sm-3">
+                            <b>Company:- Name, Time Line & Type of Projects</b>
+                        </div>
+                        <div class="myCell col-sm">
+                            <b>Layers and Technologies used</b>
+                        </div>
+                    </div>
+
+                    <div id="mydata"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        const myData = [
+            {
+                companyName: 'EVC Ventures',
+                timeline: 'Dec 2022 to Feb 2023',
+                domain: 'Service Based, For Educational Institutions',
+                projects: [
+                    {
+                        name: 'IITD-Admin',
+                        type: 'Web Application',
+                        timeline: 'Dec 2022 to Feb 2023',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: false,
+                        roleAndResponsibilities: [
+                            'Worked to add JavaMelody and ShedLock to monitor and improve performance of application',
+                            'Added code for new requirements (Store and Purchase module)'
+                        ],
+                        layers: [
+                            {
+                                name: 'Backend',
+                                technologies: ['Spring Boot', 'Spring Security', 'MyBatis', 'MySQL', 'Tomcat']
+                            },
+                            {
+                                name: 'Frontend',
+                                technologies: ['ReactJS']
+                            },
+                            {
+                                name: 'Application Server',
+                                technologies: ['Tomcat']
+                            },
+                            {
+                                name: 'Database',
+                                technologies: ['MySql']
+                            },
+                            {
+                                name: 'Version Control',
+                                technologies: ['Github']
+                            },
+                            {
+                                name: 'CI/CD',
+                                technologies: ['Jenkins', 'Github-Actions']
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'RSystems International Pvt Ltd',
+                timeline: 'Oct 2021 - Dec 2022',
+                domain: 'Service Based',
+                projects: [
+                    {
+                        name: 'Ephesoft Transact',
+                        type: 'Web Application',
+                        timeline: 'Oct 2021 - Dec 2022',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+                            'Worked for integration of 3rd party Rest API (SRE API) into main backend application.',
+                            'Wrote JUnit test cases for newly added codes',
+                            'Worked as Scrum master. I was responsible for creating sprint, post sprint planning. Also I had tracked the assigned tasks of different team members.',
+                            'Created Frontend pages in react, which consumes the backend REST apis.',
+                            'Wrote github actions to create build, check sonar issues, publish artifacts on AWS S3.',
+                            'Developed rest services to extract groups , keys and values from HOCR file created from SRE service, using java regular expression'
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: ['Java/Jee', 'GWT', 'ReactJS', 'Spring Boot', 'Spring Rest']
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'Dhani stocks Limited',
+                timeline: 'Sep 2019 - Oct 2021',
+                domain: 'Financial',
+                projects: [
+                    {
+                        name: 'ShubhWeb',
+                        type: 'Web Application',
+                        timeline: 'Sep 2019 - Oct 2021',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+                            'Implemented 3rd party NSDL AND CDSL eDIS Apis into shubhweb application as per specification documents.',
+                            'Created views in ReactJS to capture eDIS data',
+                            'Migrated codebase from SVN to GitHub.',
+                            'Worked as TeamLead to mentor new developers.',
+                            'Communicated with other teams (Backoffice team, Architects, NSDL/CDSL Team) to discuss requirements, finalize design, database tables, api discussion.'
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: ['Java/Jee', 'ReactJs', 'Nodejs', 'Spring Boot', 'Spring Rest']
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Notis API',
+                        type: 'Utility Application',
+                        timeline: 'Sep 2019 - Oct 2021',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'JasperReports',
+                        type: 'Utility Application',
+                        timeline: 'Sep 2019 - Oct 2021',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'Concentrix Daksh Services India Private Limited',
+                timeline: 'Jan 2014 to Sep 2019',
+                domain: 'BPO',
+                projects: [
+                    {
+                        name: 'GIP',
+                        type: 'Web Application',
+                        timeline: 'Jan 2019 to Sep 2019',
+                        monolith: false,
+                        microservice: true,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Gain Manager',
+                        type: 'Web Application',
+                        timeline: 'Nov 2017 to Sep 2019',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'ResolveJiffy',
+                        type: 'Web Application',
+                        timeline: 'Jan 2019 to Sep 2019',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Zetta',
+                        type: 'Web Application',
+                        timeline: 'June 2015 to Mar 2017',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Econvey',
+                        type: 'Web Application',
+                        timeline: 'Jan 2014 to May 2015',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Webdots',
+                        type: 'Web Application',
+                        timeline: 'Jan 2014 to May 2015',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'QAA',
+                        type: 'Web Application',
+                        timeline: 'Jan 2014 to May 2015',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+
+                ]
+            },
+            {
+                companyName: 'Accenture',
+                timeline: 'Mar 2017 to July 2017',
+                domain: 'Service Based',
+                projects: [
+                    {
+                        name: 'ZVR4',
+                        type: 'Utility Application',
+                        timeline: 'Mar 2017 to July 2017',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'Novelvox Software India Pvt Ltd (previously known as Integration Services & Technologies India PVT LTD)',
+                timeline: 'May 2012 to Dec 2013',
+                domain: 'Service Based',
+                projects: [
+                    {
+                        name: 'iAgent 4.0',
+                        type: 'Web Application',
+                        timeline: 'May 2012 to Dec 2013',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'Survey',
+                        type: 'Web Application',
+                        timeline: 'May 2012 to Dec 2013',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    },
+                    {
+                        name: 'KnowledgeBase',
+                        type: 'Web Application',
+                        timeline: 'May 2012 to Dec 2013',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'HCL Infosystems Ltd',
+                timeline: 'March 2011 to May 2012',
+                domain: 'Service Based',
+                projects: [
+                    {
+                        name: 'CIPRUS',
+                        type: 'Desktop Swing Application',
+                        timeline: 'March 2011 to May 2012',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+                ]
+            },
+            {
+                companyName: 'GreenApple WebWare',
+                timeline: 'Sept 2009 to Feb 2011',
+                domain: 'Service Based',
+                projects: [
+                    {
+                        name: 'OSCART-Online Shopping Cart',
+                        type: 'Web Application',
+                        timeline: 'Sept 2009 to Feb 2011',
+                        monolith: true,
+                        microservice: false,
+                        multiModule: true,
+                        roleAndResponsibilities: [
+
+                        ],
+                        layers: [
+                            {
+                                name: 'Technology Stack',
+                                technologies: []
+                            }
+                        ]
+
+                    }
+                ]
+            }
+        ];
+
+        const getProjectLayersStr = (layers) => {
+            return layers.reduce((cStr, layer) => {
+                return cStr + '\n' + `
+                    <li>
+                        <b>${layer.name} :- </b> 
+                        ${layer.technologies.reduce((cStr1, tech) => {
+                    return cStr1 + (cStr1 !== '' ? ', ' : '') + tech;
+                }, '')}                                
+                    </li>
+                    `;
+            }, '');
+        }
+
+        const getTechAndLayers = (projects) => {
+            return projects.reduce((concatenatedStr, project) => {
+                return concatenatedStr + '\n' + `
+                <b>${project.name}:- </b>  (${project.timeline}) <br/>
+                
+                <b>Technologies:-</b>
+                <ul>
+                ${getProjectLayersStr(project.layers)}
+                </ul>
+
+                <br/>
+                <b>Role & Responsibilities:-</b>
+                <ul>
+                    ${project.roleAndResponsibilities.reduce((rRStr, rNR) => { return rRStr + '\n' + `<li> ${rNR} </li>` }, '')
+                    }
+                </ul>
+
+                <hr/> 
+                `;
+            }, '<hr/>')
+        }
+
+        const getProjectsStr = (projects) => {
+            return projects.reduce((concatenatedStr, project) => {
+                return concatenatedStr + '\n' + `
+                <li>
+                    <b> ${project.name} </b> (${project.timeline})
+                </li>
+                `;
+            }, '<ul>') + '</ul>';
+        }
+
+        const reducedHTML = myData.reduce((concatenatedStr, data) => {
+            return concatenatedStr + '\n' + `
+            <div class="row">                
+                <div class="myCell col-sm-3">
+                    <b>Company:- </b> ${data.companyName} <br/>
+                    <b>Domain:- </b> ${data.domain} <br/>
+                    <b>Time Line:- </b> ${data.timeline} <br/>
+                    <b>Projects:- </b> ${getProjectsStr(data.projects)}
+
+                </div>
+                <div class="myCell col-sm">                    
+                    ${getTechAndLayers(data.projects)}
+                </div>
+            </div>
+            `;
+        }, '');
+
+
+
+        console.log(reducedHTML);
+
+        document.getElementById('mydata').innerHTML = reducedHTML;
+    </script>
+
+</body>
+
+</html>

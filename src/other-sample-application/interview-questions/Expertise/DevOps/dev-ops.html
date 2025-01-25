@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Ops</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <script src="../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+
+        <div class="box-prem">
+            <ul>
+                <li>Heroku used to deploy app on public domain</li>
+                <li>
+                    Studying from
+                    <a href="https://www.javatpoint.com/devops" target="_blank">
+                        DevOps Tutorial
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h2>What is Dev-Ops?</h2>
+            <p><span>The DevOps is a combination of two words, one is software Development, and second is Operations.
+                    This allows a single team to handle the entire application lifecycle, from development
+                    to&nbsp;</span><strong>testing, deployment</strong><span>,
+                    and&nbsp;</span><strong>operations</strong><span>. DevOps helps you to reduce the disconnection
+                    between software developers, quality assurance (QA) engineers, and system administrators.</span></p>
+            <p>DevOps helps to increase organization speed to deliver applications and services. It also allows
+                organizations to serve their customers better and compete more strongly in the market.</p>
+            <p>DevOps can also be defined as a sequence of development and IT operations with better communication and
+                collaboration.</p>
+            <p>DevOps has become one of the most valuable business disciplines for enterprises or organizations. With
+                the help of DevOps,<span>&nbsp;</span><strong>quality</strong>,
+                and<span>&nbsp;</span><strong>speed</strong><span>&nbsp;</span>of the application delivery has improved
+                to a great extent.</p>
+            <p>DevOps is nothing but a practice or methodology of making "<strong>Developers</strong>" and
+                "<strong>Operations</strong>" folks work together. DevOps represents a change in the IT culture with a
+                complete focus on rapid IT service delivery through the adoption of agile practices in the context of a
+                system-oriented approach.</p>
+            <p>DevOps is all about the integration of the operations and development process. Organizations that have
+                adopted DevOps noticed a 22% improvement in software quality and a 17% improvement in application
+                deployment frequency and achieve a 22% hike in customer satisfaction. 19% of revenue hikes as a result
+                of the successful DevOps implementation.</p>
+        </div>
+
+        <div class="box-prem">
+            <h2 id="Why" class="h2">Why DevOps?</h2>
+            <p>Before going further, we need to understand why we need the DevOps over the other methods.</p>
+            <ul class="points">
+                <li>The operation and development team worked in complete isolation.</li>
+                <li>After the design-build, the testing and deployment are performed respectively. That's why they
+                    consumed more time than actual build cycles.</li>
+                <li>Without the use of DevOps, the team members are spending a large amount of time on designing,
+                    testing, and deploying instead of building the project.</li>
+                <li>Manual code deployment leads to human errors in production.</li>
+                <li>Coding and operation teams have their separate timelines and are not in synch, causing further
+                    delays.</li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h2 id="Advantages" class="h2">DevOps Advantages and Disadvantages</h2>
+            <p>Here are some advantages and disadvantages that DevOps can have for business, such as:</p>
+
+            <div class="box-prem">
+                <h3 class="h3">Advantages</h3>
+                <ul class="points">
+                    <li>DevOps is an excellent approach for quick development and deployment of applications.</li>
+                    <li>It responds faster to the market changes to improve business growth.</li>
+                    <li>DevOps escalate business profit by decreasing software delivery time and transportation costs.
+                    </li>
+                    <li>DevOps clears the descriptive process, which gives clarity on product development and delivery.
+                    </li>
+                    <li>It improves customer experience and satisfaction.</li>
+                    <li>DevOps simplifies collaboration and places all tools in the cloud for customers to access.</li>
+                    <li>DevOps means collective responsibility, which leads to better team engagement and productivity.
+                    </li>
+                </ul>
+            </div>
+            <div class="box-prem">
+                <h3 class="h3">Disadvantages</h3>
+                <ul class="points">
+                    <li>DevOps professional or expert's developers are less available.</li>
+                    <li>Developing with DevOps is so expensive.</li>
+                    <li>Adopting new DevOps technology into the industries is hard to manage in short time.</li>
+                    <li>Lack of DevOps knowledge can be a problem in the continuous integration of automation projects.
+                    </li>
+                </ul>
+            </div>
+            <div class="box-prem">
+                <p><span>To learn DevOps, you should have basic knowledge of&nbsp;</span><strong>Linux</strong><span>,
+                        and at least one&nbsp;</span><strong>Scripting language</strong><span>.</span></p>
+            </div>
+        </div>
+
+        <div class="box-prem">
+            <h2>DevOps Architecture</h2>
+            <img src="../../lib/images/devops-architecture.png" style="width: 100;height: 100;"
+                alt="DevOps Architecture"><br>
+            <img src="../../lib/images/devops-components.png" style="width: 100;height: 100;"
+                alt="DevOps Architecture"><br>
+            <div class="box-yellow">
+                <h3 class="h3">1) Build</h3>
+                <p>Without DevOps, the cost of the consumption of the resources was evaluated based on the pre-defined
+                    individual usage with fixed hardware allocation. And with DevOps, the usage of cloud, sharing of
+                    resources comes into the picture, and the build is dependent upon the user's need, which is a
+                    mechanism to control the usage of resources or capacity.</p>
+                <h3 class="h3">2) Code</h3>
+                <p>Many good practices such as Git enables the code to be used, which ensures writing the code for
+                    business, helps to track changes, getting notified about the reason behind the difference in the
+                    actual and the expected output, and if necessary reverting to the original code developed. The code
+                    can be appropriately arranged in<span>&nbsp;</span><strong>files, folders</strong>, etc. And they
+                    can be reused.</p>
+                <h3 class="h3">3) Test</h3>
+                <p>The application will be ready for production after testing. In the case of manual testing, it
+                    consumes more time in testing and moving the code to the output. The testing can be automated, which
+                    decreases the time for testing so that the time to deploy the code to production can be reduced as
+                    automating the running of the scripts will remove many manual steps.</p>
+                <h3 class="h3">4) Plan</h3>
+                <p>DevOps use Agile methodology to plan the development. With the operations and development team in
+                    sync, it helps in organizing the work to plan accordingly to increase productivity.</p>
+
+                <h3 class="h3">5) Monitor</h3>
+                <p>Continuous monitoring is used to identify any risk of failure. Also, it helps in tracking the system
+                    accurately so that the health of the application can be checked. The monitoring becomes more
+                    comfortable with services where the log data may get monitored through many third-party tools such
+                    as<span>&nbsp;</span><strong>Splunk</strong>.</p>
+                <h3 class="h3">6) Deploy</h3>
+                <p>Many systems can support the scheduler for automated deployment. The cloud management platform
+                    enables users to capture accurate insights and view the optimization scenario, analytics on trends
+                    by the deployment of dashboards.</p>
+                <h3 class="h3">7) Operate</h3>
+                <p>DevOps changes the way traditional approach of developing and testing separately. The teams operate
+                    in a collaborative way where both the teams actively participate throughout the service lifecycle.
+                    The operation team interacts with developers, and they come up with a monitoring plan which serves
+                    the IT and business requirements.</p>
+                <h3 class="h3">8) Release</h3>
+                <p>Deployment to an environment can be done by automation. But when the deployment is made to the
+                    production environment, it is done by manual triggering. Many processes involved in release
+                    management commonly used to do the deployment in the production environment manually to lessen the
+                    impact on the customers.</p>
+
+            </div>
+        </div>
+        <!-- ./ DevOps Architecture -->
+
+        <div class="box-prem">
+            <h1 class="h1">DevOps Lifecycle</h1>
+            <p>DevOps defines an agile relationship between operations and Development. It is a process that is
+                practiced by the development team and operational engineers together from beginning to the final stage
+                of the product.</p>
+            <img src="../../lib/images/devops-lifecycle.png" style="width: 100;height: 100;"
+                alt="DevOps Architecture"><br>
+        </div>
+
+        <div class="box-prem">
+            <h1 class="h1">DevOps Tools</h1>
+            <p>Here are some most popular DevOps tools with brief explanation shown in the below image, such as:</p>
+            <img src="../../lib/images/devops-tools.png" style="width: 100;height: 100;" alt="DevOps Tools"><br>
+        </div>
+
+        <div class="box-prem">
+            <h2 id="Roles" class="h2">DevOps Engineer Roles and Responsibilities</h2>
+            <p>DevOps engineers work full time. They are responsible for the production and continuing maintenance of a
+                software application platform.</p>
+            <p>Below are some roles, responsibilities, and skills which are expected from DevOps engineers, such as:</p>
+            <ul class="points">
+                <li>Manage projects effectively through an open standard based platform.</li>
+                <li>Increases project visibility through traceability.</li>
+                <li>Improve quality and reduce the development cost with collaboration.</li>
+                <li>DevOps should have the soft skill of problem solver and a quick learner.</li>
+                <li>Analyze, design, and evaluate automation scripts and systems.</li>
+                <li>Able to perform system troubleshooting and problem-solving across the platform and application
+                    domains.</li>
+                <li>Ensuring the critical resolution of system issues by using the best cloud security solution
+                    services.</li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h2 id="Methodology" class="h2">DevOps Methodology</h2>
+            <p>We have a demonstrated methodology that takes an approach to cloud adoption. It accounts for all the
+                factors required for successful approval such as people, process, and technology, resulting in a focus
+                on the following critical consideration:</p>
+            <ul class="points">
+                <li><strong>The Teams:</strong><span>&nbsp;</span>Mission or project and cloud management.</li>
+                <li><strong>Connectivity:</strong><span>&nbsp;</span>Public, on-premise, and hybrid cloud network
+                    access.</li>
+                <li><strong>Automation:</strong><span>&nbsp;</span>Infrastructure as code, scripting the orchestration
+                    and deployment of resources.</li>
+                <li><strong>On-boarding Process:</strong><span>&nbsp;</span>How the project gets started in the cloud.
+                </li>
+                <li><strong>Project Environment:</strong><span>&nbsp;</span>TEST, DEV, PROD (identical deployment,
+                    testing, and production).</li>
+                <li><strong>Shared Services:</strong><span>&nbsp;</span>Common capabilities provided by the enterprise.
+                </li>
+                <li><strong>Naming Conventions:</strong><span>&nbsp;</span>Vital aspect to track resource utilization
+                    and billing.</li>
+                <li><strong>Defining Standards Role across the Teams:</strong><span>&nbsp;</span>Permissions to access
+                    resources by job function.</li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h1 class="h1">AWS DevOps</h1>
+            <p>AWS is the best cloud service provider, and DevOps is the implementation of the software development
+                lifecycle.</p>
+            <p>Here are some reasons which make AWS DevOps a highly popular combination, such as:</p>
+            <ul class="points">
+                <li>AWS CloudFormation</li>
+                <li>AWS EC2</li>
+                <li>AWS CloudWatch</li>
+                <li>AWS CodePipeline</li>
+            </ul>
+            <p>Let's see all of these by one in brief such as:</p>
+
+            <div class="box-yellow">
+                <h3 class="h3">AWS CloudFormation</h3>
+                <p>DevOps team is required to create and release cloud instances and services more frequently in
+                    comparison to development teams. Templates of AWS resources such as EC2 instances, ECS containers,
+                    and S3 storage buckets let you set up the entire stack without having to bring everything together.
+                </p>
+            </div>
+
+            <div class="box-yellow">
+                <h3 class="h3">AWS EC2</h3>
+                <p>You can run containers inside EC2 instances. Hence you can leverage the AWS security and management
+                    features.</p>
+            </div>
+
+            <div class="box-yellow">
+                <h3 class="h3">AWS CloudWatch</h3>
+                <p>This monitoring tool tracks every resource that AWS has to offer. It makes it easy to use third-party
+                    tools for monitoring such as sumo logic etc.</p>
+            </div>
+
+            <div class="box-yellow">
+                <h3 class="h3">AWS CodePipeline</h3>
+                <p>Code Pipeline is an essential feature from AWS, which highly simplifies the way you manage your CI/CD
+                    toolset. It integrates with tools such as<span>&nbsp;</span><strong>Jenkins, GitHub</strong>, and
+                    CodeDeploy that enable you to visually control the flow of app updates from build to production.</p>
+            </div>
+        </div>
+
+        <div class="box-prem">
+            <h2>DevOps vs Agile</h2>
+            <p><strong>Below are some essential differences between the DevOps and Agile:</strong></p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>DevOps</th>
+                        <th>Agile</th>
+                    </tr>
+                    <tr>
+                        <td>Definition</td>
+                        <td>DevOps is a practice of bringing development and operation teams together.</td>
+                        <td>Agile refers to the continuous iterative approach, which focuses on collaboration, customer
+                            feedback, small, and rapid releases.</td>
+                    </tr>
+                    <tr>
+                        <td>Purpose</td>
+                        <td>DevOps purpose is to manage end to end engineering processes.</td>
+                        <td>The agile purpose is to manage complex projects.</td>
+                    </tr>
+                    <tr>
+                        <td>Task</td>
+                        <td>It focuses on constant testing and delivery.</td>
+                        <td>It focuses on constant changes.</td>
+                    </tr>
+                    <tr>
+                        <td>Team size</td>
+                        <td>It has a large team size as it involves all the stack holders.</td>
+                        <td>It has a small team size. As smaller is the team, the fewer people work on it so that they
+                            can move faster.</td>
+                    </tr>
+                    <tr>
+                        <td>Team skillset</td>
+                        <td>The DevOps divides and spreads the skill set between development and the operation team.
+                        </td>
+                        <td>The Agile development emphasizes training all team members to have a wide variety of similar
+                            and equal skills.</td>
+                    </tr>
+                    <tr>
+                        <td>Implementation</td>
+                        <td>DevOps is focused on collaboration, so it does not have any commonly accepted framework.
+                        </td>
+                        <td>Agile can implement within a range of tactical frameworks such as&nbsp;<strong>safe,
+                                scrum</strong>, and&nbsp;<strong>sprint</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>The ideal goal is to deliver the code to production daily or every few hours.</td>
+                        <td>Agile development is managed in units of sprints. So this time is much less than a month for
+                            each sprint.</td>
+                    </tr>
+                    <tr>
+                        <td>Target areas</td>
+                        <td>End to End business solution and fast delivery.</td>
+                        <td>Software development.</td>
+                    </tr>
+                    <tr>
+                        <td>Feedback</td>
+                        <td>Feedback comes from the internal team.</td>
+                        <td>In Agile, feedback is coming from the customer.</td>
+                    </tr>
+                    <tr>
+                        <td>Shift left principle</td>
+                        <td>It supports both variations left and right.</td>
+                        <td>It supports only shift left.</td>
+                    </tr>
+                    <tr>
+                        <td>Focus</td>
+                        <td>DevOps focuses on operational and business readiness.</td>
+                        <td>Agile focuses on functional and non-functional readiness.</td>
+                    </tr>
+                    <tr>
+                        <td>Importance</td>
+                        <td>In DevOps, developing, testing, and implementation all are equally important.</td>
+                        <td>Developing software is inherent to Agile.</td>
+                    </tr>
+                    <tr>
+                        <td>Quality</td>
+                        <td>DevOps contributes to creating better quality with automation and early bug removal.
+                            Developers need to follow Coding and best Architectural practices to maintain quality
+                            standards.</td>
+                        <td>The Agile produces better applications suites with the desired requirements. It can quickly
+                            adapt according to the changes made on time during the project life.</td>
+                    </tr>
+                    <tr>
+                        <td>Tools</td>
+                        <td><strong>Puppet, Chef, AWS, Ansible</strong>, and team City OpenStack are popular DevOps
+                            tools.</td>
+                        <td><strong>Bugzilla, Kanboard, JIRA</strong>&nbsp;are some popular Agile tools.</td>
+                    </tr>
+                    <tr>
+                        <td>Automation</td>
+                        <td>Automation is the primary goal of DevOps. It works on the principle of maximizing efficiency
+                            when deploying software.</td>
+                        <td>Agile does not emphasize on the automation.</td>
+                    </tr>
+                    <tr>
+                        <td>Communication</td>
+                        <td>DevOps communication involves specs and design documents. It is essential for the
+                            operational team to fully understand the software release and its network implications for
+                            the enough running the deployment process.</td>
+                        <td>Scrum is the most common method of implementing Agile software development. Scrum meeting is
+                            carried out daily.</td>
+                    </tr>
+                    <tr>
+                        <td>Documentation</td>
+                        <td>In the DevOps, the process documentation is foremost because it will send the software to an
+                            operational team for deployment. Automation minimizes the impact of insufficient
+                            documentation. However, in the development of sophisticated software, it&#39;s difficult to
+                            transfer all the knowledge required.</td>
+                        <td>The agile method gives priority to the working system over complete documentation. It is
+                            ideal when you are flexible and responsive. However, it can harm when you are trying to turn
+                            things over to another team for deployment.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="box-prem">
+            <h1>DevOps Interview Questions</h1>
+
+            <p>A list of frequently asked&nbsp;<strong>DevOps Interview Questions</strong>&nbsp;and Answers are given
+                below.</p>
+
+            <h3>1) Explain DevOps?</h3>
+
+            <p>The DevOps is a combination of two words one is software Development, and second is Operations. It allows
+                a single team to handle the entire application lifecycle, from development to&nbsp;<strong>testing,
+                    deployment,</strong>&nbsp;and&nbsp;<strong>operations</strong>. DevOps helps you to reduce the
+                disconnection between software developers, quality assurance (QA) engineers, and system administrators.
+            </p>
+
+            <hr />
+            <h3>2) What are the principles of DevOps?</h3>
+
+            <p>The principles behind DevOps are:</p>
+
+            <ul>
+                <li>Continuous deployment</li>
+                <li>Infrastructure as code</li>
+                <li>Automation</li>
+                <li>Monitoring</li>
+                <li>Security</li>
+            </ul>
+
+            <hr />
+            <h3>3) How DevOps is helpful to developers?</h3>
+
+            <p>DevOps is very helpful for developers to fix the bugs and quickly implement the new features. It also
+                helps in more transparent communication between the team members.</p>
+
+            <hr />
+            <h3>4) Explain some popular tools of DevOps?</h3>
+
+            <p>Here are some popular tools of DevOps, such as:</p>
+
+            <ol>
+                <li><strong>Jenkins:</strong>&nbsp;Jenkins is a DevOps tool for monitoring the execution of repeated
+                    tasks. Jenkins is a software that allows continuous integration. And it will be installed on a
+                    server where the central build will take place.</li>
+                <li><strong>Ansible:</strong>&nbsp;Ansible is a leading DevOps tool. Ansible is an open-source IT engine
+                    that automates application deployment, cloud provisioning, intra service orchestration, and other IT
+                    tools.</li>
+                <li><strong>Nagios:</strong>&nbsp;Nagios is one of the more useful tools for DevOps. It can determine
+                    the errors and rectify them with the help of network, infrastructure, server, and log monitoring
+                    systems.</li>
+                <li><strong>Docker:</strong>&nbsp;Docker is a high-end DevOps tool that allows building, ship, and run
+                    distributed applications on multiple systems.</li>
+                <li><strong>Git:</strong>&nbsp;Git is an&nbsp;<strong>open-source distributed version control
+                        system</strong>&nbsp;that is freely available for everyone. It is designed to handle minor to
+                    major projects with speed and efficiency.</li>
+            </ol>
+
+            <hr />
+            <h3>5) What are the prerequisites for the DevOps implementation?</h3>
+
+            <p>Following are some useful prerequisites for DevOps implementation:</p>
+
+            <ul>
+                <li>Proper communication between the team members.</li>
+                <li>At least one version control software.</li>
+                <li>Automated testing.</li>
+                <li>Automated deployment.</li>
+            </ul>
+
+            <hr />
+            <h3>6) What are the core operation of DevOps with application development and infrastructure?</h3>
+
+            <p>The core operation of DevOps with application development and infrastructure are:</p>
+
+            <p><strong>Application development</strong></p>
+
+            <ul>
+                <li>Code building</li>
+                <li>Code coverage</li>
+                <li>Unit testing</li>
+                <li>Packaging</li>
+                <li>Deployment</li>
+            </ul>
+
+            <p><strong>Infrastructure</strong></p>
+
+            <ul>
+                <li>Provisioning</li>
+                <li>Configuration</li>
+                <li>Orchestration</li>
+                <li>Deployment</li>
+            </ul>
+
+            <hr />
+            <h3>7) What are the key components of DevOps?</h3>
+
+            <p>The most important key components of DevOps are:</p>
+
+            <ul>
+                <li>Continuous integration</li>
+                <li>Continuous testing</li>
+                <li>Continuous delivery</li>
+                <li>Continuous mongering</li>
+            </ul>
+
+            <hr />
+            <h3>8) What is Vagrant?</h3>
+
+            <p>A Vagrant is a tool of DevOps that can create and manage virtualized environments for testing and
+                developing software.</p>
+
+            <hr />
+            <h3>9) What are the technical and business benefits of DevOps work culture?</h3>
+
+            <p>Following are the technical and business benefits of DevOps work culture:</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Technical benefits</strong></p>
+
+            <ul>
+                <li>Less complex problems to fix.</li>
+                <li>Continuous software delivery.</li>
+                <li>Faster bugs resolution.</li>
+            </ul>
+
+            <p><strong>Business benefits</strong></p>
+
+            <ul>
+                <li>Most stable operating environments.</li>
+                <li>More time available to add product value.</li>
+                <li>Faster delivery of features for customer satisfaction.</li>
+            </ul>
+
+            <hr />
+            <h3>10) What is Scrum?</h3>
+
+            <p>Scrum is used to divide a sophisticated software and product development task into smaller chunks using
+                iterations and increasing practices. Scrum consist of three roles, such as:</p>
+
+            <ol>
+                <li>Product owner</li>
+                <li>Scrum master</li>
+                <li>Team</li>
+            </ol>
+
+            <hr />
+            <h3>11) What is version control?</h3>
+
+            <p>It is a system that records the changes to a file or set of files over time so you can recall specific
+                versions.</p>
+
+            <p>The version control system consists of a central shared repository where teammates can commit the changes
+                to a file or set of files. It allows:</p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li>To revert the file to the previous state.</li>
+                <li>To compare changes over time.</li>
+                <li>To revert the entire project to a previous state.</li>
+                <li>To see who modified something in the files.</li>
+            </ul>
+
+            <hr />
+            <h3>12) Which scripting tools are used in DevOps?</h3>
+
+            <p>Both Python and Ruby scripting tools are used in the DevOps.</p>
+
+            <hr />
+            <h3>13) What is the role of AWS in DevOps?</h3>
+
+            <p>AWS is a cloud-based service provided by Amazon that ensures scalability through unlimited computing
+                power and storage. It empowers IT enterprises to develop and deliver experienced products and deploy
+                applications on the cloud.</p>
+
+            <hr />
+            <h3>14) Why open source tools boost DevOps?</h3>
+
+            <p>Open source tools mainly used by any organization which is adapted by DevOps pipeline because DevOps came
+                with the focus of automation in various aspects of organization build, release, change management, and
+                infrastructure management areas.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>15) What is the need for organization playbooks as the role?</h3>
+
+            <p>Organization playbooks as the role give more reliability and reusability to any plays while considering a
+                task where MySQL installation should be done after the removal of Oracle DB. You need another
+                requirement to install MySQL after java installation. In both cases, you need to install MySQL, but
+                without roles, it needs to write playbooks separately for both use cases. Still, once using roles, the
+                MySQL installation role is created can be utilized any number of times by invoking using logic
+                in&nbsp;<strong>site.yaml</strong>.</p>
+
+            <hr />
+            <h3>16) How many cloud platform which is used for DevOps implementation?</h3>
+
+            <p>Here are some cloud computing platform used for DevOps implementation, such as:</p>
+
+            <ul>
+                <li>Google Cloud</li>
+                <li>Amazon Web Services</li>
+                <li>Microsoft Azure</li>
+            </ul>
+
+            <hr />
+            <h3>17) Explain two-factor authentication?</h3>
+
+            <p>The two-factor authentication is a security method in which the user provides two ways of identification
+                from separate categories.</p>
+
+            <hr />
+            <h3>18) What is the use of PTR in DNS?</h3>
+
+            <p>PTR is a pointer record that is used for a reverse DNS lookup.</p>
+
+            <hr />
+            <h3>19) Name some network monitoring tools?</h3>
+
+            <p>Some most essential network monitoring tools are:</p>
+
+            <ul>
+                <li>Nagios</li>
+                <li>OpenNMS</li>
+                <li>Splunk</li>
+                <li>Icinga 2</li>
+                <li>Wireshark</li>
+            </ul>
+
+            <hr />
+            <h3>20) Name three important DevOps KPIs?</h3>
+
+            <p>Three most important DevOps KPIs are:</p>
+
+            <ul>
+                <li>Deployment frequency</li>
+                <li>Percentage of failed deployments</li>
+                <li>Mean time to failure recovery</li>
+            </ul>
+
+            <hr />
+            <h3>21) Explain pair programming regarding DevOps?</h3>
+
+            <p>Pair programming is an engineering practice of Extreme Programming Rules. In this case, two programmers
+                work on the same system on the same design or algorithm.</p>
+
+            <p>One programmer act as a&nbsp;<strong>Driver</strong>&nbsp;and other as
+                an&nbsp;<strong>Observer</strong>&nbsp;who continuously monitors the progress of a project to identify
+                problems. The roles can be reversed at any point of time without any prior intimation.</p>
+
+            <hr />
+            <h3>22) What is CBD?</h3>
+
+            <p>Component-Based Development (CBD) is a unique way to approach product development. In this method,
+                developers always look for existing well defined, tested, and verified components to compose and
+                assemble them to a product instead of developing from scratch.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>23) Define DevOps Automation?</h3>
+
+            <p>Automation is the crucial need for DevOps practices, and automate everything is the fundamental principle
+                of DevOps. Automation kick starts from the code generation on the developer&#39;s machine, until the
+                code is pushed to the code, to monitor the application and system in the production.</p>
+
+            <p>Automation in DevOps boosts speed, consistency, higher accuracy, reliability, and increases the number of
+                deliveries.</p>
+
+            <hr />
+            <h3>24) What is the DevOps pipeline?</h3>
+
+            <p>A pipeline in software engineering team is a set of automated processes which allows DevOps professionals
+                and developer to reliably and efficiently compile, build, and deploy their code to their production
+                compute platforms.</p>
+
+            <hr />
+            <h3>25) What is Azure DevOps?</h3>
+
+            <p>Azure DevOps is also known as Microsoft visual studio team services (VSTS). It is a set of collaborative
+                development tools built for the cloud. VSTS was commonly used as a standalone term, and Azure DevOps is
+                a platform which is made up of a few different products, such as:</p>
+
+            <ul>
+                <li>Azure Test Plans</li>
+                <li>Azure Boards</li>
+                <li>Azure Repos</li>
+                <li>Azure Pipeline</li>
+                <li>Azure Artifacts</li>
+            </ul>
+
+            <hr />
+            <h3>26) Which makes AWS DevOps highly accessible?</h3>
+
+            <p>Here are some reasons which make AWS DevOps a highly popular, such as:</p>
+
+            <ul>
+                <li>AWS CloudFormation</li>
+                <li>AWS EC2</li>
+                <li>AWS CloudWatch</li>
+                <li>AWS CodePipeline</li>
+            </ul>
+
+            <hr />
+            <h3>27) What is the Build in DevOps?</h3>
+
+            <p>The build is a method in which the source code is put together to check whether it works as a single
+                unit. In the build creation process, the source code will undergo compilation, testing, inspection, and
+                deployment.</p>
+
+            <hr />
+            <h3>28) Explain at what instance has used the SSH?</h3>
+
+            <p>You can use SSH to log into a remote machine and work on the command line. Also, you can use it to tunnel
+                into the system to facilitate secure encrypted communication between two hosts over an insecure network.
+            </p>
+
+            <hr />
+            <h3>29) How infrastructure code is executed in AWS?</h3>
+
+            <p>In AWS:</p>
+
+            <ul>
+                <li>The code for infrastructure will be in a simple JSON format.</li>
+                <li>This JSON code will be organized into files called templates.</li>
+                <li>These templates can be deployed on AWS DevOps and then managed as stacks.</li>
+                <li>Later the CloudFormation service will do the Creating, deleting, updating, etc. operation in the
+                    stack.</li>
+            </ul>
+
+            <hr />
+            <h3>30) Explain Git Bisect?</h3>
+
+            <p>Git Bisect helps to find the commit which introduced a bug using binary search.</p>
+
+        </div>
+
+        <div class="box-prem">
+            <h2>IaaS, PaaS, SaaS</h2>
+
+        </div>
+    </div>
+</body>
+
+</html>

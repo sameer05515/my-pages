@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Data Export: V1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-4">
+      <div class="flex justify-between items-center mb-4">
+        <button id="prevBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Prev</button>
+        <h4 class="text-lg font-semibold">Chat Messages</h4>
+        <button id="nextBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Next</button>
+      </div>
+
+      <div id="root" class="space-y-4"></div>
+    </div>
+
+    <script>
+      let jsonData = [];
+      let currentPage = 0;
+      const messagesPerPage = 5;
+
+      async function loadJSON() {
+        try {
+          const response = await fetch("../data/vandana-chatgpt-08-feb-2025-conversations.json");
+          jsonData = await response.json();
+          displayMessages();
+        } catch (error) {
+          console.error("Error loading conversation.json:", error);
+        }
+      }
+
+      function getConversationMessages(conversation) {
+        let messages = [];
+        let currentNode = conversation.current_node;
+
+        while (currentNode) {
+          let node = conversation.mapping[currentNode];
+          if (node.message && node.message.content?.parts?.length > 0 && node.message.author.role !== "system") {
+            let author = node.message.author.role === "assistant" ? "ChatGPT" : "User";
+            messages.push({ author, text: node.message.content.parts[0] });
+          }
+          currentNode = node.parent;
+        }
+
+        return messages.reverse();
+      }
+
+      function displayMessages() {
+        let root = document.getElementById("root");
+        root.innerHTML = "";
+
+        if (jsonData.length === 0) return;
+
+        let conversation = jsonData[0]; // Assuming first conversation
+        let messages = getConversationMessages(conversation);
+        let start = currentPage * messagesPerPage;
+        let end = start + messagesPerPage;
+        let paginatedMessages = messages.slice(start, end);
+
+        paginatedMessages.forEach((msg) => {
+          let messageDiv = document.createElement("div");
+          messageDiv.className = "p-3 border rounded-md bg-gray-200";
+          messageDiv.innerHTML = `<span class="font-bold">${msg.author}:</span> ${msg.text}`;
+          root.appendChild(messageDiv);
+        });
+
+        document.getElementById("prevBtn").disabled = currentPage === 0;
+        document.getElementById("nextBtn").disabled = end >= messages.length;
+      }
+
+      document.getElementById("prevBtn").addEventListener("click", () => {
+        if (currentPage > 0) {
+          currentPage--;
+          displayMessages();
+        }
+      });
+
+      document.getElementById("nextBtn").addEventListener("click", () => {
+        currentPage++;
+        displayMessages();
+      });
+
+      loadJSON();
+    </script>
+  </body>
+</html>

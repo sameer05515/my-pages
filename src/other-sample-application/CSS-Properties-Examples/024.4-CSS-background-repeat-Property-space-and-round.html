@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#example1 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("images/tenor.gif");
+  background-repeat: repeat;
+}
+
+#example2 {
+  border: 2px solid black;
+  padding: 25px;
+  background: url("images/tenor1.gif");
+  background-repeat: space;
+}
+
+#example3 {
+  border: 1px solid black;
+  padding: 25px;
+  background: url("images/paper.gif");
+  background-repeat: round;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_background-repeat.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;">CSS background-repeat Property</h1>
+<h2 style="background-color: darkgrey;">Using background-repeat: space and background-repeat: round:</h2>
+</div>
+
+<h2>background-repeat: repeat (default)</h2>
+<p>Here, the background image is repeated both vertically and horizontally. The last image will be clipped if it does not fit. This is default:</p>
+<div id="example1">
+  <h3>Hello World!</h3>
+</div>
+
+<h2>background-repeat: space</h2>
+<p>Here, the background-image is repeated as much as possible without clipping. The first and last images are pinned to either side of the element, and whitespace is distributed evenly between the images.</p>
+<div id="example2">
+  <h3>Hello World!</h3>
+</div>
+
+<h2>background-repeat: round</h2>
+<p>Here, the background-image is repeated and squished or stretched, to fill the space (no gaps):</p>
+<div id="example3">
+  <h3>Hello World!</h3>
+</div>
+
+</body>
+</html>

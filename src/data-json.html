@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+
+<head>
+    <link data-require="bootstrap-css@3.0.3" data-semver="3.0.3" rel="stylesheet"
+        href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.2.14" data-semver="1.2.14"
+        src="http://code.angularjs.org/1.2.14/angular.js"></script>
+    <script data-require="angular-ui-bootstrap@0.10.0" data-semver="0.10.0"
+        src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.3/angular-sanitize.js"></script>
+    <script src="js/data-json.js"></script>
+</head>
+
+<body ng-controller="testCtrl">
+    <!-- <a href="data/json/linkData.json">linkData.json</a><br>
+    <a href="data/json/dbBakupLinkData.json">dbBakupLinkData.json</a><br>
+    <a href="data/json/importResponse.json">importResponse.json</a><br>
+    <a href="data/json/stylesData.json">stylesData.json</a><br>
+    <a href="data/json/word-root-synthesized-data/IrregularVerb.json">IrregularVerb.json</a><br>
+    <a href="data/json/word-root-synthesized-data/word-roots.json">word-roots.json</a><br>
+    <a href="data/json/word-root-synthesized-data/word-suffixes.json">word-suffixes.json</a><br> -->
+
+    <button ng-click="clicklinkData('data/json/linkData.json','LINK_DATA')">
+        linkData.json</button><br />
+    <button
+        ng-click="clicklinkData('data/json/dbBakupLinkData.json','dbBakupLinkData')">dbBakupLinkData.json</button><br />
+    <button
+        ng-click="clicklinkData('data/json/importResponse.json','importResponse')">importResponse.json</button><br />
+    <button ng-click="clicklinkData('data/json/stylesData.json','stylesData')">stylesData.json</button><br />
+    <button
+        ng-click="clicklinkData('data/json/word-root-synthesized-data/IrregularVerb.json','IrregularVerb')">IrregularVerb.json</button><br />
+    <button
+        ng-click="clicklinkData('data/json/word-root-synthesized-data/word-roots.json','wordRoots')">word-roots.json</button><br />
+    <button
+        ng-click="clicklinkData('data/json/word-root-synthesized-data/word-suffixes.json','wordSuffixes')">word-suffixes.json</button><br />
+
+
+    <div ng-show="showSectionLINK_DATA" ng-repeat="irregVerb in IrregularVerbData">
+        INSERT INTO t_irregular_verb (id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example)
+        VALUES ('{{$index+1}}','{{irregVerb.V1Infinitive+($index+1)}}','{{irregVerb.V1Infinitive}}',
+        '{{irregVerb.V2SimplePast}}','{{irregVerb.V3PastParticiple}}','""');
+    </div>
+
+    <div ng-show="showSectionwordRoots" ng-repeat="wrData in WordRootsData">
+        INSERT INTO t_word_root(id, unique_name, RootWord, Meanings, Origin,
+        ExamplesAndDefinitions, remarks)
+        VALUES ('{{$index+1}}','{{HtmlEncode(wrData.RootWord+($index+1))}}',
+        '{{HtmlEncode(wrData.RootWord)}}','{{HtmlEncode(wrData.Meanings)}}',
+        '{{HtmlEncode(wrData.Origin)}}','{{HtmlEncode(wrData.ExamplesAndDefinitions)}}','""');
+    </div>
+
+    <div ng-show="showSectionwordSuffixes" ng-repeat="wsuffxData in wordSuffixesData">
+        <!-- {{wsuffxData|json}} -->
+        INSERT INTO t_word_suffixes(id, unique_name, Suffix, Meanings,
+        SampleWordsAndDefinitions, remarks)
+        VALUES ('{{$index+1}}','{{HtmlEncode(wsuffxData.Suffix+($index+1))}}',
+        '{{HtmlEncode(wsuffxData.Suffix)}}','{{HtmlEncode(wsuffxData.Meanings)}}',
+        '{{HtmlEncode(wsuffxData.SampleWordsAndDefinitions)}}','""');
+    </div>
+</body>
+
+</html>

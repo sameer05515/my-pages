@@ -1,0 +1,2022 @@
+[
+    {
+        "V1Infinitive": "A",
+        "V2SimplePast": "A",
+        "V3PastParticiple": "A"
+    },
+    {
+        "V1Infinitive": "arise",
+        "V2SimplePast": "arose",
+        "V3PastParticiple": "arisen"
+    },
+    {
+        "V1Infinitive": "awake",
+        "V2SimplePast": "awakened / awoke",
+        "V3PastParticiple": "awakened / awoken"
+    },
+    {
+        "V1Infinitive": "B",
+        "V2SimplePast": "B",
+        "V3PastParticiple": "B"
+    },
+    {
+        "V1Infinitive": "backslide",
+        "V2SimplePast": "backslid",
+        "V3PastParticiple": "backslidden / backslid"
+    },
+    {
+        "V1Infinitive": "be",
+        "V2SimplePast": "was, were",
+        "V3PastParticiple": "been"
+    },
+    {
+        "V1Infinitive": "bear",
+        "V2SimplePast": "bore",
+        "V3PastParticiple": "born / borne"
+    },
+    {
+        "V1Infinitive": "beat",
+        "V2SimplePast": "beat",
+        "V3PastParticiple": "beaten / beat"
+    },
+    {
+        "V1Infinitive": "become",
+        "V2SimplePast": "became",
+        "V3PastParticiple": "become"
+    },
+    {
+        "V1Infinitive": "begin",
+        "V2SimplePast": "began",
+        "V3PastParticiple": "begun"
+    },
+    {
+        "V1Infinitive": "bend",
+        "V2SimplePast": "bent",
+        "V3PastParticiple": "bent"
+    },
+    {
+        "V1Infinitive": "bet",
+        "V2SimplePast": "bet / betted [?]",
+        "V3PastParticiple": "bet / betted [?]"
+    },
+    {
+        "V1Infinitive": "bid (farewell)",
+        "V2SimplePast": "bid / bade",
+        "V3PastParticiple": "bidden"
+    },
+    {
+        "V1Infinitive": "bid (offer\n              amount)",
+        "V2SimplePast": "bid",
+        "V3PastParticiple": "bid"
+    },
+    {
+        "V1Infinitive": "bind",
+        "V2SimplePast": "bound",
+        "V3PastParticiple": "bound"
+    },
+    {
+        "V1Infinitive": "bite",
+        "V2SimplePast": "bit",
+        "V3PastParticiple": "bitten"
+    },
+    {
+        "V1Infinitive": "bleed",
+        "V2SimplePast": "bled",
+        "V3PastParticiple": "bled"
+    },
+    {
+        "V1Infinitive": "blow",
+        "V2SimplePast": "blew",
+        "V3PastParticiple": "blown"
+    },
+    {
+        "V1Infinitive": "break",
+        "V2SimplePast": "broke",
+        "V3PastParticiple": "broken"
+    },
+    {
+        "V1Infinitive": "breed",
+        "V2SimplePast": "bred",
+        "V3PastParticiple": "bred"
+    },
+    {
+        "V1Infinitive": "bring",
+        "V2SimplePast": "brought",
+        "V3PastParticiple": "brought"
+    },
+    {
+        "V1Infinitive": "broadcast",
+        "V2SimplePast": "broadcast / broadcasted",
+        "V3PastParticiple": "broadcast / broadcasted"
+    },
+    {
+        "V1Infinitive": "browbeat",
+        "V2SimplePast": "browbeat",
+        "V3PastParticiple": "browbeaten / browbeat"
+    },
+    {
+        "V1Infinitive": "build",
+        "V2SimplePast": "built",
+        "V3PastParticiple": "built"
+    },
+    {
+        "V1Infinitive": "burn",
+        "V2SimplePast": "burned / burnt [?]",
+        "V3PastParticiple": "burned / burnt [?]"
+    },
+    {
+        "V1Infinitive": "burst",
+        "V2SimplePast": "burst",
+        "V3PastParticiple": "burst"
+    },
+    {
+        "V1Infinitive": "bust",
+        "V2SimplePast": "busted / bust",
+        "V3PastParticiple": "busted / bust"
+    },
+    {
+        "V1Infinitive": "buy",
+        "V2SimplePast": "bought",
+        "V3PastParticiple": "bought"
+    },
+    {
+        "V1Infinitive": "C",
+        "V2SimplePast": "C",
+        "V3PastParticiple": "C"
+    },
+    {
+        "V1Infinitive": "cast",
+        "V2SimplePast": "cast",
+        "V3PastParticiple": "cast"
+    },
+    {
+        "V1Infinitive": "catch",
+        "V2SimplePast": "caught",
+        "V3PastParticiple": "caught"
+    },
+    {
+        "V1Infinitive": "choose",
+        "V2SimplePast": "chose",
+        "V3PastParticiple": "chosen"
+    },
+    {
+        "V1Infinitive": "cling",
+        "V2SimplePast": "clung",
+        "V3PastParticiple": "clung"
+    },
+    {
+        "V1Infinitive": "clothe",
+        "V2SimplePast": "clothed / clad [?]",
+        "V3PastParticiple": "clothed / clad [?]"
+    },
+    {
+        "V1Infinitive": "come",
+        "V2SimplePast": "came",
+        "V3PastParticiple": "come"
+    },
+    {
+        "V1Infinitive": "cost",
+        "V2SimplePast": "cost",
+        "V3PastParticiple": "cost"
+    },
+    {
+        "V1Infinitive": "creep",
+        "V2SimplePast": "crept",
+        "V3PastParticiple": "crept"
+    },
+    {
+        "V1Infinitive": "crossbreed",
+        "V2SimplePast": "crossbred",
+        "V3PastParticiple": "crossbred"
+    },
+    {
+        "V1Infinitive": "cut",
+        "V2SimplePast": "cut",
+        "V3PastParticiple": "cut"
+    },
+    {
+        "V1Infinitive": "D",
+        "V2SimplePast": "D",
+        "V3PastParticiple": "D"
+    },
+    {
+        "V1Infinitive": "daydream",
+        "V2SimplePast": "daydreamed / daydreamt [?]",
+        "V3PastParticiple": "daydreamed / daydreamt [?]"
+    },
+    {
+        "V1Infinitive": "deal",
+        "V2SimplePast": "dealt",
+        "V3PastParticiple": "dealt"
+    },
+    {
+        "V1Infinitive": "dig",
+        "V2SimplePast": "dug",
+        "V3PastParticiple": "dug"
+    },
+    {
+        "V1Infinitive": "disprove",
+        "V2SimplePast": "disproved",
+        "V3PastParticiple": "disproved / disproven"
+    },
+    {
+        "V1Infinitive": "dive (jump\n              head-first)",
+        "V2SimplePast": "dove / dived",
+        "V3PastParticiple": "dived"
+    },
+    {
+        "V1Infinitive": "dive (scuba\n              diving)",
+        "V2SimplePast": "dived / dove",
+        "V3PastParticiple": "dived"
+    },
+    {
+        "V1Infinitive": "do",
+        "V2SimplePast": "did",
+        "V3PastParticiple": "done"
+    },
+    {
+        "V1Infinitive": "draw",
+        "V2SimplePast": "drew",
+        "V3PastParticiple": "drawn"
+    },
+    {
+        "V1Infinitive": "dream",
+        "V2SimplePast": "dreamed / dreamt [?]",
+        "V3PastParticiple": "dreamed / dreamt [?]"
+    },
+    {
+        "V1Infinitive": "drink",
+        "V2SimplePast": "drank",
+        "V3PastParticiple": "drunk"
+    },
+    {
+        "V1Infinitive": "drive",
+        "V2SimplePast": "drove",
+        "V3PastParticiple": "driven"
+    },
+    {
+        "V1Infinitive": "dwell",
+        "V2SimplePast": "dwelt / dwelled [?]",
+        "V3PastParticiple": "dwelt / dwelled [?]"
+    },
+    {
+        "V1Infinitive": "E",
+        "V2SimplePast": "E",
+        "V3PastParticiple": "E"
+    },
+    {
+        "V1Infinitive": "eat",
+        "V2SimplePast": "ate",
+        "V3PastParticiple": "eaten"
+    },
+    {
+        "V1Infinitive": "F",
+        "V2SimplePast": "F",
+        "V3PastParticiple": "F"
+    },
+    {
+        "V1Infinitive": "fall",
+        "V2SimplePast": "fell",
+        "V3PastParticiple": "fallen"
+    },
+    {
+        "V1Infinitive": "feed",
+        "V2SimplePast": "fed",
+        "V3PastParticiple": "fed"
+    },
+    {
+        "V1Infinitive": "feel",
+        "V2SimplePast": "felt",
+        "V3PastParticiple": "felt"
+    },
+    {
+        "V1Infinitive": "fight",
+        "V2SimplePast": "fought",
+        "V3PastParticiple": "fought"
+    },
+    {
+        "V1Infinitive": "find",
+        "V2SimplePast": "found",
+        "V3PastParticiple": "found"
+    },
+    {
+        "V1Infinitive": "fit (tailor, change size)",
+        "V2SimplePast": "fitted / fit [?]",
+        "V3PastParticiple": "fitted / fit [?]"
+    },
+    {
+        "V1Infinitive": "fit (be right size)",
+        "V2SimplePast": "fit / fitted [?]",
+        "V3PastParticiple": "fit / fitted [?]"
+    },
+    {
+        "V1Infinitive": "flee",
+        "V2SimplePast": "fled",
+        "V3PastParticiple": "fled"
+    },
+    {
+        "V1Infinitive": "fling",
+        "V2SimplePast": "flung",
+        "V3PastParticiple": "flung"
+    },
+    {
+        "V1Infinitive": "fly",
+        "V2SimplePast": "flew",
+        "V3PastParticiple": "flown"
+    },
+    {
+        "V1Infinitive": "forbid",
+        "V2SimplePast": "forbade",
+        "V3PastParticiple": "forbidden"
+    },
+    {
+        "V1Infinitive": "forecast",
+        "V2SimplePast": "forecast",
+        "V3PastParticiple": "forecast"
+    },
+    {
+        "V1Infinitive": "forego (also\n              forgo)",
+        "V2SimplePast": "forewent",
+        "V3PastParticiple": "foregone"
+    },
+    {
+        "V1Infinitive": "foresee",
+        "V2SimplePast": "foresaw",
+        "V3PastParticiple": "foreseen"
+    },
+    {
+        "V1Infinitive": "foretell",
+        "V2SimplePast": "foretold",
+        "V3PastParticiple": "foretold"
+    },
+    {
+        "V1Infinitive": "forget",
+        "V2SimplePast": "forgot",
+        "V3PastParticiple": "forgotten / forgot [?]"
+    },
+    {
+        "V1Infinitive": "forgive",
+        "V2SimplePast": "forgave",
+        "V3PastParticiple": "forgiven"
+    },
+    {
+        "V1Infinitive": "forsake",
+        "V2SimplePast": "forsook",
+        "V3PastParticiple": "forsaken"
+    },
+    {
+        "V1Infinitive": "freeze",
+        "V2SimplePast": "froze",
+        "V3PastParticiple": "frozen"
+    },
+    {
+        "V1Infinitive": "frostbite",
+        "V2SimplePast": "frostbit",
+        "V3PastParticiple": "frostbitten"
+    },
+    {
+        "V1Infinitive": "G",
+        "V2SimplePast": "G",
+        "V3PastParticiple": "G"
+    },
+    {
+        "V1Infinitive": "get",
+        "V2SimplePast": "got",
+        "V3PastParticiple": "gotten / got [?]"
+    },
+    {
+        "V1Infinitive": "give",
+        "V2SimplePast": "gave",
+        "V3PastParticiple": "given"
+    },
+    {
+        "V1Infinitive": "go",
+        "V2SimplePast": "went",
+        "V3PastParticiple": "gone"
+    },
+    {
+        "V1Infinitive": "grind",
+        "V2SimplePast": "ground",
+        "V3PastParticiple": "ground"
+    },
+    {
+        "V1Infinitive": "grow",
+        "V2SimplePast": "grew",
+        "V3PastParticiple": "grown"
+    },
+    {
+        "V1Infinitive": "H",
+        "V2SimplePast": "H",
+        "V3PastParticiple": "H"
+    },
+    {
+        "V1Infinitive": "hand-feed",
+        "V2SimplePast": "hand-fed",
+        "V3PastParticiple": "hand-fed"
+    },
+    {
+        "V1Infinitive": "handwrite",
+        "V2SimplePast": "handwrote",
+        "V3PastParticiple": "handwritten"
+    },
+    {
+        "V1Infinitive": "hang",
+        "V2SimplePast": "hung",
+        "V3PastParticiple": "hung"
+    },
+    {
+        "V1Infinitive": "have",
+        "V2SimplePast": "had",
+        "V3PastParticiple": "had"
+    },
+    {
+        "V1Infinitive": "hear",
+        "V2SimplePast": "heard",
+        "V3PastParticiple": "heard"
+    },
+    {
+        "V1Infinitive": "hew",
+        "V2SimplePast": "hewed",
+        "V3PastParticiple": "hewn / hewed"
+    },
+    {
+        "V1Infinitive": "hide",
+        "V2SimplePast": "hid",
+        "V3PastParticiple": "hidden"
+    },
+    {
+        "V1Infinitive": "hit",
+        "V2SimplePast": "hit",
+        "V3PastParticiple": "hit"
+    },
+    {
+        "V1Infinitive": "hold",
+        "V2SimplePast": "held",
+        "V3PastParticiple": "held"
+    },
+    {
+        "V1Infinitive": "hurt",
+        "V2SimplePast": "hurt",
+        "V3PastParticiple": "hurt"
+    },
+    {
+        "V1Infinitive": "I",
+        "V2SimplePast": "I",
+        "V3PastParticiple": "I"
+    },
+    {
+        "V1Infinitive": "inbreed",
+        "V2SimplePast": "inbred",
+        "V3PastParticiple": "inbred"
+    },
+    {
+        "V1Infinitive": "inlay",
+        "V2SimplePast": "inlaid",
+        "V3PastParticiple": "inlaid"
+    },
+    {
+        "V1Infinitive": "input",
+        "V2SimplePast": "input / inputted",
+        "V3PastParticiple": "input / inputted"
+    },
+    {
+        "V1Infinitive": "interbreed",
+        "V2SimplePast": "interbred",
+        "V3PastParticiple": "interbred"
+    },
+    {
+        "V1Infinitive": "interweave",
+        "V2SimplePast": "interwove / interweaved",
+        "V3PastParticiple": "interwoven / interweaved"
+    },
+    {
+        "V1Infinitive": "interwind",
+        "V2SimplePast": "interwound",
+        "V3PastParticiple": "interwound"
+    },
+    {
+        "V1Infinitive": "J",
+        "V2SimplePast": "J",
+        "V3PastParticiple": "J"
+    },
+    {
+        "V1Infinitive": "jerry-build",
+        "V2SimplePast": "jerry-built",
+        "V3PastParticiple": "jerry-built"
+    },
+    {
+        "V1Infinitive": "K",
+        "V2SimplePast": "K",
+        "V3PastParticiple": "K"
+    },
+    {
+        "V1Infinitive": "keep",
+        "V2SimplePast": "kept",
+        "V3PastParticiple": "kept"
+    },
+    {
+        "V1Infinitive": "kneel",
+        "V2SimplePast": "knelt / kneeled",
+        "V3PastParticiple": "knelt / kneeled"
+    },
+    {
+        "V1Infinitive": "knit",
+        "V2SimplePast": "knitted / knit",
+        "V3PastParticiple": "knitted / knit"
+    },
+    {
+        "V1Infinitive": "know",
+        "V2SimplePast": "knew",
+        "V3PastParticiple": "known"
+    },
+    {
+        "V1Infinitive": "L",
+        "V2SimplePast": "L",
+        "V3PastParticiple": "L"
+    },
+    {
+        "V1Infinitive": "lay",
+        "V2SimplePast": "laid",
+        "V3PastParticiple": "laid"
+    },
+    {
+        "V1Infinitive": "lead",
+        "V2SimplePast": "led",
+        "V3PastParticiple": "led"
+    },
+    {
+        "V1Infinitive": "lean",
+        "V2SimplePast": "leaned / leant [?]",
+        "V3PastParticiple": "leaned / leant [?]"
+    },
+    {
+        "V1Infinitive": "leap",
+        "V2SimplePast": "leaped / leapt [?]",
+        "V3PastParticiple": "leaped / leapt [?]"
+    },
+    {
+        "V1Infinitive": "learn",
+        "V2SimplePast": "learned / learnt [?]",
+        "V3PastParticiple": "learned / learnt [?]"
+    },
+    {
+        "V1Infinitive": "leave",
+        "V2SimplePast": "left",
+        "V3PastParticiple": "left"
+    },
+    {
+        "V1Infinitive": "lend",
+        "V2SimplePast": "lent",
+        "V3PastParticiple": "lent"
+    },
+    {
+        "V1Infinitive": "let",
+        "V2SimplePast": "let",
+        "V3PastParticiple": "let"
+    },
+    {
+        "V1Infinitive": "lie",
+        "V2SimplePast": "lay",
+        "V3PastParticiple": "lain"
+    },
+    {
+        "V1Infinitive": "lie (not tell\n              truth) REGULAR",
+        "V2SimplePast": "lied",
+        "V3PastParticiple": "lied"
+    },
+    {
+        "V1Infinitive": "light",
+        "V2SimplePast": "lit / lighted",
+        "V3PastParticiple": "lit / lighted"
+    },
+    {
+        "V1Infinitive": "lip-read",
+        "V2SimplePast": "lip-read",
+        "V3PastParticiple": "lip-read"
+    },
+    {
+        "V1Infinitive": "lose",
+        "V2SimplePast": "lost",
+        "V3PastParticiple": "lost"
+    },
+    {
+        "V1Infinitive": "M",
+        "V2SimplePast": "M",
+        "V3PastParticiple": "M"
+    },
+    {
+        "V1Infinitive": "make",
+        "V2SimplePast": "made",
+        "V3PastParticiple": "made"
+    },
+    {
+        "V1Infinitive": "mean",
+        "V2SimplePast": "meant",
+        "V3PastParticiple": "meant"
+    },
+    {
+        "V1Infinitive": "meet",
+        "V2SimplePast": "met",
+        "V3PastParticiple": "met"
+    },
+    {
+        "V1Infinitive": "miscast",
+        "V2SimplePast": "miscast",
+        "V3PastParticiple": "miscast"
+    },
+    {
+        "V1Infinitive": "misdeal",
+        "V2SimplePast": "misdealt",
+        "V3PastParticiple": "misdealt"
+    },
+    {
+        "V1Infinitive": "misdo",
+        "V2SimplePast": "misdid",
+        "V3PastParticiple": "misdone"
+    },
+    {
+        "V1Infinitive": "mishear",
+        "V2SimplePast": "misheard",
+        "V3PastParticiple": "misheard"
+    },
+    {
+        "V1Infinitive": "mislay",
+        "V2SimplePast": "mislaid",
+        "V3PastParticiple": "mislaid"
+    },
+    {
+        "V1Infinitive": "mislead",
+        "V2SimplePast": "misled",
+        "V3PastParticiple": "misled"
+    },
+    {
+        "V1Infinitive": "mislearn",
+        "V2SimplePast": "mislearned / mislearnt [?]",
+        "V3PastParticiple": "mislearned / mislearnt [?]"
+    },
+    {
+        "V1Infinitive": "misread",
+        "V2SimplePast": "misread",
+        "V3PastParticiple": "misread"
+    },
+    {
+        "V1Infinitive": "misset",
+        "V2SimplePast": "misset",
+        "V3PastParticiple": "misset"
+    },
+    {
+        "V1Infinitive": "misspeak",
+        "V2SimplePast": "misspoke",
+        "V3PastParticiple": "misspoken"
+    },
+    {
+        "V1Infinitive": "misspell",
+        "V2SimplePast": "misspelled / misspelt [?]",
+        "V3PastParticiple": "misspelled / misspelt [?]"
+    },
+    {
+        "V1Infinitive": "misspend",
+        "V2SimplePast": "misspent",
+        "V3PastParticiple": "misspent"
+    },
+    {
+        "V1Infinitive": "mistake",
+        "V2SimplePast": "mistook",
+        "V3PastParticiple": "mistaken"
+    },
+    {
+        "V1Infinitive": "misteach",
+        "V2SimplePast": "mistaught",
+        "V3PastParticiple": "mistaught"
+    },
+    {
+        "V1Infinitive": "misunderstand",
+        "V2SimplePast": "misunderstood",
+        "V3PastParticiple": "misunderstood"
+    },
+    {
+        "V1Infinitive": "miswrite",
+        "V2SimplePast": "miswrote",
+        "V3PastParticiple": "miswritten"
+    },
+    {
+        "V1Infinitive": "mow",
+        "V2SimplePast": "mowed",
+        "V3PastParticiple": "mowed / mown"
+    },
+    {
+        "V1Infinitive": "N",
+        "V2SimplePast": "N",
+        "V3PastParticiple": "N"
+    },
+    {
+        "V1Infinitive": "No irregular verbs beginning with \"N.\"",
+        "V2SimplePast": "No irregular verbs beginning with \"N.\"",
+        "V3PastParticiple": "No irregular verbs beginning with \"N.\""
+    },
+    {
+        "V1Infinitive": "O",
+        "V2SimplePast": "O",
+        "V3PastParticiple": "O"
+    },
+    {
+        "V1Infinitive": "offset",
+        "V2SimplePast": "offset",
+        "V3PastParticiple": "offset"
+    },
+    {
+        "V1Infinitive": "outbid",
+        "V2SimplePast": "outbid",
+        "V3PastParticiple": "outbid"
+    },
+    {
+        "V1Infinitive": "outbreed",
+        "V2SimplePast": "outbred",
+        "V3PastParticiple": "outbred"
+    },
+    {
+        "V1Infinitive": "outdo",
+        "V2SimplePast": "outdid",
+        "V3PastParticiple": "outdone"
+    },
+    {
+        "V1Infinitive": "outdraw",
+        "V2SimplePast": "outdrew",
+        "V3PastParticiple": "outdrawn"
+    },
+    {
+        "V1Infinitive": "outdrink",
+        "V2SimplePast": "outdrank",
+        "V3PastParticiple": "outdrunk"
+    },
+    {
+        "V1Infinitive": "outdrive",
+        "V2SimplePast": "outdrove",
+        "V3PastParticiple": "outdriven"
+    },
+    {
+        "V1Infinitive": "outfight",
+        "V2SimplePast": "outfought",
+        "V3PastParticiple": "outfought"
+    },
+    {
+        "V1Infinitive": "outfly",
+        "V2SimplePast": "outflew",
+        "V3PastParticiple": "outflown"
+    },
+    {
+        "V1Infinitive": "outgrow",
+        "V2SimplePast": "outgrew",
+        "V3PastParticiple": "outgrown"
+    },
+    {
+        "V1Infinitive": "outleap",
+        "V2SimplePast": "outleaped / outleapt [?]",
+        "V3PastParticiple": "outleaped / outleapt [?]"
+    },
+    {
+        "V1Infinitive": "outlie (not\n              tell truth) REGULAR",
+        "V2SimplePast": "outlied",
+        "V3PastParticiple": "outlied"
+    },
+    {
+        "V1Infinitive": "outride",
+        "V2SimplePast": "outrode",
+        "V3PastParticiple": "outridden"
+    },
+    {
+        "V1Infinitive": "outrun",
+        "V2SimplePast": "outran",
+        "V3PastParticiple": "outrun"
+    },
+    {
+        "V1Infinitive": "outsell",
+        "V2SimplePast": "outsold",
+        "V3PastParticiple": "outsold"
+    },
+    {
+        "V1Infinitive": "outshine",
+        "V2SimplePast": "outshined / outshone [?]",
+        "V3PastParticiple": "outshined / outshone [?]"
+    },
+    {
+        "V1Infinitive": "outshoot",
+        "V2SimplePast": "outshot",
+        "V3PastParticiple": "outshot"
+    },
+    {
+        "V1Infinitive": "outsing",
+        "V2SimplePast": "outsang",
+        "V3PastParticiple": "outsung"
+    },
+    {
+        "V1Infinitive": "outsit",
+        "V2SimplePast": "outsat",
+        "V3PastParticiple": "outsat"
+    },
+    {
+        "V1Infinitive": "outsleep",
+        "V2SimplePast": "outslept",
+        "V3PastParticiple": "outslept"
+    },
+    {
+        "V1Infinitive": "outsmell",
+        "V2SimplePast": "outsmelled / outsmelt [?]",
+        "V3PastParticiple": "outsmelled / outsmelt [?]"
+    },
+    {
+        "V1Infinitive": "outspeak",
+        "V2SimplePast": "outspoke",
+        "V3PastParticiple": "outspoken"
+    },
+    {
+        "V1Infinitive": "outspeed",
+        "V2SimplePast": "outsped",
+        "V3PastParticiple": "outsped"
+    },
+    {
+        "V1Infinitive": "outspend",
+        "V2SimplePast": "outspent",
+        "V3PastParticiple": "outspent"
+    },
+    {
+        "V1Infinitive": "outswear",
+        "V2SimplePast": "outswore",
+        "V3PastParticiple": "outsworn"
+    },
+    {
+        "V1Infinitive": "outswim",
+        "V2SimplePast": "outswam",
+        "V3PastParticiple": "outswum"
+    },
+    {
+        "V1Infinitive": "outthink",
+        "V2SimplePast": "outthought",
+        "V3PastParticiple": "outthought"
+    },
+    {
+        "V1Infinitive": "outthrow",
+        "V2SimplePast": "outthrew",
+        "V3PastParticiple": "outthrown"
+    },
+    {
+        "V1Infinitive": "outwrite",
+        "V2SimplePast": "outwrote",
+        "V3PastParticiple": "outwritten"
+    },
+    {
+        "V1Infinitive": "overbid",
+        "V2SimplePast": "overbid",
+        "V3PastParticiple": "overbid"
+    },
+    {
+        "V1Infinitive": "overbreed",
+        "V2SimplePast": "overbred",
+        "V3PastParticiple": "overbred"
+    },
+    {
+        "V1Infinitive": "overbuild",
+        "V2SimplePast": "overbuilt",
+        "V3PastParticiple": "overbuilt"
+    },
+    {
+        "V1Infinitive": "overbuy",
+        "V2SimplePast": "overbought",
+        "V3PastParticiple": "overbought"
+    },
+    {
+        "V1Infinitive": "overcome",
+        "V2SimplePast": "overcame",
+        "V3PastParticiple": "overcome"
+    },
+    {
+        "V1Infinitive": "overdo",
+        "V2SimplePast": "overdid",
+        "V3PastParticiple": "overdone"
+    },
+    {
+        "V1Infinitive": "overdraw",
+        "V2SimplePast": "overdrew",
+        "V3PastParticiple": "overdrawn"
+    },
+    {
+        "V1Infinitive": "overdrink",
+        "V2SimplePast": "overdrank",
+        "V3PastParticiple": "overdrunk"
+    },
+    {
+        "V1Infinitive": "overeat",
+        "V2SimplePast": "overate",
+        "V3PastParticiple": "overeaten"
+    },
+    {
+        "V1Infinitive": "overfeed",
+        "V2SimplePast": "overfed",
+        "V3PastParticiple": "overfed"
+    },
+    {
+        "V1Infinitive": "overhang",
+        "V2SimplePast": "overhung",
+        "V3PastParticiple": "overhung"
+    },
+    {
+        "V1Infinitive": "overhear",
+        "V2SimplePast": "overheard",
+        "V3PastParticiple": "overheard"
+    },
+    {
+        "V1Infinitive": "overlay",
+        "V2SimplePast": "overlaid",
+        "V3PastParticiple": "overlaid"
+    },
+    {
+        "V1Infinitive": "overpay",
+        "V2SimplePast": "overpaid",
+        "V3PastParticiple": "overpaid"
+    },
+    {
+        "V1Infinitive": "override",
+        "V2SimplePast": "overrode",
+        "V3PastParticiple": "overridden"
+    },
+    {
+        "V1Infinitive": "overrun",
+        "V2SimplePast": "overran",
+        "V3PastParticiple": "overrun"
+    },
+    {
+        "V1Infinitive": "oversee",
+        "V2SimplePast": "oversaw",
+        "V3PastParticiple": "overseen"
+    },
+    {
+        "V1Infinitive": "oversell",
+        "V2SimplePast": "oversold",
+        "V3PastParticiple": "oversold"
+    },
+    {
+        "V1Infinitive": "oversew",
+        "V2SimplePast": "oversewed",
+        "V3PastParticiple": "oversewn / oversewed"
+    },
+    {
+        "V1Infinitive": "overshoot",
+        "V2SimplePast": "overshot",
+        "V3PastParticiple": "overshot"
+    },
+    {
+        "V1Infinitive": "oversleep",
+        "V2SimplePast": "overslept",
+        "V3PastParticiple": "overslept"
+    },
+    {
+        "V1Infinitive": "overspeak",
+        "V2SimplePast": "overspoke",
+        "V3PastParticiple": "overspoken"
+    },
+    {
+        "V1Infinitive": "overspend",
+        "V2SimplePast": "overspent",
+        "V3PastParticiple": "overspent"
+    },
+    {
+        "V1Infinitive": "overspill",
+        "V2SimplePast": "overspilled / overspilt [?]",
+        "V3PastParticiple": "overspilled / overspilt [?]"
+    },
+    {
+        "V1Infinitive": "overtake",
+        "V2SimplePast": "overtook",
+        "V3PastParticiple": "overtaken"
+    },
+    {
+        "V1Infinitive": "overthink",
+        "V2SimplePast": "overthought",
+        "V3PastParticiple": "overthought"
+    },
+    {
+        "V1Infinitive": "overthrow",
+        "V2SimplePast": "overthrew",
+        "V3PastParticiple": "overthrown"
+    },
+    {
+        "V1Infinitive": "overwind",
+        "V2SimplePast": "overwound",
+        "V3PastParticiple": "overwound"
+    },
+    {
+        "V1Infinitive": "overwrite",
+        "V2SimplePast": "overwrote",
+        "V3PastParticiple": "overwritten"
+    },
+    {
+        "V1Infinitive": "P",
+        "V2SimplePast": "P",
+        "V3PastParticiple": "P"
+    },
+    {
+        "V1Infinitive": "partake",
+        "V2SimplePast": "partook",
+        "V3PastParticiple": "partaken"
+    },
+    {
+        "V1Infinitive": "pay",
+        "V2SimplePast": "paid",
+        "V3PastParticiple": "paid"
+    },
+    {
+        "V1Infinitive": "plead",
+        "V2SimplePast": "pleaded / pled",
+        "V3PastParticiple": "pleaded / pled"
+    },
+    {
+        "V1Infinitive": "prebuild",
+        "V2SimplePast": "prebuilt",
+        "V3PastParticiple": "prebuilt"
+    },
+    {
+        "V1Infinitive": "predo",
+        "V2SimplePast": "predid",
+        "V3PastParticiple": "predone"
+    },
+    {
+        "V1Infinitive": "premake",
+        "V2SimplePast": "premade",
+        "V3PastParticiple": "premade"
+    },
+    {
+        "V1Infinitive": "prepay",
+        "V2SimplePast": "prepaid",
+        "V3PastParticiple": "prepaid"
+    },
+    {
+        "V1Infinitive": "presell",
+        "V2SimplePast": "presold",
+        "V3PastParticiple": "presold"
+    },
+    {
+        "V1Infinitive": "preset",
+        "V2SimplePast": "preset",
+        "V3PastParticiple": "preset"
+    },
+    {
+        "V1Infinitive": "preshrink",
+        "V2SimplePast": "preshrank",
+        "V3PastParticiple": "preshrunk"
+    },
+    {
+        "V1Infinitive": "proofread",
+        "V2SimplePast": "proofread",
+        "V3PastParticiple": "proofread"
+    },
+    {
+        "V1Infinitive": "prove",
+        "V2SimplePast": "proved",
+        "V3PastParticiple": "proven / proved"
+    },
+    {
+        "V1Infinitive": "put",
+        "V2SimplePast": "put",
+        "V3PastParticiple": "put"
+    },
+    {
+        "V1Infinitive": "Q",
+        "V2SimplePast": "Q",
+        "V3PastParticiple": "Q"
+    },
+    {
+        "V1Infinitive": "quick-freeze",
+        "V2SimplePast": "quick-froze",
+        "V3PastParticiple": "quick-frozen"
+    },
+    {
+        "V1Infinitive": "quit",
+        "V2SimplePast": "quit / quitted [?]",
+        "V3PastParticiple": "quit / quitted [?]"
+    },
+    {
+        "V1Infinitive": "R",
+        "V2SimplePast": "R",
+        "V3PastParticiple": "R"
+    },
+    {
+        "V1Infinitive": "read",
+        "V2SimplePast": "read (sounds like \"red\")",
+        "V3PastParticiple": "read (sounds like \"red\")"
+    },
+    {
+        "V1Infinitive": "reawake",
+        "V2SimplePast": "reawoke",
+        "V3PastParticiple": "reawaken"
+    },
+    {
+        "V1Infinitive": "rebid",
+        "V2SimplePast": "rebid",
+        "V3PastParticiple": "rebid"
+    },
+    {
+        "V1Infinitive": "rebind",
+        "V2SimplePast": "rebound",
+        "V3PastParticiple": "rebound"
+    },
+    {
+        "V1Infinitive": "rebroadcast",
+        "V2SimplePast": "rebroadcast / rebroadcasted",
+        "V3PastParticiple": "rebroadcast / rebroadcasted"
+    },
+    {
+        "V1Infinitive": "rebuild",
+        "V2SimplePast": "rebuilt",
+        "V3PastParticiple": "rebuilt"
+    },
+    {
+        "V1Infinitive": "recast",
+        "V2SimplePast": "recast",
+        "V3PastParticiple": "recast"
+    },
+    {
+        "V1Infinitive": "recut",
+        "V2SimplePast": "recut",
+        "V3PastParticiple": "recut"
+    },
+    {
+        "V1Infinitive": "redeal",
+        "V2SimplePast": "redealt",
+        "V3PastParticiple": "redealt"
+    },
+    {
+        "V1Infinitive": "redo",
+        "V2SimplePast": "redid",
+        "V3PastParticiple": "redone"
+    },
+    {
+        "V1Infinitive": "redraw",
+        "V2SimplePast": "redrew",
+        "V3PastParticiple": "redrawn"
+    },
+    {
+        "V1Infinitive": "refit (replace parts)",
+        "V2SimplePast": "refit / refitted [?]",
+        "V3PastParticiple": "refit / refitted [?]"
+    },
+    {
+        "V1Infinitive": "refit (retailor)",
+        "V2SimplePast": "refitted / refit \n                [?]",
+        "V3PastParticiple": "refitted / refit [?]"
+    },
+    {
+        "V1Infinitive": "regrind",
+        "V2SimplePast": "reground",
+        "V3PastParticiple": "reground"
+    },
+    {
+        "V1Infinitive": "regrow",
+        "V2SimplePast": "regrew",
+        "V3PastParticiple": "regrown"
+    },
+    {
+        "V1Infinitive": "rehang",
+        "V2SimplePast": "rehung",
+        "V3PastParticiple": "rehung"
+    },
+    {
+        "V1Infinitive": "rehear",
+        "V2SimplePast": "reheard",
+        "V3PastParticiple": "reheard"
+    },
+    {
+        "V1Infinitive": "reknit",
+        "V2SimplePast": "reknitted / reknit",
+        "V3PastParticiple": "reknitted / reknit"
+    },
+    {
+        "V1Infinitive": "relay (for\n              example tiles)",
+        "V2SimplePast": "relaid",
+        "V3PastParticiple": "relaid"
+    },
+    {
+        "V1Infinitive": "relay (pass\n              along) REGULAR",
+        "V2SimplePast": "relayed",
+        "V3PastParticiple": "relayed"
+    },
+    {
+        "V1Infinitive": "relearn",
+        "V2SimplePast": "relearned / relearnt [?]",
+        "V3PastParticiple": "relearned / relearnt [?]"
+    },
+    {
+        "V1Infinitive": "relight",
+        "V2SimplePast": "relit / relighted",
+        "V3PastParticiple": "relit / relighted"
+    },
+    {
+        "V1Infinitive": "remake",
+        "V2SimplePast": "remade",
+        "V3PastParticiple": "remade"
+    },
+    {
+        "V1Infinitive": "repay",
+        "V2SimplePast": "repaid",
+        "V3PastParticiple": "repaid"
+    },
+    {
+        "V1Infinitive": "reread",
+        "V2SimplePast": "reread",
+        "V3PastParticiple": "reread"
+    },
+    {
+        "V1Infinitive": "rerun",
+        "V2SimplePast": "reran",
+        "V3PastParticiple": "rerun"
+    },
+    {
+        "V1Infinitive": "resell",
+        "V2SimplePast": "resold",
+        "V3PastParticiple": "resold"
+    },
+    {
+        "V1Infinitive": "resend",
+        "V2SimplePast": "resent",
+        "V3PastParticiple": "resent"
+    },
+    {
+        "V1Infinitive": "reset",
+        "V2SimplePast": "reset",
+        "V3PastParticiple": "reset"
+    },
+    {
+        "V1Infinitive": "resew",
+        "V2SimplePast": "resewed",
+        "V3PastParticiple": "resewn / resewed"
+    },
+    {
+        "V1Infinitive": "retake",
+        "V2SimplePast": "retook",
+        "V3PastParticiple": "retaken"
+    },
+    {
+        "V1Infinitive": "reteach",
+        "V2SimplePast": "retaught",
+        "V3PastParticiple": "retaught"
+    },
+    {
+        "V1Infinitive": "retear",
+        "V2SimplePast": "retore",
+        "V3PastParticiple": "retorn"
+    },
+    {
+        "V1Infinitive": "retell",
+        "V2SimplePast": "retold",
+        "V3PastParticiple": "retold"
+    },
+    {
+        "V1Infinitive": "rethink",
+        "V2SimplePast": "rethought",
+        "V3PastParticiple": "rethought"
+    },
+    {
+        "V1Infinitive": "retread",
+        "V2SimplePast": "retread",
+        "V3PastParticiple": "retread"
+    },
+    {
+        "V1Infinitive": "retrofit",
+        "V2SimplePast": "retrofitted / retrofit [?]",
+        "V3PastParticiple": "retrofitted / retrofit [?]"
+    },
+    {
+        "V1Infinitive": "rewake",
+        "V2SimplePast": "rewoke / rewaked",
+        "V3PastParticiple": "rewaken / rewaked"
+    },
+    {
+        "V1Infinitive": "rewear",
+        "V2SimplePast": "rewore",
+        "V3PastParticiple": "reworn"
+    },
+    {
+        "V1Infinitive": "reweave",
+        "V2SimplePast": "rewove / reweaved",
+        "V3PastParticiple": "rewoven / reweaved"
+    },
+    {
+        "V1Infinitive": "rewed",
+        "V2SimplePast": "rewed / rewedded",
+        "V3PastParticiple": "rewed / rewedded"
+    },
+    {
+        "V1Infinitive": "rewet",
+        "V2SimplePast": "rewet / rewetted [?]",
+        "V3PastParticiple": "rewet / rewetted [?]"
+    },
+    {
+        "V1Infinitive": "rewin",
+        "V2SimplePast": "rewon",
+        "V3PastParticiple": "rewon"
+    },
+    {
+        "V1Infinitive": "rewind",
+        "V2SimplePast": "rewound",
+        "V3PastParticiple": "rewound"
+    },
+    {
+        "V1Infinitive": "rewrite",
+        "V2SimplePast": "rewrote",
+        "V3PastParticiple": "rewritten"
+    },
+    {
+        "V1Infinitive": "rid",
+        "V2SimplePast": "rid",
+        "V3PastParticiple": "rid"
+    },
+    {
+        "V1Infinitive": "ride",
+        "V2SimplePast": "rode",
+        "V3PastParticiple": "ridden"
+    },
+    {
+        "V1Infinitive": "ring",
+        "V2SimplePast": "rang",
+        "V3PastParticiple": "rung"
+    },
+    {
+        "V1Infinitive": "rise",
+        "V2SimplePast": "rose",
+        "V3PastParticiple": "risen"
+    },
+    {
+        "V1Infinitive": "roughcast",
+        "V2SimplePast": "roughcast",
+        "V3PastParticiple": "roughcast"
+    },
+    {
+        "V1Infinitive": "run",
+        "V2SimplePast": "ran",
+        "V3PastParticiple": "run"
+    },
+    {
+        "V1Infinitive": "S",
+        "V2SimplePast": "S",
+        "V3PastParticiple": "S"
+    },
+    {
+        "V1Infinitive": "sand-cast",
+        "V2SimplePast": "sand-cast",
+        "V3PastParticiple": "sand-cast"
+    },
+    {
+        "V1Infinitive": "saw",
+        "V2SimplePast": "sawed",
+        "V3PastParticiple": "sawed / sawn"
+    },
+    {
+        "V1Infinitive": "say",
+        "V2SimplePast": "said",
+        "V3PastParticiple": "said"
+    },
+    {
+        "V1Infinitive": "see",
+        "V2SimplePast": "saw",
+        "V3PastParticiple": "seen"
+    },
+    {
+        "V1Infinitive": "seek",
+        "V2SimplePast": "sought",
+        "V3PastParticiple": "sought"
+    },
+    {
+        "V1Infinitive": "sell",
+        "V2SimplePast": "sold",
+        "V3PastParticiple": "sold"
+    },
+    {
+        "V1Infinitive": "send",
+        "V2SimplePast": "sent",
+        "V3PastParticiple": "sent"
+    },
+    {
+        "V1Infinitive": "set",
+        "V2SimplePast": "set",
+        "V3PastParticiple": "set"
+    },
+    {
+        "V1Infinitive": "sew",
+        "V2SimplePast": "sewed",
+        "V3PastParticiple": "sewn / sewed"
+    },
+    {
+        "V1Infinitive": "shake",
+        "V2SimplePast": "shook",
+        "V3PastParticiple": "shaken"
+    },
+    {
+        "V1Infinitive": "shave",
+        "V2SimplePast": "shaved",
+        "V3PastParticiple": "shaved / shaven"
+    },
+    {
+        "V1Infinitive": "shear",
+        "V2SimplePast": "sheared",
+        "V3PastParticiple": "sheared / shorn"
+    },
+    {
+        "V1Infinitive": "shed",
+        "V2SimplePast": "shed",
+        "V3PastParticiple": "shed"
+    },
+    {
+        "V1Infinitive": "shine",
+        "V2SimplePast": "shined / shone [?]",
+        "V3PastParticiple": "shined / shone [?]"
+    },
+    {
+        "V1Infinitive": "shit",
+        "V2SimplePast": "shit / shat / shitted",
+        "V3PastParticiple": "shit/ shat / shitted"
+    },
+    {
+        "V1Infinitive": "shoot",
+        "V2SimplePast": "shot",
+        "V3PastParticiple": "shot"
+    },
+    {
+        "V1Infinitive": "show",
+        "V2SimplePast": "showed",
+        "V3PastParticiple": "shown / showed"
+    },
+    {
+        "V1Infinitive": "shrink",
+        "V2SimplePast": "shrank / shrunk",
+        "V3PastParticiple": "shrunk"
+    },
+    {
+        "V1Infinitive": "shut",
+        "V2SimplePast": "shut",
+        "V3PastParticiple": "shut"
+    },
+    {
+        "V1Infinitive": "sight-read",
+        "V2SimplePast": "sight-read",
+        "V3PastParticiple": "sight-read"
+    },
+    {
+        "V1Infinitive": "sing",
+        "V2SimplePast": "sang",
+        "V3PastParticiple": "sung"
+    },
+    {
+        "V1Infinitive": "sink",
+        "V2SimplePast": "sank / sunk",
+        "V3PastParticiple": "sunk"
+    },
+    {
+        "V1Infinitive": "sit",
+        "V2SimplePast": "sat",
+        "V3PastParticiple": "sat"
+    },
+    {
+        "V1Infinitive": "slay (kill)",
+        "V2SimplePast": "slew / slayed",
+        "V3PastParticiple": "slain / slayed"
+    },
+    {
+        "V1Infinitive": "slay (amuse)\n              REGULAR",
+        "V2SimplePast": "slayed",
+        "V3PastParticiple": "slayed"
+    },
+    {
+        "V1Infinitive": "sleep",
+        "V2SimplePast": "slept",
+        "V3PastParticiple": "slept"
+    },
+    {
+        "V1Infinitive": "slide",
+        "V2SimplePast": "slid",
+        "V3PastParticiple": "slid"
+    },
+    {
+        "V1Infinitive": "sling",
+        "V2SimplePast": "slung",
+        "V3PastParticiple": "slung"
+    },
+    {
+        "V1Infinitive": "slink",
+        "V2SimplePast": "slinked / slunk",
+        "V3PastParticiple": "slinked / slunk"
+    },
+    {
+        "V1Infinitive": "slit",
+        "V2SimplePast": "slit",
+        "V3PastParticiple": "slit"
+    },
+    {
+        "V1Infinitive": "smell",
+        "V2SimplePast": "smelled / smelt [?]",
+        "V3PastParticiple": "smelled / smelt [?]"
+    },
+    {
+        "V1Infinitive": "sneak",
+        "V2SimplePast": "sneaked / snuck",
+        "V3PastParticiple": "sneaked / snuck"
+    },
+    {
+        "V1Infinitive": "sow",
+        "V2SimplePast": "sowed",
+        "V3PastParticiple": "sown / sowed"
+    },
+    {
+        "V1Infinitive": "speak",
+        "V2SimplePast": "spoke",
+        "V3PastParticiple": "spoken"
+    },
+    {
+        "V1Infinitive": "speed",
+        "V2SimplePast": "sped / speeded",
+        "V3PastParticiple": "sped / speeded"
+    },
+    {
+        "V1Infinitive": "spell",
+        "V2SimplePast": "spelled / spelt [?]",
+        "V3PastParticiple": "spelled / spelt [?]"
+    },
+    {
+        "V1Infinitive": "spend",
+        "V2SimplePast": "spent",
+        "V3PastParticiple": "spent"
+    },
+    {
+        "V1Infinitive": "spill",
+        "V2SimplePast": "spilled / spilt [?]",
+        "V3PastParticiple": "spilled / spilt [?]"
+    },
+    {
+        "V1Infinitive": "spin",
+        "V2SimplePast": "spun",
+        "V3PastParticiple": "spun"
+    },
+    {
+        "V1Infinitive": "spit",
+        "V2SimplePast": "spit / spat",
+        "V3PastParticiple": "spit / spat"
+    },
+    {
+        "V1Infinitive": "split",
+        "V2SimplePast": "split",
+        "V3PastParticiple": "split"
+    },
+    {
+        "V1Infinitive": "spoil",
+        "V2SimplePast": "spoiled / spoilt [?]",
+        "V3PastParticiple": "spoiled / spoilt [?]"
+    },
+    {
+        "V1Infinitive": "spoon-feed",
+        "V2SimplePast": "spoon-fed",
+        "V3PastParticiple": "spoon-fed"
+    },
+    {
+        "V1Infinitive": "spread",
+        "V2SimplePast": "spread",
+        "V3PastParticiple": "spread"
+    },
+    {
+        "V1Infinitive": "spring",
+        "V2SimplePast": "sprang / sprung",
+        "V3PastParticiple": "sprung"
+    },
+    {
+        "V1Infinitive": "stand",
+        "V2SimplePast": "stood",
+        "V3PastParticiple": "stood"
+    },
+    {
+        "V1Infinitive": "steal",
+        "V2SimplePast": "stole",
+        "V3PastParticiple": "stolen"
+    },
+    {
+        "V1Infinitive": "stick",
+        "V2SimplePast": "stuck",
+        "V3PastParticiple": "stuck"
+    },
+    {
+        "V1Infinitive": "sting",
+        "V2SimplePast": "stung",
+        "V3PastParticiple": "stung"
+    },
+    {
+        "V1Infinitive": "stink",
+        "V2SimplePast": "stunk / stank",
+        "V3PastParticiple": "stunk"
+    },
+    {
+        "V1Infinitive": "strew",
+        "V2SimplePast": "strewed",
+        "V3PastParticiple": "strewn / strewed"
+    },
+    {
+        "V1Infinitive": "stride",
+        "V2SimplePast": "strode",
+        "V3PastParticiple": "stridden"
+    },
+    {
+        "V1Infinitive": "strike\n              (delete)",
+        "V2SimplePast": "struck",
+        "V3PastParticiple": "stricken"
+    },
+    {
+        "V1Infinitive": "strike (hit)",
+        "V2SimplePast": "struck",
+        "V3PastParticiple": "struck / stricken"
+    },
+    {
+        "V1Infinitive": "string",
+        "V2SimplePast": "strung",
+        "V3PastParticiple": "strung"
+    },
+    {
+        "V1Infinitive": "strive",
+        "V2SimplePast": "strove / strived",
+        "V3PastParticiple": "striven / strived"
+    },
+    {
+        "V1Infinitive": "sublet",
+        "V2SimplePast": "sublet",
+        "V3PastParticiple": "sublet"
+    },
+    {
+        "V1Infinitive": "sunburn",
+        "V2SimplePast": "sunburned / sunburnt [?]",
+        "V3PastParticiple": "sunburned / sunburnt [?]"
+    },
+    {
+        "V1Infinitive": "swear",
+        "V2SimplePast": "swore",
+        "V3PastParticiple": "sworn"
+    },
+    {
+        "V1Infinitive": "sweat",
+        "V2SimplePast": "sweat / sweated",
+        "V3PastParticiple": "sweat / sweated"
+    },
+    {
+        "V1Infinitive": "sweep",
+        "V2SimplePast": "swept",
+        "V3PastParticiple": "swept"
+    },
+    {
+        "V1Infinitive": "swell",
+        "V2SimplePast": "swelled",
+        "V3PastParticiple": "swollen / swelled"
+    },
+    {
+        "V1Infinitive": "swim",
+        "V2SimplePast": "swam",
+        "V3PastParticiple": "swum"
+    },
+    {
+        "V1Infinitive": "swing",
+        "V2SimplePast": "swung",
+        "V3PastParticiple": "swung"
+    },
+    {
+        "V1Infinitive": "T",
+        "V2SimplePast": "T",
+        "V3PastParticiple": "T"
+    },
+    {
+        "V1Infinitive": "take",
+        "V2SimplePast": "took",
+        "V3PastParticiple": "taken"
+    },
+    {
+        "V1Infinitive": "teach",
+        "V2SimplePast": "taught",
+        "V3PastParticiple": "taught"
+    },
+    {
+        "V1Infinitive": "tear",
+        "V2SimplePast": "tore",
+        "V3PastParticiple": "torn"
+    },
+    {
+        "V1Infinitive": "telecast",
+        "V2SimplePast": "telecast",
+        "V3PastParticiple": "telecast"
+    },
+    {
+        "V1Infinitive": "tell",
+        "V2SimplePast": "told",
+        "V3PastParticiple": "told"
+    },
+    {
+        "V1Infinitive": "test-drive",
+        "V2SimplePast": "test-drove",
+        "V3PastParticiple": "test-driven"
+    },
+    {
+        "V1Infinitive": "test-fly",
+        "V2SimplePast": "test-flew",
+        "V3PastParticiple": "test-flown"
+    },
+    {
+        "V1Infinitive": "think",
+        "V2SimplePast": "thought",
+        "V3PastParticiple": "thought"
+    },
+    {
+        "V1Infinitive": "throw",
+        "V2SimplePast": "threw",
+        "V3PastParticiple": "thrown"
+    },
+    {
+        "V1Infinitive": "thrust",
+        "V2SimplePast": "thrust",
+        "V3PastParticiple": "thrust"
+    },
+    {
+        "V1Infinitive": "tread",
+        "V2SimplePast": "trod",
+        "V3PastParticiple": "trodden / trod"
+    },
+    {
+        "V1Infinitive": "typecast",
+        "V2SimplePast": "typecast",
+        "V3PastParticiple": "typecast"
+    },
+    {
+        "V1Infinitive": "typeset",
+        "V2SimplePast": "typeset",
+        "V3PastParticiple": "typeset"
+    },
+    {
+        "V1Infinitive": "typewrite",
+        "V2SimplePast": "typewrote",
+        "V3PastParticiple": "typewritten"
+    },
+    {
+        "V1Infinitive": "U",
+        "V2SimplePast": "U",
+        "V3PastParticiple": "U"
+    },
+    {
+        "V1Infinitive": "unbend",
+        "V2SimplePast": "unbent",
+        "V3PastParticiple": "unbent"
+    },
+    {
+        "V1Infinitive": "unbind",
+        "V2SimplePast": "unbound",
+        "V3PastParticiple": "unbound"
+    },
+    {
+        "V1Infinitive": "unclothe",
+        "V2SimplePast": "unclothed / unclad [?]",
+        "V3PastParticiple": "unclothed / unclad [?]"
+    },
+    {
+        "V1Infinitive": "underbid",
+        "V2SimplePast": "underbid",
+        "V3PastParticiple": "underbid"
+    },
+    {
+        "V1Infinitive": "undercut",
+        "V2SimplePast": "undercut",
+        "V3PastParticiple": "undercut"
+    },
+    {
+        "V1Infinitive": "underfeed",
+        "V2SimplePast": "underfed",
+        "V3PastParticiple": "underfed"
+    },
+    {
+        "V1Infinitive": "undergo",
+        "V2SimplePast": "underwent",
+        "V3PastParticiple": "undergone"
+    },
+    {
+        "V1Infinitive": "underlie",
+        "V2SimplePast": "underlay",
+        "V3PastParticiple": "underlain"
+    },
+    {
+        "V1Infinitive": "undersell",
+        "V2SimplePast": "undersold",
+        "V3PastParticiple": "undersold"
+    },
+    {
+        "V1Infinitive": "underspend",
+        "V2SimplePast": "underspent",
+        "V3PastParticiple": "underspent"
+    },
+    {
+        "V1Infinitive": "understand",
+        "V2SimplePast": "understood",
+        "V3PastParticiple": "understood"
+    },
+    {
+        "V1Infinitive": "undertake",
+        "V2SimplePast": "undertook",
+        "V3PastParticiple": "undertaken"
+    },
+    {
+        "V1Infinitive": "underwrite",
+        "V2SimplePast": "underwrote",
+        "V3PastParticiple": "underwritten"
+    },
+    {
+        "V1Infinitive": "undo",
+        "V2SimplePast": "undid",
+        "V3PastParticiple": "undone"
+    },
+    {
+        "V1Infinitive": "unfreeze",
+        "V2SimplePast": "unfroze",
+        "V3PastParticiple": "unfrozen"
+    },
+    {
+        "V1Infinitive": "unhang",
+        "V2SimplePast": "unhung",
+        "V3PastParticiple": "unhung"
+    },
+    {
+        "V1Infinitive": "unhide",
+        "V2SimplePast": "unhid",
+        "V3PastParticiple": "unhidden"
+    },
+    {
+        "V1Infinitive": "unknit",
+        "V2SimplePast": "unknitted / unknit",
+        "V3PastParticiple": "unknitted / unknit"
+    },
+    {
+        "V1Infinitive": "unlearn",
+        "V2SimplePast": "unlearned / unlearnt [?]",
+        "V3PastParticiple": "unlearned / unlearnt [?]"
+    },
+    {
+        "V1Infinitive": "unsew",
+        "V2SimplePast": "unsewed",
+        "V3PastParticiple": "unsewn / unsewed"
+    },
+    {
+        "V1Infinitive": "unsling",
+        "V2SimplePast": "unslung",
+        "V3PastParticiple": "unslung"
+    },
+    {
+        "V1Infinitive": "unspin",
+        "V2SimplePast": "unspun",
+        "V3PastParticiple": "unspun"
+    },
+    {
+        "V1Infinitive": "unstick",
+        "V2SimplePast": "unstuck",
+        "V3PastParticiple": "unstuck"
+    },
+    {
+        "V1Infinitive": "unstring",
+        "V2SimplePast": "unstrung",
+        "V3PastParticiple": "unstrung"
+    },
+    {
+        "V1Infinitive": "unweave",
+        "V2SimplePast": "unwove / unweaved",
+        "V3PastParticiple": "unwoven / unweaved"
+    },
+    {
+        "V1Infinitive": "unwind",
+        "V2SimplePast": "unwound",
+        "V3PastParticiple": "unwound"
+    },
+    {
+        "V1Infinitive": "uphold",
+        "V2SimplePast": "upheld",
+        "V3PastParticiple": "upheld"
+    },
+    {
+        "V1Infinitive": "upset",
+        "V2SimplePast": "upset",
+        "V3PastParticiple": "upset"
+    },
+    {
+        "V1Infinitive": "V",
+        "V2SimplePast": "V",
+        "V3PastParticiple": "V"
+    },
+    {
+        "V1Infinitive": "No commonly used irregular verbs beginning with \"V.\"\n              To view our extended dictionary including rare and antiquated forms, Click Here.",
+        "V2SimplePast": "No commonly used irregular verbs beginning with \"V.\"\n              To view our extended dictionary including rare and antiquated forms, Click Here.",
+        "V3PastParticiple": "No commonly used irregular verbs beginning with \"V.\"\n              To view our extended dictionary including rare and antiquated forms, Click Here."
+    },
+    {
+        "V1Infinitive": "W",
+        "V2SimplePast": "W",
+        "V3PastParticiple": "W"
+    },
+    {
+        "V1Infinitive": "wake",
+        "V2SimplePast": "woke / waked",
+        "V3PastParticiple": "woken / waked"
+    },
+    {
+        "V1Infinitive": "waylay",
+        "V2SimplePast": "waylaid",
+        "V3PastParticiple": "waylaid"
+    },
+    {
+        "V1Infinitive": "wear",
+        "V2SimplePast": "wore",
+        "V3PastParticiple": "worn"
+    },
+    {
+        "V1Infinitive": "weave",
+        "V2SimplePast": "wove / weaved",
+        "V3PastParticiple": "woven / weaved"
+    },
+    {
+        "V1Infinitive": "wed",
+        "V2SimplePast": "wed / wedded",
+        "V3PastParticiple": "wed / wedded"
+    },
+    {
+        "V1Infinitive": "weep",
+        "V2SimplePast": "wept",
+        "V3PastParticiple": "wept"
+    },
+    {
+        "V1Infinitive": "wet",
+        "V2SimplePast": "wet / wetted [?]",
+        "V3PastParticiple": "wet / wetted [?]"
+    },
+    {
+        "V1Infinitive": "whet\n               REGULAR",
+        "V2SimplePast": "whetted",
+        "V3PastParticiple": "whetted"
+    },
+    {
+        "V1Infinitive": "win",
+        "V2SimplePast": "won",
+        "V3PastParticiple": "won"
+    },
+    {
+        "V1Infinitive": "wind",
+        "V2SimplePast": "wound",
+        "V3PastParticiple": "wound"
+    },
+    {
+        "V1Infinitive": "withdraw",
+        "V2SimplePast": "withdrew",
+        "V3PastParticiple": "withdrawn"
+    },
+    {
+        "V1Infinitive": "withhold",
+        "V2SimplePast": "withheld",
+        "V3PastParticiple": "withheld"
+    },
+    {
+        "V1Infinitive": "withstand",
+        "V2SimplePast": "withstood",
+        "V3PastParticiple": "withstood"
+    },
+    {
+        "V1Infinitive": "wring",
+        "V2SimplePast": "wrung",
+        "V3PastParticiple": "wrung"
+    },
+    {
+        "V1Infinitive": "write",
+        "V2SimplePast": "wrote",
+        "V3PastParticiple": "written"
+    },
+    {
+        "V1Infinitive": "X",
+        "V2SimplePast": "X",
+        "V3PastParticiple": "X"
+    },
+    {
+        "V1Infinitive": "No irregular verbs beginning with \"X.\"",
+        "V2SimplePast": "No irregular verbs beginning with \"X.\"",
+        "V3PastParticiple": "No irregular verbs beginning with \"X.\""
+    },
+    {
+        "V1Infinitive": "Y",
+        "V2SimplePast": "Y",
+        "V3PastParticiple": "Y"
+    },
+    {
+        "V1Infinitive": "No irregular verbs beginning with \"Y.\"",
+        "V2SimplePast": "No irregular verbs beginning with \"Y.\"",
+        "V3PastParticiple": "No irregular verbs beginning with \"Y.\""
+    },
+    {
+        "V1Infinitive": "Z",
+        "V2SimplePast": "Z",
+        "V3PastParticiple": "Z"
+    },
+    {
+        "V1Infinitive": "No irregular verbs beginning with \"Z.\"",
+        "V2SimplePast": "No irregular verbs beginning with \"Z.\"",
+        "V3PastParticiple": "No irregular verbs beginning with \"Z.\""
+    }
+]

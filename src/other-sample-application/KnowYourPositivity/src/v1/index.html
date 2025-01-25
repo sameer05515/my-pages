@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentence Viewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-xl text-center">
+        <h1 id="sectionName" class="text-3xl font-bold text-gray-800 mb-4">Loading...</h1>
+        <p id="sentence" class="text-lg text-gray-600 fade-enter">Loading...</p>
+
+        <div class="mt-6 flex justify-between">
+            <button id="prevBtn" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400" disabled>Previous</button>
+            <button id="nextBtn" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Next</button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

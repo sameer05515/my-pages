@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDivId {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+		Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-fill-mode Property</h1>
+<h2>Let the &lt;div&gt; element retain the style values from the last keyframe when the animation ends:</h2>
+</div>
+
+<h1>The animation-fill-mode Property</h1>
+
+<p>Let the div element retain the style values from the last keyframe when the animation ends:</p>
+
+<div id="myMoveDivId"></div>
+
+<p><strong>Note:</strong> The animation-fill-mode property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

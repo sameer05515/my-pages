@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid red;
+}
+
+div.b {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 120px;
+  border: 3px solid blue;
+} 
+
+div.c {
+  position: absolute;
+  right: 150px;  
+  width: 200px;
+  height: 120px;
+  border: 3px solid green;
+} 
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="opacity: 1.0;background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_pos_right.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS right Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Set the right edge of the positioned &lt;div&gt; element 150px to the left of the right edge of its nearest positioned ancestor:</h2>
+</div>
+
+
+<h1>The right Property</h1>
+
+<div class="a">This div element has position: relative;
+  <div class="b">This div element has position: absolute and right: 0.</div>
+  <div class="c">This div element has position: absolute and is placed 150 pixels to the left of the right edge of the containing positioned element.</div>
+</div>
+
+</body>
+</html>

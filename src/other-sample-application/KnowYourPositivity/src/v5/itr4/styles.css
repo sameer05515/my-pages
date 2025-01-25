@@ -1,0 +1,106 @@
+/* ✅ Default Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* ✅ Dark Mode */
+  .dark-mode {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
+  
+  /* ✅ Container */
+  .container {
+    width: 90vw;
+    max-width: 800px;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* ✅ Dark Mode for Container */
+  .dark-mode .container {
+    background-color: #2d3748;
+    color: white;
+  }
+  
+  /* ✅ Header & Footer */
+  .header, .footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* ✅ Dark Mode for Header & Footer */
+  .dark-mode .header,
+  .dark-mode .footer {
+    background-color: #2d3748;
+  }
+  
+  /* ✅ Main Content */
+  .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+  }
+  
+  /* ✅ Dark Mode for Main */
+  .dark-mode .main {
+    background-color: #1a202c;
+  }
+  
+  /* ✅ Card */
+  .card {
+    width: 40%;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* ✅ Dark Mode for Card */
+  .dark-mode .card {
+    background-color: #3b4252;
+    color: white;
+  }
+  
+  /* ✅ Buttons */
+  .btn, .theme-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* ✅ Theme Toggle Button */
+  .theme-btn {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* ✅ Dark Mode for Theme Button */
+  .dark-mode .theme-btn {
+    background-color: #444;
+    color: white;
+  }
+  

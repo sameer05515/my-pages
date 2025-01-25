@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Server Tips</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div onclick='toggleDivAndUpdateArrow("metadataDiv","metadataUpArrow","metadataDownArrow");'>
+        <b>Table and columns metadata</b> 
+        <span id="metadataUpArrow" style="display: block;">&darr;</span> 
+        <span id="metadataDownArrow" style="display: none;">&larr;</span>
+    </div>
+    <div id="metadataDiv" class="borderSt">
+
+        <div class="box-prem">
+            <b>SQL Tutorial : </b>
+            <a href="https://www.w3schools.com/sql/default.asp">Click here</a> <br>
+
+            <b>SQL Server multi-statement table-valued functions</b>
+            <a href="https://www.sqlshack.com/sql-server-multi-statement-table-valued-functions/">Click here</a> <br>
+        </div>
+
+        <div class="box-prem">
+            <h3>MS SQL tool tips</h3>
+            <ul>
+                <li>show line number in sql server
+                    <div class="co8aDb XcVN5d" aria-level="3" role="heading"><b>To enable<span>&nbsp;</span>line numbers<span>&nbsp;</span>in Query Editor windows, follow below steps:</b></div>
+                    <div class="RqBzHd">
+                    <ol class="X5LH0c">
+                    <li class="TrT0Xe">Step1: Go to Tools &gt; Options.</li>
+                    <li class="TrT0Xe">Step2: In the Options dialog box navigate to Text Editor &gt; Transact-<b>SQL</b><span>&nbsp;</span>&gt; General.</li>
+                    <li class="TrT0Xe">Step 3: Check &ldquo;<b>Line Numbers</b>&rdquo; and click on &ldquo;OK&rdquo; Now, when a query window is opened<span>&nbsp;</span><b>Line Numbers</b><span>&nbsp;</span>will be displayed:</li>
+                    </ol>
+                    </div>                    
+                </li>
+
+                <li>sqlcmd - Run Transact-SQL Script Files
+                    <a href="https://docs.microsoft.com/en-us/sql/ssms/scripting/sqlcmd-run-transact-sql-script-files?view=sql-server-ver15">
+                        Click here
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h3>Describe table structure</h3>
+            <ul>
+                <li>Which query will give the table structure with column definitions in SQL?
+                    <ul>
+                        <li><code>sp_help tablename</code> in sql server <code>-- sp_help [ [ @objname = ] 'name' ]</code></li>
+                        <li><code>desc tablename</code> in oracle <code>-- DESCRIBE { table-Name | view-Name }</code></li>
+                    </ul>
+                </li>
+
+                <li>SQL - Select first 10 rows only?
+                    <ul>
+                        <li>In SQL server, use: <br>
+                            <code>select top 10 ...</code><br>
+                            Examples <br>
+                            <code>select top 100 * from myTable <br>
+                                select top 100 colA, colB from myTable</code>
+                        </li>
+                        <li>
+                            In MySQL, use: <br>
+                            <code>select ... order by num desc limit 10</code>
+                        </li>
+                    </ul>
+                </li>
+            </ul>           
+        </div>
+
+        <div class="box-prem">
+            <h3>DDL Queries</h3>
+            <ul>
+                <li class="box-prem">Delete table
+                    <ul>
+                        <li><b>A. Dropping a table in the current database</b> <br>
+                            The following example removes the ProductVendor1 table and its data and indexes from the current database. <br>
+                            <pre>
+                                DROP TABLE ProductVendor1 ;
+                            </pre>
+                        </li>
+                        <li><b>B. Dropping a table in another database</b> <br>
+                            The following example drops the SalesPerson2 table in the AdventureWorks2012 database. The example can be executed from any database on the server instance. <br>
+                            <pre>
+                                DROP TABLE AdventureWorks2012.dbo.SalesPerson2 ; 
+                            </pre>
+                        </li>
+                        <li><b>C. Dropping a temporary table</b> <br>
+                            The following example creates a temporary table, tests for its existence, drops it, and tests again for its existence. This example does not use the IF EXISTS syntax which is available beginning with SQL Server 2016 (13.x). <br>
+                            <pre>
+                                CREATE TABLE #temptable (col1 INT);  
+                                GO  
+                                INSERT INTO #temptable  
+                                VALUES (10);  
+                                GO  
+                                SELECT * FROM #temptable;  
+                                GO  
+                                IF OBJECT_ID(N'tempdb..#temptable', N'U') IS NOT NULL   
+                                DROP TABLE #temptable;  
+                                GO  
+                                --Test the drop.  
+                                SELECT * FROM #temptable;  
+                            </pre>
+                        </li>
+                        <li><b>D. Dropping a table using IF EXISTS</b> <br>
+                            <b>Applies to:</b> SQL Server ( SQL Server 2016 (13.x) through current version). <br>
+                            The following example creates a table named T1. Then the second statement drops the table. The third statement performs no action because the table is already deleted, however it does not cause an error. <br>
+                            <pre>
+                                CREATE TABLE T1 (Col1 INT);  
+                                GO  
+                                DROP TABLE IF EXISTS T1;  
+                                GO  
+                                DROP TABLE IF EXISTS T1;  
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-prem">Create Stored Procedure
+                    <pre>
+                        USE [mynduatbportal_nmsme]
+
+                        GO
+                        /****** Object:  StoredProcedure [dbo].[getRequestResponsePayload]    Script Date: 18-02-2021 05:47:36 ******/
+                        SET ANSI_NULLS ON
+                        
+                        GO
+                        SET QUOTED_IDENTIFIER ON
+                        
+                        GO
+                        
+                        IF OBJECT_ID ( 'BP_Amort_addMasterData', 'P' ) IS NOT NULL   
+                            DROP PROCEDURE BP_Amort_addMasterData; 
+                        GO
+                        
+                        CREATE PROCEDURE [dbo].[BP_Amort_addMasterData]
+                        
+                        AS
+                        BEGIN
+                        
+                        -- SELECT CUST_ID, REQUEST_PAYLOAD, RESPONSE_PAYLOAD,SECRET_KEY  
+                        -- from Integration_Request_Response_Payload where CUST_ID = @customerId
+                        
+                            OPEN SYMMETRIC KEY SymmetricKey1
+                                  DECRYPTION BY CERTIFICATE Certificate1;
+                        
+                            
+                            BEGIN
+                        
+                                DECLARE @pv_Factor_Id bigint;
+                                DECLARE @pv_New_AmortID bigint;
+                                DECLARE @pv_FinCustId nvarchar(50);
+                                DECLARE @pv_BuyerCustId nvarchar(50);
+                                DECLARE @pv_ApprovedAmt float;
+                                DECLARE @pv_InterestPercent decimal(5,2);
+                        
+                                DECLARE @pv_LateFeeRate decimal(5,2);
+                        
+                                DECLARE FactorIdList CURSOR FOR
+                                    select FD.FactorId from dbo.bp_factordetails FD JOIN dbo.BP_FactorStatus FS
+                                    on FD.FactorId=FS.FactorId and  FD.ProductType='Dealer Finance' and FS.status='Funded';
+                        
+                                OPEN FactorIdList		
+                                FETCH NEXT FROM FactorIdList INTO @pv_Factor_Id
+                                    WHILE @@Fetch_Status = 0
+                                    BEGIN
+                                        --insert into NGM_OB_CITYRM(City, RMName, Role) values(@city_name,'','')
+                                        --print @pv_Factor_Id
+                        
+                                        select @pv_ApprovedAmt= ApprovedAmt,@pv_BuyerCustId= BuyerCustId from dbo.bp_factordetails where FactorId=@pv_Factor_Id
+                        
+                                        select @pv_FinCustId= C.FinCustId,@pv_InterestPercent= CONVERT(decimal(5,2), DecryptByKey(C.InterestPercent)) 
+                                        from BP_FinancierAmtDetails C where C.factorid=@pv_Factor_Id
+                        
+                                        select @pv_LateFeeRate= LF.LateFeeRate from dbo.BP_LateFeePayment_Data LF where LF.FinCustId=@pv_FinCustId
+                                        
+                                        --PRINT '@pv_FinCustId  ' + @pv_FinCustId
+                                        PRINT '@pv_BuyerCustId  ' + @pv_BuyerCustId
+                        
+                                        INSERT INTO dbo.BP_Amort_Master(factor_id
+                                        ,BuyerCustId
+                                        ,FinCustId
+                                        ,principal_amount
+                                        ,interest_rate,
+                                        Late_fee_rate
+                                        ) 
+                                        VALUES (@pv_Factor_Id,@pv_BuyerCustId,
+                                        @pv_FinCustId,
+                                        @pv_ApprovedAmt,
+                                        @pv_InterestPercent,
+                                        @pv_LateFeeRate
+                                        )
+                                        
+                        
+                                        SELECT @pv_New_AmortID=SCOPE_IDENTITY()
+                                        --print @pv_New_AmortID
+                        
+                                        FETCH NEXT FROM FactorIdList INTO @pv_Factor_Id
+                                    END
+                                    CLOSE FactorIdList
+                                DEALLOCATE FactorIdList
+                        
+                        
+                                --select * from dbo.bp_factordetails where FactorId in (select FD.FactorId from dbo.bp_factordetails FD JOIN dbo.BP_FactorStatus FS
+                                --on FD.FactorId=FS.FactorId and  FD.ProductType='Dealer Finance' and FS.status='Funded');
+                        
+                                --select distinct factorid,
+                                --CONVERT(decimal(5,2), DecryptByKey(C.InterestPercent)) AS 'InterestPercent',
+                                --CONVERT(decimal(16,2), DecryptByKey(C.InterestAmount)) AS 'InterestAmount',TotalFinancedAmt,AmountPayable,Wallet_Charges,
+                                --CONVERT(decimal(16,2), DecryptByKey(C.YieldAmount)) AS 'YieldAmount',* from
+                                --BP_FinancierAmtDetails C
+                                --where factorid=82
+                                --and SelectStatus ='Y';
+                        
+                            END
+                        
+                            CLOSE SYMMETRIC KEY SymmetricKey1;
+                            
+                        
+                        END                                               
+                    </pre>
+                </li>
+
+                <li class="box-prem">SCOPE_IDENTITY (Transact-SQL)
+                    <p>
+                        Returns the last identity value inserted into an identity column in the same scope. A scope is a module: a stored procedure, trigger, function, or batch. Therefore, if two statements are in the same stored procedure, function, or batch, they are in the same scope.
+                        <br>
+                        <b>Syntax</b> : <code>SCOPE_IDENTITY()</code> <br>
+                        <b>Return Types</b> : <code>numeric(38,0)</code> <br>
+                        <b>Example</b> : <code>SELECT SCOPE_IDENTITY() AS [SCOPE_IDENTITY];</code>
+                    </p>
+                </li>
+
+                <li class="box-prem">sql server select column value into variable
+                    <ul>
+                        <li class="box-prem">
+                            <pre>select @EmpID = ID from dbo.Employee</pre> 
+                            OR <br>
+                            <pre>set @EmpID =(select id from dbo.Employee)</pre>
+                        </li>
+                        <li>
+                            <b>with — Organize Complex Queries</b>
+                            <a href="https://modern-sql.com/feature/with" target="_blank">
+                                click here
+                            </a>
+                            <div class="box-prem">
+                                The with clause is also known as common table expression (CTE) and subquery factoring. Note that the recursive from of the with clause is covered in another article.
+                                <br>
+                                <b>Syntax</b><br>
+                                The with clause is, simply put, an optional prefix for select: <br>
+                                <pre>
+                                    WITH query_name (column_name1, ...) AS
+                                    (SELECT ...)
+                                    
+                               SELECT ...                                    
+                                </pre>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-prem">Reset identity seed after deleting records in SQL Server
+                    <ul>
+                        <li>
+                            The DBCC CHECKIDENT management command is used to reset identity counter. The command syntax is:
+                            <br>
+                            <pre>
+                                DBCC CHECKIDENT ('TestTable', RESEED, 0)
+                                GO                        
+                            </pre>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-prem">SQL Server PRINT and SQL Server RAISERROR statements
+                    <ul>
+                        <li>
+                            <a href="https://www.sqlshack.com/sql-server-print-and-sql-server-raiserror-statements/" target="_blank">Click here</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="box-prem">A cursor with the name 'FactorIdList' already exists.
+                    <div class="co8aDb XcVN5d" aria-level="3" role="heading">
+                        <p>You are using global cursor that will be defined each time you are calling this procedure and give you the same error.</p>
+                        <p>Define a local cursor. Just put the keyword<span>&nbsp;</span><code>LOCAL</code><span>&nbsp;</span>after<span>&nbsp;</span><code>CURSOR</code>:</p>
+                        <pre class="lang-sql s-code-block hljs"><code><span class="hljs-keyword">declare</span> detailsCursor <span class="hljs-keyword">CURSOR</span> <span class="hljs-keyword">LOCAL</span> <span class="hljs-keyword">FOR</span>
+                        ...</code></pre>
+                        </div>
+                </li>
+
+                <li class="box-prem">SQL Server CURRENT_TIMESTAMP Function
+                    <ul>
+                        <li>
+                            <b>Example</b><br>
+                            Return the current date and time: <br>
+                            <code>SELECT CURRENT_TIMESTAMP;</code>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h3>SQL Queries</h3>
+            <ul>
+                <li class="box-prem"> <b>Query to check if a particular stored procedure already EXISTS</b>
+                    <ul>
+                        <li>
+                            <pre>
+                                select OBJECT_ID ( 'Interface.dbo.getRequestResponsePayload', 'P' )
+                            </pre>
+                        </li>
+                        <li><b>How to check if a function exists on a SQL database</b>
+                            <pre>
+                                use mynduatbportal_nmsme;
+                                select OBJECT_ID ( 'BP_Amort_addMasterData', 'P' )
+                            </pre>
+                        </li>                        
+                    </ul>
+                </li>
+
+                <li class="box-prem"> <b>How to check if a function exists on a SQL database</b>
+                    <pre>
+                        IF object_id('YourFunctionName', 'FN') IS NOT NULL
+                        BEGIN
+                            DROP FUNCTION [dbo].[YourFunctionName]
+                        END
+                        GO                                
+                    </pre>
+                </li>
+
+                <li class="box-prem"> <b>sql server Query to check if a particular table already EXISTS</b>
+                    <ul>
+                        <li>
+                            <h4>Using OBJECT_ID() function</h4>
+                            <pre>
+                                IF OBJECT_ID('model.dbo.Certifications') IS NOT NULL
+                                BEGIN
+                                   PRINT 'Database Table Exists'
+                                END;
+                             ELSE
+                                BEGIN
+                                   PRINT 'No Table in database'
+                                END;                                
+                            </pre>
+                            <h4>Result:</h4>
+                            <pre>
+                                Database Table Exists
+                            </pre>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <!-- <li class="box-prem"> Comparison Operators : This SQL tutorial explores all of the comparison operators used in SQL to test for equality and inequality, as well as the more advanced operators.
+                    <div class="co8aDb XcVN5d" aria-level="3" role="heading">
+                        <div class="section">
+                        <h1>SQL:<span>&nbsp;</span><span>Comparison Operators</span></h1>
+                        <p>This SQL tutorial explores all of the comparison operators used in SQL to test for equality and inequality, as well as the more advanced operators.</p>
+                        </div>
+                        <div class="section">
+                        <h2>Description</h2>
+                        <p>Comparison operators are used in the WHERE clause to determine which records to select. Here is a list of the comparison operators that you can use in SQL:</p>
+                        <table class="table-prem">
+                        <thead>
+                        <tr>
+                        <th>Comparison Operator</th>
+                        <th>Description</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                        <td>=</td>
+                        <td>Equal</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;&gt;</td>
+                        <td>Not Equal</td>
+                        </tr>
+                        <tr>
+                        <td>!=</td>
+                        <td>Not Equal</td>
+                        </tr>
+                        <tr>
+                        <td>&gt;</td>
+                        <td>Greater Than</td>
+                        </tr>
+                        <tr>
+                        <td>&gt;=</td>
+                        <td>Greater Than or Equal</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;</td>
+                        <td>Less Than</td>
+                        </tr>
+                        <tr>
+                        <td>&lt;=</td>
+                        <td>Less Than or Equal</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/in.php">IN ( )</a></td>
+                        <td>Matches a value in a list</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/not.php">NOT</a></td>
+                        <td>Negates a condition</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/between.php">BETWEEN</a></td>
+                        <td>Within a range (inclusive)</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/is_null.php">IS NULL</a></td>
+                        <td>NULL value</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/is_not_null.php">IS NOT NULL</a></td>
+                        <td>Non-NULL value</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/like.php">LIKE</a></td>
+                        <td>Pattern matching with % and _</td>
+                        </tr>
+                        <tr>
+                        <td><a href="https://www.techonthenet.com/sql/exists.php">EXISTS</a></td>
+                        <td>Condition is met if subquery returns at least one row</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        </div>
+                </li> -->
+
+                <li class="box-prem">First day of next month:
+                    <pre>select DATEADD(d, 1, EOMONTH(current_timestamp))</pre>
+                </li>
+
+                <li class="box-prem"> <b>Replacing NULL with 0 in a SQL server query</b>
+                    <div class="co8aDb XcVN5d" aria-level="3" role="heading">
+                        <div class="section">
+                        <p>When you want to replace a possibly<span>&nbsp;</span><code>null</code><span>&nbsp;</span>column with something else, use<span>&nbsp;</span><a href="http://msdn.microsoft.com/en-us/library/ms184325.aspx" rel="noreferrer">IsNull</a>.</p>
+                        <pre class="lang-sql s-code-block hljs"><code><span class="hljs-keyword">SELECT</span> ISNULL(myColumn, <span class="hljs-number">0</span> ) <span class="hljs-keyword">FROM</span> myTable
+                        </code></pre>
+                        <p>This will put a 0 in myColumn if it is null in the first place.</p>
+                        </div>
+                        </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="box-prem">
+            <h3>Difference between ...</h3>
+            <ul>
+                <li class="box-prem">difference between nvarchar and varchar
+                    <ul>
+                        <li>
+                            <p><span>The key&nbsp;</span><b>difference between varchar</b><span>&nbsp;and&nbsp;</span><b>nvarchar is</b><span>&nbsp;the way they are stored,&nbsp;</span><b>varchar is</b><span>&nbsp;stored as regular 8-bit data(1 byte per character) and&nbsp;</span><b>nvarchar</b><span>&nbsp;stores data at 2 bytes per character. Due to this reason,&nbsp;</span><b>nvarchar</b><span>&nbsp;can hold upto 4000 characters and it takes double the space as SQL&nbsp;</span><b>varchar</b><span>.</span></p>
+                        </li>
+                        <li>
+                            <p><a href="http://msdn.microsoft.com/en-us/library/ms176089.aspx" rel="noreferrer"><strong>varchar</strong></a>: Variable-length, non-Unicode character data. The database collation determines which code page the data is stored using.</p>
+                            <p><a href="http://msdn.microsoft.com/en-us/library/ms186939.aspx" rel="noreferrer"><strong>nvarchar</strong></a>: Variable-length Unicode character data. Dependent on the database collation for comparisons.</p>
+                            <p>Armed with this knowledge, use whichever one matches your input data (ASCII v. Unicode).</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

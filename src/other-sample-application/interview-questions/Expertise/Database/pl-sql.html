@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PL/SQL</title>
+    <link rel="stylesheet" href="../../lib/style.css">
+    <script src="../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>PL/SQL Interview Questions</h1>
+
+            <p>PL/SQL is an advance version of SQL. There are given top list of PL/SQL interview questions with answer.
+            </p>
+
+            <h3>1) What is PL/SQL?</h3>
+
+            <p>PL/SQL stands for procedural language extension to SQL. It supports procedural features of programming
+                language and SQL both. It was developed by Oracle Corporation in early of 90&#39;s to enhance the
+                capabilities of SQL.</p>
+
+            <hr />
+            <h3>2) What is the purpose of using PL/SQL?</h3>
+
+            <p>PL/SQL is an extension of SQL. While SQL is non-procedural, PL/SQL is a procedural language designed by
+                Oracle. It is invented to overcome the limitations of SQL.</p>
+
+            <hr />
+            <h3>3) What are the most important characteristics of PL/SQL?</h3>
+
+            <p>A list of some notable characteristics:</p>
+
+            <ul>
+                <li>PL/SQL is a block-structured language.</li>
+                <li>It is portable to all environments that support Oracle.</li>
+                <li>PL/SQL is integrated with the Oracle data dictionary.</li>
+                <li>Stored procedures help better sharing of application.</li>
+            </ul>
+
+            <hr />
+            <h3>4) What is PL/SQL table? Why it is used?</h3>
+
+            <p>Objects of type tables are called PL/SQL tables that are modeled as database table. We can also say that
+                PL/SQL tables are a way to providing arrays. Arrays are like temporary tables in memory that are
+                processed very quickly. PL/SQL tables are used to move bulk data. They simplifies moving collections of
+                data.</p>
+
+            <hr />
+            <h3>5) What are the datatypes available in PL/SQL?</h3>
+
+            <p>There are two types of datatypes in PL/SQL:</p>
+
+            <ol>
+                <li><strong>Scalar datatypes</strong>&nbsp;Example are NUMBER, VARCHAR2, DATE, CHAR, LONG, BOOLEAN etc.
+                </li>
+                <li><strong>Composite datatypes</strong>&nbsp;Example are RECORD, TABLE etc.</li>
+            </ol>
+
+            <hr />
+            <h3>6) What is the basic structure of PL/SQL?</h3>
+
+            <p>PL/SQL uses BLOCK structure as its basic structure. Each PL/SQL program consists of SQL and PL/SQL
+                statement which form a PL/SQL block.</p>
+
+            <p>PL/SQL block contains 3 sections.</p>
+
+            <ol>
+                <li>The Declaration Section (optional)</li>
+                <li>The Execution Section (mandatory)</li>
+                <li>The Exception handling Section (optional)</li>
+            </ol>
+
+            <hr />
+            <h3>7) What is the difference between FUNCTION, PROCEDURE AND PACKAGE in PL/SQL?</h3>
+
+            <p><strong>Function</strong>: The main purpose of a PL/SQL function is generally to compute and return a
+                single value. A function has a return type in its specification and must return a value specified in
+                that type.</p>
+
+            <p><strong>Procedure</strong>: A procedure does not have a return type and should not return any value but
+                it can have a return statement that simply stops its execution and returns to the caller. A procedure is
+                used to return multiple values otherwise it is generally similar to a function.</p>
+
+            <p><strong>Package</strong>: A package is schema object which groups logically related PL/SQL types , items
+                and subprograms. You can also say that it is a group of functions, procedure, variables and record type
+                statement. It provides modularity, due to this facility it aids application development. It is used to
+                hide information from unauthorized users.</p>
+
+            <hr />
+            <h3>8) What is exception? What are the types of exceptions?</h3>
+
+            <p>Exception is an error handling part of PL/SQL. There are two type of exceptions: pre_defined exception
+                and user_defined exception.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>9) How to write a single statement that concatenates the words ?Hello? and ?World? and assign it in a
+                variable named Greeting?</h3>
+
+            <p>Greeting := &#39;Hello&#39; || &#39;World&#39;;</p>
+
+            <hr />
+            <h3>10) Does PL/SQL support CREATE command?</h3>
+
+            <p>No. PL/SQL doesn&#39;t support the data definition commands like CREATE.</p>
+
+            <hr />
+            <h3>11) Write a unique difference between a function and a stored procedure.</h3>
+
+            <p>A function returns a value while a stored procedure doesn?t return a value.</p>
+
+            <hr />
+            <h3>12) How exception is different from error?</h3>
+
+            <p>Whenever an Error occurs Exception arises. Error is a bug whereas exception is a warning or error
+                condition.</p>
+
+            <hr />
+            <h3>13) What is the main reason behind using an index?</h3>
+
+            <p>Faster access of data blocks in the table.</p>
+
+            <hr />
+            <h3>14) What are PL/SQL exceptions? Tell me any three.</h3>
+
+            <ol>
+                <li>Too_many_rows</li>
+                <li>No_Data_Found</li>
+                <li>Value_error</li>
+                <li>Zero_error etc.</li>
+            </ol>
+
+            <hr />
+            <h3>15) How do you declare a user-defined exception?</h3>
+
+            <p>You can declare the User defined exceptions under the DECLARE section, with the keyword EXCEPTION.</p>
+
+            <p><strong>Syntax:</strong></p>
+
+            <ol start="1">
+                <li>&lt;exception_name&gt;&nbsp;EXCEPTION;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>16) What are some predefined exceptions in PL/SQL?</h3>
+
+            <p>A list of predefined exceptions in PL/SQL:</p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li>DUP_VAL_ON_INDEX</li>
+                <li>ZERO_DIVIDE</li>
+                <li>NO_DATA_FOUND</li>
+                <li>TOO_MANY_ROWS</li>
+                <li>CURSOR_ALREADY_OPEN</li>
+                <li>INVALID_NUMBER</li>
+                <li>INVALID_CURSOR</li>
+                <li>PROGRAM_ERROR</li>
+                <li>TIMEOUT _ON_RESOURCE</li>
+                <li>STORAGE_ERROR</li>
+                <li>LOGON_DENIED</li>
+                <li>VALUE_ERROR</li>
+                <li>etc.</li>
+            </ul>
+
+            <hr />
+            <h3>17) What is a trigger in PL/SQL?</h3>
+
+            <p>A trigger is a PL/SQL program which is stored in the database. It is executed immediately before or after
+                the execution of INSERT, UPDATE, and DELETE commands.</p>
+
+            <hr />
+            <h3>18) What is the maximum number of triggers, you can apply on a single table?</h3>
+
+            <p>12 triggers.</p>
+
+            <hr />
+            <h3>19) How many types of triggers exist in PL/SQL?</h3>
+
+            <p>There are 12 types of triggers in PL/SQL that contains the combination of BEFORE, AFTER, ROW, TABLE,
+                INSERT, UPDATE, DELETE and ALL keywords.</p>
+
+            <ul>
+                <li>BEFORE ALL ROW INSERT</li>
+                <li>AFTER ALL ROW INSERT</li>
+                <li>BEFORE INSERT</li>
+                <li>AFTER INSERT etc.</li>
+            </ul>
+
+            <hr />
+            <h3>20) What is the difference between execution of triggers and stored procedures?</h3>
+
+            <p>A trigger is automatically executed without any action required by the user, while, a stored procedure is
+                explicitly invoked by the user.</p>
+
+            <hr />
+            <h3>21) What happens when a trigger is associated to a view?</h3>
+
+            <p>When a trigger is associated to a view, the base table triggers are normally enabled.</p>
+
+            <hr />
+            <h3>22) What is the usage of WHEN clause in trigger?</h3>
+
+            <p>A WHEN clause specifies the condition that must be true for the trigger to be triggered.</p>
+
+            <hr />
+            <h3>23) How to disable a trigger name update_salary?</h3>
+
+            <p>ALTER TRIGGER update_salary DISABLE;</p>
+
+            <hr />
+            <h3>24) Which command is used to delete a trigger?</h3>
+
+            <p>DROP TRIGGER command.</p>
+
+            <hr />
+            <h3>25) what are the two virtual tables available at the time of database trigger execution?</h3>
+
+            <p>Table columns are referred as THEN.column_name and NOW.column_name.</p>
+
+            <p>For INSERT related triggers, NOW.column_name values are available only.</p>
+
+            <p>For DELETE related triggers, THEN.column_name values are available only.</p>
+
+            <p>For UPDATE related triggers, both Table columns are available.</p>
+
+            <hr />
+            <h3>26) What is stored Procedure?</h3>
+
+            <p>A stored procedure is a sequence of statement or a named PL/SQL block which performs one or more specific
+                functions. It is similar to a procedure in other programming languages. It is stored in the database and
+                can be repeatedly executed. It is stored as schema object. It can be nested, invoked and parameterized.
+            </p>
+
+            <hr />
+            <h3>27) What are the different schemas objects that can be created using PL/SQL?</h3>
+
+            <ul>
+                <li>Stored procedures and functions</li>
+                <li>Packages</li>
+                <li>Triggers</li>
+                <li>Cursors</li>
+            </ul>
+
+            <hr />
+            <h3>28) What do you know by PL/SQL Cursors?</h3>
+
+            <p>Oracle uses workspaces to execute the SQL commands. When Oracle processes a SQL command, it opens an area
+                in the memory called Private SQL Area. This area is identified by the cursor. It allows programmers to
+                name this area and access it?s information.</p>
+
+            <hr />
+            <h3>29) What is the difference between the implicit and explicit cursors?</h3>
+
+            <p>Implicit cursor is implicitly declared by Oracle. This is a cursor to all the DDL and DML commands that
+                return only one row.</p>
+
+            <p>Explicit cursor is created for queries returning multiple rows.</p>
+
+            <hr />
+            <h3>30) What will you get by the cursor attribute SQL%ROWCOUNT?</h3>
+
+            <p>The cursor attribute SQL%ROWCOUNT will return the number of rows that are processed by a SQL statement.
+            </p>
+
+            <hr />
+            <h3>31) What will you get by the cursor attribute SQL%FOUND?</h3>
+
+            <p>It returns the Boolean value TRUE if at least one row was processed.</p>
+
+            <hr />
+            <h3>32) What will you get by the cursor attribute SQL%NOTFOUND?</h3>
+
+            <p>It returns the Boolean value TRUE if no rows were processed.</p>
+
+            <hr />
+            <h3>33) What do you understand by PL/SQL packages?</h3>
+
+            <p>A PL/SQL package can be specified as a file that groups functions, cursors, stored procedures, and
+                variables in one place.</p>
+
+            <hr />
+            <h3>34) What are the two different parts of the PL/SQL packages?</h3>
+
+            <p>PL/SQL packages have the following two parts:</p>
+
+            <p><strong>Specification part:</strong>&nbsp;It specifies the part where the interface to the application is
+                defined.</p>
+
+            <p><strong>Body part:</strong>&nbsp;This part specifies where the implementation of the specification is
+                defined.</p>
+
+            <hr />
+            <h3>35) Which command is used to delete a package?</h3>
+
+            <p>The DROP PACKAGE command is used to delete a package.</p>
+
+            <hr />
+            <h3>36) How to execute a stored procedure?</h3>
+
+            <p>There are two way to execute a stored procedure.</p>
+
+            <p>From the SQL prompt, write EXECUTE or EXEC followed by procedure_name.</p>
+
+            <ol start="1">
+                <li>EXECUTE&nbsp;or&nbsp;[EXEC]&nbsp;procedure_name;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Simply use the procedure name</p>
+
+            <ol start="1">
+                <li>procedure_name;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>37) What are the advantages of stored procedure?</h3>
+
+            <p>Modularity, extensibility, reusability, Maintainability and one time compilation.</p>
+
+            <hr />
+            <h3>38) What are the cursor attributes used in PL/SQL?</h3>
+
+            <p><strong>%ISOPEN</strong>: it checks whether the cursor is open or not.</p>
+
+            <p><strong>%ROWCOUNT</strong>: returns the number of rows affected by DML operations:
+                INSERT,DELETE,UPDATE,SELECT.</p>
+
+            <p><strong>%FOUND</strong>: it checks whether cursor has fetched any row. If yes - TRUE.</p>
+
+            <p><strong>%NOTFOUND</strong>: it checks whether cursor has fetched any row. If no - TRUE.</p>
+
+            <hr />
+            <h3>39) What is the difference between syntax error and runtime error?</h3>
+
+            <p>A syntax error can be easily detected by a PL/SQL compiler. For example: incorrect spelling etc. while, a
+                runtime error is handled with the help of exception-handling section in a PL/SQL block. For example:
+                SELECT INTO statement, which does not return any rows.</p>
+
+            <hr />
+            <h3>40) Explain the Commit statement.</h3>
+
+            <p>Following conditions are true for the Commit statement:</p>
+
+            <ul>
+                <li>Other users can see the data changes made by the transaction.</li>
+                <li>The locks acquired by the transaction are released.</li>
+                <li>The work done by the transaction becomes permanent.</li>
+            </ul>
+
+            <hr />
+            <h3>41) Explain the Rollback statement?</h3>
+
+            <p>The Rollback statement is issued when the transaction ends. Following conditions are true for a Rollback
+                statement:</p>
+
+            <ul>
+                <li>The work done in a transition is undone as if it was never issued.</li>
+                <li>All locks acquired by transaction are released.</li>
+            </ul>
+
+            <hr />
+            <h3>42) Explain the SAVEPOINT statement.</h3>
+
+            <p>With SAVEPOINT, only part of transaction can be undone.</p>
+
+            <hr />
+            <h3>43) What is mutating table error?</h3>
+
+            <p>Mutating table error is occurred when a trigger tries to update a row that it is currently using. It is
+                fixed by using views or temporary tables.</p>
+
+            <hr />
+            <h3>44) What is consistency?</h3>
+
+            <p>Consistency simply means that each user sees the consistent view of the data.</p>
+
+            <p>Consider an example: there are two users A and B. A transfers money to B&#39;s account. Here the changes
+                are updated in A&#39;s account (debit) but until it will be updated to B&#39;s account (credit), till
+                then other users can&#39;t see the debit of A&#39;s account. After the debit of A and credit of B, one
+                can see the updates. That?s consistency.</p>
+
+            <hr />
+            <h3>45) What is cursor and why it is required?</h3>
+
+            <p>A cursor is a&nbsp;<strong>temporary work area</strong>&nbsp;created in a system memory when an SQL
+                statement is executed.</p>
+
+            <p>A cursor contains information on a select statement and the row of data accessed by it. This temporary
+                work area stores the data retrieved from the database and manipulate this data. A cursor can hold more
+                than one row, but can process only one row at a time. Cursor are required to process rows individually
+                for queries.</p>
+
+            <hr />
+            <h3>46) How many types of cursors are available in PL/SQL?</h3>
+
+            <p>There are two types of cursors in PL/SQL.</p>
+
+            <ol>
+                <li>Implicit cursor, and</li>
+                <li>explicit cursor</li>
+            </ol>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+{
+    "nodes": [
+        {
+            "name": "Shri Vikram sah",
+            "label": "Person",
+            "id": 1
+        },
+        {
+            "name": "Shri Sitaram sah",
+            "label": "Person",
+            "id": 2
+        },
+        {
+            "name": "Shri Chandu sah",
+            "label": "Person",
+            "id": 3
+        },
+        {
+            "name": "Shri Nagina sah",
+            "label": "Person",
+            "id": 4
+        },
+        {
+            "name": "Shri Mangal sah",
+            "label": "Person",
+            "id": 5
+        },
+        {
+            "name": "Shri Rajendra sah",
+            "label": "Person",
+            "id": 6
+        },
+        {
+            "name": "Shri Shankar sah",
+            "label": "Person",
+            "id": 7
+        },
+        {
+            "name": "Shri Bhola Prasad",
+            "label": "Person",
+            "id": 8
+        },
+        {
+            "name": "Shri Sanjay Prasad",
+            "label": "Person",
+            "id": 9
+        },
+        {
+            "name": "Shri Sunil Prasad",
+            "label": "Person",
+            "id": 10
+        },
+        {
+            "name": "Shri Kanhaiya Prasad",
+            "label": "Person",
+            "id": 11
+        },
+        {
+            "name": "Shri Anand Prasad",
+            "label": "Person",
+            "id": 12
+        },
+        {
+            "name": "Shri NandKishore Prasad",
+            "label": "Person",
+            "id": 13
+        },
+        {
+            "name": "Shri Munna Prasad",
+            "label": "Person",
+            "id": 14
+        },
+        {
+            "name": "Shri Lalan Prasad",
+            "label": "Person",
+            "id": 15
+        },
+        {
+            "name": "Shri Suresh Prasad",
+            "label": "Person",
+            "id": 16
+        },
+        {
+            "name": "Shri Dhruv Prasad",
+            "label": "Person",
+            "id": 17
+        },
+        {
+            "name": "Shri Bipin Bihari",
+            "label": "Person",
+            "id": 18
+        },
+        {
+            "name": "Shri Nawal Prasad",
+            "label": "Person",
+            "id": 19
+        }
+    ],
+    "links": [
+        {
+            "source": 1,
+            "target": 2,
+            "type": "Father"
+        },
+        {
+            "source": 1,
+            "target": 3,
+            "type": "Father"
+        },
+        {
+            "source": 1,
+            "target": 4,
+            "type": "Father"
+        },
+        {
+            "source": 1,
+            "target": 5,
+            "type": "Father"
+        },
+        {
+            "source": 2,
+            "target": 6,
+            "type": "Father"
+        },
+        {
+            "source": 2,
+            "target": 7,
+            "type": "Father"
+        },
+        {
+            "source": 3,
+            "target": 8,
+            "type": "Father"
+        },
+        {
+            "source": 3,
+            "target": 9,
+            "type": "Father"
+        },
+        {
+            "source": 3,
+            "target": 10,
+            "type": "Father"
+        },
+        {
+            "source": 4,
+            "target": 11,
+            "type": "Father"
+        },
+        {
+            "source": 4,
+            "target": 12,
+            "type": "Father"
+        },
+        {
+            "source": 4,
+            "target": 13,
+            "type": "Father"
+        },
+        {
+            "source": 4,
+            "target": 15,
+            "type": "Father"
+        },
+        {
+            "source": 5,
+            "target": 16,
+            "type": "Father"
+        },
+        {
+            "source": 5,
+            "target": 17,
+            "type": "Father"
+        },
+        {
+            "source": 5,
+            "target": 18,
+            "type": "Father"
+        },
+        {
+            "source": 5,
+            "target": 19,
+            "type": "Father"
+        }
+    ]
+}

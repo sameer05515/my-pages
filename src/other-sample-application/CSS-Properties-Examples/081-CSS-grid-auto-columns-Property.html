@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: 1 / 1 / 2 / 2; }
+.item2 { grid-area: 1 / 2 / 2 / 3; }
+.item3 { grid-area: 1 / 3 / 2 / 4; }
+.item4 { grid-area: 2 / 1 / 3 / 2; }
+.item5 { grid-area: 2 / 2 / 3 / 3; }
+.item6 { grid-area: 2 / 3 / 3 / 4; }
+
+.grid-container {
+  display: grid;
+  grid-auto-columns: 50px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_grid-auto-columns.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS grid-auto-columns Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Set a default size for the columns in a grid:</h2>
+</div>
+
+
+<h1>The grid-auto-columns Property</h1>
+<p>Use the <em>grid-auto-columns</em> property to set a default size (width) for all columns.</p>
+<p>Set the size to 50 pixels per column:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+</div>
+
+<p><strong>Note:</strong> The grid-template-columns property overrides this property.</p>
+
+</body>
+</html>

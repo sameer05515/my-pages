@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Data Export: v3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 p-6">
+    <div class="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-4">
+      <div class="flex justify-between items-center mb-4">
+        <button id="prevConversationBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Prev Conversation</button>
+        <h4 class="text-lg font-semibold">Chat Messages</h4>
+        <button id="nextConversationBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Next Conversation</button>
+      </div>
+
+      <div id="root" class="space-y-4"></div>
+
+      <div class="flex justify-between items-center mt-4">
+        <button id="prevPageBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Prev Page</button>
+        <span id="conversationIndex" class="text-sm text-gray-600"></span>
+        <button id="nextPageBtn" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg disabled:opacity-50">Next Page</button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

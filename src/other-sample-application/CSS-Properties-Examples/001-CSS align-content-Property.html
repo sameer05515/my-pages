@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #main {
+            width: 70px;
+            height: 300px;
+            border: 1px solid #c3c3c3;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #main div {
+            width: 70px;
+            height: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+        Reference : <a href="https://www.w3schools.com/cssref/css3_pr_align-content.asp" target="_blank">Click here</a>
+        <h1>CSS align-content Property</h1>
+        <h2>Pack lines toward the center of the flex container:</h2>
+    </div>
+
+    
+
+
+    <div id="main">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:pink;"></div>
+    </div>
+
+    <p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the align-content property.</p>
+
+    <hr>
+    <hr>
+    <div id="definitionAndUsageSection">
+
+        <h2>Example</h2>
+        Pack lines toward the center of the flex container:
+        <pre style="padding:5px; border: solid #b91de0; background-color: rgb(247, 159, 128);">
+    div {
+        width: 70px;
+        height: 300px;
+        border: 1px solid #c3c3c3;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }          
+    </pre>
+
+        <h2>Definition and Usage</h2>
+        <p>The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but
+            instead of aligning flex items, it aligns flex lines.</p>
+        <p><b>Note:</b> There must be multiple lines of items for this property to have any effect!</p>
+        <p><b>Tip:</b> Use the justify-content property to align the items on the main-axis (horizontally).</p>
+
+        <p style="padding: 5px 5px 5px 5px; margin: 5px 5px 5px 5px; border: solid #08000a;">
+            <b>Default value:</b> stretch <br>
+            <b>Inherited:</b> no <br>
+            <b>Animatable:</b> no. <a href="02-CSS Animatable-Properties.html" target="_blank">Read about animatable
+            </a> <br>
+            <b>Version:</b> CSS3 <br>
+            <b>JavaScript syntax:</b> object.style.alignContent="center" <br>
+        </p>
+        <br>
+        <h2>CSS Syntax</h2>
+        <pre style="padding:5px; border: solid #a60ecc;  background-color: rgb(247, 159, 128);">
+
+        align-content: stretch|center|flex-start|flex-end|space-between|space-around|initial|inherit;
+
+    </pre>
+        <br>
+        <h2>Property Values</h2>
+        <div style="padding: 5px 5px 5px 5px; margin: 5px 5px 5px 5px; border: solid #08000a;">
+            <table style="border: 1px solid black;">
+                <tr style="border: 1px solid black;">
+                    <th style="border: 1px solid black;">Value</th>
+                    <th style="border: 1px solid black;">Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">stretch</td>
+                    <td style="border: 1px solid black;">Default value. Lines stretch to take up the remaining space
+                    </td>
+                </tr>
+
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">center</td>
+                    <td style="border: 1px solid black;">Lines are packed toward the center of the flex container</td>
+                </tr>
+
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">flex-start</td>
+                    <td style="border: 1px solid black;">Lines are packed toward the start of the flex container</td>
+                </tr>
+
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">flex-end</td>
+                    <td style="border: 1px solid black;">Lines are packed toward the end of the flex container</td>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid black;">space-between</td>
+                    <td style="border: 1px solid black;">Lines are evenly distributed in the flex container</td>
+                </tr>
+
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">space-around</td>
+                    <td style="border: 1px solid black;">Lines are evenly distributed in the flex container, with
+                        half-size spaces on either end</td>
+                </tr>
+
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">initial</td>
+                    <td style="border: 1px solid black;">Sets this property to its default value.</td>
+                </tr>
+
+                <tr>
+                    <td style="border: 1px solid black;">inherit</td>
+                    <td style="border: 1px solid black;">Inherits this property from its parent element</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

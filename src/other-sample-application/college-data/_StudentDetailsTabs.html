@@ -1,0 +1,10 @@
+ <tabset>
+       <tab heading="Personal Details" ng-click="PersonalDetails()">
+          <span ng-include="'_PersonalDetails.html'"  ng-controller="StudentDetailsCtrl"></span>
+       </tab>
+       <tab heading="Educational Details" ng-click="EducationalDetails()">
+          <span ng-include="'_EducationalDetails.html'" ng-controller="StudentDetailsCtrl"></span>
+       </tab>
+    </tabset>
+  <br><br>
+  <span ng-include="'_OtherDetails.html'" ng-controller="StudentDetailsCtrl"></span>

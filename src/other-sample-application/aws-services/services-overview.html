@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css"
+    />
+    <title>AWS Services Overview</title>
+  </head>
+
+  <body>
+      <div ng-app="awsServicesApp">
+        <div ng-controller="MainController">
+            {{myText}}
+            <div class="container">
+              <ul>
+                <li ng-repeat="sectionObj in servicesOverviewData">
+                  <div>
+                    <span><b>{{sectionObj.sectionName}}</b></span>
+                  </div>
+
+                  <ul>
+                    <li ng-repeat="serviceObj in sectionObj.services">
+                      <div>
+                        <b>{{serviceObj.serviceName}}</b> : {{serviceObj.shortDescription}}
+                      </div>
+                    </li>
+                  </ul>  
+
+                </li>
+              </ul>
+
+            </div>
+        </div>
+      </div>
+    
+    <script src="../../lib/js/angular-1.5.5/angular.min.js"></script>
+    <script src="../../lib/js/angular-1.5.5/angular-animate.min.js"></script>
+    <script src="../../lib/js/angular-1.5.5/angular-touch.min.js"></script>
+    <script src="../../lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+    <script type="text/javascript" src="js/services-overview.js"></script>
+  </body>
+</html>

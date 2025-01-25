@@ -1,0 +1,201 @@
+{
+    "nodes": [
+        {
+            "id": "09OCT2020-00001-Shri-Vikram-sah",
+            "name": "Shri Vikram sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00001-Shri-Sitaram-sah",
+            "name": "Shri Sitaram sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00002-Shri-Chandu-sah",
+            "name": "Shri Chandu sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00003-Shri-Nagina-sah",
+            "name": "Shri Nagina sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00004-Shri-Mangal-sah",
+            "name": "Shri Mangal sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00005-Shri-Rajendra-sah",
+            "name": "Shri Rajendra sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00006-Shri-Shankar-sah",
+            "name": "Shri Shankar sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00007-Shri-Mahender-sah",
+            "name": "Shri Mahender sah",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00008-Shri-Bhola-Prasad",
+            "name": "Shri Bhola Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00009-Shri-Sanjay-Prasad",
+            "name": "Shri Sanjay Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00010-Shri-Sunil-Prasad",
+            "name": "Shri Sunil Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00011-Shri-Kanhaiya-Prasad",
+            "name": "Shri Kanhaiya Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00012-Shri-Anand-Prasad",
+            "name": "Shri Anand Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00013-Shri-NandKishore-Prasad",
+            "name": "Shri NandKishore Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00014-Shri-Munna-Prasad",
+            "name": "Shri Munna Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00015-Shri-Lalan-Prasad",
+            "name": "Shri Lalan Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00016-Shri-Suresh-Prasad",
+            "name": "Shri Suresh Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00017-Shri-Dhruv-Prasad",
+            "name": "Shri Dhruv Prasad",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00018-Shri-Bipin-Bihari",
+            "name": "Shri Bipin Bihari",
+            "label": "PERSON"
+        },
+        {
+            "id": "10OCT2020-00019-Shri-Nawal-Prasad",
+            "name": "Shri Nawal Prasad",
+            "label": "PERSON"
+        }
+    ],
+    "links": [
+        {
+            "source": "09OCT2020-00001-Shri-Vikram-sah",
+            "target": "10OCT2020-00001-Shri-Sitaram-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "09OCT2020-00001-Shri-Vikram-sah",
+            "target": "10OCT2020-00002-Shri-Chandu-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "09OCT2020-00001-Shri-Vikram-sah",
+            "target": "10OCT2020-00003-Shri-Nagina-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "09OCT2020-00001-Shri-Vikram-sah",
+            "target": "10OCT2020-00004-Shri-Mangal-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00001-Shri-Sitaram-sah",
+            "target": "10OCT2020-00005-Shri-Rajendra-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00001-Shri-Sitaram-sah",
+            "target": "10OCT2020-00006-Shri-Shankar-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00001-Shri-Sitaram-sah",
+            "target": "10OCT2020-00007-Shri-Mahender-sah",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00002-Shri-Chandu-sah",
+            "target": "10OCT2020-00008-Shri-Bhola-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00002-Shri-Chandu-sah",
+            "target": "10OCT2020-00009-Shri-Sanjay-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00002-Shri-Chandu-sah",
+            "target": "10OCT2020-00010-Shri-Sunil-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00003-Shri-Nagina-sah",
+            "target": "10OCT2020-00011-Shri-Kanhaiya-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00003-Shri-Nagina-sah",
+            "target": "10OCT2020-00012-Shri-Anand-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00003-Shri-Nagina-sah",
+            "target": "10OCT2020-00013-Shri-NandKishore-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00003-Shri-Nagina-sah",
+            "target": "10OCT2020-00014-Shri-Munna-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00003-Shri-Nagina-sah",
+            "target": "10OCT2020-00015-Shri-Lalan-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00004-Shri-Mangal-sah",
+            "target": "10OCT2020-00016-Shri-Suresh-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00004-Shri-Mangal-sah",
+            "target": "10OCT2020-00017-Shri-Dhruv-Prasad",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00004-Shri-Mangal-sah",
+            "target": "10OCT2020-00018-Shri-Bipin-Bihari",
+            "type": "FATHER"
+        },
+        {
+            "source": "10OCT2020-00004-Shri-Mangal-sah",
+            "target": "10OCT2020-00019-Shri-Nawal-Prasad",
+            "type": "FATHER"
+        }
+    ]
+}

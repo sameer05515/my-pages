@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+    <link rel="stylesheet" href="../../../lib/style.css">
+    <script src="../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>MongoDB Interview Questions</h1>
+
+            <h3>1) What do you understand by NoSQL databases? Is MongoDB a NoSQL database? explain.</h3>
+
+            <p>At the present time, the internet is loaded with big data, big users, big complexity etc. and also
+                becoming more complex day by day. NoSQL is answer of all these problems, It is not a traditional
+                database management system, not even a relational database management system (RDBMS). NoSQL stands for
+                &quot;Not Only SQL&quot;. NoSQL is a type of database that can handle and sort all type of unstructured,
+                messy and complicated data. It is just a new way to think about the database.</p>
+
+            <p>Yes. MongoDB is a NoSQL database.</p>
+
+            <hr />
+            <h3>2) Which are the different languages supported by MongoDB?</h3>
+
+            <p>MonggoDB provides official driver support for C, C++, C#, Java, Node.js, Perl, PHP, Python, Ruby, Scala,
+                Go and Erlang.</p>
+
+            <p>You can use MongoDB with any of the above languages. There are some other community supported drivers too
+                but the above mentioned ones are officially provided by MongoDB.</p>
+
+            <hr />
+            <h3>3) What are the different types of NoSQL databases? Give some example.</h3>
+
+            <p>NoSQL database can be classified as 4 basic types:</p>
+
+            <ol>
+                <li>Key value store NoSQL database</li>
+                <li>Document store NoSQL database</li>
+                <li>Column store NoSQL database</li>
+                <li>Graph base NoSQL databse</li>
+            </ol>
+
+            <p>There are many NoSQL databases. MongoDB, Cassandra, CouchBD, Hypertable, Redis, Riak, Neo4j, HBASE,
+                Couchbase, MemcacheDB, Voldemort, RevenDB etc. are the examples of NoSQL databases.</p>
+
+            <hr />
+            <h3>4) Is MongoDB better than other SQL databases? If yes then how?</h3>
+
+            <p>MongoDB is better than other SQL databases because it allows a highly flexible and scalable document
+                structure.</p>
+
+            <p><strong>For example:</strong></p>
+
+            <ul>
+                <li>One data document in MongoDB can have five columns and the other one in the same collection can have
+                    ten columns.</li>
+                <li>MongoDB database are faster than SQL databases due to efficient indexing and storage techniques.
+                </li>
+            </ul>
+
+            <hr />
+            <h3>5) What type of DBMS is MongoDB?</h3>
+
+            <p>MongoDB is a document oriented DBMS</p>
+
+            <hr />
+            <h3>6) What is the difference between MongoDB and MySQL?</h3>
+
+            <p>Although MongoDB and MySQL both are free and open source databases, there is a lot of difference between
+                them in the term of data representation, relationship, transaction, querying data, schema design and
+                definition, performance speed, normalization and many more. To compare MySQL with MongoDB is like a
+                comparison between Relational and Non-relational databases.</p>
+
+            <hr />
+            <h3>7) Why MongoDB is known as best NoSQL database?</h3>
+
+            <p>MongoDb is the best NoSQL database because, it is:</p>
+
+            <ul>
+                <li>Document Oriented</li>
+                <li>Rich Query language</li>
+                <li>High Performance</li>
+                <li>Highly Available</li>
+                <li>Easily Scalable</li>
+            </ul>
+
+            <hr />
+            <h3>8) Does MongoDB support primary-key, foreign-key relationship?</h3>
+
+            <p>No. By Default, MongoDB doesn&#39;t support primary key-foreign key relationship.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>9) Can you achieve primary key - foreign key relationships in MongoDB?</h3>
+
+            <p>We can achieve primary key-foreign key relationship by embedding one document inside another. For
+                example: An address document can be embedded inside customer document.</p>
+
+            <hr />
+            <h3>10) Does MongoDB need a lot of RAM?</h3>
+
+            <p>No. There is no need a lot of RAM to run MongoDB. It can be run even on a small amount of RAM because it
+                dynamically allocates and de-allocates RAM according to the requirement of the processes.</p>
+
+            <hr />
+            <h3>11) Explain the structure of ObjectID in MongoDB.</h3>
+
+            <p>ObjectID is a 12-byte BSON type. These are:</p>
+
+            <ul>
+                <li>4 bytes value representing seconds</li>
+                <li>3 byte machine identifier</li>
+                <li>2 byte process id</li>
+                <li>3 byte counter</li>
+            </ul>
+
+            <hr />
+            <h3>12) Is it true that MongoDB uses BSON to represent document structure?</h3>
+
+            <p>Yes.</p>
+
+            <hr />
+            <h3>13) What are Indexes in MongoDB?</h3>
+
+            <p>In MondoDB, Indexes are used to execute query efficiently. Without indexes, MongoDB must perform a
+                collection scan, i.e. scan every document in a collection, to select those documents that match the
+                query statement. If an appropriate index exists for a query, MongoDB can use the index to limit the
+                number of documents it must inspect.</p>
+
+            <hr />
+            <h3>14) By default, which index is created by MongoDB for every collection?</h3>
+
+            <p>By default, the_id collection is created for every collection by MongoDB.</p>
+
+            <hr />
+            <h3>15) What is a Namespace in MongoDB?</h3>
+
+            <p>Namespace is a concatenation of the database name and the collection name. Collection, in which MongoDB
+                stores BSON objects.</p>
+
+            <hr />
+            <h3>16) Can journaling features be used to perform safe hot backups?</h3>
+
+            <p>Yes.</p>
+
+            <hr />
+            <h3>17) Why does Profiler use in MongoDB?</h3>
+
+            <p>MongoDB uses a database profiler to perform characteristics of each operation against the database. You
+                can use a profiler to find queries and write operations</p>
+
+            <hr />
+            <h3>18) If you remove an object attribute, is it deleted from the database?</h3>
+
+            <p>Yes, it be. Remove the attribute and then re-save() the object.</p>
+
+            <hr />
+            <h3>19) In which language MongoDB is written?</h3>
+
+            <p>MongoDB is written and implemented in C++.</p>
+
+            <hr />
+            <h3>20) Does MongoDB need a lot space of Random Access Memory (RAM)?</h3>
+
+            <p>No. MongoDB can be run on small free space of RAM.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>21) What language you can use with MongoDB?</h3>
+
+            <p>MongoDB client drivers supports all the popular programming languages so there is no issue of language,
+                you can use any language that you want.</p>
+
+            <hr />
+            <h3>22) Does MongoDB database have tables for storing records?</h3>
+
+            <p>No. Instead of tables, MongoDB uses &quot;Collections&quot; to store data.</p>
+
+            <hr />
+            <hr />
+            <h3>23) Do the MongoDB databases have schema?</h3>
+
+            <p>Yes. MongoDB databases have dynamic schema. There is no need to define the structure to create
+                collections.</p>
+
+            <hr />
+            <h3>24) What is the method to configure the cache size in MongoDB?</h3>
+
+            <p>MongoDB&#39;s cache is not configurable. Actually MongoDb uses all the free spaces on the system
+                automatically by way of memory mapped files.</p>
+
+            <hr />
+            <h3>25) How to do Transaction/locking in MongoDB?</h3>
+
+            <p>MongoDB doesn&#39;t use traditional locking or complex transaction with Rollback. MongoDB is designed to
+                be light weighted, fast and predictable to its performance. It keeps transaction support simple to
+                enhance performance.</p>
+
+            <hr />
+            <h3>26) Why 32 bit version of MongoDB are not preferred ?</h3>
+
+            <p>Because MongoDB uses memory mapped files so when you run a 32-bit build of MongoDB, the total storage
+                size of server is 2 GB. But when you run a 64-bit build of MongoDB, this provides virtually unlimited
+                storage size. So 64-bit is preferred over 32-bit.</p>
+
+            <hr />
+            <h3>27) Is it possible to remove old files in the moveChunk directory?</h3>
+
+            <p>Yes, These files can be deleted once the operations are done because these files are made as backups
+                during normal shard balancing operation. This is a manual cleanup process and necessary to free up
+                space.</p>
+
+            <hr />
+            <h3>28) What will have to do if a shard is down or slow and you do a query?</h3>
+
+            <p>If a shard is down and you even do query then your query will be returned with an error unless you set a
+                partial query option. But if a shard is slow them Mongos will wait for them till response.</p>
+
+            <hr />
+            <h3>29)Explain the covered query in MongoDB.</h3>
+
+            <p>A query is called covered query if satisfies the following two conditions:</p>
+
+            <ul>
+                <li>The fields used in the query are part of an index used in the query.</li>
+                <li>The fields returned in the results are in the same index.</li>
+            </ul>
+
+            <hr />
+            <h3>30) What is the importance of covered query?</h3>
+
+            <p>Covered query makes the execution of the query faster because indexes are stored in RAM or sequentially
+                located on disk. It makes the execution of the query faster.</p>
+
+            <p>Covered query makes the fields are covered in the index itself, MongoDB can match the query condition as
+                well as return the result fields using the same index without looking inside the documents.</p>
+
+            <hr />
+            <h3>31) What is sharding in MongoDB?</h3>
+
+            <p>In MongoDB, Sharding is a procedure of storing data records across multiple machines. It is a MongoDB
+                approach to meet the demands of data growth. It creates horizontal partition of data in a database or
+                search engine. Each partition is referred as shard or database shard.</p>
+
+            <hr />
+            <h3>32) What is replica set in MongoDB?</h3>
+
+            <p>A replica can be specified as a group of mongo instances that host the same data set. In a replica set,
+                one node is primary, and another is secondary. All data is replicated from primary to secondary nodes.
+            </p>
+
+            <hr />
+            <h3>33) What is primary and secondary replica set in MongoDB?</h3>
+
+            <p>In MongoDB, primary nodes are the node that can accept write. These are also known as master nodes. The
+                replication in MongoDB is single master so, only one node can accept write operations at a time.</p>
+
+            <p>Secondary nodes are known as slave nodes. These are read only nodes that replicate from the primary.</p>
+
+            <hr />
+            <h3>34) By default, which replica sets are used to write data?</h3>
+
+            <p>By default, MongoDB writes data only to the primary replica set.</p>
+
+            <hr />
+            <h3>35) What is CRUD in MongoDB?</h3>
+
+            <p>MongoDB supports following CRUD operations:</p>
+
+            <ul>
+                <li>Create</li>
+                <li>Read</li>
+                <li>Update</li>
+                <li>Delete</li>
+            </ul>
+
+            <hr />
+            <h3>36) In which format MongoDB represents document structure?</h3>
+
+            <p>MongoDB uses BSON to represent document structures.</p>
+
+            <hr />
+            <h3>37) What will happen when you remove a document from database in MongoDB? Does MongoDB remove it from
+                disk?</h3>
+
+            <p>Yes. If you remove a document from database, MongoDB will remove it from disk too.</p>
+
+            <hr />
+            <h3>38) Why are MongoDB data files large in size?</h3>
+
+            <p>MongoDB doesn&#39;t follow file system fragmentation and pre allocates data files to reserve space while
+                setting up the server. That&#39;s why MongoDB data files are large in size.</p>
+
+            <hr />
+            <h3>39) What is a storage engine in MongoDB?</h3>
+
+            <p>A storage engine is the part of a database that is used to manage how data is stored on disk.</p>
+
+            <p><strong>For example:</strong>&nbsp;one storage engine might offer better performance for read-heavy
+                workloads, and another might support a higher-throughput for write operations.</p>
+
+            <hr />
+            <h3>40) Which are the storage engines used by MongoDB?</h3>
+
+            <p>MMAPv1 and WiredTiger are two storage engine used by MongoDB.</p>
+
+            <hr />
+            <h3>41) What is the usage of profiler in MongoDB?</h3>
+
+            <p>A database profiler is used to collect data about MongoDB write operations, cursors, database commands on
+                a running mongod instance. You can enable profiling on a per-database or per-instance basis.</p>
+
+            <p>The database profiler writes all the data it collects to the system. profile collection, which is a
+                capped collection.</p>
+
+            <hr />
+            <h3>42) Is it possible to configure the cache size for MMAPv1 in MongoDB?</h3>
+
+            <p>No. it is not possible to configure the cache size for MMAPv1 because MMAPv1 does not allow configuring
+                the cache size.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>43) How to configure the cache size for WiredTiger in MongoDB?</h3>
+
+            <p>For the WiredTiger storage engine, you can specify the maximum size of the cache that WiredTiger will use
+                for all data. This can be done using storage.wiredTiger.engineConfig.cacheSizeGB option.</p>
+
+            <hr />
+            <h3>44) How does MongoDB provide concurrency?</h3>
+
+            <p>MongoDB uses reader-writer locks for concurrency. Reader-writer locks allow concurrent readers shared
+                access to a resource, such as a database or collection, but give exclusive access to a single write
+                operation.</p>
+
+            <hr />
+            <h3>45) What is the difference between MongoDB and Redis database?</h3>
+
+            <p><strong>Difference between MongoDB and Redis:</strong></p>
+
+            <ul>
+                <li>Redis is faster than MongoDB.</li>
+                <li>Redis has a key-value storage whereas MongoDB has a document type storage.</li>
+                <li>Redis is hard to code but MongoDB is easy.</li>
+            </ul>
+
+            <p>For more information:&nbsp;<a href="https://www.javatpoint.com/redis-vs-mongodb">click here</a></p>
+
+            <hr />
+            <h3>46) What is the difference between MongoDB and CouchDB?</h3>
+
+            <p><strong>Difference between MongoDB and CouchDB:</strong></p>
+
+            <ul>
+                <li>MongoDB is faster than CouchDB while CouchDB is safer than MongoDB.</li>
+                <li>Triggers are not available in MongoDB while triggers are available in CouchDB.</li>
+                <li>MongoDB serializes JSON data to BSON while CouchDB doesn&#39;t store data in JSON format.</li>
+            </ul>
+
+            <p>For more information:&nbsp;<a href="https://www.javatpoint.com/couchdb-vs-mongodb">click here</a></p>
+
+            <hr />
+            <h3>47) What is the difference between MongoDB and Cassandra?</h3>
+
+            <p><strong>Difference between MongoDB and Cassandra:</strong></p>
+
+            <ul>
+                <li>MongoDB is cross-platform document-oriented database system while Cassandra is high performance
+                    distributed database system.</li>
+                <li>MongoDB is written in C++ while Cassandra is written in Java.</li>
+                <li>MongoDB is easy to administer in the case of failure while Cassandra provides high availability with
+                    no single point of failure.</li>
+            </ul>
+
+            <p>For more information:&nbsp;<a href="https://www.javatpoint.com/cassandra-vs-mongodb">click here</a></p>
+
+            <hr />
+            <h3>48) Is there any need to create database command in MongoDB?</h3>
+
+            <p>You don&#39;t need to create a database manually in MongoDB because it creates automaically when you save
+                the value into the defined collection at first time.</p>
+
+            <p>For more information:&nbsp;<a href="https://www.javatpoint.com/mongodb-create-database">click here</a>
+            </p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url("images/photographer.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/pr_background-position.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;">CSS background-position Property</h1>
+<h2 style="background-color: darkgrey;">Use different background properties to create a "hero" image:</h2>
+</div>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am Jane Doe</h1>
+    <h3>And I'm a Photographer</h3>
+    <button>Hire me</button>
+  </div>
+</div>
+
+<p>Page content..</p>
+<p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+
+</body>
+</html>

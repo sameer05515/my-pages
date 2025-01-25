@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <style>
+    body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+    
+    path {
+      fill: none;
+      stroke-width: 3;
+    }
+    circle {
+      stroke: white;
+      stroke-width: 2;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    
+    // DATA
+    var nodes = [{}, {}, {}, {}, {}, {}, {}];
+    var links = [
+      
+        // one link
+        { source: 0, target: 1 },
+      
+        // two links
+        { source: 1, target: 2 }, 
+      	{ source: 1, target: 2 },
+      
+        // three links
+        { source: 2, target: 3 }, 
+      	{ source: 2, target: 3 }, 
+        { source: 2, target: 3 },
+      
+        // four links
+        { source: 3, target: 4 }, 
+        { source: 3, target: 4 }, 
+        { source: 3, target: 4 }, 
+      	{ source: 3, target: 4 },
+      
+        // five links
+        { source: 4, target: 5 }, 
+        { source: 4, target: 5 }, 
+        { source: 4, target: 5 }, 
+        { source: 4, target: 5 }, 
+        { source: 4, target: 5 },
+
+      	// twenty links
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 },
+        { source: 5, target: 6 }
+    ];
+
+    // DATA FORMATTING
+
+    _.each(links, function(link) {
+
+        // find other links with same target+source or source+target
+        var same = _.where(links, {
+            'source': link.source,
+            'target': link.target
+        });
+        var sameAlt = _.where(links, {
+            'source': link.target,
+            'target': link.source
+        });
+        var sameAll = same.concat(sameAlt);
+
+        _.each(sameAll, function(s, i) {
+            s.sameIndex = (i + 1);
+            s.sameTotal = sameAll.length;
+            s.sameTotalHalf = (s.sameTotal / 2);
+            s.sameUneven = ((s.sameTotal % 2) !== 0);
+            s.sameMiddleLink = ((s.sameUneven === true) && (Math.ceil(s.sameTotalHalf) === s.sameIndex));
+            s.sameLowerHalf = (s.sameIndex <= s.sameTotalHalf);
+            s.sameArcDirection = s.sameLowerHalf ? 0 : 1;
+            s.sameIndexCorrected = s.sameLowerHalf ? s.sameIndex : (s.sameIndex - Math.ceil(s.sameTotalHalf));
+        });
+    });
+
+    var maxSame = _.chain(links)
+        .sortBy(function(x) {
+            return x.sameTotal;
+        })
+        .last()
+        .value().sameTotal;
+
+    _.each(links, function(link) {
+        link.maxSameHalf = Math.floor(maxSame / 3);
+    });
+
+    // FORCE
+
+    var width = 960,
+        height = 500;
+
+    var force = d3.layout.force()
+        .nodes(nodes)
+        .links(links)
+        .size([width, height])
+        .linkDistance(100)
+        .charge(-200)
+        .on('tick', tick)
+        .start();
+
+    // for a static force uncomment the following
+    //     for ( var i = (nodes.length * nodes.length * nodes.length); i > 0; --i ) {
+    //         force.tick();
+    //     }
+    //     force.stop();
+
+    // RENDER
+
+    var svg = d3.select("body").append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    var path = svg.append("g").selectAll("path")
+        .data(force.links())
+        .enter().append("path")
+        .style("stroke", function(d) {
+            return d3.scale.category20().range()[d.sameIndex - 1];
+        });
+
+    var circle = svg.append("g").selectAll("circle")
+        .data(force.nodes())
+        .enter().append("circle")
+        .attr("r", 8)
+        .call(force.drag);
+
+    // TICK
+
+    function tick(d) {
+        circle.attr("transform", function(d) {
+            return "translate(" + d.x + "," + d.y + ")";
+        });
+        path.attr("d", linkArc);
+    }
+
+    // ARC CALCULATION
+
+    // some more info: http://stackoverflow.com/questions/11368339/drawing-multiple-edges-between-two-nodes-with-d3
+    function linkArc(d) {
+        var dx = (d.target.x - d.source.x),
+            dy = (d.target.y - d.source.y),
+            dr = Math.sqrt(dx * dx + dy * dy),
+            unevenCorrection = (d.sameUneven ? 0 : 0.5),
+            arc = ((dr * d.maxSameHalf) / (d.sameIndexCorrected - unevenCorrection));
+
+        if (d.sameMiddleLink) {
+            arc = 0;
+        }
+
+        return "M" + d.source.x + "," + d.source.y + "A" + arc + "," + arc + " 0 0," + d.sameArcDirection + " " + d.target.x + "," + d.target.y;
+    }
+
+  </script>
+</body>

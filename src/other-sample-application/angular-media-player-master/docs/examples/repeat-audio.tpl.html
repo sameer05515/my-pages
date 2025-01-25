@@ -1,0 +1,44 @@
+<div class="jumbotron">
+  <h1>ng-repeating a playlist</h1>
+  <p>
+    Iterating over the playlist object shouldn't be any different than using another <i>list</i> object.
+  </p>
+</div>
+<div class="audio-control">
+  <audio player-control="mediaPlayer" playlist="audioPlaylist" media-player></audio>
+  <div class="btn" ng-click="mediaPlayer.play()">
+    <span>Simple Play</span>
+    <i class="fa fa-play"></i>
+  </div>
+  <div class="btn" ng-click="mediaPlayer.playPause()">
+    <i class="fa" ng-class="{ 'fa-pause': mediaPlayer.playing, 'fa-play': !mediaPlayer.playing }"></i>
+  </div>
+  <div class="btn" ng-click="mediaPlayer.next()">
+    <span>Next</span>
+    <i class="fa fa-step-forward"></i>
+  </div>
+  <div class="btn" ng-click="mediaPlayer.prev()">
+    <i class="fa fa-step-backward"></i>
+    <span>Prev</span>
+  </div>
+  <div class="btn btn-noclick">
+    <span>currentTrack: <span class="badge">{{ mediaPlayer.currentTrack }}</span></span>
+  </div>
+</div>
+
+<table class="table table-hover table-rounded table-cursor">
+  <thead>
+    <th>#</th>
+    <th>Artist</th>
+    <th>Title</th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="song in audioPlaylist" ng-click="mediaPlayer.playPause($index)" ng-class="{ active: mediaPlayer.playing && mediaPlayer.currentTrack-1 === $index }">
+      <td>{{ $index+1 }}</td>
+      <td>{{ song.artist }}</td>
+      <td>{{ song.title }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div ng-include="'examples/repeat-audio.md.tpl.html'"></div>

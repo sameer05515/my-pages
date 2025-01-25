@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+  width: 55px;
+  border: 1px solid black;
+ }
+div.a {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+div.b {
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+div.c {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_hyphens.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS hyphens Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Set different hyphenations:</h2>
+</div>
+
+
+<h1>The hyphens Property</h1>
+
+<h2>hyphens: none</h2>
+<p>No hyphen; overflow if needed.</p>
+<div class="a">A veryvery­very long word.</div>
+
+<h2>hyphens: manual</h2>
+<p>Hyphen only at &hyphen; or &shy; (if needed).</p>
+<div class="b">A veryvery­very long word.</div>
+
+<h2>hyphens: auto</h2>
+<p>Hyphen where the algorithm is deciding (if needed).</p>
+<div class="c">A veryvery­very long word.</div>
+
+</body>
+</html>

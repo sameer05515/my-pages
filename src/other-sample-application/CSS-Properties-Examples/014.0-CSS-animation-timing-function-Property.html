@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDivId {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;">
+Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-timing-function Property</h1>
+<h2>Play an animation with the same speed from beginning to end:</h2>
+</div>
+
+<h1>The animation-timing-function Property</h1>
+
+<p>Play an animation with the same speed from beginning to end:</p>
+<div id="myMoveDivId"></div>
+<p><strong>Note:</strong> The animation-timing-function property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

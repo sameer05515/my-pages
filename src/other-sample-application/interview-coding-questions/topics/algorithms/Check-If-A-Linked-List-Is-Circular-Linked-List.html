@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="container">
+
+    See Reference :- <a
+        href="https://www.codingninjas.com/codestudio/library/check-if-a-linked-list-is-circular-linked-list"
+        target="_blank" rel="noopener noreferrer">
+        here
+    </a>
+
+    <div>
+        <h1>Problem Statement</h1>
+        We are given a Singly LinkedList. We need to check if it is a Circular LinkedList or not.
+        <br>
+        <img src="../images/algorithms/Check-If-A-Linked-List-Is-Circular-Linked-List-1.JPG" alt="">
+    </div>
+
+    <div>
+        <h2>Approach</h2>
+        First, we store the Head of LinkedList. Now we will start to iterate the LinkedList. If we reach the NULL or we
+        reach the Head, we will break from there and check if we reached the head, then the LinkedList is circular else
+        not.
+        <br>
+        There is a flaw in the above approach.
+        <br>
+        The above approach will run in an infinite loop for the following LinkedList.
+        <br>
+        <img src="../images/algorithms/Check-If-A-Linked-List-Is-Circular-Linked-List-2.JPG" alt="">
+        <br>
+        To correctly check if a linked list is a circular linked list, we need to traverse the linked list using two
+        pointers. The first pointer will move one node at a time, while the second pointer will move two nodes at a
+        time. If the linked list is not circular, then the second pointer will reach the end of the list and will be
+        NULL. If the linked list is circular, the second pointer will eventually meet the first pointer.
+    </div>
+
+    <div>
+        <h2>Algorithm</h2>
+        <ul>
+            <li>
+                Initialise two pointers, slow_ptr and fast_ptr, to the head of the linked list.
+            </li>
+            <li>
+                Traverse the linked list using the pointers until the fast pointer reaches the end of the list (i.e.,
+                NULL), or both pointers meet.
+            </li>
+            <li>
+                If the fast pointer reaches the end of the list (i.e., NULL), then the linked list is not circular.
+                Return false.
+            </li>
+            <li>
+                If the fast and slow pointer meets, then the linked list is circular. Return true.
+
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Java Implementation</h2>
+        <code style="white-space: pre-wrap;">
+            package example;//package example;
+
+            class ListNode {
+                int val;
+                ListNode next;
+            
+                ListNode(int x) {
+                    val = x;
+                    next = null;
+                }
+            }
+            
+            public class CircularRefCheck {
+                public static boolean hasCycle(ListNode head) {
+                    // initialize two pointers, slow_ptr and fast_ptr, to the head of the linked list
+                    ListNode slow_ptr = head;
+                    ListNode fast_ptr = head;
+            
+                    // traverse the linked list until the fast_ptr reaches the end (null) or encounters the slow_ptr
+                    while (fast_ptr != null && fast_ptr.next != null) {
+            
+                        // move the slow_ptr one step at a time
+                        slow_ptr = slow_ptr.next;
+            
+                        // move the fast_ptr two steps at a time
+                        fast_ptr = fast_ptr.next.next;
+            
+                        // if the two pointers meet, the linked list is circular
+                        if (slow_ptr == fast_ptr) {
+                            return true;
+                        }
+                    }
+            
+                    return false; // if the fast_ptr reaches the end, the linked list is not circular
+                }
+            
+                public static void main(String[] args) {
+                    // create a circular linked list with five nodes
+                    ListNode head = new ListNode(26);
+                    ListNode node2 = new ListNode(74);
+                    ListNode node3 = new ListNode(89);
+                    ListNode node4 = new ListNode(43);
+                    ListNode node5 = new ListNode(54);
+            
+                    head.next = node2;
+                    node2.next = node3;
+                    node3.next = node4;
+                    node4.next = node5;
+            
+                    // make the linked list circular by connecting the last node to the third node
+                    node5.next = node3;
+            
+                    // check if the linked list is circular
+                    if (hasCycle(head)) {
+                        System.out.println("The linked list is circular.");
+                    } else {
+                        System.out.println("The linked list is not circular.");
+                    }
+                }
+            }
+            
+        </code>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="../../lib/css/font-awesome-4.6.3/css/font-awesome.min.css" />
+
+    <script src="../../lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
+    <script src="../../lib/css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <script src="../../lib/js/w3.js/w3.js"></script>
+
+    <style>
+        .toggleClassDivMarked {
+            background-color: orange;
+            font-size: 30px;
+            color: white;
+        }
+
+        .addClassDivMarked {
+            background-color: orange;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="well col-lg-12" style="margin-top: 50px;">
+            <h1>w3 references pages</h1>
+            <ul>
+                <li>
+                    <a href="w3-refs/DOM HTMLCollection.html">DOM HTMLCollection.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/Event Objects.html">Event Objects.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/HTML DOM Attribute Objects.html">HTML DOM Attribute Objects.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/HTML DOM Document Objects.html">HTML DOM Document Objects.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/HTML DOM Element Objects.html">HTML DOM Element Objects.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/HTML DOM Event Object.html">HTML DOM Event Object.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/HTML DOM Style object.html">HTML DOM Style object.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/JavaScript and HTML DOM Reference.html">JavaScript and HTML DOM Reference.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/Location Object.html">Location Object.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/Navigator Object.html">Navigator Object.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/Screen Object.html">Screen Object.html</a>
+                </li>
+                <li>
+                    <a href="w3-refs/Window Object.html">Window Object.html</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="well col-lg-12" style="margin-top: 50px;">
+            <h1>w3.show() and w3.hide() example</h1>
+            <p>Click the buttons to hide or show the element with id="London".</p>
+
+            <button onclick="w3.hide('#London')">Hide</button>
+            <button onclick="w3.show('#London')">Show</button>
+
+            <div id="London" class="city">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </div>
+        <!-- /. w3.show() and w3.hide() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.toggleShow() example</h1>
+            <p>Click the button to toggle between hiding and showing the element with id="London".</p>
+            <button onclick="w3.toggleShow('#London')">Toggle Hide/Show</button>
+            <div id="London" class="city">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="city">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        <!-- /. w3.toggleShow() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.toggleClass() example</h1>
+            <p>Click the button to toggle the "marked" class of id="LondonToggleClassExample".</p>
+            <button onclick="w3.toggleClass('#LondonToggleClassExample','toggleClassDivMarked')">Toggle Class</button>
+            <div id="LondonToggleClassExample" class="city">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="ParisToggleClassExample" class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </div>
+        <!-- /. w3.toggleClass() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.addClass() & w3.removeClass() example</h1>
+            <p>Click the button to add the "marked" class to id="LondonAddClassId".</p>
+
+            <button onclick="w3.addClass('#LondonAddClassId','addClassDivMarked');">
+                Add Class
+            </button>
+
+            <button onclick="w3.removeClass('#LondonAddClassId','addClassDivMarked')">
+                Remove Class
+            </button>
+
+            <div id="LondonAddClassId" class="city">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="ParisAddClassId" class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+        </div>
+        <!-- /. w3.toggleClass() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.addStyle() example</h1>
+
+            <p>Click the button to add a red background color to id="LondonAddStyleId".</p>
+            <button onclick="w3.addStyle('#LondonAddStyleId','background-color','red')">Add Style</button>
+
+            <!-- <button onclick="w3.addStyle('#LondonAddStyleId','background-color','red')">Remove Style</button> -->
+
+            <div id="LondonAddStyleId" class="city">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="ParisAddStyleId" class="city">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="TokyoAddStyleId" class="city">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+        </div>
+        <!-- /. w3.addStyle() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.filterHTML() example</h1>
+
+            <h2>Filter Table</h2>
+
+            <p>Search for a name in the input field:</p>
+
+            <p>
+                <input oninput="w3.filterHTML('#id01FilterHTML', '.item', this.value)" placeholder="Search for names..">
+            </p>
+
+            <table id="id01FilterHTML" border="1">
+                <tr>
+                    <th>Customer</th>
+                    <th>City</th>
+                    <th>Country</th>
+                </tr>
+                <tr class="item">
+                    <td>Alfreds Futterkiste</td>
+                    <td>Berlin</td>
+                    <td>Germany</td>
+                </tr>
+                <tr class="item">
+                    <td>Berglunds snabbkop</td>
+                    <td>Luleå</td>
+                    <td>Sweden</td>
+                </tr>
+                <tr class="item">
+                    <td>Centro comercial Moctezuma</td>
+                    <td>México D.F.</td>
+                    <td>Mexico</td>
+                </tr>
+                <tr class="item">
+                    <td>Ernst Handel</td>
+                    <td>Graz</td>
+                    <td>Austria</td>
+                </tr>
+                <tr class="item">
+                    <td>FISSA Fabrica Inter. Salchichas S.A.</td>
+                    <td>Madrid</td>
+                    <td>Spain</td>
+                </tr>
+                <tr class="item">
+                    <td>Galería del gastrónomo</td>
+                    <td>Barcelona</td>
+                    <td>Spain</td>
+                </tr>
+                <tr class="item">
+                    <td>Island Trading</td>
+                    <td>Cowes</td>
+                    <td>UK</td>
+                </tr>
+                <tr class="item">
+                    <td>Königlich Essen</td>
+                    <td>Brandenburg</td>
+                    <td>Germany</td>
+                </tr>
+                <tr class="item">
+                    <td>Laughing Bacchus Wine Cellars</td>
+                    <td>Vancouver</td>
+                    <td>Canada</td>
+                </tr>
+                <tr class="item">
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Bergamo</td>
+                    <td>Italy</td>
+                </tr>
+                <tr class="item">
+                    <td>North/South</td>
+                    <td>London</td>
+                    <td>UK</td>
+                </tr>
+                <tr class="item">
+                    <td>Paris spécialités</td>
+                    <td>Paris</td>
+                    <td>France</td>
+                </tr>
+                <tr class="item">
+                    <td>Rattlesnake Canyon Grocery</td>
+                    <td>Albuquerque</td>
+                    <td>USA</td>
+                </tr>
+                <tr class="item">
+                    <td>Simons bistro</td>
+                    <td>København</td>
+                    <td>Denmark</td>
+                </tr>
+                <tr class="item">
+                    <td>The Big Cheese</td>
+                    <td>Portland</td>
+                    <td>USA</td>
+                </tr>
+                <tr class="item">
+                    <td>Vaffeljernet</td>
+                    <td>Århus</td>
+                    <td>Denmark</td>
+                </tr>
+                <tr class="item">
+                    <td>Wolski Zajazd</td>
+                    <td>Warszawa</td>
+                    <td>Poland</td>
+                </tr>
+            </table>
+
+        </div>
+        <!-- /. w3.filterHTML() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.sortHTML() example</h1>
+
+            <h2>Sort List</h2>
+            <p>Click the button to sort the list alphabetically:</p>
+            <button onclick="w3.sortHTML('#id01SortHTML', 'li')">Sort</button>
+            <ul id="id01SortHTML">
+                <li>Oslo</li>
+                <li>Stockholm</li>
+                <li>Helsinki</li>
+                <li>Berlin</li>
+                <li>Rome</li>
+                <li>Madrid</li>
+            </ul>
+        </div>
+        <!-- /. w3.sortHTML() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.slideshow() example</h1>
+
+            <h2>Testing W3.JS in HTML</h2>
+
+            <p>Images with class="nature" will be in the slideshow:</p>
+            <img class="nature" src="../../data/images/nature/img_snowtops.jpg" width="100%">
+            <img class="nature" src="../../data/images/nature/img_mountains.jpg" width="100%">
+            <img class="nature" src="../../data/images/nature/img_nature.jpg" width="100%">
+            <img class="nature" src="../../data/images/nature/pexels-photo-349732.jpeg" width="100%">
+            <img class="nature" src="../../data/images/nature/road-1072823__340.jpg" width="100%">
+            <img class="nature" src="../../data/images/nature/royalty-free-stock.jpg" width="100%">
+            <script>
+                w3.slideshow(".nature", 1000);
+            </script>
+        </div>
+        <!-- /. w3.slideshow() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.slideshow() example</h1>
+
+            <div id="id01Slideshow">
+                {{firstName}} {{lastName}}
+            </div>
+
+            <script>
+                myObjectSlideshow = { "firstName": "John", "lastName": "Doe" };
+                w3.displayObject("id01Slideshow", myObjectSlideshow);
+            </script>
+
+        </div>
+        <!-- /. w3.slideshow() example -->
+
+        <div class="well col-lg-12">
+            <h1>w3.includeHTML() example</h1>
+
+            <div w3-include-html="w3-incl-htmls/h1.html"></div>
+            <div w3-include-html="w3-incl-htmls/content.html"></div>
+
+            <script>
+                w3.includeHTML();
+            </script>
+        </div>
+        <!-- /. w3.includeHTML() example -->
+
+        <div class="well col-lg-12">
+            <h1>W3.JS Attribute Reference : w3-repeat</h1>
+
+            <script>
+                var myObjectAttributeW3Repeat = {
+                    "customersAttributeW3Repeat": [
+                        { "CustomerName": "Alfreds Futterkiste", "City": "Berlin", "Country": "Germany" },
+                        { "CustomerName": "Ana Trujillo Emparedados y helados", "City": "México D.F.", "Country": "Mexico" },
+                        { "CustomerName": "Antonio Moreno Taquería", "City": "México D.F.", "Country": "Mexico" },
+                        { "CustomerName": "Around the Horn", "City": "London", "Country": "UK" },
+                        { "CustomerName": "B's Beverages", "City": "London", "Country": "UK" },
+                        { "CustomerName": "Berglunds snabbköp", "City": "Luleå", "Country": "Sweden" },
+                        { "CustomerName": "Blauer See Delikatessen", "City": "Mannheim", "Country": "Germany" },
+                        { "CustomerName": "Blondel père et fils", "City": "Strasbourg", "Country": "France" },
+                        { "CustomerName": "Bólido Comidas preparadas", "City": "Madrid", "Country": "Spain" },
+                        { "CustomerName": "Bon app'", "City": "Marseille", "Country": "France" },
+                        { "CustomerName": "Bottom-Dollar Marketse", "City": "Tsawassen", "Country": "Canada" },
+                        { "CustomerName": "Cactus Comidas para llevar", "City": "Buenos Aires", "Country": "Argentina" },
+                        { "CustomerName": "Centro comercial Moctezuma", "City": "México D.F.", "Country": "Mexico" },
+                        { "CustomerName": "Chop-suey Chinese", "City": "Bern", "Country": "Switzerland" },
+                        { "CustomerName": "Comércio Mineiro", "City": "São Paulo", "Country": "Brazil" }
+                    ]
+                };
+            </script>
+
+            <body>
+
+                <table id="id01AttributeW3Repeat">
+                    <tr>
+                        <th>Customer</th>
+                        <th>City</th>
+                        <th>Country</th>
+                    </tr>
+                    <tr w3-repeat="customersAttributeW3Repeat">
+                        <td>{{CustomerName}}</td>
+                        <td>{{City}}</td>
+                        <td>{{Country}}</td>
+                    </tr>
+                </table>
+
+                <script>
+                    w3.displayObject("id01AttributeW3Repeat", myObjectAttributeW3Repeat);
+                </script>
+        </div>
+        <!-- /. W3.JS Attribute Reference : w3-repeat -->
+
+        <div class="well col-lg-12">
+            <h1>W3.JS Attribute Reference : {{ }}</h1>
+
+            <div id="id01AttributeW3">
+                {{firstName}} {{lastName}}
+            </div>
+
+            <script>
+                myObjectAttributeW3 = { "firstName": "John", "lastName": "Doe" };
+                w3.displayObject("id01AttributeW3", myObjectAttributeW3);
+            </script>
+
+        </div>
+        <!-- /. W3.JS Attribute Reference : {{ }} -->
+
+    </div>
+
+</body>
+
+</html>

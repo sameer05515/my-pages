@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="03-graph-pie.js"></script>
+
+</head>
+
+<body>
+    <div style="
+        border: 5px ridge blue;
+        width: 450px;
+        height: 450px;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        overflow:auto;">
+            <canvas id="myCanvas"></canvas>
+        </div>
+        <div style="
+        border: 5px ridge blue;
+        width: 450px;
+        height: 450px;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        overflow:auto;">
+            <canvas id="myDougnutChartCanvas"></canvas>
+        </div>
+
+        <div style="
+        border: 5px ridge blue;
+        width: 450px;
+        height: 450px;
+        margin: 5px 5px 5px 5px;
+        padding: 5px 5px 5px 5px;
+        overflow:auto;">
+            <canvas id="myPiechartWithLabelAndLegendCanvas"></canvas>
+            <div id="myLegend"></div>    
+        </div>
+    
+    
+    
+
+    <script>
+        var myCanvas = document.getElementById("myCanvas");
+        var myDougnutChartCanvas = document.getElementById("myDougnutChartCanvas");
+        var myPiechartWithLabelAndLegendCanvas = document.getElementById("myPiechartWithLabelAndLegendCanvas");
+        myCanvas.width = 300;
+        myCanvas.height = 300;
+
+        myDougnutChartCanvas.width = 300;
+        myDougnutChartCanvas.height = 300;
+
+        myPiechartWithLabelAndLegendCanvas.width = 300;
+        myPiechartWithLabelAndLegendCanvas.height = 300;
+
+        var ctx = myCanvas.getContext("2d");
+        var myVinyls = {
+            "Classical music": 10,
+            "Alternative rock": 14,
+            "Pop": 2,
+            "Jazz": 12
+        };
+        var myPiechart = new Piechart(
+            {
+                canvas: myCanvas,
+                data: myVinyls,
+                colors: ["#fde23e", "#f16e23", "#57d9ff", "#937e88"]
+            }
+        );
+        myPiechart.draw();
+
+        var myDougnutChart = new PiechartWithDoughnutHole(
+            {
+                canvas: myDougnutChartCanvas,
+                data: myVinyls,
+                colors: ["#fde23e", "#f16e23", "#57d9ff", "#937e88"],
+                doughnutHoleSize: 0.5
+            }
+        );
+        myDougnutChart.draw();
+
+        var myLegend = document.getElementById("myLegend");
+        var myPiechartWithLabelAndLegend = new PiechartWithLabelAndLegend(
+            {
+                canvas: myPiechartWithLabelAndLegendCanvas,
+                data: myVinyls,
+                colors: ["#fde23e", "#f16e23", "#57d9ff", "#937e88"],
+                //doughnutHoleSize: 0.5
+                legend: myLegend
+            }
+        );
+        myPiechartWithLabelAndLegend.draw();
+    </script>
+
+</body>
+
+</html>

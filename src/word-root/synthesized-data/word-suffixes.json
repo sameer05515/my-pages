@@ -1,0 +1,632 @@
+[
+    {
+        "Suffix": "-able",
+        "Meanings": "able to be",
+        "SampleWordsAndDefinitions": "excitable, portable, preventable"
+    },
+    {
+        "Suffix": "-ac",
+        "Meanings": "pertaining to",
+        "SampleWordsAndDefinitions": "cardiac, hemophiliac, maniac"
+    },
+    {
+        "Suffix": "-acity (-ocity)",
+        "Meanings": "quality of",
+        "SampleWordsAndDefinitions": "perspicacity, sagacity, velocity"
+    },
+    {
+        "Suffix": "-ade",
+        "Meanings": "act, action or process, product",
+        "SampleWordsAndDefinitions": "blockade, cavalcade, promenade,"
+    },
+    {
+        "Suffix": "-age",
+        "Meanings": "action or process",
+        "SampleWordsAndDefinitions": "passage, pilgrimage, voyage"
+    },
+    {
+        "Suffix": "-aholic (-oholic)",
+        "Meanings": "one with an obsession for",
+        "SampleWordsAndDefinitions": "workaholic, shopaholic, alcoholic"
+    },
+    {
+        "Suffix": "-al",
+        "Meanings": "relating to",
+        "SampleWordsAndDefinitions": "bacterial, theatrical, natural"
+    },
+    {
+        "Suffix": "-algia",
+        "Meanings": "pain",
+        "SampleWordsAndDefinitions": "neuralgia, nostalgia,"
+    },
+    {
+        "Suffix": "-an (-ian)",
+        "Meanings": "relating to, belonging to",
+        "SampleWordsAndDefinitions": "Italian, urban, African"
+    },
+    {
+        "Suffix": "-ance",
+        "Meanings": "state or quality of",
+        "SampleWordsAndDefinitions": "brilliance, defiance, annoyance"
+    },
+    {
+        "Suffix": "-ant",
+        "Meanings": "a person who",
+        "SampleWordsAndDefinitions": "applicant, immigrant, servant"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "inclined to, tending to",
+        "SampleWordsAndDefinitions": "brilliant, defiant, vigilant"
+    },
+    {
+        "Suffix": "-ar",
+        "Meanings": "of or relating to, being",
+        "SampleWordsAndDefinitions": "lunar, molecular, solar"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "a person who",
+        "SampleWordsAndDefinitions": "beggar, burglar, liar"
+    },
+    {
+        "Suffix": "-ard",
+        "Meanings": "a person who does an action",
+        "SampleWordsAndDefinitions": "coward, sluggard, wizard"
+    },
+    {
+        "Suffix": "-arian",
+        "Meanings": "a person who",
+        "SampleWordsAndDefinitions": "disciplinarian, vegetarian, librarian"
+    },
+    {
+        "Suffix": "-arium (orium)",
+        "Meanings": "a place for",
+        "SampleWordsAndDefinitions": "terrarium, aquarium, solarium"
+    },
+    {
+        "Suffix": "-ary",
+        "Meanings": "of or relating to",
+        "SampleWordsAndDefinitions": "literary, military, budgetary"
+    },
+    {
+        "Suffix": "-ate",
+        "Meanings": "state or quality of (adj.)",
+        "SampleWordsAndDefinitions": "affectionate, desolate, obstinate"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "makes the word a verb (different pronunciation)",
+        "SampleWordsAndDefinitions": "activate, evaporate, medicate"
+    },
+    {
+        "Suffix": "-ation",
+        "Meanings": "action or process",
+        "SampleWordsAndDefinitions": "creation, narration, emancipation"
+    },
+    {
+        "Suffix": "-ative",
+        "Meanings": "tending to (adj.)",
+        "SampleWordsAndDefinitions": "creative, preservative, talkative"
+    },
+    {
+        "Suffix": "-cide",
+        "Meanings": "act of killing",
+        "SampleWordsAndDefinitions": "homicide, suicide, genocide"
+    },
+    {
+        "Suffix": "-cracy",
+        "Meanings": "rule, government, power",
+        "SampleWordsAndDefinitions": "bureaucracy, aristocracy, theocracy"
+    },
+    {
+        "Suffix": "-crat",
+        "Meanings": "someone who has power",
+        "SampleWordsAndDefinitions": "aristocrat, bureaucrat, technocrat"
+    },
+    {
+        "Suffix": "-cule",
+        "Meanings": "diminutive (making something small)",
+        "SampleWordsAndDefinitions": "molecule, ridicule,"
+    },
+    {
+        "Suffix": "-cy",
+        "Meanings": "state, condition or quality",
+        "SampleWordsAndDefinitions": "efficiency, privacy, belligerency"
+    },
+    {
+        "Suffix": "-cycle",
+        "Meanings": "circle, wheel",
+        "SampleWordsAndDefinitions": "bicycle, recycle, tricycle"
+    },
+    {
+        "Suffix": "-dom",
+        "Meanings": "condition of, state, realm",
+        "SampleWordsAndDefinitions": "boredom, freedom, wisdom"
+    },
+    {
+        "Suffix": "-dox",
+        "Meanings": "belief, praise",
+        "SampleWordsAndDefinitions": "orthodox, paradox"
+    },
+    {
+        "Suffix": "-ectomy",
+        "Meanings": "surgical removal of",
+        "SampleWordsAndDefinitions": "appendectomy, hysterectomy"
+    },
+    {
+        "Suffix": "-ed",
+        "Meanings": "past tense",
+        "SampleWordsAndDefinitions": "called, hammered, laughed"
+    },
+    {
+        "Suffix": "-ee",
+        "Meanings": "receiver, performer",
+        "SampleWordsAndDefinitions": "nominee, employee, devotee"
+    },
+    {
+        "Suffix": "-eer",
+        "Meanings": "associated with/engaged in",
+        "SampleWordsAndDefinitions": "engineer, volunteer"
+    },
+    {
+        "Suffix": "-emia",
+        "Meanings": "blood condition",
+        "SampleWordsAndDefinitions": "anemia, hypoglycemia, leukemia"
+    },
+    {
+        "Suffix": "-en",
+        "Meanings": "makes the word a verb",
+        "SampleWordsAndDefinitions": "awaken, fasten, strengthen"
+    },
+    {
+        "Suffix": "-ence",
+        "Meanings": "state or condition, action",
+        "SampleWordsAndDefinitions": "absence, dependence, negligence"
+    },
+    {
+        "Suffix": "-ency",
+        "Meanings": "condition or quality",
+        "SampleWordsAndDefinitions": "clemency, dependency, efficiency"
+    },
+    {
+        "Suffix": "-ent",
+        "Meanings": "inclined to performing/causing, or one who performs/causes",
+        "SampleWordsAndDefinitions": "competent, correspondent, absorbent"
+    },
+    {
+        "Suffix": "-er",
+        "Meanings": "more",
+        "SampleWordsAndDefinitions": "bigger, faster, happier"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "action or process",
+        "SampleWordsAndDefinitions": "flutter, ponder, stutter"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "a person who does an action",
+        "SampleWordsAndDefinitions": "announcer, barber, teacher"
+    },
+    {
+        "Suffix": "-ern",
+        "Meanings": "state or quality of",
+        "SampleWordsAndDefinitions": "eastern, northern, western"
+    },
+    {
+        "Suffix": "-escence",
+        "Meanings": "state or process",
+        "SampleWordsAndDefinitions": "adolescence, convalescence"
+    },
+    {
+        "Suffix": "-ese",
+        "Meanings": "relating to a place",
+        "SampleWordsAndDefinitions": "Chinese, Congolese, Vietnamese"
+    },
+    {
+        "Suffix": "-esque",
+        "Meanings": "in the style of",
+        "SampleWordsAndDefinitions": "Kafkaesque, grotesque, burlesque"
+    },
+    {
+        "Suffix": "-ess",
+        "Meanings": "female",
+        "SampleWordsAndDefinitions": "actress, heiress, lioness"
+    },
+    {
+        "Suffix": "-est",
+        "Meanings": "most",
+        "SampleWordsAndDefinitions": "funniest, hottest, silliest"
+    },
+    {
+        "Suffix": "-etic",
+        "Meanings": "relating to (makes the word an adj.)",
+        "SampleWordsAndDefinitions": "athletic, energetic, poetic"
+    },
+    {
+        "Suffix": "-ette",
+        "Meanings": "diminutive (makes something smaller)",
+        "SampleWordsAndDefinitions": "cigarette, diskette, kitchenette"
+    },
+    {
+        "Suffix": "-ful",
+        "Meanings": "full of",
+        "SampleWordsAndDefinitions": "helpful, thankful, cheerful"
+    },
+    {
+        "Suffix": "-fy",
+        "Meanings": "make, cause (makes the word a verb)",
+        "SampleWordsAndDefinitions": "amplify, falsify, terrify"
+    },
+    {
+        "Suffix": "-gam/gamy",
+        "Meanings": "marriage, union",
+        "SampleWordsAndDefinitions": "monogam, polygamy"
+    },
+    {
+        "Suffix": "-gon/gonic",
+        "Meanings": "angle",
+        "SampleWordsAndDefinitions": "hexagon, polygonic, pentagon"
+    },
+    {
+        "Suffix": "-hood",
+        "Meanings": "state, condition, or quality",
+        "SampleWordsAndDefinitions": "childhood, neighborhood, motherhood"
+    },
+    {
+        "Suffix": "-ial",
+        "Meanings": "relating to",
+        "SampleWordsAndDefinitions": "celestial, editorial, martial"
+    },
+    {
+        "Suffix": "-ian",
+        "Meanings": "relating to",
+        "SampleWordsAndDefinitions": "Martian, utopian, pediatrician"
+    },
+    {
+        "Suffix": "-iasis",
+        "Meanings": "diseased condition",
+        "SampleWordsAndDefinitions": "elephantiasis, psoriasis"
+    },
+    {
+        "Suffix": "-iatric",
+        "Meanings": "healing practice",
+        "SampleWordsAndDefinitions": "pediatric, psychiatric,"
+    },
+    {
+        "Suffix": "-ible",
+        "Meanings": "able to be",
+        "SampleWordsAndDefinitions": "audible, plausible, legible"
+    },
+    {
+        "Suffix": "-ic/ical",
+        "Meanings": "relating to, characterized by",
+        "SampleWordsAndDefinitions": "analytic/al, comic/al, organic"
+    },
+    {
+        "Suffix": "-ile",
+        "Meanings": "relating to, capable of",
+        "SampleWordsAndDefinitions": "agile, docile, volatile"
+    },
+    {
+        "Suffix": "-ily",
+        "Meanings": "in what manner",
+        "SampleWordsAndDefinitions": "sloppily, steadily, zanily"
+    },
+    {
+        "Suffix": "-ine",
+        "Meanings": "relating to",
+        "SampleWordsAndDefinitions": "canine, feminine, masculine"
+    },
+    {
+        "Suffix": "-ing",
+        "Meanings": "materials",
+        "SampleWordsAndDefinitions": "bedding, frosting, roofing"
+    },
+    {
+        "Suffix": "",
+        "Meanings": "action or process",
+        "SampleWordsAndDefinitions": "dancing, seeing, writing"
+    },
+    {
+        "Suffix": "-ion",
+        "Meanings": "action or process",
+        "SampleWordsAndDefinitions": "celebration, completion, navigation"
+    },
+    {
+        "Suffix": "-ious",
+        "Meanings": "having the qualities of, full of",
+        "SampleWordsAndDefinitions": "ambitious, cautious, gracious"
+    },
+    {
+        "Suffix": "-ish",
+        "Meanings": "relating to, characteristic",
+        "SampleWordsAndDefinitions": "apish, brutish, childish"
+    },
+    {
+        "Suffix": "-ism",
+        "Meanings": "state or quality",
+        "SampleWordsAndDefinitions": "altruism, despotism, heroism"
+    },
+    {
+        "Suffix": "-ist",
+        "Meanings": "a person, one who does an action",
+        "SampleWordsAndDefinitions": "artist, linguist, pianist"
+    },
+    {
+        "Suffix": "-ite",
+        "Meanings": "resident of, follower, product of",
+        "SampleWordsAndDefinitions": "suburbanite, luddite, dynamite"
+    },
+    {
+        "Suffix": "-itis",
+        "Meanings": "inflammation, preoccupation",
+        "SampleWordsAndDefinitions": "appendicitis, tonsillitis, frontrunneritis"
+    },
+    {
+        "Suffix": "-ity",
+        "Meanings": "state, condition, or quality",
+        "SampleWordsAndDefinitions": "abnormality, civility, necessity"
+    },
+    {
+        "Suffix": "-ive",
+        "Meanings": "inclined to; quality of; that which",
+        "SampleWordsAndDefinitions": "attractive, expensive, repulsive"
+    },
+    {
+        "Suffix": "-ization",
+        "Meanings": "act or process of making",
+        "SampleWordsAndDefinitions": "colonization, fertilization, modernization"
+    },
+    {
+        "Suffix": "-ize",
+        "Meanings": "cause, treat, become",
+        "SampleWordsAndDefinitions": "antagonize, authorize, popularize"
+    },
+    {
+        "Suffix": "-less",
+        "Meanings": "without",
+        "SampleWordsAndDefinitions": "fearless, helpless, homeless"
+    },
+    {
+        "Suffix": "-let",
+        "Meanings": "version of",
+        "SampleWordsAndDefinitions": "booklet, droplet, inlet"
+    },
+    {
+        "Suffix": "-like",
+        "Meanings": "resembling, characteristic",
+        "SampleWordsAndDefinitions": "childlike, homelike, lifelike"
+    },
+    {
+        "Suffix": "-ling",
+        "Meanings": "younger or inferior",
+        "SampleWordsAndDefinitions": "duckling, underling"
+    },
+    {
+        "Suffix": "-loger/logist",
+        "Meanings": "one who does",
+        "SampleWordsAndDefinitions": "astrologer, cardiologist, chronologer"
+    },
+    {
+        "Suffix": "-log",
+        "Meanings": "speech",
+        "SampleWordsAndDefinitions": "dialog, monolog,"
+    },
+    {
+        "Suffix": "-ly",
+        "Meanings": "in what manner",
+        "SampleWordsAndDefinitions": "badly, courageously, happily"
+    },
+    {
+        "Suffix": "-ment",
+        "Meanings": "action, result",
+        "SampleWordsAndDefinitions": "movement, placement, shipment"
+    },
+    {
+        "Suffix": "-ness",
+        "Meanings": "state or quality (makes a noun)",
+        "SampleWordsAndDefinitions": "kindness, shyness, weakness"
+    },
+    {
+        "Suffix": "-oid",
+        "Meanings": "resembling",
+        "SampleWordsAndDefinitions": "humanoid, tabloid, hemorrhoid"
+    },
+    {
+        "Suffix": "-ology",
+        "Meanings": "study of, science of",
+        "SampleWordsAndDefinitions": "anthropology, archaeology, biology"
+    },
+    {
+        "Suffix": "-oma",
+        "Meanings": "tumor, swelling",
+        "SampleWordsAndDefinitions": "carcinoma, osteoma, hematoma"
+    },
+    {
+        "Suffix": "-onym",
+        "Meanings": "name, word",
+        "SampleWordsAndDefinitions": "synonym, antonym, homonym"
+    },
+    {
+        "Suffix": "-opia",
+        "Meanings": "eye defect",
+        "SampleWordsAndDefinitions": "myopia, nyctalopia, hyperopia"
+    },
+    {
+        "Suffix": "-opsy",
+        "Meanings": "examination",
+        "SampleWordsAndDefinitions": "biopsy, autopsy, necropsy"
+    },
+    {
+        "Suffix": "-or",
+        "Meanings": "a person who",
+        "SampleWordsAndDefinitions": "inventor, legislator, translator"
+    },
+    {
+        "Suffix": "-ory",
+        "Meanings": "relating to",
+        "SampleWordsAndDefinitions": "armory, dormitory, laboratory"
+    },
+    {
+        "Suffix": "-osis",
+        "Meanings": "process, diseased condition",
+        "SampleWordsAndDefinitions": "diagnosis, prognosis, neurosis, psychosis"
+    },
+    {
+        "Suffix": "-ostomy/otomy",
+        "Meanings": "surgical",
+        "SampleWordsAndDefinitions": "colostomy, lobotomy, craniotomy"
+    },
+    {
+        "Suffix": "-ous",
+        "Meanings": "full of",
+        "SampleWordsAndDefinitions": "hazardous, humorous, wondrous"
+    },
+    {
+        "Suffix": "-path",
+        "Meanings": "one who engages in",
+        "SampleWordsAndDefinitions": "homeopath, naturopath, psychopath"
+    },
+    {
+        "Suffix": "-pathy",
+        "Meanings": "feeling, diseased",
+        "SampleWordsAndDefinitions": "sympathy, apathy, neuropathy"
+    },
+    {
+        "Suffix": "-phile",
+        "Meanings": "one who loves",
+        "SampleWordsAndDefinitions": "bibliophile, audiophile, pyrophile"
+    },
+    {
+        "Suffix": "-phobia",
+        "Meanings": "abnormal fear of",
+        "SampleWordsAndDefinitions": "acrophobia, claustrophobia, xenophobia"
+    },
+    {
+        "Suffix": "-phone",
+        "Meanings": "sound",
+        "SampleWordsAndDefinitions": "homophone, telephone, microphone"
+    },
+    {
+        "Suffix": "-phyte",
+        "Meanings": "plant, to grow",
+        "SampleWordsAndDefinitions": "zoophyte, cryptophyte, epiphyte"
+    },
+    {
+        "Suffix": "-plegia",
+        "Meanings": "paralysis",
+        "SampleWordsAndDefinitions": "paraplegia, quadriplegia, hemiplegia"
+    },
+    {
+        "Suffix": "-plegic",
+        "Meanings": "one who is paralyzed",
+        "SampleWordsAndDefinitions": "paraplegic, technoplegic, quadriplegic"
+    },
+    {
+        "Suffix": "-pnea",
+        "Meanings": "air, spirit",
+        "SampleWordsAndDefinitions": "apnea, hyperpnea, orthopnea"
+    },
+    {
+        "Suffix": "-scopy/scope",
+        "Meanings": "visual exam",
+        "SampleWordsAndDefinitions": "arthroscopy, gastroscopy, microscope"
+    },
+    {
+        "Suffix": "-scribe/script",
+        "Meanings": "to write",
+        "SampleWordsAndDefinitions": "transcript, describe, manuscript"
+    },
+    {
+        "Suffix": "-sect",
+        "Meanings": "to cut",
+        "SampleWordsAndDefinitions": "dissect, insect, bisect"
+    },
+    {
+        "Suffix": "-ship",
+        "Meanings": "state or condition of, skill of",
+        "SampleWordsAndDefinitions": "authorship, citizenship, friendship"
+    },
+    {
+        "Suffix": "-sion",
+        "Meanings": "state or quality",
+        "SampleWordsAndDefinitions": "confusion, depression, tension"
+    },
+    {
+        "Suffix": "-some",
+        "Meanings": "characterized by, group of",
+        "SampleWordsAndDefinitions": "cumbersome, quarrelsome, foursome"
+    },
+    {
+        "Suffix": "-sophy/sophic",
+        "Meanings": "wisdom, knowledge",
+        "SampleWordsAndDefinitions": "philosophy, theosophy, anthroposophic"
+    },
+    {
+        "Suffix": "-th",
+        "Meanings": "state or quality",
+        "SampleWordsAndDefinitions": "depth, length, strength"
+    },
+    {
+        "Suffix": "-tion",
+        "Meanings": "state or quality",
+        "SampleWordsAndDefinitions": "attention, caution, fascination"
+    },
+    {
+        "Suffix": "-tome/tomy",
+        "Meanings": "to cut",
+        "SampleWordsAndDefinitions": "hysterectomy, epitome, tonsillotome"
+    },
+    {
+        "Suffix": "-trophy",
+        "Meanings": "nourishment, growth",
+        "SampleWordsAndDefinitions": "atrophy, hypertrophy, dystrophy"
+    },
+    {
+        "Suffix": "-tude",
+        "Meanings": "state, condition or quality",
+        "SampleWordsAndDefinitions": "fortitude, gratitude, magnitude"
+    },
+    {
+        "Suffix": "-ty",
+        "Meanings": "state, condition or quality",
+        "SampleWordsAndDefinitions": "ability, honesty, loyalty"
+    },
+    {
+        "Suffix": "-ular",
+        "Meanings": "relating to or resembling",
+        "SampleWordsAndDefinitions": "cellular, circular, muscular"
+    },
+    {
+        "Suffix": "-uous",
+        "Meanings": "state or quality of",
+        "SampleWordsAndDefinitions": "arduous, tumultuous, virtuous"
+    },
+    {
+        "Suffix": "-ure",
+        "Meanings": "action, condition",
+        "SampleWordsAndDefinitions": "closure, erasure, failure"
+    },
+    {
+        "Suffix": "-ward",
+        "Meanings": "specifies direction",
+        "SampleWordsAndDefinitions": "backward, eastward, homeward"
+    },
+    {
+        "Suffix": "-ware",
+        "Meanings": "things of the same type or material",
+        "SampleWordsAndDefinitions": "hardware, software, kitchenware"
+    },
+    {
+        "Suffix": "-wise",
+        "Meanings": "in what manner or direction",
+        "SampleWordsAndDefinitions": "clockwise, lengthwise, otherwise"
+    },
+    {
+        "Suffix": "-y",
+        "Meanings": "made up of, characterized",
+        "SampleWordsAndDefinitions": "brainy, fruity, gooey"
+    }
+]

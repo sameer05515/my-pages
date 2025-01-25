@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta chrset="UTF 8">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> -->
+	<link rel="stylesheet" href="lib/css/trix.css">
+	<link rel="stylesheet" href="lib/css/star-rating.css">
+
+	<link rel="stylesheet" href="lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="lib/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="lib/css/font-awesome-4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-sanitize.min.js'></script> -->
+
+	<script src="lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
+	<script src="lib/css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+
+	<script src='lib/js/x2js-master/xml2json.min.js'></script>
+	<script src='lib/js/angular-1.5.5/angular.min.js'></script>
+	<script src='lib/js/angular-1.5.5/angular-sanitize.min.js'></script>
+	<script src='lib/js/angular-1.5.5/angular-animate.min.js'></script>
+	<script src="lib/js/angular-1.5.5/angular-route.min.js"></script>
+	<script src="lib/js/angular-1.5.5/angular-touch.js"></script>
+
+	<script src="lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+
+	<script src="lib/js/axis-master/dist/axis.min.js"></script>
+
+
+
+
+	<script src="lib/js/trix.js"></script>
+	<script src="lib/js/angular-trix.js"></script>
+
+	<script src="js/app.js"></script>
+
+	<script src="js/directives/star-rating.js"></script>
+
+	<script type="text/javascript" src="js/services/InterviewManagementServices.js"></script>
+
+	<script src="js/controllers/selectComboBoxTest.js"></script>
+
+
+	<div ng-app="DemoApp" ng-controller="selectComboBoxTest" class="container jumbotron">
+
+		<label for="repeatSelect"> Select Category: </label>
+		<select name="repeatSelect" id="repeatSelect" ng-model="selectedCategorySelect"
+			ng-options="option.catgoryName for option in categoryData">
+			<option value="All">--Select Category--</option>
+		</select>
+		<hr />
+		<hr />
+
+		<div ng-style="stylesData.templateParentDescriptionStyle">
+			<span> Category Id: {{selectedCategorySelect.catID}}</span>
+			<span ng-bind-html="selectedCategorySelect.catgoryName" />
+		</div>
+		showData : {{showData}}<br />
+		<button ng-mouseup="showData = !showData" ng-init="showData = false">
+			<span ng-show="!showData">Show my data</span> <span ng-show="showData">Hide my data</span>
+		</button>
+
+		<button ng-mouseup="refreshAllCategories();" ng-show="!showData">Refresh All Categories</button>
+
+		<button ng-mouseup="" ng-show="!showData">Add Category</button>
+
+		<div ng-show="showData">
+			<div ng-repeat="option in categoryData">
+				<input type="checkbox" ng-model="option.showQuestionsOfCategory">&nbsp;
+				</input>
+				<span ng-bind-html="option.catgoryName"/>
+			</div>
+		</div>
+
+
+
+		<div class="col-lg-12">
+			<div 
+				ng-style="stylesData.templateParentDescriptionStyle" 
+				ng-repeat="templateCategoryData in categoryData"
+				ng-show="{{settings.showDbBakupLinkData}}" 
+				ng-include="'template/categoryData_item_renderer.html'">
+			</div>
+		</div>
+
+		<hr />
+		<hr />
+
+
+		<button ng-mouseup="count = count + 1" ng-init="count=0">
+			Increment (on mouse up)
+		</button>
+		count: {{count}}
+
+	</div>
+	<script></script>
+</body>
+
+</html>

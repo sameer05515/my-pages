@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js</title>
+
+    <link rel="stylesheet" href="../../../lib/style.css">
+    <script src="../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>Node.js Interview Questions</h1>
+
+            <p>A list of top frequently asked&nbsp;<strong>Node.js interview questions</strong>&nbsp;and answers are
+                given below.</p>
+
+            <hr />
+            <h3>1) What is Node.js?</h3>
+
+            <p>Node.js is Server-side scripting which is used to build scalable programs. It is a web application
+                framework built on Google Chrome&#39;s JavaScript Engine. It runs within the Node.js runtime on Mac OS,
+                Windows, and Linux with no changes. This runtime facilitates you to execute a JavaScript code on any
+                machine outside a browser.</p>
+
+            <hr />
+            <h3>2) Is Node.js free to use?</h3>
+
+            <p>Yes. It is released under MIT license and is free to use.</p>
+
+            <hr />
+            <h3>3) Is Node a single threaded application?</h3>
+
+            <p>Yes. Node is a single-threaded application with event looping.</p>
+
+            <hr />
+            <h3>4) What is the purpose of Node.js?</h3>
+
+            <p>These are the following purposes of Node.js:</p>
+
+            <ul>
+                <li>Real-time web applications</li>
+                <li>Network applications</li>
+                <li>Distributed systems</li>
+                <li>General purpose applications</li>
+            </ul>
+
+            <hr />
+            <h3>5) What are the advantages of Node.js?</h3>
+
+            <p>Following are the main advantages of Node.js:</p>
+
+            <ul>
+                <li>Node.js is asynchronous and event-driven. All API?s of Node.js library are non-blocking, and its
+                    server doesn&#39;t wait for an API to return data. It moves to the next API after calling it, and a
+                    notification mechanism of Events of Node.js responds to the server from the previous API call.</li>
+                <li>Node.js is very fast because it builds on Google Chrome?s V8 JavaScript engine. Its library is very
+                    fast in code execution.</li>
+                <li>Node.js is single threaded but highly scalable.</li>
+                <li>Node.js provides a facility of no buffering. Its application never buffers any data. It outputs the
+                    data in chunks.</li>
+            </ul>
+
+            <hr />
+            <h3>6) Explain Node.js web application architecture?</h3>
+
+            <p>A web application distinguishes into 4 layers:</p>
+
+            <ul>
+                <li><strong>Client Layer:</strong>&nbsp;The Client layer contains web browsers, mobile browsers or
+                    applications which can make an HTTP request to the web server.</li>
+                <li><strong>Server Layer:</strong>&nbsp;The Server layer contains the Web server which can intercept the
+                    request made by clients and pass them the response.</li>
+                <li><strong>Business Layer:</strong>&nbsp;The business layer contains application server which is
+                    utilized by the web server to do required processing. This layer interacts with the data layer via
+                    database or some external programs.</li>
+                <li><strong>Data Layer:</strong>&nbsp;The Data layer contains databases or any source of data.</li>
+            </ul>
+
+            <p><img alt="Node.js web layer" src="https://static.javatpoint.com/js/nodejs/images/nodejs-web-layer.png" />
+            </p>
+
+            <h3>7) What do you understand by the term I/O?</h3>
+
+            <p>The term I/O stands for input and output. It is used to access anything outside of your application. The
+                I/O describes any program, operation, or device that transfers data to or from a medium or another
+                medium. This medium can be a physical device, network, or files within a system.</p>
+
+            <p>I/O is loaded into the machine memory to run the program once the application starts.</p>
+
+            <hr />
+            <h3>8) How many types of API functions are available in Node.js?</h3>
+
+            <p>There are two types of API functions in Node.js:</p>
+
+            <ul>
+                <li>Asynchronous, Non-blocking functions</li>
+                <li>Synchronous, Blocking functions</li>
+            </ul>
+
+            <hr />
+            <h3>9) What do you understand by the first class function in JavaScript?</h3>
+
+            <p>When functions are treated like any other variable, then those functions are called first-class
+                functions. Apart from JavaScript, many other programming languages, such as Scala, Haskell, etc. follow
+                this pattern. The first class functions can be passed as a param to another function (callback), or a
+                function can return another function (higher-order function). Some examples of higher-order functions
+                that are popularly used are map() and filter().</p>
+
+            <hr />
+            <h3>10) What is the difference between JavaScript and Node.js?</h3>
+
+            <p><strong>Difference between JavaScript and Node.js</strong></p>
+
+            <p>&nbsp;</p>
+
+            <p>The following table specifies the crucial differences between JavaScript and Node.js:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Comparison features</th>
+                        <th>JavaScript</th>
+                        <th>Node.js</th>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>JavaScript is a programming language. More precisely, you can say that it is a scripting
+                            language used for writing scripts on the website.</td>
+                        <td>Node.js is an interpreter and run time environment for JavaScript.</td>
+                    </tr>
+                    <tr>
+                        <td>Utility</td>
+                        <td>JavaScript is used for any client-side activity for a web application.</td>
+                        <td>Node.js is used for accessing or performing any non-blocking operation of any operating
+                            system.</td>
+                    </tr>
+                    <tr>
+                        <td>Running Engine</td>
+                        <td>The running engine for JavaScript is Spider monkey (Firefox), JavaScript Core (Safari), V8
+                            (Google Chrome), etc.</td>
+                        <td>The running engine for Node.js is V8 (Google Chrome).</td>
+                    </tr>
+                    <tr>
+                        <td>Browser compatibility</td>
+                        <td>JavaScript can only be run in browsers.</td>
+                        <td>The Node.js code can be run outside the browser.</td>
+                    </tr>
+                    <tr>
+                        <td>Platform dependency</td>
+                        <td>JavaScript is basically used on the client-side and is used in frontend development.</td>
+                        <td>Node.js is mostly used on the server-side and is used in server-side development.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML compatibility</td>
+                        <td>JavaScript is capable enough to add HTML and play with the DOM.</td>
+                        <td>Node.js is not compatible enough to add HTML tags.</td>
+                    </tr>
+                    <tr>
+                        <td>Examples</td>
+                        <td>Some examples of the JavaScript frameworks are RamdaJS, TypedJS, etc.</td>
+                        <td>Some examples of the Node.js modules are Lodash, express, etc. We have to import these
+                            modules from npm.</td>
+                    </tr>
+                    <tr>
+                        <td>Written in</td>
+                        <td>JavaScript is the upgraded version of ECMA script that uses Chrome&#39;s V8 engine and is
+                            written in C++.</td>
+                        <td>Node.js is written in C, C++, and Javascript.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>11) Explain the working of Node.js?</h3>
+
+            <p>The workflow of a Node.js web server typically looks like the following diagram. Let us see the flow of
+                operations in detail:</p>
+
+            <p><img alt="Node.js Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/node-js-interview-questions-q11.png" /></p>
+
+            <ul>
+                <li>According to the above diagram, the clients send requests to the webserver to interact with the web
+                    application. These requests can be non-blocking or blocking and used for querying the data, deleting
+                    data, or updating the data.</li>
+                <li>js receives the incoming requests and adds those to the Event Queue.</li>
+                <li>After this step, the requests are passed one by one through the Event Loop. It checks if the
+                    requests are simple enough not to require any external resources.</li>
+                <li>The event loop then processes the simple requests (non-blocking operations), such as I/O Polling,
+                    and returns the responses to the corresponding clients.</li>
+                <li>A single thread from the Thread Pool is assigned to a single complex request. This thread is
+                    responsible for completing a particular blocking request by accessing external resources, such as
+                    computation, database, file system, etc.</li>
+                <li>Once the task is completed, the response is sent to the Event Loop that sends that response back to
+                    the client.</li>
+            </ul>
+
+            <hr />
+            <h3>12) How can you manage the packages in your Node.js project?</h3>
+
+            <p>We can manage the packages in our Node.js project by using several package installers and their
+                configuration file accordingly. Most of them use npm or yarn. The npm and yarn both provide almost all
+                libraries of JavaScript with extended features of controlling environment-specific configurations. We
+                can use package.json and package-lock.json to maintain versions of libs being installed in a project.
+                So, there is no issue in porting that app to a different environment.</p>
+
+            <hr />
+            <h3>13) Why is Node.js Single-threaded?</h3>
+
+            <p>Node.js is a single-threaded application with event looping for async processing. The biggest advantage
+                of doing async processing on a single thread under typical web loads is that you can achieve more
+                performance and scalability than the typical thread-based implementation.</p>
+
+            <hr />
+            <h3>14) What do you understand by callback hell in Node.js?</h3>
+
+            <p>Callback hell is a phenomenon that creates a lot of problems for a JavaScript developer when he tries to
+                execute multiple asynchronous operations one after the other. A function is called an asynchronous
+                function when some external activity must complete before processing a result. It is called asynchronous
+                because there is an unpredictable amount of time before a result becomes available. These functions
+                require a callback function to handle errors and process the result.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Example:</strong></p>
+
+            <ol start="1">
+                <li>getData(function(a){&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;getMoreData(a,&nbsp;function(b){&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getMoreData(b,&nbsp;function(c){&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getMoreData(c,&nbsp;function(d){&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;getMoreData(d,&nbsp;function(e){&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;});&nbsp;&nbsp;</li>
+                <li>});&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>15) How is Node.js better than other most popular frameworks?</h3>
+
+            <p>Based on the following criteria, we can say that Node.js is better than other most popular frameworks:
+            </p>
+
+            <ul>
+                <li>js makes development simple because of its non-blocking I/O and even-based model. This simplicity
+                    results in short response time and concurrent processing, unlike other frameworks where developers
+                    use thread management.</li>
+                <li>js runs on a chrome V8 engine which is written in C++. It enhances its performance highly with
+                    constant improvement.</li>
+                <li>With Node.js, we will use JavaScript in both the frontend and backend development that will be much
+                    faster.</li>
+                <li>js provides ample libraries so that we don&#39;t need to reinvent the wheel.</li>
+            </ul>
+
+            <hr />
+            <h3>16) In which types of applications is Node.js most frequently used?</h3>
+
+            <p>Node.js is most frequently and widely used in the following applications:</p>
+
+            <p>&nbsp;</p>
+
+            <ul>
+                <li>Internet of Things</li>
+                <li>Real-time collaboration tools</li>
+                <li>Real-time chats</li>
+                <li>Complex SPAs (Single-Page Applications)</li>
+                <li>Streaming applications</li>
+                <li>Microservices architecture etc.</li>
+            </ul>
+
+            <hr />
+            <h3>17) What are some commonly used timing features of Node.js?</h3>
+
+            <p>Following is a list of some commonly used timing features of Node.js:</p>
+
+            <ul>
+                <li><strong>setTimeout/clearTimeout:</strong>&nbsp;This timing feature of Node.js is used to implement
+                    delays in the code execution.</li>
+                <li><strong>setInterval/clearInterval:</strong>&nbsp;The setInterval or clearInterval timing feature is
+                    used to run a code block multiple times in the application.</li>
+                <li><strong>setImmediate/clearImmediate:</strong>&nbsp;This timing feature of Node.js is used to set the
+                    execution of the code at the end of the event loop cycle.</li>
+                <li><strong>nextTick:</strong>&nbsp;This timing feature sets the execution of code at the beginning of
+                    the next event loop cycle.</li>
+            </ul>
+
+            <hr />
+            <h3>18) What do you understand by the term fork in Node.js?</h3>
+
+            <p>Generally, a fork is used to spawn child processes. In Node.js, it is used to create a new instance of
+                the V8 engine to run multiple workers to execute the code.</p>
+
+            <hr />
+            <h3>19) Which is the best tool we can use to assure consistent code style in Node.js?</h3>
+
+            <p>ESLint tool is one of the best tools we can use with any IDE to ensure a consistent coding style. It also
+                helps in maintaining the codebase.</p>
+
+            <hr />
+            <h3>20) What is the main difference between front-end and back-end development?</h3>
+
+            <p>The following table specifies the key differences between a front-end and back-end development:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Front-end Development</th>
+                        <th>Back-end Development</th>
+                    </tr>
+                    <tr>
+                        <td>The front-end development in an application refers to the client-side of an application.
+                        </td>
+                        <td>The back-end development in an application refers to the server-side of an application.</td>
+                    </tr>
+                    <tr>
+                        <td>As the name specifies, the front-end development is the part of a web application where
+                            users can see and interact.</td>
+                        <td>As the name specifies, the back-end development consists of everything that happens behind
+                            the scenes and users cannot see and interact with.</td>
+                    </tr>
+                    <tr>
+                        <td>The front-end development includes everything that attributes to the visual aspects of a web
+                            application.</td>
+                        <td>The back-end development generally includes a web server that communicates with the database
+                            to serve the users&#39; requests.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML, CSS, Bootstrap, jQuery, JavaScript, AngularJS, and React.js are essential front-end
+                            development technologies.</td>
+                        <td>Java, PHP, Python, C++, Node.js, etc., are the technologies required for back-end
+                            development.</td>
+                    </tr>
+                    <tr>
+                        <td>Examples of some front-end frameworks are AngularJS, React.js, jQuery, Sass, etc.</td>
+                        <td>Examples of some back-end frameworks are Express, Django, Rails, Laravel, Spring, etc.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>21) Give an example to demonstrate how can we use async await in Node.js?</h3>
+
+            <p>See the following example of using async-await pattern:</p>
+
+            <ol start="1">
+                <li>function&nbsp;wait&nbsp;(timeout)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;return&nbsp;new&nbsp;Promise((resolve)&nbsp;=&gt;&nbsp;{&nbsp;&nbsp;</li>
+                <li>setTimeout(()&nbsp;=&gt;&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;resolve()&nbsp;&nbsp;</li>
+                <li>},&nbsp;timeout);&nbsp;&nbsp;</li>
+                <li>&nbsp;});&nbsp;&nbsp;</li>
+                <li>}&nbsp;&nbsp;</li>
+                <li>async&nbsp;function&nbsp;requestWithRetry&nbsp;(url)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;const&nbsp;MAX_RETRIES&nbsp;=&nbsp;10;&nbsp;&nbsp;</li>
+                <li>&nbsp;for&nbsp;(let&nbsp;i&nbsp;=&nbsp;0;&nbsp;i&nbsp;&lt;=&nbsp;MAX_RETRIES;&nbsp;i++)&nbsp;{&nbsp;&nbsp;
+                </li>
+                <li>try&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;return&nbsp;await&nbsp;request(url);&nbsp;&nbsp;</li>
+                <li>}&nbsp;catch&nbsp;(err)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;const&nbsp;timeout&nbsp;=&nbsp;Math.pow(2,&nbsp;i);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;console.log(&#39;Waiting&#39;,&nbsp;timeout,&nbsp;&#39;ms&#39;);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;await&nbsp;wait(timeout);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;console.log(&#39;Retrying&#39;,&nbsp;err.message,&nbsp;i);&nbsp;&nbsp;</li>
+                <li>}&nbsp;&nbsp;</li>
+                <li>&nbsp;}&nbsp;&nbsp;</li>
+                <li>}&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>22) What are the modules in Node.js? Which are the different modules used in Node.js?</h3>
+
+            <p>In Node.js applications, modules are like JavaScript libraries and include a set of functions. To include
+                a module in a Node.js application, we must use the require() function with the parentheses containing
+                the module&#39;s name.</p>
+
+            <p>Node.js has several modules which are used to provide the basic functionality needed for a web
+                application. Following is a list of some of them:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Core Modules</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>HTTP:</td>
+                        <td>The HTTP module includes classes, methods, and events to create a Node.js HTTP server.</td>
+                    </tr>
+                    <tr>
+                        <td>util:</td>
+                        <td>The util module includes utility functions required in the application and is very useful
+                            for developers.</td>
+                    </tr>
+                    <tr>
+                        <td>url:</td>
+                        <td>The url module is used to include the methods for URL parsing.</td>
+                    </tr>
+                    <tr>
+                        <td>fs:</td>
+                        <td>The fs module includes events, classes, and methods to handle the file I/O operations.</td>
+                    </tr>
+                    <tr>
+                        <td>stream:</td>
+                        <td>The stream module is used to include the methods to handle streaming data.</td>
+                    </tr>
+                    <tr>
+                        <td>query string:</td>
+                        <td>The query string module is used to include the methods to work with a query string.</td>
+                    </tr>
+                    <tr>
+                        <td>zlib:</td>
+                        <td>The zlib module is used to include the methods to compress or decompress the files used in
+                            an application.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>23) What are buffers in Node.js?</h3>
+
+            <p>In general, a buffer is a temporary memory mainly used by the stream to hold on to some data until it is
+                consumed. Buffers are used to represent a fixed-size chunk of memory allocated outside of the V8
+                JavaScript engine. It can&#39;t be resized. It is like an array of integers, which each represents a
+                byte of data. It is implemented by the Node. js Buffer class. Buffers also support legacy encodings like
+                ASCII, utf-8, etc.</p>
+
+            <hr />
+            <h3>24) What is error-first callback?</h3>
+
+            <p>Error-first callbacks are used to pass errors and data. If something goes wrong, the programmer has to
+                check the first argument because it is always an error argument. Additional arguments are used to pass
+                data.</p>
+
+            <p>&nbsp;</p>
+
+            <ol start="1">
+                <li>fs.readFile(filePath,&nbsp;function(err,&nbsp;data)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;if&nbsp;(err)&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;//handle&nbsp;the&nbsp;error&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;}&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;//&nbsp;use&nbsp;the&nbsp;data&nbsp;object&nbsp;&nbsp;</li>
+                <li>});&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>25) What is an asynchronous API?</h3>
+
+            <p>All the API&#39;s of Node.js library are asynchronous means non-blocking. A Node.js based server never
+                waits for an API to return data. The Node.js server moves to the next API after calling it, and a
+                notification mechanism of Events of Node.js responds to the server for the previous API call.</p>
+
+            <hr />
+            <h3>26) How can you avoid callbacks?</h3>
+
+            <p>To avoid callbacks, you can use any one of the following options:</p>
+
+            <ul>
+                <li>You can use&nbsp;<strong>modularization</strong>. It breaks callbacks into independent functions.
+                </li>
+                <li>You can use&nbsp;<strong>promises</strong>.</li>
+                <li>You can use&nbsp;<strong>yield</strong>&nbsp;with Generators and Promises.</li>
+            </ul>
+
+            <hr />
+            <h3>27) Does Node.js provide Debugger?</h3>
+
+            <p>Yes, Node.js provides a simple TCP based protocol and built-in debugging client. For debugging your
+                JavaScript file, you can use debug argument followed by the js file name you want to debug.</p>
+
+            <h4>Syntax:</h4>
+
+            <ol start="1">
+                <li>node&nbsp;debug&nbsp;[script.js&nbsp;|&nbsp;-e&nbsp;&quot;script&quot;&nbsp;|&nbsp;&lt;host&gt;:&lt;port&gt;]&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <h3>28) What is a control flow function?</h3>
+
+            <p>Control flow function is a generic piece of code that runs in between several asynchronous function
+                calls.</p>
+
+            <hr />
+            <h3>29) How &quot;Control Flow&quot; controls the functions calls?</h3>
+
+            <p>The control flow does the following job:</p>
+
+            <ul>
+                <li>Control the order of execution</li>
+                <li>Collect data</li>
+                <li>Limit concurrency</li>
+                <li>Call the next step in a program</li>
+            </ul>
+
+            <hr />
+            <h3>30) Is it possible to access DOM in Node?</h3>
+
+            <p>No, it is not possible to access DOM in Node.</p>
+
+            <hr />
+            <h3>31) What types of tasks can be done asynchronously using the event loop?</h3>
+
+            <ul>
+                <li>I/O operations</li>
+                <li>Heavy computation</li>
+                <li>Anything requiring blocking</li>
+            </ul>
+
+            <hr />
+            <h3>32) What is REPL in Node.js?</h3>
+
+            <p>REPL stands for Read Eval Print Loop. It specifies a computer environment like a window console or
+                Unix/Linux shell where you can enter a command, and the computer responds with an output. It is very
+                useful in writing and debugging the codes. REPL environment incorporates Node.js.</p>
+
+            <p><strong>See the Example:</strong></p>
+
+            <ol start="1">
+                <li>$&nbsp;node&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;100&nbsp;+&nbsp;200&nbsp;&nbsp;</li>
+                <li>300&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;100&nbsp;+&nbsp;(&nbsp;200&nbsp;*&nbsp;300&nbsp;)&nbsp;-&nbsp;400&nbsp;&nbsp;</li>
+                <li>59700&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><br />
+                <img alt="Node.js Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/node-js-interview-questions-q32.png" />
+            </p>
+
+            <hr />
+            <h3>33) Explain the tasks of terms used in Node REPL.</h3>
+
+            <p>Following are the terms used in REPL with their defined tasks:</p>
+
+            <p><strong>Read:</strong>&nbsp;It reads user&#39;s input; parse the input into JavaScript data-structure and
+                stores in memory.</p>
+
+            <p><strong>Eval:</strong>&nbsp;It takes and evaluates the data structure.</p>
+
+            <p><strong>Print:</strong>&nbsp;It is used to print the result.</p>
+
+            <p><strong>Loop:</strong>&nbsp;It loops the above command until user press ctrl-c twice to terminate.</p>
+
+            <hr />
+            <h3>34) Is it possible to evaluate simple expressions using Node REPL?</h3>
+
+            <p>Yes. You can evaluate simple expressions using Node REPL.</p>
+
+            <hr />
+            <h3>35) What is the use of the underscore variable in REPL?</h3>
+
+            <p>In REPL, the underscore variable is used to get the last result.</p>
+
+            <ol start="1">
+                <li>C:\Nodejs_WorkSpace&gt;node&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;var&nbsp;x&nbsp;=&nbsp;10&nbsp;&nbsp;</li>
+                <li>undefined&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;var&nbsp;y&nbsp;=&nbsp;20&nbsp;&nbsp;</li>
+                <li>undefined&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;x&nbsp;+&nbsp;y&nbsp;&nbsp;</li>
+                <li>30&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;var&nbsp;sum&nbsp;=&nbsp;_&nbsp;&nbsp;</li>
+                <li>undefined&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;console.log(sum)&nbsp;&nbsp;</li>
+                <li>30&nbsp;&nbsp;</li>
+                <li>undefined&nbsp;&nbsp;</li>
+                <li>&gt;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>36) Does Node.js supports cryptography?</h3>
+
+            <p>Yes, Node.js Crypto module supports cryptography. It provides cryptographic functionality that includes a
+                set of wrappers for open SSL&#39;s hash HMAC, cipher, decipher, sign and verify functions. For example:
+            </p>
+
+            <ol start="1">
+                <li>const&nbsp;crypto&nbsp;=&nbsp;require(&#39;crypto&#39;);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>const&nbsp;secret&nbsp;=&nbsp;&#39;abcdefg&#39;;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>const&nbsp;hash&nbsp;=&nbsp;crypto.createHmac(&#39;sha256&#39;,&nbsp;secret)&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.update(&#39;Welcome&nbsp;to&nbsp;JavaTpoint&#39;)&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.digest(&#39;hex&#39;);&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>console.log(hash);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>37) What is npm? What is the main functionality of npm?</h3>
+
+            <p>npm stands for Node Package Manager. Following are the two main functionalities of npm:</p>
+
+            <ul>
+                <li>Online repositories for node.js packages/modules which are searchable on search.nodejs.org</li>
+                <li>Command line utility to install packages, do version management and dependency management of Node.js
+                    packages.</li>
+            </ul>
+
+            <hr />
+            <h3>38) What tools can be used to assure a consistent style in Node.js?</h3>
+
+            <p>Following is a list of tools that can be used in developing code in teams, to enforce a given style guide
+                and to catch common errors using static analysis.</p>
+
+            <ul>
+                <li>JSLint</li>
+                <li>JSHint</li>
+                <li>ESLint</li>
+                <li>JSCS</li>
+            </ul>
+
+            <hr />
+            <h3>39) What is the difference between operational and programmer errors?</h3>
+
+            <p>Operational errors are not bugs, but create problems with the system like request timeout or hardware
+                failure. On the other hand, programmer errors are actual bugs.</p>
+
+            <hr />
+            <h3>40) What is the difference between the global installation of dependencies and local installation of
+                dependencies?</h3>
+
+            <ul>
+                <li>Global installation of dependencies is stored in&nbsp;/npm directory. While local installation of
+                    dependencies stores in the local mode. Here local mode refers to the package installation in
+                    node_modules directory lying in the folder where Node application is present.</li>
+                <li>Globally deployed packages cannot be imported using require() in Node application directly. On the
+                    other hand, locally deployed packages are accessible via require().</li>
+                <li>To install a Node project globally -g flag is used.
+                    <ol start="1">
+                        <li>C:\Nodejs_WorkSpace&gt;npm&nbsp;install&nbsp;express&nbsp;?g&nbsp;&nbsp;&nbsp;</li>
+                    </ol>
+                </li>
+                <li>To install a Node project locally, the syntax is:
+                    <ol start="1">
+                        <li>C:\Nodejs_WorkSpace&gt;npm&nbsp;install&nbsp;express&nbsp;&nbsp;&nbsp;</li>
+                    </ol>
+                </li>
+            </ul>
+
+            <hr />
+            <h3>41) What is the use of a buffer class in Node.js?</h3>
+
+            <p>The Node.js provides Buffer class to store raw data similar to an array of integers but corresponds to a
+                raw memory allocation outside the V8 heap. It is a global class and can be accessed in an application
+                without importing a buffer module. Buffer class is used because pure JavaScript is not compatible with
+                binary data. So, when dealing with TCP streams or the file system, it&#39;s necessary to handle octet
+                streams.</p>
+
+            <hr />
+            <h3>42) What is the role of assert in Node.js?</h3>
+
+            <p>The Node.js Assert is a way to write tests. It provides no feedback when running your test unless one
+                fails. The assert module provides a simple set of assertion tests that can be used to test invariants.
+                The module is intended for internal use by Node.js, but can be used in application code via require
+                (&#39;assert&#39;). For example:</p>
+
+            <ol start="1">
+                <li>var&nbsp;assert&nbsp;=&nbsp;require(&#39;assert&#39;);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>function&nbsp;add&nbsp;(a,&nbsp;b)&nbsp;{&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;return&nbsp;a&nbsp;+&nbsp;b;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>}&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>var&nbsp;expected&nbsp;=&nbsp;add(1,2);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>assert(&nbsp;expected&nbsp;===&nbsp;3,&nbsp;&#39;one&nbsp;plus&nbsp;two&nbsp;is&nbsp;three&#39;);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <h3>43) What are the streams in Node.js?</h3>
+
+            <p>The Streams are the objects that facilitate you to read data from a source and write data to a
+                destination. There are four types of streams in Node.js:</p>
+
+            <ul>
+                <li><strong>Readable:</strong>&nbsp;This stream is used for reading operations.</li>
+                <li><strong>Writable:</strong>&nbsp;This stream is used for write operations.</li>
+                <li><strong>Duplex:</strong>&nbsp;This stream can be used for both reading and write operations.</li>
+                <li><strong>Transform:</strong>&nbsp;It is a type of duplex stream where the output computes according
+                    to input.</li>
+            </ul>
+
+            <hr />
+            <h3>44) What is event-driven programming in Node.js?</h3>
+
+            <p>In Node.js, event-driven programming means as soon as Node starts its server, it initiates its variables,
+                declares functions and then waits for an event to occur. It is one of the reasons why Node.js is pretty
+                fast compared to other similar technologies.</p>
+
+            <p><img alt="Node.js events 1" src="https://static.javatpoint.com/js/nodejs/images/nodejs-events1.png" />
+            </p>
+
+            <hr />
+            <h3>45) What is the difference between events and callbacks in Node.js?</h3>
+
+            <p>Although, Events and Callbacks look similar the differences lies in the fact that callback functions are
+                called when an asynchronous function returns its result whereas event handling works on the observer
+                pattern. Whenever an event gets fired, its listener function starts executing. Node.js has multiple
+                in-built events available through the events module and EventEmitter class which is used to bind events
+                and event listeners.</p>
+
+            <hr />
+            <h3>46) What is the Punycode in Node.js?</h3>
+
+            <p>The Punycode is an encoding syntax which is used to convert Unicode (UTF-8) string of characters to ASCII
+                string of characters. It is bundled with Node.js v0.6.2 and later versions. If you want to use it with
+                other Node.js versions, then use npm to install Punycode module first. You have to used require
+                (&#39;Punycode&#39;) to access it.</p>
+
+            <h4>Syntax:</h4>
+
+            <ol start="1">
+                <li>punycode&nbsp;=&nbsp;require(&#39;punycode&#39;);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>47) What does Node.js TTY module contains?</h3>
+
+            <p>The Node.js TTY module contains tty.ReadStream and tty.WriteStream classes. In most cases, there is no
+                need to use this module directly. You have to used require (&#39;tty&#39;) to access this module.</p>
+
+            <p>&nbsp;</p>
+
+            <h4>Syntax:</h4>
+
+            <ol start="1">
+                <li>var&nbsp;tty&nbsp;=&nbsp;require(&#39;tty&#39;);&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>48) What are the key differences between Angular and Node.js?</h3>
+
+            <p>Key differences between Angular and Node.js:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Angular</th>
+                        <th>Node.js</th>
+                    </tr>
+                    <tr>
+                        <td>Angular is a structural front-end development framework for developing dynamic web apps.
+                        </td>
+                        <td>Node.js is a cross-platform, run-time, server-side environment for applications written in
+                            JavaScript language.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is entirely written in TypeScript language.</td>
+                        <td>Node.js is written in C, C++, and JavaScript languages.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is used for building single-page, client-side web applications.</td>
+                        <td>Node.js is used for building fast and scalable, client-side, and server-side networking
+                            applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is easy to use. The developers need to add the Angular file to use it in their
+                            applications.</td>
+                        <td>Node.js is slightly complicated to use. Here, the developers need to install Node.js on
+                            their computer system.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular split a web application into MVC components. Here, the models and views are much
+                            simpler than what is found in other JavaScript client-side frameworks.</td>
+                        <td>Node.js generates database queries and uses the event-driven nature of JavaScript to support
+                            non-blocking operations, making the platform efficient.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is based on the model-view-controller design pattern and follows that pattern
+                            completely.</td>
+                        <td>Node.js is single-threaded. It means the web requests and processing runs on the same
+                            thread.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is a Web Framework.</td>
+                        <td>Node.js provides different Web Frameworks like Socket.io, Hapi.js, Meteor.js, Express.js,
+                            and Sails.js, etc.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular is ideal for creating highly active and interactive web apps.</td>
+                        <td>Node.js is the best for developing small-size projects.</td>
+                    </tr>
+                    <tr>
+                        <td>Angular requires a deep understanding of prototyping, scope, and various other JavaScript
+                            aspects.</td>
+                        <td>Node.js facilitates developers to use JavaScript on the client as well as the server-side.
+                            So, they can focus on learning one language.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>49) What are the main differences between operational and programmer errors?</h3>
+
+            <p>The most crucial difference between operational and programmer errors is that the operational errors are
+                not bugs but problems with the system such as to request timeout or hardware failure. On the other hand,
+                the programmer errors are actual bugs in the application.</p>
+
+            <hr />
+            <h3>50) What do you understand by an EventEmitter in Node.js?</h3>
+
+            <p>In Node.js, an EventEmitter is a class that includes all the objects capable of emitting events. This can
+                be achieved by attaching named events that are emitted by the object using an eventEmitter.on()
+                function. Thus whenever this object throws an event, the attached functions are invoked synchronously.
+            </p>
+
+            <p><strong>Example:</strong></p>
+
+            <ol start="1">
+                <li>const&nbsp;EventEmitter&nbsp;=&nbsp;require(&#39;events&#39;);&nbsp;&nbsp;</li>
+                <li>class&nbsp;MyEmitter&nbsp;extends&nbsp;EventEmitter&nbsp;{}&nbsp;&nbsp;</li>
+                <li>const&nbsp;myEmitter&nbsp;=&nbsp;new&nbsp;MyEmitter();&nbsp;&nbsp;</li>
+                <li>myEmitter.on(&#39;event&#39;,&nbsp;()&nbsp;=&gt;&nbsp;{&nbsp;&nbsp;</li>
+                <li>&nbsp;console.log(&#39;an&nbsp;event&nbsp;occurred!&#39;);&nbsp;&nbsp;</li>
+                <li>});&nbsp;&nbsp;</li>
+                <li>myEmitter.emit(&#39;event&#39;);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>51) What is the difference between readFile and createReadStream in Node.js?</h3>
+
+            <p>In Node.js, there are two ways to read and execute files: readFile and CreateStream.</p>
+
+            <ul>
+                <li>The readFile() process is a fully buffered process that returns the response only when the complete
+                    file is pushed into the buffer and is read. This process is called a memory-intensive process, and
+                    in the case of large files, the processing can be very slow.</li>
+                <li>On the other hand, the createReadStream() is a partially buffered process that treats the entire
+                    process as an event series. The entire file is split into chunks and then processed and sent back as
+                    a response one by one. After completing this step, they are finally removed from the buffer. Unlike
+                    the readFile process, the createReadStream process is effective for the processing of large files.
+                </li>
+            </ul>
+
+            <hr />
+            <h3>52) What is the concept of Punycode in Node.js?</h3>
+
+            <p>In Node.js, the concept of Punycode is used for converting one type of string into another type. Punycode
+                is an encoding syntax used for converting Unicode (UTF-8) string of characters into a basic ASCII string
+                of characters. Now, the hostnames can only understand the ASCII characters so, after the Node.js version
+                0.6.2 onwards, it was bundled up with the default Node package.</p>
+
+            <p>To use it with any previous versions, you have to use the following code:</p>
+
+            <p><strong>Syntax:</strong></p>
+
+            <ol start="1">
+                <li>punycode&nbsp;=&nbsp;require(&#39;punycode&#39;);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>53) How can you enhance the Node.js performance through clustering?</h3>
+
+            <p>Just because the Node.js applications run on a single processor, they don&#39;t take advantage of a
+                multiple-core system by default. Clustering is used to overcome this issue. The cluster mode is used to
+                start up multiple node.js processes, thereby having multiple instances of the event loop. When we start
+                using clusters in a Node.js app, it creates multiple node.js processes. But there is also a parent
+                process called the cluster manager, which is responsible for monitoring the health of the individual
+                instances of the application.</p>
+
+            <p><img alt="Node.js Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/node-js-interview-questions-q53.png" /></p>
+
+            <hr />
+            <h3>54) What is a thread pool in Node.js? Which library handles it?</h3>
+
+            <p>In Node.js, the libuv library is used to handle the Thread pool. The libuv library is a multi-platform C
+                library that supports asynchronous I/O-based operations such as file systems, networking, and
+                concurrency.</p>
+
+            <p><img alt="Node.js Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/node-js-interview-questions-q54.png" /></p>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

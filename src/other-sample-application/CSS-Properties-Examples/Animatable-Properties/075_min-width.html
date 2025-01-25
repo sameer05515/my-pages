@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 50%;
+  background-color: lightblue;
+  overflow: auto;
+  border: 1px solid black;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {min-width: 800px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of min-width</h1>
+
+<p>Change the min-width from "none" to 800px, and back to "none":<p>
+<p><strong>Note:</strong> The min-width property overrides the width property.</p>
+
+<div id="myDIV">
+  <p>This DIV element has a pre-defined width: 50%.</p>
+  <p>An animation will gradually change the min-width to 800 pixels.</p>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

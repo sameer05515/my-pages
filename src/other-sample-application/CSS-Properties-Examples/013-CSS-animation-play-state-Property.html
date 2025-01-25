@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myMoveDivId {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s;
+  animation-play-state: paused;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey; font-size: small;color: black;">
+		Reference : <a href="https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp"  
+	target="_blank">Click here</a>
+<h1>CSS animation-play-state Property</h1>
+<h2>Pause an animation:</h2>
+</div>
+
+<h1>The animation-play-state Property</h1>
+
+<p>Pause an animation:</p>
+<div id="myMoveDivId"></div>
+<p><strong>Note:</strong> The animation-play-state property is not supported in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

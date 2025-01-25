@@ -1,1 +1,0 @@
-# Binding Checkboxes and Radio Boxes to ngModel

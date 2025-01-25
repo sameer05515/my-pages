@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  display: flex;
+}
+
+#main div {
+  -ms-flex: 1;  /* IE 10 */  
+  flex: 1;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_flex.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS flex Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Let all the flexible items be the same length, regardless of its content:</h2>
+</div>
+
+
+<h1>The flex Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div>
+
+<p><b>Note:</b> Internet Explorer 9 and earlier versions do not support the flex property.</p>
+
+<p><b>Note:</b> Internet Explorer 10 supports an alternative, the -ms-flex property. IE11 and newer versions fully support the flex property (do not need the -ms- prefix).</p>
+
+</body>
+</html>

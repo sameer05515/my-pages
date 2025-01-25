@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+
+    <div>
+        <h1>Problem statement</h1>
+        If any List is containing duplicate integers,
+        <br>
+        <code style="white-space: pre-wrap;">
+            List<Integer> list = Arrays.asList(1, 1, 1, 2, 3, 3, 4, 4, 4, 4, 5, 6, 7, 7, 8, 8, 9);
+        </code>
+
+        <br>
+        Then if we convert this list to map containing integer as key and values,
+        <br>
+        <code style="white-space: pre-wrap;">
+            list.stream().collect(Collectors.toMap(
+                x->x,
+                x->x))
+                .forEach((k, v) -> System.out.println(k + " " + v));        
+        </code>
+        <br>
+        we will get below exception
+        <code style="white-space: pre-wrap;">
+            Exception in thread "main" java.lang.IllegalStateException: Duplicate key 1
+                at java.util.stream.Collectors.lambda$throwingMerger$0(Collectors.java:133)
+                at java.util.HashMap.merge(HashMap.java:1255)
+                at java.util.stream.Collectors.lambda$toMap$58(Collectors.java:1320)
+                at java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169)
+                at java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:948)
+                at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+                at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+                at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+                at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+                at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+                at example.ListToMapConversionForDuplicateKey.main(ListToMapConversionForDuplicateKey.java:28)            
+        </code>
+
+        <br>
+        To solve the duplicated key issue above, pass in the third mergeFunction argument like this :
+        <code style="white-space: pre-wrap;">
+            list.stream().collect(Collectors.toMap(x -> x,
+            x -> x,
+            (oldValue, newValue) -> oldValue)
+            )
+            .forEach((k, v) -> System.out.println(k + " " + v));        
+        </code>
+    </div>
+
+    
+</body>
+</html>

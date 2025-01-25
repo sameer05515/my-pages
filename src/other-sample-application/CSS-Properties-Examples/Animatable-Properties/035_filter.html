@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+img {
+  animation: mymove 7s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of filter</h1>
+
+<p>Gradually change the color of the image to black and white (100% grayscale), and back to its original colors:<p>
+
+<img src="../images/mountain.jpg" alt="Pineapple" width="300" height="300">
+
+<p><strong>Note:</strong> The filter property is not supported in Edge 12 or Internet Explorer.</p>
+
+</body>
+</html>

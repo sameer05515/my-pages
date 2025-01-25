@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hibernate</title>
+    <link rel="stylesheet" href="../../../../../../lib/style.css">
+    <script src="../../../../../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+    <div class="borderSt">
+
+        <div class="box-prem">
+            <h1>
+                <a href="https://www.javatpoint.com/hibernate-interview-questions" target="_blank">
+                    Hibernate Interview Questions
+                </a>
+            </h1>
+
+            <p>Hibernate interview questions are asked to the students because it is a widely used ORM tool. The
+                important list of top 20 hibernate interview questions and answers for freshers and professionals are
+                given below.</p>
+
+            <hr />
+            <h3>1) What is hibernate?</h3>
+
+            <p>Hibernate is an open-source and lightweight ORM tool that is used to store, manipulate, and retrieve data
+                from the database.</p>
+
+            <p><a href="https://www.javatpoint.com/hibernate-tutorial">more details...</a></p>
+
+            <hr />
+            <h3>2) What is ORM?</h3>
+
+            <p>ORM is an acronym for Object/Relational mapping. It is a programming strategy to map object with the data
+                stored in the database. It simplifies data creation, data manipulation, and data access.</p>
+
+            <hr />
+            <h3>3) Explain hibernate architecture?</h3>
+
+            <p>Hibernate architecture comprises of many interfaces such as Configuration, SessionFactory, Session,
+                Transaction, etc.</p>
+
+            <p>&nbsp;</p>
+
+            <p>&nbsp;</p>
+
+            <p>39.6M</p>
+
+            <p>752</p>
+
+            <p>Difference between JDK, JRE, and JVM</p>
+
+            <p><a href="https://www.javatpoint.com/hibernate-architecture">more details...</a><img
+                    alt="hibernate framework architecture"
+                    src="https://www.javatpoint.com/images/hibernate/architecture.jpg" /></p>
+
+            <hr />
+            <h3>4) What are the core interfaces of Hibernate?</h3>
+
+            <p>The core interfaces of Hibernate framework are:</p>
+
+            <ul>
+                <li>Configuration</li>
+                <li>SessionFactory</li>
+                <li>Session</li>
+                <li>Query</li>
+                <li>Criteria</li>
+                <li>Transaction</li>
+            </ul>
+
+            <h3>5) Mention some of the advantages of using ORM over JDBC.</h3>
+
+            <p>ORM has the following advantages over JDBC:</p>
+
+            <ul>
+                <li>Application development is fast.</li>
+                <li>Management of transaction.</li>
+                <li>Generates key automatically.</li>
+                <li>Details of SQL queries are hidden.</li>
+            </ul>
+
+            <hr />
+            <h3>6) Define criteria in terms of Hibernate.</h3>
+
+            <p>The objects of criteria are used for the creation and execution of the object-oriented criteria queries.
+            </p>
+
+            <hr />
+            <h3>7) List some of the databases supported by Hibernate.</h3>
+
+            <p>Some of the databases supported by Hibernate are:</p>
+
+            <ul>
+                <li>DB2</li>
+                <li>MySQL</li>
+                <li>Oracle</li>
+                <li>Sybase SQL Server</li>
+                <li>Informix Dynamic Server</li>
+                <li>HSQL</li>
+                <li>PostgreSQL</li>
+                <li>FrontBase</li>
+            </ul>
+
+            <hr />
+            <h3>8) List the key components of Hibernate.</h3>
+
+            <p>Key components of Hibernate are:</p>
+
+            <ul>
+                <li>Configuration</li>
+                <li>Session</li>
+                <li>SessionFactory</li>
+                <li>Criteria</li>
+                <li>Query</li>
+                <li>Transaction</li>
+            </ul>
+
+            <hr />
+            <h3>9) Mention two components of Hibernate configuration object.</h3>
+
+            <p>Database Connection</p>
+
+            <p>Class Mapping Setup</p>
+
+            <hr />
+            <h3>10) How is SQL query created in Hibernate?</h3>
+
+            <p>The SQL query is created with the help of the following syntax:</p>
+
+            <p>&nbsp;&nbsp;</p>
+
+            <p>Learn more</p>
+
+            <p>Session.createSQLQuery</p>
+
+            <hr />
+            <h3>11) What does HQL stand for?</h3>
+
+            <p>Hibernate Query Language</p>
+
+            <hr />
+            <h3>12) How is HQL query created?</h3>
+
+            <p>The HQL query is created with the help of the following syntax:</p>
+
+            <p>Session.createQuery</p>
+
+            <hr />
+            <h3>13) How can we add criteria to a SQL query?</h3>
+
+            <p>A criterion is added to a SQL query by using the Session.createCriteria.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>14) Define persistent classes.</h3>
+
+            <p>Classes whose objects are stored in a database table are called as persistent classes.</p>
+
+            <hr />
+            <hr />
+            <h3>15) What is SessionFactory?</h3>
+
+            <p>SessionFactory provides the instance of Session. It is a factory of Session. It holds the data of second
+                level cache that is not enabled by default.</p>
+
+            <p><a href="https://www.javatpoint.com/hibernate-architecture">more details...</a></p>
+
+            <hr />
+            <h3>16) Is SessionFactory a thread-safe object?</h3>
+
+            <p>Yes, SessionFactory is a thread-safe object, many threads cannot access it simultaneously.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>17) What is Session?</h3>
+
+            <p>It maintains a connection between the hibernate application and database.</p>
+
+            <p>It provides methods to store, update, delete or fetch data from the database such as persist(), update(),
+                delete(), load(), get() etc.</p>
+
+            <p>It is a factory of Query, Criteria and Transaction i.e. it provides factory methods to return these
+                instances.</p>
+
+            <p><a href="https://www.javatpoint.com/hibernate-architecture">more details...</a></p>
+
+            <hr />
+            <h3>18) Is Session a thread-safe object?</h3>
+
+            <p>No, Session is not a thread-safe object, many threads can access it simultaneously. In other words, you
+                can share it between threads.</p>
+
+            <hr />
+            <h3>19) What is the difference between session.save() and session.persist() method?</h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No.</th>
+                        <th>save()</th>
+                        <th>persist()</th>
+                    </tr>
+                    <tr>
+                        <td>1)</td>
+                        <td>returns the identifier (Serializable) of the instance.</td>
+                        <td>Return nothing because its return type is void.</td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>Syn: public Serializable save(Object o)</td>
+                        <td>Syn: public void persist(Object o)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>20) What is the difference between get and load method?</h3>
+
+            <p>The differences between get() and load() methods are given below.</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No.</th>
+                        <th>get()</th>
+                        <th>load()</th>
+                    </tr>
+                    <tr>
+                        <td>1)</td>
+                        <td>Returns&nbsp;<strong>null</strong>&nbsp;if an object is not found.</td>
+                        <td>Throws&nbsp;<strong>ObjectNotFoundException</strong>&nbsp;if an object is not found.</td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>get() method always&nbsp;<strong>hit the database</strong>.</td>
+                        <td>load() method&nbsp;<strong>doesn&#39;t hit</strong>&nbsp;the database.</td>
+                    </tr>
+                    <tr>
+                        <td>3)</td>
+                        <td>It returns the real object, not the proxy.</td>
+                        <td>It returns&nbsp;<strong>proxy<strong>&nbsp;object.</strong></strong></td>
+                    </tr>
+                    <tr>
+                        <td>4)</td>
+                        <td>It should be used if&nbsp;<strong>you are not sure</strong>&nbsp;about the existence of
+                            instance.</td>
+                        <td>It should be used if&nbsp;<strong>you are sure</strong>&nbsp;that instance exists.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>21) What is the difference between update and merge method?</h3>
+
+            <p>The differences between update() and merge() methods are given below.</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No.</th>
+                        <th>The update() method</th>
+                        <th>merge() method</th>
+                    </tr>
+                    <tr>
+                        <td>1)</td>
+                        <td>Update means to edit something.</td>
+                        <td>Merge means to combine something.</td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>update() should be used if the session doesn&#39;t contain an already persistent state with
+                            the same id. It means an update should be used inside the session only. After closing the
+                            session, it will throw the error.</td>
+                        <td>merge() should be used if you don&#39;t know the state of the session, means you want to
+                            make the modification at any time.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Let&#39;s try to understand the difference by the example given below:</p>
+
+            <ol start="1">
+                <li>...&nbsp;&nbsp;</li>
+                <li>SessionFactory&nbsp;factory&nbsp;=&nbsp;cfg.buildSessionFactory();&nbsp;&nbsp;</li>
+                <li>Session&nbsp;session1&nbsp;=&nbsp;factory.openSession();&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>Employee&nbsp;e1&nbsp;=&nbsp;(Employee)&nbsp;session1.get(Employee.class,&nbsp;Integer.valueOf(101));//passing&nbsp;id&nbsp;of&nbsp;employee&nbsp;&nbsp;
+                </li>
+                <li>session1.close();&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>e1.setSalary(70000);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>Session&nbsp;session2&nbsp;=&nbsp;factory.openSession();&nbsp;&nbsp;</li>
+                <li>Employee&nbsp;e2&nbsp;=&nbsp;(Employee)&nbsp;session1.get(Employee.class,&nbsp;Integer.valueOf(101));//passing&nbsp;same&nbsp;id&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;</li>
+                <li>Transaction&nbsp;tx=session2.beginTransaction();&nbsp;&nbsp;</li>
+                <li>session2.merge(e1);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;</li>
+                <li>tx.commit();&nbsp;&nbsp;</li>
+                <li>session2.close();&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>After closing session1, e1 is in detached state. It will not be in the session1 cache. So if you call
+                update() method, it will throw an error.</p>
+
+            <p>Then, we opened another session and loaded the same Employee instance. If we call merge in session2,
+                changes of e1 will be merged in e2.</p>
+
+            <p>&nbsp;</p>
+
+            <hr />
+            <h3>22) What are the states of the object in hibernate?</h3>
+
+            <p>There are 3 states of the object (instance) in hibernate.</p>
+
+            <ol>
+                <li><strong>Transient</strong>: The object is in a transient state if it is just created but has no
+                    primary key (identifier) and not associated with a session.</li>
+                <li><strong>Persistent</strong>: The object is in a persistent state if a session is open, and you just
+                    saved the instance in the database or retrieved the instance from the database.</li>
+                <li><strong>Detached</strong>: The object is in a detached state if a session is closed. After detached
+                    state, the object comes to persistent state if you call lock() or update() method.</li>
+            </ol>
+
+            <hr />
+            <h3>23) What are the inheritance mapping strategies?</h3>
+
+            <p>There are 3 ways of inheritance mapping in hibernate.</p>
+
+            <ol>
+                <li>Table per hierarchy</li>
+                <li>Table per concrete class</li>
+                <li>Table per subclass</li>
+            </ol>
+
+            <p><a href="https://www.javatpoint.com/hibernate-inheritance-mapping-tutorial">more details...</a></p>
+
+            <hr />
+            <h3>24) How to make an immutable class in hibernate?</h3>
+
+            <p>If you mark a class as mutable=&quot;false&quot;, the class will be treated as an immutable class. By
+                default, it is mutable=&quot;true&quot;.</p>
+
+            <hr />
+            <h3>25) What is automatic dirty checking in hibernate?</h3>
+
+            <p>The automatic dirty checking feature of Hibernate, calls update statement automatically on the objects
+                that are modified in a transaction.</p>
+
+            <p>Let&#39;s understand it by the example given below:</p>
+
+            <ol start="1">
+                <li>...&nbsp;&nbsp;</li>
+                <li>SessionFactory&nbsp;factory&nbsp;=&nbsp;cfg.buildSessionFactory();&nbsp;&nbsp;</li>
+                <li>Session&nbsp;session1&nbsp;=&nbsp;factory.openSession();&nbsp;&nbsp;</li>
+                <li>Transaction&nbsp;tx=session2.beginTransaction();&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>Employee&nbsp;e1&nbsp;=&nbsp;(Employee)&nbsp;session1.get(Employee.class,&nbsp;Integer.valueOf(101));&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>e1.setSalary(70000);&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;</li>
+                <li>tx.commit();&nbsp;&nbsp;</li>
+                <li>session1.close();&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Here, after getting employee instance e1 and we are changing the state of e1.</p>
+
+            <p>After changing the state, we are committing the transaction. In such a case, the state will be updated
+                automatically. This is known as dirty checking in hibernate.</p>
+
+            <hr />
+            <h3>26) How many types of association mapping are possible in hibernate?</h3>
+
+            <p>There can be 4 types of association mapping in hibernate.</p>
+
+            <ol>
+                <li>One to One</li>
+                <li>One to Many</li>
+                <li>Many to One</li>
+                <li>Many to Many</li>
+            </ol>
+
+            <hr />
+            <h3>27) Is it possible to perform collection mapping with One-to-One and Many-to-One?</h3>
+
+            <p>No, collection mapping can only be performed with One-to-Many and Many-to-Many.</p>
+
+            <hr />
+            <h3>28) What is lazy loading in hibernate?</h3>
+
+            <p>Lazy loading in hibernate improves the performance. It loads the child objects on demand.</p>
+
+            <p>Since Hibernate 3, lazy loading is enabled by default, and you don&#39;t need to do
+                lazy=&quot;true&quot;. It means not to load the child objects when the parent is loaded.</p>
+
+            <hr />
+            <h3>29) What is HQL (Hibernate Query Language)?</h3>
+
+            <p>Hibernate Query Language is known as an object-oriented query language. It is like a structured query
+                language (SQL).</p>
+
+            <p>The main advantage of HQL over SQL is:</p>
+
+            <ol>
+                <li>You don&#39;t need to learn SQL</li>
+                <li>Database independent</li>
+                <li>Simple to write a query</li>
+            </ol>
+
+            <hr />
+            <h3>30) What is the difference between first level cache and second level cache?</h3>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No.</th>
+                        <th>First Level Cache</th>
+                        <th>Second Level Cache</th>
+                    </tr>
+                    <tr>
+                        <td>1)</td>
+                        <td>First Level Cache is&nbsp;<strong>associated with Session</strong>.</td>
+                        <td>Second Level Cache is associated with&nbsp;<strong>SessionFactory</strong>.</td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>It is&nbsp;<strong>enabled</strong>&nbsp;by default.</td>
+                        <td>It is&nbsp;<strong>not enabled</strong>&nbsp;by default.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

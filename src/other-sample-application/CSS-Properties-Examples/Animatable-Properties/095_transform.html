@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(180deg);}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of transform</h1>
+
+<p>Gradually rotate the DIV element 180 degrees, and back:<p>
+
+<div id="myDIV">
+  <h1>myDIV</h1>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

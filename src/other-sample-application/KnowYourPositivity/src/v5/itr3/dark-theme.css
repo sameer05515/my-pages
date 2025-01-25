@@ -1,0 +1,20 @@
+/* ✅ Dark Mode Styles */
+.dark-mode {
+  background-color: #1a202c;
+  color: #e2e8f0;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #2d3748;
+}
+
+.dark-mode #my-main-section {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark-mode #aboutModal {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}

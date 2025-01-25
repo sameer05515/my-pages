@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 400px;
+  height: 150px;
+  border: 1px solid #000000;
+  display: flex;
+}
+
+#main div {
+  width: 70px;
+  height: 70px;
+}
+
+#myGreenDIV {
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {order: 6;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of order</h1>
+
+<p>Change the order of the green DIV element from 1 to 6, and back to 1:<p>
+
+<div id="main">
+  <div style="background-color:lightgreen;order:1;" id="myGreenDIV"></div>
+  <div style="background-color:coral;order:2;"></div>
+  <div style="background-color:lightblue;order:3;"></div>
+  <div style="background-color:pink;order:4;"></div>
+</div>
+
+<p><strong>Note:</strong> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

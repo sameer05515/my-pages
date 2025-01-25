@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div.a {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: rotate(20deg); /* IE 9 */
+  transform: rotate(20deg);
+}
+
+div.b {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: skewY(20deg); /* IE 9 */
+  transform: skewY(20deg);
+}
+
+div.c {
+  width: 150px;
+  height: 80px;
+  background-color: yellow;
+  -ms-transform: scaleY(1.5); /* IE 9 */
+  transform: scaleY(1.5);
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="opacity: 1.0;background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_transform.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS transform Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Rotate, skew, and scale three different &lt;div&gt; elements:</h2>
+</div>
+
+
+<h1>The transform Property</h1>
+
+<h2>transform: rotate(20deg):</h2>
+<div class="a">Hello World!</div>
+<br>
+
+<h2>transform: skewY(20deg):</h2>
+<div class="b">Hello World!</div>
+<br>
+
+<h2>transform: scaleY(1.5):</h2>
+<div class="c">Hello World!</div>
+
+</body>
+</html>

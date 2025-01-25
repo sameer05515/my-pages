@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#div1 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin-left: 60px;
+  border: 1px solid blue;
+  perspective: 100px;
+}
+
+#div2, #div4 {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  background: rgba(100,100,100,0.5); 
+  transform-style: preserve-3d;
+  transform: rotateX(45deg);
+}
+
+#div3 {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  margin-left: 60px;
+  border: 1px solid blue;
+  perspective: none;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="opacity: 1.0;background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_perspective.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;color:black;">CSS perspective Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;color:black;">Give a 3D-positioned element some perspective:</h2>
+</div>
+
+
+<h1>The perspective Property</h1>
+
+<h2>perspective: 100px:</h2>
+<div id="div1">DIV1
+  <div id="div2">DIV2</div>
+</div>
+
+<h2>perspective: none:</h2>
+<div id="div3">DIV3
+  <div id="div4">DIV4</div>
+</div>
+
+<p><strong>Note:</strong> The perspective property is not supported in IE9 and earlier versions.</p>
+
+</body>
+</html>

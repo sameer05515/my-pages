@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL</title>    
+    <link rel="stylesheet" href="../../lib/style.css">
+    <script src="../../lib/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="borderSt">
+        <div class="box-prem">
+            <h1>SQL Interview Questions and Answers</h1>
+
+            <p><img alt="SQL Interview Questions"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions.PNG" /></p>
+
+            <p>The following are the most popular and useful SQL interview questions and answers for fresher and
+                experienced candidates. These questions are created specifically to familiarise you with the types of
+                questions you might encounter during your SQL interview. According to our experiences, good interviewers
+                rarely plan to ask any specific topic during the interview. Instead, questioning usually begins with a
+                basic understanding of the subject, and based on your responses, further discussion happened.</p>
+
+            <h3>1) What is SQL?</h3>
+
+            <p>SQL stands for the Structured Query Language. It is the standard language used to maintain the relational
+                database and perform many different data manipulation operations on the data. SQL was initially invented
+                in 1970. It is a database language used for database creation, deletion, fetching and modifying rows,
+                etc. sometimes, it is pronounced as &#39;sequel.&#39; We can also use it to handle organized data
+                comprised of entities (variables) and relations between different entities of the data.</p>
+
+            <hr />
+            <h3>2) When SQL appeared?</h3>
+
+            <p>SQL first appeared in 1974. It is one of the most used languages for maintaining the relational database.
+                In 1986, SQL became the standard of the American National Standards Institute (ANSI) and ISO
+                (International Organization for Standardization) in 1987.</p>
+
+            <hr />
+            <h3>3) What are the usages of SQL?</h3>
+
+            <p>SQL is responsible for maintaining the relational data and the data structures present in the database.
+                Some of the common usages are given below:</p>
+
+            <ul>
+                <li>To execute queries against a database</li>
+                <li>To retrieve data from a database</li>
+                <li>To inserts records in a database</li>
+                <li>To updates records in a database</li>
+                <li>To delete records from a database</li>
+                <li>To create new databases</li>
+                <li>To create new tables in a database</li>
+                <li>To create views in a database</li>
+                <li>To perform complex operations on the database.</li>
+            </ul>
+
+            <hr />
+            <h3>4) Does SQL support programming language features?</h3>
+
+            <p>SQL refers to the Standard Query Language. Therefore, it is true that SQL is a language but does not
+                actually support the programming language. It is a common language that doesn&#39;t have a loop,
+                conditional statements, and logical operations. It cannot be used for anything other than data
+                manipulation. It is a command language to perform database operations. The primary purpose of SQL is to
+                retrieve, manipulate, update, delete, and perform complex operations like joins on the data present in
+                the database.</p>
+
+            <hr />
+            <h3>5) What are the subsets of SQL?</h3>
+
+            <p>The following are the four significant subsets of the SQL:</p>
+
+            <ul>
+                <li><strong>Data definition language (DDL):</strong>&nbsp;It defines the data structure that consists of
+                    commands like CREATE, ALTER, DROP, etc.</li>
+                <li><strong>Data manipulation language (DML):</strong>&nbsp;It is used to manipulate existing data in
+                    the database. The commands in this category are SELECT, UPDATE, INSERT, etc.</li>
+                <li><strong>Data control language (DCL):</strong>&nbsp;It controls access to the data stored in the
+                    database. The commands in this category include GRANT and REVOKE.</li>
+                <li><strong>Transaction Control Language (TCL):</strong>&nbsp;It is used to deal with the transaction
+                    operations in the database. The commands in this category are COMMIT, ROLLBACK, SET TRANSACTION,
+                    SAVEPOINT, etc.</li>
+            </ul>
+
+            <hr />
+            <h3>6) What is the purpose of DDL Language?</h3>
+
+            <p>DDL stands for Data definition language. It is the subset of a database that defines the data structure
+                of the database when the database is created.&nbsp;<strong>For example,</strong>&nbsp;we can use the DDL
+                commands to add, remove, or modify tables. It consists of the following commands: CREATE, ALTER and
+                DELETE database objects such as schema, tables, indexes, view, sequence, etc.</p>
+
+            <p><strong>Example</strong></p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TABLE&nbsp;Students&nbsp;&nbsp;</li>
+                <li>(&nbsp;&nbsp;</li>
+                <li>Roll_no&nbsp;INT,&nbsp;&nbsp;</li>
+                <li>Name&nbsp;VARCHAR(45),&nbsp;&nbsp;</li>
+                <li>Branch&nbsp;VARCHAR(30),&nbsp;&nbsp;</li>
+                <li>);&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>7) What is the purpose of DML Language?</h3>
+
+            <p>Data manipulation language makes the user able to retrieve and manipulate data in a relational database.
+                The DML commands can only perform read-only operations on data. We can perform the following operations
+                using DDL language:</p>
+
+            <ul>
+                <li>Insert data into the database through the INSERT command.</li>
+                <li>Retrieve data from the database through the SELECT command.</li>
+                <li>Update data in the database through the UPDATE command.</li>
+                <li>Delete data from the database through the DELETE command.</li>
+            </ul>
+
+            <p><strong>Example</strong></p>
+
+            <ol start="1">
+                <li>INSERT&nbsp;INTO&nbsp;Student&nbsp;VALUES&nbsp;(111,&nbsp;&#39;George&#39;,&nbsp;&#39;Computer&nbsp;Science&#39;)&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <h3>8) What is the purpose of DCL Language?</h3>
+
+            <p>Data control language allows users to control access and permission management to the database. It is the
+                subset of a database, which decides that what part of the database should be accessed by which user at
+                what point of time. It includes two commands, GRANT and REVOKE.</p>
+
+            <p><strong>GRANT:</strong>&nbsp;It enables system administrators to assign privileges and roles to the
+                specific user accounts to perform specific tasks on the database.</p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>REVOKE:</strong>&nbsp;It enables system administrators to revoke privileges and roles from the
+                user accounts so that they cannot use the previously assigned permission on the database.</p>
+
+            <p><strong>Example</strong></p>
+
+            <ol start="1">
+                <li>GRANT&nbsp;*&nbsp;ON&nbsp;mydb.Student&nbsp;TO&nbsp;javatpoint@localhsot;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>9) What are tables and fields in the database?</h3>
+
+            <p>A table is a set of organized data in the form of rows and columns. It enables users to store and display
+                records in the structure format. It is similar to worksheets in the spreadsheet application. Here rows
+                refer to the tuples, representing the simple data item, and columns are the attribute of the data items
+                present in a particular row. Columns can categorize as vertical, and Rows are horizontal.</p>
+
+            <p>Fields are the components to provide the structure for the table. It stores the same category of data in
+                the same data type. A table contains a fixed number of columns but can have any number of rows known as
+                the record. It is also called a column in the table of the database. It represents the attribute or
+                characteristics of the entity in the record.</p>
+
+            <p><strong>Example</strong></p>
+
+            <p>&nbsp;</p>
+
+            <p><strong>Table:</strong>&nbsp;Student</p>
+
+            <p><strong>Field:</strong>&nbsp;Stud_rollno, Stud_name, Date of Birth, Branch, etc.</p>
+
+            <hr />
+            <h3>10) What is a primary key?</h3>
+
+            <p>A primary key is a field or the combination of fields that uniquely identify each record in the table. It
+                is one of a special kind of unique key. If the column contains a primary key, it cannot be null or
+                empty. A table can have duplicate columns, but it cannot have more than one primary key. It always
+                stores unique values into a column.&nbsp;<strong>For example,</strong>&nbsp;the ROLL Number can be
+                treated as the primary key for a student in the university or college.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions1.png" /></p>
+
+            <p>We can define a primary key into a student table as follows:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TABLE&nbsp;Student&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;roll_number&nbsp;INT&nbsp;PRIMARY&nbsp;KEY,&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;name&nbsp;VARCHAR(45),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-primary-key">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>11) What is a foreign key?</h3>
+
+            <p>The foreign key is used to link one or more tables together. It is also known as the referencing key. A
+                foreign key is specified as a key that is related to the primary key of another table. It means a
+                foreign key field in one table refers to the primary key field of the other table. It identifies each
+                row of another table uniquely that maintains the referential integrity. The primary key-foreign key
+                relationship is a very crucial relationship as it maintains the ACID properties of the database
+                sometimes. It also prevents actions that would destroy links between the child and parent tables.</p>
+
+            <p>We can define a foreign key into a table as follows:</p>
+
+            <ol start="1">
+                <li>CONSTRAINT&nbsp;constraint_name]&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;FOREIGN&nbsp;KEY&nbsp;[foreign_key_name]&nbsp;(col_name,&nbsp;...)&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;REFERENCES&nbsp;parent_tbl_name&nbsp;(col_name,...)&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-foreign-key">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>12) What is a unique key?</h3>
+
+            <p>A unique key is a single or combination of fields that ensure all values stores in the column will be
+                unique. It means a column cannot stores duplicate values. This key provides uniqueness for the column or
+                set of columns.&nbsp;<strong>For example,</strong>&nbsp;the email addresses and roll numbers of
+                student&#39;s tables should be unique. It can accept a null value but only one null value per column. It
+                ensures the integrity of the column or group of columns to store different values into a table.</p>
+
+            <p>We can define a foreign key into a table as follows:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TABLE&nbsp;table_name(&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;col1&nbsp;datatype,&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;col2&nbsp;datatype&nbsp;UNIQUE,&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;...&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>);&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-unique-key">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>13) What is the difference between a primary key and a unique key?</h3>
+
+            <p>The primary key and unique key both are essential constraints of the SQL. The main difference among them
+                is that the primary key identifies each record in the table. In contrast, the unique key prevents
+                duplicate entries in a column except for a NULL value. The following comparison chart explains it more
+                clearly:</p>
+
+            <p>&nbsp;</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Primary Key</th>
+                        <th>Unique Key</th>
+                    </tr>
+                    <tr>
+                        <td>The primary key act as a unique identifier for each record in the table.</td>
+                        <td>The unique key is also a unique identifier for records when the primary key is not present
+                            in the table.</td>
+                    </tr>
+                    <tr>
+                        <td>We cannot store NULL values in the primary key column.</td>
+                        <td>We can store NULL value in the unique key column, but only one NULL is allowed.</td>
+                    </tr>
+                    <tr>
+                        <td>We cannot change or delete the primary key column values.</td>
+                        <td>We can modify the unique key column values.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/primary-key-vs-unique-key">click
+                    here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>14) What is a Database?</h3>
+
+            <p>A database is an organized collection of data that is structured into tables, rows, columns, and indexes.
+                It helps the user to find the relevant information frequently. It is an electronic system that makes
+                data access, data manipulation, data retrieval, data storing, and data management very easy. Almost
+                every organization uses the database for storing the data due to its easily accessible and high
+                operational ease. The database provides perfect access to data and lets us perform required tasks.</p>
+
+            <p>The following are the common features of a database:</p>
+
+            <ul>
+                <li>Manages large amounts of data</li>
+                <li>Accurate</li>
+                <li>Easy to update</li>
+                <li>Security</li>
+                <li>Data integrity</li>
+                <li>Easy to research data</li>
+            </ul>
+
+            <hr />
+            <h3>15) What is meant by DBMS?</h3>
+
+            <p>DBMS stands for Database Management System. It is a software program that primarily functions as an
+                interface between the database and the end-user. It provides us the power such as managing the data, the
+                database engine, and the database schema to facilitate the organization and manipulation of data using a
+                simple query in almost no time. It is like a File Manager that manages data in a database rather than
+                saving it in file systems. Without the database management system, it would be far more difficult for
+                the user to access the database&#39;s data.</p>
+
+            <p>The following are the components of a DBMS:</p>
+
+            <ul>
+                <li>Software</li>
+                <li>Data</li>
+                <li>Procedures</li>
+                <li>Database Languages</li>
+                <li>Query Processor</li>
+                <li>Database Manager</li>
+                <li>Database Engine</li>
+                <li>Reporting</li>
+            </ul>
+
+            <hr />
+            <h3>16) What are the different types of database management systems?</h3>
+
+            <p>The database management systems can be categorized into several types. Some of the important lists are
+                given below:</p>
+
+            <ul>
+                <li>Hierarchical databases (DBMS)</li>
+                <li>Network databases (IDMS)</li>
+                <li>Relational databases (RDBMS</li>
+                <li>Object-oriented databases</li>
+                <li>Document databases (Document DB)</li>
+                <li>Graph databases</li>
+                <li>ER model databases</li>
+                <li>NoSQL databases</li>
+            </ul>
+
+            <hr />
+            <h3>17) What is RDBMS?</h3>
+
+            <p>RDBMS stands for Relational Database Management System. It is a database management system based on a
+                relational model. It facilitates you to manipulate the data stored in the tables by using relational
+                operators. RDBMS stores the data into the collection of tables and links those tables using the
+                relational operators easily whenever required. Examples of relational database management systems are
+                Microsoft Access, MySQL, SQL Server, Oracle database, etc.</p>
+
+            <hr />
+            <h3>18) What is Normalization in a Database?</h3>
+
+            <p>Normalization is used to minimize redundancy and dependency by organizing fields and table of a database.
+            </p>
+
+            <p>There are some rules of database normalization, which is commonly known as Normal From, and they are:</p>
+
+            <ul>
+                <li>First normal form(1NF)</li>
+                <li>Second normal form(2NF)</li>
+                <li>Third normal form(3NF)</li>
+                <li>Boyce-Codd normal form(BCNF)</li>
+            </ul>
+
+            <p>Using these steps, the redundancy, anomalies, inconsistency of the data in the database can be removed.
+            </p>
+
+            <hr />
+            <h3>19) What is the primary use of Normalization?</h3>
+
+            <p>Normalization is mainly used to add, delete or modify a field that can be made in a single table. The
+                primary use of Normalization is to remove redundancy and remove the insert, delete and update
+                distractions. Normalization breaks the table into small partitions and then links them using different
+                relationships to avoid the chances of redundancy.</p>
+
+            <hr />
+            <h3>20) What are the disadvantages of not performing database Normalization?</h3>
+
+            <p>The major disadvantages are:</p>
+
+            <p>The occurrence of redundant terms in the database causes the waste of space in the disk.</p>
+
+            <p>Due to redundant terms, inconsistency may also occur. If any change is made in the data of one table but
+                not made in the same data of another table, then inconsistency will occur. This inconsistency will lead
+                to the maintenance problem and effects the ACID properties as well.</p>
+
+            <hr />
+            <h3>21) What is an inconsistent dependency?</h3>
+
+            <p>An Inconsistent dependency refers to the difficulty of getting relevant data due to a missing or broken
+                path to the data. It leads users to search the data in the wrong table, resulting in an error as an
+                output.</p>
+
+            <hr />
+            <h3>22) What is Denormalization in a Database?</h3>
+
+            <p>Denormalization is a technique used by database administrators to optimize the efficiency of their
+                database infrastructure. The denormalization concept is based on Normalization, which is defined as
+                arranging a database into tables correctly for a particular purpose. This method allows us to add
+                redundant data into a normalized database to alleviate issues with database queries that merge data from
+                several tables into a single table. It adds redundant terms into the tables to avoid complex joins and
+                many other complex operations.</p>
+
+            <p>Denormalization doesn&#39;t mean that normalization will not be done. It is an optimization strategy that
+                takes place after the normalization process.</p>
+
+            <hr />
+            <h3>23) What are the different types of SQL operators?</h3>
+
+            <p>Operators are the special keywords or special characters reserved for performing particular operations.
+                They are also used in SQL queries. We can primarily use these operators within the WHERE clause of SQL
+                commands. It&#39;s a part of the command to filters data based on the specified condition. The SQL
+                operators can be categorized into the following types:</p>
+
+            <ul>
+                <li><strong>Arithmetic operators:</strong>&nbsp;These operators are used to perform mathematical
+                    operations on numerical data. The categories of this operators are addition (+), subtraction (-),
+                    multiplication (*), division (/), remainder/modulus (%), etc.</li>
+                <li><strong>Logical operators:</strong>&nbsp;These operators evaluate the expressions and return their
+                    results in True or False. This operator includes ALL, AND, ANY, ISNULL, EXISTS, BETWEEN, IN, LIKE,
+                    NOT, OR, UNIQUE.</li>
+                <li><strong>Comparison operators:</strong>&nbsp;These operators are used to perform comparisons of two
+                    values and check whether they are the same or not. It includes equal to (=), not equal to (!= or
+                    &lt;&gt;), less than (&lt;), greater than (&gt;), less than or equal to (&lt;=), greater than or
+                    equal to (&gt;=), not less than (!&lt;), not greater than (!&gt;), etc.</li>
+                <li><strong>Bitwise operators:</strong>&nbsp;It is used to do bit manipulations between two expressions
+                    of integer type. It first performs conversion of integers into binary bits and then applied
+                    operators such as AND (&amp; symbol), OR (|, ^), NOT (~), etc.</li>
+                <li><strong>Compound operators:</strong>&nbsp;These operators perform operations on a variable before
+                    setting the variable&#39;s result to the operation&#39;s result. It includes Add equals (+=),
+                    subtract equals (-=), multiply equals (*=), divide equals (/=), modulo equals (%=), etc.</li>
+                <li><strong>String operators:</strong>&nbsp;These operators are primarily used to perform concatenation
+                    and pattern matching of strings. It includes + (String concatenation), += (String concatenation
+                    assignment), % (Wildcard), [] (Character(s) matches), [^] (Character(s) not to match), _ (Wildcard
+                    match one character), etc.</li>
+            </ul>
+
+            <hr />
+            <h3>24) What is a view in SQL?</h3>
+
+            <p>A view is a database object that has no values. It is a virtual table that contains a subset of data
+                within a table. It looks like an actual table containing rows and columns, but it takes less space
+                because it is not present physically. It is operated similarly to the base table but does not contain
+                any data of its own. Its name is always unique. A view can have data from one or more tables. If any
+                changes occur in the underlying table, the same changes reflected in the views also.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions2.png" /></p>
+
+            <p>The primary use of a view is to implement the security mechanism. It is the searchable object where we
+                can use a query to search the view as we use for the table. It only shows the data returned by the query
+                that was declared when the view was created.</p>
+
+            <p>We can create a view by using the following syntax:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;VIEW&nbsp;view_name&nbsp;AS&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;column_lists&nbsp;FROM&nbsp;table_name&nbsp;&nbsp;</li>
+                <li>WHERE&nbsp;condition;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>25) What is an Index in SQL?</h3>
+
+            <p>An index is a disc structure associated with a table or view that speeds up row retrieval. It reduces the
+                cost of the query because the query&#39;s high cost will lead to a fall in its performance. It is used
+                to increase the performance and allow faster retrieval of records from the table. Indexing reduces the
+                number of data pages we need to visit to find a particular data page. It also has a unique value meaning
+                that the index cannot be duplicated. An index creates an entry for each value which makes it faster to
+                retrieve data.</p>
+
+            <p><strong>For example:</strong>&nbsp;Suppose we have a book which carries the details of the countries. If
+                you want to find out information about India, why will you go through every page of that book? You could
+                directly go to the index. Then from the index, you can go to that particular page where all the
+                information about India is given.</p>
+
+            <hr />
+            <h3>26) What are the different types of indexes in SQL?</h3>
+
+            <p>SQL indexes are nothing more than a technique of minimizing the query&#39;s cost. The higher the
+                query&#39;s cost, the worse the query&#39;s performance. The following are the different types of
+                Indexes supported in SQL:</p>
+
+            <ul>
+                <li>Unique Index</li>
+                <li>Clustered Index</li>
+                <li>Non-Clustered Index</li>
+                <li>Bit-Map Index</li>
+                <li>Normal Index</li>
+                <li>Composite Index</li>
+                <li>B-Tree Index</li>
+                <li>Function-Based Index</li>
+            </ul>
+
+            <hr />
+            <h3>27) What is the unique index?</h3>
+
+            <p>UNIQUE INDEX is used to enforce the uniqueness of values in single or multiple columns. We can create
+                more than one unique index in a single table. For creating a unique index, the user has to check the
+                data in the column because the unique indexes are used when any column of the table has unique values.
+                This indexing does not allow the field to have duplicate values if the column is unique indexed. A
+                unique index can be applied automatically when a primary key is defined.</p>
+
+            <p>We can create it by using the following syntax:</p>
+
+            <p>&nbsp;</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;UNIQUE&nbsp;INDEX&nbsp;index_name&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>ON&nbsp;table_name&nbsp;(index_column1,&nbsp;index_column2,...);&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>Example</strong></p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TABLE&nbsp;Employee(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;ID&nbsp;int&nbsp;AUTO_INCREMENT&nbsp;PRIMARY&nbsp;KEY,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Name&nbsp;varchar(45),&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;Phone&nbsp;varchar(15),&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;City&nbsp;varchar(25),&nbsp;&nbsp;&nbsp;</li>
+                <li>);&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Suppose we want to make a Phone column as a unique index. We can do this like below:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;UNIQUE&nbsp;INDEX&nbsp;index_name_phone&nbsp;ON&nbsp;Employee&nbsp;(Phone);&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-unique-index">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>28) What is clustered index in SQL?</h3>
+
+            <p>A clustered index is actually a table where the data for the rows are stored. It determines the order of
+                the table data based on the key values that can sort in only one direction. Each table can have only one
+                clustered index. It is the only index, which has been automatically created when the primary key is
+                generated. If many data modifications needed to be done in the table, then clustered indexes are
+                preferred.</p>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-clustered-index">click here</a>
+            </p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>29) What is the non-clustered index in SQL?</h3>
+
+            <p>The indexes other than PRIMARY indexes (clustered indexes) are called non-clustered indexes. We know that
+                clustered indexes are created automatically when primary keys are generated, and non-clustered indexes
+                are created when multiple joins conditions and various filters are used in the query. The non-clustered
+                index and table data are both stored in different places. It cannot be able to alter the physical order
+                of the table and maintains the logical order of data.</p>
+
+            <p>The purpose of creating a non-clustered index is for searching the data. Its best example is a book where
+                the content is written in one place, and the index is at a different place. We can create 0 to 249
+                non-clustered indexes in each table. The non-clustered indexing improves the performance of the queries
+                which use keys without assigning the primary key.</p>
+
+            <hr />
+            <h3>30) What are the differences between SQL, MySQL, and SQL Server?</h3>
+
+            <p>The following comparison chart explains their main differences:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>SQL</th>
+                        <th>MySQL</th>
+                        <th>SQL Server</th>
+                    </tr>
+                    <tr>
+                        <td>SQL or Structured Query Language is useful for managing our relational databases. It is used
+                            to query and operate the database.</td>
+                        <td>MySQL is the popular database management system used for managing the relational database.
+                            It is a fast, scalable, and easy-to-use database.</td>
+                        <td>SQL Server is an RDBMS database system mainly developed for the Windows system to store,
+                            retrieve, and access data requested by the developer.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL first appeared in 1974.</td>
+                        <td>MySQL first appeared on May 23, 1995.</td>
+                        <td>SQL Server first appeared on April 24, 1989.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL was developed by IBM Corporation.</td>
+                        <td>MySQL was developed by Oracle Corporation.</td>
+                        <td>SQL Server was developed by Microsoft Company.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL is a query language for managing databases.</td>
+                        <td>MySQL is database software that uses SQL language to conduct with the database.</td>
+                        <td>SQL Server is also a software that uses SQL language to conduct with the database.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL has no variables.</td>
+                        <td>MySQL can use variables constraints and data types.</td>
+                        <td>SQL Server can use variables constraints and data types.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL is a programming language, so that it does not get any updates. Its commands are always
+                            fixed and remain the same.</td>
+                        <td>MySQL is software, so it gets frequent updation.</td>
+                        <td>SQL Server is also software, so it gets frequent updation.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>31) What is the difference between SQL and PL/SQL?</h3>
+
+            <p>The following comparison chart explains their main differences:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>SQL</th>
+                        <th>PL/SQL</th>
+                    </tr>
+                    <tr>
+                        <td>SQL is a database structured query language used to communicate with relational databases.
+                            It was developed by IBM Corporations and first appeared in 1974.</td>
+                        <td>PL/SQL or Procedural Language/Structured Query Language is a dialect of SQL used to enhance
+                            the capabilities of SQL. Oracle Corporation developed it in the early 90&#39;s. It uses SQL
+                            as its database language.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL is a declarative and data-oriented language.</td>
+                        <td>PL/SQL is a procedural and application-oriented language.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL has no variables.</td>
+                        <td>PL/SQL can use variables constraints and data types.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL can execute only a single query at a time.</td>
+                        <td>PL/SQL can execute a whole block of code at once.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL query can be embedded in PL/SQL.</td>
+                        <td>PL/SQL cannot be embedded in SQL as SQL does not support any programming language and
+                            keywords.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL can directly interact with the database server.</td>
+                        <td>PL/SQL cannot directly interact with the database server.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL is like the source of data that we need to display.</td>
+                        <td>PL/SQL provides a platform where SQL data will be shown.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>32) Is it possible to sort a column using a column alias?</h3>
+
+            <p>Yes. We can use the alias method in the ORDER BY instead of the WHERE clause for sorting a column.</p>
+
+            <hr />
+            <h3>33) What is the difference between clustered and non-clustered indexes in SQL?</h3>
+
+            <p>Indexing is a method to get the requested data very fast. There are mainly two types of indexes in SQL,
+                clustered index and non-clustered index. The differences between these two indexes are very important
+                from an SQL performance perspective. The following comparison chart explains their main differences:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Clustered Index</th>
+                        <th>Non-Clustered Index</th>
+                    </tr>
+                    <tr>
+                        <td>A clustered index is a table or view where the data for the rows are stored. In a relational
+                            database, if the table column contains a primary key, MySQL automatically creates a
+                            clustered index named PRIMARY.</td>
+                        <td>The indexes other than PRIMARY indexes (clustered indexes) are called non-clustered indexes.
+                            It has a structure separate from the data row. The non-clustered indexes are also known as
+                            secondary indexes.</td>
+                    </tr>
+                    <tr>
+                        <td>Clustered indexes store the data information and the data itself.</td>
+                        <td>Non-clustered indexes stores only the information, and then it will refer you to the data
+                            stored in clustered data.</td>
+                    </tr>
+                    <tr>
+                        <td>There can only be one clustered index per table.</td>
+                        <td>There can be one or more non-clustered indexes in a table.</td>
+                    </tr>
+                    <tr>
+                        <td>A clustered index determines how data is stored physically in the table. Therefore, reading
+                            from a clustered index is faster.</td>
+                        <td>It creates a logical ordering of data rows and uses pointers for accessing the physical data
+                            files. Therefore, reading from a clustered index is slower.</td>
+                    </tr>
+                    <tr>
+                        <td>A clustered index always contains an index id of 0.</td>
+                        <td>A non-clustered index always contains an index id&gt;0.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>To read more information,&nbsp;<a
+                    href="https://www.javatpoint.com/mysql-clustered-vs-non-clustered-index">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>34) What is the SQL query to display the current date?</h3>
+
+            <p>There is a built-in function in SQL called GetDate(), which is used to return the current timestamp.</p>
+
+            <hr />
+            <h3>35) Which are joins in SQL? Name the most commonly used SQL joins?</h3>
+
+            <p>SQL joins are used to retrieve data from multiple tables into a meaningful result set. It is performed
+                whenever you need to fetch records from two or more tables. They are used with SELECT statement and join
+                conditions.</p>
+
+            <p>The following are the most commonly used joins in SQL:</p>
+
+            <ul>
+                <li>INNER JOIN</li>
+                <li>LEFT OUTER JOIN</li>
+                <li>RIGHT OUTER JOIN</li>
+            </ul>
+
+            <hr />
+            <h3>36) What are the different types of joins in SQL?</h3>
+
+            <p>Joins are used to merge two tables or retrieve data from tables. It depends on the relationship between
+                tables. According to the ANSI standard, the following are the different types of joins used in SQL:</p>
+
+            <ul>
+                <li>INNER JOIN</li>
+                <li>SELF JOIN</li>
+                <li>LEFT OUTER JOIN</li>
+                <li>RIGHT OUTER JOIN</li>
+                <li>FULL OUTER JOIN</li>
+                <li>CROSS JOIN</li>
+            </ul>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions3.png" /></p>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/sql-server-joins">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>37) What is INNER JOIN in SQL?</h3>
+
+            <p>Inner join returns only those records from the tables that match the specified condition and hides other
+                rows and columns. In simple words, it fetches rows when there is at least one match of rows between the
+                tables is found. INNER JOIN keyword joins the matching records from two tables. It is assumed as a
+                default join, so it is optional to use the INNER keyword with the query.</p>
+
+            <p>The below visual representation explain this join more clearly:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions4.png" /></p>
+
+            <p>The following syntax illustrates the INNER JOIN:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;column_lists&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>INNER&nbsp;JOIN&nbsp;table2&nbsp;ON&nbsp;join_condition1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>INNER&nbsp;JOIN&nbsp;table3&nbsp;ON&nbsp;join_condition2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>...;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-inner-join">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>38) What is the Right JOIN in SQL?</h3>
+
+            <p>The Right join is used to retrieve all rows from the right-hand table and only those rows from the other
+                table that fulfilled the join condition. It returns all the rows from the right-hand side table even
+                though there are no matches in the left-hand side table. If it finds unmatched records from the left
+                side table, it returns a Null value. This join is also known as Right Outer Join.</p>
+
+            <p>The below visual representation explain this join more clearly:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions5.png" /></p>
+
+            <p>The following syntax illustrates the RIGHT JOIN:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;colum_lists&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>RIGHT&nbsp;JOIN&nbsp;table2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>ON&nbsp;join_condition;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/sql-right-join">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>39) What is Left Join in SQL?</h3>
+
+            <p>The Left Join is used to fetch all rows from the left-hand table and common records between the specified
+                tables. It returns all the rows from the left-hand side table even though there are no matches on the
+                right-hand side table. If it will not find any matching record from the right side table, then it
+                returns null. This join can also be called a Left Outer Join.</p>
+
+            <p>The following visual representation explains it more clearly:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions6.png" /></p>
+
+            <p>The following syntax illustrates the RIGHT JOIN:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;colum_lists&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>LEFT&nbsp;JOIN&nbsp;table2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>ON&nbsp;join_condition;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/sql-left-join">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>40) What is Full Join in SQL?</h3>
+
+            <p>The Full Join results from a combination of both left and right join that contains all the records from
+                both tables. It fetches rows when there are matching rows in any one of the tables. This means it
+                returns all the rows from the left-hand side table and all the rows from the right-hand side tables. If
+                a match is not found, it puts NULL value. It is also known as FULL OUTER JOIN.</p>
+
+            <p>The following visual representation explains it more clearly:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions7.png" /></p>
+
+            <p>The following syntax illustrates the FULL JOIN:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;*&nbsp;FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FULL&nbsp;OUTER&nbsp;JOIN&nbsp;table2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>ON&nbsp;join_condition;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/sql-full-join">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>41) What is a &quot;TRIGGER&quot; in SQL?</h3>
+
+            <p>A trigger is a set of SQL statements that reside in a system catalog. It is a special type of stored
+                procedure that is invoked automatically in response to an event. It allows us to execute a batch of code
+                when an insert, update or delete command is run against a specific table because the trigger is the set
+                of activated actions whenever DML commands are given to the system.</p>
+
+            <p>SQL triggers have two main components one is action, and another is an event. When certain actions are
+                taken, an event occurs as a result of those actions.</p>
+
+            <p>&nbsp;</p>
+
+            <p>We use the CREATE TRIGGER statement for creating a trigger in SQL. Here is the syntax:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TRIGGER&nbsp;trigger_name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;(AFTER&nbsp;|&nbsp;BEFORE)&nbsp;(INSERT&nbsp;|&nbsp;UPDATE&nbsp;|&nbsp;DELETE)&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ON&nbsp;table_name&nbsp;FOR&nbsp;EACH&nbsp;ROW&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BEGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--variable&nbsp;declarations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--trigger&nbsp;code&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;END;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-trigger">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>42) What is self-join and what is the requirement of self-join?</h3>
+
+            <p>A SELF JOIN is used to join a table with itself. This join can be performed using table aliases, which
+                allow us to avoid repeating the same table name in a single sentence. It will throw an error if we use
+                the same table name more than once in a single query without using table aliases.</p>
+
+            <p>A SELF JOIN is required when we want to combine data with other data in the same table itself. It is
+                often very useful to convert a hierarchical structure to a flat structure.</p>
+
+            <p>The following syntax illustrates the SELF JOIN:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;column_lists&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;table1&nbsp;AS&nbsp;T1,&nbsp;table1&nbsp;AS&nbsp;T2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>WHERE&nbsp;join_conditions;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>Example</strong></p>
+
+            <p>Suppose we have a table &#39;Student&#39; having the following data:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions8.png" /></p>
+
+            <p>If we want to get retrieve the student_id and name from the table where student_id is equal, and
+                course_id is not equal, it can be done by using the self-join:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;&nbsp;s1.student_id,&nbsp;s1.name&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;student&nbsp;AS&nbsp;s1,&nbsp;student&nbsp;s2&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>WHERE&nbsp;s1.student_id=s2.student_id&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>AND&nbsp;s1.course_id&lt;&gt;s2.course_id;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>Here is the result:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions9.png" /></p>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-self-join">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>43) What are the set operators in SQL?</h3>
+
+            <p>We use the set operators to merge data from one or more tables of the same kind. Although the set
+                operators are like SQL joins, there is a significant distinction. SQL joins combine columns from
+                separate tables, whereas SQL set operators combine rows from different queries. SQL queries that contain
+                set operations are called compound queries. The set operators in SQL are categories into four different
+                types:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions10.jpg" /></p>
+
+            <p><strong>A. UNION:</strong>&nbsp;It combines two or more results from multiple SELECT queries into a
+                single result set. It has a default feature to remove the duplicate rows from the tables. The following
+                syntax illustrates the Union operator:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>UNION&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table2;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>B. UNION ALL:</strong>&nbsp;This operator is similar to the Union operator, but it does not
+                remove the duplicate rows from the output of the SELECT statements. The following syntax illustrates the
+                UNION ALL operator:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>UNION&nbsp;&nbsp;ALL&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table2;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>C. INTERSECT:</strong>&nbsp;This operator returns the common records from two or more SELECT
+                statements. It always retrieves unique records and arranges them in ascending order by default. Here,
+                the number of columns and data types should be the same. The following syntax illustrates the INTERSECT
+                operator:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>INTERSECT&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table2;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>D. MINUS:</strong>&nbsp;This operator returns the records from the first query, which is not
+                found in the second query. It does not return duplicate values. The following syntax illustrates the
+                MINUS operator:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table1&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>MINUS&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;columns&nbsp;FROM&nbsp;table2;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/dbms-sql-set-operation">click here</a>
+            </p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>44) What is the difference between IN and BETWEEN operators?</h3>
+
+            <p>The following comparison chart explains their main differences:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>BETWEEN Operator</th>
+                        <th>IN Operator</th>
+                    </tr>
+                    <tr>
+                        <td>This operator is used to selects the range of data between two values. The values can be
+                            numbers, text, and dates as well.</td>
+                        <td>It is a logical operator to determine whether or not a specific value exists within a set of
+                            values. This operator reduces the use of multiple OR conditions with the query.</td>
+                    </tr>
+                    <tr>
+                        <td>It returns records whose column value lies in between the defined range.</td>
+                        <td>It compares the specified column&#39;s value and returns the records when the match exists
+                            in the set of values.</td>
+                    </tr>
+                    <tr>
+                        <td>The following syntax illustrates this operator:<br />
+                            SELECT * FROM table_name<br />
+                            WHERE column_name BETWEEN &#39;value1&#39; AND &#39;value2&#39;;</td>
+                        <td>The following syntax illustrates this operator:<br />
+                            SELECT * FROM table_name<br />
+                            WHERE column_name IN (&#39;value1&#39;,&#39;value 2&#39;);</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <h3>45) What is a constraint? Tell me about its various levels.</h3>
+
+            <p>The constraint is used to specify the rule and regulations that allows or restricts what values/data will
+                be stored in the table. It ensures data accuracy and integrity inside the table. It enforces us to store
+                valid data and prevents us from storing irrelevant data. If any interruption occurs between the
+                constraint and data action, the action is failed. Some of the most commonly used constraints are NOT
+                NULL, PRIMARY KEY, FOREIGN KEY, AUTO_INCREMENT, UNIQUE KEY, etc.</p>
+
+            <p>The following syntax illustrates us to create a constraint for a table:</p>
+
+            <ol start="1">
+                <li>CREATE&nbsp;TABLE&nbsp;table_name&nbsp;(&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;column1&nbsp;datatype&nbsp;constraint,&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;column2&nbsp;datatype&nbsp;constraint,&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;.........&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>);&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>SQL categories the constraints into two levels:</p>
+
+            <p><strong>Column Level Constraints:</strong>&nbsp;These constraints are only applied to a single column and
+                limit the type of data that can be stored in that column.</p>
+
+            <p><strong>Table Level Constraints:</strong>&nbsp;These constraints are applied to the entire table and
+                limit the type of data that can be entered.</p>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/mysql-constraints">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>46) How to write an SQL query to find students&#39; names start with &#39;A&#39;?</h3>
+
+            <p>We can write the following query to get the student details whose name starts with A:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;*&nbsp;FROM&nbsp;student&nbsp;WHERE&nbsp;stud_name&nbsp;like&nbsp;&#39;A%&#39;;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>Here is the demo example where we have a table named student that contains two names starting with the
+                &#39;A&#39; character.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions11.png" /></p>
+
+            <hr />
+            <h3>47) Write the SQL query to get the third maximum salary of an employee from a table named employees.
+            </h3>
+
+            <p>The following query is the simplest way to get the third maximum salary of an employee:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;*&nbsp;FROM&nbsp;`employees`&nbsp;ORDER&nbsp;BY&nbsp;`salary`&nbsp;DESC&nbsp;LIMIT&nbsp;1&nbsp;OFFSET&nbsp;2&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>Here is the demo example that shows how to get the third maximum salary of an employee.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions12.png" /></p>
+
+            <p>The following are the alternative way to get the third-highest salary of an employee:</p>
+
+            <p><strong>A. Using LIMIT Keyword</strong></p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;salary&nbsp;FROM&nbsp;employees&nbsp;&nbsp;&nbsp;</li>
+                <li>ORDER&nbsp;BY&nbsp;salary&nbsp;DESC&nbsp;&nbsp;&nbsp;</li>
+                <li>LIMIT&nbsp;2,&nbsp;1;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>B. Using Subquery</strong></p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;salary&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;(SELECT&nbsp;salary&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;employees&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;salary&nbsp;DESC&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIMIT&nbsp;3)&nbsp;AS&nbsp;Temp&nbsp;&nbsp;&nbsp;</li>
+                <li>ORDER&nbsp;BY&nbsp;salary&nbsp;LIMIT&nbsp;1;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>C. Using TOP Keyword</strong></p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;TOP&nbsp;1&nbsp;salary&nbsp;&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;(SELECT&nbsp;DISTINCT&nbsp;TOP&nbsp;3&nbsp;salary&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FROM&nbsp;employees&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ORDER&nbsp;BY&nbsp;salary&nbsp;DESC)&nbsp;AS&nbsp;Temp&nbsp;&nbsp;&nbsp;
+                </li>
+                <li>ORDER&nbsp;BY&nbsp;salary&nbsp;ASC;&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>48) What is the difference between DELETE and TRUNCATE statements in SQL?</h3>
+
+            <p>The main difference between them is that the delete statement deletes data without resetting a
+                table&#39;s identity, whereas the truncate command resets a particular table&#39;s identity. The
+                following comparison chart explains it more clearly:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>No.</th>
+                        <th>DELETE</th>
+                        <th>TRUNCATE</th>
+                    </tr>
+                    <tr>
+                        <td>1)</td>
+                        <td>The delete statement removes single or multiple rows from an existing table depending on the
+                            specified condition.</td>
+                        <td>The truncate command deletes the whole contents of an existing table without the table
+                            itself. It preserves the table structure or schema.</td>
+                    </tr>
+                    <tr>
+                        <td>2)</td>
+                        <td>DELETE is a&nbsp;<strong>DML command.</strong></td>
+                        <td>TRUNCATE is a&nbsp;<strong>DML command.</strong></td>
+                    </tr>
+                    <tr>
+                        <td>3)</td>
+                        <td>We&nbsp;<strong>can use the WHERE</strong>&nbsp;clause in the DELETE command.</td>
+                        <td>We&nbsp;<strong>cannot use the WHERE</strong>&nbsp;clause with TRUNCATE.</td>
+                    </tr>
+                    <tr>
+                        <td>4)</td>
+                        <td>DELETE statement is used&nbsp;<strong>to delete a row</strong>&nbsp;from a table.</td>
+                        <td>TRUNCATE statement is used&nbsp;<strong>to remove all the rows</strong>&nbsp;from a table.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5)</td>
+                        <td>DELETE is&nbsp;<strong>slower</strong>&nbsp;because it maintained the log.</td>
+                        <td>TRUNCATE statement is&nbsp;<strong>faster</strong>&nbsp;than DELETE statement as it deletes
+                            entire data at a time without maintaining transaction logs.</td>
+                    </tr>
+                    <tr>
+                        <td>6)</td>
+                        <td>You&nbsp;<strong>can roll back</strong>&nbsp;data after using the DELETE statement.</td>
+                        <td>It is&nbsp;<strong>not possible to roll back</strong>&nbsp;after using the TRUNCATE
+                            statement.</td>
+                    </tr>
+                    <tr>
+                        <td>7)</td>
+                        <td>DELETE query&nbsp;<strong>takes more space.</strong></td>
+                        <td>TRUNCATE query&nbsp;<strong>occupies less space.</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/delete-vs-truncate-command">click
+                    here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>49) What is the ACID property in a database?</h3>
+
+            <p>The ACID properties are meant for the transaction that goes through a different group of tasks. A
+                transaction is a single logical order of data. It provides properties to maintain consistency before and
+                after the transaction in a database. It also ensures that the data transactions are processed reliably
+                in a database system.</p>
+
+            <p>The ACID property is an acronym for Atomicity, Consistency, Isolation, and Durability.</p>
+
+            <p><strong>Atomicity:</strong>&nbsp;It ensures that all statements or operations within the transaction unit
+                must be executed successfully. If one part of the transaction fails, the entire transaction fails, and
+                the database state is left unchanged. Its main features are COMMIT, ROLLBACK, and AUTO-COMMIT.</p>
+
+            <p><strong>Consistency:</strong>&nbsp;This property ensures that the data must meet all validation rules. In
+                simple words, we can say that the database changes state only when a transaction will be committed
+                successfully. It also protects data from crashes.</p>
+
+            <p><strong>Isolation:</strong>&nbsp;This property guarantees that the concurrent property of execution in
+                the transaction unit must be operated independently. It also ensures that statements are transparent to
+                each other. The main goal of providing isolation is to control concurrency in a database.</p>
+
+            <p><strong>Durability:</strong>&nbsp;This property guarantees that once a transaction has been committed, it
+                persists permanently even if the system crashes, power loss, or failed.</p>
+
+            <p>To read more information,&nbsp;<a href="https://www.javatpoint.com/acid-properties-in-dbms">click
+                    here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>50) Is a blank space or zero the same as a NULL value?</h3>
+
+            <p>No. The NULL value is not the same as zero or a blank space. The following points explain their main
+                differences:</p>
+
+            <ul>
+                <li>A NULL value is a value, which is &#39;unavailable, unassigned, unknown or not applicable.&#39; It
+                    would be used in the absence of any value. We can perform arithmetic operations on it. On the other
+                    hand, zero is a number, and a blank space is treated as a character.</li>
+                <li>The NULL value can be treated as an unknown and missing value, but zero and blank spaces differ from
+                    the NULL value.</li>
+                <li>We can compare a blank space or a zero to another blank space or a zero. On the other hand, one NULL
+                    may not be the same as another NULL. NULL indicates that no data has been provided or that no data
+                    exists.</li>
+            </ul>
+
+            <hr />
+            <h3>51) What are functions and their usage in SQL?</h3>
+
+            <p>SQL functions are simple code snippets that are frequently used and re-used in database systems for data
+                processing and manipulation. Functions are the measured values. It always performs a specific task. The
+                following rules should be remembered while creating functions:</p>
+
+            <ul>
+                <li>A function should have a name, and the name cannot begin with a special character such as @, $, #,
+                    or other similar characters.</li>
+                <li>Functions can only work with the SELECT statements.</li>
+                <li>Every time a function is called, it compiles.</li>
+                <li>Functions must return value or result.</li>
+                <li>Functions are always used with input parameters.</li>
+            </ul>
+
+            <p>SQL categories the functions into two types:</p>
+
+            <ul>
+                <li><strong>User-Defined Function:</strong>&nbsp;Functions created by a user based on their needs are
+                    termed user-defined functions.</li>
+                <li><strong>System Defined Function:</strong>&nbsp;Functions whose definition is defined by the system
+                    are termed system-defined functions. They are built-in database functions.</li>
+            </ul>
+
+            <p>SQL functions are used for the following purposes:</p>
+
+            <ul>
+                <li>To perform calculations on data</li>
+                <li>To modify individual data items</li>
+                <li>To manipulate the output</li>
+                <li>To format dates and numbers</li>
+                <li>To convert data types</li>
+            </ul>
+
+            <hr />
+            <h3>52) What is meant by case manipulation functions? Explains its different types in SQL.</h3>
+
+            <p>Case manipulation functions are part of the character functions. It converts the data from the state in
+                which it is already stored in the table to upper, lower, or mixed case. The conversion performed by this
+                function can be used to format the output. We can use it in almost every part of the SQL statement. Case
+                manipulation functions are mostly used when you need to search for data, and you don&#39;t have any idea
+                that the data you are looking for is in lower case or upper case.</p>
+
+            <p>There are three case manipulation functions in SQL:</p>
+
+            <p><strong>LOWER:</strong>&nbsp;This function is used to converts a given character into lowercase. The
+                following example will return the &#39;STEPHEN&#39; as &#39;stephen&#39;:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;LOWER&nbsp;(&#39;STEPHEN&#39;)&nbsp;AS&nbsp;Case_Reault&nbsp;FROM&nbsp;dual;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <h4>NOTE: Here, &#39;dual&#39; is a dummy table.</h4>
+
+            <p><strong>UPPER:</strong>&nbsp;This function is used to converts a given character into uppercase. The
+                following example will return the &#39;stephen&#39; as &#39;STEPHEN&#39;:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;UPPER&nbsp;(&#39;stephen&#39;)&nbsp;AS&nbsp;Case_Reault&nbsp;FROM&nbsp;dual;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p><strong>INITCAP:</strong>&nbsp;This function is used to converts given character values to uppercase for
+                the initials of each word. It means every first letter of the word is converted into uppercase, and the
+                rest is in lower case. The following example will return the &#39;hello stephen&#39; as &#39;Hello
+                Stephen&#39;:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;INITCAP&nbsp;(&#39;hello&nbsp;stephen&#39;)&nbsp;AS&nbsp;Case_Reault&nbsp;FROM&nbsp;dual;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <hr />
+            <h3>53) Explain character-manipulation functions? Explains its different types in SQL.</h3>
+
+            <p>Character-manipulation functions are used to change, extract, and alter the character string. When one or
+                more characters and words are passed into the function, the function will perform its operation on those
+                input strings and return the result.</p>
+
+            <p>The following are the character manipulation functions in SQL:</p>
+
+            <p><strong>A) CONCAT:</strong>&nbsp;This function is used to join two or more values together. It always
+                appends the second string into the end of the first string. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT CONCAT (&#39;Information-&#39;, &#39;technology&#39;) FROM DUAL;</p>
+
+            <p><strong>Output:</strong>&nbsp;Information-technology</p>
+
+            <p><strong>B) SUBSTR:</strong>&nbsp;It is used to return the portion of the string from a specified start
+                point to an endpoint. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT SUBSTR (&#39;Database Management System&#39;, 9, 11) FROM DUAL;</p>
+
+            <p><strong>Output:</strong>&nbsp;Management</p>
+
+            <p><strong>C) LENGTH:</strong>&nbsp;This function returns the string&#39;s length in numerical value,
+                including the blank spaces. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT LENGTH (&#39;Hello Javatpoint&#39;) FROM DUAL;</p>
+
+            <p><strong>Output:</strong>&nbsp;16</p>
+
+            <p><strong>D) INSTR:</strong>&nbsp;This function finds the exact numeric position of a specified character
+                or word in a given string. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT INSTR (&#39;Hello Javatpoint&#39;, &#39;Javatpoint&#39;);</p>
+
+            <p><strong>Output:</strong>&nbsp;7</p>
+
+            <p><strong>E) LPAD:</strong>&nbsp;It returns the padding of the left-side character value for
+                right-justified value. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT LPAD (&#39;200&#39;, 6,&#39;*&#39;);</p>
+
+            <p><strong>Output:</strong>&nbsp;***200</p>
+
+            <p><strong>F) RPAD:</strong>&nbsp;It returns the padding of the right-side character value for
+                left-justified value. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT RPAD (&#39;200&#39;, 6,&#39;*&#39;);</p>
+
+            <p><strong>Output:</strong>&nbsp;200***</p>
+
+            <p><strong>G) TRIM:</strong>&nbsp;This function is used to remove all the defined characters from the
+                beginning, end, or both. It also trimmed extra spaces. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT TRIM (&#39;A&#39; FROM &#39;ABCDCBA&#39;);</p>
+
+            <p><strong>Output:</strong>&nbsp;BCDCB</p>
+
+            <p><strong>H) REPLACE:</strong>&nbsp;This function is used to replace all occurrences of a word or portion
+                of the string (substring) with the other specified string value. For example:</p>
+
+            <p><strong>Input:</strong>&nbsp;SELECT REPLACE ( &#39;It is the best coffee at the famous coffee shop.&#39;,
+                &#39;coffee&#39;, &#39;tea&#39;);</p>
+
+            <p><strong>Output:</strong>&nbsp;It is the best tea at the famous tea shop.</p>
+
+            <hr />
+            <h3>54) What is the usage of the NVL() function?</h3>
+
+            <p>The NVL() function is used to convert the NULL value to the other value. The function returns the value
+                of the second parameter if the first parameter is NULL. If the first parameter is anything other than
+                NULL, it is left unchanged. This function is used in Oracle, not in SQL and MySQL. Instead of NVL()
+                function, MySQL have IFNULL() and SQL Server have ISNULL() function.</p>
+
+            <hr />
+            <h3>55) Which function is used to return remainder in a division operator in SQL?</h3>
+
+            <p>The MOD function returns the remainder in a division operation.</p>
+
+            <hr />
+            <h3>56) What are the syntax and use of the COALESCE function?</h3>
+
+            <p>The COALESCE() function evaluates the arguments in sequence and returns the first NON-NULL value in a
+                specified number of expressions. If it evaluates arguments as NULL or not found any NON-NULL value, it
+                returns the NULL result.</p>
+
+            <p>The syntax of COALESCE function is given below:</p>
+
+            <ol start="1">
+                <li>COALESCE&nbsp;(exp1,&nbsp;exp2,&nbsp;....&nbsp;expn)&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>Example:</strong></p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;COALESCE(NULL,&nbsp;&#39;Hello&#39;,&nbsp;&#39;Javatpoint&#39;,&nbsp;NULL)&nbsp;AS&nbsp;Result;&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>This statement will return the following output:</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions13.png" /></p>
+
+            <hr />
+            <h3>57) How do we use the DISTINCT statement? What is its use?</h3>
+
+            <p>The DISTINCT keyword is used to ensure that the fetched value always has unique values. It does not allow
+                to have duplicate values. The DISTINCT keyword is used with the SELECT statement and retrieves different
+                values from the table&#39;s column. We can use it with the help of the following syntax:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;DISTINCT&nbsp;column_lists&nbsp;FROM&nbsp;table_name&nbsp;WHERE&nbsp;[condition];&nbsp;&nbsp;
+                </li>
+            </ol>
+
+            <p>Suppose we have a table &#39;customer&#39; containing eight records in which the name column has some
+                duplicate values.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions14.png" /></p>
+
+            <p>If we want to get the name column without any duplicate values, the DISTINCT keyword is required.
+                Executing the below command will return a name column with unique values.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions15.png" /></p>
+
+            <hr />
+            <h3>58) What is the default ordering of data using the ORDER BY clause? How could it be changed?</h3>
+
+            <p>The ORDER BY clause is used to sort the table data either in ascending or descending order. By default,
+                it will sort the table in ascending order. If we want to change its default behavior, we need to use the
+                DESC keyword after the column name in the ORDER BY clause.</p>
+
+            <p>The syntax to do this is given below:</p>
+
+            <ol start="1">
+                <li>SELECT&nbsp;expressions&nbsp;FROM&nbsp;tables&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>WHERE&nbsp;conditions&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li>ORDER&nbsp;BY&nbsp;expression&nbsp;[ASC&nbsp;|&nbsp;DESC];&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p>We have taken a customer table in the previous example. Now, we will demonstrate the ORDER BY clause on
+                them as well.</p>
+
+            <p>In the below output, we can see that the first query will sort the table data in ascending order based on
+                the name column. However, if we run the second query by specifying the DESC keyword, the table&#39;s
+                order is changed in descending order.</p>
+
+            <p><img alt="SQL Interview Questions and Answers"
+                    src="https://static.javatpoint.com/interview/images/sql-interview-questions16.png" /></p>
+
+            <hr />
+            <h3>59) Is the following query returns the output?</h3>
+
+            <ol start="1">
+                <li>SELECT&nbsp;subject_code,&nbsp;AVG&nbsp;(marks)&nbsp;&nbsp;</li>
+                <li>FROM&nbsp;Students&nbsp;&nbsp;</li>
+                <li>WHERE&nbsp;AVG(marks)&nbsp;&gt;&nbsp;70&nbsp;&nbsp;</li>
+                <li>GROUP&nbsp;BY&nbsp;subject_code;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>Answer:</strong>&nbsp;No. The above query does not return the output because we cannot use the
+                WHERE clause to restrict the groups. We need to use the HAVING clause instead of the WHERE clause to get
+                the correct output.</p>
+
+            <hr />
+            <h3>60) What is the difference between the WHERE and HAVING clauses?</h3>
+
+            <p>The main difference is that the WHERE clause is used to filter records before any groupings are
+                established, whereas the HAVING clause is used to filter values from a group. The below comparison chart
+                explains the most common differences:</p>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <th>WHERE</th>
+                        <th>HAVING</th>
+                    </tr>
+                    <tr>
+                        <td>This clause is implemented in row operations.</td>
+                        <td>This clause is implemented in column operations.</td>
+                    </tr>
+                    <tr>
+                        <td>It does not allow to work with aggregate functions.</td>
+                        <td>It can work with aggregate functions.</td>
+                    </tr>
+                    <tr>
+                        <td>This clause can be used with the SELECT, UPDATE, and DELETE statements.</td>
+                        <td>This clause can only be used with the SELECT statement.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>To know more differences,&nbsp;<a href="https://www.javatpoint.com/where-vs-having">click here</a></p>
+
+            <p>.</p>
+
+            <hr />
+            <h3>61) How many Aggregate functions are available in SQL?</h3>
+
+            <p>The aggregate function is used to determine and calculate several values in a table and return the result
+                as a single number. For example, the average of all values, the sum of all values, and the maximum and
+                minimum value among particular groupings of values.</p>
+
+            <p>The following syntax illustrates how to use aggregate functions:</p>
+
+            <ol start="1">
+                <li>function_name&nbsp;(DISTINCT&nbsp;|&nbsp;ALL&nbsp;expression)&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ol>
+
+            <p><strong>SQL provides seven (7) aggregate functions, which are given below:</strong></p>
+
+            <ul>
+                <li><strong>AVG():</strong>&nbsp;This function is used to returns the average value from specified
+                    columns.</li>
+                <li><strong>COUNT():</strong>&nbsp;This function is used to returns the number of table rows, including
+                    rows with null values.</li>
+                <li><strong>MAX():</strong>&nbsp;This function is used to returns the largest value among the group.
+                </li>
+                <li><strong>MIN():</strong>&nbsp;This function is used to returns the smallest value among the group.
+                </li>
+                <li><strong>SUM():</strong>&nbsp;This function is used to returns the total summed values(non-null) of
+                    the specified column.</li>
+                <li><strong>FIRST()</strong>: This function is used to returns the first value of an expression.</li>
+                <li><strong>LAST()</strong>: This function is used to returns the last value of an expression.</li>
+            </ul>
+
+            <hr />
+            <h3>62) What is SQL Injection?</h3>
+
+            <p>SQL injection is a type of vulnerability in website and web app code that allows attackers to control
+                back-end operations and access, retrieve, and destroy sensitive data from databases. In this technique,
+                malicious SQL statements are inserted into a database entry field, and once they are performed, the
+                database becomes vulnerable to an attacker. This technique is commonly used to access sensitive data and
+                perform administrative activities on databases by exploiting data-driven applications. It is also known
+                as&nbsp;<strong>SQLi attack.</strong></p>
+
+            <p>Some common examples of SQL injection are:</p>
+
+            <ul>
+                <li>Accessing confidential data to modify an SQL query to get desired results.</li>
+                <li>UNION attacks to steal data from different database tables.</li>
+                <li>Examine the database to extract information regarding the version and structure of the database.
+                </li>
+            </ul>
+
+            <hr />
+            <h3>63) What is the difference between the RANK() and DENSE_RANK() functions?</h3>
+
+            <p>The&nbsp;<strong>RANK function</strong>&nbsp;determines the rank for each row within your ordered
+                partition in the result set. If the two rows are assigned the same rank, then the next number in the
+                ranking will be its previous rank plus a number of duplicate numbers. For example, if we have three
+                records at rank 4, the next rank listed would be ranked 7.</p>
+
+            <p>The&nbsp;<strong>DENSE_RANK</strong>&nbsp;function assigns a unique rank for each row within a partition
+                as per the specified column value without any gaps. It always specifies ranking in consecutive order. If
+                the two rows are assigned the same rank, this function will assign it with the same rank, and the next
+                rank being the next sequential number. For example, if we have 3 records at rank 4, the next rank listed
+                would be ranked 5.</p>
+
+            <hr />
+            <h3>64) Is it possible to implicitly insert a row for the identity column?</h3>
+
+            <p>Yes. We can implicitly insert a row for the identity column. Here is an example of doing this:</p>
+
+            <ol start="1">
+                <li>SET&nbsp;IDENTITY_INSERT&nbsp;TABLE1&nbsp;ON&nbsp;&nbsp;</li>
+                <li>INSERT&nbsp;INTO&nbsp;demo_table1&nbsp;(id,&nbsp;name,&nbsp;branch)&nbsp;&nbsp;</li>
+                <li>SELECT&nbsp;id,&nbsp;name,&nbsp;branch&nbsp;FROM&nbsp;demo_table2&nbsp;&nbsp;</li>
+                <li>SET&nbsp;IDENTITY_INSERT&nbsp;OFF&nbsp;&nbsp;</li>
+            </ol>
+
+            <hr />
+            <h3>65) What are SQL comments?</h3>
+
+            <p>Comments are explanations or annotations in SQL queries that are readable by programmers. It&#39;s used
+                to make SQL statements easier to understand for humans. During the parsing of SQL code, it will be
+                ignored. Comments can be written on a single line or across several lines.</p>
+
+            <ul>
+                <li><strong>Single Line Comments:</strong>&nbsp;It starts with two consecutive hyphens (--).</li>
+                <li><strong>Multi-line Comments:</strong>&nbsp;It starts with /* and ends with */.</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>

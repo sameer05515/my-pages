@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+  <div class="w-full h-full max-w-screen-lg max-h-screen border shadow-lg bg-white overflow-hidden flex flex-col">
+    
+    <!-- Header -->
+    <header class="h-[5%] bg-blue-500 text-white text-center flex items-center justify-center font-bold text-lg">
+      Welcome
+    </header>
+
+    <!-- Main Content -->
+    <main class="h-[80%] flex items-center justify-center relative">
+      
+      <!-- Left Button -->
+      <button id="prev" class="absolute left-5 bg-gray-300 p-2 rounded-md shadow-md hover:bg-gray-400">
+        ⬅️
+      </button>
+
+      <!-- Card Container -->
+      <div id="card-container" class="w-1/3 p-4 bg-white shadow-md rounded-lg flex flex-col items-center">
+        <h2 id="title" class="text-xl font-semibold"></h2>
+        <p id="desc" class="text-gray-700 mt-2 h-20 overflow-y-auto px-2"></p>
+      </div>
+
+      <!-- Right Button -->
+      <button id="next" class="absolute right-5 bg-gray-300 p-2 rounded-md shadow-md hover:bg-gray-400">
+        ➡️
+      </button>
+    </main>
+
+    <!-- Footer -->
+    <footer class="h-[5%] bg-blue-500 text-white text-center flex items-center justify-center">
+      Thank you for being with us!
+    </footer>
+
+  </div>
+
+  <script type="module">
+    import data from './data.js';
+
+    const dataArray = Array.from(data.values());
+    let currentIndex = 0;
+
+    const updateCard = () => {
+      document.getElementById("title").textContent = dataArray[currentIndex].title;
+      document.getElementById("desc").textContent = dataArray[currentIndex].desc;
+    };
+
+    document.getElementById("prev").addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + dataArray.length) % dataArray.length;
+      updateCard();
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % dataArray.length;
+      updateCard();
+    });
+
+    // Initial Load
+    updateCard();
+  </script>
+
+</body>
+</html>

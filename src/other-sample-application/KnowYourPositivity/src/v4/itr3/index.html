@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know your potential</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <style>
+      /* .fade-enter {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      .fade-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s, transform 0.5s;
+      } */
+
+      /* 2️⃣ Markdown Look Upgrade */
+
+      .prose {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+      }
+      .prose h1,
+      .prose h2 {
+        color: #222;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
+
+      .fade-enter {
+        opacity: 0;
+        transform: translateY(-10px) scale(0.98);
+      }
+      .fade-enter-active {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      }
+
+      #sentence {
+        max-height: 350px;
+        overflow-y: auto;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      /* ✅ About Modal */
+      #aboutModal {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        width: 90%;
+        max-width: 500px;
+        overflow-y: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        z-index: 1000;
+      }
+      #modalBackdrop {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full p-4 flex justify-between items-center">
+      <div>
+        <span class="text-xl font-bold text-gray-800">Know your potential </span>
+        <span class="text-gray-600 italic">To push beyond limits, using some magic words</span>
+      </div>
+      <div>
+        <button id="prevBtn" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400">Previous</button>
+        <button id="nextBtn" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Next</button>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center pt-24 pb-16">
+      <div id="my-main-section" class="bg-white p-8 rounded-lg shadow-md w-full max-w-4xl text-center">
+        <h1 id="sectionName" class="prose prose-sm text-3xl font-bold text-gray-800 mb-4">Loading...</h1>
+        <p id="sentence" class="prose prose-sm text-lg text-gray-600 fade-enter">Loading...</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-white shadow-md fixed bottom-0 left-0 w-full p-4 flex justify-between items-center">
+      <div>
+        <button id="prevBtnFooter" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 mr-4">
+          Previous
+        </button>
+        <button id="nextBtnFooter" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Next</button>
+      </div>
+      <button id="aboutBtn" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600">About</button>
+    </footer> -->
+
+    <footer class="bg-white shadow-md fixed bottom-0 left-0 w-full p-4 flex items-center justify-between">
+      <button id="aboutBtn" class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 flex items-center">
+        <i class="bi bi-info-circle mr-2"></i> About
+      </button>
+
+      <!-- ✅ Centering Prev-Nav -->
+      <div class="flex justify-center w-full">
+        <button id="prevBtnFooter" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400 mr-4">
+          <i class="bi bi-arrow-left"></i> Previous
+        </button>
+        <button id="nextBtnFooter" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          Next <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- 🌗 Dark Mode Toggle -->
+      <button id="themeToggle" class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </footer>
+
+    <!-- About Modal -->
+    <div id="modalBackdrop"></div>
+    <div id="aboutModal" class="prose">
+      <button id="closeModal" class="text-red-500 font-bold text-lg absolute top-3 right-4">&times;</button>
+      <h2 class="text-xl font-bold mb-3">About This Module</h2>
+      <div id="aboutContent" class="prose prose-sm text-gray-700">Fetching...</div>
+    </div>
+
+    <script type="module" src="./store.js"></script>
+    <script type="module" src="./ui.js"></script>
+  </body>
+</html>

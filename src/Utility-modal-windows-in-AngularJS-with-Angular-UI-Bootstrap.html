@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="testApp">
+
+  <head>
+    <link data-require="bootstrap-css@3.0.3" data-semver="3.0.3" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+    <script data-require="angular.js@1.2.14" data-semver="1.2.14" src="http://code.angularjs.org/1.2.14/angular.js"></script>
+    <script data-require="angular-ui-bootstrap@0.10.0" data-semver="0.10.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.3/angular-sanitize.js"></script>
+    <script src="js/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.js"></script>
+    <script src="js/service/modalService.js"></script>
+  </head>
+
+  <body ng-controller="testCtrl">
+    <div>
+      <button ng-click="alert()">Alert</button>
+      {{alertOpen ? 'Alert is open' : (alertOpen === false ? 'Alert is closed' : 'Alert never opened')}}
+    </div>
+    <div>
+      <button ng-click="confirm()">Confirm</button>
+      {{confirmResult ? 'true' : (confirmResult === false ? 'false' : 'undefined')}}
+    </div>
+    <div>
+      <button ng-click="custom()">Custom</button>
+      {{customResult}}
+    </div>
+  </body>
+
+</html>

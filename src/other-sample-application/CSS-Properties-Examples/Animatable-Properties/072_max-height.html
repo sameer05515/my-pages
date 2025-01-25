@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#myDIV {
+  width: 500px;
+  background-color: lightblue;
+  overflow: auto;
+  border: 1px solid black;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {max-height: 100px;}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of max-height</h1>
+
+<p>Change the max-height from "none" to "100px", and back to "none":<p>
+
+<div id="myDIV">
+  <p>This DIV element does not have a pre-defined height.</p>
+  <p>An animation will change the max-height, from "none" to "100px".</p>
+  <p>The height of this DIV element will not exceed 100 pixels.</p>
+</div>
+
+<p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+</html>

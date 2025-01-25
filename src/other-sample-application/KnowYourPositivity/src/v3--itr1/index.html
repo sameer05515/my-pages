@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perspectives Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-center mb-4">Perspectives Builder</h1>
+        
+        <!-- Dynamic Content -->
+        <div id="content"></div>
+    </div>
+
+    <script>
+        class Builder {
+            constructor() {
+                this.sections = [];
+                this.idCounter = 0;
+            }
+
+            generateUniqueId() {
+                const date = new Date();
+                const day = String(date.getDate()).padStart(2, "0");
+                const month = date.toLocaleString("en-US", { month: "short" }).toUpperCase();
+                const year = date.getFullYear();
+                this.idCounter += 1;
+                return `${day}${month}${year}.${this.idCounter}`;
+            }
+
+            addSection(name, sentences) {
+                const sectionId = this.generateUniqueId();
+                this.sections.push({ id: sectionId, name, sentences });
+            }
+
+            render(containerId) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+
+                container.innerHTML = ""; // Clear existing content
+
+                this.sections.forEach((section) => {
+                    const sectionDiv = document.createElement("div");
+                    sectionDiv.classList.add("bg-gray-50", "p-4", "rounded-lg", "shadow", "mb-4");
+
+                    sectionDiv.innerHTML = `
+                        <h2 class="text-xl font-semibold mb-2">${section.name}</h2>
+                        <ul class="list-disc list-inside text-gray-700">
+                            ${section.sentences.map((sentence) => `<li>${sentence}</li>`).join("")}
+                        </ul>
+                    `;
+
+                    container.appendChild(sectionDiv);
+                });
+            }
+        }
+
+        // Example Usage:
+        const builder = new Builder();
+        builder.addSection("Growth Mindset", [
+            "Discomfort is a signal for growth; embrace the force push forward.",
+            "Success is a result of consistent mastery push in any field."
+        ]);
+
+        builder.addSection("Learning Process", [
+            "Improvement becomes enjoyable when seen as a fun push.",
+            "Overcoming a plateau requires an intentional push towards new challenges."
+        ]);
+
+        // Render Sections
+        builder.render("content");
+    </script>
+
+</body>
+</html>

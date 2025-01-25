@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TReDS - Overview</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="borderSt">
+        <b>All Overview</b>
+
+        <table class="table-prem">
+            <tr>
+                <td>
+                    KT / Knowledge
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Know about trades : <a href="TReDS.html">Click Here</a>
+                        </li>
+                        <li>
+                            Inspiration : <a href="inspiration.html">Click Here</a>
+                        </li>
+                        <!-- <li>
+                            Know about m1Exchange : <a href="m1Exchange.html">Click here</a>
+                        </li> -->
+                        <!-- <li>
+                            Know about amortization : <a href="amortization.html">Click here</a>
+                        </li> -->
+                        <!-- <li>
+                            KT for Portal Overview : <a href="KT-18-Jan-21.html">Click here</a>
+                        </li>
+                        <li>
+                            KT for Non-MSMEs Portal Overview : <a href="KT-29-Jan-2021.html">Click Here</a>
+                        </li> -->
+                        <li>
+                            SQL Server Tips : <a href="Sql-Server-Tips.html">Click here</a>
+                        </li>
+                        <li>
+                            Excel Tips : <a href="Excel-Tips.html">Click here</a>
+                        </li>
+                        <!-- <li>
+                            Company : <a href="company.html">Click here</a>
+                        </li> -->
+                    </ul>
+                </td>
+            </tr>
+
+            <!-- <tr>
+                <td>
+                    Tasks / SOD Minutes / Other calls minutes
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            Tasks : <a href="tasks/index.html">Click here</a>
+                        </li>
+                        <li>
+                            SOD Call Minutes : <a href="SOD-Call/index.html">Click here</a>
+                        </li>
+                        
+                    </ul>
+                </td>
+            </tr> -->
+
+            <!-- <tr>
+                <td>
+                    Calls Webinars link
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            my google link : <a href="https://meet.google.com/ssr-dpqf-wye">click here</a>
+                        </li>
+                        <li>
+                            Daily SOD Call @ 10:00 AM : 
+                            <a href="https://us02web.zoom.us/j/614262280?pwd=VmFjamtCVHFhbDFuSkEyS2h5NDV0Zz09" target="_blank">
+                                Click Here
+                            </a>
+                        </li>
+                        <li>
+                            Daily Amorts call @ 05:00 PM:
+                            <a href="https://meet.google.com/wzm-vscr-vvz" target="_blank">
+                                Click here
+                            </a>
+                        </li>
+            
+                        <li>
+                            Webinars- Attending mandatory- 29th January : 
+                            <a href="Webinars- Attending mandatory- 29th January/index.html">
+                                Click Here
+                            </a>
+                        </li>
+                    </ul>
+                </td>
+            </tr> -->
+        </table>
+
+
+        <!-- <div class="box-prem">
+
+            <div class="box-prem">
+                <ul>
+                    <li>
+                        <div class="box-prem">
+                            <p><b>Get laptop</b></p>
+                            <p><b>Portal Overview</b> - Premanshu</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box-prem">
+                            Required Softwares Download
+                            <ul>
+                                <li>eLocks</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box-prem">
+                            Development softwares download ( <b>Old bidding portal</b> )
+                            <ul>
+                                <li>Few softwares (<b>ServerDetails.tar.gz</b> and <b>SSMS-Setup-ENU.exe</b> ) shared by deepika.chawla and sooraj.joshi</li>
+                                <li>JDK 7 <b>jdk-7u80-windows-x64.exe</b> download</li>
+                                <li>
+                                    checkout <i><u>https://103.25.172.137/svn/MYND_TREDS/TReDS/BiddingPortal/Treds</u></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box-prem">
+                            Development software download ( <b>Non MSME</b> ) - Mr. Amit Madan
+                            <ul>
+                                <li>
+                                    checkout <i><u>https://103.25.172.137/svn/MYND_TREDS/TReDS/BiddingPortal_NON_MSME/MyndFinscf_Head</u></i>
+                                </li>
+                                <li>
+                                    download related Jboss server <br>
+                                    <i><u>http://103.25.172.132/biddingportal.tar.gz</u></i> <br> Received from Mr Ravi Singh
+                                </li>
+                                <li>
+                                    Extract <i><b>biddingportal.tar.tz</b></i> to <i><b>c://biddingportal-non-msme</b></i> folder
+                                    <ul>
+                                        <li>
+                                            update keystore location in <i><b>C:\CUST-INST\ServerDetails\biddingportal-non-msme\jboss-eap-6.2 - Approval Matrix\standalone\configuration\standalone.xml</b></i> file
+                                            <div class="box-prem">
+                                                <code>
+                                                    &lt;connector name=&quot;https&quot; protocol=&quot;HTTP/1.1&quot; scheme=&quot;https&quot; socket-binding=&quot;ajeet&quot; enable-lookups=&quot;false&quot; secure=&quot;true&quot;&gt;
+                                                        &lt;ssl key-alias=&quot;ajeet&quot; password=&quot;password&quot; certificate-key-file=&quot;C://CUST-INST//ServerDetails//MySSL//ajeet.keystore&quot; protocol=&quot;TLSv1,TLSv1.1,TLSv1.2&quot; verify-client=&quot;false&quot;/&gt;
+                                                    &lt;/connector&gt;
+                                                </code>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    configuration file containing Stored Proc details
+                                    <br><i><b>C:\CUST-INST\ServerDetails\biddingportal-non-msme\jboss-eap-6.2 - Approval Matrix\bin\webServiceOperations.ini</b></i>
+                                </li>
+                                <li>
+                                    <div class="box-prem">
+                                        <span>admin@mynd.com/Newgen12</span><br>
+                                        <span>anil@m1.com/Mynd@123</span>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="box-prem">
+                                        <p>
+                                            checkout <i><u>https://103.25.172.137/svn/MYND_TREDS/TReDS/IntegrationService</u></i>
+                                        </p>
+                                        <p>
+                                            download postman
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="box-prem">
+                <ul>
+                    <li>
+                        Overview from development point of view
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>

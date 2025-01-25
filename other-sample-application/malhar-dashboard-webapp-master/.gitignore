@@ -1,6 +1,0 @@
-node_modules
-.tmp
-.sass-cache
-.idea
-.DS_Store
-app/bower_components

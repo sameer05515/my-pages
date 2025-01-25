@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <script src="../../lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
+    <style>
+        .center {
+            text-align: center;
+            border: 3px solid green;
+        }
+        
+        .block {
+            width: 45%;
+            display: inline-block;
+            /* display inline with ability to provide width/height*/
+        }
+        
+        .all-capital-bold {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        .company-details {
+            border: 2px solid green;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        /* .left {
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        } */
+    </style>
+    <script>
+        $(function() {
+            $("#12-EVC-Ventures").load("resume-companies-experiences/12-EVC-Ventures.html");
+            $("#11-RSystems").load("resume-companies-experiences/11-RSystems.html");
+            $("#10-Dhani-Stocks").load("resume-companies-experiences/10-Dhani-Stocks.html");
+            $("#09-Mynd").load("resume-companies-experiences/09-Mynd.html");
+            $("#08-Dhani-Stocks").load("resume-companies-experiences/08-Dhani-Stocks.html");
+            $("#07-Concentrix").load("resume-companies-experiences/07-Concentrix.html");
+            $("#06-Accenture").load("resume-companies-experiences/06-Accenture.html");
+            $("#05-Concentrix").load("resume-companies-experiences/05-Concentrix.html");
+            $("#04-WDC").load("resume-companies-experiences/04-WDC.html");
+            $("#03-Novelvox").load("resume-companies-experiences/03-Novelvox.html");
+            $("#02-HCL-Infosystems").load("resume-companies-experiences/02-HCL-Infosystems.html");
+            $("#01-GreenApple").load("resume-companies-experiences/01-GreenApple.html");
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="resumeDiv">
+        <div id="headerDiv">
+            <div id="address">
+                <div class="block">
+                    <p>Sec 55</p>
+                    <p>Faridabad, Haryana-121004</p>
+                </div>
+                <div class="block">
+                    <p>premendra.bce05515@gmail.com</p>
+                    <p>Premendra.bce05515@outlook.com</p>
+                </div>
+            </div>
+
+            <div id="Name" class="center">
+                <p>Premendra Kumar</p>
+            </div>
+        </div>
+
+        <div id="objectiveDiv">
+            <b>Objective:-</b><br>
+            <p>Seeking a position to utilize my skills and abilities with approx. 13 years 5 months of experience (approx. 5 years of development+devops at Concentrix, 8.5 years of development) in the Information Technology Industry that offers professional
+                growth while being resourceful, innovative and flexible. I want to work with a professional organization where I will be able to develop my skills along with some challenging projects to handle with latest technology.</p>
+        </div>
+        <div id="skillAndAbilitiesDiv">
+            <b>Skills & Abilities:-</b><br>
+            <p>
+                <ul>
+                    <li><b>Java technology known:- </b> (Core Java, OOPs concept, Reflection API, Servlets, JSP, Struts2, Hibernate, Web Services, Collection API, JDBC, Apache Axis API, Apache Solr API, JAX-RS,Spring Boot, Spring Batch, Spring data, Spring
+                        Rest)
+                    </li>
+                    <li><b>DBMS Packages:- </b> (Oracle 12g, Access, SQL server, PostgreSQL, SQLite, DB2, MySQL)</li>
+                    <li><b>Operating Systems:- </b> (WINDOWS, Linux)</li>
+                    <li><b>Web Designing:- </b> (HTML5, CSS3, AngularJS, Bootstrap, Angular, ReactJS, GWT)</li>
+                    <li><b>Web Servers:- </b> (WebLogic 8.1, Apache Tomcat 8, Websphere8)</li>
+                    <li><b>Addl. technology known:- </b> (Angular, ReactJS, GWT, NodeJS, Adobe Flex 4, JavaScript, CSS3, Apache Ant, Maven)</li>
+                    <li><b>RAD Tool:- </b> (Eclipse, Net beans, Adobe Flash Builder 4.1, IntelliJ Idea)</li>
+                    <li><b>DevOps Tool:- </b> (Jira, AWS, Jenkins, BitBucket)</li>
+                </ul>
+            </p>
+        </div>
+
+        <div id="experienceDiv">
+            <b>Experiences:- </b>
+            <div id="12-EVC-Ventures" class="company-details"></div>
+            <div id="11-RSystems" class="company-details"></div>
+            <div id="10-Dhani-Stocks" class="company-details"></div>
+            <div id="09-Mynd" class="company-details"></div>
+            <div id="08-Dhani-Stocks" class="company-details"></div>
+            <div id="07-Concentrix" class="company-details"></div>
+            <div id="06-Accenture" class="company-details"></div>
+            <div id="05-Concentrix" class="company-details"></div>
+            <div id="04-WDC" class="company-details"></div>
+            <div id="03-Novelvox" class="company-details"></div>
+            <div id="02-HCL-Infosystems" class="company-details"></div>
+            <div id="01-GreenApple" class="company-details"></div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

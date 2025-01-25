@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#borderimg1 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/retro-borders-png-clipart-art-borders-borders-clipart-retro-borders-png-650_425.jpg) 30 round;
+}
+
+#borderimg2 { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(images/retro-borders-png-clipart-art-borders-borders-clipart-retro-borders-png-650_425.jpg) 30 stretch;
+}
+</style>
+</head>
+<body>
+
+<div id="referenceDivId" style="background-color: darkgrey;font-size: small;color: black;border: medium none black;">
+Reference : <a style="background-color: darkgrey;"
+ href="https://www.w3schools.com/cssref/css3_pr_border-image.asp"  
+	target="_blank">Click here</a>
+<h1 style="background-color: darkgrey;border: medium none black;">CSS border-image Property</h1>
+<h2 style="background-color: darkgrey;border: medium none black;">Few Example</h2>
+</div>
+
+<h1>The border-image Property</h1>
+<p>The border-image property specifies an image to be used as the border around an element:</p>
+
+<p id="borderimg1">Here, the image tiles to fill the area. The image is rescaled if necessary, to avoid dividing tiles.</p>
+<p id="borderimg2">Here, the image is stretched to fill the area.</p>
+
+<p>Here is the original image:</p>
+<img src="images/retro-borders-png-clipart-art-borders-borders-clipart-retro-borders-png-650_425.jpg">
+
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+</body>
+</html>

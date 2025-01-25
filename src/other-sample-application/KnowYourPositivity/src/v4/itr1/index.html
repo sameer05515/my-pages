@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentence Viewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.1/redux.min.js"></script>
+    <style>
+      .fade-enter {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      .fade-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-xl text-center">
+      <h1 id="sectionName" class="text-3xl font-bold text-gray-800 mb-4">Loading...</h1>
+      <p id="sentence" class="text-lg text-gray-600 fade-enter">Loading...</p>
+
+      <div class="mt-6 flex justify-between">
+        <button id="prevBtn" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-lg hover:bg-gray-400" disabled>
+          Previous
+        </button>
+        <button id="nextBtn" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Next</button>
+      </div>
+    </div>
+
+    <script type="module" src="./store.js"></script>
+    <script type="module" src="./ui.js"></script>
+  </body>
+</html>

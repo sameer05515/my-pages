@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meta-Learning Cycle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Optional: Add custom styles for the arrows if needed */
+      .arrow {
+        position: absolute;
+        /* Adjust positioning as needed */
+        /* Example: */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the arrow */
+        /* Style the arrow itself */
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 30px solid black; /* Change color as needed */
+      }
+
+      .rotate-45 {
+        transform: rotate(45deg);
+      }
+
+      .rotate-135 {
+        transform: rotate(135deg);
+      }
+
+      .rotate-225 {
+        transform: rotate(225deg);
+      }
+
+      .rotate-315 {
+        transform: rotate(315deg);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div class="relative w-96 h-96">
+      <div class="absolute w-full h-full rounded-full bg-white shadow-lg"></div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center">
+        <div class="text-center font-bold text-xl mb-4" id="cycle-title">Meta-Learning Cycle</div>
+        <div id="cycle-description" class="text-center text-gray-600">Click a stage to learn more.</div>
+      </div>
+
+      <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-full text-center" id="Discomfort">
+        <div
+          class="rounded-full bg-blue-500 text-white p-4 shadow-md cursor-pointer hover:bg-blue-700 transition duration-300"
+          onclick="showDescription('Discomfort', 'This is where you push yourself beyond your current abilities.')"
+        >
+          Discomfort
+        </div>
+        <div class="arrow rotate-315"></div>
+      </div>
+      <div class="absolute right-0 top-1/2 transform translate-y-1/2 translate-x-full text-center" id="Improvement">
+        <div
+          class="rounded-full bg-green-500 text-white p-4 shadow-md cursor-pointer hover:bg-green-700 transition duration-300"
+          onclick="showDescription('Improvement', 'You start to see progress and gain skills.')"
+        >
+          Improvement
+        </div>
+        <div class="arrow rotate-45"></div>
+      </div>
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-full text-center" id="Plateau">
+        <div
+          class="rounded-full bg-yellow-500 text-white p-4 shadow-md cursor-pointer hover:bg-yellow-700 transition duration-300"
+          onclick="showDescription('Plateau', 'You reach a point where progress seems to slow down.')"
+        >
+          Plateau
+        </div>
+        <div class="arrow rotate-135"></div>
+      </div>
+      <div class="absolute left-0 top-1/2 transform translate-y-1/2 -translate-x-full text-center" id="Success">
+        <div
+          class="rounded-full bg-red-500 text-white p-4 shadow-md cursor-pointer hover:bg-red-700 transition duration-300"
+          onclick="showDescription('Success', 'You achieve your goals and experience mastery.')"
+        >
+          Success
+        </div>
+        <div class="arrow rotate-225"></div>
+      </div>
+    </div>
+
+    <script>
+      function showDescription(stage, description) {
+        document.getElementById("cycle-title").innerText = stage;
+        document.getElementById("cycle-description").innerText = description;
+      }
+    </script>
+  </body>
+</html>
