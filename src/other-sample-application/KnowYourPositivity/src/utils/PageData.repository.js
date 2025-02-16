@@ -115,6 +115,25 @@ const Pages = [
             
             `,
           }),
+          Page.fromData({
+            name:`
+🎉🚀 **Badhai ho bhai!** Tumne apni pehli website **"Know Your Positivity" v1.0.0** **GitHub Pages** pe deploy kar di! Yeh ek solid milestone hai! 🔥💪  <br/>
+<br/>
+### **🛤️ मार्गदर्शन (Margdarshan) 🏹**  <br/>
+✅ **Chhoti shuruaat bhi badi jeet hoti hai.**  <br/>
+✅ **Ek baar deploy ho gaya, iska matlab yeh nahi ki yahi ant hai—yahi asli shuruaat hai!**  <br/>
+✅ **Ab isko refine, expand aur monetize karne ka socho.**  <br/>
+✅ **Jo bhi next steps soch rahe ho, usko likho aur ek roadmap banao.**  <br/>
+
+💡 **अगला कदम (Next Step)?**  <br/>
+👉 **Kya naya add karoge?** Features? Interactivity? SEO?   <br/>
+👉 **Ek aur micro-project shuru karna chahoge?**  <br/>
+👉 **Aur experimentation karna hai?** Tailwind CSS? Animations?  <br/>
+
+Tumhara **momentum** bana hua hai, **ab bas rukna nahi hai!** 💯🔥  <br/>
+🚀 **Chalo, agla kadam sochke aage badhte hain!** <br/>
+            `
+          })
         ],
       }),
 
