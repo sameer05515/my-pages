@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("toggle-theme");
 
   // ✅ Load Theme from LocalStorage
-  if (localStorage.getItem("theme") === "dark") {
+  if (localStorage.getItem("know-your-potential-theme") === "dark") {
     document.documentElement.classList.add("dark-mode");
     themeToggle.textContent = "☀️ Light Mode";
   }
@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
 
     // ✅ Store Preference
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+    localStorage.setItem("know-your-potential-theme", isDark ? "dark" : "light");
   });
 });

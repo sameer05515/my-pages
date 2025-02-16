@@ -37,5 +37,5 @@ const getContentType = (filePath) => {
 };
 
 // ✅ Server listen karega 3000 pe
-const PORT = 5500;
+const PORT = 5501;
 server.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
