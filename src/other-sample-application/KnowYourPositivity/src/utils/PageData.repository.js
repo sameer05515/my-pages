@@ -2,8 +2,9 @@ import Page from "./Page.dto.js";
 
 const Pages = [
   Page.fromData({
-    name: "🏃‍♂️‍➡️Know Your Positivity : Unlock the Power Within!: Through some magical words!!🪄🪄🪄🪄🪄",
+    name: "🏃‍♂️‍➡️Know Your Positivity : <i>To push beyond limits, using some magic words!! 🪄🪄🚀🚀 </i>",
     children: [
+      Page.fromData({ name: "<h3>Unlock the Power Within!: Through some magical words!!🪄🪄🪄🪄🪄</h3>" }),
       Page.fromData({
         name: "🔥Bootstrap: Initial versions: Pagination and Prev-Next Navigation Implementation: Part1",
         children: [
@@ -83,24 +84,27 @@ const Pages = [
       }),
 
       Page.fromData({
-        name: "🎯 v6: 🎯🔥 Aaj apna KnowYourPositivity.v1.0.1 live hoke rahega! 💪",
+        name: "🎯 v6: 🎯🔥🪄🪄🪄🚀🚀 Aaj apna KnowYourPositivity.v1.0.1 live hoke rahega! 💪",
         children: [
-          Page.fromData({ name: "v6--itr1", link: "v6/itr1/index.html" }),
-          // Page.fromData({ name: "v4--itr2", link: "v4/itr2-live-on--gh-pages-as-v1/index.html" }),
-          Page.fromData({ name: `
+          Page.fromData({ name: "v6--itr1: Look before <b>ChatGPT Magic 🪄🪄🪄🚀🚀</b>", link: "v6/itr1/index.html" }),
+          Page.fromData({
+            name: "🪄🪄🪄🚀🚀 My first website with <b>ChatGPT Magic 🪄🪄🪄🚀🚀</b>",
+            link: "v4/itr2-live-on--gh-pages-as-v1/index.html",
+          }),
+          Page.fromData({
+            name: `
 <b>Retrospection points: After making live</b> <br/>
 1️⃣ -  <br/>
 2️⃣ -  <br/>
             
-            ` }),
+            `,
+          }),
         ],
       }),
 
       Page.fromData({
         name: "🎯 v5:- Part 2: 🔥 Java + SastaDBService → Efficient Static Interactions! ",
-        children: [
-          Page.fromData({ name: "TBD" }),
-        ],
+        children: [Page.fromData({ name: "TBD" })],
       }),
     ],
   }),
