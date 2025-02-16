@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const updateCard = () => {
         const { title, desc } = data.get(keys[currentIndex]);
-        document.getElementById("title").textContent = title;
-        document.getElementById("desc").textContent = desc;
+        // document.getElementById("title").textContent = title;
+        // document.getElementById("desc").textContent = desc;
+        document.getElementById("title").innerHTML = title;
+        document.getElementById("desc").innerHTML = desc;
     };
 
     document.getElementById("prev").addEventListener("click", () => {
