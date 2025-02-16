@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your Positivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: "class" };
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-screen-md bg-white shadow-lg rounded-lg overflow-hidden dark:bg-gray-900 dark:text-white flex flex-col h-[95vh]">
+        
+        <!-- Header -->
+        <header class="bg-blue-500 text-white text-center flex items-center justify-center font-bold text-lg dark:bg-gray-700 h-[15%]">
+            🚀 Know Your Positivity! Unlock Your Power! 🪄
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex items-center justify-center relative h-[75%]">
+            <button id="prev" class="absolute left-3 md:left-5 p-2 bg-gray-300 rounded-md shadow-md hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600">⬅️</button>
+
+            <div id="card-container" class="w-3/4 p-6 bg-gray-100 shadow-md rounded-lg text-center dark:bg-gray-800">
+                <h2 id="title" class="text-xl font-semibold"></h2>
+                <p id="desc" class="text-gray-700 mt-2 dark:text-gray-300"></p>
+            </div>
+
+            <button id="next" class="absolute right-3 md:right-5 p-2 bg-gray-300 rounded-md shadow-md hover:bg-gray-400 dark:bg-gray-700 dark:hover:bg-gray-600">➡️</button>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-blue-500 text-white flex justify-between items-center px-4 dark:bg-gray-700 h-[10%]">
+            <button id="about-btn" class="bg-gray-300 px-3 py-1 rounded-md text-black hover:bg-gray-400 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500">ℹ️ About</button>
+            <span class="text-sm md:text-base">Thank you for being with us!</span>
+            <button id="toggle-theme" class="bg-gray-300 px-3 py-1 rounded-md text-black hover:bg-gray-400 dark:bg-gray-600 dark:text-white dark:hover:bg-gray-500">🌙 Dark Mode</button>
+        </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="bg-white p-6 rounded-lg shadow-lg dark:bg-gray-800 max-w-sm text-center">
+            <h2 class="text-lg font-semibold">About Know Your Positivity</h2>
+            <p class="text-gray-700 mt-2 dark:text-gray-300">This tool helps you unlock your inner power through motivational quotes! 🚀</p>
+            <button id="close-modal" class="mt-4 bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">
+                🔵 Got it!
+            </button>            
+        </div>
+    </div>
+    
+
+    <script type="module" src="./assets/script.js"></script>
+
+</body>
+</html>
