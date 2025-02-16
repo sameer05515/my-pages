@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="transition-colors duration-300">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your Positivity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script>
+        tailwind.config = { darkMode: "class" };
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-screen-lg mx-auto flex flex-col h-screen shadow-lg bg-white dark:bg-gray-900 dark:text-white">
+        
+        <!-- Header -->
+        <header class="h-[15%] bg-blue-500 text-white text-center flex items-center justify-center font-bold text-lg dark:bg-gray-700">
+            🏃‍♂️‍➡️🚀 Know Your Positivity! Unlock Your Power! 🪄🚀
+        </header>
+
+        <!-- Main Content -->
+        <main class="h-[75%] flex items-center justify-center relative">
+            <!-- Prev Button -->
+            <button id="prev" class="nav-button left-5">⬅️</button>
+
+            <!-- Quote Card -->
+            <div id="card-container" class="quote-card">
+                <h2 id="title" class="text-xl font-semibold"></h2>
+                <p id="desc" class="text-gray-700 mt-2 dark:text-gray-300"></p>
+            </div>
+
+            <!-- Next Button -->
+            <button id="next" class="nav-button right-5">➡️</button>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <button id="about-btn" class="footer-btn">ℹ️ About</button>
+            <span>Thank you for being with us!</span>
+            <button id="toggle-theme" class="footer-btn">🌙 Dark Mode</button>
+        </footer>
+    </div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>About KnowYourPositivity</h2>
+            <p>This tool helps you unlock your inner power through motivational quotes!</p>
+            <button id="close-modal">❌ Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="./assets/script.js"></script>
+</body>
+</html>

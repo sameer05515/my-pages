@@ -87,9 +87,10 @@ const Pages = [
         name: "🎯 v6: 🎯🔥🪄🪄🪄🚀🚀 Aaj apna KnowYourPositivity.v1.0.1 live hoke rahega! 💪",
         children: [
           Page.fromData({ name: "v6--itr1: Look before <b>ChatGPT Magic 🪄🪄🪄🚀🚀</b>", link: "v6/itr1/index.html" }),
+          Page.fromData({ name: "v6--itr2: Look before <b>ChatGPT Magic 🪄🪄🪄🚀🚀</b>", link: "v6/itr2/index.html" }),
           Page.fromData({
             name: "🪄🪄🪄🚀🚀 My first website with <b>ChatGPT Magic 🪄🪄🪄🚀🚀</b>",
-            link: "v4/itr2-live-on--gh-pages-as-v1/index.html",
+            // link: "v4/itr20-live-on--gh-pages-as-v1/index.html",
           }),
           Page.fromData({
             name: `
