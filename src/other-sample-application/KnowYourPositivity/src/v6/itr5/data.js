@@ -13,7 +13,7 @@ const data = new Map([
       id: 2,
       title: "1️⃣ Cognitive Loop (Thinking & Execution Framework): Effective 6 Step Process",
       desc: `
-        <ul class="list-disc pl-5">
+        <ul class="list-none pl-5">
           <li>Stay Calm 🧘‍♂️</li>
           <li>Review 🔄</li>
           <li>Prioritise 🎯</li>
@@ -31,7 +31,7 @@ const data = new Map([
       id: 3,
       title: "2️⃣ Data Processing Model (How Brain & Systems Work): Module-Based Approach",
       desc: `
-        <ul class="list-disc pl-5">
+        <ul class="list-none pl-5">
           <li>Collect 📥</li>
           <li>Process ⚙️</li>
           <li>Store 💾</li>
@@ -47,7 +47,7 @@ const data = new Map([
       id: 4,
       title: "3️⃣ Motivation & Growth Model (Psychological & Behavioral Science): 4 Pushes Model",
       desc: `
-        <ol class="list-decimal pl-5">
+        <ol class="list-none pl-5">
           <li><strong>Discomfort →</strong> Force Push (Break inertia) 💥</li>
           <li><strong>Improvement →</strong> Fun Push (Iterate & enjoy) 😃</li>
           <li><strong>Plateau →</strong> Intentional Push (Break stagnation) 🚀</li>
@@ -63,7 +63,7 @@ const data = new Map([
       id: 5,
       title: "A Generalized Learning Plan",
       desc: `
-        <ol class="list-decimal pl-5">
+        <ol class="list-none pl-5">
           <li>🛠 <strong>Step 1:</strong> Foundation → Understand Key Terminologies 🧐</li>
           <li>🔍 <strong>Step 2:</strong> Strengthen Understanding → Research FAQs 💡</li>
           <li>🛠 <strong>Step 3:</strong> Hands-On Approach → Do Practical Promptly 🛠</li>
@@ -80,7 +80,7 @@ const data = new Map([
       id: 6,
       title: "Layered Approach",
       desc: `
-        <ul class="list-disc pl-5">
+        <ul class="list-none pl-5">
           <li>Input 📥</li>
           <li>Processing ⚙️</li>
           <li>Storage 💾</li>
