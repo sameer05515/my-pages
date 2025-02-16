@@ -37,7 +37,7 @@ const Pages = [
       }),
 
       Page.fromData({
-        name: "v5: 🔥 Java + SastaDBService → Efficient Static Interactions! 🎯- Part 1",
+        name: "v5: 🔥✅ Java + SastaDBService → Efficient Static Interactions! 🎯- Part 1",
         children: [
           Page.fromData({
             name: "🔥 Step 5.1.1: 🎯Extract logic to navigate and toggle",
@@ -79,6 +79,27 @@ const Pages = [
             name: "🔥 Step 5.2: 🎯Get data from backend java application, or at least a json file with fetch response",
             children: [Page.fromData({ name: "TBD" /**, link: "v5/itr1/index.html"*/ })],
           }),
+        ],
+      }),
+
+      Page.fromData({
+        name: "🎯 v6: 🎯🔥 Aaj apna KnowYourPositivity.v1.0.1 live hoke rahega! 💪",
+        children: [
+          Page.fromData({ name: "v6--itr1", link: "v6/itr1/index.html" }),
+          // Page.fromData({ name: "v4--itr2", link: "v4/itr2-live-on--gh-pages-as-v1/index.html" }),
+          Page.fromData({ name: `
+<b>Retrospection points: After making live</b> <br/>
+1️⃣ -  <br/>
+2️⃣ -  <br/>
+            
+            ` }),
+        ],
+      }),
+
+      Page.fromData({
+        name: "🎯 v5:- Part 2: 🔥 Java + SastaDBService → Efficient Static Interactions! ",
+        children: [
+          Page.fromData({ name: "TBD" }),
         ],
       }),
     ],
