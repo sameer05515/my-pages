@@ -97,10 +97,21 @@ const Pages = [
             link: "v6/itr20-live-on--gh-pages-as-v1/index.html",
           }),
           Page.fromData({
+            link:"Congratulations.html",
             name: `
 <b>Retrospection points: After making live</b> <br/>
-1️⃣ -  <br/>
-2️⃣ -  <br/>
+-  <br/>
+-  <br/>
+
+<h2>What we learn from this activity?  </h2>
+
+- 1️⃣ <b>Execution over Perfection</b>: Chhoti-moti issues rahengi, lekin launch karna zaroori hai! 🚀   <br/>
+- 2️⃣ <b>GitHub Pages Deployment</b>: \`main\` branch ka sasta aur tikau upay kaam aaya! 🎯   <br/>
+- 3️⃣ <b>Patience & Debugging</b>: Live hone ke baad bhi errors fix karne padte hain, lekin yahi learning ka part hai! 🛠️   <br/>
+- 4️⃣ <b>Automation ki Zaroorat</b>: Future me **GitHub Actions** setup karenge taaki manual jhanjhat na ho! 🤖   <br/>
+- 5️⃣ <b>Confidence Boost</b>: Jo socha tha, wo **LIVE** ho gaya! Agla goal aur bada hoga! 🔥   <br/> <br/>
+
+🚀 **Mission Accomplished!** 🎯✅  <br/>
             
             `,
           }),
