@@ -18,7 +18,12 @@
   {
     "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr1.html",
     "description": "KnowYourPositivity",
-    "header": "Know Your Positivity: New Look: ChatGPT-fied"
+    "header": "Know Your Positivity: New Look: ChatGPT-fied: Itr2.1"
+  },
+  {
+    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr2.html",
+    "description": "KnowYourPositivity",
+    "header": "Know Your Positivity: New Look: ChatGPT-fied+ Main Logic: Itr2.2"
   },
   {
     "url": "/bce-gui/#/",
