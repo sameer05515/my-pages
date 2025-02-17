@@ -9,10 +9,16 @@
     "description": "Meta-Learning Cycle",
     "header": "Meta-Learning Cycle"
   },
+  
   {
     "url": "other-sample-application/KnowYourPositivity/src/index.html",
     "description": "KnowYourPositivity",
     "header": "Know Your Positivity"
+  },
+  {
+    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr1.html",
+    "description": "KnowYourPositivity",
+    "header": "Know Your Positivity: New Look: ChatGPT-fied"
   },
   {
     "url": "/bce-gui/#/",
