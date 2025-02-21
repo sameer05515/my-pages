@@ -141,7 +141,9 @@ Tumhara **momentum** bana hua hai, **ab bas rukna nahi hai!** 💯🔥  <br/>
           name:"KnowYourPositivity.v1.0.2 ko 07-March-2025 ko live karna hai.",
           children:[
             Page.fromData({name:"v7/itr1", link:"v7/itr1/index.html"}),
-            Page.fromData({name:"v7/itr2-- live as v1.0.3", link:"v7/itr2/index.html"})
+            Page.fromData({name:"v7/itr2-- live as v1.0.3", link:"v7/itr2/index.html"}),
+            Page.fromData({name:"v7/itr3 Language support", link:"v7/itr3/index.html"}),
+            Page.fromData({name:"v7/itr4 Language support", link:"v7/itr4/index.html"}),
           ]
       }),
 
