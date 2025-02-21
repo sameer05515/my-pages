@@ -144,6 +144,7 @@ Tumhara **momentum** bana hua hai, **ab bas rukna nahi hai!** 💯🔥  <br/>
             Page.fromData({name:"v7/itr2-- live as v1.0.3", link:"v7/itr2/index.html"}),
             Page.fromData({name:"v7/itr3 Language support", link:"v7/itr3/index.html"}),
             Page.fromData({name:"v7/itr4 Language support", link:"v7/itr4/index.html"}),
+            Page.fromData({name:"v7/itr5 Language support- live v1.0.4", link:"v7/itr5/index.html"}),
           ]
       }),
 
