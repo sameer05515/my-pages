@@ -76,7 +76,11 @@
       <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
         Using Template :- <br /><br />
         <input type="text" ng-model="linkSearch" />
-        <div ng-repeat="data in linkData | filter:linkSearch" ng-show="{{settings.showLinkData}}" ng-include="'template/linkData_item_renderer.html'"></div>
+        <div
+          ng-repeat="data in linkData | filter:linkSearch"
+          ng-show="{{settings.showLinkData}}"
+          ng-include="'template/linkData_item_renderer.html'"
+        ></div>
       </div>
       <hr />
       <hr />
@@ -89,7 +93,12 @@
          <hr/> -->
 
       <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
-        <span ng-repeat="x in dbBakupLinkData" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/dbBakupLinkData_item_renderer.html'"> </span>
+        <span
+          ng-repeat="x in dbBakupLinkData"
+          ng-show="{{settings.showDbBakupLinkData}}"
+          ng-include="'template/dbBakupLinkData_item_renderer.html'"
+        >
+        </span>
       </div>
       <hr />
       <hr />
