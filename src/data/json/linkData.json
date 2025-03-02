@@ -1,5 +1,10 @@
 [
   {
+    "url":"other-sample-application/chat-data-renderer/index.html",
+    "description":"chat-data-renderer",
+    "header":"chat-data-renderer"
+  },
+  {
     "url": "other-sample-application/my-to-do-list/index.html",
     "description": "My To-Do List",
     "header": "My To-Do List"
