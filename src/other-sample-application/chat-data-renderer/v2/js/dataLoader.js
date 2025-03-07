@@ -4,7 +4,7 @@ export let jsonData = [];
 
 export async function loadJSON() {
   try {
-    const response = await fetch("../data/vandana-chatgpt-08-feb-2025-conversations.json");
+    const response = await fetch("../data/prem-conversations-08-Feb-2025.json");
     jsonData = await response.json();
     displayMessages();
   } catch (error) {
