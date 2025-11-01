@@ -1,14 +1,35 @@
+<!-- 
+  This HTML file demonstrates passing data to a Bootstrap modal dialog using AngularJS.
+
+  - The AngularJS app is bootstrapped with the 'Pass-data-to-a-Bootstrap-modal-dialog-using-angular' module.
+  - Bootstrap and some additional CSS/JS resources (such as bootstrap-toggle) are loaded via CDN.
+  - The AngularJS controller assigned to the body is 'ctrl'.
+
+  Main Features:
+  ---------------
+  1. A table lists persons, where each row shows a person's name and an Edit button.
+  2. Clicking the Edit button on a row invokes 'editDialog.open(person)' to open a modal dialog for editing that person's data.
+  3. There is an 'Add new person' button which calls the 'add()' method in the scope/controller.
+  4. The custom AngularJS component <edit-person-dialog model="editDialog"></edit-person-dialog>
+     renders the modal dialog interface and connects to the rest of the controller via the 'editDialog' model.
+-->
+
 <!DOCTYPE html>
 <html data-ng-app="Pass-data-to-a-Bootstrap-modal-dialog-using-angular">
   <head>
+    <!-- Bootstrap and other stylesheets for UI styling -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://gitcdn.github.io/bootstrap-toggle/2.1.0/css/bootstrap-toggle.min.css" rel="stylesheet">
     
+    <!-- jQuery and Bootstrap's JavaScript, needed for modal functionality -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- AngularJS library -->
     <script src="https://code.angularjs.org/1.4.7/angular.js"></script>
+    <!-- Optional Bootstrap-toggle plugin JS -->
     <script src="https://gitcdn.github.io/bootstrap-toggle/2.1.0/js/bootstrap-toggle.min.js"></script>
      
+    <!-- Application-specific JavaScript with AngularJS controllers and components -->
     <script src="js/Pass-data-to-a-Bootstrap-modal-dialog-using-angular.js"></script>
   </head>
 
@@ -17,17 +38,33 @@
       <h1>Bootstrap modal dialogs with angular</h1>
       <p>Click the edit button to edit the person's name in a modal dialog.</p>
 
+      <!-- Table lists each person and provides an Edit button that triggers the modal -->
       <table class="table">
         <tr>
-          <th>Name</th><th>Actions</th>
+          <th>Name</th>
+          <th>Actions</th>
         </tr>
         <tr ng-repeat="person in persons">
-          <td>{{person.name}}</td><td><button type="button" class="btn btn-xs" ng-click="editDialog.open(person)">Edit...</button></td>
+          <!-- {{person.name}} displays the current person's name.
+               The Edit button opens the modal dialog for that specific person by passing 'person' to editDialog.open(). -->
+          <td>{{person.name}}</td>
+          <td>
+            <button type="button"
+                    class="btn btn-xs"
+                    ng-click="editDialog.open(person)">
+              Edit...
+            </button>
+          </td>
         </tr>
       </table>
       
-      <button type="button" ng-click="add()" class="btn">Add new person</button>
+      <!-- Button triggers adding a new person to the list by calling add() on the controller's scope -->
+      <button type="button" ng-click="add()" class="btn">
+        Add new person
+      </button>
   
+      <!-- Custom AngularJS directive/component for the edit dialog.
+           The model 'editDialog' mediates the dialog's state and target person. -->
       <edit-person-dialog model="editDialog"></edit-person-dialog>
     </div>
   </body>

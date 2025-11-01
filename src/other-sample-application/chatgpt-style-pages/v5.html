@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Mini ChatGPT v5 — Alpine.js + Tailwind</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js/lib/common.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github-dark.min.css" />
+
+  <style>
+    @keyframes pop-in {0%{opacity:0;transform:translateY(6px) scale(.97)}100%{opacity:1;transform:none}}
+    .pop-in {animation:pop-in .2s ease-out both}
+    pre{position:relative;background:#1e1e1e;color:#eee;padding:10px;border-radius:.5rem;overflow-x:auto}
+    button.copy-btn{position:absolute;top:5px;right:8px;background:#2e2e2e;color:#ccc;font-size:12px;padding:2px 6px;border-radius:4px}
+    button.copy-btn:hover{background:#444;color:#fff}
+    .nice-scroll::-webkit-scrollbar{width:8px}
+    .nice-scroll::-webkit-scrollbar-thumb{background:#9994;border-radius:8px}
+  </style>
+</head>
+
+<body x-data="chatApp()" :class="dark ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'"
+      class="min-h-screen flex items-center justify-center">
+
+  <div class="w-full max-w-2xl h-[90vh] rounded-2xl shadow-xl overflow-hidden"
+       :class="dark ? 'bg-gray-800 border border-gray-700' : 'bg-white border border-gray-300'">
+
+    <!-- Header -->
+    <header class="px-4 py-3 flex items-center justify-between"
+            :class="dark ? 'bg-gray-700' : 'bg-gray-200'">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🤖</span>
+        <h1 class="font-semibold">Mini ChatGPT v5</h1>
+      </div>
+      <div class="flex items-center gap-2">
+        <button @click="clearChat()" class="text-xs px-3 py-1 rounded-lg"
+                :class="dark ? 'bg-gray-600 hover:bg-gray-500' : 'bg-gray-300 hover:bg-gray-400'">Clear</button>
+        <button @click="dark=!dark" class="text-xs px-3 py-1 rounded-lg"
+                :class="dark ? 'bg-gray-600 hover:bg-gray-500' : 'bg-gray-300 hover:bg-gray-400'">
+          <span x-text="dark ? '🌞' : '🌙'"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Chat messages -->
+    <main class="h-[calc(90vh-120px)] p-4 overflow-y-auto nice-scroll space-y-3" x-ref="box">
+      <template x-for="m in messages" :key="m.id">
+        <div class="pop-in group" :class="m.from === 'user' ? 'text-right' : 'text-left'">
+          <div class="inline-flex max-w-[85%] flex-col gap-1"
+               :class="m.from === 'user' ? 'items-end' : 'items-start'">
+            <div class="relative px-3 py-2 rounded-2xl text-sm"
+                 :class="m.from === 'user'
+                           ? 'bg-blue-600 text-white rounded-br-none'
+                           : (dark ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900') + ' rounded-bl-none'">
+              <template x-if="!m.editing">
+                <div x-html="renderMarkdown(m.text)" class="markdown"></div>
+              </template>
+              <template x-if="m.editing">
+                <textarea x-model="m.text" class="w-full p-1 text-sm rounded bg-gray-200 text-gray-900"></textarea>
+              </template>
+
+              <!-- Copy + Edit/Delete -->
+              <div class="absolute -top-6 right-0 hidden group-hover:flex gap-1 text-xs">
+                <button @click="copyText(m.text)" class="bg-gray-600 text-white px-2 py-0.5 rounded">Copy</button>
+                <template x-if="m.from==='user'">
+                  <button @click="m.editing=!m.editing" class="bg-yellow-500 text-white px-2 py-0.5 rounded">
+                    <span x-text="m.editing?'Save':'Edit'"></span>
+                  </button>
+                </template>
+                <button @click="deleteMsg(m.id)" class="bg-red-600 text-white px-2 py-0.5 rounded">Del</button>
+              </div>
+            </div>
+
+            <div class="text-[11px] opacity-70">
+              <span x-text="formatTime(m.createdAt)"></span>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <!-- Typing dots -->
+      <template x-if="typing">
+        <div class="pop-in text-left">
+          <div class="inline-flex gap-2 px-3 py-2 rounded-2xl rounded-bl-none"
+               :class="dark ? 'bg-gray-700 text-white' : 'bg-gray-100 text-gray-900'">
+            <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></span>
+            <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:0.2s]"></span>
+            <span class="w-2 h-2 bg-gray-400 rounded-full animate-bounce [animation-delay:0.4s]"></span>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <!-- Input -->
+    <form @submit.prevent="send" class="p-3 flex gap-2 border-t"
+          :class="dark ? 'border-gray-700 bg-gray-800' : 'border-gray-200 bg-white'">
+      <input x-model="draft" placeholder="Type your message..."
+             class="flex-1 px-3 py-2 rounded-lg outline-none text-sm"
+             :class="dark ? 'bg-gray-700 text-white placeholder-gray-400' : 'bg-gray-100 text-gray-900'" />
+      <button type="submit" class="px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-500 disabled:opacity-50"
+              :disabled="!draft.trim() || typing">Send</button>
+      <button @click.prevent="retryLast()" class="px-3 py-2 rounded-lg bg-gray-500 text-white hover:bg-gray-400 text-sm">Retry</button>
+    </form>
+  </div>
+
+  <script>
+    // Dummy API reply generator
+    async function fakeAPI(prompt, onToken) {
+      const replies = [
+        "Here’s a dummy markdown response:\n\n```js\nconsole.log('Retry test OK');\n```",
+        "\nYou can edit or delete your own messages easily!"
+      ];
+      for (const chunk of replies) {
+        for (const token of chunk.split(/(\s+)/)) {
+          if (!token.trim()) continue;
+          await new Promise(r => setTimeout(r, 50));
+          onToken(token);
+        }
+      }
+    }
+
+    function chatApp() {
+      return {
+        dark: true,
+        draft: '',
+        typing: false,
+        messages: JSON.parse(localStorage.getItem('mini-gpt-v5') || '[]') || [],
+        
+        async send() {
+          if (!this.draft.trim()) return;
+          const text = this.draft;
+          const uid = crypto.randomUUID();
+          this.messages.push({ id: uid, from: 'user', text, createdAt: Date.now() });
+          this.draft = '';
+          this.persist(); this.scroll();
+
+          const bid = crypto.randomUUID();
+          const botMsg = { id: bid, from: 'bot', text: '', createdAt: Date.now() };
+          this.messages.push(botMsg);
+          this.typing = true;
+          this.scroll();
+
+          await fakeAPI(text, (token) => {
+            botMsg.text += token;
+            this.scrollSmooth();
+          });
+
+          this.typing = false;
+          this.persist();
+        },
+
+        async retryLast() {
+          const lastBot = [...this.messages].reverse().find(m => m.from === 'bot');
+          if (!lastBot) return;
+          lastBot.text = '';
+          this.typing = true;
+          await fakeAPI('retry', (token) => {
+            lastBot.text += token;
+            this.scrollSmooth();
+          });
+          this.typing = false;
+          this.persist();
+        },
+
+        renderMarkdown(txt) {
+          const html = marked.parse(txt);
+          const temp = document.createElement('div');
+          temp.innerHTML = html;
+          temp.querySelectorAll('pre code').forEach(block => {
+            hljs.highlightElement(block);
+            const btn = document.createElement('button');
+            btn.className = 'copy-btn';
+            btn.textContent = 'Copy';
+            btn.onclick = () => {
+              navigator.clipboard.writeText(block.textContent);
+              btn.textContent = '✅';
+              setTimeout(() => btn.textContent = 'Copy', 1000);
+            };
+            block.parentElement.appendChild(btn);
+          });
+          return temp.innerHTML;
+        },
+
+        deleteMsg(id) {
+          this.messages = this.messages.filter(m => m.id !== id);
+          this.persist();
+        },
+
+        copyText(txt) {
+          navigator.clipboard.writeText(txt);
+        },
+
+        scrollSmooth() {
+          this.$nextTick(() => {
+            this.$refs.box.scrollTo({ top: this.$refs.box.scrollHeight, behavior: 'smooth' });
+          });
+        },
+
+        scroll() {
+          this.$nextTick(() => {
+            this.$refs.box.scrollTop = this.$refs.box.scrollHeight;
+          });
+        },
+
+        persist() {
+          localStorage.setItem('mini-gpt-v5', JSON.stringify(this.messages));
+        },
+
+        formatTime(ts) {
+          return new Date(ts).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        },
+
+        clearChat() {
+          this.messages = [];
+          this.persist();
+        }
+      };
+    }
+  </script>
+</body>
+</html>

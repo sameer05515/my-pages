@@ -1,25 +1,61 @@
+<!--
+  This HTML file demonstrates how to create and use an AngularJS-powered modal window using the Angular UI Bootstrap library.
+
+  Key Elements and How It Works:
+  ------------------------------------------------
+
+  1. Dependencies:
+     - Uses Bootstrap CSS for styling.
+     - Uses AngularJS core and its animation/touch modules.
+     - Uses Angular UI Bootstrap (ui-bootstrap) which provides Bootstrap components for AngularJS, including modal functionality.
+     - Loads a custom script 'modalWindowShow.js' where the AngularJS modules and controllers should be implemented.
+
+  2. Angular App and Controller:
+     - The <body> tag is initialized with AngularJS using 'ng-app="myApp"' and specifies 'MainController' as its controller.
+
+  3. Modal Launch Button:
+     - A button is provided. When clicked, it calls 'openModal()' on the MainController scope.
+     - 'openModal()' should be defined in your 'modalWindowShow.js' to trigger the Angular UI Bootstrap modal dialog.
+     
+  4. Purpose:
+     - The example shows how to launch a modal dialog window in response to a button click in an AngularJS application.
+
+  5. Note:
+     - The modal content itself should be defined either as an AngularJS template or as a separate HTML snippet loaded by the modal service in your JS file.
+     - Be sure the file paths in the <script> and <link> tags point correctly to your environment.
+-->
+
 <html>
 <head>
- <link rel="stylesheet" href="http://127.0.0.1:8080/bce-gui/lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
- <title>Modal Window</title>
+  <!-- Bootstrap stylesheet for styling modal and components -->
+  <link rel="stylesheet" href="http://127.0.0.1:8080/bce-gui/lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <title>Modal Window</title>
 </head>
 <body ng-app="myApp" ng-controller="MainController">
- 
- <div class="container">
 
- <h2>Angular Modal Window Example </h2>
- 
- <button ng-click="openModal()">Click Here to open Modal</button>
- 
- </div>
- 
- 
+  <div class="container">
+
+    <h2>Angular Modal Window Example</h2>
+    
+    <!-- This button calls the openModal() function, 
+         which should open a Bootstrap modal window using Angular UI Bootstrap -->
+    <button ng-click="openModal()">
+      Click Here to open Modal
+    </button>
+
+  </div>
+
 </body>
 
- <script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular.min.js"></script>
- <script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular-animate.min.js"></script>
- <script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular-touch.min.js"></script>
- <script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
- <script type="text/javascript" src="js/modalWindowShow.js"></script>
- 
+<!-- AngularJS core library -->
+<script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular.min.js"></script>
+<!-- AngularJS animation (required for some modal effects) -->
+<script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular-animate.min.js"></script>
+<!-- AngularJS touch support (optional, for touch-enabled devices) -->
+<script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-1.5.5/angular-touch.min.js"></script>
+<!-- Angular UI Bootstrap: Provides Bootstrap components (including modal) for AngularJS -->
+<script src="http://127.0.0.1:8080/bce-gui/lib/js/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+<!-- Your custom AngularJS implementation for the modal logic -->
+<script type="text/javascript" src="js/modalWindowShow.js"></script>
+
 </html>
