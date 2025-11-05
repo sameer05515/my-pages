@@ -4,13 +4,22 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Github Profiles</title>
+        
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        
         <link rel="stylesheet" href="style.css" />
         <script src="script.js" defer></script>
     </head>
-    <body>
-        <form id="form">
-            <input type="text" id="search" placeholder="Search a Github User" />
-        </form>
-        <main id="main"></main>
+    <body class="bg-gray-900 min-h-screen">
+        <div class="container mx-auto px-4 py-8">
+            <form id="form" class="mb-8">
+                <input type="text" 
+                       id="search" 
+                       placeholder="Search a Github User" 
+                       class="w-full max-w-md mx-auto block px-6 py-3 bg-gray-800 text-white rounded-lg border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
+            </form>
+            <main id="main" class="max-w-4xl mx-auto"></main>
+        </div>
     </body>
 </html>

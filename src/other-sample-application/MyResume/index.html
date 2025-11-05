@@ -16,9 +16,12 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS kept for functionality -->
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -28,35 +31,49 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-50">
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <h1>Premendra Kumar</h1>
-            <p>I'm <span class="typed" data-typed-items="Backend Developer, Fullstack Developer, Freelancer"></span></p>
-            <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+    <section id="hero" class="d-flex flex-column justify-content-center bg-gradient-to-br from-blue-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4" data-aos="zoom-in" data-aos-delay="100">
+            <h1 class="text-5xl font-bold mb-4">Premendra Kumar</h1>
+            <p class="text-xl mb-6">I'm <span class="typed text-yellow-300" data-typed-items="Backend Developer, Fullstack Developer, Freelancer"></span></p>
+            <div class="social-links flex space-x-4">
+                <a href="#" class="twitter text-white hover:text-blue-300 transition-colors"><i class="bx bxl-twitter text-2xl"></i></a>
+                <a href="#" class="facebook text-white hover:text-blue-300 transition-colors"><i class="bx bxl-facebook text-2xl"></i></a>
+                <a href="#" class="instagram text-white hover:text-blue-300 transition-colors"><i class="bx bxl-instagram text-2xl"></i></a>
+                <a href="#" class="google-plus text-white hover:text-blue-300 transition-colors"><i class="bx bxl-skype text-2xl"></i></a>
+                <a href="#" class="linkedin text-white hover:text-blue-300 transition-colors"><i class="bx bxl-linkedin text-2xl"></i></a>
             </div>
         </div>
     </section>
     <!-- End Hero -->
 
-    <main id="main">
+    <main id="main" class="py-12">
         <!-- ======= About Section ======= -->
         <section id="about" class="about">
-            <div class="container" data-aos="fade-up">
+            <div class="container mx-auto px-4" data-aos="fade-up">
 
-                <div class="section-title card">
-                    <h2>Views</h2>
-                    <a href="index-candidate-view.html" target="_blank" class="card-link">index-candidate-view.html</a>
-                    <a href="index-company-view-17-feb-2023.html" target="_blank" class="card-link">index-company-view-17-feb-2023.html</a>
-                    <a href="index-company-view-14-feb-2024.html" target="_blank" class="card-link">index-company-view-14-feb-2024.html</a>
-                    <a href="My-Learning-Curve.html" target="_blank" class="card-link">My-Learning-Curve.html</a>
+                <div class="section-title card bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold mb-4 text-gray-800">Views</h2>
+                    <div class="space-y-2">
+                        <a href="index-candidate-view.html" target="_blank" 
+                           class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+                            index-candidate-view.html
+                        </a>
+                        <a href="index-company-view-17-feb-2023.html" target="_blank" 
+                           class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+                            index-company-view-17-feb-2023.html
+                        </a>
+                        <a href="index-company-view-14-feb-2024.html" target="_blank" 
+                           class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+                            index-company-view-14-feb-2024.html
+                        </a>
+                        <a href="My-Learning-Curve.html" target="_blank" 
+                           class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+                            My-Learning-Curve.html
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
