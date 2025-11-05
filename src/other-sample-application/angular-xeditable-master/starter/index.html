@@ -1,27 +1,39 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular-xeditable Starter Template</title>
-    <!-- Bootstrap 3 css -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Angular.js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Angular-xeditable -->
     <link href="angular-xeditable/css/xeditable.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
     <script src="angular-xeditable/js/xeditable.js"></script>
     <!-- app.js -->
     <script src="app.js"></script>
   </head>
-  <body style="padding: 20px">
-    <h1 style="margin-bottom: 20px">Angular-xeditable Starter Template</h1>
-    <div ng-controller="Ctrl">
-      <!-- editable element -->
-      <a href="#" editable-text="user.name">{{ user.name || "empty" }}</a>
-      <div id="debug" style="margin-top: 30px">
-      {{ user | json }}
+  <body class="bg-gray-50 p-8">
+    <div class="container mx-auto max-w-2xl">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">Angular-xeditable Starter Template</h1>
+        <div ng-controller="Ctrl">
+          <!-- editable element -->
+          <div class="mb-4">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Name:</label>
+            <a href="#" 
+               editable-text="user.name"
+               class="text-blue-600 hover:text-blue-800 underline">
+              {{ user.name || "empty" }}
+            </a>
+          </div>
+          <div id="debug" class="mt-8 p-4 bg-gray-100 rounded">
+            <pre class="text-sm text-gray-700">{{ user | json }}</pre>
+          </div>
+        </div>
       </div>
     </div>
   </body>
-</html>  
+</html>

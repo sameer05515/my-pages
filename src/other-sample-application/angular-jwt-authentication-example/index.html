@@ -1,31 +1,41 @@
 ﻿<!DOCTYPE html>
-<html ng-app="app">
+<html lang="en" ng-app="app">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AngularJS JWT Authentication Example & Tutorial</title>
 
-    <!-- bootstrap css -->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- application css -->
+    <!-- Application css -->
     <link href="app-content/app.css" rel="stylesheet" />
 </head>
-<body>
+<body class="bg-gray-50">
     <!-- main app container -->
-    <div class="jumbotron">
-        <div class="container">
-            <div class="col-sm-8 col-sm-offset-2">
+    <div class="bg-white shadow-lg rounded-lg mx-auto my-8 max-w-4xl">
+        <div class="container mx-auto px-4 py-8">
+            <div class="w-full max-w-2xl mx-auto">
                 <ui-view></ui-view>
             </div>
         </div>
     </div>
 
     <!-- credits -->
-    <div class="text-center">
-        <p>
-            <a href="http://jasonwatmore.com/post/2016/04/05/AngularJS-JWT-Authentication-Example-Tutorial.aspx" target="_top">AngularJS JWT Authentication Example & Tutorial</a>
+    <div class="text-center py-4 text-gray-600">
+        <p class="mb-2">
+            <a href="http://jasonwatmore.com/post/2016/04/05/AngularJS-JWT-Authentication-Example-Tutorial.aspx" 
+               target="_top"
+               class="text-blue-600 hover:text-blue-800 underline">
+                AngularJS JWT Authentication Example & Tutorial
+            </a>
         </p>
         <p>
-            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+            <a href="http://jasonwatmore.com" 
+               target="_top"
+               class="text-blue-600 hover:text-blue-800 underline">
+                JasonWatmore.com
+            </a>
         </p>
     </div>
 

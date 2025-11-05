@@ -1,17 +1,22 @@
 <!doctype html>
-<html ng-app="exampleDialog">
+<html lang="en" ng-app="exampleDialog">
 <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ngDialog demo</title>
 
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- ngDialog CSS -->
     <link rel="stylesheet" href="../css/ngDialog.css">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'> -->
-	<link href='css.css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/ngDialog-theme-default.css">
     <link rel="stylesheet" href="../css/ngDialog-theme-plain.css">
     <link rel="stylesheet" href="../css/ngDialog-custom-width.css">
+    
+    <link href='css.css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
     <style>
         a, button {
@@ -38,44 +43,110 @@
     </style>
 </head>
 
-<body ng-controller="MainCtrl">
-    <!-- Buttons and links -->
-
-    <a id="via-service" href="" ng-click="open()">Open via service</a>
-    <button type="button"
-        ng-dialog="firstDialogId"
-        ng-dialog-controller="InsideCtrl"
-        ng-dialog-data="{{jsonData}}"
-        ng-dialog-class="ngdialog-theme-default"
-        ng-dialog-show-close="false">Open via directive</button>
-    <a href="" ng-click="openDefault()">Default theme</a>
-    <a href="" ng-click="openDefaultWithoutAnimation()">Default theme without animation</a>
-    <a href="" ng-click="openPlain()">Plain theme</a>
-    <a href="" ng-click="openPlainCustomWidth()">Plain theme with custom width</a>
-    <a href="" ng-click="openInlineController()">Inline controller</a>
-    <a href="" ng-click="openControllerAsController()">Controller with usage of ControllerAs syntax</a>
-    <a href="" ng-click="openTemplate()">Open with external template for modal</a>
-    <a href="" ng-click="openTemplateNoCache()">Open with external template for modal (disabled cache)</a>
-    <a href="" ng-click="openTimed()">Open and use return value to close later</a>
-    <a href="" ng-click="openNotify()">Open and use promise to know when closed</a>
-    <a href="" ng-click="openConfirm()">Open confirm modal</a>
-    <a href="" ng-click="openDefaultWithPreCloseCallbackInlined()">Open default modal with pre-close callback inlined</a>
-    <button type="button"
-        ng-dialog="firstDialogId"
-        ng-dialog-controller="InsideCtrl"
-        ng-dialog-data="{{jsonData}}"
-        ng-dialog-class="ngdialog-theme-default"
-        ng-dialog-scope="this"
-        ng-dialog-pre-close-callback="directivePreCloseCallback"
-        ng-dialog-show-close="false">Open via directive with pre-close callback</button>
-    <a href="" ng-click="openConfirmWithPreCloseCallbackOnScope()">Open confirm modal with pre-close callback on scope</a>
-    <a href="" ng-click="openConfirmWithPreCloseCallbackInlinedWithNestedConfirm()">Open confirm modal with pre-close inlined with nested confirm.</a>
-    <a href="" ng-click="openWithoutOverlay()">Open without overlay</a>
-    <a href="" ng-click="openWithJSSpecificWidth()" id="js-width">Open with js specific width</a>
-    <a href="" ng-click="openWithJSSpecificHeight()" id="js-height">Open with js specific height</a>
+<body ng-controller="MainCtrl" class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Buttons and links -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+            <h1 class="text-2xl font-bold mb-4 text-gray-800">ngDialog Examples</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <a id="via-service" href="" 
+                   ng-click="open()"
+                   class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-center">
+                   Open via service
+                </a>
+                <button type="button"
+                    ng-dialog="firstDialogId"
+                    ng-dialog-controller="InsideCtrl"
+                    ng-dialog-data="{{jsonData}}"
+                    ng-dialog-class="ngdialog-theme-default"
+                    ng-dialog-show-close="false"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                    Open via directive
+                </button>
+                <a href="" ng-click="openDefault()"
+                   class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-center">
+                   Default theme
+                </a>
+                <a href="" ng-click="openDefaultWithoutAnimation()"
+                   class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-center">
+                   Default theme without animation
+                </a>
+                <a href="" ng-click="openPlain()"
+                   class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-center">
+                   Plain theme
+                </a>
+                <a href="" ng-click="openPlainCustomWidth()"
+                   class="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-colors text-center">
+                   Plain theme with custom width
+                </a>
+                <a href="" ng-click="openInlineController()"
+                   class="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-center">
+                   Inline controller
+                </a>
+                <a href="" ng-click="openControllerAsController()"
+                   class="px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition-colors text-center">
+                   Controller with ControllerAs syntax
+                </a>
+                <a href="" ng-click="openTemplate()"
+                   class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-center">
+                   Open with external template
+                </a>
+                <a href="" ng-click="openTemplateNoCache()"
+                   class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-center">
+                   External template (disabled cache)
+                </a>
+                <a href="" ng-click="openTimed()"
+                   class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors text-center">
+                   Open and auto-close
+                </a>
+                <a href="" ng-click="openNotify()"
+                   class="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors text-center">
+                   Open with promise notification
+                </a>
+                <a href="" ng-click="openConfirm()"
+                   class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors text-center">
+                   Open confirm modal
+                </a>
+                <a href="" ng-click="openDefaultWithPreCloseCallbackInlined()"
+                   class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors text-center">
+                   Pre-close callback inlined
+                </a>
+                <button type="button"
+                    ng-dialog="firstDialogId"
+                    ng-dialog-controller="InsideCtrl"
+                    ng-dialog-data="{{jsonData}}"
+                    ng-dialog-class="ngdialog-theme-default"
+                    ng-dialog-scope="this"
+                    ng-dialog-pre-close-callback="directivePreCloseCallback"
+                    ng-dialog-show-close="false"
+                    class="px-4 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors">
+                    Directive with pre-close callback
+                </button>
+                <a href="" ng-click="openConfirmWithPreCloseCallbackOnScope()"
+                   class="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors text-center">
+                   Confirm with pre-close callback
+                </a>
+                <a href="" ng-click="openConfirmWithPreCloseCallbackInlinedWithNestedConfirm()"
+                   class="px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition-colors text-center">
+                   Nested confirm modal
+                </a>
+                <a href="" ng-click="openWithoutOverlay()"
+                   class="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-center">
+                   Open without overlay
+                </a>
+                <a href="" ng-click="openWithJSSpecificWidth()" id="js-width"
+                   class="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-center">
+                   Open with JS width
+                </a>
+                <a href="" ng-click="openWithJSSpecificHeight()" id="js-height"
+                   class="px-4 py-2 bg-teal-500 text-white rounded-lg hover:bg-teal-600 transition-colors text-center">
+                   Open with JS height
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Templates -->
-
     <script type="text/ng-template" id="firstDialogId">
         <div class="ngdialog-message">
             <h3>ngDialog template</h3>
@@ -84,7 +155,6 @@
             <p class="data-passed-through" ng-show="ngDialogData.foo">Data passed through: <code>{{ngDialogData.foo}}</code></p>
             <p ng-show="dialogModel.message">Scope passed through: <code>{{dialogModel.message}}</code></p>
             <p>Close this dialog: <button class="inline close-this-dialog" ng-click="closeThisDialog()">Close</button></p>
-
         </div>
         <div class="ngdialog-buttons">
             <button type="button" class="ngdialog-button ngdialog-button-secondary"
@@ -148,8 +218,7 @@
     </script>
 
     <!-- Scripts -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script> -->
-	<script src='http://127.0.0.1:8888/angular-1.5.5/angular.min.js'></script>
+    <script src='../../lib/js/angular-1.5.5/angular.min.js'></script>
     <script>window.angular || document.write('<script src="../bower_components/angular/angular.min.js">\x3C/script>')</script>
     <script src="../js/ngDialog.js"></script>
 
