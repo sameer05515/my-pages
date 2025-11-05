@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Navigation Template</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+  <!-- Top Navigation Bar -->
+  <nav class="bg-white shadow-md">
+    <div class="container mx-auto px-4">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="#" class="text-xl font-bold text-gray-800">Logo</a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex space-x-4">
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors">
+            Home
+          </a>
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors">
+            About
+          </a>
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors">
+            Services
+          </a>
+          <a href="#" class="px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded transition-colors">
+            Contact
+          </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden p-2 text-gray-700 hover:bg-gray-100 rounded">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sidebar Navigation -->
+  <aside class="w-64 bg-white shadow-lg h-screen fixed left-0 top-0 pt-16">
+    <nav class="p-4">
+      <ul class="space-y-2">
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
+            Profile
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
+            Settings
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Breadcrumb Navigation -->
+  <div class="bg-gray-100 border-b border-gray-200">
+    <div class="container mx-auto px-4 py-3">
+      <nav class="flex" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2">
+          <li>
+            <a href="#" class="text-gray-500 hover:text-gray-700">Home</a>
+          </li>
+          <li class="text-gray-400">/</li>
+          <li>
+            <a href="#" class="text-gray-500 hover:text-gray-700">Category</a>
+          </li>
+          <li class="text-gray-400">/</li>
+          <li class="text-gray-900 font-medium">Current Page</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="ml-64 p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold text-gray-800 mb-4">Page Content</h1>
+      <p class="text-gray-600">Content goes here...</p>
+    </div>
+  </main>
+</body>
+</html>
+
