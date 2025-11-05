@@ -1,18 +1,43 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directed Graph with D3.js</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="graph-creator.css" />
   </head>
 
-  <body>
-
-    <div id="toolbox">
-      <input type="file" id="hidden-file-upload"><input id="upload-input" type="image" title="upload graph" src="upload-icon.png" alt="upload graph"> <input type="image" id="download-input" title="download graph" src="download-icon.png" alt="download graph"> <input type="image" id="delete-graph" title="delete graph" src="trash-icon.png" alt="delete graph"> 
+  <body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+      <div id="toolbox" class="bg-white rounded-lg shadow-md p-4 mb-4 flex items-center space-x-3">
+        <input type="file" id="hidden-file-upload" class="hidden">
+        <input id="upload-input" 
+               type="image" 
+               title="upload graph" 
+               src="upload-icon.png" 
+               alt="upload graph"
+               class="cursor-pointer hover:opacity-75 transition-opacity">
+        <input type="image" 
+               id="download-input" 
+               title="download graph" 
+               src="download-icon.png" 
+               alt="download graph"
+               class="cursor-pointer hover:opacity-75 transition-opacity">
+        <input type="image" 
+               id="delete-graph" 
+               title="delete graph" 
+               src="trash-icon.png" 
+               alt="delete graph"
+               class="cursor-pointer hover:opacity-75 transition-opacity">
+      </div>
     </div>
 
     <script src="d3.v3.js" charset="utf-8"></script>    
     <script src="FileSaver.min.js"></script>
     <script src="graph-creator.js"></script>
   </body>
-
 </html>

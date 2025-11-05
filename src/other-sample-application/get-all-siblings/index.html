@@ -1,75 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-#myDIV {
-  border: 1px solid black;
-  margin: 5px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get All Siblings Example</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+    #myDIV {
+      border: 1px solid black;
+      margin: 5px;
+    }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <div id="myDIV" class="p-4 border border-gray-300 rounded-lg mb-4">
+                <h2 class="example text-xl font-semibold mb-2 text-gray-800">A heading with class="example" in div</h2>
+                <p class="example text-gray-700">A paragraph with class="example" in div.</p> 
+            </div>
 
-<div id="myDIV">
-  <h2 class="example">A heading with class="example" in div</h2>
-  <p class="example">A paragraph with class="example" in div.</p> 
-</div>
+            <p class="text-gray-700 mb-4">
+                Click the button to add a background color to the first element in DIV with class="example" (index 0).
+            </p>
 
-<p>Click the button to add a background color to the first element in DIV with class="example" (index 0).</p>
+            <button onclick="myFunction()" 
+                    class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors mb-4">
+                Try it
+            </button>
 
-<button onclick="myFunction()">Try it</button>
+            <p class="text-sm text-gray-600 mb-6">
+                <strong>Note:</strong> The querySelectorAll() method is not supported in Internet Explorer 8 and earlier versions.
+            </p>
 
-<p><strong>Note:</strong> The querySelectorAll() method is not supported in Internet Explorer 8 and earlier versions.</p>
-
-<div id="myUlDiv">
-<ul>
-    <li>
-        Root
-        <ul>
-            <li>
-                Node 1
-                <ul>
-                    <li>Node 11</li>
-                    <li>Node 12</li>
-                    <li>Node 13</li>
+            <div id="myUlDiv" class="p-4 bg-gray-50 rounded-lg mb-4">
+                <ul class="list-disc list-inside space-y-2">
+                    <li>
+                        Root
+                        <ul class="ml-6 mt-2 space-y-1">
+                            <li>
+                                Node 1
+                                <ul class="ml-6 mt-1 space-y-1">
+                                    <li>Node 11</li>
+                                    <li>Node 12</li>
+                                    <li>Node 13</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Node 2
+                                <ul class="ml-6 mt-1 space-y-1">
+                                    <li>Node 21</li>
+                                    <li>Node 22</li>
+                                    <li>Node 23</li>
+                                </ul>
+                            </li>
+                            <li>Node 3</li>
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                Node 2
-                <ul>
-                    <li>Node 21</li>
-                    <li>Node 22</li>
-                    <li>Node 23</li>
-                </ul>
-            </li>
-            <li>Node 3</li>
-        </ul>
-    </li>
-</ul>
-</div>
+            </div>
 
-<ul>
-    <li>test</li>
-</ul>
+            <ul class="list-disc list-inside mb-4">
+                <li>test</li>
+            </ul>
 
-<button onclick="myFunction1()">Try it</button>
+            <button onclick="myFunction1()" 
+                    class="px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+                Try it
+            </button>
+        </div>
+    </div>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myDIV").querySelectorAll(".example");
-  x[0].style.backgroundColor = "red";
-}
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV").querySelectorAll(".example");
+      x[0].style.backgroundColor = "red";
+    }
 
-function myFunction1() {
-  var x = document.getElementById("myUlDiv").querySelectorAll("li");
-  x[0].style.backgroundColor = "red";
+    function myFunction1() {
+      var x = document.getElementById("myUlDiv").querySelectorAll("li");
+      x[0].style.backgroundColor = "red";
 
-  x.forEach((item, index) => {
-      console.log({ index, item });
-      console.log(item.textContent);
-    });
-}
-</script>
-
+      x.forEach((item, index) => {
+          console.log({ index, item });
+          console.log(item.textContent);
+        });
+    }
+    </script>
 </body>
 </html>

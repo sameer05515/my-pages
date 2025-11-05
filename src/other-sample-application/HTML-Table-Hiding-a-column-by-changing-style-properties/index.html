@@ -1,44 +1,65 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>HTML Table : Hiding a column by changing style properties</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table: Hiding a column by changing style properties</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body onload="start()">
-    <p>
-        Once you have the object in your JavaScript variable, you can set style properties directly. The following code
-        is a modified version of sample1.html in which each cell of the second column is hidden and each cell of the
-        first column is changed to have a red background. Note that the style property was set directly.
-    </p>
-</body>
-<script>
-    function start() {
-        var mybody = document.getElementsByTagName("body")[0];
-        mytable = document.createElement("table");
-        mytablebody = document.createElement("tbody");
+<body onload="start()" class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <div class="bg-white rounded-lg shadow-md p-6 max-w-4xl">
+            <h1 class="text-2xl font-bold mb-4 text-gray-800">HTML Table: Hiding a column by changing style properties</h1>
+            <p class="text-gray-700 mb-6">
+                Once you have the object in your JavaScript variable, you can set style properties directly. The following code
+                is a modified version of sample1.html in which each cell of the second column is hidden and each cell of the
+                first column is changed to have a red background. Note that the style property was set directly.
+            </p>
+            <!-- Table will be inserted here by JavaScript -->
+        </div>
+    </div>
+    
+    <script>
+        function start() {
+            var mybody = document.getElementsByTagName("body")[0];
+            var container = mybody.querySelector('.container .bg-white');
+            
+            mytable = document.createElement("table");
+            mytablebody = document.createElement("tbody");
+            
+            // Add Tailwind classes to table
+            mytable.className = "min-w-full divide-y divide-gray-200 border border-gray-300";
 
-        for (var row = 0; row < 5; row++) {
-            mycurrent_row = document.createElement("tr");
-            for (var col = 0; col < 6; col++) {
-                mycurrent_cell = document.createElement("td");
-                currenttext = document.createTextNode("cell is: " + row + col);
-                mycurrent_cell.appendChild(currenttext);
-                mycurrent_row.appendChild(mycurrent_cell);
-                // set the cell background color
-                // if the column is 0. If the column is 1 hide the cell
-                if (col === 0) {
-                    mycurrent_cell.style.background = "rgb(255,0,0)";
-                } else if (col === 1) {
-                    mycurrent_cell.style.display = "none";
-                }else{
-                    mycurrent_cell.style.background = "rgb(255,255,0)";
+            for (var row = 0; row < 5; row++) {
+                mycurrent_row = document.createElement("tr");
+                mycurrent_row.className = "bg-white hover:bg-gray-50";
+                
+                for (var col = 0; col < 6; col++) {
+                    mycurrent_cell = document.createElement("td");
+                    currenttext = document.createTextNode("cell is: " + row + col);
+                    mycurrent_cell.appendChild(currenttext);
+                    mycurrent_cell.className = "px-6 py-4 whitespace-nowrap text-sm text-gray-900";
+                    
+                    mycurrent_row.appendChild(mycurrent_cell);
+                    // set the cell background color
+                    // if the column is 0. If the column is 1 hide the cell
+                    if (col === 0) {
+                        mycurrent_cell.style.background = "rgb(255,0,0)";
+                        mycurrent_cell.style.color = "white";
+                    } else if (col === 1) {
+                        mycurrent_cell.style.display = "none";
+                    } else {
+                        mycurrent_cell.style.background = "rgb(255,255,0)";
+                    }
                 }
+                mytablebody.appendChild(mycurrent_row);
             }
-            mytablebody.appendChild(mycurrent_row);
+            mytable.appendChild(mytablebody);
+            container.appendChild(mytable);
         }
-        mytable.appendChild(mytablebody);
-        mybody.appendChild(mytable);
-    }
-</script>
-
+    </script>
+</body>
 </html>

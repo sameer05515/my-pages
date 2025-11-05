@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript addEventListener()</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8 max-w-2xl">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">JavaScript addEventListener()</h2>
+            <p class="text-gray-700 mb-6">
+                This example uses the addEventListener() method to add many events on the same button.
+            </p>
 
-<h2>JavaScript addEventListener()</h2>
+            <button id="myBtn" 
+                    class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-semibold mb-4">
+                Try it
+            </button>
 
-<p>This example uses the addEventListener() method to add many events on the same button.</p>
+            <p id="demo" class="text-gray-700 font-mono bg-gray-100 p-4 rounded min-h-[100px]"></p>
+        </div>
+    </div>
 
-<button id="myBtn">Try it</button>
+    <script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("mouseover", myFunction);
+    x.addEventListener("click", mySecondFunction);
+    x.addEventListener("mouseout", myThirdFunction);
 
-<p id="demo"></p>
+    function myFunction() {
+      document.getElementById("demo").innerHTML += "Moused over!<br>";
+    }
 
-<script>
-var x = document.getElementById("myBtn");
-x.addEventListener("mouseover", myFunction);
-x.addEventListener("click", mySecondFunction);
-x.addEventListener("mouseout", myThirdFunction);
+    function mySecondFunction() {
+      document.getElementById("demo").innerHTML += "Clicked!<br>";
+    }
 
-function myFunction() {
-  document.getElementById("demo").innerHTML += "Moused over!<br>";
-}
-
-function mySecondFunction() {
-  document.getElementById("demo").innerHTML += "Clicked!<br>";
-}
-
-function myThirdFunction() {
-  document.getElementById("demo").innerHTML += "Moused out!<br>";
-}
-</script>
-
+    function myThirdFunction() {
+      document.getElementById("demo").innerHTML += "Moused out!<br>";
+    }
+    </script>
 </body>
 </html>
