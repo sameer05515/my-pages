@@ -72,7 +72,7 @@
 
 		<!-- Show Data Section -->
 		<div ng-show="showData" class="mb-3">
-			<div ng-repeat="option in categoryData" class="form-check">
+			<div ng-repeat="option in categoryData track by option.catID" class="form-check">
 				<label class="form-check-label">
 					<input type="checkbox" ng-model="option.showQuestionsOfCategory" class="form-check-input">
 					<span ng-bind-html="option.catgoryName"></span>
@@ -83,7 +83,7 @@
 		<!-- Category Data Renderer -->
 		<div class="col-lg-12">
 			<div ng-style="stylesData.templateParentDescriptionStyle"
-			     ng-repeat="templateCategoryData in categoryData"
+			     ng-repeat="templateCategoryData in categoryData track by templateCategoryData.catID"
 			     ng-show="settings.showDbBakupLinkData"
 			     ng-include="'template/categoryData_item_renderer.html'">
 			</div>

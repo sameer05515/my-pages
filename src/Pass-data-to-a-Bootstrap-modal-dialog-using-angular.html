@@ -44,7 +44,7 @@
           <th>Name</th>
           <th>Actions</th>
         </tr>
-        <tr ng-repeat="person in persons">
+        <tr ng-repeat="person in persons track by $index">
           <!-- {{person.name}} displays the current person's name.
                The Edit button opens the modal dialog for that specific person by passing 'person' to editDialog.open(). -->
           <td>{{person.name}}</td>

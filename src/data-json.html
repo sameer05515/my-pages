@@ -36,13 +36,13 @@
         ng-click="clicklinkData('data/json/word-root-synthesized-data/word-suffixes.json','wordSuffixes')">word-suffixes.json</button><br />
 
 
-    <div ng-show="showSectionLINK_DATA" ng-repeat="irregVerb in IrregularVerbData">
+    <div ng-show="showSectionLINK_DATA" ng-repeat="irregVerb in IrregularVerbData track by $index">
         INSERT INTO t_irregular_verb (id, unique_name, V1Infinitive, V2SimplePast, V3PastParticiple, example)
         VALUES ('{{$index+1}}','{{irregVerb.V1Infinitive+($index+1)}}','{{irregVerb.V1Infinitive}}',
         '{{irregVerb.V2SimplePast}}','{{irregVerb.V3PastParticiple}}','""');
     </div>
 
-    <div ng-show="showSectionwordRoots" ng-repeat="wrData in WordRootsData">
+    <div ng-show="showSectionwordRoots" ng-repeat="wrData in WordRootsData track by $index">
         INSERT INTO t_word_root(id, unique_name, RootWord, Meanings, Origin,
         ExamplesAndDefinitions, remarks)
         VALUES ('{{$index+1}}','{{HtmlEncode(wrData.RootWord+($index+1))}}',
@@ -50,7 +50,7 @@
         '{{HtmlEncode(wrData.Origin)}}','{{HtmlEncode(wrData.ExamplesAndDefinitions)}}','""');
     </div>
 
-    <div ng-show="showSectionwordSuffixes" ng-repeat="wsuffxData in wordSuffixesData">
+    <div ng-show="showSectionwordSuffixes" ng-repeat="wsuffxData in wordSuffixesData track by $index">
         <!-- {{wsuffxData|json}} -->
         INSERT INTO t_word_suffixes(id, unique_name, Suffix, Meanings,
         SampleWordsAndDefinitions, remarks)

@@ -2,7 +2,7 @@
   Category : <span style="font: 200% sans-serif; color: #045504; font-weight: bold" ng-bind-html="templateCategoryData.catgoryName" />
   <!-- <h4>TotalQuestions : {{templateCategoryData.questions.length}}</h4> -->
   <h4>TotalQuestions : {{templateCategoryData.totalQuestionsCount}}</h4>
-  <a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateCategoryData.catID}}">
+  <a class="btn btn-xs btn-primary" href="#/categories/{{templateCategoryData.catID}}">
     Details
     <i class="fa fa-angle-right"></i>
   </a>
@@ -37,5 +37,5 @@
     <a class="btn btn-xs btn-primary" ng-click="templateCategoryData.showEditCategory=false" ng-if="templateCategoryData.showEditCategory">Cancel</a>
   </div>
 
-  <div ng-show="(settings.showDbBakupLinkData)&&(!templateCategoryData.collapseCategoryQuestions)" ng-repeat="templateQuestionData in templateCategoryData.questions" ng-include="'template/questionData_item_renderer.html'"></div>
+  <div ng-show="(settings.showDbBakupLinkData)&&(!templateCategoryData.collapseCategoryQuestions)" ng-repeat="templateQuestionData in templateCategoryData.questions track by $index" ng-include="'template/questionData_item_renderer.html'"></div>
 </div>

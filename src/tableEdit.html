@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
  <link rel="stylesheet" href="lib/css/bootstrap.min.css">
  <title>Angular Custom Table Edit</title>
  <style>
@@ -28,12 +30,12 @@
                   <th style="width:25%;">Actions</th> 
                  </thead>
             <tbody>
-                <tr ng-repeat="emp in empoyees">
+                <tr ng-repeat="emp in empoyees track by $index">
                    <td>{{$index+1}}</td>
                    <td><input name="empId{{$index}}" ng-model="emp.empId"  ng-disabled="!enabledEdit[{{$index}}]"/> </td>
                    <td><input name="email{{$index}}" ng-model="emp.email" ng-disabled="!enabledEdit[{{$index}}]" /> </td>
                     <td><input name="firstName{{$index}}" ng-model="emp.firstName" ng-disabled="!enabledEdit[{{$index}}]"/></td>
-                    <td><input name="lastName{{$index}}" ng-model="emp.lastName" ng-disabled="!enabledEdit[{{$index}}]"</td>
+                    <td><input name="lastName{{$index}}" ng-model="emp.lastName" ng-disabled="!enabledEdit[{{$index}}]" /></td>
                     <td><input name="designation{{$index}}" ng-model="emp.designation" ng-disabled="!enabledEdit[{{$index}}]"/></td>
                     <td><input name="project{{$index}}" ng-model="emp.project" ng-disabled="!enabledEdit[{{$index}}]"/></td>
                      <td >

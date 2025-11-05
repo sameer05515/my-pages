@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta chrset="UTF 8" />
+    <meta charset="UTF-8" />
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" /> -->
     <link rel="stylesheet" href="lib/css/trix.css" />
     <link rel="stylesheet" href="lib/css/star-rating.css" />
@@ -53,7 +53,7 @@
       <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
         <h3>Example : Custom elements created using DOM Manipulation : -</h3>
         <a class="btn btn-sm btn-primary" id="$index" ng-click="addFruit('ddd@gmail.com');">Add</a>
-        <div class="row" ng-repeat="email in emailData">
+        <div class="row" ng-repeat="email in emailData track by $index">
           <make-bold-prem class="col-lg-12" email="{{email}}" ng-click="addFruit(email)"> </make-bold-prem>
         </div>
         <pre
@@ -77,7 +77,7 @@
         Using Template :- <br /><br />
         <input type="text" ng-model="linkSearch" />
         <div
-          ng-repeat="data in linkData | filter:linkSearch"
+          ng-repeat="data in linkData | filter:linkSearch track by $index"
           ng-show="{{settings.showLinkData}}"
           ng-include="'template/linkData_item_renderer.html'"
         ></div>
@@ -94,7 +94,7 @@
 
       <div ng-style="stylesData.preDescriptionStyle" class="col-lg-12">
         <span
-          ng-repeat="x in dbBakupLinkData"
+          ng-repeat="x in dbBakupLinkData track by $index"
           ng-show="{{settings.showDbBakupLinkData}}"
           ng-include="'template/dbBakupLinkData_item_renderer.html'"
         >
@@ -105,7 +105,7 @@
 
       <div class="col-lg-12" ng-style="stylesData.preDescriptionStyle">
         <ul>
-          <li ng-repeat="data in importResponse.data.importPlan" ng-include="'template/plan_item_renderer.html'"></li>
+          <li ng-repeat="data in importResponse.data.importPlan track by $index" ng-include="'template/plan_item_renderer.html'"></li>
         </ul>
       </div>
 

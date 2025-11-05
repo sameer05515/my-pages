@@ -1,7 +1,7 @@
 <div ng-style="stylesData.templateQuestionDataDescriptionStyle">
   Question : <span style="font: 175% sans-serif; color: #ff000d; font-weight: bold" ng-bind-html="templateQuestionData.question" />
 
-  <a class="btn btn-xs btn-primary" ng-click="http://127.0.0.1:8080/bce-gui/#/categories/{{templateQuestionData.linkedCatID}}/questions/{{templateQuestionData.questionID}}">
+  <a class="btn btn-xs btn-primary" href="#/categories/{{templateQuestionData.linkedCatID}}/questions/{{templateQuestionData.questionID}}">
     Details
     <i class="fa fa-angle-right"></i>
   </a>
@@ -31,5 +31,5 @@
     <a class="btn btn-xs btn-primary" ng-click="templateQuestionData.showEditQuestion=false" ng-if="templateQuestionData.showEditQuestion">Cancel</a>
   </div>
 
-  <div ng-repeat="templateAnswerData in templateQuestionData.answers" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/answerData_item_renderer.html'"></div>
+  <div ng-repeat="templateAnswerData in templateQuestionData.answers track by $index" ng-show="{{settings.showDbBakupLinkData}}" ng-include="'template/answerData_item_renderer.html'"></div>
 </div>
