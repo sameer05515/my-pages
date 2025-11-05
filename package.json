@@ -8,12 +8,15 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./src/server.js"
+    "start": "nodemon ./src/server.js",
+    "build:css": "tailwindcss -i ./src/css/tailwind.css -o ./src/css/tailwind-output.css --watch",
+    "build:css:prod": "tailwindcss -i ./src/css/tailwind.css -o ./src/css/tailwind-output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.9"
+    "nodemon": "^3.1.9",
+    "tailwindcss": "^3.4.1"
   }
 }

@@ -1,0 +1,20 @@
+/* Tailwind CSS Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind Components */
+@layer components {
+  /* Add your custom component classes here */
+  /* Example:
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600;
+  }
+  */
+}
+
+/* Custom Tailwind Utilities */
+@layer utilities {
+  /* Add your custom utility classes here */
+}
+
