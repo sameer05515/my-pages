@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ngTable Examples</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/social.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
 
     <!--[if lt IE 9]>
@@ -17,77 +22,91 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.js"></script>
     <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.js"></script>
     <script src="js/embed-codepen.min.js"></script>
-
     <script src="js/angular-social.js"></script>
 
     <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/github.min.css">
     <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
 </head>
-<body ng-app="main" class="container-fluid">
-<a target="_blank" href="https://github.com/esvit/ng-table"><img style="position: absolute; z-index: 100; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<body ng-app="main" class="bg-gray-50">
+<a target="_blank" href="https://github.com/esvit/ng-table" class="fixed top-0 right-0 z-50">
+    <img style="border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png">
+</a>
 
-<div class="row">
-    <div class="col-md-9">
-
-        <div ng-view></div>
-
-    </div>
-    <div class="col-md-3">
-
-        <div class="bs-docs-sidebar hidden-print" role="complementary">
-            <a style="display: block" href="http://www.eliftech.com/#contact" target="_blank" class="bs-callout bs-callout-danger">
-                <span class="text-muted">If you need professional support with<br/> your angular projects
-                or even hire a full stack dev team, contact this company</span> http://www.eliftech.com/.
-                <br/><strong class="text-muted">I currently work there @esvit</strong>
-            </a>
-
-            <ul class="nav bs-docs-sidenav" ng-controller="menuController as menu">
-                <li class="clearfix">
-                    <h1 class="pull-left"><a href="#/">ngTable</a></h1>
-                    <a href="api-docs/index.html" class="btn btn-default btn-lg pull-right" role="button">API Docs</a>
-                </li>
-                <li class="active" ng-repeat="section in menu.sections">
-                    <a ng-href="{{ section.url }}" ng-click="section.hasMore && (section.isOpen = !section.isOpen)"
-                       ng-style="!section.hasMore && !section.url && { 'cursor': 'text'}">
-                        {{ $index + '. ' + section.title }}
-                        <span ng-if="section.isOpen && section.hasMore" class="glyphicon glyphicon-chevron-up"></span>
-                    </a>
-                    <ul class="nav">
-                        <li>
-                            <a href="{{section.items[0].url}}" ng-bind-html="section.items[0].title"></a>
-                        </li>
-                        <li ng-if="!section.isOpen && section.hasMore">
-                            <a href="" style="display: block" ng-click="section.isOpen = true">
-                                more <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
-                        </li>
-                        <li ng-show="!section.hasMore || section.isOpen" ng-repeat="item in section.items|limitTo:section.items.length:1">
-                            <a href="{{item.url}}" ng-bind-html="item.title"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+<div class="container mx-auto px-4 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+        <!-- Main Content -->
+        <div class="lg:col-span-3">
+            <div ng-view class="bg-white rounded-lg shadow-md p-6"></div>
         </div>
+        
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+            <div class="bg-white rounded-lg shadow-md p-6 sticky top-4">
+                <a style="display: block" href="http://www.eliftech.com/#contact" target="_blank" class="bg-red-50 border-l-4 border-red-500 p-4 mb-4 rounded">
+                    <span class="text-gray-600 text-sm">If you need professional support with<br/> your angular projects
+                    or even hire a full stack dev team, contact this company</span> http://www.eliftech.com/.
+                    <br/><strong class="text-gray-600">I currently work there @esvit</strong>
+                </a>
 
+                <ul class="space-y-2" ng-controller="menuController as menu">
+                    <li class="flex items-center justify-between mb-4">
+                        <h1 class="text-2xl font-bold"><a href="#/" class="text-gray-800">ngTable</a></h1>
+                        <a href="api-docs/index.html" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors text-sm font-medium" role="button">API Docs</a>
+                    </li>
+                    <li class="mb-2" ng-repeat="section in menu.sections track by $index">
+                        <a ng-href="{{ section.url }}" 
+                           ng-click="section.hasMore && (section.isOpen = !section.isOpen)"
+                           ng-style="!section.hasMore && !section.url && { 'cursor': 'text'}"
+                           class="block px-3 py-2 text-gray-700 hover:bg-gray-50 rounded transition-colors"
+                           ng-class="{'bg-blue-50 text-blue-700': section.isOpen}">
+                            {{ $index + '. ' + section.title }}
+                            <span ng-if="section.isOpen && section.hasMore" class="ml-2">▲</span>
+                        </a>
+                        <ul class="ml-4 mt-1 space-y-1">
+                            <li>
+                                <a href="{{section.items[0].url}}" 
+                                   ng-bind-html="section.items[0].title"
+                                   class="block px-3 py-1 text-sm text-gray-600 hover:text-blue-600 rounded transition-colors"></a>
+                            </li>
+                            <li ng-if="!section.isOpen && section.hasMore">
+                                <a href="" 
+                                   style="display: block" 
+                                   ng-click="section.isOpen = true"
+                                   class="block px-3 py-1 text-sm text-gray-600 hover:text-blue-600 rounded transition-colors">
+                                    more →
+                                </a>
+                            </li>
+                            <li ng-show="!section.hasMore || section.isOpen" ng-repeat="item in section.items|limitTo:section.items.length:1 track by $index">
+                                <a href="{{item.url}}" 
+                                   ng-bind-html="item.title"
+                                   class="block px-3 py-1 text-sm text-gray-600 hover:text-blue-600 rounded transition-colors"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
-<footer class="bs-footer">
-    <p>Made with love in <strong>Ukraine</strong>. On any questions or propositions write me a letter <a href="mailto:esvit666@gmail.com">esvit666@gmail.com</a></p>
-    <p>Code licensed under <a href="http://creativecommons.org/licenses/BSD/" target="_blank">New BSD License</a>.</p>
 
-    <ul ng-social-buttons class="padded"
-        data-url="'http://bazalt-cms.com/ng-table/'"
-        data-title="'ngTable: cool directive for simple and easy work with table on AngularJS'"
-        data-description="'Angular Table directive'">
-        <li class="ng-social-facebook">Facebook</li>
-        <li class="ng-social-twitter">Twitter</li>
-        <li class="ng-social-google-plus">Google+</li>
-        <li class="ng-social-github" user="esvit" repository="ng-table">GitHub</li>
-        <li class="ng-social-github-forks" user="esvit" repository="ng-table">Forks</li>
-    </ul>
+<footer class="bg-gray-800 text-white mt-12 py-8">
+    <div class="container mx-auto px-4 text-center">
+        <p class="mb-2">Made with love in <strong>Ukraine</strong>. On any questions or propositions write me a letter <a href="mailto:esvit666@gmail.com" class="text-blue-300 hover:text-blue-100">esvit666@gmail.com</a></p>
+        <p class="mb-4">Code licensed under <a href="http://creativecommons.org/licenses/BSD/" target="_blank" class="text-blue-300 hover:text-blue-100">New BSD License</a>.</p>
+
+        <ul ng-social-buttons class="flex justify-center space-x-4"
+            data-url="'http://bazalt-cms.com/ng-table/'"
+            data-title="'ngTable: cool directive for simple and easy work with table on AngularJS'"
+            data-description="'Angular Table directive'">
+            <li class="ng-social-facebook">Facebook</li>
+            <li class="ng-social-twitter">Twitter</li>
+            <li class="ng-social-google-plus">Google+</li>
+            <li class="ng-social-github" user="esvit" repository="ng-table">GitHub</li>
+            <li class="ng-social-github-forks" user="esvit" repository="ng-table">Forks</li>
+        </ul>
+    </div>
 </footer>
 
 <script src="app/app.js"></script>
-
 </body>
 </html>

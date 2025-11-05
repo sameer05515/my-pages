@@ -1,53 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AngularJS UI Tree demo</title>
 
-  <!-- Stylesheets -->
-  <!-- <link rel="stylesheet" href="../bower_components/bootstrap-css/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="http://127.0.0.1:8888/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="../source/angular-ui-tree.css">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body ng-app="demoApp">
-<div class="container">
+<body ng-app="demoApp" class="bg-gray-50">
+<div class="container mx-auto px-4 py-8">
   <div>
-    <div class="jumbotron">
-      <h1>Tree component</h1>
-
-      <p class="lead">The AngularJS Tree component with drag and drop support.</p>
-
-      <p><a class="btn btn-lg btn-success" href="https://github.com/angular-ui-tree/angular-ui-tree" role="button">Code on
-        GitHub</a></p>
+    <div class="bg-white rounded-lg shadow-lg p-8 mb-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">Tree component</h1>
+      <p class="text-xl text-gray-600 mb-4">The AngularJS Tree component with drag and drop support.</p>
+      <p>
+        <a class="inline-block px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors text-lg font-semibold" 
+           href="https://github.com/angular-ui-tree/angular-ui-tree" 
+           role="button">Code on GitHub</a>
+        </p>
     </div>
 
-    <div class="row">
-      <div class="col-md-4">
-        <h2>View Examples</h2>
-        <ol>
-          <li><a href="#/basic-example">Basic example</a></li>
-          <li><a href="#/filter-nodes">Filter nodes</a></li>
-          <li><a href="#/nodrop">Prevent drop</a></li>
-          <li><a href="#/connected-trees">Connected trees</a></li>
-          <li><a href="#/cloning">Cloning</a></li>
-          <li><a href="#/table-example">Table example</a></li>
-          <li><a href="#/drop-confirmation">Drop confirmation</a></li>
-          <li><a href="#/expand-on-hover">Expand parent node on drag hover</a></li>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">View Examples</h2>
+        <ol class="list-decimal list-inside space-y-2 text-gray-700">
+          <li><a href="#/basic-example" class="text-blue-600 hover:text-blue-800">Basic example</a></li>
+          <li><a href="#/filter-nodes" class="text-blue-600 hover:text-blue-800">Filter nodes</a></li>
+          <li><a href="#/nodrop" class="text-blue-600 hover:text-blue-800">Prevent drop</a></li>
+          <li><a href="#/connected-trees" class="text-blue-600 hover:text-blue-800">Connected trees</a></li>
+          <li><a href="#/cloning" class="text-blue-600 hover:text-blue-800">Cloning</a></li>
+          <li><a href="#/table-example" class="text-blue-600 hover:text-blue-800">Table example</a></li>
+          <li><a href="#/drop-confirmation" class="text-blue-600 hover:text-blue-800">Drop confirmation</a></li>
+          <li><a href="#/expand-on-hover" class="text-blue-600 hover:text-blue-800">Expand parent node on drag hover</a></li>
         </ol>
       </div>
 
-      <div class="col-md-4">
-        <h2>What?</h2>
-        <p>
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">What?</h2>
+        <p class="text-gray-700">
           Angular Tree is an AngularJS UI component that can sort nested lists, provides drag &amp; drop support and
           doesn't depend on jQuery.
         </p>
       </div>
-      <div class="col-md-4">
-        <h2>Features</h2>
-        <ul>
+      
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Features</h2>
+        <ul class="list-disc list-inside space-y-2 text-gray-700">
           <li>Uses the native AngularJS scope for data binding</li>
           <li>Sorted and move items through the entire tree</li>
           <li>Prevent elements from accepting child nodes</li>
@@ -56,13 +60,10 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-sm-12">
-      <h2>See it in action</h2>
-      <ng-view></ng-view>
-    </div>
+  <div class="bg-white rounded-lg shadow-md p-6">
+    <h2 class="text-2xl font-semibold mb-4 text-gray-800">See it in action</h2>
+    <ng-view></ng-view>
   </div>
-
 </div>
 
 <!-- JavaScript -->
@@ -71,14 +72,10 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
 <![endif]-->
 
-<!-- <script src="../bower_components/angular/angular.min.js"></script>
-<script src="../bower_components/angular-route/angular-route.min.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script> -->
-
-<script src='http://127.0.0.1:8888/angular-1.5.5/angular.min.js'></script>
-<script src="http://127.0.0.1:8888/angular-1.5.5/angular-route.min.js"></script>
-<script src="http://127.0.0.1:8888/angular-1.0.8/ui-bootstrap-tpls.min.js"></script>
-
+<!-- AngularJS Scripts -->
+<script src='../../lib/js/angular-1.5.5/angular.min.js'></script>
+<script src="../../lib/js/angular-1.5.5/angular-route.min.js"></script>
+<script src="../../lib/js/angular-1.0.8/ui-bootstrap-tpls.min.js"></script>
 
 <script src="../source/main.js"></script>
 <script src="../source/controllers/handleCtrl.js"></script>
@@ -99,5 +96,6 @@
 <script src="js/table-example.js"></script>
 <script src="js/drop-confirmation.js"></script>
 <script src="js/expand-on-hover.js"></script>
+<script src="js/nodrop.js"></script>
 </body>
 </html>

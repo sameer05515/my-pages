@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<html ng-app="myApp">
+<html lang="en" ng-app="myApp">
 <head>
-<title>AngularJS Swipe Slider animation</title>
-<meta name="viewport" content="width=device-width,height=deviceheight,
-user-scalable=no">
-
-<link href="mobile.css" rel="stylesheet" />
-<link href="http://ajax.aspnetcdn.com/ajax/bootstrap/3.2.0/css/
-bootstrap.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AngularJS Swipe Slider Animation</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Styles -->
+  <link href="mobile.css" rel="stylesheet" />
 </head>
-<body>
-<div ng-controller="tabsSwipeCtrl as responsive">
-<div class="btn-group btn-group-justified">
-<div class="btn-group">
-<button type="button" class="btn btn-default" ngclick="
-responsive.selectPage(0)" ng-class="{'active': responsive.
-ngIncludeSelected.index == 0}">First</button>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-default" ngclick="
-responsive.selectPage(1)" ng-class="{'active': responsive.
-ngIncludeSelected.index == 1}">Second</button>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-default" ngclick="
-responsive.selectPage(2)" ng-class="{'active': responsive.
-ngIncludeSelected.index == 2}">Third</button>
-</div>
-<div class="btn-group">
-<button type="button" class="btn btn-default" ngclick="
-responsive.selectPage(3)" ng-class="{'active': responsive.
-ngIncludeSelected.index == 3}">Fourth</button>
-</div>
-</div>
-<div class="ngIncludeRelative">
-<div class="ngIncludeItem" ng-include="responsive.
-ngIncludeSelected.url" ng-class="{'moveToLeft' : responsive.
-moveToLeft}"></div>
-</div>
-</div>
-<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/
-angular.min.js"></script> -->
-<script src='http://127.0.0.1:8888/angular-1.5.5/angular.min.js'></script>
-<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/
-angular-touch.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/
-angular-animate.min.js"></script>
- --><script src="http://127.0.0.1:8888/angular-1.5.5/angular-touch.min.js"></script>
-<script src="http://127.0.0.1:8888/angular-1.5.5/angular-animate.min.js"></script>
-<script src="tabsSwipeCtrl.js"></script>
+
+<body class="bg-gray-50">
+  <div ng-controller="tabsSwipeCtrl as responsive" class="container mx-auto px-4 py-8">
+    <!-- Button Group -->
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button type="button" 
+              class="px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+              ng-class="{'bg-blue-500 text-white border-blue-500': responsive.ngIncludeSelected.index == 0}"
+              ng-click="responsive.selectPage(0)">First</button>
+      <button type="button" 
+              class="px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+              ng-class="{'bg-blue-500 text-white border-blue-500': responsive.ngIncludeSelected.index == 1}"
+              ng-click="responsive.selectPage(1)">Second</button>
+      <button type="button" 
+              class="px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+              ng-class="{'bg-blue-500 text-white border-blue-500': responsive.ngIncludeSelected.index == 2}"
+              ng-click="responsive.selectPage(2)">Third</button>
+      <button type="button" 
+              class="px-4 py-2 border border-gray-300 rounded-lg bg-white hover:bg-gray-50 transition-colors"
+              ng-class="{'bg-blue-500 text-white border-blue-500': responsive.ngIncludeSelected.index == 3}"
+              ng-click="responsive.selectPage(3)">Fourth</button>
+    </div>
+    
+    <!-- Content Area -->
+    <div class="ngIncludeRelative">
+      <div class="ngIncludeItem bg-white rounded-lg shadow-md p-6" 
+           ng-include="responsive.ngIncludeSelected.url" 
+           ng-class="{'moveToLeft': responsive.moveToLeft}">
+      </div>
+    </div>
+  </div>
+
+  <!-- AngularJS Scripts -->
+  <script src="../../lib/js/angular-1.5.5/angular.min.js"></script>
+  <script src="../../lib/js/angular-1.5.5/angular-touch.min.js"></script>
+  <script src="../../lib/js/angular-1.5.5/angular-animate.min.js"></script>
+  <script src="tabsSwipeCtrl.js"></script>
 </body>
 </html>

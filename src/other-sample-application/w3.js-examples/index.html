@@ -1,416 +1,391 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../../lib/css/bootstrap-3.3.6-dist/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="../../lib/css/font-awesome-4.6.3/css/font-awesome.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W3.js Examples</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../lib/css/font-awesome-4.6.3/css/font-awesome.min.css" />
+  
+  <!-- jQuery -->
+  <script src="../../lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
+  
+  <!-- W3.js -->
+  <script src="../../lib/js/w3.js/w3.js"></script>
 
-    <script src="../../lib/js/jquery1.11.3/jquery-1.11.3.js"></script>
-    <script src="../../lib/css/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+  <style>
+    .toggleClassDivMarked {
+      background-color: orange;
+      font-size: 30px;
+      color: white;
+    }
 
-    <script src="../../lib/js/w3.js/w3.js"></script>
-
-    <style>
-        .toggleClassDivMarked {
-            background-color: orange;
-            font-size: 30px;
-            color: white;
-        }
-
-        .addClassDivMarked {
-            background-color: orange;
-            font-size: 30px;
-            color: white;
-        }
-    </style>
-
-    <script>
-
-    </script>
+    .addClassDivMarked {
+      background-color: orange;
+      font-size: 30px;
+      color: white;
+    }
+  </style>
 </head>
 
-<body>
-    <div class="container">
-
-        <div class="well col-lg-12" style="margin-top: 50px;">
-            <h1>w3 references pages</h1>
-            <ul>
-                <li>
-                    <a href="w3-refs/DOM HTMLCollection.html">DOM HTMLCollection.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/Event Objects.html">Event Objects.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/HTML DOM Attribute Objects.html">HTML DOM Attribute Objects.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/HTML DOM Document Objects.html">HTML DOM Document Objects.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/HTML DOM Element Objects.html">HTML DOM Element Objects.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/HTML DOM Event Object.html">HTML DOM Event Object.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/HTML DOM Style object.html">HTML DOM Style object.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/JavaScript and HTML DOM Reference.html">JavaScript and HTML DOM Reference.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/Location Object.html">Location Object.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/Navigator Object.html">Navigator Object.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/Screen Object.html">Screen Object.html</a>
-                </li>
-                <li>
-                    <a href="w3-refs/Window Object.html">Window Object.html</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="well col-lg-12" style="margin-top: 50px;">
-            <h1>w3.show() and w3.hide() example</h1>
-            <p>Click the buttons to hide or show the element with id="London".</p>
-
-            <button onclick="w3.hide('#London')">Hide</button>
-            <button onclick="w3.show('#London')">Show</button>
-
-            <div id="London" class="city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="Paris" class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
-        </div>
-        <!-- /. w3.show() and w3.hide() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.toggleShow() example</h1>
-            <p>Click the button to toggle between hiding and showing the element with id="London".</p>
-            <button onclick="w3.toggleShow('#London')">Toggle Hide/Show</button>
-            <div id="London" class="city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="Paris" class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
-
-            <div id="Tokyo" class="city">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-        </div>
-        <!-- /. w3.toggleShow() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.toggleClass() example</h1>
-            <p>Click the button to toggle the "marked" class of id="LondonToggleClassExample".</p>
-            <button onclick="w3.toggleClass('#LondonToggleClassExample','toggleClassDivMarked')">Toggle Class</button>
-            <div id="LondonToggleClassExample" class="city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="ParisToggleClassExample" class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
-        </div>
-        <!-- /. w3.toggleClass() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.addClass() & w3.removeClass() example</h1>
-            <p>Click the button to add the "marked" class to id="LondonAddClassId".</p>
-
-            <button onclick="w3.addClass('#LondonAddClassId','addClassDivMarked');">
-                Add Class
-            </button>
-
-            <button onclick="w3.removeClass('#LondonAddClassId','addClassDivMarked')">
-                Remove Class
-            </button>
-
-            <div id="LondonAddClassId" class="city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="ParisAddClassId" class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
-        </div>
-        <!-- /. w3.toggleClass() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.addStyle() example</h1>
-
-            <p>Click the button to add a red background color to id="LondonAddStyleId".</p>
-            <button onclick="w3.addStyle('#LondonAddStyleId','background-color','red')">Add Style</button>
-
-            <!-- <button onclick="w3.addStyle('#LondonAddStyleId','background-color','red')">Remove Style</button> -->
-
-            <div id="LondonAddStyleId" class="city">
-                <h2>London</h2>
-                <p>London is the capital city of England.</p>
-            </div>
-
-            <div id="ParisAddStyleId" class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
-            </div>
-
-            <div id="TokyoAddStyleId" class="city">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
-            </div>
-        </div>
-        <!-- /. w3.addStyle() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.filterHTML() example</h1>
-
-            <h2>Filter Table</h2>
-
-            <p>Search for a name in the input field:</p>
-
-            <p>
-                <input oninput="w3.filterHTML('#id01FilterHTML', '.item', this.value)" placeholder="Search for names..">
-            </p>
-
-            <table id="id01FilterHTML" border="1">
-                <tr>
-                    <th>Customer</th>
-                    <th>City</th>
-                    <th>Country</th>
-                </tr>
-                <tr class="item">
-                    <td>Alfreds Futterkiste</td>
-                    <td>Berlin</td>
-                    <td>Germany</td>
-                </tr>
-                <tr class="item">
-                    <td>Berglunds snabbkop</td>
-                    <td>Luleå</td>
-                    <td>Sweden</td>
-                </tr>
-                <tr class="item">
-                    <td>Centro comercial Moctezuma</td>
-                    <td>México D.F.</td>
-                    <td>Mexico</td>
-                </tr>
-                <tr class="item">
-                    <td>Ernst Handel</td>
-                    <td>Graz</td>
-                    <td>Austria</td>
-                </tr>
-                <tr class="item">
-                    <td>FISSA Fabrica Inter. Salchichas S.A.</td>
-                    <td>Madrid</td>
-                    <td>Spain</td>
-                </tr>
-                <tr class="item">
-                    <td>Galería del gastrónomo</td>
-                    <td>Barcelona</td>
-                    <td>Spain</td>
-                </tr>
-                <tr class="item">
-                    <td>Island Trading</td>
-                    <td>Cowes</td>
-                    <td>UK</td>
-                </tr>
-                <tr class="item">
-                    <td>Königlich Essen</td>
-                    <td>Brandenburg</td>
-                    <td>Germany</td>
-                </tr>
-                <tr class="item">
-                    <td>Laughing Bacchus Wine Cellars</td>
-                    <td>Vancouver</td>
-                    <td>Canada</td>
-                </tr>
-                <tr class="item">
-                    <td>Magazzini Alimentari Riuniti</td>
-                    <td>Bergamo</td>
-                    <td>Italy</td>
-                </tr>
-                <tr class="item">
-                    <td>North/South</td>
-                    <td>London</td>
-                    <td>UK</td>
-                </tr>
-                <tr class="item">
-                    <td>Paris spécialités</td>
-                    <td>Paris</td>
-                    <td>France</td>
-                </tr>
-                <tr class="item">
-                    <td>Rattlesnake Canyon Grocery</td>
-                    <td>Albuquerque</td>
-                    <td>USA</td>
-                </tr>
-                <tr class="item">
-                    <td>Simons bistro</td>
-                    <td>København</td>
-                    <td>Denmark</td>
-                </tr>
-                <tr class="item">
-                    <td>The Big Cheese</td>
-                    <td>Portland</td>
-                    <td>USA</td>
-                </tr>
-                <tr class="item">
-                    <td>Vaffeljernet</td>
-                    <td>Århus</td>
-                    <td>Denmark</td>
-                </tr>
-                <tr class="item">
-                    <td>Wolski Zajazd</td>
-                    <td>Warszawa</td>
-                    <td>Poland</td>
-                </tr>
-            </table>
-
-        </div>
-        <!-- /. w3.filterHTML() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.sortHTML() example</h1>
-
-            <h2>Sort List</h2>
-            <p>Click the button to sort the list alphabetically:</p>
-            <button onclick="w3.sortHTML('#id01SortHTML', 'li')">Sort</button>
-            <ul id="id01SortHTML">
-                <li>Oslo</li>
-                <li>Stockholm</li>
-                <li>Helsinki</li>
-                <li>Berlin</li>
-                <li>Rome</li>
-                <li>Madrid</li>
-            </ul>
-        </div>
-        <!-- /. w3.sortHTML() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.slideshow() example</h1>
-
-            <h2>Testing W3.JS in HTML</h2>
-
-            <p>Images with class="nature" will be in the slideshow:</p>
-            <img class="nature" src="../../data/images/nature/img_snowtops.jpg" width="100%">
-            <img class="nature" src="../../data/images/nature/img_mountains.jpg" width="100%">
-            <img class="nature" src="../../data/images/nature/img_nature.jpg" width="100%">
-            <img class="nature" src="../../data/images/nature/pexels-photo-349732.jpeg" width="100%">
-            <img class="nature" src="../../data/images/nature/road-1072823__340.jpg" width="100%">
-            <img class="nature" src="../../data/images/nature/royalty-free-stock.jpg" width="100%">
-            <script>
-                w3.slideshow(".nature", 1000);
-            </script>
-        </div>
-        <!-- /. w3.slideshow() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.slideshow() example</h1>
-
-            <div id="id01Slideshow">
-                {{firstName}} {{lastName}}
-            </div>
-
-            <script>
-                myObjectSlideshow = { "firstName": "John", "lastName": "Doe" };
-                w3.displayObject("id01Slideshow", myObjectSlideshow);
-            </script>
-
-        </div>
-        <!-- /. w3.slideshow() example -->
-
-        <div class="well col-lg-12">
-            <h1>w3.includeHTML() example</h1>
-
-            <div w3-include-html="w3-incl-htmls/h1.html"></div>
-            <div w3-include-html="w3-incl-htmls/content.html"></div>
-
-            <script>
-                w3.includeHTML();
-            </script>
-        </div>
-        <!-- /. w3.includeHTML() example -->
-
-        <div class="well col-lg-12">
-            <h1>W3.JS Attribute Reference : w3-repeat</h1>
-
-            <script>
-                var myObjectAttributeW3Repeat = {
-                    "customersAttributeW3Repeat": [
-                        { "CustomerName": "Alfreds Futterkiste", "City": "Berlin", "Country": "Germany" },
-                        { "CustomerName": "Ana Trujillo Emparedados y helados", "City": "México D.F.", "Country": "Mexico" },
-                        { "CustomerName": "Antonio Moreno Taquería", "City": "México D.F.", "Country": "Mexico" },
-                        { "CustomerName": "Around the Horn", "City": "London", "Country": "UK" },
-                        { "CustomerName": "B's Beverages", "City": "London", "Country": "UK" },
-                        { "CustomerName": "Berglunds snabbköp", "City": "Luleå", "Country": "Sweden" },
-                        { "CustomerName": "Blauer See Delikatessen", "City": "Mannheim", "Country": "Germany" },
-                        { "CustomerName": "Blondel père et fils", "City": "Strasbourg", "Country": "France" },
-                        { "CustomerName": "Bólido Comidas preparadas", "City": "Madrid", "Country": "Spain" },
-                        { "CustomerName": "Bon app'", "City": "Marseille", "Country": "France" },
-                        { "CustomerName": "Bottom-Dollar Marketse", "City": "Tsawassen", "Country": "Canada" },
-                        { "CustomerName": "Cactus Comidas para llevar", "City": "Buenos Aires", "Country": "Argentina" },
-                        { "CustomerName": "Centro comercial Moctezuma", "City": "México D.F.", "Country": "Mexico" },
-                        { "CustomerName": "Chop-suey Chinese", "City": "Bern", "Country": "Switzerland" },
-                        { "CustomerName": "Comércio Mineiro", "City": "São Paulo", "Country": "Brazil" }
-                    ]
-                };
-            </script>
-
-            <body>
-
-                <table id="id01AttributeW3Repeat">
-                    <tr>
-                        <th>Customer</th>
-                        <th>City</th>
-                        <th>Country</th>
-                    </tr>
-                    <tr w3-repeat="customersAttributeW3Repeat">
-                        <td>{{CustomerName}}</td>
-                        <td>{{City}}</td>
-                        <td>{{Country}}</td>
-                    </tr>
-                </table>
-
-                <script>
-                    w3.displayObject("id01AttributeW3Repeat", myObjectAttributeW3Repeat);
-                </script>
-        </div>
-        <!-- /. W3.JS Attribute Reference : w3-repeat -->
-
-        <div class="well col-lg-12">
-            <h1>W3.JS Attribute Reference : {{ }}</h1>
-
-            <div id="id01AttributeW3">
-                {{firstName}} {{lastName}}
-            </div>
-
-            <script>
-                myObjectAttributeW3 = { "firstName": "John", "lastName": "Doe" };
-                w3.displayObject("id01AttributeW3", myObjectAttributeW3);
-            </script>
-
-        </div>
-        <!-- /. W3.JS Attribute Reference : {{ }} -->
-
+<body class="bg-gray-50">
+  <div class="container mx-auto px-4 py-8">
+    
+    <!-- W3 References Section -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6">W3.js References</h1>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        <li>
+          <a href="w3-refs/DOM HTMLCollection.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            DOM HTMLCollection.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/Event Objects.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            Event Objects.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/HTML DOM Attribute Objects.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            HTML DOM Attribute Objects.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/HTML DOM Document Objects.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            HTML DOM Document Objects.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/HTML DOM Element Objects.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            HTML DOM Element Objects.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/HTML DOM Event Object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            HTML DOM Event Object.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/HTML DOM Style object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            HTML DOM Style object.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/JavaScript and HTML DOM Reference.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            JavaScript and HTML DOM Reference.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/Location Object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            Location Object.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/Navigator Object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            Navigator Object.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/Screen Object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            Screen Object.html
+          </a>
+        </li>
+        <li>
+          <a href="w3-refs/Window Object.html" 
+             class="block px-4 py-2 bg-blue-50 hover:bg-blue-100 text-blue-700 rounded-lg transition-colors">
+            Window Object.html
+          </a>
+        </li>
+      </ul>
     </div>
 
-</body>
+    <!-- W3.show() and w3.hide() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.show() and W3.hide() Example</h1>
+      <p class="text-gray-600 mb-4">Click the buttons to hide or show the element with id="London".</p>
+      <div class="flex gap-2 mb-4">
+        <button onclick="w3.hide('#London')" 
+                class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+          Hide
+        </button>
+        <button onclick="w3.show('#London')" 
+                class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+          Show
+        </button>
+      </div>
+      <div id="London" class="city p-4 bg-blue-50 rounded-lg border border-blue-200">
+        <h2 class="text-xl font-semibold mb-2">London</h2>
+        <p class="text-gray-700">London is the capital city of England.</p>
+      </div>
+      <div id="Paris" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Paris</h2>
+        <p class="text-gray-700">Paris is the capital of France.</p>
+      </div>
+    </div>
 
+    <!-- W3.toggleShow() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.toggleShow() Example</h1>
+      <p class="text-gray-600 mb-4">Click the button to toggle between hiding and showing the element with id="London".</p>
+      <button onclick="w3.toggleShow('#London')" 
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors mb-4">
+        Toggle Hide/Show
+      </button>
+      <div id="London" class="city p-4 bg-blue-50 rounded-lg border border-blue-200">
+        <h2 class="text-xl font-semibold mb-2">London</h2>
+        <p class="text-gray-700">London is the capital city of England.</p>
+      </div>
+      <div id="Paris" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Paris</h2>
+        <p class="text-gray-700">Paris is the capital of France.</p>
+      </div>
+      <div id="Tokyo" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Tokyo</h2>
+        <p class="text-gray-700">Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+    <!-- W3.toggleClass() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.toggleClass() Example</h1>
+      <p class="text-gray-600 mb-4">Click the button to toggle the "marked" class of id="LondonToggleClassExample".</p>
+      <button onclick="w3.toggleClass('#LondonToggleClassExample','toggleClassDivMarked')" 
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors mb-4">
+        Toggle Class
+      </button>
+      <div id="LondonToggleClassExample" class="city p-4 bg-gray-50 rounded-lg border border-gray-200">
+        <h2 class="text-xl font-semibold mb-2">London</h2>
+        <p class="text-gray-700">London is the capital city of England.</p>
+      </div>
+      <div id="ParisToggleClassExample" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Paris</h2>
+        <p class="text-gray-700">Paris is the capital of France.</p>
+      </div>
+    </div>
+
+    <!-- W3.addClass() & W3.removeClass() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.addClass() & W3.removeClass() Example</h1>
+      <p class="text-gray-600 mb-4">Click the button to add the "marked" class to id="LondonAddClassId".</p>
+      <div class="flex gap-2 mb-4">
+        <button onclick="w3.addClass('#LondonAddClassId','addClassDivMarked');" 
+                class="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors">
+          Add Class
+        </button>
+        <button onclick="w3.removeClass('#LondonAddClassId','addClassDivMarked')" 
+                class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors">
+          Remove Class
+        </button>
+      </div>
+      <div id="LondonAddClassId" class="city p-4 bg-gray-50 rounded-lg border border-gray-200">
+        <h2 class="text-xl font-semibold mb-2">London</h2>
+        <p class="text-gray-700">London is the capital city of England.</p>
+      </div>
+      <div id="ParisAddClassId" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Paris</h2>
+        <p class="text-gray-700">Paris is the capital of France.</p>
+      </div>
+    </div>
+
+    <!-- W3.addStyle() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.addStyle() Example</h1>
+      <p class="text-gray-600 mb-4">Click the button to add a red background color to id="LondonAddStyleId".</p>
+      <button onclick="w3.addStyle('#LondonAddStyleId','background-color','red')" 
+              class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors mb-4">
+        Add Style
+      </button>
+      <div id="LondonAddStyleId" class="city p-4 bg-gray-50 rounded-lg border border-gray-200">
+        <h2 class="text-xl font-semibold mb-2">London</h2>
+        <p class="text-gray-700">London is the capital city of England.</p>
+      </div>
+      <div id="ParisAddStyleId" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Paris</h2>
+        <p class="text-gray-700">Paris is the capital of France.</p>
+      </div>
+      <div id="TokyoAddStyleId" class="city p-4 bg-gray-50 rounded-lg border border-gray-200 mt-4">
+        <h2 class="text-xl font-semibold mb-2">Tokyo</h2>
+        <p class="text-gray-700">Tokyo is the capital of Japan.</p>
+      </div>
+    </div>
+
+    <!-- W3.filterHTML() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.filterHTML() Example</h1>
+      <h2 class="text-xl font-semibold mb-2">Filter Table</h2>
+      <p class="text-gray-600 mb-4">Search for a name in the input field:</p>
+      <input type="text" 
+             oninput="w3.filterHTML('#id01FilterHTML', '.item', this.value)" 
+             placeholder="Search for names.."
+             class="w-full max-w-md px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4">
+      <div class="overflow-x-auto">
+        <table id="id01FilterHTML" class="min-w-full divide-y divide-gray-200 border border-gray-300">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">City</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Country</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr class="item">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Alfreds Futterkiste</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Berlin</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Germany</td>
+            </tr>
+            <tr class="item">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Berglunds snabbkop</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Luleå</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Sweden</td>
+            </tr>
+            <tr class="item">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Centro comercial Moctezuma</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">México D.F.</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Mexico</td>
+            </tr>
+            <tr class="item">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">Ernst Handel</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Graz</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Austria</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- W3.sortHTML() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.sortHTML() Example</h1>
+      <h2 class="text-xl font-semibold mb-2">Sort List</h2>
+      <p class="text-gray-600 mb-4">Click the button to sort the list alphabetically:</p>
+      <button onclick="w3.sortHTML('#id01SortHTML', 'li')" 
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors mb-4">
+        Sort
+      </button>
+      <ul id="id01SortHTML" class="space-y-2">
+        <li class="px-4 py-2 bg-gray-50 rounded">Oslo</li>
+        <li class="px-4 py-2 bg-gray-50 rounded">Stockholm</li>
+        <li class="px-4 py-2 bg-gray-50 rounded">Helsinki</li>
+        <li class="px-4 py-2 bg-gray-50 rounded">Berlin</li>
+        <li class="px-4 py-2 bg-gray-50 rounded">Rome</li>
+        <li class="px-4 py-2 bg-gray-50 rounded">Madrid</li>
+      </ul>
+    </div>
+
+    <!-- W3.slideshow() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.slideshow() Example</h1>
+      <h2 class="text-xl font-semibold mb-2">Testing W3.JS in HTML</h2>
+      <p class="text-gray-600 mb-4">Images with class="nature" will be in the slideshow:</p>
+      <div class="rounded-lg overflow-hidden">
+        <img class="nature w-full h-auto" src="../../data/images/nature/img_snowtops.jpg" alt="Nature">
+        <img class="nature w-full h-auto" src="../../data/images/nature/img_mountains.jpg" alt="Nature">
+        <img class="nature w-full h-auto" src="../../data/images/nature/img_nature.jpg" alt="Nature">
+        <img class="nature w-full h-auto" src="../../data/images/nature/pexels-photo-349732.jpeg" alt="Nature">
+        <img class="nature w-full h-auto" src="../../data/images/nature/road-1072823__340.jpg" alt="Nature">
+        <img class="nature w-full h-auto" src="../../data/images/nature/royalty-free-stock.jpg" alt="Nature">
+      </div>
+      <script>
+        w3.slideshow(".nature", 1000);
+      </script>
+    </div>
+
+    <!-- W3.displayObject() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.displayObject() Example</h1>
+      <div id="id01Slideshow" class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+        {{firstName}} {{lastName}}
+      </div>
+      <script>
+        myObjectSlideshow = { "firstName": "John", "lastName": "Doe" };
+        w3.displayObject("id01Slideshow", myObjectSlideshow);
+      </script>
+    </div>
+
+    <!-- W3.includeHTML() Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.includeHTML() Example</h1>
+      <div w3-include-html="w3-incl-htmls/h1.html" class="mb-4"></div>
+      <div w3-include-html="w3-incl-htmls/content.html"></div>
+      <script>
+        w3.includeHTML();
+      </script>
+    </div>
+
+    <!-- W3.repeat Example -->
+    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.JS Attribute Reference: w3-repeat</h1>
+      <script>
+        var myObjectAttributeW3Repeat = {
+          "customersAttributeW3Repeat": [
+            { "CustomerName": "Alfreds Futterkiste", "City": "Berlin", "Country": "Germany" },
+            { "CustomerName": "Ana Trujillo Emparedados y helados", "City": "México D.F.", "Country": "Mexico" },
+            { "CustomerName": "Antonio Moreno Taquería", "City": "México D.F.", "Country": "Mexico" },
+            { "CustomerName": "Around the Horn", "City": "London", "Country": "UK" },
+            { "CustomerName": "B's Beverages", "City": "London", "Country": "UK" },
+            { "CustomerName": "Berglunds snabbköp", "City": "Luleå", "Country": "Sweden" },
+            { "CustomerName": "Blauer See Delikatessen", "City": "Mannheim", "Country": "Germany" },
+            { "CustomerName": "Blondel père et fils", "City": "Strasbourg", "Country": "France" },
+            { "CustomerName": "Bólido Comidas preparadas", "City": "Madrid", "Country": "Spain" },
+            { "CustomerName": "Bon app'", "City": "Marseille", "Country": "France" },
+            { "CustomerName": "Bottom-Dollar Marketse", "City": "Tsawassen", "Country": "Canada" },
+            { "CustomerName": "Cactus Comidas para llevar", "City": "Buenos Aires", "Country": "Argentina" },
+            { "CustomerName": "Centro comercial Moctezuma", "City": "México D.F.", "Country": "Mexico" },
+            { "CustomerName": "Chop-suey Chinese", "City": "Bern", "Country": "Switzerland" },
+            { "CustomerName": "Comércio Mineiro", "City": "São Paulo", "Country": "Brazil" }
+          ]
+        };
+      </script>
+      <div class="overflow-x-auto">
+        <table id="id01AttributeW3Repeat" class="min-w-full divide-y divide-gray-200 border border-gray-300">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Customer</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">City</th>
+              <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Country</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr w3-repeat="customersAttributeW3Repeat">
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{CustomerName}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{City}}</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{{Country}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+        w3.displayObject("id01AttributeW3Repeat", myObjectAttributeW3Repeat);
+      </script>
+    </div>
+
+    <!-- W3 Template Example -->
+    <div class="bg-white rounded-lg shadow-md p-6">
+      <h1 class="text-2xl font-bold text-gray-800 mb-4">W3.JS Attribute Reference: {{ }}</h1>
+      <div id="id01AttributeW3" class="p-4 bg-blue-50 rounded-lg border border-blue-200">
+        {{firstName}} {{lastName}}
+      </div>
+      <script>
+        myObjectAttributeW3 = { "firstName": "John", "lastName": "Doe" };
+        w3.displayObject("id01AttributeW3", myObjectAttributeW3);
+      </script>
+    </div>
+
+  </div>
+</body>
 </html>

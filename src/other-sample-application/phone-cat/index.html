@@ -2,16 +2,31 @@
 <html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="app.animations.css" />
+  </head>
+  <body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+      <div class="view-container min-h-screen">
+        <div ng-view class="view-frame"></div>
+      </div>
+    </div>
 
+    <!-- Vendor Scripts -->
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-animate/angular-animate.js"></script>
     <script src="lib/angular-resource/angular-resource.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    
+    <!-- Application Scripts -->
     <script src="app.module.js"></script>
     <script src="app.config.js"></script>
     <script src="app.animations.js"></script>
@@ -23,12 +38,5 @@
     <script src="phone-list/phone-list.component.js"></script>
     <script src="phone-detail/phone-detail.module.js"></script>
     <script src="phone-detail/phone-detail.component.js"></script>
-  </head>
-  <body>
-
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
-
   </body>
 </html>

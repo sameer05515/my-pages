@@ -6,81 +6,85 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Dashboard</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-</head>
-  <body ng-app="app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body class="bg-gray-50" ng-app="app">
     <!--[if lt IE 9]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Dashboard <sup>BETA</sup></a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#apps">Applications</a></li>
-                    <li><a href="#clientdata">Random Data</a></li>
-                </ul>
-            </div>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white shadow-lg fixed top-0 left-0 right-0 z-50">
+      <div class="w-full px-4">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-xl font-bold">Dashboard <sup class="text-xs">BETA</sup></a>
+          </div>
+          <div class="flex space-x-4">
+            <ul class="flex space-x-4">
+              <li><a href="#apps" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors">Applications</a></li>
+              <li><a href="#clientdata" class="px-3 py-2 hover:bg-gray-700 rounded transition-colors">Random Data</a></li>
+            </ul>
+          </div>
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <div class="container-fluid main-view" ng-view=""></div>
+    <!-- Main Content -->
+    <div class="w-full pt-16 main-view" ng-view=""></div>
 
-        <script src="settings.js"></script>
+    <!-- Scripts -->
+    <script src="settings.js"></script>
 
-        <!-- build:js scripts/modules.js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <script src="bower_components/underscore/underscore.js"></script>
-        <script src="bower_components/angular/angular.js"></script>
-        <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-        <script src="bower_components/angular-route/angular-route.js"></script>
-        <script src="bower_components/angular-ui-sortable/sortable.js"></script>
-        <script src="bower_components/angular-resource/angular-resource.js"></script>
-        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script src="bower_components/ng-grid/ng-grid-2.0.11.debug.js"></script>
-        <script src="bower_components/d3/d3.js"></script>
-        <script src="bower_components/nvd3/nv.d3.js"></script>
-        <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
-        <script src="bower_components/malhar-angular-dashboard/dist/angular-ui-dashboard.js"></script>
-        <script src="bower_components/malhar-angular-widgets/dist/malhar-angular-widgets.js"></script>
-        <script src="bower_components/malhar-angular-table/dist/mlhr-table.js"></script>
-        <script src="bower_components/pines-notify/pnotify.core.js"></script>
-        <script src="bower_components/angular-pines-notify/src/pnotify.js"></script>
-        <script src="bower_components/visibilityjs/lib/visibility.core.js"></script>
-        <script src="scripts/vendor/visibly.js"></script>
-        <!-- endbuild -->
+    <!-- Vendor Scripts -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-ui-sortable/sortable.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/ng-grid/ng-grid-2.0.11.debug.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/nv.d3.js"></script>
+    <script src="bower_components/angularjs-nvd3-directives/dist/angularjs-nvd3-directives.js"></script>
+    <script src="bower_components/malhar-angular-dashboard/dist/angular-ui-dashboard.js"></script>
+    <script src="bower_components/malhar-angular-widgets/dist/malhar-angular-widgets.js"></script>
+    <script src="bower_components/malhar-angular-table/dist/mlhr-table.js"></script>
+    <script src="bower_components/pines-notify/pnotify.core.js"></script>
+    <script src="bower_components/angular-pines-notify/src/pnotify.js"></script>
+    <script src="bower_components/visibilityjs/lib/visibility.core.js"></script>
+    <script src="scripts/vendor/visibly.js"></script>
 
-        <!-- build:js({.tmp,app}) scripts/scripts.js -->
-        <script src="scripts/app.js"></script>
-        <script src="scripts/services/datamodel.js"></script>
-        <script src="scripts/services/service.js"></script>
-        <script src="scripts/services/gateway.js"></script>
-        <script src="scripts/services/widgets.js"></script>
-        <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/simple.js"></script>
-        <script src="scripts/controllers/serverdata.js"></script>
-        <script src="scripts/controllers/rest.js"></script>
-        <script src="scripts/controllers/apps.js"></script>
-        <script src="scripts/controllers/discovery.js"></script>
-        <script src="scripts/controllers/topics.js"></script>
-        <script src="scripts/controllers/widgetOptions.js"></script>
-        <!-- endbuild -->
+    <!-- Application Scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/datamodel.js"></script>
+    <script src="scripts/services/service.js"></script>
+    <script src="scripts/services/gateway.js"></script>
+    <script src="scripts/services/widgets.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/simple.js"></script>
+    <script src="scripts/controllers/serverdata.js"></script>
+    <script src="scripts/controllers/rest.js"></script>
+    <script src="scripts/controllers/apps.js"></script>
+    <script src="scripts/controllers/discovery.js"></script>
+    <script src="scripts/controllers/topics.js"></script>
+    <script src="scripts/controllers/widgetOptions.js"></script>
 
-        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-        <script type="text/javascript">
-            google.load('visualization', '1', {'packages':['corechart']});
-        </script>
-</body>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {'packages':['corechart']});
+    </script>
+  </body>
 </html>

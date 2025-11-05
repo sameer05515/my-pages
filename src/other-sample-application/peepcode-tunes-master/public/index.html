@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en" ng-app="tunesApp">
-  <!-- also try using the "tunesAppFake" module instead and uncomment angular-mocks.js below -->
   <head>
     <meta charset="utf-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular Tunes</title>
     <meta name="author" content="David Goodlad <david@goodlad.ca>">
     <meta name="author" content="Igor Minar <igor@angularjs.org>">
 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="style/screen.css" media="screen, projection">
     <link rel="stylesheet" href="style/fancypants.css" media="screen, projection">
 
@@ -16,40 +19,56 @@
     <script src="js/Tunes.js"></script>
   </head>
 
-  <body ng-controller="TunesCtrl">
-    <div id="container">
-      <div class="playlist">
-        <h1>Playlist</h1>
-        <nav>
-          <button class="control play" ng-click="player.play()" ng-hide="player.playing">Play</button>
-          <button class="control pause" ng-click="player.pause()" ng-show="player.playing">Pause</button>
-          <button class="control prev" ng-click="player.previous()">Prev</button>
-          <button class="control next" ng-click="player.next()">Next</button>
-        </nav>
-        <ul class="albums">
-          <li class="album" ng-repeat="album in player.playlist"
-              ng-class="{current: player.current.album == $index}">
-            <button class="queue remove" ng-click="player.playlist.remove(album)"></button>
-            <span class="album-title">{{album.title}}</span>
-            <span class="artist-name">{{album.artist}}</span>
-            <ol class="tracks">
-              <li ng-repeat="track in album.tracks" class="track"
-                  ng-class="{current: player.current.track == $index}"
-                  ng-click="player.play($index, $parent.$index)">{{track.title}}</li>
-            </ol>
-          </li>
-        </ul>
+  <body class="bg-gray-100" ng-controller="TunesCtrl">
+    <div id="container" class="container mx-auto px-4 py-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Playlist Section -->
+        <div class="playlist bg-white rounded-lg shadow-md p-6">
+          <h1 class="text-2xl font-bold mb-4">Playlist</h1>
+          <nav class="flex space-x-2 mb-4">
+            <button class="control play px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600" 
+                    ng-click="player.play()" 
+                    ng-hide="player.playing">Play</button>
+            <button class="control pause px-4 py-2 bg-yellow-500 text-white rounded hover:bg-yellow-600" 
+                    ng-click="player.pause()" 
+                    ng-show="player.playing">Pause</button>
+            <button class="control prev px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600" 
+                    ng-click="player.previous()">Prev</button>
+            <button class="control next px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600" 
+                    ng-click="player.next()">Next</button>
+          </nav>
+          <ul class="albums space-y-4">
+            <li class="album p-4 border border-gray-200 rounded hover:bg-gray-50" 
+                ng-repeat="album in player.playlist track by $index"
+                ng-class="{'bg-blue-50 border-blue-300': player.current.album == $index}">
+              <button class="queue remove float-right text-red-500 hover:text-red-700" 
+                      ng-click="player.playlist.remove(album)">×</button>
+              <span class="album-title font-semibold block">{{album.title}}</span>
+              <span class="artist-name text-gray-600 text-sm">{{album.artist}}</span>
+              <ol class="tracks mt-2 space-y-1">
+                <li ng-repeat="track in album.tracks track by $index" 
+                    class="track p-2 rounded cursor-pointer hover:bg-gray-100"
+                    ng-class="{'bg-blue-100': player.current.track == $index}"
+                    ng-click="player.play($index, $parent.$index)">{{track.title}}</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Library Section -->
+        <section class="library bg-white rounded-lg shadow-md p-6">
+          <h1 class="text-2xl font-bold mb-4">Music Library</h1>
+          <ul class="albums space-y-4">
+            <li class="album p-4 border border-gray-200 rounded hover:bg-gray-50" 
+                ng-repeat="album in albums track by $index">
+              <button class="queue add float-right text-green-500 hover:text-green-700" 
+                      ng-click="player.playlist.add(album)">+</button>
+              <span class="album-title font-semibold block">{{album.title}}</span>
+              <span class="artist-name text-gray-600 text-sm">{{album.artist}}</span>
+            </li>
+          </ul>
+        </section>
       </div>
-      <section class="library">
-        <h1>Music Library</h1>
-        <ul class="albums">
-          <li class="album current" ng-repeat="album in albums">
-            <button class="queue add" ng-click="player.playlist.add(album)"></button>
-            <span class="album-title">{{album.title}}</span>
-            <span class="artist-name">{{album.artist}}</span>
-          </li>
-        </ul>
-      </section>
     </div>
   </body>
 </html>
