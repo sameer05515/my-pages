@@ -91,14 +91,14 @@
     "header": "JSP and HTML Views developed for question answer dashboard"
   },
   {
-    "url": "modalWindowShow.html",
-    "description": "modalWindowShow.html",
-    "header": "modalWindowShow.html"
+    "url": "other-sample-application/modalWindowShow/index.html",
+    "description": "other-sample-application/modalWindowShow/index.html",
+    "header": "other-sample-application/modalWindowShow/index.html"
   },
   {
-    "url": "tableEdit.html",
-    "description": "tableEdit.html",
-    "header": "tableEdit.html"
+    "url": "other-sample-application/table-edit/index.html",
+    "description": "other-sample-application/table-edit/index.html",
+    "header": "other-sample-application/table-edit/index.html"
   },
   {
     "url": "Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap.html",
