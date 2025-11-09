@@ -66,9 +66,9 @@
     "header": "Jtrac"
   },
   {
-    "url": "selectComboBoxTest.html",
-    "description": "selectComboBoxTest.html",
-    "header": "selectComboBoxTest.html"
+    "url": "other-sample-application/selectComboBoxTest/index.html",
+    "description": "other-sample-application/selectComboBoxTest/index.html",
+    "header": "other-sample-application/selectComboBoxTest/index.html"
   },
   {
     "url": "https://rubygarage.org/blog/release-quality-code-with-github",
