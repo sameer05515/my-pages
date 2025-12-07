@@ -538,5 +538,180 @@
     "url": "other-sample-application/aws-services/index.jsp",
     "description": "aws-services/index.jsp",
     "header": "aws-services/index.jsp"
+  },
+  {
+    "url": "other-sample-application/angular-dashboard-framework-master/sample/index.html",
+    "description": "angular-dashboard-framework-master",
+    "header": "angular-dashboard-framework-master"
+  },
+  {
+    "url": "other-sample-application/angular-filter-0.5.14",
+    "description": "angular-filter-0.5.14",
+    "header": "angular-filter-0.5.14"
+  },
+  {
+    "url": "other-sample-application/angular-photo-slider1/index.html",
+    "description": "angular-photo-slider1",
+    "header": "angular-photo-slider1"
+  },
+  {
+    "url": "other-sample-application/angular-tree-widget-master/demo/index.html",
+    "description": "angular-tree-widget-master",
+    "header": "angular-tree-widget-master"
+  },
+  {
+    "url": "other-sample-application/angular-trix-master",
+    "description": "angular-trix-master",
+    "header": "angular-trix-master"
+  },
+  {
+    "url": "other-sample-application/angular-ui-tree-master/examples/index.html",
+    "description": "angular-ui-tree-master",
+    "header": "angular-ui-tree-master"
+  },
+  {
+    "url": "other-sample-application/angular-xeditable-master/index.html",
+    "description": "angular-xeditable-master",
+    "header": "angular-xeditable-master"
+  },
+  {
+    "url": "other-sample-application/angular2-registration-login-example-master",
+    "description": "angular2-registration-login-example-master",
+    "header": "angular2-registration-login-example-master"
+  },
+  {
+    "url": "other-sample-application/AngularJS-Adding-form-fields-dynamically-master",
+    "description": "AngularJS-Adding-form-fields-dynamically-master",
+    "header": "AngularJS-Adding-form-fields-dynamically-master"
+  },
+  {
+    "url": "other-sample-application/AngularJS-Authentication",
+    "description": "AngularJS-Authentication",
+    "header": "AngularJS-Authentication"
+  },
+  {
+    "url": "other-sample-application/AngularJSCheckbox-master",
+    "description": "AngularJSCheckbox-master",
+    "header": "AngularJSCheckbox-master"
+  },
+  {
+    "url": "other-sample-application/AngularJSDemos",
+    "description": "AngularJSDemos",
+    "header": "AngularJSDemos"
+  },
+  {
+    "url": "other-sample-application/audiometa-master",
+    "description": "audiometa-master",
+    "header": "audiometa-master"
+  },
+  {
+    "url": "other-sample-application/basic-usage",
+    "description": "basic-usage",
+    "header": "basic-usage"
+  },
+  {
+    "url": "other-sample-application/chatgpt-style-pages",
+    "description": "chatgpt-style-pages",
+    "header": "chatgpt-style-pages"
+  },
+  {
+    "url": "other-sample-application/graph-data-representation",
+    "description": "graph-data-representation",
+    "header": "graph-data-representation"
+  },
+  {
+    "url": "other-sample-application/malhar-dashboard-webapp-master",
+    "description": "malhar-dashboard-webapp-master",
+    "header": "malhar-dashboard-webapp-master"
+  },
+  {
+    "url": "other-sample-application/ng-table-master",
+    "description": "ng-table-master",
+    "header": "ng-table-master"
+  },
+  {
+    "url": "other-sample-application/ngBindHTMLExample",
+    "description": "ngBindHTMLExample",
+    "header": "ngBindHTMLExample"
+  },
+  {
+    "url": "other-sample-application/ngDialog-master",
+    "description": "ngDialog-master",
+    "header": "ngDialog-master"
+  },
+  {
+    "url": "other-sample-application/ngGallery-master",
+    "description": "ngGallery-master",
+    "header": "ngGallery-master"
+  },
+  {
+    "url": "other-sample-application/ngVideo-master",
+    "description": "ngVideo-master",
+    "header": "ngVideo-master"
+  },
+  {
+    "url": "other-sample-application/ngWYSIWYG-master",
+    "description": "ngWYSIWYG-master",
+    "header": "ngWYSIWYG-master"
+  },
+  {
+    "url": "other-sample-application/paperjs-v0.10.2",
+    "description": "paperjs-v0.10.2",
+    "header": "paperjs-v0.10.2"
+  },
+  {
+    "url": "other-sample-application/parent-child-elation-nodes",
+    "description": "parent-child-elation-nodes",
+    "header": "parent-child-elation-nodes"
+  },
+  {
+    "url": "other-sample-application/peepcode-tunes-master",
+    "description": "peepcode-tunes-master",
+    "header": "peepcode-tunes-master"
+  },
+  {
+    "url": "other-sample-application/public",
+    "description": "public",
+    "header": "public"
+  },
+  {
+    "url": "other-sample-application/scripts",
+    "description": "scripts",
+    "header": "scripts"
+  },
+  {
+    "url": "other-sample-application/slider",
+    "description": "slider",
+    "header": "slider"
+  },
+  {
+    "url": "other-sample-application/soul-music-player-master",
+    "description": "soul-music-player-master",
+    "header": "soul-music-player-master"
+  },
+  {
+    "url": "other-sample-application/templates",
+    "description": "templates",
+    "header": "templates"
+  },
+  {
+    "url": "other-sample-application/textAngular-master",
+    "description": "textAngular-master",
+    "header": "textAngular-master"
+  },
+  {
+    "url": "other-sample-application/wikipedia-template",
+    "description": "wikipedia-template",
+    "header": "wikipedia-template"
+  },
+  {
+    "url": "other-sample-application/angular-media-player-master",
+    "description": "angular-media-player-master",
+    "header": "angular-media-player-master"
+  },
+  {
+    "url": "other-sample-application/chart",
+    "description": "chart",
+    "header": "chart"
   }
 ]
