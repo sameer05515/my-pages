@@ -537,5 +537,10 @@
     "url": "other-sample-application/interview-coding-questions/index.html",
     "description": "interview-coding-questions/index.html",
     "header": "interview-coding-questions/index.html"
+  },
+  {
+    "url": "other-sample-application/angular-1-5-component-with-controller/index.html",
+    "description": "angular-1-5-component-with-controller/index.html",
+    "header": "angular-1-5-component-with-controller/index.html"
   }
 ]
