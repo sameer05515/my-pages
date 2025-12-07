@@ -1,34 +1,28 @@
 [
   {
-    "url":"other-sample-application/chat-data-renderer/index.html",
-    "description":"chat-data-renderer",
-    "header":"chat-data-renderer"
+    "url": "/GroceryListApp/index.html",
+    "description": "AngularJS GroceryListApp Example, Basic GroceryListApp",
+    "header": "AngularJS GroceryListApp Example, Basic GroceryListApp"
   },
   {
-    "url": "other-sample-application/my-to-do-list/index.html",
-    "description": "My To-Do List",
-    "header": "My To-Do List"
+    "url": "/JSTL",
+    "description": "JSTL",
+    "header": "JSTL"
   },
   {
-    "url": "other-sample-application/Meta-Learning-Cycle/index.html",
-    "description": "Meta-Learning Cycle",
-    "header": "Meta-Learning Cycle"
-  },
-  
-  {
-    "url": "other-sample-application/KnowYourPositivity/src/index.html",
-    "description": "KnowYourPositivity",
-    "header": "Know Your Positivity"
+    "url": "/ShrimadBhagwatGeeta",
+    "description": "ShrimadBhagwatGeeta",
+    "header": "ShrimadBhagwatGeeta"
   },
   {
-    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr1.html",
-    "description": "KnowYourPositivity",
-    "header": "Know Your Positivity: New Look: ChatGPT-fied: Itr2.1"
+    "url": "/ShoppingCart/",
+    "description": "Rewriting ShoppingCart Application",
+    "header": "Rewriting ShoppingCart Application"
   },
   {
-    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr2.html",
-    "description": "KnowYourPositivity",
-    "header": "Know Your Positivity: New Look: ChatGPT-fied+ Main Logic: Itr2.2"
+    "url": "/ShriRamCharitManas",
+    "description": "ShriRamCharitManas",
+    "header": "ShriRamCharitManas"
   },
   {
     "url": "/bce-gui/#/",
@@ -46,6 +40,46 @@
     "header": "Search With Bootstrap With Multiple SearchBox GroupBy Names"
   },
   {
+    "url": "/hibTutorial",
+    "description": "hibTutorial",
+    "header": "hibTutorial"
+  },
+  {
+    "url": "/interview-mgmt/",
+    "description": "JSP and HTML Views developed for question answer dashboard. This need to be re-written using angularjs and bootstrap.",
+    "header": "JSP and HTML Views developed for question answer dashboard"
+  },
+  {
+    "url": "/jtrac/app/login",
+    "description": "Jtrac",
+    "header": "Jtrac"
+  },
+  {
+    "url": "/jspTut",
+    "description": "jspTut",
+    "header": "jspTut"
+  },
+  {
+    "url": "/nyambati-scotchio/Angular-1-components/",
+    "description": "How to Use Angular 1.5's Component Method",
+    "header": "Angular 1.5's Component"
+  },
+  {
+    "url": "/web-test",
+    "description": "web-test",
+    "header": "web-test"
+  },
+  {
+    "url": "data-json.html",
+    "description": "data-json.html",
+    "header": "data-json.html"
+  },
+  {
+    "url": "first.jsp",
+    "description": "JSP Test",
+    "header": "JSP Test"
+  },
+  {
     "url": "http://localhost:8889/phpmyadmin/index.php",
     "description": "Local DB",
     "header": "Local DB"
@@ -56,165 +90,64 @@
     "header": "GitHub Repo"
   },
   {
-    "url": "https://www.dineshonjava.com/creational-design-patterns/",
-    "description": "Design patterns data",
-    "header": "Design patterns data"
-  },
-  {
-    "url": "/jtrac/app/login",
-    "description": "Jtrac",
-    "header": "Jtrac"
-  },
-  {
-    "url": "other-sample-application/selectComboBoxTest/index.html",
-    "description": "other-sample-application/selectComboBoxTest/index.html",
-    "header": "other-sample-application/selectComboBoxTest/index.html"
-  },
-  {
     "url": "https://rubygarage.org/blog/release-quality-code-with-github",
     "description": "How We Use GitHub to Release Quality Code",
     "header": "How We Use GitHub to Release Quality Code"
   },
   {
-    "url": "first.jsp",
-    "description": "JSP Test",
-    "header": "JSP Test"
+    "url": "https://www.dineshonjava.com/creational-design-patterns/",
+    "description": "Design patterns data",
+    "header": "Design patterns data"
   },
   {
-    "url": "/nyambati-scotchio/Angular-1-components/",
-    "description": "How to Use Angular 1.5's Component Method",
-    "header": "Angular 1.5's Component"
+    "url": "https://www.ubuntu18.com/install-notepad-plus-plus-ubuntu-18/",
+    "description": "How to Install Notepad++ on Ubuntu 18.04 Desktop",
+    "header": "How to Install Notepad++ on Ubuntu 18.04 Desktop"
   },
   {
-    "url": "/interview-mgmt/",
-    "description": "JSP and HTML Views developed for question answer dashboard. This need to be re-written using angularjs and bootstrap.",
-    "header": "JSP and HTML Views developed for question answer dashboard"
+    "url": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
+    "description": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
+    "header": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html"
   },
   {
-    "url": "other-sample-application/modalWindowShow/index.html",
-    "description": "other-sample-application/modalWindowShow/index.html",
-    "header": "other-sample-application/modalWindowShow/index.html"
+    "url": "other-sample-application/Angular-Ticket-master/index.html",
+    "description": "Angular-Ticket-master/index.html",
+    "header": "Angular-Ticket-master/index.html"
   },
   {
-    "url": "other-sample-application/table-edit/index.html",
-    "description": "other-sample-application/table-edit/index.html",
-    "header": "other-sample-application/table-edit/index.html"
+    "url": "other-sample-application/Angular-tree-view-example/index.html",
+    "description": "Angular-tree-view-example",
+    "header": "Angular-tree-view-example"
   },
   {
-    "url": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html",
-    "description": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html",
-    "header": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html"
+    "url": "other-sample-application/Angular-UI-tree-Example/index.html",
+    "description": "Angular-UI-tree-Example  -- more working example, if we need to add sibling and child",
+    "header": "Angular-UI-tree-Example"
   },
   {
-    "url": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html",
-    "description": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html",
-    "header": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html"
+    "url": "other-sample-application/AngularJS-Loading-Spinner-Example/index.html",
+    "description": "AngularJS-Loading-Spinner-Example",
+    "header": "AngularJS-Loading-Spinner-Example"
   },
   {
-    "url": "other-sample-application/word-root/Comprehensive-suffix-list.html",
-    "description": "Comprehensive-suffix-list.html",
-    "header": "Comprehensive-suffix-list.html"
+    "url": "other-sample-application/AngularJS-Loading-Spinner-Example/index.html#/list",
+    "description": "AngularJS-Loading-Spinner-Example/index.html",
+    "header": "AngularJS-Loading-Spinner-Example/index.html"
   },
   {
-    "url": "other-sample-application/word-root/Irregular-Verbs-ENGLISH-PAGE.html",
-    "description": "Irregular-Verbs-ENGLISH-PAGE.html",
-    "header": "Irregular-Verbs-ENGLISH-PAGE.html"
+    "url": "other-sample-application/AngularJS-Tree/tree.html",
+    "description": "AngularJS-Tree",
+    "header": "AngularJS-Tree"
   },
   {
-    "url": "other-sample-application/word-root/word-roots_updated.html",
-    "description": "word-roots_updated.html",
-    "header": "word-roots_updated.html"
+    "url": "other-sample-application/AngularJS-animations-book-master/index.jsp",
+    "description": "AngularJS-animations-book-master/index.jsp",
+    "header": "AngularJS-animations-book-master/index.jsp"
   },
   {
-    "url": "other-sample-application/word-root/word-root.html",
-    "description": "word-root.html",
-    "header": "word-root.html"
-  },
-  {
-    "url": "data-json.html",
-    "description": "data-json.html",
-    "header": "data-json.html"
-  },
-  {
-    "url": "other-sample-application/angular-jwt-authentication-example/index.html",
-    "description": "AngularJS Authentication Example, angular-jwt-authentication-example",
-    "header": "AngularJS Authentication Example, angular-jwt-authentication-example"
-  },
-  {
-    "url": "/GroceryListApp/index.html",
-    "description": "AngularJS GroceryListApp Example, Basic GroceryListApp",
-    "header": "AngularJS GroceryListApp Example, Basic GroceryListApp"
-  },
-  {
-    "url": "other-sample-application/dom-manipulation-with-js/index.html",
-    "description": "DOM-MANIPULATION-WITH-JS/INDEX.HTML",
-    "header": "DOM-MANIPULATION-WITH-JS/INDEX.HTML"
-  },
-  {
-    "url": "other-sample-application/scroll-to-div/index.html",
-    "description": "Scroll Automatically to div",
-    "header": "Scroll Automatically to div"
-  },
-
-  {
-    "url": "other-sample-application/w3.js-examples/index.html",
-    "description": "w3.js-examples ",
-    "header": " w3.js-examples "
-  },
-  {
-    "url": "other-sample-application/tree-view/index.html",
-    "description": "Tree View Example",
-    "header": "Tree View Example"
-  },
-  {
-    "url": "other-sample-application/add-Style-tag-to-html/index.html",
-    "description": "add-Style-tag-to-html/index.html",
-    "header": "add-Style-tag-to-html/index.html"
-  },
-  {
-    "url": "other-sample-application/javascript-add-event-listener/index.html",
-    "description": "javascript-add-event-listener/index.html",
-    "header": "javascript-add-event-listener/index.html"
-  },
-  {
-    "url": "other-sample-application/get-all-siblings/index.html",
-    "description": "get-all-siblings/index.html",
-    "header": "get-all-siblings/index.html"
-  },
-  {
-    "url": "other-sample-application/collapsibles/index.html",
-    "description": "collapsibles/index.html",
-    "header": "collapsibles/index.html"
-  },
-  {
-    "url": "other-sample-application/Traversing-an-HTML-Table-with-JavaScript-and-DOM-Interfaces/index.html",
-    "description": "Traversing an HTML Table with JavaScript and DOM Interfaces",
-    "header": "Traversing an HTML Table with JavaScript and DOM Interfaces"
-  },
-  {
-    "url": "other-sample-application/HTML-Table-Hiding-a-column-by-changing-style-properties/index.html",
-    "description": "HTML Table : Hiding a column by changing style properties",
-    "header": "HTML Table : Hiding a column by changing style properties"
-  },
-  {
-    "url": "other-sample-application/google-chart/pie-chart.html",
-    "description": "Google Chart : Pie chart",
-    "header": "Google Chart : Pie chart"
-  },
-  {
-    "url": "other-sample-application/Grid-Examples/index.html",
-    "description": "Grid-Example",
-    "header": "Grid-Example"
-  },
-  {
-    "url": "other-sample-application/Menu-Examples/index.html",
-    "description": "Menu-Example",
-    "header": "Menu-Example"
-  },
-  {
-    "url": "other-sample-application/Create-Custom-Elements/index.html",
-    "description": "Create-Custom-Elements",
-    "header": "Create-Custom-Elements"
+    "url": "other-sample-application/BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
+    "description": "BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
+    "header": "BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm"
   },
   {
     "url": "other-sample-application/Chart-Examples/index.html",
@@ -222,69 +155,74 @@
     "header": "Chart-Examples"
   },
   {
-    "url": "other-sample-application/CSS-Properties-Examples/index.jsp",
-    "description": "CSS-Properties-Examples",
-    "header": "CSS-Properties-Examples"
-  },
-  {
-    "url": "other-sample-application/wikipedia-template/index.html",
-    "description": "WIKIPEDIA-TEMPLATE-EXAMPLES",
-    "header": "WIKIPEDIA-TEMPLATE-EXAMPLES"
-  },
-  {
-    "url": "/ShoppingCart/",
-    "description": "Rewriting ShoppingCart Application",
-    "header": "Rewriting ShoppingCart Application"
-  },
-  {
-    "url": "other-sample-application/WORD-POWER-MADE-EASY/index.jsp",
-    "description": "WORD-POWER-MADE-EASY",
-    "header": "WORD-POWER-MADE-EASY"
-  },
-  {
-    "url": "other-sample-application/graph-data-representation/index.jsp",
-    "description": "graph-data-representation",
-    "header": "graph-data-representation"
-  },
-  {
     "url": "other-sample-application/CSS-How-to/index.jsp",
     "description": "CSS-How-to",
     "header": "CSS-How-to"
   },
   {
-    "url": "other-sample-application/college-data",
-    "description": "college-data",
-    "header": "college-data"
+    "url": "other-sample-application/CSS-Properties-Examples/index.jsp",
+    "description": "CSS-Properties-Examples",
+    "header": "CSS-Properties-Examples"
   },
   {
-    "url": "other-sample-application/phone-cat",
-    "description": "phone-cat",
-    "header": "phone-cat"
+    "url": "other-sample-application/Create-Custom-Elements/index.html",
+    "description": "Create-Custom-Elements",
+    "header": "Create-Custom-Elements"
   },
   {
-    "url": "other-sample-application/directive-test",
-    "description": "directive-test",
-    "header": "directive-test"
+    "url": "other-sample-application/EaseGame/index.html",
+    "description": "EaseGame/index.html",
+    "header": "EaseGame/index.html"
   },
   {
-    "url": "other-sample-application/Spring-Rest-API-For-Beginners/index.jsp",
-    "description": "Spring-Rest-API-For-Beginners",
-    "header": "Spring-Rest-API-For-Beginners"
+    "url": "other-sample-application/Grid-Examples/index.html",
+    "description": "Grid-Example",
+    "header": "Grid-Example"
   },
   {
-    "url": "/ShrimadBhagwatGeeta",
-    "description": "ShrimadBhagwatGeeta",
-    "header": "ShrimadBhagwatGeeta"
+    "url": "other-sample-application/HTML-Table-Hiding-a-column-by-changing-style-properties/index.html",
+    "description": "HTML Table : Hiding a column by changing style properties",
+    "header": "HTML Table : Hiding a column by changing style properties"
   },
   {
-    "url": "/ShriRamCharitManas",
-    "description": "ShriRamCharitManas",
-    "header": "ShriRamCharitManas"
+    "url": "other-sample-application/KnowYourPositivity/src/index.html",
+    "description": "KnowYourPositivity",
+    "header": "Know Your Positivity"
   },
   {
-    "url": "other-sample-application/AngularJS-Loading-Spinner-Example/index.html",
-    "description": "AngularJS-Loading-Spinner-Example",
-    "header": "AngularJS-Loading-Spinner-Example"
+    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr1.html",
+    "description": "KnowYourPositivity",
+    "header": "Know Your Positivity: New Look: ChatGPT-fied: Itr2.1"
+  },
+  {
+    "url": "other-sample-application/KnowYourPositivity/src/index.v2.itr2.html",
+    "description": "KnowYourPositivity",
+    "header": "Know Your Positivity: New Look: ChatGPT-fied+ Main Logic: Itr2.2"
+  },
+  {
+    "url": "other-sample-application/Menu-Examples/index.html",
+    "description": "Menu-Example",
+    "header": "Menu-Example"
+  },
+  {
+    "url": "other-sample-application/Meta-Learning-Cycle/index.html",
+    "description": "Meta-Learning Cycle",
+    "header": "Meta-Learning Cycle"
+  },
+  {
+    "url": "other-sample-application/MyResume/index.html",
+    "description": "MyResume/index.html",
+    "header": "MyResume/index.html"
+  },
+  {
+    "url": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html",
+    "description": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html",
+    "header": "other-sample-application/Pass-data-to-a-Bootstrap-modal-dialog-using-angular/index.html"
+  },
+  {
+    "url": "other-sample-application/Resume/index.html",
+    "description": "Resume/index.html",
+    "header": "Resume/index.html"
   },
   {
     "url": "other-sample-application/Spinner-Example/index.jsp",
@@ -302,46 +240,9 @@
     "header": "Sample-Applications-From-codepen-plunker"
   },
   {
-    "url": "other-sample-application/AngularJS-Tree/tree.html",
-    "description": "AngularJS-Tree",
-    "header": "AngularJS-Tree"
-  },
-  {
-    "url": "other-sample-application/parent-child-relation/index.html",
-    "description": "parent-child-relation - It has working example for tree using directive",
-    "header": "parent-child-relation"
-  },
-  {
-    "url": "other-sample-application/Angular-tree-view-example/index.html",
-    "description": "Angular-tree-view-example",
-    "header": "Angular-tree-view-example"
-  },
-  {
-    "url": "other-sample-application/Angular-UI-tree-Example/index.html",
-    "description": "Angular-UI-tree-Example  -- more working example, if we need to add sibling and child",
-    "header": "Angular-UI-tree-Example"
-  },
-
-  {
-    "url": "other-sample-application/modal-window/index.html",
-    "description": "modal-window",
-    "header": "modal-window"
-  },
-
-  {
-    "url": "other-sample-application/angular-fusioncharts-master/demos/index.html",
-    "description": "angular-fusioncharts-master/demos",
-    "header": "angular-fusioncharts-master/demos"
-  },
-  {
-    "url": "other-sample-application/BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
-    "description": "BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm",
-    "header": "BuildingABoxThatSticksWhileYouScroll/yoga_shops.htm"
-  },
-  {
-    "url": "other-sample-application/template/form.html",
-    "description": "template/form.html",
-    "header": "template/form.html"
+    "url": "other-sample-application/Spring-Rest-API-For-Beginners/index.jsp",
+    "description": "Spring-Rest-API-For-Beginners",
+    "header": "Spring-Rest-API-For-Beginners"
   },
   {
     "url": "other-sample-application/T0021-airpair-angularjs-tutorial-master/index.html#/",
@@ -349,44 +250,29 @@
     "header": "T0021-airpair-angularjs-tutorial-master/index.html"
   },
   {
-    "url": "other-sample-application/responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html#/",
-    "description": "responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html",
-    "header": "responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html"
+    "url": "other-sample-application/Traversing-an-HTML-Table-with-JavaScript-and-DOM-Interfaces/index.html",
+    "description": "Traversing an HTML Table with JavaScript and DOM Interfaces",
+    "header": "Traversing an HTML Table with JavaScript and DOM Interfaces"
   },
   {
-    "url": "other-sample-application/ui-calendar/demo/index.html",
-    "description": "ui-calendar/demo/index.html",
-    "header": "ui-calendar/demo/index.html"
+    "url": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html",
+    "description": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html",
+    "header": "other-sample-application/Utility-modal-windows-in-AngularJS-with-Angular-UI-Bootstrap/index.html"
   },
   {
-    "url": "other-sample-application/EaseGame/index.html",
-    "description": "EaseGame/index.html",
-    "header": "EaseGame/index.html"
+    "url": "other-sample-application/W3.js-examples/index.html",
+    "description": "w3.js-examples ",
+    "header": " w3.js-examples "
   },
   {
-    "url": "other-sample-application/json-tree/example.html",
-    "description": "json-tree/example.html",
-    "header": "json-tree/example.html"
+    "url": "other-sample-application/WORD-POWER-MADE-EASY/index.jsp",
+    "description": "WORD-POWER-MADE-EASY",
+    "header": "WORD-POWER-MADE-EASY"
   },
   {
-    "url": "other-sample-application/login/index.html#/login",
-    "description": "login/index.html#/login",
-    "header": "login/index.html#/login"
-  },
-  {
-    "url": "other-sample-application/audiometa/demo/index.html",
-    "description": "audiometa/index.html",
-    "header": "audiometa/index.html"
-  },
-  {
-    "url": "other-sample-application/angularjs-pdf/example/index.html",
-    "description": "angularjs-pdf/example/index.html",
-    "header": "angularjs-pdf/example/index.html"
-  },
-  {
-    "url": "other-sample-application/ajaxtabscontent/demo.htm",
-    "description": "other-sample-application/ajaxtabscontent/demo.htm",
-    "header": "other-sample-application/ajaxtabscontent/demo.htm"
+    "url": "other-sample-application/add-Style-tag-to-html/index.html",
+    "description": "add-Style-tag-to-html/index.html",
+    "header": "add-Style-tag-to-html/index.html"
   },
   {
     "url": "other-sample-application/ajax/chap1/default.htm",
@@ -394,9 +280,14 @@
     "header": "other-sample-application/ajax/chap1/default.htm"
   },
   {
-    "url": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
-    "description": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html",
-    "header": "other-sample-application/Angular-Checkboxes-and-Radio-Buttons/index.html"
+    "url": "other-sample-application/ajaxtabscontent/demo.htm",
+    "description": "other-sample-application/ajaxtabscontent/demo.htm",
+    "header": "other-sample-application/ajaxtabscontent/demo.htm"
+  },
+  {
+    "url": "other-sample-application/angular-1-5-component-with-controller/index.html",
+    "description": "angular-1-5-component-with-controller/index.html",
+    "header": "angular-1-5-component-with-controller/index.html"
   },
   {
     "url": "other-sample-application/angular-bootstrap-calendar/index.html",
@@ -404,24 +295,24 @@
     "header": "other-sample-application/angular-bootstrap-calendar/index.html"
   },
   {
-    "url": "/hibTutorial",
-    "description": "hibTutorial",
-    "header": "hibTutorial"
+    "url": "other-sample-application/angular-carousel-master/index.html",
+    "description": "angular-carousel-master/index.html",
+    "header": "angular-carousel-master/index.html"
   },
   {
-    "url": "/jspTut",
-    "description": "jspTut",
-    "header": "jspTut"
+    "url": "other-sample-application/angular-custom-element-master/examples/navbar.html",
+    "description": "angular-custom-element-master/examples/navbar.html",
+    "header": "angular-custom-element-master/examples/navbar.html"
   },
   {
-    "url": "/JSTL",
-    "description": "JSTL",
-    "header": "JSTL"
+    "url": "other-sample-application/angular-fusioncharts-master/demos/index.html",
+    "description": "angular-fusioncharts-master/demos",
+    "header": "angular-fusioncharts-master/demos"
   },
   {
-    "url": "/web-test",
-    "description": "web-test",
-    "header": "web-test"
+    "url": "other-sample-application/angular-input-dropdown-master/demo/index.html",
+    "description": "angular-input-dropdown-master/demo/index.html",
+    "header": "angular-input-dropdown-master/demo/index.html"
   },
   {
     "url": "other-sample-application/angular-js-tree/index.html",
@@ -432,16 +323,6 @@
     "url": "other-sample-application/angular-lazytube-master/example/index.html",
     "description": "angular-lazytube-master/example/index.html",
     "header": "angular-lazytube-master/example/index.html"
-  },
-  {
-    "url": "other-sample-application/AngularJS-animations-book-master/index.jsp",
-    "description": "AngularJS-animations-book-master/index.jsp",
-    "header": "AngularJS-animations-book-master/index.jsp"
-  },
-  {
-    "url": "other-sample-application/angular-input-dropdown-master/demo/index.html",
-    "description": "angular-input-dropdown-master/demo/index.html",
-    "header": "angular-input-dropdown-master/demo/index.html"
   },
   {
     "url": "other-sample-application/angular-photo-slider/index.html",
@@ -464,14 +345,9 @@
     "header": "other-sample-application/angular-soundmanager2-master/examples/index.html"
   },
   {
-    "url": "other-sample-application/Angular-Ticket-master/index.html",
-    "description": "Angular-Ticket-master/index.html",
-    "header": "Angular-Ticket-master/index.html"
-  },
-  {
-    "url": "other-sample-application/angularjs-dynamic-table-html-form/index.html",
-    "description": "angularjs-dynamic-table-html-form/index.html",
-    "header": "angularjs-dynamic-table-html-form/index.html"
+    "url": "other-sample-application/angular-jwt-authentication-example/index.html",
+    "description": "AngularJS Authentication Example, angular-jwt-authentication-example",
+    "header": "AngularJS Authentication Example, angular-jwt-authentication-example"
   },
   {
     "url": "other-sample-application/angularjs-dynamic-table-html-form/Textarea-character-limit.html",
@@ -479,9 +355,9 @@
     "header": "angularjs-dynamic-table-html-form/Textarea-character-limit.html"
   },
   {
-    "url": "other-sample-application/AngularJS-Loading-Spinner-Example/index.html#/list",
-    "description": "AngularJS-Loading-Spinner-Example/index.html",
-    "header": "AngularJS-Loading-Spinner-Example/index.html"
+    "url": "other-sample-application/angularjs-dynamic-table-html-form/index.html",
+    "description": "angularjs-dynamic-table-html-form/index.html",
+    "header": "angularjs-dynamic-table-html-form/index.html"
   },
   {
     "url": "other-sample-application/angularjs-media-master/app/index.html#!/twitch",
@@ -489,19 +365,39 @@
     "header": "angularjs-media-master/app/index.html"
   },
   {
-    "url": "other-sample-application/aws-services/index.jsp",
-    "description": "aws-services/index.jsp",
-    "header": "aws-services/index.jsp"
+    "url": "other-sample-application/angularjs-pdf/example/index.html",
+    "description": "angularjs-pdf/example/index.html",
+    "header": "angularjs-pdf/example/index.html"
   },
   {
-    "url": "https://www.ubuntu18.com/install-notepad-plus-plus-ubuntu-18/",
-    "description": "How to Install Notepad++ on Ubuntu 18.04 Desktop",
-    "header": "How to Install Notepad++ on Ubuntu 18.04 Desktop"
+    "url": "other-sample-application/audiometa/demo/index.html",
+    "description": "audiometa/index.html",
+    "header": "audiometa/index.html"
   },
   {
-    "url": "other-sample-application/mthree-kt/index.html",
-    "description": "mthree-kt/index.html",
-    "header": "mthree-kt/index.html"
+    "url": "other-sample-application/chat-data-renderer/index.html",
+    "description": "chat-data-renderer",
+    "header": "chat-data-renderer"
+  },
+  {
+    "url": "other-sample-application/collapsibles/index.html",
+    "description": "collapsibles/index.html",
+    "header": "collapsibles/index.html"
+  },
+  {
+    "url": "other-sample-application/college-data",
+    "description": "college-data",
+    "header": "college-data"
+  },
+  {
+    "url": "other-sample-application/directive-test",
+    "description": "directive-test",
+    "header": "directive-test"
+  },
+  {
+    "url": "other-sample-application/dom-manipulation-with-js/index.html",
+    "description": "DOM-MANIPULATION-WITH-JS/INDEX.HTML",
+    "header": "DOM-MANIPULATION-WITH-JS/INDEX.HTML"
   },
   {
     "url": "other-sample-application/full-screen-view/index.html",
@@ -509,19 +405,9 @@
     "header": "full-screen-view/index.html"
   },
   {
-    "url": "other-sample-application/my-wishes/index.html",
-    "description": "my-wishes/index.html",
-    "header": "my-wishes/index.html"
-  },
-  {
-    "url": "other-sample-application/Resume/index.html",
-    "description": "Resume/index.html",
-    "header": "Resume/index.html"
-  },
-  {
-    "url": "other-sample-application/interview-questions/index.jsp",
-    "description": "interview-questions/index.jsp",
-    "header": "interview-questions/index.jsp"
+    "url": "other-sample-application/get-all-siblings/index.html",
+    "description": "get-all-siblings/index.html",
+    "header": "get-all-siblings/index.html"
   },
   {
     "url": "other-sample-application/github-projects/index.html",
@@ -529,9 +415,9 @@
     "header": "github-projects/index.html"
   },
   {
-    "url": "other-sample-application/MyResume/index.html",
-    "description": "MyResume/index.html",
-    "header": "MyResume/index.html"
+    "url": "other-sample-application/google-chart/pie-chart.html",
+    "description": "Google Chart : Pie chart",
+    "header": "Google Chart : Pie chart"
   },
   {
     "url": "other-sample-application/interview-coding-questions/index.html",
@@ -539,18 +425,118 @@
     "header": "interview-coding-questions/index.html"
   },
   {
-    "url": "other-sample-application/angular-1-5-component-with-controller/index.html",
-    "description": "angular-1-5-component-with-controller/index.html",
-    "header": "angular-1-5-component-with-controller/index.html"
+    "url": "other-sample-application/interview-questions/index.jsp",
+    "description": "interview-questions/index.jsp",
+    "header": "interview-questions/index.jsp"
   },
   {
-    "url":"other-sample-application/angular-carousel-master/index.html",
-    "description":"angular-carousel-master/index.html",
-    "header":"angular-carousel-master/index.html"
+    "url": "other-sample-application/javascript-add-event-listener/index.html",
+    "description": "javascript-add-event-listener/index.html",
+    "header": "javascript-add-event-listener/index.html"
   },
   {
-    "url":"other-sample-application/angular-custom-element-master/examples/navbar.html",
-    "description":"angular-custom-element-master/examples/navbar.html",
-    "header":"angular-custom-element-master/examples/navbar.html"
+    "url": "other-sample-application/json-tree/example.html",
+    "description": "json-tree/example.html",
+    "header": "json-tree/example.html"
+  },
+  {
+    "url": "other-sample-application/login/index.html#/login",
+    "description": "login/index.html#/login",
+    "header": "login/index.html#/login"
+  },
+  {
+    "url": "other-sample-application/mthree-kt/index.html",
+    "description": "mthree-kt/index.html",
+    "header": "mthree-kt/index.html"
+  },
+  {
+    "url": "other-sample-application/modal-window/index.html",
+    "description": "modal-window",
+    "header": "modal-window"
+  },
+  {
+    "url": "other-sample-application/modalWindowShow/index.html",
+    "description": "other-sample-application/modalWindowShow/index.html",
+    "header": "other-sample-application/modalWindowShow/index.html"
+  },
+  {
+    "url": "other-sample-application/my-to-do-list/index.html",
+    "description": "My To-Do List",
+    "header": "My To-Do List"
+  },
+  {
+    "url": "other-sample-application/my-wishes/index.html",
+    "description": "my-wishes/index.html",
+    "header": "my-wishes/index.html"
+  },
+  {
+    "url": "other-sample-application/parent-child-relation/index.html",
+    "description": "parent-child-relation - It has working example for tree using directive",
+    "header": "parent-child-relation"
+  },
+  {
+    "url": "other-sample-application/phone-cat",
+    "description": "phone-cat",
+    "header": "phone-cat"
+  },
+  {
+    "url": "other-sample-application/responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html#/",
+    "description": "responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html",
+    "header": "responsive-image-carousel-with-angular-js-and-bootstrap-3/index.html"
+  },
+  {
+    "url": "other-sample-application/scroll-to-div/index.html",
+    "description": "Scroll Automatically to div",
+    "header": "Scroll Automatically to div"
+  },
+  {
+    "url": "other-sample-application/selectComboBoxTest/index.html",
+    "description": "other-sample-application/selectComboBoxTest/index.html",
+    "header": "other-sample-application/selectComboBoxTest/index.html"
+  },
+  {
+    "url": "other-sample-application/table-edit/index.html",
+    "description": "other-sample-application/table-edit/index.html",
+    "header": "other-sample-application/table-edit/index.html"
+  },
+  {
+    "url": "other-sample-application/template/form.html",
+    "description": "template/form.html",
+    "header": "template/form.html"
+  },
+  {
+    "url": "other-sample-application/tree-view/index.html",
+    "description": "Tree View Example",
+    "header": "Tree View Example"
+  },
+  {
+    "url": "other-sample-application/ui-calendar/demo/index.html",
+    "description": "ui-calendar/demo/index.html",
+    "header": "ui-calendar/demo/index.html"
+  },
+  {
+    "url": "other-sample-application/word-root/Comprehensive-suffix-list.html",
+    "description": "Comprehensive-suffix-list.html",
+    "header": "Comprehensive-suffix-list.html"
+  },
+  {
+    "url": "other-sample-application/word-root/Irregular-Verbs-ENGLISH-PAGE.html",
+    "description": "Irregular-Verbs-ENGLISH-PAGE.html",
+    "header": "Irregular-Verbs-ENGLISH-PAGE.html"
+  },
+  {
+    "url": "other-sample-application/word-root/word-root.html",
+    "description": "word-root.html",
+    "header": "word-root.html"
+  },
+  {
+    "url": "other-sample-application/word-root/word-roots_updated.html",
+    "description": "word-roots_updated.html",
+    "header": "word-roots_updated.html"
+  },
+  {
+    "url": "other-sample-application/aws-services/index.jsp",
+    "description": "aws-services/index.jsp",
+    "header": "aws-services/index.jsp"
   }
 ]
