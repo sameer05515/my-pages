@@ -713,5 +713,10 @@
     "url": "other-sample-application/chart/index.html",
     "description": "chart",
     "header": "chart"
+  },
+  {
+    "url": "other-sample-application/aws-services/services-overview.html",
+    "description": "aws-services/services-overview.html",
+    "header": "aws-services/services-overview.html"
   }
 ]
