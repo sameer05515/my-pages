@@ -542,5 +542,15 @@
     "url": "other-sample-application/angular-1-5-component-with-controller/index.html",
     "description": "angular-1-5-component-with-controller/index.html",
     "header": "angular-1-5-component-with-controller/index.html"
+  },
+  {
+    "url":"other-sample-application/angular-carousel-master/index.html",
+    "description":"angular-carousel-master/index.html",
+    "header":"angular-carousel-master/index.html"
+  },
+  {
+    "url":"other-sample-application/angular-custom-element-master/examples/navbar.html",
+    "description":"angular-custom-element-master/examples/navbar.html",
+    "header":"angular-custom-element-master/examples/navbar.html"
   }
 ]
